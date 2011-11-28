@@ -1,0 +1,4 @@
+<flpatch:modifications name="co_renumasiento" >
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="co_masterasientos.ui" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_masterasientos.qs" />
+</flpatch:modifications>

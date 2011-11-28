@@ -1,0 +1,103 @@
+<xupdate:modifications>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formEjercicios]/vbox[vbox,1]/widget[QGroupBox,groupBox55]/vbox[vbox,1]/widget[QLayoutWidget,layout5]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEjercicios]/vbox[vbox,1]/widget[QGroupBox,groupBox55]/vbox[vbox,1]/property[property,1]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout4</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodEjercicio</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>0</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>170</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>codejercicio</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacer10</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>50</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPlanContable</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>0</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>25</height>
+</size>
+</property>
+<property name="paletteForegroundColor" >
+<color>
+<red>9</red>
+<green>0</green>
+<blue>184</blue>
+</color>
+</property>
+<property name="font" >
+<font>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>plancontable</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEjercicios]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

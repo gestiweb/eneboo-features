@@ -1,0 +1,19 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idfactura]/relation[lineasivafactprov,idfactura]" >
+<relation>
+<table>recibosprov</table>
+<field>idfactura</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codigo]" >
+<field>
+<name>editable</name>
+<!--Indicador de si la factura está pagada--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pte. Pago&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>unlock</type>
+<default>true</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,21 @@
+<flpatch:modifications name="multilinea" >
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
+    <flpatch:patchXml path="facturacion/almacen/tables/" name="lineastransstock.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranesprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturasprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_albaranescli.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_albaranesprov.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturascli.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturasprov.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_inventario.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_inventarioval.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_pedidoscli.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_pedidosprov.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_presupuestoscli.kut" />
+    <flpatch:replaceFile path="facturacion/informes/reports/" name="i_transstock.kut" />
+</flpatch:modifications>

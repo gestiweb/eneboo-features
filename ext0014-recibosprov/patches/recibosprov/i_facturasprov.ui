@@ -1,0 +1,60 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formPaises_Imp]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >558</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPaises_Imp]/vbox[vbox,1]/widget[QGroupBox,groupBox5]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutPteFactura</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPteFactura</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>200</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>i_facturasprov_editable</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerPteFactura</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>213</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

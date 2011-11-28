@@ -1,0 +1,4 @@
+<xupdate:modifications>
+<xupdate:delete select="/TMD[TMD,1]/field[descripcion]/length[length,1]" />
+<xupdate:update select="/TMD[TMD,1]/field[descripcion]/type[type,1]/text()[1]" >stringlist</xupdate:update>
+</xupdate:modifications>

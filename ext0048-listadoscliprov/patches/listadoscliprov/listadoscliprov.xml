@@ -1,0 +1,21 @@
+<flpatch:modifications name="listadoscliprov" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_clientes.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_proveedores.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_clientes.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_clientesxagente.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_clientesxgrupo.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_proveedores.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_clientes.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_clientesxagente.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_clientesxgrupo.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_proveedores.kut" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_clientes.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterclientes.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterproveedores.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_proveedores.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_clientes.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_proveedores.mtd" />
+</flpatch:modifications>

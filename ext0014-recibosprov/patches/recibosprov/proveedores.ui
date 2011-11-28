@@ -1,0 +1,251 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="recibosprovrecibos_provimage5" >
+<data format="PNG" length="1539" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005ca49444154789cc59751685bd719c73f375a3894922a4dda5d33c3aec083dc90870ac2407a8a614f69a14610460d7ea8431876f18667b2b54dc3304aa09e168a41f74170f560905f3ae107e3e5c1e00e32ac0d0d79a04df6f0833cbce2794e2a3bee9055e3f0dbc339479194b84ed2875e107fcebdbaf7fb7fbff39defdcdb05c87779743ded9c52ea54e3b07142855457e3b0212aa4a471d8e83263940a9f6ca8eeef4b637f5385e441e37f5b8fe4b0f15c818f4c5c29752ac806ff007659e64ba0565a2ed5801d9679083cac942b7bc0c1e5b1fc8e5be64fcea5e4ad702f7109a9d0f31878ba8990bc066cd7f7ea0034b5deae9b1b5500462672b883101dab3c8a0ef3d7f0c5a19f890a9f7a61034aa9d772d3b9ff02b08d3ef68cd68dd68cae6949dec9e1f6436cac0240749435e722c3a2c2afbe188169b637373775ac5aad2d730e8c876d7dbe542c01307e3bc0791ba2a34b2426213155273accdfd459efc72f4260bb2d539bf941876e68595c580420311ae096c11b5e820318ca02b0a37a2f5f796102b6069a41ad2773beb4ac09cccfe5610adc2b39bc6be05d5b223a0643d93a033efbe17389c16f4fa0f3300458d0929bcec11ab8ef81b701eebb79dc32f48d426c8faf544fecd2b312b8ffcc044c0dcccfe60188bd17e0f483db9f26360889e11403a390184d13ed4ffe4542ea8de3089cc94de7ee038fabbf23782781c5cf750de43fcb431d466e067a3c93d3d74d8da4eea4717adcc1e308bcca34db9b1b9a8025f10401b32a2ae54a5b90f9b979ad77db75e9de12f8e0f438bf1091d091061cc7f951da4fef356f022868b105d72463b56cae17daffbfd4314efb695cd71d1391ef3dd540dfa5bec1b49ffe776b268b7717db825bb5d82da9ea9aee8c95954a1b19aba5620932e0f438634f10504abdc406bfcb65f59c8d8c8ec01a0c5c19801518787700b62135996acfec2e8f1f0e8f3ba75d1da6535696b5892013e0baee78ab812e1191a1c1a129ef82f7f3d57fae3e5a5d5ddd8844223f88f4464ede0adf123fe4cb7e635fd6bf5897dd07bba29492484f444e9f3d2def6fbd2f57b7ae4af6625656627f90f3d1b76467352ba7bdabb2befe1f8944ba65657545ce7be7a5f0e782c4ff1e97ee64f7afb6bed8fa1438b473de3b726da4ce4fb8af5e511fab907a27753b556bcbc464969fcdc32624fa13b06114a09c061414c37a5cf40c19436a995602bfee9c8213e170f81da5d44f45a44742d24d9607764e6b9b662fd86ba9fa491dfcc687492ac53c108682001e6c5c0686a01a03fa58fabc651564c0ed713f386a159cb09d30c8065f3e8d40b3239aeacfcde887b320800345077061d931b5100360de14b221f0d191abc0f4813364a9d96aae560d89ed7612d6ccd25c12b242dd9a58f1803e58eb03a254671d98367d2203aeeb7efc8d06945267824c506bade22748d83dc2f68185b49906a5c7551d9c721850a4ef249b04e8e5e6f10432d4ec7aef24d17c4f30449aef050b37f433575cc083650508d5190593909f9db7047e731c81b34126d8019a1dce9aa0da41a4530b2eba0614a0e09e006eb37f047e8077ce9b388ec05932ecd866d324613b9b25d2ec7c864cf1860e5e7600a136271aff441ff866a3f2c13be72545e4e4331128154c872bd266c2aeeb4ad9663eaf83af38ba166645eb670aeae63d01bd1770815bcf4260d76e44566dbb2d152bc00895594febbd2490300518a63aa383d7ee0adcf4484ea460c698d0046e1f4fc00f7601b8479b093bb65b2f531ab3ce58c06f191fb88c5f1f07da09442f443ff9460396800d6277bd4e9d9fd3eb3a7d3b01376324aff7c14482dc6494e4f5cb8c5fbf01be099e354bd007ef82f7dbe308bc1e6482876d992e74646ec6b6c3e566f226d3bcc934d7967990091ed7c09ba48e3580cfc3201b40c6dc9c8520dba2d3e6e19d6a33cd98603ea4a7d23005a93b29f021fa66f4d356034f7c9caa907a397a31facb82147e183f8c232111391429840a129778f37f0579ee71575ce22fadff6bfd8f5b5b5bbf07be1639e2ebd8fc5e3ee2fab73d10917de09188c8ff013022394bb4115e330000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="recibosprovrecibos_provimage6" >
+<data format="PNG" length="1671" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000064e49444154789cad575f6c53d719ff915ec8090d9b59dbccab28331d2d356a1eb2a6139e36a9a691863c4d9d827800d417f25081c7a6c88dd4d4aaaa88f280b2acca6433a5ba779b355f6962a60fc8e5a15590c696c060c94326d2296dad8845c6cdd204f1c758c1e5b78773be1bdf9b8475d2be979fef39e77edff97edfef7ce7fa11044c29857abd1e1c5e99b7545bfd41fd7e2814da060badad9b5a9bd526f5a3705be8ee8ea79ff9d9cd859b97da77b77fafb258b98926d4559342fdc1fafe1e090ed451079a003c581d5b59ea6b50d8653559072ccbaa5a4dd6bed037d4edefee6e3ffec493db9fb12ceb95a7dab66c549b43af56162aa5f6e7db5f9aabcc7dd2b1bba3ad325fb9b3ee2e820c046c03004b596ab352ea0da5d48bd1e7a2e7799da70b6efe0ac9f943ceb53ac92f3b06b84cf2c189938337487e1aeb8cb9b13db1d7a2cf47df0cb5861e55966a59cbb9df2c8f8a468b2b4b6ddddbb5f785c44f122f278f2577ddbbbd146ad9b2153bde03b6b6026a23706309989dbd810ef52dfc323e8ebd3ffcfe72f6747683f33be78fca52fffef89f1fbf57abd73eaddda97df9bf3000005f27f91796e9b38e9cc64249e3a1f31a71dc2c90f5e324abbc197f29fe2e3b79e4a12580d5c042831d3b7aac9f2459d53e8b3355461dd29e2a93fd64fc073146bbba79e4dc22a343a43a98f76db634a377d9d1d9e1005833cb15062c6c54966a86856665a966004de170787be14ce1b346a7514763eae8119264a22b4e92ecce91a119d2768b7ac1bc86cc70e66e645be417001e95784d8dc1639db197537da93ff03ec7ed9cfd37e678d9ced997e972e29d93ef9cdd7f7fff96c9ab9300800ffeb1847b7780bdbf9ac6e42715f41cda0fa8ad38fceb0f801a80b71df41cfa31969696802700f7b72e26ff3e395f59a84c03b8bb2a73cef06d96f87033f4f38ad1c0a96b24c9f800199b2613fd9af6482f192b93a31f8e9224f3393d9e7e2b4d2ef35f9148a4cb173cd19538582ae9e8d55b3acae2e2a2efd91b9fd7e36317b5f350ef18c30364e46489d1013274b4c8f041323d304892b41d9b1c22ed115b3f8fd8641f4b4aa9ddbae6966aca0c67feaabd9b0c05a7345c9bd299725ac3c495099264c164163b9e61a444865fcd30562253fd6992e4e0d020b94c66b219fde28cd1c25086dcc35300807038fc245dde2e5f2ffb329420139313be4d04b170264f8e90274e9e2007c81303690e9e1ad4c1b364e14cc1ac2bacf873c8ee9f767f04a00ddcc95db6636b7e8d5a25535e3738ff5fd0643676714cffb860989b36cc19cd789b710be4142f01781a9148e4598eb0ea6536695e3216d48238f5b4515d5b23e5b26654ceffe805ad191166f781ee4b00be83e8cee8b3f688614032be45bf89fa8d363c4d188d48b924734f43d7fdeb7de598a6de80c780c95c6abeca96fdcee4d44870614618101406a43cc573453f03dcc91506a40f4806419379391d52ae8b1ac6c68d068441b90b263514dc873010547dd0a4d6ab9e97d75ee73130dda001770d067c1a98598781e5753068322eef1bc624b9bcabfbc6c319b8b20e0346e5322fa74334b158f6f70fe92b323f7a7e94ccad08714d0d78e756ce77303361c89c6bafe61f6a107abdda4b3f311a913ba1e0aec180a8743d06246339dfb25e361dcc5cd42fe3c57345d2316570831ac81a0d18b506bf7c3c5507ef0a41592f7d24c094341fb990f26e7e3503d2a9bc761a30c94c4e49b0e3954be5351911bf85330572c4dc8eb9a0060c035e4d830c985a7a1a19a77fb3410d9879095e7c5f8fcbad98cf3532b033b28b23ac0a4df252b0d349e6b2ceeb6ce78b2be8aecc0b4a70dbb1c961530687ec3ed07d596f605b647b66387387a4d7cbe565791ebbe06fa31e1ae772b444e5321f1c1f1c321f29233639c53f03d80158684ef7a5af8a402478e1fd820f83c1bdf9c07d2f2acfe7f2a4638265e97d1f0813b1ced8ef013ca63f46f7c48e793b6b08e2fb8cfa0a2835ce0cfbd19739c9546f6a31d41a3a0c6093fc33da94d897381d8fc77b5a5a5b906c4dc2a93be8418f46ab070e34ba707118875761707db69645124964eb5924ad24b2c822594fe2f5b9d7ef9dfdd3d9776767677f03606ee5ff80a536479f8bfe9c33bc9aea4d7dce5bfc22d5975a60950b82e9fef457c2545f6a81b71ab037f505e73997d897180d3f1e4e02f8b6fc2558fddf10f8a6b2d45335d45a14146aa8e1ff801b6af5da7d001500f300aa000800ff01b9f4d3155b80cf610000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="recibosprovrecibos_provimage7" >
+<data format="PNG" length="1830" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006ed49444154789ca557616c5b67153d6ddeda17e128cf5a329e57ca92492d75e936123ab52fcbd05caaaeb45463410cc5d354cddd24302a6c7815036708944422ca226d528bc89a4e4c8af9e1ba198a8c9132d903a7764752bb25c56ee5805b32e41877738ce739afa99bc38ff74cea34592373ff1c7d7edfbbf79e73bfefbeeb1a546b4dcac3901ffe320ad73f4649bd51ad9b9a6a5f149f78f5a586efbc71b264de6715360d2aa50dd39b00611185740ec0cd6afdaed9a4533ca9b848cb0ca9b8484f9c947bb9289e6204b2d20160dd5afc54afc0bd0f1dd97a64fbb67bc280f14960fa22d0fc14d68953b3a6c2032f3da32e143e87cc8520164bb7aa8db1ba09628dece3f8013719c992561f995c206d3e3299220f0c924d6152ec1c3a0d51baf7b35c55a7c00683d8b0f5f08f377fb7ae61fc2c60d807043f00c4af0381b373302cd6a2f65a14f24f0e6e5717b7ec2a5c0cfab150c857156b4533c8f5c3515eef18256345d21624b3241d510deda3642cae2943924d03fef36868dab292abea14b8ff51d3d5070fffc874081bc6c380c1020426815f7d15e8bb04ac7b1cf0bd1b009e6a463a370f71efd6fbaf0a5bf6aaf1f039e473b3ff177900409365b792e4cd0ebdf6f6b0c6dc19d7183ba3647286b4b8fc0cc5c98e13a425494ac7bcff8441de79bbabf55525603036621c82d80e74fd098002f45e006006baa601670bd0331e80f15f7b3070da05b10418df0d43bc76f0f350d52da8faf60980240068771cf667c88e5132b68a02a90c693b45a652a47d848c4c90e28e8e2880c7344fff73b9a6c0eb2549aa6f6e323f606e367d4195e54367fe7815c342335efb7d1cc6bddbd1fbfe1cba2d46745d02d0020c8ccfe1b8cd88dec979189faec50b3f8f424d5f0e00480228ad29ae2ccbf7c54ec4bed7dfd7ef6386d7bd3eff4d926490e402e91ff39345d23bea2533e4905bc36e1f59d49520494780944ff03a8003584bd92549aab3bd68fb19f39c8d4dc54892658c4457c6d04484a49e54861c7ac7c3fe14e91ccbf2c020891d1d5e00cd770daeb42bad1eb7e702498d0649cee898581963e5f59406113d19ef88974c921dc786283634bd8abb95dcf284655f6422f2316fb3542a45924c2697e1cc32d47f8f2592158af9c7fca48bb4bd68fb4032482b36238df96e6557241afbe8f6e04ce9985ca64466154c55ee8be9b782419259d2f1b2e3af92246dbbb3e60d52bd67c41ba9649ead60565e67333ae68b95982d563c4fe9cac4e25af6fe40884c91b6e76d615110e58a04ecdfb7fff4339997d7591df33a1697617ed9be54a5125e1fc904a9ec5606509e17448358cb0ccb622d31d76b59665266562c075bc5cacfcb8a94df2fdf96619787f6a38e5908780400e0d9e1d9e6f5719ee4d2e92ea75356a05ce332b33097ee7f96f48e78c814e9710f6b7b47bdacf0a76328182233a4f3b56ecab26c038075e66de61df170fc7ce06fe18d7b1e6f4374328ad6475b11bf7c15dbcdcd98fd7016a6cd2684cf45d176b9155dd7bae0509de8452fe605112a8c50851f200717806781d22948380251ed81515021cb125e79fe1584af44d1b6b315aed367f0ec956fc374d2742c9d4ebf014992ea870687fece056aa7956464225691792c4e167d45f6ffd2c9ec04a9bc497aa7c896416d26b4b8c95046434b8a54ded16644731fd9e226ad9d56728cf4b83d6482b41f75dc900c9215404d8daaaa370cb586fbc47ae3d7b6b6352370368cb6c75a119d8cc2f4904957c288b7de7b0bd3c90ff1b66a42db0f4d786f02303d0dd44d019b0f0297a680c62781ba8b40e337b4b5f11070f94c14eaf4fb0826dce8127f819e8b3d98fc4bf8dc95c495df02486b0751141b39c649af4febed0c9495d06fa6dee1864642cc92f4e4b5e370fb245424e998d27142fbddea2687c748a5d3c1e268918e634e46be19f98728889d000c95bd4092cc8e979de73d6e8f76b07c7e72413f382423e1109d19f2b8de641c53a44347927426c86e6a9fe422497b90b46548736f922d9d455a3badb7949dca9f21e019002b0faaa2206e0aed0ffdbabfafff53a6f45e9ed7db695e9b7a49b23ba105e99e5a5a9364b77e7bba75456c2364cb0429ed77cc4992d403e0913b98af60822449ed4abbe537f6a3d9e9febefe5b1c24ad6f4658243934a3330fea9fdc09d2a96391a423bcf4dc9e275b06b214f7772701b4de2df01d8900785096a46f99bfa2f48792548f27c8545eab6d32435a47c85886ec70939132a6c80e17194b69fb420952ec1cfe0f04515929c89afe3e89bbed9d2dcff5fc4efdc888b9f41f0aaa7a30a7cebd3e0755cdab6aee13a8f345b5942b8910a10aa811c5d7374218a8931a7b1a4439f0c55c618f2177daf41c7269575509a04969174bce5d6aee850cd4dcbf51523f015000f0290015c00d2c8d59eb75f53602a883201ad1d0fc2514e6aea1901ec75ac7b115ec1eac75865cfdfd3bc6b1ff02ede7de2227200ef50000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,facturas]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>recibos</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Recibos</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QFrame" >
+<property name="name" >
+<cstring>frmBotonesRec</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>40</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="frameShape" >
+<enum>NoFrame</enum>
+</property>
+<property name="frameShadow" >
+<enum>Raised</enum>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>4</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>toolButtonEditRec</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>recibosprovrecibos_provimage5</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Modificar registro (M)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para modificar el registro activo de la tabla</string>
+</property>
+</widget>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>toolButtonZoomRec</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>recibosprovrecibos_provimage6</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Ver registro (V)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para ver registro, sin permitir editar</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>SpacerRecI</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>240</width>
+<height>16</height>
+</size>
+</property>
+</spacer>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>toolButtonPrintRec</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>recibosprovrecibos_provimage7</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Imprimir tabla (I)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para imprimir los registros de la tabla</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>SpacerRecD</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>308</width>
+<height>16</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbRecibos</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="tableName" >
+<string>recibosprov</string>
+</property>
+<property name="foreignField" >
+<string>codproveedor</string>
+</property>
+<property name="fieldRelation" >
+<string>codproveedor</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fdbIdSubcuenta,textChanged(const QString&amp;),fdbCodSubcuenta,setMapValue(const QString&amp;)]" >
+<connection>
+<sender>toolButtonEditRec</sender>
+<signal>clicked()</signal>
+<receiver>tdbRecibos</receiver>
+<slot>editRecord()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditRec,clicked(),tdbRecibos,editRecord()]" >
+<connection>
+<sender>toolButtonZoomRec</sender>
+<signal>clicked()</signal>
+<receiver>tdbRecibos</receiver>
+<slot>browseRecord()</slot>
+</connection>
+</xupdate:insert-after>
+</xupdate:modifications>

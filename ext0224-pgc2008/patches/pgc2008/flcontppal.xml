@@ -1,0 +1,69 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[co_epigrafes]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subgrupos&quot;)</xupdate:update>
+<xupdate:append-first select="/ACTIONS[ACTIONS,1]" >
+<action>
+<name>co_gruposepigrafes</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Grupos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>co_gruposepigrafes</table>
+<form>master</form>
+<formrecord>co_gruposepigrafes</formrecord>
+<scriptformrecord>co_gruposepigrafes</scriptformrecord>
+<scriptform>co_mastergruposepigrafes</scriptform>
+</action>
+</xupdate:append-first>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_secuencias]" >
+<action>
+<name>co_codbalances08</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Códigos de Balance 2008&quot;)</alias>
+<table>co_codbalances08</table>
+<form>co_mastercodbalances08</form>
+<formrecord>co_codbalances08</formrecord>
+<scriptform>co_mastercodbalances08</scriptform>
+<scriptformrecord>co_codbalances08</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_codbalances08]" >
+<action>
+<name>co_correspondenciascc</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Correspondencias entre cuentas 90-08&quot;)</alias>
+<table>co_correspondenciascc</table>
+<form>master</form>
+<formrecord>co_correspondenciascc</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_correspondenciascc]" >
+<action>
+<name>co_cuentascb</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuentas por código de balance&quot;)</alias>
+<table>co_cuentascb</table>
+<form>master</form>
+<formrecord>co_cuentascb</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_cuentascb]" >
+<action>
+<name>co_cuentascbba</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuentas por código de balance para balance abreviado&quot;)</alias>
+<table>co_cuentascbba</table>
+<form>master</form>
+<formrecord>co_cuentascb</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_cuentascbba]" >
+<action>
+<name>co_ejercicios</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Regenerar cuadro de cuentas&quot;)</alias>
+<scriptform>co_masterejercicios</scriptform>
+<table>ejercicios</table>
+<form>co_masterejercicios</form>
+<formrecord>ejercicios</formrecord>
+<scriptformrecord>ejercicios</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

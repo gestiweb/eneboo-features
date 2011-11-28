@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_clientes</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de clientes con todos sus datos de contactos&quot;)</description>
+<table>i_clientes</table>
+<form>i_master</form>
+<formrecord>i_clientes</formrecord>
+<scriptform>i_masterclientes</scriptform>
+<scriptformrecord>i_clientes</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_clientes]" >
+<action>
+<name>i_proveedores</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de proveedores con todos sus datos de contactos&quot;)</description>
+<table>i_proveedores</table>
+<form>i_master</form>
+<formrecord>i_proveedores</formrecord>
+<scriptform>i_masterproveedores</scriptform>
+<scriptformrecord>i_proveedores</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

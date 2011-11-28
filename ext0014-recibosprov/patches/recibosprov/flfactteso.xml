@@ -1,0 +1,35 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[vdisco]" >
+<action>
+<name>pagosdevolprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Control de pagos y devoluciones de recibos de proveedores. Es posible escoger la cuenta bancaria en la que se efecturará el pago del recibo. Si se trabaja con contabilidad integrada, se realizará automaticamente el asiento contable correspondiente al pago o devolución&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagos y devoluciones de proveedores&quot;)</alias>
+<table>pagosdevolprov</table>
+<form>master</form>
+<formrecord>pagosdevolprov</formrecord>
+<scriptformrecord>pagosdevolprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolprov]" >
+<action>
+<name>recibosprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los recibos de proveedores se generan automáticamente a partir de las facturas de proveedores. Según la forma de pago, se generan tantos recibos como plazos tenga el pago. En los recibos constan todos los datos de la factura y el cliente, y un listado de pagos y devoluciones&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Recibos de proveedores&quot;)</alias>
+<table>recibosprov</table>
+<form>masterrecibosprov</form>
+<formrecord>recibosprov</formrecord>
+<scriptform>masterrecibosprov</scriptform>
+<scriptformrecord>recibosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosprov]" >
+<action>
+<name>seleccionrecibosprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta acción proporciona un formulario para seleccionar múltiples recibos de proveedor que incluir en remesas y otros documentos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Selección de recibos de proveedor&quot;)</alias>
+<table>seleccionrecibosprov</table>
+<form>seleccionrecibosprov</form>
+<scriptform>seleccionrecibosprov</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

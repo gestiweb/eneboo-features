@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_recibosprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Recibos de Preveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Listado de recibos de proveedores&quot;)</description>
+<table>i_recibosprov</table>
+<form>i_master</form>
+<formrecord>i_recibosprov</formrecord>
+<scriptform>i_masterrecibosprov</scriptform>
+<scriptformrecord>i_recibosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_recibosprov]" >
+<action>
+<name>i_resrecibosprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Resumen de recibos de Preveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada línea del informe contiene los datos de un recibo. Al final del informe se añade la línea de totales&quot;)</description>
+<table>i_recibosprov</table>
+<form>i_master</form>
+<formrecord>i_recibosprov</formrecord>
+<scriptform>i_masterrecibosprov</scriptform>
+<scriptformrecord>i_recibosprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

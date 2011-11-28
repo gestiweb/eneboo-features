@@ -1,0 +1,46 @@
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin='10' LeftMargin='20' PageOrientation='0' PageSize='0' RightMargin='10' TopMargin='50'>
+	<Detail Height='125' Level='0'>
+		<!--EMPRESA-->
+		<Line Color='100,100,100' Style='1' Width='1' X1='0' X2='370' Y1='0' Y2='0'></Line>
+		<Line Color='100,100,100' Style='1' Width='1' X1='0' X2='370' Y1='80' Y2='80'></Line>
+		<Line Color='100,100,100' Style='1' Width='1' X1='0' X2='0' Y1='0' Y2='80'></Line>
+		<Line Color='100,100,100' Style='1' Width='1' X1='370' X2='370' Y1='0' Y2='80'></Line>
+		<Label BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial' FontItalic='0' FontSize='12' FontWeight='65' ForegroundColor='0,0,0' HAlignment='0' Height='20' Text='Inventario de Almacén' VAlignment='1' Width='300' WordWrap='0' X='1' Y='100'></Label>
+		<Field BackgroundColor='220,220,220' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='empresa.nombre' FontFamily='Arial' FontItalic='0' FontSize='10' FontWeight='65' ForegroundColor='0,0,0' HAlignment='1' Height='35' NegValueColor='0,0,0' Precision='2' Text='[empresa.nombre]' VAlignment='1' Width='260' WordWrap='1' X='2' Y='2'></Field>
+		<CalculatedField BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CalculationType='6' CommaSeparator='44' Currency='32' DataType='5' DateFormat='11' Field='empresa.logo' FontFamily='Arial Narrow' FontItalic='0' FontSize='12' FontWeight='50' ForegroundColor='0,0,0' FunctionName='flfactinfo.pub_logo' HAlignment='0' Height='34' NegValueColor='0,0,0' Precision='2' Text='[empresa.logo]' VAlignment='1' Width='109' WordWrap='0' X='260' Y='2'></CalculatedField>
+		<Label BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='18' Text='CIF/NIF' VAlignment='1' Width='60' WordWrap='0' X='5' Y='40'></Label>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='empresa.cifnif' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='18' NegValueColor='0,0,0' Precision='2' Text='[empresa.cifnif]' VAlignment='1' Width='80' WordWrap='0' X='45' Y='40'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='empresa.direccion' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='18' NegValueColor='0,0,0' Precision='2' Text='[empresa.direccion]' VAlignment='1' Width='235' WordWrap='0' X='125' Y='40'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='empresa.codpostal' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='18' NegValueColor='0,0,0' Precision='2' Text='[empresa.codpostal]' VAlignment='1' Width='45' WordWrap='0' X='5' Y='60'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='empresa.ciudad' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='18' NegValueColor='0,0,0' Precision='2' Text='[empresa.ciudad]' VAlignment='1' Width='150' WordWrap='0' X='65' Y='60'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='empresa.provincia' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='18' NegValueColor='0,0,0' Precision='2' Text='[empresa.provincia]' VAlignment='1' Width='100' WordWrap='0' X='215' Y='60'></Field>
+	</Detail>
+	<Detail Height='85' Level='1'>
+		<!--ALMACÉN-->
+		<Line Color='100,100,100' Style='1' Width='1' X1='0' X2='580' Y1='0' Y2='0'></Line>
+		<Line Color='100,100,100' Style='1' Width='1' X1='0' X2='580' Y1='75' Y2='75'></Line>
+		<Line Style='1' Width='1' X1='0' X2='0' Y1='0' Y2='75' olor='100,100,100'></Line>
+		<Line Color='100,100,100' Style='1' Width='1' X1='580' X2='580' Y1='0' Y2='75'></Line>
+		<Label BackgroundColor='220,220,220' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial' FontItalic='0' FontSize='10' FontWeight='65' ForegroundColor='0,0,0' HAlignment='0' Height='20' Text=' Almacén' VAlignment='1' Width='100' WordWrap='0' X='1' Y='1'></Label>
+		<Field BackgroundColor='220,220,220' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='almacenes.codalmacen' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='65' ForegroundColor='0,0,0' HAlignment='0' Height='20' NegValueColor='0,0,0' Precision='2' Text='[almacenes.codalmacen]' VAlignment='1' Width='479' WordWrap='0' X='100' Y='1'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='almacenes.nombre' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='20' NegValueColor='0,0,0' Precision='2' Text='[almacenes.nombre]' VAlignment='1' Width='400' WordWrap='0' X='5' Y='25'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='almacenes.direccion' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='20' NegValueColor='0,0,0' Precision='2' Text='[almacenes.direccion]' VAlignment='1' Width='350' WordWrap='0' X='5' Y='45'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='almacenes.poblacion' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='20' NegValueColor='0,0,0' Precision='2' Text='[almacenes.poblacion]' VAlignment='1' Width='200' WordWrap='0' X='355' Y='45'></Field>
+	</Detail>
+	<DetailFooter Height='15' Level='2'></DetailFooter>
+	<DetailHeader Height='20' Level='2'>
+		<Label BackgroundColor='220,220,220' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial' FontItalic='0' FontSize='10' FontWeight='65' ForegroundColor='0,0,0' HAlignment='1' Height='20' Text='Referencia' VAlignment='1' Width='99' WordWrap='0' X='0' Y='0'></Label>
+		<Label BackgroundColor='220,220,220' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial' FontItalic='0' FontSize='10' FontWeight='65' ForegroundColor='0,0,0' HAlignment='1' Height='20' Text='Descripción' VAlignment='1' Width='379' WordWrap='0' X='100' Y='0'></Label>
+		<Label BackgroundColor='220,220,220' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' FontFamily='Arial' FontItalic='0' FontSize='10' FontWeight='65' ForegroundColor='0,0,0' HAlignment='1' Height='20' Text='Cantidad' VAlignment='1' Width='100' WordWrap='0' X='480' Y='0'></Label>
+	</DetailHeader>
+	<Detail Height='20' Level='2'>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='stocks.referencia' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='20' NegValueColor='0,0,0' Precision='2' Text='[stocks.referencia]' VAlignment='1' Width='95' WordWrap='0' X='5' Y='0'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='0' DateFormat='11' Field='articulos.descripcion' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='0' Height='20' NegValueColor='0,0,0' Precision='2' Text='[articulos.descripcion]' VAlignment='1' Width='375' WordWrap='1' X='105' Y='0' ChangeHeight='1'></Field>
+		<Field BackgroundColor='255,255,255' BorderColor='0,0,0' BorderStyle='0' BorderWidth='1' CommaSeparator='44' Currency='32' DataType='1' DateFormat='11' Field='stocks.cantidad' FontFamily='Arial Narrow' FontItalic='0' FontSize='10' FontWeight='50' ForegroundColor='0,0,0' HAlignment='2' Height='20' NegValueColor='0,0,0' Precision='2' Text='[stocks.cantidad]' VAlignment='1' Width='95' WordWrap='0' X='480' Y='0'></Field>
+	</Detail>
+	<DetailFooter Height='25' Level='1'>
+		<Line Color='100,100,100' Style='1' Width='1' X1='0' X2='580' Y1='2' Y2='2'></Line>
+	</DetailFooter>
+	<PageFooter Height='5' PrintFrequency='1'></PageFooter>
+</KugarTemplate>

@@ -1,0 +1,153 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[co_epigrafes]/property[property,3]/string[string,1]/text()[1]" >Subgrupos</xupdate:update>
+<xupdate:update select="/UI[UI,1]/actions[actions,1]/action[co_epigrafes]/property[property,4]/string[string,1]/text()[1]" >Subgrupos</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[ejercicios]" />
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_asientosejer]" >
+<action>
+<property name="name" >
+<cstring>co_ejercicios</cstring>
+</property>
+<property name="text" >
+<string>Ver &amp;todos</string>
+</property>
+<property name="menuText" >
+<string>Ver &amp;todos</string>
+</property>
+<property name="toolTip" >
+<string>Ver todos</string>
+</property>
+<property name="statusTip" >
+<string>Ver todos</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="pgc2008image11" >
+<data format="PNG" length="2122" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000081149444154789ca5975f6c1cd515c67f3bbe867bcd98ccc03aeca871654313d54151eb48a8b5a5b4c4341405282511aa1a545582d73ef090b608a1be94d28ab6a2a0d2171ad49606286985f8a3aa088a54d22640c00bd8f586d862166cb22bc5648778927b12ae77fb30b39b75942685fae59377eede73beef7ce79cd9c2af1ff82d560414e02c28030e8c06ad35db6edec6d9fe440471a0614c9c3c3c393df37072a4fe80569a44243be4049406a569240995b9197050ab55a91f9cc1029e755970e904b7a0c0ba3c90931c391b7e11cd63c36b870727ae1ebf47fbc16d8908ba3bb81374fbfefc3ea334d681013c9333d739f37612466581b4d23972266ed05aff292a46975a4b1286e189ad5b261e2c05c177a4131c503a534a99ce7dd60946d1568015ccdb4a9c5301c767503c1a15c3cbacb309d06397eca930088f8f6f1e7f40fbc10da7cb7a5a01ddbe6fa5027a05f3b612466587275f99445241d2842449905448d2e4ab51105d091c33180f2c469982157b322a46cb5b374f3c1206c184cd83b51590b6a22b1538970734f523756a49a3633e8b00b4acb327818275b605a695215e236d48548a7a26368dff2ed4facb56fe4f0f00940feccf9e917dc93a5a289307a75fc406c005380a5ae942431ac74b6b86fd894d134f86bebe4a9c7c3a0f649967811b627305e8375a7f0b674fe2e81758a515be38b9549c0422d28bc393b49196d694fac7368d3daa75f0854fe9813c89dcfdd67171a8f51f4bc5600be00181a6c3ac07451fe8011c2170a138964c2a979792f8590da39fd0031660581cab70204efa425f3f1c04c1b5c029715c9cd5d4923fcf0b2605147da274313e585e3db3e7a11e992e0f8e90ec097cb3fe7ff280384be847df1d1b1d991e1d197e25f0f51d5a850f06c5e846141608b53285f65c10048deef804ad691cac78b5a7765d88e0695fb774bd76c54431782ad07a5db707d44a0f18442c61106e1bdd30fc9ba818f489c8e78362e9fea81480582b4890c998bb9af69cc815509adac10af19e8772420014d010ef7f69ddc681e8cff5fe609b55cc19778607c459a220dc36363af287a818f53552c1a289d64468ad1127464341f2597f36e6b56a8578cf2e241f4446698cd6248b425cad3373a0bc616ba0ff120651f1b407f25a86da7c6d74c3c82351105cd448b3de8f4a115a693a41f3608924e0726c339fab103ffe10922468dd6e62a151afb3af5cce7d0614a3e3dad7ab0cf4640a28087578cdd8e8e89351295ad5100134d19ae136f3ce4ea07b4738320514d4e62ad4f7ecca82fb1aa30200262b312f1da88080d6868db7ec284fa672af163991790021f4f5f8c8dae127a25210ae60aebb98b76b9db6ddbec270c47b76912c66cc9324a13c5f2349121a69d6ff28c3c69b77cc4c26726f7db672a89e24c70c2cab5007d78c8e0c3f11958262767957cda5cb608e6cc5d25604446b6affdcc7ee1f7dbfd3bef9acccb0dd5dc0c66fef787b32917baa53e5725c8d6b3832054a51f0f3a81414c58155ba53f32449f26d462709dd1d5c696aaf4fb2fbaeefe50a81a6ab9bf2c90796f15b6e7f675f22f756a7ca6fc7d5b886d813798af44c5c3df1c291e3ee43494f46ca73979abefe021e2814cee5d11d28a590a6a03d8d689fda6b2fb3fbce3b308053a0bcd3c171967e65709e63fc96db0fed13b9a7fa56e58db83a7b18b1c72d6094c1361d3d6b47d6369ed9f3d8cbf3f5dae37387aa87f52a7d5dffc5fd05adc03533e60a859c12b407a214b5c997d97de7ce8ed8788073a7e709e09a8ef1edb756f79d723fae4f55de987db7f2412738609b2e53a076b846fdf02203ab07d4d66f6efbe14dd75dbfae76b8c672b380520ad55480a0ba99dfbd337b0bf0c078865e1cbd9ec1398b51865ecff195edb7be7700fd9385b7a6f6c5d5f803776269a99b791bbdd00f894a51b0e3b6db9ede7ef3f5d75b67191e1aa691da7c7365bd2f0a6aafbfc4eebb7612426796e73b03db5ee1ce3276e3f6da7ef4cfe2a9f2ab956aa5266923ed307776057a923610275a632ec26619028c0c0dd3486cb6118b251a6f4eb2fb073b89f2ed18e6e7ba310036dfb8f5e87e1ddc174f95ff11cfc5ef232c59681965e828d0853d7e10e09c4bf7ef7de1d9d985daf1e265c1c8c0eacffae0e8bfc0102f1e2179733fbfbffb0e220ff2b987c365fb3d478d6364f3c4b1bdc1e07df174e5c5f8d0ec0722f29175b6d55df333b1270a221c8e42b35766e72aff2abf5a7e7e7ea1f671140dacebbf64c00c04218b07f692beb68f14f09581a6c35706d774f8187c1c1bb66c6decbd64ed4fe3e9a9e7e24a655ed2c647b6e95a67d6fc4cecf1033fcbe8946bf5365d2b39967e38fb6e656f79bafcba7384d140b876706c13c68374f200d274280cd2b46805a1e718fcd278ba77f5c82fe3e9f2dfe2d9ca821c6b7c64a1d5ee86f328106435f1c042abd7eb5d5e3ab1f4b11c95f7a6de2effb572283ea87ad5e0baafdf14f93864a64cea3994678870f8a3e3c7a72e1ffdc5fc4cf9e9d9772a0b92cad13673770ee65d0a644bc3b93c89a603688993e6f2a9e58f170e57672aff9e7a7ef1f0c2d2e0966fac0f2f58eef3e7aa0c7a96c52bd69f8ad78ffd2a9e2e3f53a954e62595a3e7abf97ff540ae009dccb343cd5ed7bb9ca6e9b1f8fdf895a9b7a65ed4578efb618f7c6e16c5e255d7de1f4f579e8c676717d263e987d6d9e6f9189f8985a1a1a1f6ab7667d576d6896af7bbc1627b8c362af0037f64c3e80d3a3097d5176a7fafc595f92491a3d659d7b586b209c919f79d050b2343432b3f54261f12f9275dffdbec17500f8adec00ffac4494b5259b2cebacef73e21168686863a0ba7fda2d8c9bc73b86bf2658f0a40c140cb42eb5c0ccf87ff019f674ab97427d7ac0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_amortizaciones]" >
+<action>
+<property name="name" >
+<cstring>co_gruposepigrafes</cstring>
+</property>
+<property name="iconSet" >
+<iconset>pgc2008image11</iconset>
+</property>
+<property name="text" >
+<string>Grupos</string>
+</property>
+<property name="menuText" >
+<string>Grupos</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="pgc2008image12" >
+<data format="PNG" length="1011" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003ba49444154789c95955f685b551cc73fd15b39175ab9c131721ffa908ab00d064b5941ba2783832d15a18d7b581e94ad730f1dcac4a060874feb5ef64705ab5096174bbb87cd2868eb982ec2d8da87510ad22603a1299bf4863292cb2cc981def2f3e12637896d1d7ee192fbbb39f7737ee7fb3bbf734322424303c707ce8f9c1d7967f5c9ea633cb66a5e2d04a03d8d4289d6fa250c5e9ebe99fd2212b1eff487f3d896497e2342c131c9fd3e13b00c5a94389a786f6070e0107004804da87935f00238ee864bfc68e258fa93f479e02bbc1afee4b556142fb406958dcadf0057ae5dc1293a54dc0adad5b84f5db4ab29b925b486ca5387eb1ff67fc926d730000f9461ee0ef68740b43bea676828341a0cd0f831ca1fe816739c1b8c7e54d37ae2b91907961c4b108944c000dbb2514a61290b00cb5098968d4394e2a345126fc6dfd79bfae2bf19ede0bae3b3b767d19e26f75b8ecc8d0ce1ce3018a094bf02ab53512446ceed67f6110ca58647b5a7cfee806a975b715128569fac525c2d0204b62814612b4ce2781257275040784f9873a7b8044cec0856750353275398ca247522e57b0cc12f06589d0aab53617b161ab0ed30aa53859e6b45ee7e2e880b4b8520e3d6c99bc9f8b2ba2c6f77705d25a744c5ada00c45a15008260ce04af9cf1ad7b6b5efe271ea440ab3cbdf97a74f9d0608626a7ed334266928acc26df18e56b8ae0b80537428fd55820ec82fe629fe59dc9e65fd3ea8c18ee0ba667f9a854dc8fe9225339901607a729cf4bbbd24fb4db2df8e61d63b6dfef634c998c9d4a5e1579231b327808848705dbe7a392722b2f6784d444496ff589607f71e8888c8d0eb965cbf3a2ae5b515193aaca45aad4ab55a95a14348796d4dbe1efbf8d9d061556eb0da3daed7d58ed8001c3878a0e53fcdf00717a103a2afc598ff799af85bc3d028a8a182f7b759d1585e6632039b30f5dd14173ebf1080a726a700b0ac30958ae3efe94884336ff7307b63ac0ba3d9206de01afe41123b18830eb0bb6d62fb62f54229a2d168305629c5cc8f199461f2fdc31aa3130beb787cfa9fc5ebedeb0520fe469c642a1980f6eff3c18b0f730c9c4c631a609a56f3c51663dbad50e68b00333ff85f82f16fc6c9fdea77a1d51de34ca287649fc9febe38f9a53cf1c1619401c998c9d8c891bd784d2bda76c5adecad651191eab3aa88882ccc2dc8caca8a8888dcbd7357caeb6569a85aad4aabcaebe5ad5656dbaec8deccde8b46a2af3a25a784c196d61aa7e4905fcafbc7e8fd1c0a85f6da9a2164efb1f7cecdcfcda73f4b371fb67e4c43a1b603eaff28e42fbec9fa0777fec696016f03740000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_gruposepigrafes]" >
+<action>
+<property name="name" >
+<cstring>co_codbalances08</cstring>
+</property>
+<property name="iconSet" >
+<iconset>pgc2008image12</iconset>
+</property>
+<property name="text" >
+<string>Códigos de balance 08</string>
+</property>
+<property name="menuText" >
+<string>Códigos de balance 08</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="pgc2008image13" >
+<data format="PNG" length="1764" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006ab49444154789ccd975d6c1c5715c77f1ecf3ab3665d76d375d92d7659278eeacd175d2342bb828abaa2a2091f924d249ab4486d5e4001a9c2ae78208587a80f48b5e0a11f52a51451145744ad7968eb50a54a68a0598a5aaf881daf5b9bec34de66279b89776a4f3d177bbae6e1ce64675d37108404571add997bce9cf3ff9f7bceb933f03f1e4dd7a1db9249706b26ceb664944de9383769211460b57099f9a2c97b05937339830260ffd700dcd141e6c06d3cb07b87b627d99de8a6b35721da055aa2ae240cb0cb30975fadeac5f7c7f2e2b5d1497e3b3acbebc047ff11804c9c9d4fdccbe1ecedd13d64f63593e883685a0ad530b8800ab84efd1907ec2218a7a0f022e37fd6738f9ee0d098cec9eb01d074f8abfce4d037b59ff3c57d1addfb414d00025c712d321e380dd0000bf451c81fe5e84bc6d3f7bfcc23c087ff0a80f6c25e8e0c7c23b58fcc10c43375a757997af3dab156ee3aa0c564442687193f9e7f63e079bea3db189f04a0e985bd8c0cec4d7f97ed8310e90251f5c24ce32c04940a381eb870340189b404fb317d4dae4f0f337e3cf7e6dd4f73af0555df69b37f73f8cbfcecfb7b133f62db41895c9850035cbb711636b444a07b8050aa8fd02dbba0b51dac592f126bf45d0b1420ba93e4a7663a3a316f199de2c506009938bd471fe4d77cfe7b2a376c85650b2a33524309c3b22de92c0b503c7a9d59d810860d6d92e142016a9edc155073e5736546025063d0dacece96891d33e7c5f484c939902206efe2c774a535225bc1c8e3cc8ee36869196a5196fb29aa803f5b6b12c001b71c903be056c12ae344d238a522e827414b426786c1bb18045a009a131a9b7ff56d1e0f6ffb96268dc509ed7a98d0963ba1a6c2c533a0364966352123a1a8f0996cddbf98032b2f59e3e9091b5ab710fac201429bfa6049c0421122ed2497f39f3d3de99ed61738af643bc8c63aa251d024fa9edd104b4ac35d591c3526d9b955ef2a03eb94a3a8029e0e55b0abd0dd2f65a1306cef97d58903c904d914770328e938db8844bdacb56076a4c16e78fb01b02dcfa95f926bb74080eaf50955806540aa1fda627595d20888a2bc8fc4c874b21540112a115c0bcc822c1b330fc557ea2fb67741bc4fd63316b8866481d388c1b5a45c18b271a5f6d4658b45288d49a07641e6954a1408299a4a13b6057339981b83c5324c3f052bd5ba819e7de0c6bcf03a9eb340337205a88e7420aa90da0fa10038fd711005b0cec0e51cb8069a0a4093220432fc081096178131f8cb50dd405b0c3afac136244b553446c0df3eb78ca3656589fa63ee08e84f49e6ae0121d9ac842bc58abf85a8dee5b7f2e2b370f94cddd08efd409764228a6b2250050a609509f70cd6d757aaa00fcb7b2d60dff709288ecbead5a456838c80c943348ced3f054b203b693007845c4f1cac5710406958028e04ecaac022588e3ca615e16234f4151f691b503e057347ebb2ce2c241e5aa70a2cd052d0c0be08c6709db16f57050c28db5c0256945c89a9b29036ae2afb091406a60f35b2ed39207320bf0926ba602209a521481d8470605bf421199960d835a00c8e093983b3c0aa5230393b6ef077c7427e48f9367cb4ae0e338fc9b5cb47a0b4df4b4243ca30bc1ef01894bdc45d3c0962b49e4f2a721b04300d058bc5719d37401e4636d079cf16eec082d00dc0a79127598bf7b29880f96350794686bf25c048f1f45c012207f66f60e9042c9b52e6dbb1813f41d5869173fce1a5599e014433f0d144852b5fd9cc3dc908d1b009b402ed9e71155004d40c79df1a70aa7ab3afa77af9e09af584d66490781daa26949759fce1cb3c6abbfccd8f00c07cfe222b0369be2640512bb25cb9311042d67116ac1a2570f9eb0093c029282fc86f931fbcc213f90acf01ff080270cd258a672b6c18d8c1eda206ee3c84fd8fa73620ea01580bc27f6ea111940dbc0dce5b600ad02230f42ac78e4df10ba0ece3bbfa45047ca85bbc337e81a6becdf4865a69b697c02d41f8027011580938f5e7602e28c092d475de0473caeb780a3c7c9cdf3d7796c3c00cb0ba1e00800ff405ce8dcd72297d23b76e8913a5050c012c48c3a179cf491332c1148fed3cf02e9087ea38a816682a142a5cb9fff73c79e23cbff4346a41879ff45fb011d8d5dfc37d0f65f87a6f07376978ddd305cd2b2fcdabefb04abd9d23e7299d8527739c7af62d9e17701ab8b4d6f9b500800cf0cd1af46612dcb9bb872f653ad9dc9b606334427338d8d924b05ad1e483333aef8de479fba4ce1f85e0afc01c1f3bbbff3d0041201b819b815442e373c938094d25a2a9f2df50c052d9a4a2db5cc045074ac0956b39be1e00c11142a6dc062477ff7d1759560299aaabebbefdff38fe093b97c5efd1dabbfb0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_codbalances08]" >
+<action>
+<property name="name" >
+<cstring>co_correspondenciascc</cstring>
+</property>
+<property name="iconSet" >
+<iconset>pgc2008image13</iconset>
+</property>
+<property name="text" >
+<string>Correspondencias 90-08</string>
+</property>
+<property name="menuText" >
+<string>Correspondencias 90-08</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[ejercicios,activated(),FLWidgetApplication,openDefaultForm()]" />
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_codbalances,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_codbalances08</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_conceptospar,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_correspondenciascc</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_cuentas,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_cuentas</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_epigrafes,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_gruposepigrafes</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_subcuentas,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_ejercicios</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[Ejercicio]/action[ejercicios]" />
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ejercicio]/action[co_asientosejer]" >
+<action name="co_ejercicios" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Financiera]/item[item,3]/action[co_codbalances]" >
+<action name="co_codbalances08" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Financiera]/item[item,3]/action[co_codbalances08]" >
+<action name="co_correspondenciascc" />
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/menubar[menubar,1]/item[PGC]" />
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ejercicio]" >
+<item name="Cuadro_de_cuentas" text="Cuadro de cuentas" >
+<action name="co_gruposepigrafes" />
+<action name="co_epigrafes" />
+<action name="co_cuentas" />
+<action name="co_subcuentas" />
+</item>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]" >
+<action name="co_gruposepigrafes" />
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_codbalances]" >
+<action name="co_codbalances08" />
+</xupdate:insert-after>
+</xupdate:modifications>

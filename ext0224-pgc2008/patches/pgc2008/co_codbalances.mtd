@@ -1,0 +1,3 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/alias[alias,1]/text()[1]" >QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Códigos de Balance PGC 90&quot;)</xupdate:update>
+</xupdate:modifications>

@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[i_facturasprov_codproveedor]" >
+<field>
+<name>i_facturasprov_editable</name>
+<!-- Criterio de filtrado en función del estado de las facturas --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ptes de pago&quot;)</alias>
+<pk>false</pk>
+<type>string</type>
+<length>12</length>
+<optionslist>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Todos&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sí&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;No&quot;)</optionslist>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>
