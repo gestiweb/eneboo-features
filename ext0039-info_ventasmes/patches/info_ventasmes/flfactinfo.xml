@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]">
+    <action>
+      <name>i_ventasmensual</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Listado de ventas de artículos por mes")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Es un listado de artículos donde aparecen las unidades vendidas de cada artículo, desglosado en meses.")</description>
+      <table>i_ventasmensual</table>
+      <form>i_master</form>
+      <formrecord>i_ventasmensual</formrecord>
+      <scriptform>i_masterventasmensual</scriptform>
+      <scriptformrecord>i_ventasmensual</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

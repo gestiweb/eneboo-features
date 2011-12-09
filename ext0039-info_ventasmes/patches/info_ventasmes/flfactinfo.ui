@@ -1,0 +1,43 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">738</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">641</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">738</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Ventas]/item[popupMenu_10]">
+    <action name="i_ventasmensual"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]">
+    <action name="i_ventasmensual"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]">
+    <action>
+      <property name="name">
+        <cstring>i_ventasmensual</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>info_ventasmesimage19</iconset>
+      </property>
+      <property name="text">
+        <string>Ventas mensuales</string>
+      </property>
+      <property name="menuText">
+        <string>Ventas mensuales</string>
+      </property>
+      <property name="accel">
+        <string>Ctrl+M</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image4015]">
+    <image name="info_ventasmesimage19">
+      <data format="PNG" length="1656">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000063f49444154789ced9741885d5719c77f939ed0efc213ced329bc8b23e44222be4b16beb481bc81800d6e6c2c68b26ada82185bb083aba482a6a290842a4657335968db8d4d5c5423183a5d282f8bc43762655ea1e1dd4003f76906ee5b0cdc23b9703fcca9d7c59d79c94c1e4941242e3c9bcbf938e79eeffb9fdff79d7366aaaae251b61d8f74f5ff05076664f79117dbcf9e7a458cab3016112590104c896d3451142b168c4220502a12085a2a20a83af0826a0e3e202f72f0e08ada0efa84aa54c93bdf7aa1ca877fd9ee80c1d8cf77768707a22742a4213445c040cb06382d096d405640d8804ceb49aa20025a809826ae28112c59a10896f16d4508c98b9c50027a377212e4d3d31430ea9d7785925272e240ccb828b112d06c00046020b2907b406075ada4d908c88a124c8016398290158e4ecbe25489662dc9784cd337b9f8d784f456095eff35cd811d622cfdb50c3101ae002b010af4d760b85e0fca3c34055a06a2d980dc43b31180079126ce03c61236023a734da2b980ce5c8b6edb923936b6c94e65c0280ef59695514ee22068402b6c31beadecfa5c932bebd09a057cad8403542055c040e64ad407689e932b8cf3311442e632b400f525180bde153307679e640f4f566f55bf983860c512591011f03942c83873b4ace0d64b824640bac1c0601dac6c3060202ba049405e94c84e18650ef1528388a0ded1698538514d9e2a9f39f2d2916f74f6743e3bf3ec4c545daebe07c0375f3af1c3eabfdc4efffeed8f8f5c3836e92fae2e56f29c9cc7f0b869cfb51e9aabab2babb54275e6a1aa9fa81f1010752232d3dff1c6d717c96fe7606061ef02d977b26f9f35671f374edd8357bf036284b81303d05fe933df9d0760f8fef081f673ef9d23b99c70e2c0095297220800cb6e990b2b17e0237263cd743a276d670de066b37277bc7a9d6ac7c3d2d573a42661e18bc7eba264c07947b29e70f2bd9395bea3af739d33c679378974f8c110e71dd6d8fbbefd953ed6582eba8bb4071191b6b7d89d770cdfafe7f77599b1c938fa8523a4458a18410b6565bdcfd21fce7bfd353fe2263fa9aacaef9828b011697b579b7036c48a25de1f33df9d47bd32df9de7adf525729f71697489beef8187f9ee3cf1fe78327e203dc692d29d3b445a8c5094b18e59713d96ae9c2ff557bcca4d5eafaaca036c510053cb2a224cd8d86060e1f271d428edd9369144acacf508e620a666c0a9e3cde40ca91fd06975186b8218215365e0fa2c5fbdf20ffd25dfad6eddad0100e65e05d42bf97a0e5aefe926fd673f3acbc5d1459e693f4de443544bba73f3f4d79721519e76c718342e31d48478b643a6198109c83427290624694afb7af7c7fd5bfd2d8bd70a6c8bb4699b8808c928a9a9be03c7fc317aa31ebdf40a6939a01d46581f12ce46acba1eaba68720843624d304314a5264a43e45d72c6f1f7cb75afae39b7f9ec6b811912d0c6ce6f384ea9d10fa90ecfb19f1cf23723f62d50d081b09a242680505ac084991d4c57d837a46bb78e3a9df1247fb665cfeb33b531d50d52d0c24a3e43eaa3769ffcdc17779e1ea61b459c38528a98234eaf26c1bb60e6256e0838857e434f1dc3e00d271fad87405cc5d05d42bed5dedbaa239264566b8329c1499457f81d73e3c89b613c4b88d635b68db08a1859880c1b59c63728a8026f93807cfc7c0f4e3783b03aa0ac2962cc06c9dd47bb94f33e910d00223b41a11a1a9b323b9060bf60c87bf7c98435f99476605a7ae0aa3f0c05405eedd6b3ce42e47b5be860d5786756df7ca7030dc921d3fddbfc80f06afd2ea66448d10eb237a97535edbbf48b43baaff57427a23653c1e1bbda57f7aa80218086c40b42bc2a923eec6c47be3fa2cd81b1377639c3af675f711ef8d39b5e734bad226bd01cbbfcb381e9e206ad78b9765c9f0fa90e466c2a12f1df2b9cfa7adcf8e7b1550bf7101dd9605f88d2fdbec06ce1c3c0783360b7b16102b9360d21b29c928e1e8d78ed6606eb2b67d0b5cb195810765c134bb6d59965e3c47e6b2ba88519f29c928e1e8578f526a4940b0e5e0daca40c33eb61951bc3f9e3ae8a1ad84d086e46b39c3c1904132e0f9e79e070fc1a702b88d699ae6cc54079251b29e7e98fe2d5bcf2a3132894cbdf289fa85ab6bbecb903b8253b7b3bda77da77fad5f67153a23c83f33974d95604690cf002de03f7e242ab553f7de1f80196acbdfcbaa2cef73e0ff8fd347edc0bf015066c90aeac4ef760000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_reciboscli,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>i_ventasmensual</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>
