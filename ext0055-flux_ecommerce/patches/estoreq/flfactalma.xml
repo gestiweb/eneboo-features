@@ -1,0 +1,218 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/formrecord[formrecord,1]">
+    <scriptformrecord>familias</scriptformrecord>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]">
+    <action>
+      <name>formasenvio</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Formas de envio de los pedidos realizados en la tienda virtual")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Formas de envío")</alias>
+      <table>formasenvio</table>
+      <form>master_copy</form>
+      <formrecord>formasenvio</formrecord>
+      <scriptformrecord>formasenvio</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[formasenvio]">
+    <action>
+      <name>infogeneral</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Información general de la tienda virtual")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Información general")</alias>
+      <table>infogeneral</table>
+      <form>master_copy</form>
+      <formrecord>infogeneral</formrecord>
+      <scriptformrecord>infogeneral</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[infogeneral]">
+    <action>
+      <name>noticias</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Noticias")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Noticias")</alias>
+      <table>noticias</table>
+      <form>master_copy</form>
+      <formrecord>noticias</formrecord>
+      <scriptformrecord>noticias</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[noticias]">
+    <action>
+      <name>opcionestv</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Opciones generales")</alias>
+      <scriptform>opcionestv</scriptform>
+      <table>opcionestv</table>
+      <form>opcionestv</form>
+      <formrecord>opcionestv</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[opcionestv]">
+    <action>
+      <name>datostv</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Intercambio de datos")</alias>
+      <scriptform>datostv</scriptform>
+      <table>datostv</table>
+      <form>datostv</form>
+      <formrecord>datostv</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[datostv]">
+    <action>
+      <name>gruposatributos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Grupos de Atributos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>gruposatributos</table>
+      <form>master_copy</form>
+      <formrecord>gruposatributos</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gruposatributos]">
+    <action>
+      <name>atributos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Atributos de los artículos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>atributos</table>
+      <form>master_copy</form>
+      <formrecord>atributos</formrecord>
+      <scriptformrecord>atributos</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[atributos]">
+    <action>
+      <name>atributosart</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Atributos por artículo")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>atributosart</table>
+      <form>master_copy</form>
+      <formrecord>atributosart</formrecord>
+      <scriptformrecord>atributosart</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[atributosart]">
+    <action>
+      <name>accesoriosart</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Accesorios por artículo")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>accesoriosart</table>
+      <form>master_copy</form>
+      <formrecord>accesoriosart</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[accesoriosart]">
+    <action>
+      <name>fabricantes</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Fabricantes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>fabricantes</table>
+      <form>master_copy</form>
+      <formrecord>fabricantes</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[fabricantes]">
+    <action>
+      <name>plazosenvio</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Plazos de envio")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>plazosenvio</table>
+      <form>master_copy</form>
+      <formrecord>plazosenvio</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[plazosenvio]">
+    <action>
+      <name>faqs</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Preguntas frecuentes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>faqs</table>
+      <form>master_copy</form>
+      <formrecord>faqs</formrecord>
+      <scriptformrecord>faqs</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[faqs]">
+    <action>
+      <name>traducciones</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Traducciones")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>traducciones</table>
+      <form>master</form>
+      <formrecord>traducciones</formrecord>
+      <scriptform>mastertraducciones</scriptform>
+      <scriptformrecord>traducciones</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[traducciones]">
+    <action>
+      <name>idiomas</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","idiomas")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>idiomas</table>
+      <form>master_copy</form>
+      <formrecord>idiomas</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[idiomas]">
+    <action>
+      <name>modulosweb</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Módulos web")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>modulosweb</table>
+      <form>master_copy</form>
+      <formrecord>modulosweb</formrecord>
+      <scriptformrecord>modulosweb</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[modulosweb]">
+    <action>
+      <name>formaspago</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Formas de pago")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Las formas de pago contemplan los plazos de pago (en pagos fraccionados), la cuenta bancaria asociada y el modo de generación de los recibos")</description>
+      <scriptform>masterformaspago</scriptform>
+      <scriptformrecord>formaspago</scriptformrecord>
+      <table>formaspago</table>
+      <form>master_print</form>
+      <formrecord>formaspago</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[formaspago]">
+    <action>
+      <name>datoslog</name>
+      <alias>Log</alias>
+      <description>El log es un formulario en el que se ofrece información al usuario</description>
+      <table>datostv</table>
+      <form>datoslog</form>
+      <formrecord>datoslog</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[datoslog]">
+    <action>
+      <name>transferenciastock</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Las transferencias reflejan el cambio de material de un almacén a otro. Equivalen a dos movimientos de regularización de stock complementarios")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Transferencias de stock")</alias>
+      <table>transferenciastock</table>
+      <form>transferenciastock</form>
+      <scriptform>transferenciastock</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[transferenciastock]">
+    <action>
+      <name>imagenes</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","imagenes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","imagenes")</alias>
+      <table>imagenes</table>
+      <form>master</form>
+      <formrecord>imagenes</formrecord>
+      <scriptformrecord>imagenes</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[imagenes]">
+    <action>
+      <name>galeriasimagenes</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","galerias de imagenes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","galerias de imagenes")</alias>
+      <table>galeriasimagenes</table>
+      <form>master</form>
+      <formrecord>galeriasimagenes</formrecord>
+      <scriptformrecord>galeriasimagenes</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

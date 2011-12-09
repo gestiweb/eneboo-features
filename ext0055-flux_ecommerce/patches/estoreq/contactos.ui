@@ -1,0 +1,62 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,contactos]/vbox[vbox,1]/widget[QGroupBox,gbxDatosCon_2]/vbox[vbox,1]/widget[QLayoutWidget,layout18_2]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout8_4</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbIdUsuario_2</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>200</width>
+              <height>0</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>300</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                                </font>
+          </property>
+          <property name="fieldName">
+            <string>idusuario</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbNombreUsuario_2</cstring>
+          </property>
+          <property name="font">
+            <font>
+                                </font>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>flusers</string>
+          </property>
+          <property name="foreignField">
+            <string>idusuario</string>
+          </property>
+          <property name="fieldRelation">
+            <string>iduser</string>
+          </property>
+          <property name="showAlias">
+            <bool>false</bool>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

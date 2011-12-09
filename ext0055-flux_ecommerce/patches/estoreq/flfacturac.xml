@@ -1,0 +1,11 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busfactprov]">
+    <action>
+      <name>pagospedidos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Pagos de pedidos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagos de pedidos")</alias>
+      <table>pagospedidos</table>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

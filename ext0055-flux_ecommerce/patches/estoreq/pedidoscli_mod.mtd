@@ -1,0 +1,13 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>pedidoscli_mod</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Pedidos de Clientes modificados")</alias>
+    <field>
+        <name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>13</length>
+    </field>
+</TMD>

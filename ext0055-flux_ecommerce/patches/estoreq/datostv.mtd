@@ -1,0 +1,86 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>datostv</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Intercambio de datos con la web")</alias>
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+	
+	<field>
+		<name>driver</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de base de datos")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","MySQL");QT_TRANSLATE_NOOP("MetaData","PostgreSQL")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","MySQL")</default>
+		<length>50</length>
+	</field>
+	
+	<field>
+		<name>nombrebd</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Base de datos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>usuario</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>password</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Password")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>host</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Servidor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>puerto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Puerto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>subirtodo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Actualizar todos los datos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>esquemaactualizado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Esquema actualizado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>	
+</TMD>

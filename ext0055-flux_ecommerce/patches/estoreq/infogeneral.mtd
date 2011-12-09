@@ -1,0 +1,60 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>infogeneral</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Información general de la Tienda Virtual")</alias>
+
+	<field>
+		<name>codigo</name>
+		<!--Código de la forma de envío-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+
+	<field>
+		<name>titulo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Título")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>texto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Texto (Admite HTML)")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>publico</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Visible en la web")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>orden</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden en la web")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>int</type>
+		<default>1</default>
+	</field>
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

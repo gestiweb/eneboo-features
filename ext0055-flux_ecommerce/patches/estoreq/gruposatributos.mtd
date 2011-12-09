@@ -1,0 +1,46 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>gruposatributos</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Grupos de atributos")</alias>
+
+	<field>
+		<name>codgrupo</name>
+		<!-- Código -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>familias</table>
+			<field>codgrupoatr</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>atributos</table>
+			<field>codgrupo</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

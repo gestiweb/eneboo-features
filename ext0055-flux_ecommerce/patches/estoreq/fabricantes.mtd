@@ -1,0 +1,59 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>fabricantes</name>
+		<!-- Listado de fabricantes -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Fabricantes")</alias>
+
+	<field>
+		<name>codfabricante</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>articulos</table>
+			<field>codfabricante</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>publico</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Visible en la web")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>orden</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<default>1</default>
+	</field>
+	
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

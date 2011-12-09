@@ -1,0 +1,179 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineasfacturasprov,referencia]">
+    <relation>
+      <table>formasenvio</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineastransstock,referencia]">
+    <relation>
+      <table>transferenciastock</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codfamilia]">
+    <field>
+      <name>codfabricante</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Fabricante")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>fabricantes</table>
+        <field>codfabricante</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentacom]">
+    <field>
+      <name>publico</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Visible en la web")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[publico]">
+    <field>
+      <name>descpublica</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripción pública")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descpublica]">
+    <field>
+      <name>fechapub</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Fecha de publicación")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fechapub]">
+    <field>
+      <name>fechaimagen</name>
+      <!--Para verificar cuándo se ha de renovar la miniatura. Timestamp-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Refrescar miniatura")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fechaimagen]">
+    <field>
+      <name>codplazoenvio</name>
+      <!-- Plazo hasta que se hace el envío del artículo -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Plazo de envío")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>plazosenvio</table>
+        <field>codplazo</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codplazoenvio]">
+    <field>
+      <name>enportada</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","En portada")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[enportada]">
+    <field>
+      <name>ordenportada</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[ordenportada]">
+    <field>
+      <name>enoferta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","En oferta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[enoferta]">
+    <field>
+      <name>codtarifa</name>
+      <!-- Código de la tarifa	-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tarifa")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <relation>
+        <table>tarifas</table>
+        <field>codtarifa</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codtarifa]">
+    <field>
+      <name>pvpoferta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Precio de oferta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>6</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pvpoferta]">
+    <field>
+      <name>ivaincluido</name>
+      <!-- Indica si el precio de venta del artículo incluye el IVA -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Incluido")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
+    <field>
+      <name>tipoimagen</name>
+      <!-- Identificador interno del tipo de imagen -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de imagen")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+      <optionslist>jpg,png,gif</optionslist>
+      <default>jpg</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipoimagen]">
+    <field>
+      <name>modificado</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,120 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formDirClientes]/vbox[vbox,1]/widget[QFrame,frame3]">
+    <widget class="QButtonGroup">
+      <property name="name">
+        <cstring>groupBox12_2</cstring>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>lytDatos1</cstring>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbNombre</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>200</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="fieldName">
+                <string>nombre</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbApellidos</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>300</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="fieldName">
+                <string>apellidos</string>
+              </property>
+            </widget>
+          </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>lytDatos2</cstring>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbEmpresa</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>200</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="fieldName">
+                <string>empresa</string>
+              </property>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spcDatos1</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>41</width>
+                  <height>20</height>
+                </size>
+              </property>
+            </spacer>
+          </hbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>
