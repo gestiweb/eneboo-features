@@ -1,0 +1,96 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>modulosweb</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Módulos de la web")</alias>
+	
+	<field>
+		<name>titulo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Título")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	
+	<field>
+		<name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	
+	<field>
+		<name>publico</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Activo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>posicion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Posición (0 izquierda, 1 derecha)")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>0,1</optionslist>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>orden</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+
+	<field>
+		<name>tipo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo (0 código html, 1 fichero php)")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>0,1</optionslist>
+		<default>1</default>
+	</field>
+	
+	<field>
+		<name>mostrartitulo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar título")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>casillaunica</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Casilla única")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>html</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código HTML")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

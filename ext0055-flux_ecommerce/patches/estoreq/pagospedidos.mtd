@@ -1,0 +1,38 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>pagospedidos</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Pagos de pedidos")</alias>
+	<field>
+		<name>keypedido</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Clave del pedido")</alias>
+		<null>true</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	<field>
+		<name>timestamp</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha y hora")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<length>20</length>
+	</field>
+	<field>
+		<name>codcliente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+	</field>
+	<field>
+		<name>sessionid</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sesion")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>500</length>
+	</field>
+	
+</TMD>

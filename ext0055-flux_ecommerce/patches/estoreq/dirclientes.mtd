@@ -1,0 +1,43 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codpais]">
+    <field>
+      <name>nombre</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>200</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nombre]">
+    <field>
+      <name>apellidos</name>
+      <!-- Apellidos del cliente, usado si en cliente web -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Apellidos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>200</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[apellidos]">
+    <field>
+      <name>empresa</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Empresa")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>200</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]">
+    <field>
+      <name>modificado</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

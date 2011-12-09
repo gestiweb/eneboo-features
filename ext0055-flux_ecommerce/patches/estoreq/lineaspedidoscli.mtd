@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pvpunitarioiva]">
+    <field>
+      <name>gastosenvio</name>
+      <!-- Indica si el precio de venta del artículo incluye el IVA -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Es gasto de envío")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

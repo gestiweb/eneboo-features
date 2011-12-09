@@ -1,0 +1,95 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>imagenes</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Imágenes")</alias>
+	<field>
+		<name>codimagen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Codigo")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>5</length>
+		<counter>true</counter>
+	</field>
+	
+	<field>
+		<name>fichero</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fichero")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>120</length>
+		<unique>true</unique>
+	</field>
+	
+	<field>
+		<name>codgaleria</name>
+		<!-- Código del cliente	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Galería")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>galeriasimagenes</table>
+			<field>codgaleria</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>titulo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Título")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+    <field>
+        <name>publico</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Visible en la web")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    
+
+	<field>
+		<name>orden</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+	
+	<field>
+        <name>modificado</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+        <visiblegrid>false</visiblegrid>
+    </field>
+
+    <field>
+        <name>fechamodificacion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Refrescar miniatura")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <visiblegrid>false</visiblegrid>
+        <default>0</default>
+    </field>
+</TMD>

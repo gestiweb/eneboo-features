@@ -1,0 +1,78 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]">
+    <field>
+      <name>activo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activo en TV")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[activo]">
+    <field>
+      <name>orden</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[orden]">
+    <field>
+      <name>descripcionlarga</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripción larga")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descripcionlarga]">
+    <field>
+      <name>gastos</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","% Recargo de gastos")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>2</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[gastos]">
+    <field>
+      <name>codimpuesto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. de gastos")</alias>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>impuestos</table>
+        <field>codimpuesto</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]">
+    <field>
+      <name>ivaincluido</name>
+      <!-- Indica si el precio de venta del artículo incluye el IVA -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Incluido")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
+    <field>
+      <name>modificado</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

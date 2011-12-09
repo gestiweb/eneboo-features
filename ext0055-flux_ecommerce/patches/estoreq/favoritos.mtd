@@ -1,0 +1,52 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>favoritos</name>
+	<!-- Listado de artículos favoritos de un cliente -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Favoritos")</alias>
+	<field>
+		<name>codigo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Codigo")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<visiblegrid>false</visiblegrid>
+		<length>50</length>
+	</field>
+	
+	<field>
+		<name>referencia</name>
+		<!-- Referencia del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>18</length>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codcliente</name>
+		<!-- Código del cliente	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>agentes</table>
+			<field>codagente</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+</TMD>

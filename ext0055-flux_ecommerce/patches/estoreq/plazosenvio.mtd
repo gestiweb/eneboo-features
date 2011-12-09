@@ -1,0 +1,46 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>plazosenvio</name>
+	<!--Listado de plazos de envío-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Plazos de Envío")</alias>
+
+	<field>
+		<name>codplazo</name>
+		<!--Código de la forma de envío-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+
+	<field>
+		<name>plazo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Plazo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<length>4</length>
+	</field>
+
+	<field>
+		<name>unidades</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Unidades")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","Horas");QT_TRANSLATE_NOOP("MetaData","Dias");QT_TRANSLATE_NOOP("MetaData","Semanas")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","Horas")</default>
+	</field>
+	
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

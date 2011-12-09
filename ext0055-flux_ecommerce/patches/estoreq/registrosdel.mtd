@@ -1,0 +1,35 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>registrosdel</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Registros eliminados")</alias>
+	
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>tabla</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tabla")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>idcampo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID Campo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>200</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>
