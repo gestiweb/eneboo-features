@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]">
+    <action>
+      <name>i_ventasmcli</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Listado de ventas de cliente por mes")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Es un listado de clientes donde aparecen los totales facturados desglosado en meses.")</description>
+      <table>i_ventasmcli</table>
+      <form>i_master</form>
+      <formrecord>i_ventasmcli</formrecord>
+      <scriptform>i_masterventasmcli</scriptform>
+      <scriptformrecord>i_ventasmcli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
