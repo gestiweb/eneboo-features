@@ -1,0 +1,6 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="diaspago">
+  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs"/>
+</flpatch:modifications>

@@ -1,0 +1,27 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuenta]">
+    <field>
+      <name>diaspago</name>
+      <!-- Días en los que el proveedor hace efectivos los pagos -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Días de pago")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+      <regexp>^(\d{1,2}(,\d{1,2})*)?$</regexp>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[diaspago]">
+    <field>
+      <name>buscardia</name>
+      <!-- Indica si se busca el dia de pago anterior o posterior a la teórica fecha de vencimiento -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Buscar día...")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+      <optionslist>Anterior,Posterior</optionslist>
+      <default>Posterior</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>
