@@ -1,0 +1,10 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fullpatch">
+  <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolcli.ui"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolprov.ui"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd"/>
+</flpatch:modifications>

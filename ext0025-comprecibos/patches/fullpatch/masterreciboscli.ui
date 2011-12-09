@@ -1,0 +1,52 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QLayoutWidget,layout8]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnRomperCompensacion</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>comp_recibosimage2</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Romper compensación</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Elimina la compensación del recibo seleccionado</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="comp_recibosimage2">
+      <data format="PNG" length="1838">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006f549444154789c9d974f881cd711c67f3b7a52aaad96f31aafc30c88b04324f08804228143642c821642c21270a2a37d48c835b74048ae8110023ee466820f2197f812702e962084a083417658f0fa20a76549768fec75ba9146ee276d6bbbb45bdb9b43f7cc8efe59720a8637ddfd5ed7575f7d55eff5024f6a6e6908c31fe1a23ec62e0e30f812630fab27909dc5c61f4e5fbbf044cee5f4cbc8ca6ba323a3af0e0f27b01fd806f64bfb1850b4fdb7adedfd6d9d9bd78e65a5a497d28d30f9eb6fd0775ea3c3f718e7a3ef20cbaf2ff50707574e0d3879ea04e2f6220b1b35aa8a3f942071bb446d0aaa1b0dc441284bde7c8b43e7ce9ff9a35a9e63e3bf3f1e00c77f0972503590ade7b0fa1e2242199434cdc98ad051ac9c38da67786480b804ac06b7e71c6b592a374a70d101dcb19f61e37f3d2e05cf10fffc2a6ee0c579fa8b1189f79495a2269c786ec0c9e747849073ee7c4a7a31636949182c0e00415104414d1120544a1e9450d5606b1f50bdf1e3c730203d4c7bb816bd6a443651464b7d564e1f63f4ad2118a4a9b6518a302e0a22019141970e0520a094da390730dd07ec7b0c00dd12915d9c20f18041dfb37cfa04c78f0ff102e9959cf46a467a25272f42b7c69387c0a83f409d208e8e010f04c4d5a801ae15f0230188805f3cfd8360c3b8df1ff1c2f343565e1ce19f8d283e2d79f3fd942ccb0993ceb10371116a4a0810e21cef877bceba34e8d441c7cc03004404ef47dfc49ff96d128f7ef2c2d1e1c2f277872c8d12c28d9a77dece584bff433951547516c9c00baa013441ad240f8ac40171fd560b4e50a708114afd7006fc627f51fc995f49bcfc8b634b83832ba7472c0d1314585bcd58bb98917f5acef2dabe4467a3f79ea208801042a0f425891704bf2748145c043ac7805fece317975fc12dff7ed01f7e7df9d49093c75bfac659c9858b29795612aaf6e5206d44b3978238218941bd672a87a2082471d46aa14b803841b5bc970165e5a7caca5f564e0d593e3dc2c7512bb08b196996a395b6b52e02c67dcee7462724b1a22a84aaed01d97ace70c9d32aa0ab0a17cdc4e0704b4fab8e7e3d5c84d17303a8e1dcdbef915ec90813ed200a22cc2205da66438dd0361d71821af8d8536b40ad65395450869c819fae934e3b33ed26231c47f349c1f9f3ef51ab1226da964ee76cafa34daf23a006a2bd6babbb928324f684aa409d80d51413259202e8770cd0320af4445800a598d45c7837a5580f7bcebbe899772ed11c03cc7289244084b8080406de777b4682aa5057356d1f9069bdb50020fbd04b7e59351054c943d9e66a6e12ae155a1b69776d3aabefd9082835e22224167cbcc7d878a2a895a84d1b967600aa508a5bfb9308608a2ad43a9feb2903d10ccc8c110371fe1e86a6cc884424b1e045ba401254bb963dcf80021ad6fe2c2efbf754a5a1d259ad4f73a636ebe1334de0e69f4fd3355d5723b1b4bf0e5c5001cafb180042a577c4a5bf13d1dd76624d5d714f8e1fcdc07d1ab96ffe206e2b683aaf855902b20b2cf4a68414c5da5b3eceff86b5355f846e9f9f8b68c6c08c19996360eefefc7ca7f8b88bd845a8ea2e2858d8069a19000cb4baf007eff516a6a8411eba338d4d379abddccd36986964d3c891ee441481e92ed0448ec6c7b223d406eca8960d8e4da0d9c79ce96628fcd3e22b1bbe48a35813e19c113d25d896416f3fd618aee7a069f9b46ed4ad0ad773a8e92e5637d556d558a33bb65519d8b66ee6777573529bddd804dbc4b20fb0f5b3f70000704db8284f0d5f527bf619b305e809d101880f1c6abb7147bbebb936f21ea8e9ae208d6e953b34b6a516ee0a569b86aadedab83d09e3cfabdb65a136f904aa31a6d7b02bffa409ab0f6cc7a10a45dfafbd8a4b5ec7da562ae211574f7338cbb9c08e2a0d8e6db5721bf4ae9ad69856a5961b5a8510aabc540b059a65a0ff6dc58061e314d87ce8995044bee2fb2fffa308c3efe112c409c37e1f11e8da6f836307abb781bb982a8e4d35ddc0b42c437e5dab9007cdae61e5352cfd080beba077401ad0056007d879e4a1d42f2e7d5fdd2b6755653f2ec1c79ee1a2df553071989a6e0135a6358eaa560d5879234c8acf54f38f55b34b907d841537803bb45f080fd8031a9859a31f7b9f7ca3d2e4db346e17f6efb89e6d1f3a80ea56b549cf6d60e126d88d7af346a1b78bf1e4f32cad36d355db5a7d071ba734e13aedaed53ccacd171ecbfd62ffa8c467ce1593e408ce573e8ed47ba923c7466d5aa2f5f5a061a255b9ae3abe8a6597b0f41a708b59dbf9627beca759bf7ffc87c196df50f3dbc0adbe4f6e89ab6faa86cf4295675818aba69721bf86859296eadd2771fe440070d03f7ce6d562d27f0917ad435d087caa3abe8c6517b1ec13d012b8fb651c4fedd11a985a038ef2921c187c4d372737b1c9fba6e9bb345756b1f1c7604f4cf7c3ecc9be8e019c3f0c832196e7100a685be9ffeb786aff03bd7322a3f94162240000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+</xupdate:modifications>

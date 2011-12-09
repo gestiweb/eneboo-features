@@ -1,0 +1,25 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QFrame,frmTipoFecha]/vbox[vbox,1]/property[name]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblPagoMulti</cstring>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32767</width>
+          <height>25</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <pointsize>13</pointsize>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>
