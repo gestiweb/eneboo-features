@@ -1,0 +1,5 @@
+
+        Esta carpeta es donde se deben ubicar los parches. Este fichero sirve
+        únicamente para que los VCS como GIT guarden la carpeta al existir al
+        menos un fichero en ella.
+        
