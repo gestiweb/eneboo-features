@@ -1,0 +1,9 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="info_ventascli">
+  <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui"/>
+  <flpatch:addFile path="facturacion/informes/forms/" name="i_ventascli.ui"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_ventascli.kut"/>
+  <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterventascli.qs"/>
+  <flpatch:addFile path="facturacion/informes/tables/" name="i_ventascli.mtd"/>
+  <flpatch:addFile path="facturacion/informes/tables/" name="i_ventascli_buffer.mtd"/>
+</flpatch:modifications>

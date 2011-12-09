@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]">
+    <action>
+      <name>i_ventascli</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ventas por cliente clientes")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Ventas por cliente")</description>
+      <table>i_ventascli</table>
+      <form>i_master</form>
+      <formrecord>i_ventascli</formrecord>
+      <scriptform>i_masterventascli</scriptform>
+      <scriptformrecord>i_ventascli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

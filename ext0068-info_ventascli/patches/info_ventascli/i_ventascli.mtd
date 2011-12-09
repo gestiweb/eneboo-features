@@ -1,0 +1,250 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>i_ventascli</name>
+	<!-- Listado unidades vendidas por artículo y mes -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Informe de ventas por cliente")</alias>
+	
+	<field>
+		<name>id</name>
+		<!-- Identificador interno -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<!-- Descripción del registro de criterios de búsqueda -->
+		<pk>false</pk>
+		<null>false</null>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+		<name>titulo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Título")</alias>
+		<!-- Descripción del registro de criterios de búsqueda -->
+		<pk>false</pk>
+		<null>true</null>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+		<name>codclientehasta</name>
+		<!--Código del cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>clientes</table>
+			<field>codcliente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codclientedesde</name>
+		<!--Código del cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>clientes</table>
+			<field>codcliente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codagentedesde</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>agentes</table>
+			<field>codagente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codagentehasta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>agentes</table>
+			<field>codagente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codpostaldesde</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+	
+	<field>
+		<name>codpostalhasta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+	
+	<field>
+		<name>codejercicio</name>
+		<!-- Ejercicio al que pertenecen las facturas del informe -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio")</alias>
+		<pk>false</pk>
+		<null>true</null>
+		<type>string</type>
+		<length>4</length>
+		
+		<relation>
+			<table>ejercicios</table>
+			<field>codejercicio</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fechadesde</name>
+		<!-- Fecha inicial para las facturas del informe -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechahasta</name>
+		<!-- Fecha final para las facturas del informe -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hasta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>ventamin</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Venta mínima")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>orden1</name>
+		<!-- Criterio de orden por almacén	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden 1")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","No ordenar");QT_TRANSLATE_NOOP("MetaData","Código cliente");QT_TRANSLATE_NOOP("MetaData","Nombre cliente");QT_TRANSLATE_NOOP("MetaData","Código postal");QT_TRANSLATE_NOOP("MetaData","Agente comercial");QT_TRANSLATE_NOOP("MetaData","Ventas")</optionslist>
+		<length>50</length>
+		<default>QT_TRANSLATE_NOOP("MetaData","No ordenar")</default>
+	</field>
+	
+	<field>
+		<name>tipoorden1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","Ascendente");QT_TRANSLATE_NOOP("MetaData","Descendente")</optionslist>
+		<length>20</length>
+	</field>
+	
+	<field>
+		<name>orden2</name>
+		<!-- Criterio de orden por almacén	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden 2")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","No ordenar");QT_TRANSLATE_NOOP("MetaData","Código cliente");QT_TRANSLATE_NOOP("MetaData","Nombre cliente");QT_TRANSLATE_NOOP("MetaData","Código postal");QT_TRANSLATE_NOOP("MetaData","Agente comercial");QT_TRANSLATE_NOOP("MetaData","Ventas")</optionslist>
+		<length>50</length>
+		<default>QT_TRANSLATE_NOOP("MetaData","No ordenar")</default>
+	</field>
+	
+	<field>
+		<name>tipoorden2</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","Ascendente");QT_TRANSLATE_NOOP("MetaData","Descendente")</optionslist>
+		<length>20</length>
+	</field>
+	
+	<field>
+		<name>mostrarnif</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","C.I.F./N.I.F.")</alias>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>mostrarultimafactura</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha de última venta")</alias>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>mostrartotalfactura</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Total vendido")</alias>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>mostraragente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Agente comercial")</alias>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>	
+	
+	<field>
+		<name>mostrarsinventas</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar clientes sin ventas")</alias>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>	
+	
+	<field>
+		<name>coniva</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar importes con I.V.A.")</alias>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>	
+</TMD>
