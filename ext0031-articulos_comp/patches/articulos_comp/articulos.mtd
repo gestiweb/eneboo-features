@@ -1,0 +1,114 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineastransstock,referencia]">
+    <relation>
+      <table>articuloscomp</table>
+      <field>refcompuesto</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[articuloscomp,refcompuesto]">
+    <relation>
+      <table>articuloscomp</table>
+      <field>refcomponente</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[articuloscomp,refcomponente]">
+    <relation>
+      <table>tiposopcionartcomp</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
+    <field>
+      <name>stockcomp</name>
+      <!--Controla el stock de componentes cuando se modifica el stock del artículo-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Control stock componentes")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[stockcomp]">
+    <field>
+      <name>aref</name>
+      <!-- Código de referencia del artículo	-->
+      <!-- Dummy column for unique reference in fields with
+			source of composed query in automatic orders -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <counter>false</counter>
+      <type>string</type>
+      <length>6</length>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>articulosagen</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>articulostarifas</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>articulosprov</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>stocks</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>transferenciastock</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineaspresupuestoscli</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineaspedidoscli</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineaspedidosprov</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineasalbaranescli</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineasalbaranesprov</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineasfacturascli</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineasfacturasprov</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+      <relation>
+        <table>lineasorders</table>
+        <field>referencia</field>
+        <card>1M</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

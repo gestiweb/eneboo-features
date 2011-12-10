@@ -1,0 +1,26 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="articulos_comp">
+  <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="articuloscomp.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterregstocks.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="opcionesarticulocomp.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="opcionescomp.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="regstocks.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="tiposopcionartcomp.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="tiposopcioncomp.ui"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="articuloscomp.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="opcionesarticulocomp.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="regstocks.qs"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="tiposopcionartcomp.qs"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="articuloscomp.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="opcionesarticulocomp.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="opcionescomp.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="tiposopcionartcomp.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="tiposopcioncomp.mtd"/>
+</flpatch:modifications>
