@@ -20,6 +20,16 @@
       <card>1M</card>
     </relation>
   </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[sevende]">
+    <field>
+      <name>variable</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Es variable")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+    </field>
+  </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
     <field>
       <name>stockcomp</name>
@@ -108,6 +118,21 @@
         <table>lineasorders</table>
         <field>referencia</field>
         <card>1M</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[aref]">
+    <field>
+      <name>codunidad</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Unidad")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>pesosmedidas</table>
+        <field>codunidad</field>
+        <card>M1</card>
       </relation>
     </field>
   </xupdate:insert-after>

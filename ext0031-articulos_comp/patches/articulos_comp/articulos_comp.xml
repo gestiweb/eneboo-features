@@ -19,8 +19,33 @@
   <flpatch:addFile path="facturacion/almacen/scripts/" name="tiposopcionartcomp.qs"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="articuloscomp.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="movistock.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="opcionesarticulocomp.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="opcionescomp.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="tiposopcionartcomp.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="tiposopcioncomp.mtd"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranesclicomp.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranesprovcomp.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_facturasclicomp.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_facturasprovcomp.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_pedidosclicomp.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_pedidosprovcomp.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_presupuestosclicomp.qry"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_albaranesclicomp.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_albaranesprovcomp.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_facturasclicomp.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_facturasprovcomp.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_pedidosclicomp.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_pedidosprovcomp.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_presupuestosclicomp.kut"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs"/>
+  <flpatch:addFile path="facturacion/informes/tables/" name="i_articuloscomp_buffer.mtd"/>
 </flpatch:modifications>
