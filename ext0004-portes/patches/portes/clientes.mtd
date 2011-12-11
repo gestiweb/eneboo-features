@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuenta]">
+    <field>
+      <name>portes</name>
+      <!-- Importe de los portes por defecto para el cliente-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Portes")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>8</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

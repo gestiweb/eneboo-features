@@ -1,0 +1,77 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutIvaPortes</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodIvaportes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>270</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>270</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>codivaportes</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDesSerie_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>280</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>impuestos</string>
+          </property>
+          <property name="foreignField">
+            <string>codivaportes</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codimpuesto</string>
+          </property>
+          <property name="showAlias">
+            <bool>false</bool>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/spacer[spacer27]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">60</xupdate:update>
+</xupdate:modifications>

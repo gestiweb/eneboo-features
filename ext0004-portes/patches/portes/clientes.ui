@@ -1,0 +1,45 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8]/vbox[vbox,1]/widget[QLayoutWidget,layout21]/hbox[hbox,1]/widget[FLFieldDB,fdbApellidosAgente]">
+    <spacer>
+      <property name="name">
+        <cstring>spacerPortes</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Fixed</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>21</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8]/vbox[vbox,1]/widget[QLayoutWidget,layout21]/hbox[hbox,1]/spacer[spacerPortes]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbPortes</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>230</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="fieldName">
+        <string>portes</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

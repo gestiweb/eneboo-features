@@ -1,0 +1,26 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/action[i_inventarioval]">
+    <action name="i_etiquetas"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]">
+    <action>
+      <property name="name">
+        <cstring>i_etiquetas</cstring>
+      </property>
+      <property name="text">
+        <string>Etiquetas</string>
+      </property>
+      <property name="menuText">
+        <string>Etiquetas</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>i_etiquetas</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,290 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPresupuestosCli]/vbox[vbox,1]/widget[QTabWidget,tbwPresupuesto]">
+    <widget class="QFrame">
+      <property name="name">
+        <cstring>frmPortes</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32767</width>
+          <height>50</height>
+        </size>
+      </property>
+      <property name="frameShape">
+        <enum>GroupBoxPanel</enum>
+      </property>
+      <property name="frameShadow">
+        <enum>Sunken</enum>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+          <number>8</number>
+        </property>
+        <property name="spacing">
+          <number>6</number>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbPortes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>104</width>
+              <height>29</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>230</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>netoportes</string>
+          </property>
+          <property name="tableName">
+            <string/>
+          </property>
+          <property name="foreignField">
+            <string>portes</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codcliente</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodImpuestoPortes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>201</width>
+              <height>31</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>codimpuestoportes</string>
+          </property>
+          <property name="tableName">
+            <string/>
+          </property>
+          <property name="foreignField">
+            <string/>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerPortes1</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Fixed</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>10</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbIvaPortes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>128</width>
+              <height>31</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>ivaportes</string>
+          </property>
+          <property name="tableName">
+            <string/>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbTotalIvaPortes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>148</width>
+              <height>29</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>totalivaportes</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerPortes2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Fixed</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>10</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbRePortes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>121</width>
+              <height>31</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>reportes</string>
+          </property>
+          <property name="tableName">
+            <string/>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbTotalRePortes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>141</width>
+              <height>29</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>totalreportes</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerPortes3</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Fixed</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>10</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbTotalPortes</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>126</width>
+              <height>29</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>totalportes</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>
