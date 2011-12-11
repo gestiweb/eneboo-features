@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]">
+    <action>
+      <name>i_vencimientos</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Vencimientos de recibos de clientes y proveedores")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Ofrece los movimientos que se producirán en las cuentas bancarias de la empresa como resultado del vencimiento de los recibos emitidos de clientes y proveedores")</description>
+      <table>i_vencimientos</table>
+      <form>master_print</form>
+      <formrecord>i_vencimientos</formrecord>
+      <scriptform>i_mastervencimientos</scriptform>
+      <scriptformrecord>i_vencimientos</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
