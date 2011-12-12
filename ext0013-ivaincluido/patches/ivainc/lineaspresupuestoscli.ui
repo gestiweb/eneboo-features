@@ -1,0 +1,76 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">753</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">293</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">150</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">100</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/spacer[spacer20_2]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/spacer[spacer20]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbRecargo]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbIvaIncluido</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>110</width>
+          <height>22</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>ivaincluido</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIvaIncluido]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbPvpUnitarioIva</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>170</width>
+          <height>22</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>pvpunitarioiva</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">170</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+</xupdate:modifications>

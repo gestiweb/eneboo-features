@@ -1,0 +1,24 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="ivainc">
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="factalma_general.ui"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="factalma_general.mtd"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranescli.ui"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidoscli.ui"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasfacturascli.ui"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspresupuestoscli.ui"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranescli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasfacturascli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidoscli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspresupuestoscli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd"/>
+</flpatch:modifications>

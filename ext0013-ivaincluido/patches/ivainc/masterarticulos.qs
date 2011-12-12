@@ -1,0 +1,28 @@
+
+/** @class_declaration ivaIncluido */
+/////////////////////////////////////////////////////////////////
+//// IVAINCLUIDO ////////////////////////////////////////////////
+class ivaIncluido extends oficial /** %from: oficial */ {
+    function ivaIncluido( context ) { oficial ( context ); }
+	function datosArticulo(cursor:FLSqlCursor,referencia:String):Boolean {
+		return this.ctx.ivaIncluido_datosArticulo(cursor,referencia);
+	}
+}
+//// IVAINCLUIDO ////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+/** @class_definition ivaIncluido */
+/////////////////////////////////////////////////////////////////
+//// IVAINCLUIDO ////////////////////////////////////////////////
+function ivaIncluido_datosArticulo(cursor:FLSqlCursor,referencia:String):Boolean
+{
+	if (!this.iface.__datosArticulo(cursor,referencia))
+		return false
+
+	cursor.setValueBuffer("ivaincluido",this.iface.curArticulo.valueBuffer("ivaincluido"));
+
+	return true;
+}
+//// IVAINCLUIDO ////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
