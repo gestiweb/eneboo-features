@@ -1,35 +1,35 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_facturasrec]" >
-<action>
-<name>co_i_balanceig</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
-<scriptform>co_i_masterbalanceig</scriptform>
-<table>co_i_balanceig</table>
-<form>co_i_master</form>
-<formrecord>co_i_balanceig</formrecord>
-</action>
-</xupdate:insert-after>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_balanceig]" >
-<action>
-<name>co_i_balances08_datos</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
-<table>co_i_balances08_datos</table>
-<form>co_i_master</form>
-<formrecord>co_i_balances08_datos</formrecord>
-</action>
-</xupdate:insert-after>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_balances08_datos]" >
-<action>
-<name>co_i_cuentasanuales</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuentas anuales&quot;)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuentas anuales&quot;)</alias>
-<scriptform>co_i_mastercuentasanuales</scriptform>
-<scriptformrecord>co_i_cuentasanuales</scriptformrecord>
-<table>co_i_cuentasanuales</table>
-<form>co_i_mastercuentasanuales</form>
-<formrecord>co_i_cuentasanuales</formrecord>
-</action>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_facturasrec]">
+    <action>
+      <name>co_i_balanceig</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <scriptform>co_i_masterbalanceig</scriptform>
+      <table>co_i_balanceig</table>
+      <form>co_i_master</form>
+      <formrecord>co_i_balanceig</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_balanceig]">
+    <action>
+      <name>co_i_balances08_datos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>co_i_balances08_datos</table>
+      <form>co_i_master</form>
+      <formrecord>co_i_balances08_datos</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_balances08_datos]">
+    <action>
+      <name>co_i_cuentasanuales</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cuentas anuales")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuentas anuales")</alias>
+      <scriptform>co_i_mastercuentasanuales</scriptform>
+      <scriptformrecord>co_i_cuentasanuales</scriptformrecord>
+      <table>co_i_cuentasanuales</table>
+      <form>co_i_mastercuentasanuales</form>
+      <formrecord>co_i_cuentasanuales</formrecord>
+    </action>
+  </xupdate:insert-after>
 </xupdate:modifications>

@@ -2,7 +2,7 @@
 /** @class_declaration pgc2008 */
 /////////////////////////////////////////////////////////////////
 //// PGC 2008 //////////////////////////////////////////////////////
-class pgc2008 extends oficial 
+class pgc2008 extends oficial /** %from: oficial */
 {
     function pgc2008( context ) { oficial ( context ); }
 	function init() { this.ctx.pgc2008_init(); }
@@ -17,7 +17,7 @@ class pgc2008 extends oficial
 function pgc2008_init()
 {
 	this.iface.__init();
-	
+
 	var util:FLUtil = new FLUtil();
 	if (util.sqlSelect("ejercicios", "plancontable", "codejercicio = '" + this.cursor().valueBuffer("codejercicio") + "'") == "08")
 		this.child("fdbCodBalance").setDisabled(true);
@@ -26,3 +26,4 @@ function pgc2008_init()
 
 //// PGC 2008 //////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

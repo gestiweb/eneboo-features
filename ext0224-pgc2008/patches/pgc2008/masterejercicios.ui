@@ -1,6 +1,6 @@
-<xupdate:modifications>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,masterejercicios]/property[property,2]/rect[rect,1]/width[width,1]/text()[1]" >563</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,masterejercicios]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnPGC]/property[property,3]/string[string,1]/text()[1]" >Cuadro de cuentas</xupdate:update>
-<xupdate:delete select="/UI[UI,1]/widget[QWidget,masterejercicios]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnPGC]/property[property,4]/string[string,1]/#text[#text,1]" />
-<xupdate:update select="/UI[UI,1]/widget[QWidget,masterejercicios]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[property,4]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterejercicios]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">563</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterejercicios]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">16</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterejercicios]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnPGC]/property[text]/string[string,1]/text()[1]">Cuadro de cuentas</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterejercicios]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnPGC]/property[accel]/string[string,1]/text()[1]"/>
 </xupdate:modifications>

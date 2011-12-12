@@ -2,25 +2,25 @@
 /** @class_declaration pgc2008 */
 /////////////////////////////////////////////////////////////////
 //// PGC 2008 //////////////////////////////////////////////////////
-class pgc2008 extends oficial 
+class pgc2008 extends oficial /** %from: oficial */
 {
     function pgc2008( context ) { oficial ( context ); }
-	
+
 	function init() { this.ctx.pgc2008_init(); }
-	
+
 	function validateForm():Boolean {
-		return this.ctx.pgc2008_validateForm(); 
+		return this.ctx.pgc2008_validateForm();
 	}
-	
+
 	function buscarPlanContable(cursor:FLSqlCursor):Boolean {
 		return this.ctx.pgc2008_buscarPlanContable(cursor);
-	} 
+	}
 	function copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuenta:Number):Boolean {
 		return this.ctx.pgc2008_copiarPGC(ejercicioAnt, ejercicioAct, longSubcuenta);
-	} 
+	}
 	function buscarPlanContable90(cursor:FLSqlCursor):Boolean {
 		return this.ctx.pgc2008_buscarPlanContable90(cursor);
-	} 
+	}
 	function comprobarSubcuentasCopia(ejercicioAnt:String, ejercicioAct:String):Boolean {
 		return this.ctx.pgc2008_comprobarSubcuentasCopia(ejercicioAnt, ejercicioAct);
 	}
@@ -38,7 +38,7 @@ function pgc2008_init()
 
 	var util:FLUtil = new FLUtil;
 	var cursor:FLSqlCursor = this.cursor();
-	
+
 	if (cursor.modeAccess() == cursor.Edit){
 		if(util.sqlSelect("co_epigrafes","idepigrafe","codejercicio = '" + cursor.valueBuffer("codejercicio") + "'"))
 			this.child("fdbPlanContable").setDisabled(true);
@@ -47,30 +47,30 @@ function pgc2008_init()
 
 function pgc2008_comprobarSubcuentasCopia(ejercicioAnt:String, ejercicioAct:String):Boolean
 {
-	var util:FLUtil = new FLUtil;	
-	var paso:Number = 0;	
-	
-	var qrySubCuentas:FLSqlQuery = new FLSqlQuery;			
+	var util:FLUtil = new FLUtil;
+	var paso:Number = 0;
+
+	var qrySubCuentas:FLSqlQuery = new FLSqlQuery;
 	qrySubCuentas.setTablesList ("co_subcuentas");
 	qrySubCuentas.setSelect("codsubcuenta,codcuenta,saldo");
 	qrySubCuentas.setFrom("co_subcuentas");
 	qrySubCuentas.setWhere("codejercicio = '" + ejercicioAnt + "' order by codsubcuenta");
-	
+
 	if (!qrySubCuentas.exec())
 		return;
-	
+
 	util.createProgressDialog(util.translate("scripts", "Comprobando Subcuentas"), qrySubCuentas.size());
-	
+
 	var curSubCuentas:FLSqlCursor = new FLSqlCursor ("co_subcuentas");
-		
+
 	var cuentasPerdidas:String = "";
-	
+
 	while(qrySubCuentas.next()) {
-	
+
 		util.setProgress(paso++);
-	
+
 		codCuenta08 = flcontppal.iface.convertirCodCuenta(qrySubCuentas.value(1));
-			
+
 		//Si no existe y no hay saldo, se ignora
 		if (!codCuenta08 && parseFloat(qrySubCuentas.value(2)))
 			cuentasPerdidas += "\n" + qrySubCuentas.value(1) + " " + qrySubCuentas.value(0);
@@ -95,25 +95,25 @@ function pgc2008_buscarPlanContable(cursor:FLSqlCursor):Boolean
 	var ejercicio:String = cursor.valueBuffer("codejercicio");
 	var logdigitos:Number = cursor.valueBuffer("longsubcuenta");
 	var util:FLUtil = new FLUtil;
-	
+
 	//si el ejercicio no tiene ningun plan contable asignado
 	if (util.sqlSelect("co_epigrafes", "codejercicio", "codejercicio = '" + ejercicio + "'"))
 		return;
-		 
+
 	// Si sólo hay un ejercicio
 	if (util.sqlSelect("ejercicios", "count(codejercicio)", "longsubcuenta = " + logdigitos) == 1) {
-		
+
 		res = MessageBox.warning(util.translate("scripts", "Sólo existe este ejercicio con el mismo número de dígitos por subcuenta. Se creará un nuevo plan contable.\n¿Continuar?"),
 				 MessageBox.Yes, MessageBox.No, MessageBox.NoButton);
 		if (res != MessageBox.Yes)
 			return;
-	
+
 		flcontppal.iface.pub_generarPGC(ejercicio);
 		return true;
 	}
 
 	var dialog:Object = new Dialog(util.translate("scripts", "Generar Plan Contable"), 0, "generarPGC");
-	
+
 	dialog.OKButtonText = util.translate ("scripts","Aceptar");
 	dialog.cancelButtonText = util.translate ("scripts","Cancelar");
 
@@ -137,41 +137,41 @@ function pgc2008_buscarPlanContable(cursor:FLSqlCursor):Boolean
 		flcontppal.iface.pub_generarPGC(ejercicio);
 		return true;
 	}
-		
-		
+
+
 	var dialog:Object = new Dialog(util.translate("scripts", "Seleccionar ejercicio"), 0, "");
-	
+
 	dialog.OKButtonText = util.translate ("scripts","Aceptar");
 	dialog.cancelButtonText = util.translate ("scripts","Cancelar");
 
 	var bgroup:Object = new GroupBox;
 	dialog.add(bgroup);
-	
+
 	var curTab:FLSqlCursor = new FLSqlCursor("ejercicios");
 	curTab.select("codejercicio <> '" + ejercicio + "'");
 	var botonesEj:Array = [];
 	var paso:Number = 0;
-	
+
 	while(curTab.next()) {
-	
+
 		if (curTab.valueBuffer("longsubcuenta") != logdigitos)
 			continue;
-	
+
 		botonesEj[paso] = new Array(2);
 		botonesEj[paso]["codEjercicio"] = curTab.valueBuffer("codejercicio");
 		botonEj = new RadioButton;
 		botonEj.text = curTab.valueBuffer("codejercicio") + " - " + curTab.valueBuffer("nombre");
 		if (!paso)
-			botonEj.checked = true;		
+			botonEj.checked = true;
 		bgroup.add(botonEj);
-		
-		botonesEj[paso]["boton"] = botonEj;		
+
+		botonesEj[paso]["boton"] = botonEj;
 		paso++;
 	}
 
 	if (!dialog.exec())
 		return true;
-	
+
 	var ejeranterior:String;
 	for (i = 0; i < botonesEj.length; i++) {
 		botonEj = botonesEj[i]["boton"];
@@ -180,10 +180,10 @@ function pgc2008_buscarPlanContable(cursor:FLSqlCursor):Boolean
 			break;
 		}
 	}
-	
+
 	if (!ejeranterior)
 		return false;
-		
+
 	cursor.setValueBuffer("longsubcuenta", util.sqlSelect("ejercicios", "longsubcuenta", "codejercicio = '" + ejeranterior + "'"));
 
 	var curTransaccion:FLSqlCursor = new FLSqlCursor("empresa");
@@ -200,14 +200,14 @@ function pgc2008_buscarPlanContable(cursor:FLSqlCursor):Boolean
 		MessageBox.warning(util.translate("scripts", "Error al copiar el PGC: ") + e, MessageBox.Ok, MessageBox.NoButton);
 		return false;
 	}
-	
+
 	return true;
 }
 
 function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuenta:Number):Boolean
 {
-	var util:FLUtil = new FLUtil;	
-	
+	var util:FLUtil = new FLUtil;
+
 	var planContableAnt = util.sqlSelect("ejercicios", "plancontable", "codejercicio = '" + ejercicioAnt + "'");
 	if (planContableAnt != "08")
 		if (!this.iface.comprobarSubcuentasCopia(ejercicioAnt, ejercicioAct))
@@ -220,42 +220,42 @@ function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuen
 	flcontppal.iface.actualizarCuentas2008ba(ejercicioAct);
 	flcontppal.iface.generarCorrespondenciasCC(ejercicioAct);
 	flcontppal.iface.actualizarCuentasEspeciales(ejercicioAct);
-	
-	var paso:Number = 0;	
-	
-	var qrySubCuentas:FLSqlQuery = new FLSqlQuery;			
+
+	var paso:Number = 0;
+
+	var qrySubCuentas:FLSqlQuery = new FLSqlQuery;
 	qrySubCuentas.setTablesList ("co_subcuentas");
 	qrySubCuentas.setSelect("codsubcuenta,codcuenta,descripcion,coddivisa,codimpuesto,iva,recargo,saldo,idcuentaesp");
 	qrySubCuentas.setFrom("co_subcuentas");
 	qrySubCuentas.setWhere("codejercicio = '" + ejercicioAnt + "'");
-	
+
 	if (!qrySubCuentas.exec())
 		return;
-	
+
 	util.createProgressDialog(util.translate("scripts", "Copiando Subcuentas"), qrySubCuentas.size());
-	
+
 	var curSubCuentas:FLSqlCursor = new FLSqlCursor ("co_subcuentas");
 	curSubCuentas.setActivatedCommitActions(false);
-	
+
 	var cuentasPerdidas:String = "";
 	var descripcion:String;
 	while (qrySubCuentas.next()) {
-	
+
 		util.setProgress(paso++);
-	
+
 		// Caso 1: de 90 a 08
 		if (planContableAnt != "08") {
 			// A qué cuenta 08 corresponde esta cuenta 90?
 			codCuenta08 = flcontppal.iface.convertirCodCuenta(qrySubCuentas.value(1));
 			idCuenta08 = util.sqlSelect("co_cuentas", "idcuenta", "codcuenta = '" + codCuenta08 + "' and codejercicio = '" + ejercicioAct + "'");
-			
+
 			if (!idCuenta08) {
 				//Si no hay saldo, se ignora
 				if (parseFloat(qrySubCuentas.value(7)))
 					cuentasPerdidas += "\n" + qrySubCuentas.value(1) + " " + qrySubCuentas.value(0);
 				continue;
 			}
-			
+
 			codSubcuenta08 = flcontppal.iface.convertirCodSubcuenta(ejercicioAnt, qrySubCuentas.value(0));
 			descripcion = qrySubCuentas.value("descripcion");
 		} else {
@@ -271,14 +271,14 @@ function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuen
 			}
 			descripcion = qrySubCuentas.value("descripcion");
 		}
-		
+
 		// Existe ya?
 		curSubCuentas.select("codsubcuenta = '" + codSubcuenta08 + "' AND codejercicio = '" + ejercicioAct + "'");
 		if (curSubCuentas.first()) {
 			continue;
 		}
 
-			
+
 		// La descripcion no debe tener ya el código antes. "225. Otras instalaciones" -> "Otras instalaciones"
 /*		descripcion = qrySubCuentas.value(2);
 		if (descripcion.search(".") > -1) {
@@ -286,7 +286,7 @@ function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuen
 			if (partesDescripcion.length == 2)
 				descripcion = partesDescripcion[1];
 		}*/
-		
+
 		curSubCuentas.setModeAccess (curSubCuentas.Insert);
 		curSubCuentas.refreshBuffer();
 		curSubCuentas.setValueBuffer("codejercicio",ejercicioAct);
@@ -301,12 +301,12 @@ function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuen
 		if (!curSubCuentas.commitBuffer())
 			return;
 	}
-	
+
 	util.destroyProgressDialog();
-	
+
 	// Genera las subcuentas del nuevo PGC que no existen en el ejercicio anterior
 	flcontppal.iface.generarSubcuentas(ejercicioAct, longSubcuenta);
-	
+
 	if (!this.iface.copiarSubcuentasCliProv(ejercicioAnt, ejercicioAct))
 		return false;
 
@@ -337,7 +337,7 @@ function pgc2008_buscarPlanContable90(cursor:FLSqlCursor):Boolean
 		}
 
 		var dialog:Object = new Dialog(util.translate("scripts", "Generar Plan Contable"), 0, "gerenarPGC");
-		
+
 		dialog.OKButtonText = util.translate ("scripts","Aceptar");
 		dialog.cancelButtonText = util.translate ("scripts","Cancelar");
 
@@ -376,12 +376,12 @@ function pgc2008_buscarPlanContable90(cursor:FLSqlCursor):Boolean
 			var codPadre:String;
 			var f:Object = new FLFormSearchDB("ejercicios");
 			f.setMainWidget();
-			
+
 			// CAMBIO respecto de oficial
 			f.cursor().setMainFilter("codejercicio <> '" + ejercicio + "' AND plancontable <> '08'");
-			
+
 			var ejeranterior:String = f.exec("codejercicio");
-			
+
 			if (!ejeranterior)
 				return false;
 			cursor.setValueBuffer("longsubcuenta", util.sqlSelect("ejercicios", "longsubcuenta", "codejercicio = '" + ejeranterior + "'"));
@@ -485,7 +485,7 @@ function pgc2008_buscarPlanContable90(cursor:FLSqlCursor):Boolean
 			}
 			util.setProgress(totalEpigrafes);
 			util.destroyProgressDialog();
-			
+
 			if (!this.iface.copiarSubcuentasCliProv(ejeranterior, ejercicio))
 				return false;
 		}

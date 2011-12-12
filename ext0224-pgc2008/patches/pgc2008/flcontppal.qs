@@ -2,7 +2,7 @@
 /** @class_declaration pgc2008 */
 /////////////////////////////////////////////////////////////////
 //// PGC 2008 //////////////////////////////////////////////////////
-class pgc2008 extends oficial {
+class pgc2008 extends oficial /** %from: oficial */ {
 
     function pgc2008( context ) { oficial ( context ); }
 	function init(init) {
@@ -26,8 +26,8 @@ class pgc2008 extends oficial {
 	function generarCuadroCuentas(codEjercicio:String) {
 		return this.ctx.pgc2008_generarCuadroCuentas(codEjercicio);
 	}
-	
-	
+
+
 	function generarGrupos(codEjercicio:String) {
 		return this.ctx.pgc2008_generarGrupos(codEjercicio);
 	}
@@ -40,8 +40,8 @@ class pgc2008 extends oficial {
 	function generarSubcuentas(codEjercicio:String, longSubcuenta:Number) {
 		return this.ctx.pgc2008_generarSubcuentas(codEjercicio, longSubcuenta);
 	}
-	
-	
+
+
 	function generarCorrespondenciasCC(codEjercicio:String) {
 		return this.ctx.pgc2008_generarCorrespondenciasCC(codEjercicio);
 	}
@@ -51,8 +51,8 @@ class pgc2008 extends oficial {
 	function convertirCodCuenta(codSubcuenta90:String):String {
 		return this.ctx.pgc2008_convertirCodCuenta(codSubcuenta90);
 	}
-	
-	
+
+
 	function datosGrupos():Array {
 		return this.ctx.pgc2008_datosGrupos();
 	}
@@ -74,11 +74,11 @@ class pgc2008 extends oficial {
 	function completarTiposEspeciales():Array {
 		return this.ctx.pgc2008_completarTiposEspeciales();
 	}
-	
+
 	function generarOrden3CB() {
 		return this.ctx.pgc2008_generarOrden3CB();
 	}
-	
+
 	function regenerarPGC(codEjercicio:String) {
 		return this.ctx.pgc2008_regenerarPGC(codEjercicio);
 	}
@@ -105,24 +105,24 @@ function pgc2008_init()
 function pgc2008_generarPGC(codEjercicio:String)
 {
 	var util:FLUtil = new FLUtil();
-	
+
 	if (util.sqlSelect("ejercicios", "plancontable", "codejercicio = '" + codEjercicio + "'") != "08")
 		return this.iface.__generarPGC(codEjercicio);
-	
+
 	var longSubcuenta:Number = util.sqlSelect("ejercicios", "longsubcuenta", "codejercicio = '" + codEjercicio + "'");
-	
+
 	var numCuentasEsp:Number = this.iface.valorPorClave("co_cuentasesp", "count(idcuentaesp)", "1 = 1");
 	if (!numCuentasEsp)
 		this.iface.valoresIniciales();
-	
+
 	this.iface.generarCuadroCuentas(codEjercicio)
 	this.iface.generarCodigosBalance2008();
 	this.iface.actualizarCuentas2008(codEjercicio);
 	this.iface.actualizarCuentas2008ba(codEjercicio);
 	this.iface.generarCorrespondenciasCC(codEjercicio);
-	this.iface.actualizarCuentasEspeciales(codEjercicio);	
+	this.iface.actualizarCuentasEspeciales(codEjercicio);
 	this.iface.generarSubcuentas(codEjercicio, longSubcuenta);
-	
+
 	MessageBox.information(util.translate("scripts", "Se generó el cuadro de cuentas"), MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
 }
 
@@ -133,11 +133,11 @@ function pgc2008_generarCodigosBalance2008()
 {
 	var util:FLUtil = new FLUtil;
 	if (util.sqlSelect("co_codbalances08", "codbalance", "1=1"))
-		return;	
-	
+		return;
+
 	var curCbl:FLSqlCursor = new FLSqlCursor("co_codbalances08");
 	curCbl.setActivatedCheckIntegrity(false);
-	
+
 	var datos = [
 		["A-A--I-1", "A", "A", "A) ACTIVO NO CORRIENTE", "", "", "I", "I. Inmovilizado intangible.", "1", "1. Desarrollo."],
 		["A-A--I-2", "A", "A", "A) ACTIVO NO CORRIENTE", "", "", "I", "I. Inmovilizado intangible.", "2", "2. Concesiones."],
@@ -233,7 +233,7 @@ function pgc2008_generarCodigosBalance2008()
 		["P-C--V-6", "P", "C", "C) PASIVO CORRIENTE", "", "", "V", "V. Acreedores comerciales y otras cuentas a pagar.", "6", "6. Otras deudas con las Administraciones Públicas."],
 		["P-C--V-7", "P", "C", "C) PASIVO CORRIENTE", "", "", "V", "V. Acreedores comerciales y otras cuentas a pagar.", "7", "7. Anticipos de clientes."],
 		["P-C--VI-", "P", "C", "C) PASIVO CORRIENTE", "", "", "VI", "VI. Periodificaciones a corto plazo.", "", ""],
-		
+
 		["PG-A-1-a-", "PG", "A", "A) OPERACIONES CONTINUADAS ", "1", "1. Importe neto de la cifra de negocios. ", "a", " a) Ventas ", "", ""],
 		["PG-A-1-b-", "PG", "A", "A) OPERACIONES CONTINUADAS ", "1", "1. Importe neto de la cifra de negocios. ", "b", " b) Prestaciones de servicios ", "", ""],
 		["PG-A-2--", "PG", "A", "A) OPERACIONES CONTINUADAS ", "2", "2. Variación de existencias de productos terminados y en curso de fabricación ", "", "", "", ""],
@@ -270,7 +270,7 @@ function pgc2008_generarCodigosBalance2008()
 		["PG-A-16-b-", "PG", "A", "A) OPERACIONES CONTINUADAS ", "16", "16. Deterioro y resultado por enajenaciones de instrumentos financieros ", "b", " b) Resultados por enajenaciones y otras ", "", ""],
 		["PG-A-17--", "PG", "A", "A) OPERACIONES CONTINUADAS ", "17", "17. Impuesto sobre beneficios ", "", "  ", "", ""],
 		["PG-B-18--", "PG", "B", "B) OPERACIONES INTERRUMPIDAS ", "18", "18. Resultado del ejercicio procedente de operaciones interrumpidas neto de impuestos ", "", "  ", "", ""],
-			
+
 		["IG-A--I-1", "IG", "A", "Ingresos y gastos imputados directamente al patrimonio neto ", "", "", "I", "I. Por valoración instrumentos financieros. ", "1", "1. Activos financieros disponibles para la venta. "],
 		["IG-A--I-2", "IG", "A", "Ingresos y gastos imputados directamente al patrimonio neto ", "", "", "I", "I. Por valoración instrumentos financieros. ", "2", "2. Otros ingresos/gastos. "],
 		["IG-A--II-", "IG", "A", "Ingresos y gastos imputados directamente al patrimonio neto ", "", "", "II", "II. Por coberturas de flujos de efectivo. ", "", ""],
@@ -283,13 +283,13 @@ function pgc2008_generarCodigosBalance2008()
 		["IG-B--VIII-", "IG", "B", "Transferencias a la cuenta de pérdidas y ganancias ", "", "", "VIII", "VIII. Subvenciones, donaciones y legados recibidos. ", "", ""],
 		["IG-B--IX-", "IG", "B", "Transferencias a la cuenta de pérdidas y ganancias ", "", "", "IX", "IX. Efecto impositivo. ", "", ""],
 	];
-		
+
 	var orden:Number;
 	util.createProgressDialog(util.translate("scripts", "Creando códigos de balance 2008"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
-		
+
 		curCbl.setModeAccess(curCbl.Insert);
 		curCbl.refreshBuffer();
 		curCbl.setValueBuffer("codbalance", datos[i][0]);
@@ -310,12 +310,12 @@ function pgc2008_generarCodigosBalance2008()
 			curCbl.setValueBuffer("nivel4", datos[i][8]);
 		if (datos[i][9])
 			curCbl.setValueBuffer("descripcion4", datos[i][9]);
-		
+
 		curCbl.commitBuffer();
 	}
-	
+
 	this.iface.pgc2008_generarOrden3CB();
-	
+
 	util.destroyProgressDialog();
 }
 
@@ -341,18 +341,18 @@ function pgc2008_generarOrden3CB()
 
 	var curCbl:FLSqlCursor = new FLSqlCursor("co_codbalances08");
 	curCbl.select();
-	
+
 	while (curCbl.next()) {
-		
+
 		curCbl.setModeAccess(curCbl.Edit);
 		curCbl.refreshBuffer();
-		
+
 		nivel3 = curCbl.valueBuffer("nivel3");
 		if (romanos.search("ð" + nivel3 + "ð") == -1)
 			curCbl.setValueBuffer("orden3", nivel3.toString());
-		else		
+		else
 			curCbl.setValueBuffer("orden3", roman2arab[nivel3]);
-			
+
 		curCbl.commitBuffer();
 	}
 }
@@ -364,7 +364,7 @@ function pgc2008_actualizarCuentas2008(codEjercicio:String)
 	var util:FLUtil = new FLUtil;
 	var curCbl:FLSqlCursor = new FLSqlCursor("co_cuentascb");
 	curCbl.setActivatedCheckIntegrity(false);
-	
+
 	var datos = [
 		["201","A-A--I-1"],
 		["2801","A-A--I-1"],
@@ -873,17 +873,17 @@ function pgc2008_actualizarCuentas2008(codEjercicio:String)
 		["68","PG-A-8--"],
 		["746","PG-A-9--"]
 	];
-		
+
 	util.createProgressDialog(util.translate("scripts", "Actualizando códigos de balance"), datos.length);
-	
+
 	datos.sort();
-			
+
 	for (i = datos.length - 1; i >= 0; i--) {
-	
+
 		util.setProgress(datos.length - i);
-		
+
 		codCuenta = datos[i][0];
-		
+
 		curCbl.select("codcuenta = '" + codCuenta + "'");
 		if (curCbl.first()) {
 			continue;
@@ -895,8 +895,8 @@ function pgc2008_actualizarCuentas2008(codEjercicio:String)
 			curCbl.setValueBuffer("codbalance", datos[i][1]);
 			curCbl.commitBuffer();
 		}
-		
-		
+
+
 	}
 
 	util.destroyProgressDialog();
@@ -910,7 +910,7 @@ function pgc2008_actualizarCuentas2008ba(codEjercicio:String)
 	var util:FLUtil = new FLUtil;
 	var curCbl:FLSqlCursor = new FLSqlCursor("co_cuentascbba");
 	curCbl.setActivatedCheckIntegrity(false);
-	
+
 	var datos = [
 		["290","A-A--I-1"],
 		["280","A-A--I-1"],
@@ -1283,17 +1283,17 @@ function pgc2008_actualizarCuentas2008ba(codEjercicio:String)
 		["68","PG-A-8--"],
 		["746","PG-A-9--"]
 	];
-		
+
 	util.createProgressDialog(util.translate("scripts", "Actualizando códigos de balance abreviado"), datos.length);
-	
+
 	datos.sort();
-			
+
 	for (i = datos.length - 1; i >= 0; i--) {
-	
+
 		util.setProgress(datos.length - i);
-		
+
 		codCuenta = datos[i][0];
-		
+
 		curCbl.select("codcuenta = '" + codCuenta + "'");
 		if (curCbl.first()) {
 			continue;
@@ -1305,13 +1305,13 @@ function pgc2008_actualizarCuentas2008ba(codEjercicio:String)
 			curCbl.setValueBuffer("codbalance", datos[i][1]);
 			curCbl.commitBuffer();
 		}
-		
-		
+
+
 	}
-	
+
 	util.destroyProgressDialog();
-	
-	
+
+
 	// Descripciones de balance abreviado
 	var datos = [
 		["A-B--III-1", "1. Clientes por ventas y prestaciones de servicios"],
@@ -1328,16 +1328,16 @@ function pgc2008_actualizarCuentas2008ba(codEjercicio:String)
 		["P-C--V-1", "1. Proveedores"],
 		["P-C--V-2", "2. Otros acreedores"],
 	];
-		
+
 	util.createProgressDialog(util.translate("scripts", "Actualizando nombres de códigos de balance abreviado"), datos.length);
-	
+
 	curCbl = new FLSqlCursor("co_codbalances08");
 	curCbl.setActivatedCheckIntegrity(false);
-			
+
 	for (i = 0; i < datos.length; i++) {
-	
+
 		util.setProgress(i);
-		
+
 		curCbl.select("codbalance = '" + datos[i][0] + "'");
 		if (!curCbl.first())
 			continue;
@@ -1347,33 +1347,33 @@ function pgc2008_actualizarCuentas2008ba(codEjercicio:String)
 			curCbl.setValueBuffer("descripcion4ba", datos[i][1]);
 			curCbl.commitBuffer();
 		}
-		
+
 	}
-	
+
 	util.destroyProgressDialog();
-	
-	
-	
+
+
+
 	return;
 	/************* ASIENTO DE PRUEBAS */
-	
+
 	util.sqlDelete("co_partidas", "idasiento = 19");
 	var curP:FLSqlCursor = new FLSqlCursor("co_partidas");
 	var curS:FLSqlCursor = new FLSqlCursor("co_subcuentas");
 	curS.select("codejercicio = '0002'");
 	haber = 0;
 	paso = 0;
-		
+
 	util.createProgressDialog(util.translate("scripts", "Creando asiento de pruebas"), curS.size());
-	
+
 	while(curS.next()) {
-	
+
 		util.setProgress(paso++);
 		haber += parseFloat(curS.valueBuffer("codcuenta"));
-	
+
 		curP.setModeAccess(curP.Insert);
 		curP.refreshBuffer();
-	
+
 		curP.setValueBuffer("idasiento", 19);
 		curP.setValueBuffer("idsubcuenta", curS.valueBuffer("idsubcuenta"));
 		curP.setValueBuffer("codsubcuenta", curS.valueBuffer("codsubcuenta"));
@@ -1387,10 +1387,10 @@ function pgc2008_actualizarCuentas2008ba(codEjercicio:String)
 		curP.setValueBuffer("recargo", 0);
 		curP.commitBuffer();
 	}
-	
+
 	curP.setModeAccess(curP.Insert);
 	curP.refreshBuffer();
-	
+
 	curP.setValueBuffer("idasiento", 19);
 	curP.setValueBuffer("idsubcuenta", curS.valueBuffer("idsubcuenta"));
 	curP.setValueBuffer("codsubcuenta", curS.valueBuffer("codsubcuenta"));
@@ -1403,7 +1403,7 @@ function pgc2008_actualizarCuentas2008ba(codEjercicio:String)
 	curP.setValueBuffer("iva", 0);
 	curP.setValueBuffer("recargo", 0);
 	curP.commitBuffer();
-	
+
 	util.destroyProgressDialog();
 }
 
@@ -1414,29 +1414,29 @@ function pgc2008_actualizarCuentasEspeciales(codEjercicio:String)
 {
 	var util:FLUtil = new FLUtil;
 	var curCbl:FLSqlCursor = new FLSqlCursor("co_cuentas");
-	
+
 	this.iface.completarTiposEspeciales();
 	var datos:Array = this.iface.datosCuentasEspeciales();
-			
+
 	util.createProgressDialog(util.translate("scripts", "Actualizando cuentas especiales"), datos.length);
-	
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
 		with(curCbl) {
-		
+
 			codCuenta08 = util.sqlSelect("co_correspondenciascc", "codigo08", "codigo90 = '" + datos[i][0] + "'");
-		
+
 			select("codcuenta = '" + codCuenta08 + "' and codejercicio = '" + codEjercicio + "'");
 			if (!first())
 				continue;
-				
+
 			setModeAccess(curCbl.Edit);
 			refreshBuffer();
 			setValueBuffer("idcuentaesp", datos[i][1]);
 			commitBuffer();
 		}
 	}
-	
+
 	util.destroyProgressDialog();
 }
 
@@ -1453,17 +1453,17 @@ function pgc2008_generarCuadroCuentas(codEjercicio:String)
 }
 
 function pgc2008_generarGrupos(codEjercicio:String)
-{	
+{
 	var util:FLUtil = new FLUtil;
-	var curCbl:FLSqlCursor;	
-	
+	var curCbl:FLSqlCursor;
+
 	// GRUPOS
 	var datos:Array = this.iface.datosGrupos();
-	
+
 	curCbl = new FLSqlCursor("co_gruposepigrafes");
 	curCbl.setActivatedCheckIntegrity(false);
 	util.createProgressDialog(util.translate("scripts", "Creando grupos 2008"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
 		with(curCbl) {
@@ -1476,23 +1476,23 @@ function pgc2008_generarGrupos(codEjercicio:String)
 		}
 	}
 	util.destroyProgressDialog();
-}				
-	
+}
+
 function pgc2008_generarSubgrupos(codEjercicio:String)
-{	
+{
 	var util:FLUtil = new FLUtil;
-	var curCbl:FLSqlCursor;	
-	
+	var curCbl:FLSqlCursor;
+
 	// SUBGRUPOS (antes Epígrafes)
-	var datos:Array = this.iface.datosSubgrupos();		
+	var datos:Array = this.iface.datosSubgrupos();
 	curCbl = new FLSqlCursor("co_epigrafes");
 	curCbl.setActivatedCheckIntegrity(false);
 	util.createProgressDialog(util.translate("scripts", "Creando epigrafes 2008"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
-		
+
 		idGrupo = util.sqlSelect("co_gruposepigrafes", "idgrupo", "codgrupo = '" + datos[i][2] + "' and codejercicio = '" + codEjercicio + "'");
-		
+
 		util.setProgress(i);
 		with(curCbl) {
 			setModeAccess(curCbl.Insert);
@@ -1505,25 +1505,25 @@ function pgc2008_generarSubgrupos(codEjercicio:String)
 		}
 	}
 	util.destroyProgressDialog();
-}		
-		
+}
+
 function pgc2008_generarCuentas(codEjercicio:String)
-{	
+{
 	var util:FLUtil = new FLUtil;
-	var curCbl:FLSqlCursor;	
-	
+	var curCbl:FLSqlCursor;
+
 	// CUENTAS
-	var datos:Array = this.iface.datosCuentas();		
+	var datos:Array = this.iface.datosCuentas();
 	curCbl = new FLSqlCursor("co_cuentas");
 	curCbl.setActivatedCheckIntegrity(false);
-	
+
 	util.createProgressDialog(util.translate("scripts", "Creando cuentas 2008"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
-		
+
 		idEpigrafe = util.sqlSelect("co_epigrafes", "idepigrafe", "codepigrafe = '" + datos[i][2] + "' and codejercicio = '" + codEjercicio + "'");
-		
+
 		with(curCbl) {
 			setModeAccess(curCbl.Insert);
 			refreshBuffer();
@@ -1547,46 +1547,46 @@ function pgc2008_generarSubcuentas(codEjercicio:String, longSubcuenta:Number)
 	var curSubcuenta:FLSqlCursor = new FLSqlCursor("co_subcuentas");
 	curCuenta.setActivatedCheckIntegrity(false);
 	curSubcuenta.setActivatedCheckIntegrity(false);
-	
+
 	var codSubcuenta:String;
 	var numCeros:Number;
 	var paso:Number = 0;
-	
+
 	var codDivisa =	util.sqlSelect("empresa", "coddivisa", "1 = 1");
-	
+
 	curCuenta.select("codejercicio = '" + codEjercicio + "'");
 	util.createProgressDialog(util.translate("scripts", "Generando subcuentas adicionales"), curCuenta.size());
-	
-	
+
+
 	while (curCuenta.next()) {
-	
+
 		util.setProgress(paso++);
-	
+
 		curCuenta.setModeAccess(curCuenta.Browse);
 		curCuenta.refreshBuffer();
 		codSubcuenta = curCuenta.valueBuffer("codcuenta");
-		
+
 		numCeros = longSubcuenta - codSubcuenta.toString().length;
 		for (var i = 0; i < numCeros; i++)
 			codSubcuenta += "0";
-			
+
 		// Existe ya la subcuenta?
-		curSubcuenta.select("codsubcuenta = '" + codSubcuenta + "' AND codejercicio = '" + codEjercicio + "'");		
+		curSubcuenta.select("codsubcuenta = '" + codSubcuenta + "' AND codejercicio = '" + codEjercicio + "'");
 		if (curSubcuenta.first()) {
-		
+
 			// Corresponde a la cuenta o sólo coincide el código (ejemplo: cuentas 133 y 1330)
 			if (!util.sqlSelect("co_subcuentas", "idcuenta", "idcuenta = " + curCuenta.valueBuffer("idcuenta") + " AND codsubcuenta = '" + codSubcuenta + "' AND codejercicio = '" + codEjercicio + "'")) {
 				codSubcuenta = codSubcuenta.left(longSubcuenta - 1) + "1"; // Código -> 1330000001
 				// Nueva comprobación
-				curSubcuenta.select("codsubcuenta = '" + codSubcuenta + "' AND codejercicio = '" + codEjercicio + "'");		
+				curSubcuenta.select("codsubcuenta = '" + codSubcuenta + "' AND codejercicio = '" + codEjercicio + "'");
 				if (curSubcuenta.first())
 					continue;
 			}
-					
+
 			else
 				continue;
 		}
-		
+
 		with(curSubcuenta) {
 			setModeAccess(curSubcuenta.Insert);
 			refreshBuffer();
@@ -1608,24 +1608,24 @@ Sólo si no existen
 function pgc2008_generarCorrespondenciasCC(codEjercicio:String)
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	if (util.sqlSelect("co_correspondenciascc", "codigo90", ""))
 		return;
-		
-	var curCbl:FLSqlCursor;	
-	
+
+	var curCbl:FLSqlCursor;
+
 	var datos:Array = this.iface.datosCorrespondencias();
 	curCbl = new FLSqlCursor("co_correspondenciascc");
 	curCbl.setActivatedCheckIntegrity(false);
 	util.createProgressDialog(util.translate("scripts", "Creando correspondencias entre planes 1990-2008"), datos.length);
-	
+
 	var datosCuenta:Array;
-	
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
-		
+
 		datosCuenta = flfactppal.iface.pub_ejecutarQry("co_cuentas", "descripcion,idepigrafe", "codcuenta = '" + datos[i][1] + "' AND codejercicio = '" + codEjercicio + "'");
-		
+
 		with(curCbl) {
 			setModeAccess(curCbl.Insert);
 			refreshBuffer();
@@ -1646,14 +1646,14 @@ function pgc2008_convertirCodSubcuenta(codEjercicio:String, codSubcuenta90:Strin
 	var rightSubcuenta90:String = codSubcuenta90.right(codSubcuenta90.length - codCuenta90.length);
 	var codCuenta08:String = util.sqlSelect("co_correspondenciascc", "codigo08", "codigo90 = '" + codCuenta90 + "'");
 	if (!codCuenta08)
-		return false;	
-	
+		return false;
+
 	var rightSubcuenta08:String = rightSubcuenta90.right(codSubcuenta90.length - codCuenta08.length);
-	
+
 	// se completa con ceros
 	while (rightSubcuenta08.length < codSubcuenta90.length - codCuenta08.length)
 		rightSubcuenta08 = "0" + rightSubcuenta08;
-		
+
 	return codCuenta08 + rightSubcuenta08;
 }
 
@@ -1678,7 +1678,7 @@ function pgc2008_datosGrupos():Array
 		["8","Gastos imputados al patrimonio neto"],
 		["9","Ingresos imputados al patrimonio neto"]
 	];
-	
+
 	return datos;
 }
 
@@ -3449,7 +3449,7 @@ function pgc2008_datosCorrespondencias():Array
 		["","993"],
 		["","994"]
 	];
-	
+
 	return datos;
 }
 
@@ -3535,7 +3535,7 @@ function pgc2008_datosCuentasEspeciales()
 		["701","VENTAS"],
 		["702","VENTAS"]
 	];
-	
+
 	return datos;
 }
 
@@ -3556,7 +3556,7 @@ function pgc2008_datosCuentasHuerfanas()
 		["680","Amortización de gastos de establecimiento"],
 		["730","Incorporación al activo de gastos de establecimiento"],
 		["737","Incorporación al activo de gastos de formalización de deudas"]];
-	
+
 	return datos;
 }
 
@@ -3590,44 +3590,44 @@ function pgc2008_completarTiposEspeciales()
 		["INGRF","Ingresos por recargo financiero"],
 		["DEVCOM","Devoluciones de compras"],
 		["DEVVEN","Devoluciones de ventas"]];
-			
+
 	var cursor:FLSqlCursor = new FLSqlCursor("co_cuentasesp");
 	for (i = 0; i < datos.length; i++) {
-	
+
 		cursor.select("idcuentaesp = '" + datos[i][0] + "'");
 		if (cursor.first())
 			continue;
-	
+
 		cursor.setModeAccess(cursor.Insert);
 		cursor.refreshBuffer();
 		cursor.setValueBuffer("idcuentaesp", datos[i][0]);
 		cursor.setValueBuffer("descripcion", datos[i][1]);
 		cursor.commitBuffer();
-	} 
+	}
 }
 
 function pgc2008_regenerarPGC(codEjercicio:String)
 {
 	var util:FLUtil = new FLUtil;
-	var curCbl:FLSqlCursor;	
+	var curCbl:FLSqlCursor;
 	var longSubcuenta:Number = util.sqlSelect("ejercicios", "longsubcuenta", "codejercicio = '" + codEjercicio + "'");
-	
-	
+
+
 	// CORRESPONDENCIAS
 	util.createProgressDialog(util.translate("scripts", "Preparando..."), 2);
 	util.setProgress(1);
 	util.sqlDelete("co_correspondenciascc", "");
 	util.destroyProgressDialog();
-	
+
 	this.iface.generarCorrespondenciasCC(codEjercicio);
-	
-	
+
+
 	// DESCRIPCIONES DE GRUPOS
 	var datos:Array = this.iface.datosGrupos();
 	curCbl = new FLSqlCursor("co_gruposepigrafes");
 	curCbl.setActivatedCheckIntegrity(false);
 	util.createProgressDialog(util.translate("scripts", "Actualizando grupos"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
 		curCbl.select("codgrupo = '" + datos[i][0] + "' AND codejercicio = '" + codEjercicio + "'");
@@ -3641,19 +3641,19 @@ function pgc2008_regenerarPGC(codEjercicio:String)
 		}
 	}
 	util.destroyProgressDialog();
-	
-	
-	
+
+
+
 	// SUBGRUPOS
-	var datos:Array = this.iface.datosSubgrupos();		
+	var datos:Array = this.iface.datosSubgrupos();
 	curCbl = new FLSqlCursor("co_epigrafes");
 	curCbl.setActivatedCheckIntegrity(false);
 	util.createProgressDialog(util.translate("scripts", "Actualizando subgrupos"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
-		
+
 		idGrupo = util.sqlSelect("co_gruposepigrafes", "idgrupo", "codgrupo = '" + datos[i][2] + "' and codejercicio = '" + codEjercicio + "'");
-		
+
 		util.setProgress(i);
 		curCbl.select("codepigrafe = '" + datos[i][0] + "' AND codejercicio = '" + codEjercicio + "'");
 		if (curCbl.first()) {
@@ -3664,7 +3664,7 @@ function pgc2008_regenerarPGC(codEjercicio:String)
 				commitBuffer();
 			}
 		}
-		else 
+		else
 			with(curCbl) {
 				setModeAccess(curCbl.Insert);
 				refreshBuffer();
@@ -3676,20 +3676,20 @@ function pgc2008_regenerarPGC(codEjercicio:String)
 			}
 	}
 	util.destroyProgressDialog();
-	
-	
+
+
 	// CUENTAS
-	var datos:Array = this.iface.datosCuentas();		
+	var datos:Array = this.iface.datosCuentas();
 	curCbl = new FLSqlCursor("co_cuentas");
 	curCbl.setActivatedCheckIntegrity(false);
-	
+
 	util.createProgressDialog(util.translate("scripts", "Actualizando cuentas"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
-		
+
 		idEpigrafe = util.sqlSelect("co_epigrafes", "idepigrafe", "codepigrafe = '" + datos[i][2] + "' and codejercicio = '" + codEjercicio + "'");
-		
+
 		curCbl.select("codcuenta = '" + datos[i][0] + "' AND codejercicio = '" + codEjercicio + "'");
 		if (curCbl.first()) {
 				with(curCbl) {
@@ -3699,8 +3699,8 @@ function pgc2008_regenerarPGC(codEjercicio:String)
 				commitBuffer();
 			}
 		}
-		
-		else 
+
+		else
 			with(curCbl) {
 				setModeAccess(curCbl.Insert);
 				refreshBuffer();
@@ -3711,26 +3711,26 @@ function pgc2008_regenerarPGC(codEjercicio:String)
 				setValueBuffer("codejercicio", codEjercicio);
 				commitBuffer();
 			}
-	
+
 	}
 	util.destroyProgressDialog();
-	
-	
+
+
 	// SUBCUENTAS (sólo las que vienen directas de cuenta: XXX000000)
-	var datos:Array = this.iface.datosCuentas();		
+	var datos:Array = this.iface.datosCuentas();
 	curCbl = new FLSqlCursor("co_subcuentas");
 	curCbl.setActivatedCheckIntegrity(false);
-	
+
 	util.createProgressDialog(util.translate("scripts", "Actualizando subcuentas"), datos.length);
-			
+
 	for (i = 0; i < datos.length; i++) {
 		util.setProgress(i);
-		
+
 		codSubcuenta = datos[i][0];
 		numCeros = longSubcuenta - codSubcuenta.toString().length;
 		for (var i = 0; i < numCeros; i++)
 			codSubcuenta += "0";
-			
+
 		curCbl.select("codsubcuenta = '" + codSubcuenta + "' AND codejercicio = '" + codEjercicio + "'");
 		if (curCbl.first()) {
 				with(curCbl) {
@@ -3740,18 +3740,18 @@ function pgc2008_regenerarPGC(codEjercicio:String)
 				commitBuffer();
 			}
 		}
-	
+
 	}
 	util.destroyProgressDialog();
-	
+
 	// SUBCUENTAS QUE FALTAN TRAS CREAR LAS CUENTAS
 	this.iface.generarSubcuentas(codEjercicio, longSubcuenta);
-	
+
 	// CÓDIGOS DE BALANCE abreviado
 	util.sqlDelete("co_cuentascbba", "");
 	util.sqlDelete("co_cuentascb", "");
 	util.sqlDelete("co_codbalances08", "");
-	
+
 	// CÓDIGOS DE BALANCE
 	this.iface.generarCodigosBalance2008();
 	this.iface.actualizarCuentas2008(codEjercicio);
@@ -3768,43 +3768,43 @@ Las cuentas de 4 dígitos prevalecen sobre las de 3 dígitos. Ej: 830 desaparece y
 */
 function pgc2008_actualizarCuentasDigitos(codEjercicio:String)
 {
-	var curCbl:FLSqlCursor;	
+	var curCbl:FLSqlCursor;
 	var util:FLUtil = new FLUtil;
 	var curCbl:FLSqlCursor;
 	var codCuenta:String, codCuenta3:String, lastCodCuenta3:String = "";
 	var paso:Number = 0;
-	
+
 	curCbl = new FLSqlCursor("co_cuentas");
-	
+
 	curCbl.select("codejercicio = '" + codEjercicio + "' ORDER BY codcuenta");
 	util.createProgressDialog(util.translate("scripts", "Actualizando cuentas por dígitos"), curCbl.size());
-	
+
 	while (curCbl.next()) {
-	
+
 		util.setProgress(paso++);
-		
+
 		idCuenta = curCbl.valueBuffer("idcuenta");
 		codCuenta = curCbl.valueBuffer("codcuenta");
-		
+
 		if (codCuenta.length != 4)
 			continue;
-		 
+
 		codCuenta3 = codCuenta.left(3);
-		
+
 		if (codCuenta3 == lastCodCuenta3)
 			continue;
-		
-		lastCodCuenta3 = codCuenta3;		
-		
+
+		lastCodCuenta3 = codCuenta3;
+
 		idCuenta3 = util.sqlSelect("co_cuentas", "idcuenta", "codcuenta = '" + codCuenta3 + "' AND codejercicio = '" + codEjercicio + "'");
 		if (!idCuenta3)
 			continue;
-		
+
 		// Migrar las subcuentas dependientes
  		util.sqlUpdate("co_subcuentas", "idcuenta,codcuenta", idCuenta + "," + codCuenta, "idcuenta = " + idCuenta3);
  		util.sqlUpdate("series", "idcuenta", idCuenta, "idcuenta = " + idCuenta3)
 	}
-	
+
 	util.destroyProgressDialog();
 }
 
@@ -3813,3 +3813,4 @@ function pgc2008_actualizarCuentasDigitos(codEjercicio:String)
 
 //// PGC 2008 //////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+
