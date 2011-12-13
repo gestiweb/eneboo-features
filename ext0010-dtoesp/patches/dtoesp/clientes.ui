@@ -1,0 +1,38 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,descuentos]/vbox[vbox,1]/widget[QGroupBox,gbxDescuentos]/vbox[vbox,1]/property[name]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbPorDtoEsp</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>220</width>
+          <height>0</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>230</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>pordtoesp</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

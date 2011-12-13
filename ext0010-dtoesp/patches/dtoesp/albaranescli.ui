@@ -1,0 +1,126 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formAlbaranesCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">921</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formAlbaranesCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">604</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formAlbaranesCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxDtoEsp</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+        </font>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbNetoSinDtoEsp</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>140</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>netosindtoesp</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbPorDtoEsp</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>140</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>pordtoesp</string>
+          </property>
+          <property name="foreignField">
+            <string>pordtoesp</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codcliente</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDtoEsp</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>140</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="fieldName">
+            <string>dtoesp</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacer22_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>270</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]/text()[1]">fdbNetoSinDtoEsp</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]/text()[1]">fdbPorDtoEsp</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]/text()[1]">fdbDtoEsp</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]/text()[1]">fdbNeto</xupdate:update>
+</xupdate:modifications>
