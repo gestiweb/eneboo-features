@@ -1,0 +1,37 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >629</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="traza_infoimage20057" >
+<data format="PNG" length="1297" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004d849444154789cc5975b88556514c77f6bef7dae338e388e899888a924282551a4116898d7e9421244035a46d48b149865777bd02e945858a065188e600c218112ced84ba61682a83963d48397c10674e634739c39b77df9560f67cfb57366ced4830b161bf65edf5abfefff5db7a82ab7d2ac5b5a1d70c6db20d72cb74b94fb7022772291d9a011947682dc25f5389d58ae17c7934f2a1d825c8bac9658cd46894e5b865d152bb29bfe348082c9a1de8db3ea76eed3025f25d768fe7f03647f9059128befb292b3ebb1aa513f0d5e176afa40dd62611cb09288538b442683183477f54fcda55e4eacd6a3ff19207b441e9264dd7792bca3560b37d0fc55500591a22343a24df19b8244a7208959e07512cf5f7e9315fa41b91a652761e67b592289a9cd129f596b7a2ea07d57c0d8a04ef1195810c810b7c138a00e26df89e93e4ddcc9d2e4bdf07e74c795ade352a0ef90ccb092b5ad929c5163d26d14bb65179f155a95e3f14d6a159b7207b0354bd7dfe906ddb2e060650ad889bd129b5a13f4fc811a5063a3016820157995781c483dca866b7be8eeea22697b4c4838bb93dbcedc3626406f93b542a2b52b4c36059e57947698d4a37bb5b834a6ea59d7fe296806c8d391ca501db56b3cdb7e776c05ecaacda88dc974a31aa9b8d71a08d552a03155cffaf69d60b26072600c7ede255f708947ed0dc9774ed59605483746a789c496683e3b98d854e613244f636a0debdb3f069329160f02087c50436f268f8d267ddbae2faf80380f68205153288433bd32d96bc8b13fb586f5ed1f863dcf87c54337017ec1c3f73c10960d2d396c2b1663cdc30bc03720631c13e182a87132ec4fade699bfb683e4405c86ef0ffdf18ae78265ccdcb200aa91e9b87ec5ab2d6115f8f2fa5a5ebcfe064816c41b255af00a1e824e290bd03c271237a5e8cb58dc31349e9d0fd928246e8e19af451f26ed3080eb31bba3a47c65cc129be716edc0323ec7db9e80449ab1e473205d16407de7b26a40a51006c85836eb167d8109e044db23632aa1e8d5b200c6c47ff1d5ada878bf79c6c1330e0d8bf7608ce1546b3dc46f8268c98e38a227cb02d4f1f0c56ba6a50d74fe7820fc10e2a9c5fb3001fcdabab2a4120224231c1ef66ee461b4eda7791b15b36b3c00fd665901f1489ea613eb387d6119c47b0745507084166ff7da9543dbfceb4ae6c8f4bd19af63b30a332b9f8e618dc0c1f51d1e5f7c90c057ceb42e85781f08882ad511797b649b92c7f196a3772d0f4cd0328e053134259604c4a2050e9f7c92f3bf3f08b10c318b9df9af9fde3432bae476f7d1aadf8eb99ef556ae60911fb70bd9bc43ba2fc1f27b0fb160ee712cd7feb1deed78a524ee6857b2e79bee7e2f30ba5564e0da394e2d0c8ecdb1ee4b4b1f6b7aedf39217d4312fa50dfb1736789ef94ca1ae98746cebcfe8d8d627df3e7beed5512147023822fd75240054d5acdabe70ba5499d78d450322b5835586b495104d3510a5d9116bfb9197ce9d0a735a61b0fa23ea89aae288448189401510052214578805d801b840a66edec43953ef9fb4243e39768f15b366588e3509115b039336aee9747bbcf33d177b7f6e3f79e32cc5c65552dc300de0031e612e20edabbae5009cd0ed10c202aca098201b2a1475b013628b78819f070a4000c404e2e1ec0ec2e24108e09704283304034331c401c40c8a3ff4d7486c06078781c36fc0293b04b7d26ef9dff13f7604acd31d898e8d0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" >
+<action>
+<property name="name" >
+<cstring>i_trazaarticulos</cstring>
+</property>
+<property name="iconSet" >
+<iconset>traza_infoimage20057</iconset>
+</property>
+<property name="text" >
+<string>Trazabilidad</string>
+</property>
+<property name="whatsThis" >
+<string>Informe de seguimiento de productos: ventas, compras, cambios de stocks</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>i_trazaarticulos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >30</xupdate:update>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >629</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_inventarioval]" >
+<action name="i_trazaarticulos" />
+</xupdate:insert-after>
+</xupdate:modifications>

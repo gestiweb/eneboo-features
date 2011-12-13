@@ -1,0 +1,15 @@
+<flpatch:modifications name="multi_rec_cli" >
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="divisas.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosmulticli.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosmulticli.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolcli.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosmulticli.mtd" />
+</flpatch:modifications>
