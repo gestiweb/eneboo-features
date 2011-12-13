@@ -1,0 +1,21 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]" >
+<field>
+<name>codsubfamilia</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subfamilia&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<relation>
+<table>subfamilias</table>
+<field>codsubfamilia</field>
+<card>M1</card>
+</relation>
+<associated>
+<with>codfamilia</with>
+<by>codfamilia</by>
+</associated>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

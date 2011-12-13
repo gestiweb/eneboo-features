@@ -1,0 +1,15 @@
+<flpatch:modifications name="multi_rec_prov" >
+    <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="divisas.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosmultiprov.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosmultiprov.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolprov.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosmultiprov.mtd" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" />
+</flpatch:modifications>

@@ -1,0 +1,12 @@
+<flpatch:modifications name="traza_info" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_mastertrazaarticulos.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_trazaarticulos.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_trazaarticulos.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_trazaarticulos.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_mastertrazaarticulos.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_trazaarticulos.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_trazaarticulos.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_trazaarticulos_buffer.mtd" />
+</flpatch:modifications>

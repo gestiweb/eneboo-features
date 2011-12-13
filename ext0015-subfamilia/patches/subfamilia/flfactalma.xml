@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]" >
+<action>
+<name>subfamilias</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subfamilias, varias subfamilias se agrupan en una familia&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Subfamilias&quot;)</alias>
+<table>subfamilias</table>
+<form>master</form>
+<formrecord>subfamilias</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

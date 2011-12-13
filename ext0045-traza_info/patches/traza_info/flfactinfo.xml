@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_trazaarticulos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Informe de trazabilidad de articulos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Información de movimientos de artículos: compra, venta, regularización de stocks, facturas rectificativas, etc&quot;)</description>
+<table>i_trazaarticulos</table>
+<form>i_mastertrazaarticulos</form>
+<formrecord>i_trazaarticulos</formrecord>
+<scriptform>i_mastertrazaarticulos</scriptform>
+<scriptformrecord>i_trazaarticulos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>
