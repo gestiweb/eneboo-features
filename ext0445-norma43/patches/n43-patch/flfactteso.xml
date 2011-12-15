@@ -1,0 +1,68 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[vdisco]">
+    <action>
+      <name>n43_importados</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Ficheros importados según la Norma 43")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ficheros importados de la Norma 43")</alias>
+      <table>n43_importados</table>
+      <form>master</form>
+      <formrecord>n43_importados</formrecord>
+      <scriptformrecord>n43_importados</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[n43_importados]">
+    <action>
+      <name>n43_movimientos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Movimientos bancarios")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Movimientos bancarios")</alias>
+      <table>n43_movimientos</table>
+      <form>n43_mastermovimientos</form>
+      <formrecord>n43_movimientos</formrecord>
+      <scriptformrecord>n43_movimientos</scriptformrecord>
+      <scriptform>n43_mastermovimientos</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[n43_movimientos]">
+    <action>
+      <name>n43_cptospropios</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Conceptos propios de entidades bancarias")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Conceptos propios de entidades bancarias")</alias>
+      <table>n43_cptospropios</table>
+      <form>master</form>
+      <formrecord>n43_cptospropios</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[n43_cptospropios]">
+    <action>
+      <name>n43_procesoscas</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Proceso de casación")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Proceso de casación")</alias>
+      <table>n43_procesoscas</table>
+      <form>master</form>
+      <formrecord>n43_procesoscas</formrecord>
+      <scriptformrecord>n43_procesoscas</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[n43_procesoscas]">
+    <action>
+      <name>n43_casacion</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Casación")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Casación")</alias>
+      <form>n43_casacion</form>
+      <formrecord>n43_casacion</formrecord>
+      <scriptform>n43_casacion</scriptform>
+      <scriptformrecord>n43_casacion</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[n43_casacion]">
+    <action>
+      <name>n43_casaciones</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Casaciones")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Casaciones")</alias>
+      <form>n43_casaciones</form>
+      <formrecord>n43_casaciones</formrecord>
+      <scriptform>n43_casaciones</scriptform>
+      <scriptformrecord>n43_casaciones</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

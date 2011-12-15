@@ -1,0 +1,552 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbSufijoi]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">50</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbSufijoi]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGP]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaEfgp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">320</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGP]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaEfgp]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGP]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuentaEfgp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">79</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGP]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuentaEfgp]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGP]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuentaEfgp]/property[focusPolicy]/enum[enum,1]/text()[1]">NoFocus</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGP]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSubcuentaEcgp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">250</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGP]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSubcuentaEcgp]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">0</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,datos]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>movBancarios</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Movimientos bancarios</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>Layout2_2</cstring>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+              <number>0</number>
+            </property>
+            <property name="spacing">
+              <number>6</number>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbFechaSaldo</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>26</width>
+                  <height>22</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>fechasaldo</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbSaldoIni</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>7</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>26</width>
+                  <height>22</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>saldoini</string>
+              </property>
+            </widget>
+          </hbox>
+        </widget>
+        <widget class="FLTableDB">
+          <property name="name">
+            <cstring>tdbMovimientos</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="tableName">
+            <string>n43_movimientos</string>
+          </property>
+          <property name="foreignField">
+            <string>codcuenta</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codcuenta</string>
+          </property>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QTabWidget,tbwCuentasBancarias]/widget[QWidget,movBancarios]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>resumen</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Resumen</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxResumenBanco</cstring>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="title">
+            <string>&amp;Banco</string>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+              <number>10</number>
+            </property>
+            <property name="spacing">
+              <number>10</number>
+            </property>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout7</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblEtqHabeBanco</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>14</pointsize>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>HABER</string>
+                  </property>
+                  <property name="alignment">
+                    <set>WordBreak|AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblEtqDebeBanco</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>14</pointsize>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>DEBE</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblEtqSaldoBanco</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>14</pointsize>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>SALDO</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+            <widget class="Line">
+              <property name="name">
+                <cstring>line1</cstring>
+              </property>
+              <property name="frameShape">
+                <enum>HLine</enum>
+              </property>
+              <property name="frameShadow">
+                <enum>Plain</enum>
+              </property>
+              <property name="lineWidth">
+                <number>2</number>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout8</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblHaberBanco</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblDebeBanco</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblSaldoBanco</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+          </vbox>
+        </widget>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxResumenConta</cstring>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="title">
+            <string>&amp;Contabilidad</string>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+              <number>10</number>
+            </property>
+            <property name="spacing">
+              <number>10</number>
+            </property>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout7_2</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblEtqDebeConta</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>14</pointsize>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>DEBE</string>
+                  </property>
+                  <property name="alignment">
+                    <set>WordBreak|AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblEtqHaberConta</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>14</pointsize>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>HABER</string>
+                  </property>
+                  <property name="alignment">
+                    <set>WordBreak|AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblEtqSaldoConta</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>14</pointsize>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>SALDO</string>
+                  </property>
+                  <property name="alignment">
+                    <set>WordBreak|AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+            <widget class="Line">
+              <property name="name">
+                <cstring>line1_2</cstring>
+              </property>
+              <property name="frameShape">
+                <enum>HLine</enum>
+              </property>
+              <property name="frameShadow">
+                <enum>Plain</enum>
+              </property>
+              <property name="lineWidth">
+                <number>2</number>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout8_2</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblDebeConta</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblHaberConta</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblSaldoConta</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+          </vbox>
+        </widget>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxResumenDescuadre</cstring>
+          </property>
+          <property name="font">
+            <font/>
+          </property>
+          <property name="title">
+            <string>&amp;Descuadre</string>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="Line">
+              <property name="name">
+                <cstring>line1_2_2</cstring>
+              </property>
+              <property name="frameShape">
+                <enum>HLine</enum>
+              </property>
+              <property name="frameShadow">
+                <enum>Plain</enum>
+              </property>
+              <property name="lineWidth">
+                <number>2</number>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout8_2_2</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblDebeDes</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblHaberDes</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>lblSaldoDes</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <pointsize>12</pointsize>
+                      <italic>0</italic>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>0</string>
+                  </property>
+                  <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+</xupdate:modifications>

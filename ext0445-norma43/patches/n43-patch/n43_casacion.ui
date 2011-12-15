@@ -1,0 +1,464 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>n43_casacion</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>n43_casacion</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>805</width>
+            <height>724</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>n43_casacion</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>6</number>
+        </property>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame4</cstring>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>137</red>
+                    <green>161</green>
+                    <blue>197</blue>
+                </color>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>6</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout12</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>18</pointsize>
+                                    <bold>1</bold>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Movimientos Bancarios</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_3_2</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Desde</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>deDesdeMov</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit">
+                            <property name="name">
+                                <cstring>deDesdeMov</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="autoAdvance">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel2_2</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Hasta</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>deHastaMov</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit">
+                            <property name="name">
+                                <cstring>deHastaMov</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="date">
+                                <date>
+                                    <year>2000</year>
+                                    <month>1</month>
+                                    <day>1</day>
+                                </date>
+                            </property>
+                            <property name="autoAdvance">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="Line">
+                    <property name="name">
+                        <cstring>line1</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Plain</enum>
+                    </property>
+                    <property name="lineWidth">
+                        <number>2</number>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="FLTableDB">
+                    <property name="name">
+                        <cstring>tdbMovimientos</cstring>
+                    </property>
+                    <property name="tableName">
+                        <string>n43_faketable</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame5</cstring>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>208</red>
+                    <green>191</green>
+                    <blue>134</blue>
+                </color>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>6</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout15</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_2</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>18</pointsize>
+                                    <bold>1</bold>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Recibos</string>
+                            </property>
+                        </widget>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>bgCliPro</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="frameShape">
+                                <enum>NoFrame</enum>
+                            </property>
+                            <property name="title">
+                                <string></string>
+                            </property>
+                            <property name="alignment">
+                                <set>WordBreak|AlignJustify|AlignCenter|AlignBottom|AlignTop|AlignRight|AlignLeft</set>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <property name="margin">
+                                    <number>8</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>4</number>
+                                </property>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>rbClientes</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Clientes</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>0</number>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>rbProveedores</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Proveedores</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>71</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_3</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Desde</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>deDesdeRec</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit">
+                            <property name="name">
+                                <cstring>deDesdeRec</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="autoAdvance">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel2</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Hasta</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>deHastaRec</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QDateEdit">
+                            <property name="name">
+                                <cstring>deHastaRec</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="autoAdvance">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="Line">
+                    <property name="name">
+                        <cstring>line1_2</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Plain</enum>
+                    </property>
+                    <property name="lineWidth">
+                        <number>2</number>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="FLTableDB">
+                    <property name="name">
+                        <cstring>tdbRecibos</cstring>
+                    </property>
+                    <property name="tableName">
+                        <string>n43_faketable</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame3</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>Box</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <property name="lineWidth">
+                <number>2</number>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>6</number>
+                </property>
+                <property name="spacing">
+                    <number>2</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pbStart</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>12</pointsize>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Iniciar Proceso de Casación</string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image35938</iconset>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<customwidgets>
+</customwidgets>
+<images>
+    <image name="image35938">
+        <data format="PNG" length="359">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000012e49444154789cad93314fc33010859fedeb020bff82ad12a103ad44d20121c4ca9a5fc6dc0d55dd186020ced0762188020284e03fb020a1dcd91dd2b41d9a948abee9e4939ebf7bf6a9a0dd4938e70815a286b1d968d4adec73ced1f96917c66828a5e0bd87730ece3930336eef8695e60040d4207b7d93d41090ad33f8b75455635d3600a0b5b694c5f000e07eb1d7bac277d9e49ca3b3936388145930334478560bf23cc7d3eb67a4b218be791162d24fe176b0dbbac4cf2604c862781e849e07a12f693611954549f0970c0c69fb301e77e706937e5a64d02bf0cb0cc2ce219cf3704e2022601630331e5f3ee6c614f456bf842163d3e1fd4a02adf5f6fe863a386a27c2529b7641b4987b59242c51d0dc87527ae9d8cf7662b117cf6f5f2b2f2143da6693f7b5045b9d7b5953ffa0a8850d090b220000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>fltabledb.h</includehint>
+    <includehint>fltabledb.h</includehint>
+</includehints>
+</UI>

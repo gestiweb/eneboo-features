@@ -1,0 +1,31 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>n43_cptoscomunes</name>
+	<!-- Conceptos comunes a todas las entidades -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Conceptos Comunes")</alias>
+
+	<field>
+		<name>codconcepto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>2</length>
+
+		<relation>
+			<table>n43_movimientos</table>
+			<field>cptocomun</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>concepto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+</TMD>
