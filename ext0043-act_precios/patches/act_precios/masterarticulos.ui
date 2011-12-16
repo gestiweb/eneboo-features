@@ -1,0 +1,138 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">180</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">16</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>pbnImportar</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>act_preciosimage5</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Actualizar precios de los artículos</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Actualiza los precios de los artículos a partir de un fichero de texto csv con las columnas referencia y precio separados por el caracter ð</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnImportar]">
+    <widget class="QToolButton">
+      <property name="name">
+        <cstring>tbnActualizarVariable</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>C</string>
+      </property>
+      <property name="iconSet">
+        <iconset>articulos_compimage5</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Actualizar Variable</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Actualiza la propiead Variable de todos los artículos</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,tbnActualizarVariable]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnEtiquetas</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>eti_articuloimage11338</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Imprimir etiquetas</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Para imprimir las etiquetas de cada bulto</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="act_preciosimage5">
+      <data format="PNG" length="1639">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000062e49444154789cc5974f681cd71dc73f31cfe50d8ce03d2ad1992283066288440cb26fdee4108b5eeab49715bdc43d55be29d04374936e6e4fb16ed1a107f5d046be142fbd74e9a1dd0db4ac0b29bb8606afdbaacc8217668255e6c14e788fee44e96176d72b6b25db6d4adfe5f786fdf3fb7e7feff37ebf5df83fafd7c69beb6f5f17d5ef57ff1a45d1253dd4c74991a084c214865084fc37cf0a85a18cbbbfdcfd59f377cd1f8ff38af12614a18816a36fadff60fde2ffd271fd93fab79b3427cf17c69b6eda3dd6e8afbef68cc39331cdd2e3e9972702a49024245f7ff28b53d14230179c78cb44802b1c21e14b7f776633ecd0be38b92da3b5163c4807e96c0181085ea902b189d9faed16ad27ad67657e3ef910f04a119ee7c100d49c3af1d609846991beb0028f9e3ea2feb88e1186cc64ac042b1c7c7640edb31a77deb953269976ee95ce3dcfc30e2c9ef43003335bc0790c6459c6fee37d3a698750866479462843da699bb008d958dd38997c86734f7a90ff070cb49336b7ff789b66dc84014422e2ee3b77a9be59c52486ea6a95288a4e9df958841d589090e519c8d30c4c2a308b013bb0ecfe6997e469424557d8beb18d0e35007a41f3d1773f22bc149e763e8476da4617ba149781f635e4a7199854601603bb0f7769c40d349aedef94c9edd0920d32da491b1434e206b189499e261311edb4cdfaafd679ff0fef933dcdc01f5540708a8133fb406633f63edd430ac987373e446b0d43e8f43bd47b758c33347a0d223fe2d1d123daa64d2b6ec145904ee2f91ead7e8b7abf0e0eb4d4e05e8181fd87fba447292bfe0a2b975700b87f789f83c707247942fdb08e120ae52b7a798fe6619d5aaf46fb499b95cb2b54a32ac619761fec9686c60c642fd907d23c8502aa576e963c0c2d7b9fee618a2ef5fe3d321153092a684f2385c40a43eb498346af0116365737913e745db7e461cc8078490662d3051fa49400d40feb74f226adac492c3bd4931a4e181e656df68f76a825f7885d875a7caf3c5260797e09973b1c0e9b97b7212dcea8c0f30c446a092448bf14a0850601e148e3e6951f11ce45447ec45559415f027cd09e0203da0f91d2837948f204cff7b0b925102fc980921a2434fab5c911291f42b1ccced21dd6822a77b375b67a6f716bf53da400b900011a14c44731860455c0b21f91999201539c710b9e67e0d61b1b043e3c700dec2063255ae1a67e8fb5d76fd055356adce681a9e3294b6252aece2bc242b2f9e636149010936188c22542a2c92d7869062215b176e906716ed8eafd1086b0f7f60171df90890c5b48ae06cb583cbaaa8e2caeb2bdf831cbf3cb00ecf5767073705d56d0f39a244f409c66e0ec5970113e78e327c40fdfc23b92659301eeae1ed0eeff06a30c599e509121496ab8357f934844e0c37e6f878e7840e8245babdb25fd52e172778a81890057381453e519c2b54b15eebadf53595ac35af03cb0ce726de95d3293218524365dd6826b580748d8ef6fb1cf2e18d85edc46c9102b2c699e12f8018633a661208267804cf5f6cae5b5d154e3c454d34ab367365856d7885c4457b4b877f453daf201ae071fa83bdc5adcc14a8bcb1d918aa00035a7be9a29202dd2671538679e67b9454b8f7db3455b36885d87badc2336314e38bc9e62d3dfa6a236b0d2929a9440056464685f1327b19d29400af9ac3ce7cc73ed7bdc3fdca33b7f1f8d46c990b897705554d1f932d5a50d42c289f34005787878dac33eb168a7fff562062ece729ea1a5263319eb8b9bc85e40d3ff399a6536d5c7651f0942923c29cf7ce4dce1f016bcb2ca263d46f1b7b31918576096f3d13d1ef7f4775f5fa792aee1a441a3c1079bdb67b48f9d8f9203b4fed2720ad59d1670a20f4c2a30e397cc789e8f9f1393a095864262852531a37b6e52a42f713858e0c4328f8d35c27c7126039326718e732dcb18ca70e21807ca9f722eca339f5e599cd1eab58a4007df982d40c90b8108caff8a732306f488017fc480d2a7629227847e79f6e17c88c5969f1f589c7134fedcf832eda4c3d661cb01bd7490f6660a084548b7df6dbb5fb82b699e7e19c860d23ca6a3920ae34c197383f2d54484c90d52c8e3388d07383eeff6bb5fa8a1ea19cce7810efe619c7958fb75edefd3025e9bda5fa87eafbae070df94c8638743529ee52bc60b52c8812bdc3f6d6e8f9b9f341de7ac7f03248975d8645a43450000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[act_preciosimage5]">
+    <image name="articulos_compimage5">
+      <data format="PNG" length="1433">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000056049444154789cc5975f885c571dc73fbbb9b3fe6e9d34679a9df48e49e84edd426eec8353859ad808bb5849075f2af6a12d166c05b13e34284b1e425e6a8b20e943a924080d145a1144979a2eab0409629a6e68ac23a464a3db32034d332159676fe2eddc9f93e35e1fce9dfde7ee66b78be40787df7cef99f3fb7ecfeffcce39f7f6a469caedb4dedbca0ef46c3480886c91bc14c5933bb1249146d734d6ebc0cdff9b00c9cbb63d5fd9f3e8f0bee1fd6118564afda522e001b3cda879bd5eaf4fd5fe523bfdcec43bbf69341a7ffd341c2b5a757ff57b6327c63e6cb7da69da4997b74e9ab65bedf4cc9fcf7cf2ec0f9e3d2e7909364c2c22e6d0c8a163972f5f4ed3344ddbedb66b37da69da4ed3f68d25b8ed04b6aeb6d2577ff16a6d6060e0c14f4d6e8cf9dc1bc7df38dd6ebbe0ad56cb11b61ce1aa3813357662ec4a38180e2d8dbd690dfcdea19143c79ffcee93fbad5aa276848787b5163b6bb1d6c22c7338d678517fdc8ea1178adb8af9627ff1a1937f3af9a6edd8eb6b1650dd5ffdfe73079e1bd9dcb719ed28d22b6847b1586cc7e2e12dc24bfba5575075e3cc5673576e36174cbc3b710298bda5009337771ffcf1c1d7efbde7de3bd5baa0aaea48751e5b2c56ed8afd1e1eb18db11d8bb9dbdc5f7baf36313d3dfd01dce220dafbd0de47c330dc91d8c43dd0cca92ec24bfdd27e55050b5828f5977aaa8f549f0272b712d0373434f42d3c50ab249a90906cc82b8a5a6568dfd037242fe55505186382300cbf249e38f5b819f89eefb0b74e9c8d3762280485ad955d95075617d06f060aa6b045514404b52e9f894de682e3ad11e3b22822288ac91b4a3b4af7ad2aa0d45f0a446453410ae041d7fb9e0facd32f185f9002bef804c560dbaa0254b16e902c0a96906c188b27289a037a96152001bbe5befa57c7af1ce742748a840493378b6622221bc25862dc2a2d2036ec0cbfc391e1872bdf2c07e11d899d64fcca283a9530bcf38754079e4151045713dd02156fed58ad8242fda3fac78b04483fe5e191e0b74f3ff64ca56c2a4eb175c553bb34cee8f9c3445ae7892f1e416d84f18c13e36585b5466c3c4373ba79b3fe41fde242017de1e3fcbcfac8de0a1ed4ed04c420b8b32408ca54740fe3e78f1298dd54079f76c7eb3a66dec500b5f3b5f71b8dc6e49c0033c8d7ca5f966a33ae934813ac8274e9dd598e086c86538d5f323cf0c4fc965a4f263231e36f8eff01b80aa44ec02e1e565fa9eb241281e433eeee7eb610458a08349a13445a273021c23a6b4084536f9faa8ffe7e7414e874b7618fef738fe0ce6cb54a142baa4a14653ed6ac1edc7a35e326be645b2bf30529dc124751645f7cfec59734d6bf67539bab013b9380ef81462edb9af5764935061298519065f6f95afc0b3f7de1b589b313bf73919c79403af311ff08d43df5c948171ca7a8fb3d1341c90b28f587d95d063efe8a3eb109beef93cc24e9e19f1c7eede8b1a32f01d3ccdf0e2e03d1454e4697183101f9199dcf8078f37fd5d8b5c03c9094a4e45872acfcf29d033fe773e1fc856b233f1a7965fc8fe3bf023e66fef206b21712abcc482f5bfdcff320b36e13609db71db06d9059d069e2d3c7ae1d3e77e6dcd9fc96bc299ae25dbef89bc86591b296dc48d2a98b53cd975f79f9ad03070ffcacf6b7da18aeea139658f7bba017d839f0759e2fece329c9bb6598db881e440d2e37dfe248d4e0d7d9e3ede160b83bbc3ffc42b95cde8ec71d40a779a97975726ab231f9fee40555fd109801da0bd3be9c00803e2030bb78dc54f876610783401fca74739273d1595ed79877817f6689cf019fc95a5f36ff3423ba9989fcf74ac4cb09e88af82cb01d8f008f3e947fe1d6ae057cc2ffae7acf824626627635d2d50474cdcb5a4f16cc02ff596bd0f558cfedfe3cff2f4a7e728531a55ffe0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[articulos_compimage5]">
+    <image name="eti_articuloimage11338">
+      <data format="PNG" length="2319">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000008d649444154789cc5976b6c1c5715c77f77eeccceecc3f67a1d7b6dc779d8891327b479b4aed4a669da28e15505a5b405045402b5055542427c03443f45545009554115a2d0aa2aa002156d4001a522e29182684bdaa46d6ce761bb89e3c48fb51defcbbb3b3b8f7bf9e0b515bb2ed0f2812b1dede85eed9cdff99f7bee3d23b4d6fc3f875869d2b22c5b4a19574a2d5f374023841446fdda76d7f566221173dccf5f552a703f90e385c0cd9516f7eddbf7c8a143871e374d734e29652cd20a61088190862493af3a4f1fbbecbe3a5439a373175f298e9c383637fafa491d54830f02b2228094b2beb9b9d96e6e6eb6b5d6188681100221045a6b8220a0b998e79bf71379eee50bbb8f9ddfb6bb79fb67bead4a93a727dffaf533b3fd2ffd2aac640bff0d80b1d2a4d65a974a254aa512aeebe2791e41101086214a29c2300421a9af4ff2e0dd9b78e0a622854baf18d14453ef4df73efed48e878e9e4addf8b92f81213f1400201622360c63d1a49498a6896ddb388e8321255e00fb7b57736fafcdd5c17f3035768ed56b366ddcfbe0d3cf6dbaefc72f18b1e6f60f0330bf789df4cb212ccbc2b22c841054dc80bddb9ae85d6f303531caf0a521e67219f61e78f8be5bbff2e2712bd5bded8302e89a0cef51c1344d4cd3444ab968c2900821b8b53b816578a8d0e7f2448681f3fddc72cbae8fecfdda6f8edacd5b76fd3b00e37a98853c876188d61aa5d4a2856188effbb8ae4bb95c269fcf333333c395abe3a8d22431c3c3f73cdc7296c1f36f73ece8f350cdadebfcf8777f6ed4afed590eb05005765353d3cdb66daf9a9c9ccc542a950d03030364329945d9a59c8f7201c2f33c4aa5390af93c954a05a502520d519a120699c2289b57f9746db4519559462ebe464f43c786fa3df73c79f20f4fde07bab01cc0dbb163c7aec3870f7fdff7fd323a342cd3449a26d230304d896599d8118ba8e3605926be1f309b2b9299be46365f646eaec24cc163555d968e4658d39262cf0d4972d310f31dd26941a1ade1e6b78edb3dbee79e5c0e100e0f0f9f8fc562616bdbea78b614625b064218f821547c4daea2c9e542b2a58099bc4766b6c244a6c0d86496e9992cf96285aa1f600841a04dc268233bfd08f1ba7aa4e5e087064a8542a0122ba580898989cb57462f4f35ae4ab73ffcc43bcc860d58d240698d529a20d40481c20b345e10a2431f1156c0f721304045405868042da9245bbad753970c480a8846a328a5d07abebc5704f03cefdac0d9b3237bf6dcd9de142d3370618e86c6661002a175edd6d0580658118d52a0038932222809a8008d461a9278220966023b6190b4aa388e83ebba18866168ad97105c5f86d9b367cf0d0ac360ebfa467cb788aae611aa0ada87d0437b2ea1e7e27b1542af0a5a83b410a683b06218560ccb4ea0848332a2108913b1a3441d07dff7a9395f0270fd5d503e37d0d7475064dbfa7a2c5dc5754b1861801189a263718c781dc2b65108ca851c72668c1802212d402004609a0448022571950d86433c11c71f1f5fd0fffd00a41cc8c5fc67fe59e472a585e88dbd98f17a0c3b8246209487aa16f17257700b055ab6f6325e9d428e5fc16ee840c8c8fcbb8524d05028f9ccf9318419a12e9158b847de07a07d4757ef379efd49aa73e7fee7063dfc6a914454539a1aa652cc12940a502aa12b25fc3024924e73478fc5898b25664a59ecba34c2b4018146102a45b6e0a27413b9aa49b2a10ead35954a4508218c6500b6f1b1479f7deac0de9dfb7ff0e863c7b737075d0f7e6ad7c69ffdee347fee2f51975c854c2491cd6b8836a749a4d3747625b974a68fccb9b3c4ec0610b2e65ca3b422549a62a94ab618e0262234a552442211a6a7a78df72ab0beb72bd1b173ff4f0f3df6fbd1971e3d7cf3814f7e754bcf9737c66fef624d17ac5a9dc68ec731429f723e47616c94936f9ea034719578348e5997464b0b8502343a0ca96a45a9e2522c8554b0a977ea48a51a191e1e36b4d691250032a8e8a1d1aab8347a750e181b19b97872bc243f3b1d6b17a9c66bb85786c84c8c31373d892a16911aac489464d31a0ca70161c510428056f355a1157ee0333e9d6168a49e2d9ded984e82f6b636c230349452ce128070a27f62f64adf5bf6ae870e943243af9e0f9414e599d2a1ad61e2ebdf3bc2e06881ba789c885387ac4f6358318469cf9ba8ed61ad4187b53bc2a75a75113ae06fafcd628b2e9af7b4b06e6d07f178dc504ad5d7d2a0e753107ae5993f3efea3d6fb9f78a6ee91179ff4f353c15f4f9f297fe7f3b77370cf567e787404a7318d8ccc3b4688da5f997f87d6046140b95c2666fadcb83aca8eae56d6a71d1ae302cb088904b304964347478700d280035416aba0faf68b2f8c4e0d96ad96cdbbbdec94f7faf6f4eec2bdbb7aefd9bf835ffc3d4720edf93213460d7c5e6e3f0828975d1a9c9007ee6ce5fe3bd7d0d12829e666989d9d253335cde4f40c03d76671ab1ef97c5e472211edbaee62252c9c03153d7ee6b7def899e38033d9b0adf55ab6d0bbb5a787deee1427ce95312d1ba1406b85effb545c97544c73f08e16beb8bf93ae1693e1a17739f66a3f57ae8ee1fb3e524a2ccbc2300c1cc721914828cbb2465cd7ad2c07086ba185c035d3342787df7d97cd3d3d7ce2d635fca5ef0c6118c3f3ab045e85b54d1677ef5dcd3db7afa6ad01062f0cf1fc9ffa989a9ec6711cdadada88c562b5eda1177f95525a4ae9ce4bb81480daa402482693a5b1b131ae4d4ff1d15bd692fa651ff9529e9d1b121cbcad9b7d3bd3c46495b317ce72e2e573647339e2f118dddddd8b8e7ddf27088245ab010821c4924e79c5ef8268344a1886bcd3d7c75d77ede55b5fb881b8a5b96d6b8aa05a6660e01467fa06989d9da5b5b5959e9ecd388e83526ad16118864b5af90525563809df3ba494c4e371de78e34db66ddbcea777b5333e3ecee953a7e8eb9f6fd5128904ebd6ad23994ca2b5666e6e6e49dfb8dc6a0dad9052fe67052e5fbe7ceef8f1e327474646accecece0d8d8d8df5478e1c19efefefcf2aa54aa9542a88c5620c0e0e2ec9f3c2f3f579bf3ef2300c03cff3725c770eacf8715a035b05b46ddab4e9a052ca1a1e1e7e0d18078acc6fd60f3b8ac08cae91bd1fc0c2308078cde192ddfbbf8e0565fe0591667f8c3fcc5b080000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

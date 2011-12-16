@@ -1,0 +1,4 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="act_precios">
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
+</flpatch:modifications>
