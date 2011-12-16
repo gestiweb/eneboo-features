@@ -1,0 +1,34 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_respedidosprov</name>
+
+	<tables>pedidosprov,empresa</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		pedidosprov.codigo, pedidosprov.fecha,
+		pedidosprov.codproveedor, pedidosprov.nombre,
+		pedidosprov.cifnif, pedidosprov.servido,
+		pedidosprov.neto, pedidosprov.totaliva,
+		pedidosprov.totalrecargo, pedidosprov.total,
+		pedidosprov.coddivisa, empresa.nombre,
+		pedidosprov.codcentro, pedidosprov.codsubcentro,
+		empresa.cifnif, empresa.direccion,
+		empresa.codpostal,
+		empresa.ciudad, empresa.provincia,
+		empresa.apartado, empresa.codpais
+	</select>
+
+	<from>
+		empresa,pedidosprov
+		LEFT JOIN centroscoste ON pedidosprov.codcentro = centroscoste.codcentro
+		LEFT JOIN subcentroscoste ON pedidosprov.codsubcentro = subcentroscoste.codsubcentro
+	</from>
+
+	<where>
+	</where>
+</QRY>

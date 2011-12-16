@@ -1,0 +1,22 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[secuencias]">
+    <action>
+      <name>centroscoste</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Centros de coste")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Centros de coste")</description>
+      <table>centroscoste</table>
+      <form>master</form>
+      <formrecord>centroscoste</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[centroscoste]">
+    <action>
+      <name>subcentroscoste</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Subcentros de coste")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Subcentros de coste")</description>
+      <table>subcentroscoste</table>
+      <form>master</form>
+      <formrecord>subcentroscoste</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

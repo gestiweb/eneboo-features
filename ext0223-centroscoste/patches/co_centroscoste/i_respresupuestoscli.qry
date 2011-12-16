@@ -1,0 +1,35 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_respresupuestoscli</name>
+
+	<tables>presupuestoscli,empresa</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		presupuestoscli.codigo, presupuestoscli.fecha,
+		presupuestoscli.codcliente, presupuestoscli.nombrecliente,
+		presupuestoscli.cifnif, 
+		presupuestoscli.neto, presupuestoscli.totaliva,
+		presupuestoscli.totalrecargo, presupuestoscli.total,
+		presupuestoscli.coddivisa,
+		presupuestoscli.codcentro, presupuestoscli.codsubcentro,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa,presupuestoscli
+		LEFT JOIN centroscoste ON presupuestoscli.codcentro = centroscoste.codcentro
+		LEFT JOIN subcentroscoste ON presupuestoscli.codsubcentro = subcentroscoste.codsubcentro
+	</from>
+
+	<where>
+	</where>
+</QRY>

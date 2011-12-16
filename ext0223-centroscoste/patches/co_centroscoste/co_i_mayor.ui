@@ -1,0 +1,207 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">502</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">569</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QFrame,frame5]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">135</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QFrame,frame5]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicio]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">283</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicio]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreEjercicio]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">23</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreEjercicio]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaDesde]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">194</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaDesde]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaHasta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">194</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaHasta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[FLFieldDB,fdbTodasSubcuentas]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">176</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[FLFieldDB,fdbTodasSubcuentas]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout5]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaDesde]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">280</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout5]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaDesde]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout5]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuentaDesde]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">161</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout5]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuentaDesde]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaHasta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">280</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuentaHasta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuentaHasta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">157</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layout49]/hbox[hbox,1]/widget[QLayoutWidget,layout48]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuentaHasta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layoutSaldoInicial]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoInicial]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">132</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layoutSaldoInicial]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoInicial]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,layoutSaldoInicial]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>lytCC</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodCentro_2</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>242</width>
+              <height>29</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>i_centroscoste_codcentro</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fLFieldDB16_3</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>centroscoste</string>
+          </property>
+          <property name="foreignField">
+            <string>i_centroscoste_codcentro</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codcentro</string>
+          </property>
+          <property name="showAlias">
+            <bool>false</bool>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,groupBox3]/vbox[vbox,1]/widget[QLayoutWidget,lytCC]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>lytCC2</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodSubcentro_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>5</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>296</width>
+              <height>29</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>i_subcentroscoste_codsubcentro</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fLFieldDB16_2_2</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>subcentroscoste</string>
+          </property>
+          <property name="foreignField">
+            <string>i_subcentroscoste_codsubcentro</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codsubcentro</string>
+          </property>
+          <property name="showAlias">
+            <bool>false</bool>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,gbxOrdenacion]/hbox[hbox,1]/widget[QLayoutWidget,layoutOrden1]/vbox[vbox,1]/widget[FLFieldDB,fdbOrden1]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">100</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,gbxOrdenacion]/hbox[hbox,1]/widget[QLayoutWidget,layoutOrden1]/vbox[vbox,1]/widget[FLFieldDB,fdbOrden1]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,gbxOrdenacion]/hbox[hbox,1]/widget[QLayoutWidget,layoutOrden1]/vbox[vbox,1]/widget[QLayoutWidget,layoutTipoOrden1]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoOrden1]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">127</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_i_mayor]/vbox[vbox,1]/widget[QGroupBox,gbxOrdenacion]/hbox[hbox,1]/widget[QLayoutWidget,layoutOrden1]/vbox[vbox,1]/widget[QLayoutWidget,layoutTipoOrden1]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoOrden1]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+</xupdate:modifications>

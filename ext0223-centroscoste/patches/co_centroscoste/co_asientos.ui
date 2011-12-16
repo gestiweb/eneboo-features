@@ -1,0 +1,274 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">602</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxAsiento]/vbox[vbox,1]/widget[QLayoutWidget,layoutAsiento]/hbox[hbox,1]/widget[FLFieldDB,fdbAsiento]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">105</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxAsiento]/vbox[vbox,1]/widget[QLayoutWidget,layoutAsiento]/hbox[hbox,1]/widget[FLFieldDB,fdbAsiento]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxAsiento]/vbox[vbox,1]/widget[QLayoutWidget,layoutAsiento]/hbox[hbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">90</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxAsiento]/vbox[vbox,1]/widget[QLayoutWidget,layoutAsiento]/hbox[hbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbIdConcepto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">130</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbIdConcepto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbConcepto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">95</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbConcepto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout60]/hbox[hbox,1]/widget[FLFieldDB,fdbDocumento]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">131</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout60]/hbox[hbox,1]/widget[FLFieldDB,fdbDocumento]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout60]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoDocumento]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">158</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]/vbox[vbox,1]/widget[QLayoutWidget,layout60]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoDocumento]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>TabPage</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Centro de coste</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxCentro_2</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="title">
+            <string/>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>lytCentro_2</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbCodCentro_2</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>0</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>128</width>
+                      <height>29</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>250</width>
+                      <height>32767</height>
+                    </size>
+                  </property>
+                  <property name="paletteForegroundColor">
+                    <color>
+                      <red>0</red>
+                      <green>0</green>
+                      <blue>0</blue>
+                    </color>
+                  </property>
+                  <property name="font">
+                    <font/>
+                  </property>
+                  <property name="fieldName">
+                    <string>codcentro</string>
+                  </property>
+                </widget>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDescCentro_2</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>0</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>25</width>
+                      <height>29</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>descripcion</string>
+                  </property>
+                  <property name="tableName">
+                    <string>centroscoste</string>
+                  </property>
+                  <property name="foreignField">
+                    <string>codcentro</string>
+                  </property>
+                  <property name="fieldRelation">
+                    <string>codcentro</string>
+                  </property>
+                  <property name="showAlias">
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>lytSubCentro_2</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbCodSubCentro_2</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>0</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>155</width>
+                      <height>29</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>250</width>
+                      <height>32767</height>
+                    </size>
+                  </property>
+                  <property name="paletteForegroundColor">
+                    <color>
+                      <red>0</red>
+                      <green>0</green>
+                      <blue>0</blue>
+                    </color>
+                  </property>
+                  <property name="font">
+                    <font/>
+                  </property>
+                  <property name="fieldName">
+                    <string>codsubcentro</string>
+                  </property>
+                </widget>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDescSubCentro_2</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>0</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>25</width>
+                      <height>29</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>descripcion</string>
+                  </property>
+                  <property name="tableName">
+                    <string>subcentroscoste</string>
+                  </property>
+                  <property name="foreignField">
+                    <string>codsubcentro</string>
+                  </property>
+                  <property name="fieldRelation">
+                    <string>codsubcentro</string>
+                  </property>
+                  <property name="showAlias">
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spcCentroCoste_2</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Vertical</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>20</width>
+                  <height>41</height>
+                </size>
+              </property>
+            </spacer>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxPartidas]/vbox[vbox,1]/widget[QFrame,bbPartidas]/hbox[hbox,1]/widget[QToolButton,toolButtonInsertPar]/property[iconSet]/iconset[iconset,1]/text()[1]">image13793</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxPartidas]/vbox[vbox,1]/widget[QFrame,bbPartidas]/hbox[hbox,1]/widget[QToolButton,toolButtonEditPar]/property[iconSet]/iconset[iconset,1]/text()[1]">image9448</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxPartidas]/vbox[vbox,1]/widget[QFrame,bbPartidas]/hbox[hbox,1]/widget[QToolButton,toolButtonDeletePar]/property[iconSet]/iconset[iconset,1]/text()[1]">image26709</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxPartidas]/vbox[vbox,1]/widget[QFrame,bbPartidas]/hbox[hbox,1]/widget[QToolButton,toolButtonZoomPar]/property[iconSet]/iconset[iconset,1]/text()[1]">image15268</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxPartidas]/vbox[vbox,1]/widget[QFrame,bbPartidas]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPlanAsiento]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">161</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxPartidas]/vbox[vbox,1]/widget[QFrame,bbPartidas]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPlanAsiento]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QGroupBox,gbxPartidas]/vbox[vbox,1]/widget[QFrame,bbPartidas]/hbox[hbox,1]/widget[QToolButton,tbnPredefinido]/property[iconSet]/iconset[iconset,1]/text()[1]">image3567</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]"/>
+</xupdate:modifications>

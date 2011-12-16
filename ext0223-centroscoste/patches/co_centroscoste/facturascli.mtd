@@ -1,0 +1,38 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idpagodevol]">
+    <field>
+      <name>codcentro</name>
+      <!--Centro de coste-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Centro coste")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <relation>
+        <table>centroscoste</table>
+        <field>codcentro</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcentro]">
+    <field>
+      <name>codsubcentro</name>
+      <!--Subcentro de coste-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Subcentro coste")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <relation>
+        <table>subcentroscoste</table>
+        <field>codsubcentro</field>
+        <card>M1</card>
+      </relation>
+      <associated>
+        <with>codcentro</with>
+        <by>codcentro</by>
+      </associated>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

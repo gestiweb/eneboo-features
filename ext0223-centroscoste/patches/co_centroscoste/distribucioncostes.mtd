@@ -1,0 +1,119 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>distribucioncostes</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Distribucion de costes")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+       <relation>
+            <table>lineasdistribucioncostes</table>
+            <field>iddistribucion</field>
+            <card>1M</card>
+        </relation>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+    <field>
+        <name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+        <pk>false</pk>
+        <null>false</null>
+        <type>string</type>
+        <length>200</length>
+    </field>
+    
+    <field>
+        <name>fechainicio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Inicio")</alias>
+        <pk>false</pk>
+        <null>false</null>
+        <type>date</type>
+    </field>
+    
+    <field>
+        <name>fechafin</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fin")</alias>
+        <pk>false</pk>
+        <null>false</null>
+        <type>date</type>
+    </field>
+    
+	<field>
+		<name>costetotalrep</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","máximo a distribuir")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>porcentajereparto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","% total a distribuir")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+		<name>totalreparto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","total a distribuir")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+
+	<field>
+        <name>codcentro</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Centro de origen")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>8</length>
+        <relation>
+            <table>centroscoste</table>
+            <field>codcentro</field>
+            <card>M1</card>
+			<delC>true</delC>
+        </relation>
+    </field>
+    <field>
+        <name>codsubcentro</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcentro de origen")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>8</length>
+        <relation>
+            <table>subcentroscoste</table>
+            <field>codsubcentro</field>
+            <card>M1</card>
+			<delC>true</delC>
+        </relation>
+        <associated>
+            <with>codcentro</with>
+            <by>codcentro</by>
+        </associated>
+    </field>
+
+	<field>
+		<name>estado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+        <length>20</length>
+		<editable>false</editable>
+		<default>Pendiente</default>
+	</field>
+</TMD>

@@ -1,0 +1,35 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_resfacturascli</name>
+
+	<tables>facturascli,empresa</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		facturascli.codigo, facturascli.fecha,
+		facturascli.codcliente, facturascli.nombrecliente,
+		facturascli.cifnif, facturascli.editable,
+		facturascli.neto, facturascli.totaliva,
+		facturascli.totalrecargo, facturascli.total,
+		facturascli.coddivisa,
+		facturascli.codcentro, facturascli.codsubcentro,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa,facturascli
+		LEFT JOIN centroscoste ON facturascli.codcentro = centroscoste.codcentro
+		LEFT JOIN subcentroscoste ON facturascli.codsubcentro = subcentroscoste.codsubcentro
+	</from>
+
+	<where>
+	</where>
+</QRY>

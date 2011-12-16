@@ -1,0 +1,97 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>lineasdistribucioncostes</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Registros de distribucion de costes")</alias>
+
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+
+	<field>
+		<name>iddistribucion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Distribucion")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+        <relation>
+            <table>distribucioncostes</table>
+            <field>id</field>
+            <card>M1</card>
+			<delC>true</delC>
+        </relation>
+	</field>
+
+	<field>
+        <name>codcentro</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Centro")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>8</length>
+    </field>
+    
+	<field>
+        <name>descripcioncentro</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+        <pk>false</pk>
+        <null>false</null>
+        <type>string</type>
+        <length>200</length>
+    </field>
+    
+	<field>
+        <name>codsubcentro</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Centro")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>8</length>
+    </field>
+    
+	<field>
+        <name>descripcionsubcentro</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+        <pk>false</pk>
+        <null>true</null>
+        <type>string</type>
+        <length>200</length>
+    </field>
+    
+    <field>
+        <name>costeacumulado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Coste acumulado")</alias>
+        <pk>false</pk>
+        <null>true</null>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+    </field>
+    
+    <field>
+        <name>pordistribucioncoste</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","% distribución coste")</alias>
+        <pk>false</pk>
+        <null>true</null>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>3</partD>
+		<default>0</default>
+    </field>
+    
+    <field>
+        <name>distribucioncoste</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Distribución coste")</alias>
+        <pk>false</pk>
+        <null>true</null>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>3</partD>
+		<default>0</default>
+    </field>
+    
+</TMD>

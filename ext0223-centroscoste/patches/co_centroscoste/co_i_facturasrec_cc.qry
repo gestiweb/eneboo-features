@@ -1,0 +1,34 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_i_facturasrec_cc</name>
+
+	<tables>empresa,clientes,co_subcuentas,co_cuentas,co_partidas,co_asientos</tables>
+
+	<select>
+		empresa.nombre,
+		co_partidas.codserie, co_partidas.factura,co_partidas.documento,
+		co_asientos.fecha, co_asientos.numero, co_asientos.idasiento,
+		co_asientos.codejercicio,
+		co_partidas.idsubcuenta,
+		co_partidas.codcontrapartida, sc2.descripcion, co_partidas.cifnif,
+		co_partidas.iva, co_partidas.recargo,
+		sum(co_partidascc.importe * co_partidas.iva / 100),
+		sum(co_partidascc.importe + (co_partidascc.importe * co_partidas.iva / 100)),
+		sum(co_partidascc.importe)
+	</select>
+
+	<from>
+		empresa,
+		co_cuentas 
+		INNER JOIN co_subcuentas sc1 ON co_cuentas.idcuenta = sc1.idcuenta 
+		INNER JOIN co_partidas ON sc1.idsubcuenta = co_partidas.idsubcuenta 
+		INNER JOIN co_subcuentas sc2 ON co_partidas.idcontrapartida = sc2.idsubcuenta		
+		INNER JOIN co_asientos ON co_partidas.idasiento = co_asientos.idasiento	
+		INNER JOIN co_partidas p2 ON co_asientos.idasiento = p2.idasiento
+		INNER JOIN co_partidascc ON p2.idpartida = co_partidascc.idpartida
+		LEFT JOIN series ON co_partidas.codserie = series.codserie
+	</from>
+
+	<where>
+	</where>
+</QRY>

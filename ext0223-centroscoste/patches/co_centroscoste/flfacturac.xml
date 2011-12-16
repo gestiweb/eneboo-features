@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]">
+    <action>
+      <name>distribucioncostes</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <scriptformrecord>distribucioncostes</scriptformrecord>
+      <table>distribucioncostes</table>
+      <form>master</form>
+      <formrecord>distribucioncostes</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,37 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">612</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">612</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">30</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[provincias]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,7]">
+    <action name="centroscoste"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]">
+    <action>
+      <property name="name">
+        <cstring>centroscoste</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>co_centroscosteimage34614</iconset>
+      </property>
+      <property name="text">
+        <string>Centros de coste</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="co_centroscosteimage34614">
+      <data format="PNG" length="875">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000033249444154789ced964148145118c77f333b6e8ad11621597628084405ab5b085657c196bc78eca2a7840aec5c06425da288e892474f5e2c2f4b1789821494b44497a043d8ea5a5aed0ebbc8ecccceebf0669cd975463715ece007c39bf7cdff7dfffff7bdefbd5d4508c17e9abaafec07020e041c08f81f04283d507f149e0968cbc22940d983b82206cb0a7cc8c0ad212156c2805a0cdedc80e6d68e0e8dc6c66054b12847dbf67cfe77d32cf59ba6c2dc5cc3ccec6cd7303402e7c304a859686dedebd3b870016a6a40d340dd66675c72d3f4c86d1b2ccb13dbd2c2c5ee6e2d0bad5b85d2a40c150c637366c5a237f793fa85d83608e1bdbb38ffda6d05842d0c2a73a5a4b6ed55635b018621ab10966da5a496254721e0e74f482601e85594ab3e4e1bf83224c48fcd15082276092ac9d4b6617a9a87e93459a00d88cb2faf5ce60c8859a8e957143d0bd7b49280a6199e6d396908e67e3acd83f67688c7bd9c553586aa82a278151a19a9bb33319190020a058844b627b62cf9dd5d6318de1a47d8124067a757c54804c6c7194924f808a48043c0392007c7b48d9247a3c1c4fe793e2fc74261eb06d375d9539605aacaf54482df400d50055403f3cee8f580650513e77292787d3d9cb0dcf2f992e957200a141c52d3793c01c562e9fedbb6cc2293293df7955a2e0755551b31754740b54f8401d411740a741d56576599776aba2e05180618065120e790477d2394df03990c2c2ded9cd83577cb9cdb7501b8097c0616010b385322a05090e4e9f4eec9011617bd4b09883635311400eb4d261d01a9d4a6c6d995adad550c9502747defc8ff319eb70500423099cd32ea7cec022ec562de0de6b7302ca0e7f31b4d16666e8b2bb7e1533b34b783b6003c01ce0211e4f9ed072ed7d66e0af02e9fe77100761948228fd977a019f99b7004d081f7c8a6ac06ab1a46951ea83f0ccf80b614349c00ee0227810127f0d1800c324018362709b8024ccaf9af3a48adc2e92a38eefa57e02542888d270e53b740fc01215a5ac43d107198f2632ac1c661f939081bc4b8f42f87f9cbff7bbdf8063c0206e6e799757c21dbb815766c06780bbc76e6617ead2ce8304052de1b6ec0e110015b61075781a7f2efc0183018e6ff0b1bf3319390ee68510000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>centroscoste</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

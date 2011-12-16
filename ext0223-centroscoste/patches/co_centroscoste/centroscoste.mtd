@@ -1,0 +1,135 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>centroscoste</name>
+	<!--Listado de centros de coste-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Centros de Coste")</alias>
+
+	<field>
+		<name>codcentro</name>
+		<!--Código del centro-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>8</length>
+		<counter>true</counter>
+
+		<relation>
+			<table>subcentroscoste</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>presupuestoscli</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>pedidoscli</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>albaranescli</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>facturascli</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>pedidosprov</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>albaranesprov</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>facturasprov</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>i_presupuestoscli</table>
+			<field>i_centroscoste_codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>i_pedidoscli</table>
+			<field>i_centroscoste_codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>i_albaranescli</table>
+			<field>i_centroscoste_codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>i_facturascli</table>
+			<field>i_centroscoste_codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>i_pedidosprov</table>
+			<field>i_centroscoste_codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>i_albaranesprov</table>
+			<field>i_centroscoste_codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>i_facturasprov</table>
+			<field>i_centroscoste_codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>co_asientos</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>co_partidascc</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>distribucioncostes</table>
+			<field>codcentro</field>
+			<card>1M</card>
+		</relation>
+
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre del centro")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+</TMD>
