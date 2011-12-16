@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[vdisco]">
+    <action>
+      <name>anticiposcli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los anticipos o entregas a cuenta de clientes se relacionan con alguno de sus pedidos. Un anticipo es un pago que queda en espera hasta generar la factura. Cuando una factura es generada a partir de pedidos con anticipos asociados estos son asignados automáticamente como recibos pagados de dicha factura.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Anticipos de clientes")</alias>
+      <table>anticiposcli</table>
+      <formrecord>anticiposcli</formrecord>
+      <scriptformrecord>anticiposcli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

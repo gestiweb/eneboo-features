@@ -1,0 +1,360 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>n43_movimientos</name>
+	<!-- Movimientos bancarios -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Movimientos Bancarios")</alias>
+
+	<field>
+		<name>idmovimiento</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+
+	<field>
+		<name>numerodoc</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº de documento")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>referencia1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia 1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>referencia2</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia 2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>16</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>claveorig</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Oficina de origen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>fechaop</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Operación")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>fechaval</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>cptocomun</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cpto. Común")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<editable>false</editable>
+
+		<relation>
+			<table>n43_cptoscomunes</table>
+			<field>codconcepto</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>cptopropio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cpto. Propio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>3</length>
+		<editable>false</editable>
+
+		<relation>
+			<table>n43_cptospropios</table>
+			<field>codconcepto</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>debehaber</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Debe o Haber")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>importe</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Importe")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>codcuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuenta bancaria")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<editable>false</editable>
+
+		<relation>
+			<table>cuentasbanco</table>
+			<field>codcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>datocpto1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dato 1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto11</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 1-1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto21</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 2-1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>datocpto2</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dato 2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto12</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 1-2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto22</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 2-2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>datocpto3</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dato 3")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto13</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 1-3")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto23</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 2-3")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>datocpto4</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dato 4")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto14</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 1-4")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto24</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 2-4")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>datocpto5</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dato 5")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto15</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 1-5")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>concepto25</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Concepto 2-5")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>38</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>datoequi</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dato origen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>divisaequi</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Divisa origen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>3</length>
+		<editable>false</editable>
+
+		<relation>
+			<table>divisas</table>
+			<field>codiso</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>importeequi</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Importe origen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>12</partI>
+		<partD>2</partD>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>sha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Clave")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<unique>true</unique>
+		<type>string</type>
+		<length>255</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>codcasacion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código Documento Casación")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+		<default>0</default>
+		<editable>false</editable>
+	</field>
+	
+    <field>
+		<name>accioncasacion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo Documento Casación")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+		<editable>false</editable>
+	</field>
+</TMD>
