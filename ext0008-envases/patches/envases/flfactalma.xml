@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]">
+    <action>
+      <name>envases</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Envases de artículos. Cada envase contiene cierta cantidad de un artículo")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Envases")</alias>
+      <table>envases</table>
+      <form>master</form>
+      <formrecord>envases</formrecord>
+      <scriptformrecord>envases</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

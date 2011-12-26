@@ -1,0 +1,116 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>envases</name>
+	<!-- Listado de envases con todos los datos	-->	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Envases")</alias>
+
+	<field>
+		<name>codenvase</name>
+		<!-- Código de referencia del envase -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>lineaspresupuestoscli</table>
+			<field>codenvase</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>lineaspedidoscli</table>
+			<field>codenvase</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>lineasalbaranescli</table>
+			<field>codenvase</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>lineasfacturascli</table>
+			<field>codenvase</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineaspedidosprov</table>
+			<field>codenvase</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>lineasalbaranesprov</table>
+			<field>codenvase</field>
+			<card>1M</card>
+		</relation>
+
+		<relation>
+			<table>lineasfacturasprov</table>
+			<field>codenvase</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<!-- Descripción del envase	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	<field>
+		<name>referencia</name>
+		<!-- Código de referencia del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		<visible>true</visible>
+
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>medida</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Medida/Peso")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<default>1</default>
+	</field>
+
+	<field>
+		<name>densidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Densidad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<default>1</default>
+	</field>
+	<field>
+		<name>cantidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cantidad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<default>1</default>
+	</field>
+</TMD>
