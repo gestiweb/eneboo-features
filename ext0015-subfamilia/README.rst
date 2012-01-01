@@ -11,4 +11,3 @@ Capturas de pantalla
 .. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/images/screen01.png?raw=true
 
    Ficha de edición de artículos.
-   Ruta imagen: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/images/screen01.png?raw=true
