@@ -32,3 +32,9 @@ Pantallazos
    Ruta imagen: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/screen01.png?raw=true
 
 
+.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/screen01.png
+
+   Ficha de edición de artículos.
+   Ruta imagen: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/screen01.png?raw=true
+
+
