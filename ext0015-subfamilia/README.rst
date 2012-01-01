@@ -50,8 +50,8 @@ Pantallazos
    Ruta imagen: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/images/screen01.png?raw=true
 
 
-.. figure:: ../../../blog/master/ext0015-subfamilia/images/screen01.png?raw=true
+.. figure:: ../../blog/master/ext0015-subfamilia/images/screen01.png?raw=true
 
    Ficha de edición de artículos.
-   Ruta imagen: ../../../blog/master/ext0015-subfamilia/images/screen01.png?raw=true
+   Ruta imagen: ../../blog/master/ext0015-subfamilia/images/screen01.png?raw=true
    Ruta página: https://github.com/dezetage/eneboo-features/tree/master/ext0015-subfamilia
