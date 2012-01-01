@@ -30,6 +30,5 @@ Pantallazos
 
    Ficha de edición de artículos.
    Ruta imagen: "/dezetage/eneboo-features/blob/master/ext0015-subfamilia/screen01.png?raw=true"
-   <img src="/dezetage/eneboo-features/blob/master/ext0015-subfamilia/screen01.png?raw=true">
 
 
