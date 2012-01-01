@@ -2,7 +2,7 @@
 Subfamilias: agrupación de familias en conjuntos
 ====================================================
 
-Añade una nueva subcategoría dentro de cada familia de artículos: la subfamilia. Cada subfamilia pertenece a una sola familia, y cada artículo puede pertenecer a una única subfamilia.
+Añade una nueva subcategoría dentro de cada familia de artículos: la subfamilia. Cada subfamilia pertenece a una sola familia, y cada artículo puede pertenecer a una única subfamilia o familia.
 
 ---------------------
 Capturas de pantalla
