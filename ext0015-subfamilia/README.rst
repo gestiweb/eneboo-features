@@ -44,7 +44,14 @@ Pantallazos
    Ruta imagen: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/screen01.png
 
 
-FALTA
+.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/images/screen01.png?raw=true
 
-    - Imágenes en carpeta images
-    - Ruta **hacia atrás** para evitar /dezetage/
+   Ficha de edición de artículos.
+   Ruta imagen: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/images/screen01.png?raw=true
+
+
+.. figure:: ../../../blog/master/ext0015-subfamilia/images/screen01.png?raw=true
+
+   Ficha de edición de artículos.
+   Ruta imagen: ../../../blog/master/ext0015-subfamilia/images/screen01.png?raw=true
+   Ruta página: https://github.com/dezetage/eneboo-features/tree/master/ext0015-subfamilia
