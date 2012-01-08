@@ -9,7 +9,6 @@ Capturas de pantalla
 ---------------------
 
 .. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/screen01.png?raw=true
-
-    :width: 400 px
+   :width: 400px
     
-    Ficha de edición de artículos.
+   Ficha de edición de artículos.
