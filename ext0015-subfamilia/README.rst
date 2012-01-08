@@ -8,6 +8,6 @@ Añade una nueva subcategoría dentro de cada familia de artículos: la subfamil
 Capturas de pantalla
 ---------------------
 
-.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/images/screen01.png?raw=true
+.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/screen01.png?raw=true
 
    Ficha de edición de artículos.
