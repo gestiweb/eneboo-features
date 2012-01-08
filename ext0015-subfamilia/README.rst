@@ -17,7 +17,7 @@ Capturas de pantalla
 .. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_familia.png?raw=true
    :width: 500px
     
-   Edición de familia.
+   Edición de familia con nueva pestaña de subfamilias.
    
 
 .. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_articulo.png?raw=true
