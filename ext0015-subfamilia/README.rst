@@ -8,7 +8,19 @@ Añade una nueva subcategoría dentro de cada familia de artículos: la subfamil
 Capturas de pantalla
 ---------------------
 
-.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_articulos.png?raw=true
+.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_subfamilia.png?raw=true
    :width: 500px
     
-   Ficha de edición de artículos.
+   Edición de subfamilia.
+
+
+.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_familia.png?raw=true
+   :width: 500px
+    
+   Edición de familia.
+   
+
+.. figure:: /dezetage/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_articulo.png?raw=true
+   :width: 500px
+    
+   Edición de artículo.
