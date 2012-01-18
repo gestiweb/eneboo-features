@@ -1,11 +1,11 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="info_riesgocli">
-   <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml"/>
+  <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml"/>
   <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui"/>
   <flpatch:addFile path="facturacion/informes/forms/" name="i_riesgocli.ui"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_riesgocli.qry"/>
   <flpatch:addFile path="facturacion/informes/reports/" name="i_riesgocli.kut"/>
-  <flpatch:addFile path="facturacion/informes/scripts/" name="i_riesgocli.qs"/>
   <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterriesgocli.qs"/>
+  <flpatch:addFile path="facturacion/informes/scripts/" name="i_riesgocli.qs"/>
   <flpatch:addFile path="facturacion/informes/tables/" name="i_riesgocli.mtd"/>
   <flpatch:addFile path="facturacion/informes/tables/" name="i_riesgocli_buffer.mtd"/>
 </flpatch:modifications>
