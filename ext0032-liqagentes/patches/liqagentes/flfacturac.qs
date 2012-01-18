@@ -2,7 +2,7 @@
 /** @class_declaration liqAgentes */
 /////////////////////////////////////////////////////////////////
 //// LIQAGENTES /////////////////////////////////////////////////
-class liqAgentes extends oficial {
+class liqAgentes extends oficial /** %from: oficial */ {
 	function liqAgentes( context ) { oficial ( context ); }
 	function afterCommit_facturasprov(curFactura:FLSqlCursor):Boolean {
 		return this.ctx.liqAgentes_afterCommit_facturasprov(curFactura);
@@ -18,7 +18,7 @@ function liqAgentes_afterCommit_facturasprov(curFactura:FLSqlCursor):Boolean
 {
 	if(!this.iface.__afterCommit_facturasprov(curFactura))
 		return false;
-	
+
 	var util:FLUtil;
 
 	if(curFactura.modeAccess() == curFactura.Del) {
@@ -33,3 +33,4 @@ function liqAgentes_afterCommit_facturasprov(curFactura:FLSqlCursor):Boolean
 }
 //// LIQAGENTES /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

@@ -1,18 +1,19 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[hora]" >
-<field>
-<name>codliquidacion</name>
-<!--Código de la liquidación del agente comercial--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código de Liquidación&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>string</type>
-<length>10</length>
-<editable>false</editable>
-<relation>
-<table>liquidaciones</table>
-<field>codliquidacion</field>
-<card>M1</card>
-</relation>
-</field>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[hora]">
+    <field>
+      <name>codliquidacion</name>
+      <!--Código de la liquidación del agente comercial-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Código de Liquidación")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <editable>false</editable>
+      <relation>
+        <table>liquidaciones</table>
+        <field>codliquidacion</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>

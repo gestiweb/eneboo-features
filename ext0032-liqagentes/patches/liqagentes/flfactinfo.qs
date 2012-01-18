@@ -2,7 +2,7 @@
 /** @class_declaration liqAgentes */
 /////////////////////////////////////////////////////////////////
 //// LIQAGENTES /////////////////////////////////////////////////
-class liqAgentes extends oficial {
+class liqAgentes extends oficial /** %from: oficial */ {
 	var porComision:Number;
 	var baseLiq:Number;
 	var ivaLiq:Number;
@@ -31,7 +31,7 @@ class liqAgentes extends oficial {
 /** @class_declaration pubLiqAgentes */
 /////////////////////////////////////////////////////////////////
 //// PUB_LIQ_AGENTES ////////////////////////////////////////////
-class pubLiqAgentes extends ifaceCtx {
+class pubLiqAgentes extends ifaceCtx /** %from: ifaceCtx */ {
 	function pubLiqAgentes( context ) { ifaceCtx( context ); }
 	function pub_iniciarValoresLiq(nodo:FLDomNode, campo:String) {
 		return this.iniciarValoresLiq(nodo, campo);
@@ -58,13 +58,13 @@ Obtiene el porcentaje de comisión de la factura. Si no lo tiene el porcentaje se
 function liqAgentes_porComisionFactura(nodo:FLDomNode, campo:String):Number
 {debug("liqAgentes_porComisionFactura");
 		var util:FLUtil = new FLUtil();
-		
+
 	var res:Number = parseFloat(nodo.attributeValue("facturascli.porcomision"));
 	if(res && res != 0) {
 		this.iface.porComision = res;
 		return res;
 	}
-	
+
 	var idFactura:String = nodo.attributeValue("facturascli.idfactura");
 	var numLineas:Number = parseFloat(util.sqlSelect("lineasfacturascli","COUNT(idlinea)","idfactura = " + idFactura));
 debug("numLineas " + numLineas);
@@ -91,7 +91,7 @@ Obtiene la comisión total de una factura
 function liqAgentes_totalComisionFactura(nodo:FLDomNode, campo:String):Number
 {
 	var util:FLUtil = new FLUtil();
-	
+
 	if(!this.iface.porComision)
 		return 0;
 
@@ -119,7 +119,7 @@ function liqAgentes_calcularValoresLiq(nodo:FLDomNode, campo:String)
 	if (codImpuesto) {
 		var iva:Number = util.sqlSelect("impuestos", "iva", "codimpuesto = '" + codImpuesto + "'");
 		this.iface.ivaLiq = (nodo.attributeValue("liquidaciones.total") * iva) / 100;
-	}	
+	}
 }
 
 function liqAgentes_mostrarValoresLiq(nodo:FLDomNode, campo:String):Number
@@ -149,3 +149,4 @@ function liqAgentes_mostrarValoresLiq(nodo:FLDomNode, campo:String):Number
 
 //// LIQAGENTES /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

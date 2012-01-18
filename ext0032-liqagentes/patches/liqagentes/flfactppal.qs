@@ -2,7 +2,7 @@
 /** @class_declaration liqAgentes */
 /////////////////////////////////////////////////////////////////
 //// LIQUIDACIÓN A AGENTES //////////////////////////////////////
-class liqAgentes extends oficial {
+class liqAgentes extends oficial /** %from: oficial */ {
 	function liqAgentes( context ) { oficial ( context ); }
 	function calcularLiquidacionAgente(where:String):Number {
 		return this.ctx.liqAgentes_calcularLiquidacionAgente(where);
@@ -23,7 +23,7 @@ class liqAgentes extends oficial {
 /** @class_declaration pubLiqAgentes */
 /////////////////////////////////////////////////////////////////
 //// PUB LIQ AGENTES ////////////////////////////////////////////
-class pubLiqAgentes extends ifaceCtx {
+class pubLiqAgentes extends ifaceCtx /** %from: ifaceCtx */ {
 	function pubLiqAgentes( context ) { ifaceCtx( context ); }
 	function pub_calcularLiquidacionAgente(where:String):Number {
 		return this.calcularLiquidacionAgente(where);
@@ -46,7 +46,7 @@ class pubLiqAgentes extends ifaceCtx {
 //// LIQUIDACIÓN A AGENTES //////////////////////////////////////
 function liqAgentes_calcularLiquidacionAgente(where:String):Number {
 	var util:FLUtil = new FLUtil();
-	
+
 	var qryFacturas:FLSqlQuery = new FLSqlQuery();
 	qryFacturas.setTablesList("facturascli,lineasfacturascli");
 	qryFacturas.setSelect("coddivisa, tasaconv, facturascli.porcomision, lineasfacturascli.porcomision, neto, facturascli.idfactura, lineasfacturascli.pvptotal");
@@ -124,25 +124,25 @@ function liqAgentes_asociarFacturasLiq(filtro:String, codLiquidacion:String):Boo
 	qryFacturas.setSelect("idfactura");
 	qryFacturas.setFrom("facturascli");
 	qryFacturas.setWhere(filtro);
-	
+
 	if (!qryFacturas.exec()) {
 		return false;
 	}
 	util.createProgressDialog( util.translate( "scripts", "Asociando facturas pendientes de liquidar..." ), qryFacturas.size());
 	var i:Number = 0;
-	
+
 	while(qryFacturas.next()) {
 // 		if (!this.iface.asociarFactura(qryFacturas.value(0), this.iface.codLiquidacion)) {
 		if (!this.iface.asociarFacturaLiq(qryFacturas.value(0), codLiquidacion)) {
 			util.destroyProgressDialog();
 			return false;
 		}
-	
+
 		util.setProgress( i );
 		sys.processEvents();
 		i++;
 	}
-	
+
 	util.destroyProgressDialog();
 	return true;
 }
@@ -156,14 +156,14 @@ function liqAgentes_asociarFacturaLiq(idFactura:String, codLiquidacion:String):B
 {
 	var curFactura:FLSqlCursor = new FLSqlCursor("facturascli");
 	var editable:Boolean = true;
-	
+
 	curFactura.select("idfactura = " + idFactura);
 	if (!curFactura.first()) {
 		return false;
 	}
 	curFactura.setModeAccess(curFactura.Browse);
 	curFactura.refreshBuffer();
-	
+
 	curFactura.setActivatedCommitActions(false);
 	if (!curFactura.valueBuffer("editable")) {
 		editable = false;
@@ -172,7 +172,7 @@ function liqAgentes_asociarFacturaLiq(idFactura:String, codLiquidacion:String):B
 		if (!curFactura.first())
 			return false;
 	}
-	
+
 	curFactura.setModeAccess(curFactura.Edit);
 	curFactura.refreshBuffer();
 	curFactura.setValueBuffer( "codliquidacion", codLiquidacion);
@@ -186,10 +186,11 @@ function liqAgentes_asociarFacturaLiq(idFactura:String, codLiquidacion:String):B
 		}
 		curFactura.setUnLock("editable", false);
 	}
-	
+
 	return true;
 }
 
 
 //// LIQUIDACIÓN A AGENTES //////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

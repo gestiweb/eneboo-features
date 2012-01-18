@@ -1,11 +1,11 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busprescli]" >
-<action>
-<name>busfactliq</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Búsqueda de facturas de clientes para liquidación de agentes&quot;)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Facturas de cliente&quot;)</alias>
-<table>facturascli</table>
-<form>master</form>
-</action>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busprescli]">
+    <action>
+      <name>busfactliq</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Búsqueda de facturas de clientes para liquidación de agentes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Facturas de cliente")</alias>
+      <table>facturascli</table>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
 </xupdate:modifications>

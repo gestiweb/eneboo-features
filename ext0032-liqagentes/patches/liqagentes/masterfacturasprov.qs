@@ -2,7 +2,7 @@
 /** @class_declaration liqAgentes */
 /////////////////////////////////////////////////////////////////
 //// LIQUIDACIONES A AGENTES ////////////////////////////////////
-class liqAgentes extends oficial {
+class liqAgentes extends oficial /** %from: oficial */ {
     function liqAgentes( context ) { oficial ( context ); }
 	function commonCalculateField(fN:String, cursor:FLSqlCursor):String {
 		return this.ctx.liqAgentes_commonCalculateField(fN, cursor);
@@ -36,3 +36,4 @@ function liqAgentes_commonCalculateField(fN:String, cursor:FLSqlCursor):String
 }
 //// LIQUIDACIONES A AGENTES ////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

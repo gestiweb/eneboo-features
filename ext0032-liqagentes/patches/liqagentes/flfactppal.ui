@@ -1,38 +1,38 @@
-<xupdate:modifications>
-<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
-<image name="liqagentesimage7034" >
-<data format="PNG" length="1084" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000040349444154789cd5975d8855551480bfb5cfb977e65e6dfc49a7b1197fe6aae31d252735a88420a39082421ccb287c3088c227a9605e7cc9b77e884023d0c09e021f1222b21e8a1e7a888482c09872c6194794feb46950efdc73f6cfeae1def9779cebdf480bf6e1ecbd176b7d7badb3f7da4754953b29e68e7abf59809ee67bf3bdc542f31d01e85eda526f56357d2f8d0d3da73ada36cd3a40766dcb565b4ed62783977266d1bc3db30ee0e1595b4e4986533cbaf544ebf2ccac019c58b726e7addb9a9412acf3d872dadcb07ac9e6590398dbb2f0d134b18b12eb702224a5048d4ce7ac01a8911dc970192f828f0cc357ca38eb9ef9b4716974db013e6f5d91f1c13f59ba3c8c37824349d294344997afbcbff9c1db0ed0b86cd19634b14b92c4e200a7e010caa5322aecbc5e7b32fe28fe7a7ddb03f9bb72ef8a9166c08908268a3091418c20229acdd7355e1cf8f3ee2bff0c61a24ac455c1444253dbb244a15f7d208480aa0a413504155003949252f2c1233f9c3c7c5580e36b561c52ef5f4646a71101114144c054266cd932a6531555a24c4c144768504051ad8c8fba1040b970e9f4d9c53b7d65301e6fc321eff9a05b805555abe33d8c75459029354c70a983d48d399bf0a280a42266ef88f329110038d6d1dea0972f1f0c1a764d5de68d8a22c84f26937d69fb6f7d3f4fc09eae1c1f5dbd6cb77a7f4061ce8d6268f5612273205eb7eeb5cecfbe729375a60500f8a4bd500c697a44437808b94e0c0584bf4d14bffa62cfc0b1e9d4aeb90d5fe8eefbd5ef7a657390e82da7a44eabdbae86e645bed0fadcc66b39871922305e3e2ab49c56d5424dca409c9fd3b6fb97533d33e9d574101d2e16365ad55607d4d4544993f273b5d8ae0920b1aed3a94acd2940b03eecb8650036f86d95d5e9846627f527cc69e838502c146f1ae0fdf695f739d5b593c36c8120f26d30e643cb555321a9b5db6e1a2049924eaf8a07fc88710535e6ed37facf3ff67adfb93d1ac7cf3b1874caa89e076c0833de116600b888f5619b45b00ab692e3f3269379aaabef5cd7885657efd9a3b95c7e8317f96644cf2ad8a01bdf695fb5faba0162a99c3a6fae7db8e8a0c30301b0c8719d33775357efc09722928d45eaaa2dbbb7bb7760df99f38f3b31fb3d68350a66384db78fb739c55775320bcc03f24016c81811bf61febc96271af2570cd4fd61dda123bf5f3808dab45fa450bdfa8c569a58045ff9343e7e7af1c2bf8af5d97d1991a6fed2b088486b04b958c402295002869c6a2aaa3a0230bf0a505705cb78f01df31b1a6391ec8f8343fd4043345641a714642a5703020cdd93ab5fd096cf2df8eee2e01903b154e01c905401fe1d0598147ea0720d302089aa073022d988d18a3c5d6150a8e4d58255551591285b498902ea26f9abf928be5df2fffe39bd15f21ff22a24726f6ea8a90000000049454e44ae426082</data>
-</image>
-</xupdate:append-first>
-<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" >
-<action>
-<property name="name" >
-<cstring>liquidaciones</cstring>
-</property>
-<property name="iconSet" >
-<iconset>liqagentesimage7034</iconset>
-</property>
-<property name="text" >
-<string>Liquidaciones a Agentes</string>
-</property>
-<property name="whatsThis" >
-<string>Liquidaciones a Agentes (Ctrl+L)</string>
-</property>
-<property name="accel" >
-<string>Ctrl+L</string>
-</property>
-</action>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" >
-<connection>
-<sender>liquidaciones</sender>
-<signal>activated()</signal>
-<receiver>FLWidgetApplication</receiver>
-<slot>openDefaultForm()</slot>
-</connection>
-</xupdate:insert-after>
-<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >30</xupdate:update>
-<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[agentes]" >
-<action name="liquidaciones" />
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">30</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[agentes]">
+    <action name="liquidaciones"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]">
+    <action>
+      <property name="name">
+        <cstring>liquidaciones</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>liqagentesimage7034</iconset>
+      </property>
+      <property name="text">
+        <string>Liquidaciones a Agentes</string>
+      </property>
+      <property name="whatsThis">
+        <string>Liquidaciones a Agentes (Ctrl+L)</string>
+      </property>
+      <property name="accel">
+        <string>Ctrl+L</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="liqagentesimage7034">
+      <data format="PNG" length="1084">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000040349444154789cd5975d8855551480bfb5cfb977e65e6dfc49a7b1197fe6aae31d252735a88420a39082421ccb287c3088c227a9605e7cc9b77e884023d0c09e021f1222b21e8a1e7a888482c09872c6194794feb46950efdc73f6cfeae1def9779cebdf480bf6e1ecbd176b7d7badb3f7da4754953b29e68e7abf59809ee67bf3bdc542f31d01e85eda526f56357d2f8d0d3da73ada36cd3a40766dcb565b4ed62783977266d1bc3db30ee0e1595b4e4986533cbaf544ebf2ccac019c58b726e7addb9a9412acf3d872dadcb07ac9e6590398dbb2f0d134b18b12eb702224a5048d4ce7ac01a8911dc970192f828f0cc357ca38eb9ef9b4716974db013e6f5d91f1c13f59ba3c8c37824349d294344997afbcbff9c1db0ed0b86cd19634b14b92c4e200a7e010caa5322aecbc5e7b32fe28fe7a7ddb03f9bb72ef8a9166c08908268a3091418c20229acdd7355e1cf8f3ee2bff0c61a24ac455c1444253dbb244a15f7d208480aa0a413504155003949252f2c1233f9c3c7c5580e36b561c52ef5f4646a71101114144c054266cd932a6531555a24c4c144768504051ad8c8fba1040b970e9f4d9c53b7d65301e6fc321eff9a05b805555abe33d8c75459029354c70a983d48d399bf0a280a42266ef88f329110038d6d1dea0972f1f0c1a764d5de68d8a22c84f26937d69fb6f7d3f4fc09eae1c1f5dbd6cb77a7f4061ce8d6268f5612273205eb7eeb5cecfbe729375a60500f8a4bd500c697a44437808b94e0c0584bf4d14bffa62cfc0b1e9d4aeb90d5fe8eefbd5ef7a657390e82da7a44eabdbae86e645bed0fadcc66b39871922305e3e2ab49c56d5424dca409c9fd3b6fb97533d33e9d574101d2e16365ad55607d4d4544993f273b5d8ae0920b1aed3a94acd2940b03eecb8650036f86d95d5e9846627f527cc69e838502c146f1ae0fdf695f739d5b593c36c8120f26d30e643cb555321a9b5db6e1a2049924eaf8a07fc88710535e6ed37facf3ff67adfb93d1ac7cf3b1874caa89e076c0833de116600b888f5619b45b00ab692e3f3269379aaabef5cd7885657efd9a3b95c7e8317f96644cf2ad8a01bdf695fb5faba0162a99c3a6fae7db8e8a0c30301b0c8719d33775357efc09722928d45eaaa2dbbb7bb7760df99f38f3b31fb3d68350a66384db78fb739c55775320bcc03f24016c81811bf61febc96271af2570cd4fd61dda123bf5f3808dab45fa450bdfa8c569a58045ff9343e7e7af1c2bf8af5d97d1991a6fed2b088486b04b958c402295002869c6a2aaa3a0230bf0a505705cb78f01df31b1a6391ec8f8343fd4043345641a714642a5703020cdd93ab5fd096cf2df8eee2e01903b154e01c905401fe1d0598147ea0720d302089aa073022d988d18a3c5d6150a8e4d58255551591285b498902ea26f9abf928be5df2fffe39bd15f21ff22a24726f6ea8a90000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>liquidaciones</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
 </xupdate:modifications>

@@ -1,25 +1,25 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
-<action>
-<name>liquidaciones</name>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Liquidaciones de Agentes&quot;)</alias>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;La liquidación de un agente comercial sumariza las comisiones correspondientes a un grupo de facturas y emitidas por la venta realizada por dicho agente.&quot;)</description>
-<table>liquidaciones</table>
-<form>masterliquidaciones</form>
-<formrecord>liquidaciones</formrecord>
-<scriptformrecord>liquidaciones</scriptformrecord>
-<scriptform>masterliquidaciones</scriptform>
-</action>
-</xupdate:insert-after>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[liquidaciones]" >
-<action>
-<name>generarliqagentes</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;La generación de liquidaciones a agentes permite crear automáticamente todas las liquidaciones correspondientes a un determinado período de tiempo&quot;)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Generar liquidaciones a agentes&quot;)</alias>
-<scriptform>generarliqagentes</scriptform>
-<table>generarliqagentes</table>
-<form>generarliqagentes</form>
-<formrecord>generarliqagentes</formrecord>
-</action>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]">
+    <action>
+      <name>liquidaciones</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Liquidaciones de Agentes")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","La liquidación de un agente comercial sumariza las comisiones correspondientes a un grupo de facturas y emitidas por la venta realizada por dicho agente.")</description>
+      <table>liquidaciones</table>
+      <form>masterliquidaciones</form>
+      <formrecord>liquidaciones</formrecord>
+      <scriptformrecord>liquidaciones</scriptformrecord>
+      <scriptform>masterliquidaciones</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[liquidaciones]">
+    <action>
+      <name>generarliqagentes</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","La generación de liquidaciones a agentes permite crear automáticamente todas las liquidaciones correspondientes a un determinado período de tiempo")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Generar liquidaciones a agentes")</alias>
+      <scriptform>generarliqagentes</scriptform>
+      <table>generarliqagentes</table>
+      <form>generarliqagentes</form>
+      <formrecord>generarliqagentes</formrecord>
+    </action>
+  </xupdate:insert-after>
 </xupdate:modifications>
