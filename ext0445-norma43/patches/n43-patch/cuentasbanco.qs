@@ -2,7 +2,7 @@
 /** @class_declaration norma43 */
 //////////////////////////////////////////////////////////////////
 //// NORMA43   ///////////////////////////////////////////////////
-class norma43 extends oficial {
+class norma43 extends oficial /** %from: oficial */ {
 	function norma43( context ) { oficial( context ); }
 
 	function init() {
