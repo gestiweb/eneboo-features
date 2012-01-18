@@ -2,7 +2,7 @@
 /** @class_declaration compRecibos */
 /////////////////////////////////////////////////////////////////
 //// COMPENSACIÓN DE RECIBOS ////////////////////////////////////
-class compRecibos extends pagosMulti /** %from: pagosMulti */ {
+class compRecibos extends oficial /** %from: oficial */ {
 	var curReciboPos:FLSqlCursor;
 	var curReciboNeg:FLSqlCursor;
 	var curReciboNeg2:FLSqlCursor;
