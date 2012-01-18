@@ -1,0 +1,458 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>clientes</name>
+	<!--Almacena la relacion entre clientes y lista de etiquetas de clientes-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Clientes")</alias>
+	<query>qry_listaclientes</query>
+	
+	<field>
+		<name>codcliente</name>
+		<!--Código del cliente (no visible)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>6</length>
+	</field>
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>cifnif</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","C.I.F./N.I.F")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+	</field>
+
+	<field>
+		<name>nombrecomercial</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre comercial")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codgrupo</name>
+		<!--Si el cliente pertenece a un grupo, el código del mismo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Grupo clientes")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>gruposclientes</table>
+			<field>codgrupo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>telefono1</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Teléfono 1")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>contacto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Contacto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<editable>false</editable>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>observaciones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codpago</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Forma de pago")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>formaspago</table>
+			<field>codpago</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>codcuentadom</name>
+		<!--Código de cuenta corriente en la que se domicilian los recibos del cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Domiciliar en")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codcuentarem</name>
+		<!--Código de cuenta corriente en la que se remesan los recibos del cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Remesar en")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>cuentasbanco</table>
+			<field>codcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>coddivisa</name>
+		<!--Si el cliente es extranjero, la divisa en que trabaja-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Divisa")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>3</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>divisas</table>
+			<field>coddivisa</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>codserie</name>
+		<!--Serie de facturación asociada a cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Serie")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>series</table>
+			<field>codserie</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>regimeniva</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Régimen I.V.A.")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","General");QT_TRANSLATE_NOOP("MetaData","Exportaciones");QT_TRANSLATE_NOOP("MetaData","U.E.");QT_TRANSLATE_NOOP("MetaData","Exento")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","General")</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>recargo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Aplicar recargo de equivalencia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>ivaincluido</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Facturar con I.V.A. incluido")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>riesgomax</name>
+		<!--Cantidad máxima que el cliente podrá adeudar a la empresa-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Riesgo máximo autorizado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>riesgoalcanzado</name>
+		<!--Cantidad máxima que el cliente ha adeudado a la empresa-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Riesgo alcanzado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<editable>false</editable>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>capitalimpagado</name>
+		<!--Cantidad impagada por el cliente a la empresa-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Capital impagado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>copiasfactura</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Copias por factura")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<default>1</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codtiporappel</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de rappel")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>tiposrappel</table>
+			<field>codtiporappel</field>
+			<card>M1</card>
+		</relation>
+
+	</field>
+
+	<field>
+		<name>codagente</name>
+		<!--Código del agente comercial asignado al cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Agente comercial")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>agentes</table>
+			<field>codagente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>telefono2</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Teléfono 2")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>fax</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fax")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>email</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","E-mail")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>web</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Web")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>codedi</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código edi (EAN)")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>17</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codsubcuenta</name>
+		<!-- Código de la subcuenta de contabilidad asociada al cliente -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>idsubcuenta</name>
+		<!-- Identificador interno de la subcuenta -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idsubcuenta</field>
+			<card>M1</card>
+			<checkIn>false</checkIn>
+		</relation>
+	</field>
+
+	<field>
+		<name>debaja</name>
+		<!-- Indica si el cliente está de baja -->        
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;De baja&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>fechabaja</name>
+		<!-- Fecha de baja -->        
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Desde&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+		<default>null</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>codcontacto</name>
+		<!--Código del contacto principal-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Contacto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>direccion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dirección")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>ciudad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ciudad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>provincia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Provincia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>codpostal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código postal")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+	
+	<field>
+		<name>idinforme</name>
+		<!-- Identificador interno	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Informe")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>int</type>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>i_etiquetascli</table>
+			<field>id</field>
+			<card>M1</card>
+		</relation>	
+	</field>
+	
+	<field>
+		<name>iddireccion</name>
+		<!--Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","IdDireccion")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>number</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>dirclientes</table>
+			<field>id</field>
+			<card>M1</card>
+		</relation>	
+	</field>
+</TMD>

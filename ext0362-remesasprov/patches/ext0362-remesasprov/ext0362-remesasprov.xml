@@ -1,0 +1,23 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="ext0362-remesasprov">
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbanco.ui"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="masterremesasprov.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosdevolremprov.ui"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="recibosprov.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="remesasprov.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="vdisco34.ui"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="masterremesasprov.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosdevolremprov.qs"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="recibosprov.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="remesasprov.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="vdisco34.qs"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolprov.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosdevolremprov.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="recibosprov.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="remesasprov.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="seleccionrecibosprov.mtd"/>
+</flpatch:modifications>

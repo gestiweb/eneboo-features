@@ -1,0 +1,11 @@
+<flpatch:modifications name="norma58" >
+    <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbanco.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="cuentasbancocli.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="cuentasbancopro.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterremesas.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="vdisco58.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesas.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="vdisco58.qs" />
+</flpatch:modifications>

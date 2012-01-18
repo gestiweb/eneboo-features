@@ -1,0 +1,37 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tesorera]/action[recibosprov]">
+    <action name="remesasprov"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[remesas]">
+    <action name="remesasprov"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[recibosprov]">
+    <action>
+      <property name="name">
+        <cstring>remesasprov</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>remesas_provimage4</iconset>
+      </property>
+      <property name="text">
+        <string>Remesas de proveedor</string>
+      </property>
+      <property name="menuText">
+        <string>Re&amp;mesas de proveedor</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="remesas_provimage4">
+      <data format="PNG" length="1789">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006c449444154789ccd97716c55571dc73fadb77aee7c8df71a30f726ad7209267d0c161fdb08544da00e97319da30b2e16d964d53f5642fc03966844c818355187261a9ae82c661b7489084b5ca8f38f3da284be25b47d1ab06f0ae1a136dc276bb8d7f4d1f34b7bd3e71fe7be0296d66c31c193bc9c9c77cf3bdfefef7bbebf6fee6ba8d56adccdd17857d1ff1f082c3afefcdc77ae8cecea397af4f1ce954013d000f0ebad9d3baebf7cb436f26ccf99ae0772ab6e7df65ec7071606dfbdd16f5bfdcde55b9ebcaf796a72e7975b5bdbb22d7e69edf24f7ea2fbab4f1d6bdefaa4f237757cfc89ec9a9ec7ee51d9c4b2c68ae3e311f0bf31d5c8ae9e976b7fbf5a9b1ba323b5cbcfbf507b6b7bd73f6a97afd66ad7aedffc4cd56a53f9b76a23bb76ffeabd2ab2e0a6cbdf7d210e0eecfdc8bc07c531c65e1bc0ce28822d9d0084674e531e1e25aa0aaee320121f3f76b17ce0c8db85bf00098ba872470223bb766f091ec89d749fdab630f5c228a3c70788e388dc860edc4d9b4129ca2f1d6668b880af14a08ef7978a0706868b0b12b92381b3cff6bcd2feedbddb69f5172600a035608368b34e04940211c297fac99f2be0373b802ca8c81d4db87bd3e77fb9b4f34b6a41e019605a9ba3a6ab8065c01360aa0a4942f3a7d772dfb6a751d72738ffd7d2bd9df7afede9cead6dabce4ae9fcd5ca9c59e71138fb8d9e2dc1ca955df6fd6b6ea099a1e90e869a05669b603681d9141c60564cb24c0b08707d82e6f5eb597a2dc4fd98cff2bddfbaf789ecea9ec732aa2d69b44ac5f1f1685e1049225f731fd9fc2f26f50ca21be7816b0d89be5df6fa9c00f21f6b207fa680fbc5cd66f1d976d6ece8de2a897c0e68be8dc0d91dcf389ee73f82e7d7008b8c7dcf3ce92ddb1c6cdd0a0e90de98a5e680b1804ac5f860896f7e3fa979715fefa981e162115016b011235cc3e1f3c50ddd90b83f3dfc21d0cd2ae322e9d152af0cf05767e1533903540793d8ec9c23a5c1f1095fed27b7aedd28d66c33b4734f38f0c7a1df290b918429cbcb38f98eb60085421006cb65c26a6c2b030b288a9331e14484ca286ce0c4fe22e53f9c05cf37558aa4954bbad6462947911f2eb0edfb2f42b34dd8779893174b3a70dcd6f244fca6242296aba033089019504de07b1eedcf1fbc4566687f7580fc993cd9d6002c08e398ee67be4eff6f4ecdf74092b666025ca9983c58e2c1b951a412b27363c7f2b0123ee739de0611f99e652aac330757094cc4b75d7d3411524a04a752c6560e81e7d3fbe620fddcea81fabddb8684b2098f9f20b7ae0312187bfd24fe8a2c6e10106414ed71fce09e1f1c7ca53112236f38111189269c8c61224257429808a112124f44942b21a519082763c238ba095c5740d25c100d950a2845be50c0dddac9d80f7bf15704a8a50e28858e638ef51dbe917fa7b4d70245a51ae328852442ecb8e8f132580a9d98bb0de30ae144849371701d974a3546590afd4e09dbf380143c0ed1120136762cf8ae43f4da007e4b80520eb6e7431cd3fba343538317c6f617c72b7fb2241122d1e844e32a977235a27cae0816d880b6604d5b8efeb61c58d05f28a0459bfbaa6af4a5d2cdd64b5bd35ee6537ee3048ee312c711ceb2005a7df41cf8e8bee2786518f89ba552f7da968b2084b170e8741ea54c57288c329280486ce60494a540a7ad67a7e0806d296809181a2e102cf1f096e5a0d5c71661afa97c0e1cf8a70582523e3d0fe6e8f84a9739451923d9968d4ed296120d22e48f0fd077be64f63529d3a85a0c59db412bb02b213203d975ede03a9090828fde060e88e52a0757c1a3dbbbe1a10ee3e06add58829d480a6ee46dff4227472e1e320ad4f3af09144611bb254bf8db41d60701ca56d8cabe63e569c8d41ab1402985ae1b49e4f698154348c715741c83088e4a43ca52f5463473938216dfb8bf2d0b19754be557e68103343a96c2510abb2e739d44025423b3b52ad8f5164bc0cd2894a5a8948a28a5c0326b9482d85072967af4fea46fc1caebb1d108829b71d1f56feaf92e0292569e08ba1ac1a42089e0291780836f0cfe7ee0c811e2520941b05b8cfb734140efcffb16ad7c2eb794a55016d819278d53034c55436c2ad769e59288d96b19b71f79bbf0e3a2e7fd6ca8123edd71ce7fb8b3ab8ba1e102c577a3a9fca5f2a295d747c3e6b66ced54df2fccbdafca9a18ae6a745cb9790ddab42009c47184d712f0e8fe3d9cbe74e561e032309df3bcd5b915c12e65a9cf142e95f615c72b23ff0d1ca021bbc4ab6d5c95c5cfb8646de36b9911688278c66cd269d6c70822a02562f042892b71fc107001b88e490307f828a69c77816b8b818379db7180e580bbd0a64546942a10a7675998ce6c4c81a71703af1368023e0c7cf07d1098066e60de75ded768b8db7fcfff0db77da8a0a5b9e8300000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[recibosprov,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>remesasprov</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

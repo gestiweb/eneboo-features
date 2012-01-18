@@ -1,0 +1,29 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentacom]">
+    <field>
+      <name>codsubcuentaven</name>
+      <!-- Código de la subcuenta de contabilidad asociada a la subcuenta de ventas-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta de ventas")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuentaven]">
+    <field>
+      <name>idsubcuentaven</name>
+      <!-- Identificador interno de la subcuenta -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_subcuentas</table>
+        <field>idsubcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

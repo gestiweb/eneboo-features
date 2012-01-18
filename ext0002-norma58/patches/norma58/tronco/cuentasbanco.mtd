@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[sufijo]" >
+<field>
+<name>sufijoi</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sufijo Norma 58&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>3</length>
+<default>000</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,50 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]" >
+<action>
+<name>i_etiquetascli</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Etiquetas de clientes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Etiquetas de clientes&quot;)</description>
+<table>i_etiquetascli</table>
+<form>master_print</form>
+<formrecord>i_etiquetascli</formrecord>
+<scriptform>i_masteretiquetascli</scriptform>
+<scriptformrecord>i_etiquetascli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_etiquetascli]" >
+<action>
+<name>direccioncliente</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dirección de Cliente&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dirección de Cliente&quot;)</description>
+<table>dirclientes</table>
+<form>dirclientes</form>
+<formrecord>dirclientes</formrecord>
+<scriptform>masterdirclientes</scriptform>
+<scriptformrecord>dirclientes</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[direccioncliente]" >
+<action>
+<name>i_etiquetasprov</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Etiquetas de proveedores&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Etiquetas de proveedores&quot;)</description>
+<table>i_etiquetasprov</table>
+<form>master_print</form>
+<formrecord>i_etiquetasprov</formrecord>
+<scriptform>i_masteretiquetasprov</scriptform>
+<scriptformrecord>i_etiquetasprov</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_etiquetasprov]" >
+<action>
+<name>direccionproveedor</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dirección de Proveedor&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dirección de Proveedor&quot;)</description>
+<table>dirproveedores</table>
+<form>dirproveedores</form>
+<formrecord>dirproveedores</formrecord>
+<scriptform>masterdirproveedores</scriptform>
+<scriptformrecord>dirproveedores</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

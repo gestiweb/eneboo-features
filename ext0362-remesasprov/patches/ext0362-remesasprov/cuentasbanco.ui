@@ -1,0 +1,139 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">439</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layoutSubcuentaECGC]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutSubcuentaECGP</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodSubcuentaEfgp</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>320</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>codsubcuentaecgp</string>
+          </property>
+          <property name="foreignField">
+            <string>codsubcuenta</string>
+          </property>
+          <property name="fieldRelation">
+            <string>idsubcuentaecgp</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbIdSubcuentaEfgp</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>79</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>79</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="focusPolicy">
+            <enum>NoFocus</enum>
+          </property>
+          <property name="fieldName">
+            <string>idsubcuentaecgp</string>
+          </property>
+          <property name="showAlias">
+            <bool>false</bool>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDesSubcuentaEcgp</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>250</horstretch>
+              <verstretch>25</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>250</width>
+              <height>0</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>co_subcuentas</string>
+          </property>
+          <property name="foreignField">
+            <string>idsubcuentaecgp</string>
+          </property>
+          <property name="fieldRelation">
+            <string>idsubcuenta</string>
+          </property>
+          <property name="showAlias">
+            <bool>false</bool>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/spacer[spacer34]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]">
+    <includehint>FLFieldDB.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]">
+    <includehint>FLFieldDB.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]">
+    <includehint>FLFieldDB.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

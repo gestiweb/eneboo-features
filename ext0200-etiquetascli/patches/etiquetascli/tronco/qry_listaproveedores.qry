@@ -1,0 +1,22 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>qry_listaproveedores</name>
+
+	<tables>proveedores,i_etiquetasprov_lista,dirproveedores,paises</tables>
+
+	<group>
+		<level>0</level>
+		<field>proveedores.codproveedor</field>
+	</group>
+	
+	<select>
+	proveedores.*, dirproveedores.direccion, dirproveedores.ciudad, dirproveedores.provincia, dirproveedores.codpostal, paises.nombre, lista.idinforme, dirproveedores.id
+	</select>
+
+	<from>
+		proveedores INNER JOIN i_etiquetasprov_lista lista ON proveedores.codproveedor = lista.codproveedor LEFT OUTER JOIN dirproveedores ON proveedores.codproveedor = dirproveedores.codproveedor LEFT OUTER JOIN paises ON dirproveedores.codpais = paises.codpais
+	</from>
+
+	<where>
+	</where>
+</QRY>

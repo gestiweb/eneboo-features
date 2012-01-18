@@ -1,0 +1,63 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnADisco]/property[iconSet]/iconset[iconset,1]/text()[1]" >image41638</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonPrint]/property[iconSet]/iconset[iconset,1]/text()[1]" >image12575</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtomInsert]/property[iconSet]/iconset[iconset,1]/text()[1]" >image61273</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonDelete]/property[iconSet]/iconset[iconset,1]/text()[1]" >image10948</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonEdit]/property[iconSet]/iconset[iconset,1]/text()[1]" >image20035</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonZoom]/property[iconSet]/iconset[iconset,1]/text()[1]" >image18436</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >90</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="norma58image3099" >
+<data format="PNG" length="2221" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000087449444154789cb5966f6c1cc519c67f7636c95c72b87b70a03be4a8b71047592b09b92341392354702122ae90a8031f6a40a831aa8402ad68aa529a50a9c541aa28546d810f1549254aacd212a326e4689b7286a69c03457769a05e68027bd8d7ecd65e650767eb9b38eb6c3f9c9306e78f0a829146bb9a7d679e679ef77967670e9f73cbb466f48e6b3abe7d6ce2587330197c38fb7bf3e788ade5d7e4ef5a7ffbfa37538b525b55a8d69c33e8b34635979aa9542ab5b66b75d73d2aaeae2300dbb7119ab884c6864f7e2e04367c7d434b67a6f31be62de603cea073f9a03b48bd5647850ae6820ad542602e70fc3325d0b5b82b96bd3d7b67dffd7d0f92e64a8ec1b6a16da448616b36a66e32e40f012c04e6cc9effa909984b4dade7ae9eeeae9bbabe9f5b9dbb8a13c009183e3c4c7e799eed87b70360490b0015aa05c03c60f2cc753e9509bb6fedbe79cfb37b5edd72ef96e773ab7357e1d310d783f6d676a426c92fce430866d28410842616cc447dac7d5202c9fc9afc2f9e79f4999745abb816c0b66deab28e7dc88634d8814db6358b141234b0bcd30a081a0a7c72024213a6b9d87ca2e76b3d7fefbbbfefbe62a5081286dd61f450a77f6f3ff55a1d8e81913288a9189dcb3b898918a66ea24285d0c43cce91f20b7a40089131979a0ff65ed77b178b5968c64d2ccf2215a6b06a16f965796ccfc61426854a81f635ed38d2211d4f533e50c60f7c1ce59c52e0ff27203411eb59d3f3cd443ef15d4318170fcb6172418e42b5809934a9c80add6637ca55b467da29d6f660c834fe011f04f4edee43b90aa514d95496c2680181100a7596079a660f645766afceafce3f1d8bc7aef1a58f52ea941ae4e2396ccd466802a10b7ad7f5e26b3e092d4171a888f004030706109a20914c606a262559c21d7529fdb5342203792b5039136fce2cf0bb7bd6f5bc78e0fd035f8c8fc5f1428fe5e9e5045301468b811ddaac48ad408692b696369c698725fa12060607f03ff0191a1962edcab5a0837999c9a189432c492e61fcf838e3def83c29e58b807d5e02c08a776bef5e9b10898be43c497c7e83445cc4f19447a8420202dab4360e4d1ec2f55c76bdba0b67c4613a3e8d71b981a73c8c29036bd2020dbc498f15da0aec497b6e6da4f63a503e2f8120080e064783dd7ee02fccb6645704f382e6b64bda9053925c6b0e277030e206d5c92adaa4863562d1b1b8037199209bcae2062e866e604d58182d067242d2966c63746a94ac91e5edc36f3b4110ec05a6cfa700e1c9f06810042f59b5ca7b5a336bc266d522e6c77102071117b8d2c5fdb74b3837a4eb8a2e9c66074e8237e1619c6c8013823be1b2686a11078f1e444e4abc098f300c8fd66ab53f02c129bcb3ab40e81aa19aab34b1ab224553da4d3d29712fceb6e5b1039b5c6b0e5bb731532696b430f5339e9e85114f53ae96898d27d851db369df0fc6ac9936f28a5fea242f50fa07e26dcffaa60d586752cdf788fd05924442e8166eb226e68d44a0bd295adf38c24e889144208da453bc3e1300991000d0c0cacd0a22eeb546d0bdb95d89e7f4479f2372077a73294ddc34c9cb5d9d304566de8dafcf4b6df3b126dc80114642f05fb188834c87d45b2fb76a0d2926c6b4389f6643b766063264d2cb78c188d31502d528f77a316a56159f7940af848e8f6a1b41aa86435ffcde2eefec1ea7e393a831b01344570db776edcf4bdaeafe6af363583a7f65700038483294cfaafcb2152e0ecde49a2b21dfd521d210409a5c822a8a0288f3ad82a467af52612cb0c52a6419a3af94c8caadc83993470a48bace847b63cb2fe3e75b8ba4b859c042222882ed43715a3a8bb10459bcb51d4fdc093d1914c268a84f8789c10d1e48d9ba2974a5174742a8a26c7a2288a8e46cf8d6d8e7ac63291594c45af8c3c16bd7ee485a8ebde4daf091d63a6009a4e9bb0b8b21b53033b5418801dd63100ab5242c4b3d828760eee846a1580ba06314d40082845eccf8ff31555a6dcbf132329181aeda75f2fe28b34ce4a8bf5bf7b98576ed904c2be52d7b9c2951c01a64e1378ea073b71c64124805130751fcb939871b0dc021d894e78670880beeb6f4065bbd09719acbf693df5c19db4df7d1bec1f222d12586e895432c5b06b61b465e9145d14d3052a351fb3d59c5f828b84c61c159ea180ffcbbe7133d171a988fbc8640e2bf4214c63b965629894de2e42ab01558b8d7a9a820e1d6d399cb7f6d0b1bf418ca526e59a4d7bcac4f62c3a4596fec141043a1d2a4d36956347ad308de2a40a67aa209a71e3592d9961cbba5efc5577607965d00d8cea10db5e2ec0e1c2d9f14bb3141ffd09a9659d58b28ed96ae30605ea282a358bce4c17a5c392a1179d91815f6ded45f13a70fc940211f02ef07e1d16c460155eb5a5efd70fb3452958da8df22c12810fd562638606e829906ec307550b7d54a710b7490b83c7f783d27b518e851f6ca4ff6f16f9b84ec9da5a4751a7713d8f9a818780454dd0de04b72c802f972109e23980be7d0340e376fbc8de7e0815c337f7b0f34f111b9f76d8f2db883dd7f78052183fbd8feda3065b87408d1bd8fb20250dd2b2c486a48e9416cad3c780ff9c3e07ce297f2335b153819d3ffca00955a6f8d89d102a7a7f364951da243403b048ab347b1eb91c8460fd432f203050a105611a3fa8a082fa09396e8ff955eba0fbcee0f3c05e600c98d622b8b209de9f45200256355e85ef4ae6a732b985a73e0ae97247268d55ab60c4d338b5194f840a5571dd921cf808991893b2f82f027f4449f74342e50223400d9033185153d4c8c51b4011f8273005ac00ee05be003c115b7cc37b227fc78f3fd8fbb89e702deac9cc897b5a73ae1d2acff0ecfa0ecf3608551a78af09be057c044cd0f8f11c07d4ccbad3b33a4450bdc049b86b261573d1f4559b35f1a3084e9c27f678046b81f933166d3e476f9a9df6a6a8712476025f023233e3a3c01f9ae0b559a9997314962760237035d0021c03de027ede04ef9c2395176cff05d1c02c9e57b93d060000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,master]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnADisco]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnADisco58</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>W</string>
+</property>
+<property name="iconSet" >
+<iconset>norma58image3099</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Volcar remesa a disco en norma 58 (W)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para volcar remesa a disco bajo la norma AEB 58</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+</xupdate:modifications>

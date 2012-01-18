@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
+<action>
+<name>cambioempresa</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cambio de empresa&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cambio de empresa&quot;)</description>
+<scriptform>cambioempresa</scriptform>
+<scriptformrecord>cambioempresa</scriptformrecord>
+<table>cambioempresa</table>
+<form>cambioempresa</form>
+<formrecord>cambioempresa</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

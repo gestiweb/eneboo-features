@@ -1,0 +1,12 @@
+<flpatch:modifications name="co_punteo" >
+    <flpatch:patchXml path="contabilidad/principal/" name="flcontppal.xml" />
+    <flpatch:addFile path="contabilidad/principal/forms/" name="co_masterpunteo.ui" />
+    <flpatch:addFile path="contabilidad/principal/forms/" name="co_punteo.ui" />
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="flcontppal.ui" />
+    <flpatch:addFile path="contabilidad/principal/queries/" name="co_qry_punteo_partidas.qry" />
+    <flpatch:addFile path="contabilidad/principal/scripts/" name="co_masterpunteo.qs" />
+    <flpatch:addFile path="contabilidad/principal/scripts/" name="co_punteo.qs" />
+    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidas.mtd" />
+    <flpatch:addFile path="contabilidad/principal/tables/" name="co_punteo.mtd" />
+    <flpatch:addFile path="contabilidad/principal/tables/" name="co_qry_punteo_partidas.mtd" />
+</flpatch:modifications>

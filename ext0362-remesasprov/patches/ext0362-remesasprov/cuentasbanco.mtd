@@ -1,0 +1,29 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentaecgc]">
+    <field>
+      <name>codsubcuentaecgp</name>
+      <!-- Código de la subcuenta de contabilidad asociada a Efectos comerciales gestión de pago-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Efectos comerciales gestión pago")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuentaecgp]">
+    <field>
+      <name>idsubcuentaecgp</name>
+      <!-- Identificador interno de la subcuenta de comisiones-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_subcuentas</table>
+        <field>idsubcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[vdisco]" >
+<action>
+<name>vdisco58</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;El volcado a disco de una remesa genera un fichero con el listado de recibos de la remesa&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Volcado a disco de remesas&quot;)</alias>
+<table>remesas</table>
+<formrecord>vdisco58</formrecord>
+<scriptformrecord>vdisco58</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

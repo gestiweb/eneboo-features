@@ -1,0 +1,7 @@
+<flpatch:modifications name="cambio_empresa" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="cambioempresa.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/scripts/" name="cambioempresa.qs" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="cambioempresa.mtd" />
+</flpatch:modifications>

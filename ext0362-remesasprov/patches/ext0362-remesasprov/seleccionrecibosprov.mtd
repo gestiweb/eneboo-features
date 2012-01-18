@@ -1,0 +1,5 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/name[name,1]">
+    <!-- Selección de recibos de proveedor -->
+  </xupdate:insert-after>
+</xupdate:modifications>

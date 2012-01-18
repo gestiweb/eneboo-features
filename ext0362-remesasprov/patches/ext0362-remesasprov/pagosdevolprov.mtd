@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]">
+    <field>
+      <name>idremesa</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Número de Remesa")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

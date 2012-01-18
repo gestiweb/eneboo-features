@@ -1,0 +1,26 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbSufijo]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbSufijoi</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>50</width>
+          <height>25</height>
+        </size>
+      </property>
+      <property name="fieldName">
+        <string>sufijoi</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

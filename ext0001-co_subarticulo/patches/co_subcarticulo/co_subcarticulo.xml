@@ -1,0 +1,13 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="co_subcarticulo">
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasfacturascli.ui"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasfacturascli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd"/>
+</flpatch:modifications>
