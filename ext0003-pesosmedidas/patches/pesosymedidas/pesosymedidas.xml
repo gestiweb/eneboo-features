@@ -1,0 +1,13 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="pesosymedidas">
+  <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="familias.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="pesosmedidas.ui"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="pesosmedidas.qs"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="familias.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="pesosmedidas.mtd"/>
+</flpatch:modifications>

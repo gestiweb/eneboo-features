@@ -1,0 +1,186 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbCodFamilia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">107</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesFamilia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbNoStock]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">92</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbSeCompra]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">105</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbSeVende]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">97</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesFamilia]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbCodUnidad</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>85</width>
+          <height>21</height>
+        </size>
+      </property>
+      <property name="fieldName">
+        <string>codunidad</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+      <property name="foreignField">
+        <string>codunidad</string>
+      </property>
+      <property name="fieldRelation">
+        <string>codfamilia</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]">
+    <hbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbCodFamilia</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>109</width>
+            <height>22</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>codfamilia</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbDesFamilia</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>29</width>
+            <height>21</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>descripcion</string>
+        </property>
+        <property name="tableName">
+          <string>familias</string>
+        </property>
+        <property name="foreignField">
+          <string>codfamilia</string>
+        </property>
+        <property name="fieldRelation">
+          <string>codfamilia</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <spacer>
+        <property name="name">
+          <cstring>spacer23</cstring>
+        </property>
+        <property name="orientation">
+          <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+          <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+          <size>
+            <width>16</width>
+            <height>20</height>
+          </size>
+        </property>
+      </spacer>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbNoStock</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>95</width>
+            <height>22</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>nostock</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbSeCompra</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>107</width>
+            <height>22</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>secompra</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbSeVende</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>100</width>
+            <height>22</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>sevende</string>
+        </property>
+      </widget>
+    </hbox>
+  </xupdate:insert-after>
+</xupdate:modifications>
