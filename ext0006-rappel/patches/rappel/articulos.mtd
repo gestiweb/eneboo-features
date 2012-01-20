@@ -1,0 +1,109 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineastransstock,referencia]">
+    <relation>
+      <table>atributosarticulos</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[atributosarticulos,referencia]">
+    <relation>
+      <table>rappelarticulos</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
+    <field>
+      <name>codalmacenstock</name>
+      <!-- Código del almacén para mostrar el stock correspondiente -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Almacén")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>4</length>
+      <relation>
+        <table>almacenes</table>
+        <field>codalmacen</field>
+        <card>M1</card>
+        <checkIn>false</checkIn>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codalmacenstock]">
+    <field>
+      <name>codgrupotalla</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Grupo talla")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>5</length>
+      <relation>
+        <table>grupostalla</table>
+        <field>codgrupotalla</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codgrupotalla]">
+    <field>
+      <name>codsettallas</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Set tallas")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+      <relation>
+        <table>setstallas</table>
+        <field>codset</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsettallas]">
+    <field>
+      <name>codsetcolores</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Set colores")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+      <relation>
+        <table>setscolores</table>
+        <field>codset</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsetcolores]">
+    <field>
+      <name>codtiporappel</name>
+      <!-- Tipo de Rappel asociado al artículo -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de Rappel")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>tiposrappel</table>
+        <field>codtiporappel</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codtiporappel]">
+    <field>
+      <name>codtarifatc</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tarifa")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <relation>
+        <table>tarifas</table>
+        <field>codtarifa</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>
