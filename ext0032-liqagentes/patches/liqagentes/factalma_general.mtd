@@ -1,17 +1,18 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]" >
-<field>
-<name>refivaliquidacion</name>
-<!-- Referencia iva liquidación del agente--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Ref.Liquidación&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>string</type>
-<length>18</length>
-<relation>
-<table>articulos</table>
-<field>referencia</field>
-<card>M1</card>
-</relation>
-</field>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]">
+    <field>
+      <name>refivaliquidacion</name>
+      <!-- Referencia iva liquidación del agente-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ref.Liquidación")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>18</length>
+      <relation>
+        <table>articulos</table>
+        <field>referencia</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>

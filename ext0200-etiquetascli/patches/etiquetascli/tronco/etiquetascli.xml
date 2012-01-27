@@ -1,0 +1,29 @@
+<flpatch:modifications name="etiquetascli" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_etiquetascli.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_etiquetasprov.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_etiquetascli.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_etiquetasprov.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="qry_listaclientes.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="qry_listaproveedores.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetascli_apli01212.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetascli_apli01213.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetascli_apli01214.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetascli_apli10826.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetasprov_apli01212.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetasprov_apli01213.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetasprov_apli01214.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_etiquetasprov_apli10826.kut" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_etiquetascli.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_etiquetasprov.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masteretiquetascli.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masteretiquetasprov.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_etiquetascli.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_etiquetascli_lista.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_etiquetasprov.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_etiquetasprov_lista.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="qry_listaclientes.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="qry_listaproveedores.mtd" />
+</flpatch:modifications>

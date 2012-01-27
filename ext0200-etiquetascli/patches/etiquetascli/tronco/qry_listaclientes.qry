@@ -1,0 +1,22 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>qry_listaclientes</name>
+
+	<tables>clientes,i_etiquetascli_lista,dirclientes,paises</tables>
+
+	<group>
+		<level>0</level>
+		<field>clientes.codcliente</field>
+	</group>
+	
+	<select>
+	clientes.*, dirclientes.direccion, dirclientes.ciudad, dirclientes.provincia, dirclientes.codpostal, paises.nombre, lista.idinforme, dirclientes.id
+	</select>
+
+	<from>
+		clientes INNER JOIN i_etiquetascli_lista lista ON clientes.codcliente = lista.codcliente LEFT OUTER JOIN dirclientes ON clientes.codcliente = dirclientes.codcliente LEFT OUTER JOIN paises ON dirclientes.codpais = paises.codpais
+	</from>
+
+	<where>
+	</where>
+</QRY>

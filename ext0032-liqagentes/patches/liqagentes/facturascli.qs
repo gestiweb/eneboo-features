@@ -2,7 +2,7 @@
 /** @class_declaration liqAgentes */
 //////////////////////////////////////////////////////////////////
 //// LIQAGENTES //////////////////////////////////////////////////
-class liqAgentes extends oficial {
+class liqAgentes extends oficial /** %from: oficial */ {
 	function liqAgentes( context ) { oficial( context ); }
 	function validateForm():Boolean {
 		return this.ctx.liqAgentes_validateForm();
@@ -39,10 +39,11 @@ function liqAgentes_validateForm():Boolean
 		if (!curLiq.commitBuffer())
 			return false;
 	}
-		
+
 	return true;
-	
+
 }
 
 //// LIQAGENTES /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

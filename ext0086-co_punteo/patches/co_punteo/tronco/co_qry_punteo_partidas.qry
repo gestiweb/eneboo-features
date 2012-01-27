@@ -1,0 +1,20 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_qry_punteo_partidas</name>
+	
+	<tables>co_partidas,co_punteo</tables>
+	
+	<select>
+		co_partidas.idpartida,co_partidas.idsubcuenta,co_partidas.concepto,co_partidas.debe,co_partidas.haber,
+		co_asientos.fecha,
+		co_punteo.punteado,co_punteo.casado
+	</select>
+	
+	<from>
+		co_asientos INNER JOIN co_partidas ON co_asientos.idasiento = co_partidas.idasiento
+		LEFT OUTER JOIN co_punteo ON co_partidas.idpartida = co_punteo.idpartida
+	</from>
+	
+	<where>
+	</where>
+</QRY>

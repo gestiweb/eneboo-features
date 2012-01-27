@@ -1,0 +1,67 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>cambioempresa</name>
+	<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Empresas&quot;)</alias>
+	
+	<field>
+		<name>nombrebd</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Empresa (Base de datos)&quot;)</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>100</length>
+		<relation>
+			<table>co_ejerciciosempresas</table>
+			<field>nombrebd</field>
+			<card>1M</card>
+		</relation>
+	</field>
+		
+	<field>
+		<name>driver</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de base de datos&quot;)</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;MySQL&quot;);QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;PostgreSQL&quot;)</optionslist>
+		<default>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;PostgreSQL&quot;)</default>
+		<length>50</length>
+	</field>
+	
+	<field>
+		<name>usuario</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuario&quot;)</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>password</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Password&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>host</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servidor&quot;)</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>puerto</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puerto&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+</TMD>

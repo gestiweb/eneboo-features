@@ -2,7 +2,7 @@
 /** @class_declaration norma43 */
 /////////////////////////////////////////////////////////////////
 //// NORMA 43////////////////////////////////////////////////////
-class norma43 extends remesaProv {
+class norma43 extends remesaProv /** %from: remesaProv */ {
     function norma43( context ) { remesaProv ( context ); }
     function afterCommit_pagosdevolcli(curPD) {
 		return this.ctx.norma43_afterCommit_pagosdevolcli(curPD);

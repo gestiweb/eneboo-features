@@ -1,5 +1,5 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_trazaarticulos]">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]">
     <action>
       <name>i_riesgocli</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Informe de riesgo de clientes")</alias>

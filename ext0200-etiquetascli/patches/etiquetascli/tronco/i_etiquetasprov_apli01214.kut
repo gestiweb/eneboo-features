@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="0" LeftMargin="0" PageOrientation="0" PageSize="0" RightMargin="0" TopMargin="0">
+
+<Detail Cols="2" Rows="8" Height="112" Level="0">
+		
+<!--CLIENTE -->
+<Field WordWrap="0" Width="250" X="30" Y="30" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="proveedores.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[proveedores.nombre]" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+<Field WordWrap="0" Width="200" X="30" Y="45" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirproveedores.direccion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[dirproveedores.direccion]" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+<Field WordWrap="0" Width="50" X="230" Y="45" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="2" DataType="0" Field="dirproveedores.apartado" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[dirproveedores.apartado]" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+<Field WordWrap="0" Width="50" X="30" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirproveedores.codpostal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[dirproveedores.codpostal]" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+<Field WordWrap="0" Width="200" X="80" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirproveedores.ciudad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[dirproveedores.ciudad]" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+<Field WordWrap="0" Width="100" X="30" Y="75" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirclientes.provincia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[dirproveedores.provincia]" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+<Field WordWrap="0" Width="150" X="130" Y="75" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="paises.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[paises.nombre]" FontWeight="50" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+</Detail>
+
+</KugarTemplate>

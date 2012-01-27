@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_dotaciones]" >
+<action>
+<name>co_punteo</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Punteo y casación&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Punteo y casación&quot;)</alias>
+<table>co_subcuentas</table>
+<scriptform>co_masterpunteo</scriptform>
+<scriptformrecord>co_punteo</scriptformrecord>
+<form>co_masterpunteo</form>
+<formrecord>co_punteo</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

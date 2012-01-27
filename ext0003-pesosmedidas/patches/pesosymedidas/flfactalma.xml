@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]">
+    <action>
+      <name>pesosmedidas</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada artículo puede tener asociada una unidad de peso o medida (metros, litros, kilos, etc.) Por defecto, el artículo tiene la unidad asociada a su familia")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Unidades de pesos y medidas")</alias>
+      <table>pesosmedidas</table>
+      <form>master_copy</form>
+      <formrecord>pesosmedidas</formrecord>
+      <scriptformrecord>pesosmedidas</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

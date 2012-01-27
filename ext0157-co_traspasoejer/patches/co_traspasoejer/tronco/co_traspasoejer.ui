@@ -1,0 +1,287 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>co_subcuentascli</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>co_subcuentascli</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>500</width>
+            <height>188</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Traspaso de ejercicios</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox4_2_2_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string>Ejercicio origen</string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodEjercicioOri</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>150</width>
+                            <height>25</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>codejercicioori</string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbDescripcionOri</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>300</width>
+                            <height>25</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>nombre</string>
+                    </property>
+                    <property name="tableName">
+                        <string>ejercicios</string>
+                    </property>
+                    <property name="foreignField">
+                        <string>codejercicioori</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>codejercicio</string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox4_2_2_2_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string>Ejercicio destino</string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbCodEjercicioDes</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>150</width>
+                            <height>25</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>codejerciciodes</string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbDescripcionDes</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>300</width>
+                            <height>25</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                            <italic>0</italic>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>nombre</string>
+                    </property>
+                    <property name="tableName">
+                        <string>ejercicios</string>
+                    </property>
+                    <property name="foreignField">
+                        <string>codejerciciodes</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>codejercicio</string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout40</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer32_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>170</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pbnTraspaso</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>40</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Lanzar traspaso</string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer32</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>170</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1690">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000066149444154789cc59741681cd719c77f31e3f01e8c601e5dc10cc4a00736684d0ab5ea43a5e4e0885e2ab750e49e444e957ba90e3dac6ff6cdca29d6cd3a042c5f5aa9945aa250bca77a5508954249777370b5aead7a964830136bab19b21bcd239a687a98d55a1bad52254de977f9de9b9de1fbfedffce6fbdec2ffd95e395c8cbe396a4dfe64f21f5aeb73debe77e0a73e9ee511a401dad2fc377b0f8f80dccffe7af6bdd53fadfeea58265357a6c483c507edec7f6ca55f947e7f34ee99c3452dac1d7878d9b75ee3fd5eefeff8077d131096c0c7fff6839f3de213d04af7dcd24dc0a4064def8f5f6551129d2e7892fb244940821ff58aec26a02dfdb52a10b40366fe384335a8be2cf39783ef03324f424a092d7095db73ab75b8f053ff3f56c08f7c961f2f138b98a81931f2da080b1f2db0642d71fbcddb7990a3ca65ae5c4a49d24a900392300afb2770c8c01863c7022751c2fdcdfbac6dafa16d4d1006685be77b34d3c3d3bdc1fb28970312a26fc04035a8f2f6076f537e5686167878dcfde15d26862788839889d727f0b477ec9d1f2691b4121880288ac03ece40b702870cf454a005f31fce130401e383e3dcfcc14da42701185123dcfbd13dd439755cf93e6c34375046e5c945a09482e83803dd0af463e0cee33b949f9551284a574a484f92ec27244992c357808a5f216807043b4137898de606577f7b95ebef5f27da8940752a2038c6c0897d20d94f985b9f4308c1ddb7eee60af6a11ed659d95cc1a486f26699a253a41a56a9b7ebacf96b7016645b221dc9daf61a95b0022d50b682f6d76060fec379c266c84571117d21bffeb0f19085c70bc42666e5c90a9ef01042109a90f2936556b657a86e55d1173493e726894dcc3befbf0316447187819d53f681d8c490c2d4a5c9eeb5b9f5390c75961b0b242260b4308a92aa5342c39a5f617d7b1d12285d2e216ca8a775aadb5594a32006d73a2503f5660d6cba982ed797a9b557a9ecace2db3556b69630226623aab210df6271eb3ebea9b1f86c217f2635140b4398d88005499c800d8db4713a068a852208701c07004f7860813e07a450baf44b94f4b8a88a5cb2c6501ab0c11bf0a009caf11042820b7eec231d09310c5943a76340580204941b4b0038383836288acc9e7f97b1c204775ad79879f67da62fff1c01080f9c544001fcd02726c03130e214899a3903617ac257f06506a65f9fc1b5613dad402be1a2bec8849a626278829abd44d9bace7ab38c2a24f8cd06a3ae836704a5efdd060391151011a3cf0de1a6bafb159c9a01cff618d76fe1c73133db3f837d98bfb248bd11108988c808465f2b12a5927aa10ce612b3430fd08e060be6366f60148c5a63485712c40188e30c9c3c0bce42e9fc2cc1e33790a180627ef9cee545361a0f890b8620f619b335fe76c8b43b8987070e2c6cdea226d6f142c1adcbb310e782923839c640d78ac3c5571f2d3e6a75cf4e9fe7ee2f4f1f655996657b7bf97eefd37cb1fb6237cb3ecdb2bf7ffcb72cdbcbb2bd175996ed65d9bda7a56cf42959b14cf6e0afb7b3dd8f77b3ec45963d7ffe3ccb76b36cf2a793bf3b9181200df2cd91de3e7661bc33d5e8996a6a50316fa6890b356827f8a2c28d708c457b0e13c2cdc2bb5c736fa16c45d24ed0050d29b8caed39f6f59c073cbc6ef94f9ae75194a06cc9c2ce0daa7605bf5d63c59ec36ffa1861909b0e25e72623f674def99a3ebaa089d208e528ea5bf5e44406028e54e08479ae9464b93e8fef2ea352856b6bea9b3ea3620a196ba6cecfa0520576de7c0e95ab41055be019eff3be0998d4f454e0b8f208652ba29d886b4333884d9755e73e32d5dc2dfc86d8c478c35e97f61ee58379bb0edac18171ccd3be09684bbfac403fe59deff8b0a75f1dbec6f8f604c68e91a94416640fed3dca3b56a9558c8b5bef0b610f037d4e32519ccff3c3a91634036441620c20f2fda172e948a23482417acc3c314968859ff54d4058023fed74c29394b73bfb8ed2ae6f83e7782f69a7573940b295506954523da85fedfb0a8423ce684be7ff15073a0ca80e03aac3c0a0ca7d4111c5b90fe200cfc9dfbde77a2469ce4cd24aa00de50fca5fc4b578bfb2593140c3dff11b273250ddae5693a5e4bb8db8f1c5903d44236e30e4f47ad77609db61eee310d771f1631fed68c238c411ce417dbbde12a9f8a4d6a87de6eebb8d90f0133da8ff19b4838f56feb0f2ec6802af1c599f99fcf1e4a0c17c47200e0c0681e01bf833c2122d939a7f25ede460f5cfab86afb07f032d3304ef4bd3bf850000000049454e44ae426082</data>
+    </image>
+</images>
+<tabstops>
+    <tabstop>fdbCodEjercicioOri</tabstop>
+    <tabstop>pbnTraspaso</tabstop>
+    <tabstop>fdbDescripcionOri</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -15,7 +15,6 @@
   <flpatch:addFile path="facturacion/tesoreria/forms/" name="n43_mastermovimientos.ui"/>
   <flpatch:addFile path="facturacion/tesoreria/forms/" name="n43_movimientos.ui"/>
   <flpatch:addFile path="facturacion/tesoreria/forms/" name="n43_procesoscas.ui"/>
-  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="recibosprov.ui"/>
   <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs"/>
   <flpatch:addFile path="facturacion/tesoreria/scripts/" name="n43_casacion.qs"/>
   <flpatch:addFile path="facturacion/tesoreria/scripts/" name="n43_casaciones.qs"/>
@@ -29,5 +28,4 @@
   <flpatch:addFile path="facturacion/tesoreria/tables/" name="n43_movimientos.mtd"/>
   <flpatch:addFile path="facturacion/tesoreria/tables/" name="n43_procesoscas.mtd"/>
   <flpatch:addFile path="facturacion/tesoreria/tables/" name="n43_regsimportados.mtd"/>
-  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="recibosprov.mtd"/>
 </flpatch:modifications>

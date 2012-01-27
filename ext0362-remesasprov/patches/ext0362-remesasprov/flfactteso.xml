@@ -1,0 +1,47 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[seleccionrecibosprov]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionreciboscli]">
+    <action>
+      <name>remesasprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Las remesas de recibos de proveedor permiten crear listados de recibos pendientes de cobro para ser enviados al banco")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Remesas de recibos")</alias>
+      <table>remesasprov</table>
+      <form>masterremesasprov</form>
+      <formrecord>remesasprov</formrecord>
+      <scriptformrecord>remesasprov</scriptformrecord>
+      <scriptform>masterremesasprov</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[remesasprov]">
+    <action>
+      <name>pagosmultiprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los pagos múltiples de recibos de proveedores permiten introducir u ingresos que dan por cobrados más de un recibo de proveedor a la vez.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagos múltiples de recibos de proveedor")</alias>
+      <table>pagosmultiprov</table>
+      <form>master</form>
+      <formrecord>pagosmultiprov</formrecord>
+      <scriptformrecord>pagosmultiprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]">
+    <action>
+      <name>pagosdevolremprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite gestionar pagos de las remesas de recibos de proveedor")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagos de remesas de recibos de proveedor")</alias>
+      <table>pagosdevolremprov</table>
+      <form>master</form>
+      <formrecord>pagosdevolremprov</formrecord>
+      <scriptformrecord>pagosdevolremprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolremprov]">
+    <action>
+      <name>vdisco34</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","El volcado Norma 34 a disco de una remesa de proveedor genera un fichero con el listado de recibos de la remesa en el formato de cuaderno 34")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Volcado a disco de remesas Norma 34")</alias>
+      <table>remesas</table>
+      <formrecord>vdisco34</formrecord>
+      <scriptformrecord>vdisco34</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

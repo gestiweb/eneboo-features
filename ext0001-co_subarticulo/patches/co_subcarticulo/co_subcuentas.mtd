@@ -1,0 +1,16 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuenta]/relation[lineasfacturasprov,idsubcuenta]">
+    <relation>
+      <table>lineasfacturascli</table>
+      <field>idsubcuenta</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuenta]/relation[articulos,idsubcuentacom]">
+    <relation>
+      <table>articulos</table>
+      <field>idsubcuentaven</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>

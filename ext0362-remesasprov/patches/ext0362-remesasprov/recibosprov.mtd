@@ -1,0 +1,24 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[numero]">
+    <field>
+      <name>gastos</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gastos")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <optionslist>QT_TRANSLATE_NOOP("MetaData","Ordenante");QT_TRANSLATE_NOOP("MetaData","Beneficiario")</optionslist>
+      <default>QT_TRANSLATE_NOOP("MetaData","Ordenante")</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[gastos]">
+    <field>
+      <name>tipooperacion</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de operación")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <optionslist>QT_TRANSLATE_NOOP("MetaData","Nóminas y Transferencias");QT_TRANSLATE_NOOP("MetaData","Cheques bancarios");QT_TRANSLATE_NOOP("MetaData","Pagarés");QT_TRANSLATE_NOOP("MetaData","Pagos certificados")</optionslist>
+      <default>QT_TRANSLATE_NOOP("MetaData","Nóminas y Transferencias")</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,46 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/action[regstocks]">
+    <action name="pesosmedidas"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[regstocks]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,3]">
+    <action name="pesosmedidas"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[pesosmedidas]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[regstocks]">
+    <action>
+      <property name="name">
+        <cstring>pesosmedidas</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>pesos_medidasimage6</iconset>
+      </property>
+      <property name="text">
+        <string>&amp;Pesos y medidas</string>
+      </property>
+      <property name="menuText">
+        <string>&amp;Pesos y medidas</string>
+      </property>
+      <property name="toolTip">
+        <string>Pesos y medidas</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="pesos_medidasimage6">
+      <data format="PNG" length="1083">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000040249444154789ced97b16b255514c67f89e7e9b9ee43ee408a37b00b7990c54d54308b5bec8245d26db65171b156b01016acc53fc26ab1100b8bad844590b59268a12b88108b25292c1248605e119cc13c9d03b92616f7cebc7931206cc0341918ee3b67ce3df73bdff9ee9d7933c7c7c79ce7357baeab5f00b80000ccfcf5c6f2cfa3e1e28b8afe6dc15055ca6a84130f0a2a8a61713443fb4a39369c2a2a1ab348ba431c4b339c28da77ad0fc002a880056686cad19d4f1edc93ea6abeb07d77ed05ac020355657bb7409d92793785b61ed738ef28764bd429f95c465995b87e8a0b505b8d9901900f72ca7149d68f71cd55995147d02be2a5385cec3fc488c873aff8609841ee1502149591cf2926461d94e11503516a33f281a24039061749636ba76438c8d0fe063e40d6875ca1d88f796a33b27da50ef6bcb8b085eb6f03c650235df9bcb2f9c4287794a56b462ec4cc3ef90f94ebcb0606f401518a3da3da556edd04bf004e0d5429f78caddf94d51563281ae3153005381282872a8bc9a8134730ec43551954a9cf4602e9191d9ce687aa36d80787c158812a2e2a158ca2cd38f5c13c0490babf887be5011ca607a10401170c2706660958ecaba362284cfcc10023c3c804b0a6d74dbcb1f4aa81d513bf1afc5a4218214e1ce0a1e780127a798ceb59b21dd4459a5c0283b8a858e45212e836b926500d688550257f0992e688c342dc342930dd87c0f8313cb91fab5cb80583b59699a6e23836a03afea68da19af8c52074fc1da60449bdc1a7802df8fa1e8f3eab8a9d8adfdf7b73e3aa7b9f6719ac81159da4749236604eda9d38e9f8db11a40e860338aca0a750adb3fdede8cfb77fe0a1c157f3ea3fb873fbf15bcc2d9fa8ec292a6fe6b51a8259271a27f780c31254d1396451756fa5ef7fbc7e598f48db13127d740475aa7da272ba95bbd6b660c854ef31d065f277979f7b245b1f7ae31d77db5e667e15c65d9aed3f2a3f85a12961425dc7519a737a323987858fc93f5a1f60a301fe26843c25a927b1a29d8a92ba1b81b50c74c4ddd500556c7b0021181c7cde1e2831894e2aa9be614af5a18c8b4e09509916989ea03d2ed6da0a75222c32601bf181d9648b0891f646306a6dce49b2a71c2dfe4ee7804150d63f2da80d9c18ea95fcb2b1f98be134060f6fc0f0352647e95940687a3503b3888219f53ee4f3a03ed2b4f97db46b83c1bcb1fd134ce945ce3086499366a3400c3730f22be007f1c65764396473469647d46d15676540260c08a2971063f5ae0731f210b12ddd88f6f05a7cebe5f30972e7cbe7dfc99300ad2bccc69e2e208bbf45ee7f597ca1dff1ba414f7b1c73483c1131dae3b9a12fa4d78b28d6a83b6d86daa2962c18049fbe8ab4fd3a8afa823aa471cc3345a098216ee497804bc0fffd37e98f998bbf661700ce1bc03f399342c4ddfa13590000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[regstocks,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>pesosmedidas</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>
