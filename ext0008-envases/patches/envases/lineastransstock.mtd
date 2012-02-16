@@ -1,0 +1,44 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtrans]">
+    <field>
+      <name>codenvase</name>
+      <!-- Código de referencia del envase -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Envase")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+      <relation>
+        <table>envases</table>
+        <field>codenvase</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]">
+    <field>
+      <name>cantenvases</name>
+      <!-- Cantidad de envases -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cant. envases")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>10</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[cantenvases]">
+    <field>
+      <name>valormetrico</name>
+      <!-- Cantidad de envases -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Met/Envase")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>10</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,324 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/property[name]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbCantEnvases</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>135</width>
+          <height>24</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>cantenvases</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+      <property name="foreignField">
+        <string/>
+      </property>
+      <property name="fieldRelation">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCantEnvases]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbValorMetrico</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>108</width>
+          <height>24</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>valormetrico</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+      <property name="foreignField">
+        <string>cantidad</string>
+      </property>
+      <property name="fieldRelation">
+        <string>codenvase</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxStocks]/hbox[hbox,1]/widget[QLayoutWidget,layout25]/vbox[vbox,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[QLabel,lblCanFinal]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblCanInicialE</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>20</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>C. inicial envases</string>
+      </property>
+      <property name="alignment">
+        <set>AlignCenter</set>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxStocks]/hbox[hbox,1]/widget[QLayoutWidget,layout25]/vbox[vbox,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[QLabel,lblCanInicialE]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblCanFinalE</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>20</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>C. final envases</string>
+      </property>
+      <property name="alignment">
+        <set>AlignCenter</set>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxStocks]/hbox[hbox,1]/widget[QLayoutWidget,layout25]/vbox[vbox,1]/widget[QLayoutWidget,layout23]/hbox[hbox,1]/widget[QLabel,lblCanFinalOrigen]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblCanInicialOrigenE</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>20</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>C. inicial envases</string>
+      </property>
+      <property name="alignment">
+        <set>AlignCenter</set>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxStocks]/hbox[hbox,1]/widget[QLayoutWidget,layout25]/vbox[vbox,1]/widget[QLayoutWidget,layout23]/hbox[hbox,1]/widget[QLabel,lblCanInicialOrigenE]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblCanFinalOrigenE</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>20</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>C. final envases</string>
+      </property>
+      <property name="alignment">
+        <set>AlignCenter</set>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxStocks]/hbox[hbox,1]/widget[QLayoutWidget,layout25]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[QLabel,lblCanFinalDestino]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblCanInicialDestinoE</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>20</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>C. inicial envases</string>
+      </property>
+      <property name="alignment">
+        <set>AlignCenter</set>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxStocks]/hbox[hbox,1]/widget[QLayoutWidget,layout25]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[QLabel,lblCanInicialDestinoE]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblCanFinalDestinoE</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>20</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <family>Sans Serif</family>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>C. final envases</string>
+      </property>
+      <property name="alignment">
+        <set>AlignCenter</set>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxStocks]/hbox[hbox,1]/spacer[spacer26]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">80</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/property[name]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxEnvase</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="title">
+        <string>Envase</string>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodEnvase</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>122</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>codenvase</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDescEnvase</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>103</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>envases</string>
+          </property>
+          <property name="foreignField">
+            <string>codenvase</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codenvase</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>
