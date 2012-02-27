@@ -1,0 +1,104 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tarifa]">
+    <field>
+      <name>tarifaesp</name>
+      <!-- Tarifa que se aplicará por defecto -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tarifa Especial")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>true</editable>
+      <relation>
+        <table>tarifas</table>
+        <field>codtarifa</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[irultrarrapida]">
+    <field>
+      <name>nfilas</name>
+      <!-- Número de filas a mostrar en la tabla de artículos del tpv táctil-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Filas")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <default>4</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nfilas]">
+    <field>
+      <name>ncolumnas</name>
+      <!-- Número de columnas a mostrar en la tabla de artículos del tpv táctil-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Columnas")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <default>4</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[ncolumnas]">
+    <field>
+      <name>codnivel</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Nivel base")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>nivelestpv</table>
+        <field>codnivel</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codnivel]">
+    <field>
+      <name>codimpuestogen</name>
+      <!--Código del impuesto-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. General")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>impuestos</table>
+        <field>codimpuesto</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codimpuestogen]">
+    <field>
+      <name>codimpuestored</name>
+      <!--Código del impuesto-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Reducido")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>impuestos</table>
+        <field>codimpuesto</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codimpuestored]">
+    <field>
+      <name>codimpuestosred</name>
+      <!--Código del impuesto-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Superreducido")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>impuestos</table>
+        <field>codimpuesto</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

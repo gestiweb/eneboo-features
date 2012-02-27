@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]">
+    <action>
+      <name>nivelestpv</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los niveles de artículos permiten agrupar artículos por determinados criterios comunes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Niveles")</alias>
+      <table>nivelestpv</table>
+      <form>master</form>
+      <formrecord>nivelestpv</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

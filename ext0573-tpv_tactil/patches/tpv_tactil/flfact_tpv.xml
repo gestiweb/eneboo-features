@@ -1,0 +1,46 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_cantidadpago]">
+    <action>
+      <name>tpv_pagarcomanda</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Formulario para pedir la cantidad que el cliente paga")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Este formulario muestra la cantidad pendiente que queda por pagar. Al aparecer seleccionada, es sencillo sustituirla por la cantidad pagada real")</description>
+      <table>tpv_cantidadpago</table>
+      <form>tpv_pagarcomanda</form>
+      <scriptform>tpv_pagarcomanda</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_pagarcomanda]">
+    <action>
+      <name>tpv_pagolibre</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Formulario para establecer un precio libre")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Este formulario permite establecer un precio libre y un tipo de iva para el siguiente artículo que se seleccione")</description>
+      <table>tpv_pagolibre</table>
+      <form>tpv_pagolibre</form>
+      <scriptform>tpv_pagolibre</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_pagolibre]">
+    <action>
+      <name>tpv_tecladoletras</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Teclado alfanumérico")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Teclado alfanumérico para el tpv táctil")</description>
+      <table>tpv_tecladoletras</table>
+      <form>tpv_tecladoletras</form>
+      <scriptform>tpv_tecladoletras</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_secuenciascomanda]">
+    <action>
+      <name>tpv_comandastactil</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","En cada venta debe especificarse el agente de ventas que la llevó a cabo así como el punto de venta, la fecha, el tipo de pago la tarifa que se va a aplicar y una línea por cada artículo vendido.<br/>
+		Cada venta debe estar asociada a un arqueo del mismo terminal desde el cual ser realizó la venta y cuya fecha de venta esté dentro del periódo establecido para el arqueo.<br/>
+		Por cada venta se crea su factura, recibos, pagos y asientos contables correspondientes. Una vez pagada no podrá modificarse. Si queremos modificar una venta ya cerrada debemos abrirla pulsando el botón de Abrir Venta del formulario maestro de ventas.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ventas")</alias>
+      <scriptform>tpv_mastercomandastactil</scriptform>
+      <scriptformrecord>tpv_comandastactil</scriptformrecord>
+      <table>tpv_comandas</table>
+      <form>tpv_mastercomandastactil</form>
+      <formrecord>tpv_comandastactil</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

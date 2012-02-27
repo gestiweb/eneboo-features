@@ -1,0 +1,44 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,MenuBarEditor]/item[Principal]/action[wg_widget]"/>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,MenuBarEditor]/item[Principal]/action[tpv_comandas]">
+    <action name="tpv_comandastactil"/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,MenuBarEditor]/property[geometry]"/>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,MenuBarEditor]/property[acceptDrops]"/>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,MenuBarEditor]/property[frameShape]"/>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,MenuBarEditor]/property[defaultUp]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[Toolbar]/action[tpv_comandas]">
+    <action name="tpv_comandastactil"/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[wg_widget]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tpv_secuenciascomanda]">
+    <action>
+      <property name="name">
+        <cstring>tpv_comandastactil</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>tpv_tactilimage29151</iconset>
+      </property>
+      <property name="text">
+        <string>Comandas tactil</string>
+      </property>
+      <property name="menuText">
+        <string>Comandas &amp;táctil</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="tpv_tactilimage29151">
+      <data format="PNG" length="1981">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000078449444154789cc5974d8f5c4715869f73aaeadedbddd3e3cc8ced71e20f62d9220862085256f80fb08accaf4062c79205ff203bb6d9651589052b0781022c22914420592ca2881029b6e3f124b6c38c6798eebe55750e8bdb3db61343a2b0a0a4db756f57779df77cdcf7bc25eeceff73448037fff4e6b9ade933bf02dad58200a8a0ab27592d0c37fa94cd0ce071877cf8300073562b6e3cf8b4bff7b357aebe72100192f94f1f1e1c5e3b3a3c4444111144055545451051541451101451011154e491717770c7cc01c3cd3177cc0c67399be3eeacaf4f1897f677c0eb71f04ad7dffdcbdffa3fec6c3751040d4254212a6850a228aa90a29282906220850164104196817173fa5cb9b397b9f360ce51ffe5f4e683fbfcf2271b9cbf7061e33805ee2e31444667be4352214525aa90a2304a81ae098c532045689b48131efd668810e40a373f3be21fb7671c8542d8729a6ce4fa0510610aec3f5903436a057c489b08b451988c22e326d0a5c0b80934516853388e82e0980fe1bf796fceddbdcc897160dc2a7d3616c5586463968d796fc776e4b1d41d0300a866744d6494026b5d60d204ba36326e942e05da46698312145c208852aa73fbb339b93aa7d61b7231faeaf4d9986763d61be362830309389c3c3d0220a4a0744919b54ad704ba36306e94713b7cdf04458390548841e833ec1d66265da44b4e31a72fce220f9e9b3b5bd3c499132dd92bf385b17377ff719f1f01689b86c684260a4d109aa8747130dcc6400a4a9b94948414a0562757e3c4447187ea900be4258010606b2d613e00e933384e0c8110c29300524aa9691bd15e09aaa4a0347128b426284d5446add025a7898e000b3336a7e0eeb80bb90e001645889ae89ac0221bf3a5617ca8177748293d0140638c31a6441008022a420843985312dae47409ba044d1c7659eb40c497b5e3e4222c8a602e041516d9a8065a84624e75a7ba610e31265454570062d01862080e0309a92a8a1055890a290c9eb711bac66997918861f0bed4c1f35c946230ef9d52190854867455734a195831868086c700888ac4106cdc24da1869422485709c8a26394da824c9346274ea74c188c170848c2036803753c404ad82565073c40c6a41aa11bd22a258e5e40a808888a80e8c16145214ba46691ba14942d2ca6939643a5e1b1267c002ea8a5b800930892049f0912322cce7739aa6216743b5a16d5b523a49ad9552ca2f6edcb8f1830898bbbb3b8428c428c4081a401534089e677cf6f9a71c1e1c3c41225f1cabce1a42a0d6ba8c883d758dc1f31722507ce82483411d72b722f8e16fcef9f3e7994c2698d9f1556b5d79f3d439e74c298552ca53ef9f7df6d98d08945a4ba9a5b83350b1e318abca159c4829995f5fff238b0c4d6a1020e74c2e0b729f971bf7f43953cb82dcf788c2772f6e73f1f94b00acafafb3bfbfcfe6e62677eedc21846011f05c72ae56a918c58de24a31239b904da81a2865c66fde4f4ccf5ca26b94511b86463556da1408c0ddfdcc9dfb3dbbb31e3747cdf89ede208480aa9273c6dd99cfe7ab14580428a5d45c0ad99c6c466f465f85de84588591f83297434274c515aab80807b3cafb9f1c71ff611e58352adfbe3066ad0d4c26e3e374dc7f708fa3d9115ddb916243add58ea9b8ef7bcf6e2caad0d6caa2422a1002e43014d3bc183ecbf42570d41b0fb5b028ceedfb996a03b8e74f775c3add32e902a53c5241bbbb3bbcf4d20f79eeb9e778f7bdf7d8d9f984edba5d9f68c78b5c698a30cbc3db100a6814faa592f9d7c1210f53250623aa80288bde8f05c9c9f5480ac6ed07735212c49d174f2a31064a35fefee1877cf0c107b46d876a20e7ec1196720a5015b21947d909617815251466096aad24ef7196baa0191a538cc252a161e6ec2d0ab53aa53a960b9c12a6d3757067e3990d628ccc6633a66bebb8fb710406f9580b54f0aaccfb8a23145346048a16c6e386e946643c52ba7620ab9484a04308cc9c5c9cbe77660b6331579a94d8dbdbe3fcf9f31c1c1c30994cd8dfdfe7e2c58bdcbf7fbf4480da97f9995327ba1fefdda82945510d4b41aa680934f3863a3aa927a62d611a589b28939132ee94ae55629463ce5ff4ced1dc389a1947474e8c097747448f79646363839b376fd2b6ed5084b776765e57b7efc7989e412c9a3b54c1ea52857b69cdeccaa9939bccbac1f87412984e0630e36e10adf385737854494b406e819422b92c387d6a9b9bb73e4608e49c574466f2750e266fbdf5d6b7524a1f7f78f7738a36a4a0840071254c554829a21a1109831c9b2f582c32174e04cc8cb66d592ce6ecef3f3c66c210c2fbf1ab8c8b88bcfaeaaba7af5dbbc6e5cb97bf3e158f5a72564a29b46d4b2985a6699fd8fbf122fc8f633299bc78e5ca95df3e78f080e9743a1c3096078e5aeb137329e54bcfb55666b3d931d855c497eaf89dff0a4086d677e9edb7dfbef7f2cb2f6f7cf4d147526b65341ab1b5b5c5e6e6266b6b6bb8fb31dbf57dcfdede5e7eedb5d7de79e38d377eeeee7ffdaf36beaa0644e424f0cae5cb977f74f5ead517ce9e3dbb76eedcb9b5b367cfae6d6f6f8f6bad757777f7687777f7f0f6eddb87b76eddfae7f5ebd76fecededfd19f8bdbb1ffc4f00962002b0056c036bc074399f000a83d03f5c5e07c00e70e0eef6957b7fd3e3f95298ac0ec9f64df7f93791da5efb32b708c20000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),Form1,execDefaultScript()]"/>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[tpv_secuenciascomanda,activated(),Form1,openDefaultForm()]">
+    <connection>
+      <sender>tpv_comandastactil</sender>
+      <signal>activated()</signal>
+      <receiver>Form1</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>
