@@ -1,0 +1,18 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
+    <field>
+      <name>codnivel</name>
+      <!-- Código del nivel -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Nivel TPV")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>4</length>
+      <relation>
+        <table>nivelestpv</table>
+        <field>codnivel</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codpais]">
+    <field>
+      <name>nombrecomanda</name>
+      <!--Nombre de la comanda-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Comanda")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>100</length>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>
