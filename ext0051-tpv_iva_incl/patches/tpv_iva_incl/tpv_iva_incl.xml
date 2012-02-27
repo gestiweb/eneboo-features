@@ -1,0 +1,10 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="tpv_iva_incl">
+  <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_lineascomanda.ui" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/tpv/queries/" name="tpv_i_comandas.qry"/>
+  <flpatch:replaceFile path="facturacion/tpv/reports/" name="tpv_i_comandas.kut"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="flfact_tpv.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_comandas.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_lineascomanda.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastercomandas.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_lineascomanda.mtd" style="legacy1"/>
+</flpatch:modifications>
