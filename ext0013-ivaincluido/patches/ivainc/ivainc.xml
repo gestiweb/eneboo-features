@@ -4,6 +4,7 @@
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="factalma_general.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranescli.ui"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidoscli.ui"/>

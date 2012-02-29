@@ -1,0 +1,54 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,venta]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[QFrame,frmPvp]/hbox[hbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,venta]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[QFrame,frmPvp]/property[frameShadow]">
+    <vbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbPvp</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>24</width>
+            <height>22</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>pvp</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbIvaIncluido</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>25</width>
+            <height>22</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>ivaincluido</string>
+        </property>
+      </widget>
+    </vbox>
+  </xupdate:insert-after>
+</xupdate:modifications>
