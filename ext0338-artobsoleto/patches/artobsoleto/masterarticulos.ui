@@ -1,0 +1,15 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]">
+    <widget class="QCheckBox" row="0" column="6">
+      <property name="name">
+        <cstring>chkObsoletos</cstring>
+      </property>
+      <property name="text">
+        <string>Ocultar obsoletos</string>
+      </property>
+      <property name="checked">
+        <bool>true</bool>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>
