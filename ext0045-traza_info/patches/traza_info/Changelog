@@ -1,2 +1,5 @@
+!! 01/03/2012:
+* Corrección del archivo i_mastertrazaarticulo.qs que se mostraba vacio.
+
 !! 20/04/2011 SVN:
 * Creación de la funcionalidad traza_info
