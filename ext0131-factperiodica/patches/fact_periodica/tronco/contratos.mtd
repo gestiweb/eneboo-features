@@ -1,0 +1,184 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>contratos</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Contratos de mantenimiento")</alias>
+
+	<field>
+		<name>codigo</name>
+		<!-- Código del del contrato -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>5</length>
+		<counter>true</counter>
+		
+		<relation>
+			<table>periodoscontratos</table>
+			<field>codcontrato</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>estado</name>
+		<!-- Indica si el ocntrato es vigente -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<optionslist>Vigente,Caducado</optionslist>
+		<default>Vigente</default>
+		<length>50</length>
+	</field>
+	
+	<field>
+		<name>codcliente</name>
+		<!-- Código del cliente relacionado con el proyecto -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>clientes</table>
+			<field>codcliente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>nombrecliente</name>
+		<!--Nombre del cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>periodopago</name>
+		<!-- Periodo de pago (número de meses) -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Período")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+		<optionslist>Mensual,Bimestral,Trimestral,Semestral,Anual,Bienal</optionslist>
+		<default>Mensual</default>
+	</field>
+	
+	<field>
+		<name>factprimeromes</name>
+		<!-- Periodo de pago (número de meses) -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Facturar desde primero de mes")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>ultimopago</name>
+		<!-- Fecha de la última facturación -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Útimo pago")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechainicio</name>
+		<!-- Fecha de inicio -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Inicio")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>tipocontrato</name>
+		<!-- Tipo de contrato -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		
+		<relation>
+			<table>tiposcontrato</table>
+			<field>codigo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>referencia</name>
+		<!--Referencia del artículo-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		<visible>true</visible>
+		
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>codimpuesto</name>
+		<!-- Tipo de I.V.A. aplicado al artículo	-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo de I.V.A.&quot;)</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<relation>
+			<table>impuestos</table>
+			<field>codimpuesto</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>coste</name>
+		<!-- Coste total de todo el periodo del contrato-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Coste")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>observaciones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	
+	<field>
+		<name>condiciones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Condiciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+
+</TMD>
