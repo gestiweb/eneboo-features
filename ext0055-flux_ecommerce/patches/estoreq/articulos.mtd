@@ -140,17 +140,6 @@
       <default>0</default>
     </field>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[pvpoferta]">
-    <field>
-      <name>ivaincluido</name>
-      <!-- Indica si el precio de venta del artículo incluye el IVA -->
-      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Incluido")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>bool</type>
-      <visiblegrid>false</visiblegrid>
-    </field>
-  </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
     <field>
       <name>tipoimagen</name>
