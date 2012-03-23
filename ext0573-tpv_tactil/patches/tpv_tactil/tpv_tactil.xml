@@ -3,6 +3,7 @@
   <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="nivelestpv.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="nivelestpv.ui"/>
   <flpatch:patchXml path="facturacion/tpv/" name="flfact_tpv.xml" style="legacy1"/>
   <flpatch:patchXml path="facturacion/tpv/forms/" name="flfact_tpv.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/tpv/forms/" name="tpv_comandastactil.ui"/>
