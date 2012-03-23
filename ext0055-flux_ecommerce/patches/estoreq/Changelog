@@ -1,0 +1,7 @@
+!! 13/13/2012:
+* Arreglo de bugs:
+     - Eliminado campo ivaincluido ya que se inserta desde la extensión de ext0013-ivaincluido
+     - Cambio en el código pais de ESP a ES para las provincias que se autocargan
+
+!! 09/12/2011:
+* Creación de la funcionalidad flux_ecommerce
