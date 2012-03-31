@@ -10,4 +10,15 @@
       <default>false</default>
     </field>
   </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[obsoleto]">
+    <field>
+      <name>fechaobsoleto</name>
+      <!-- Fecha de baja -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Desde")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+      <default>null</default>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>
