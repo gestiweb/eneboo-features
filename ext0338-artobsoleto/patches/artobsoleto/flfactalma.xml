@@ -1,0 +1,3 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[articulos]/form[form,1]/text()[1]">masterarticulos</xupdate:update>
+</xupdate:modifications>

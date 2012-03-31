@@ -2,7 +2,7 @@
 /** @class_declaration artObsoletos */
 /////////////////////////////////////////////////////////////////
 //// ART OBSOLETOS //////////////////////////////////////////////////
-class artObsoletos extends oficial
+class artObsoletos extends oficial /** %from: oficial */
 {
 	var filtroOriginal:String;
 	var chkObsoletos:Object;
