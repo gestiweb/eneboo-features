@@ -2,12 +2,12 @@
 /** @class_declaration compRecibos */
 /////////////////////////////////////////////////////////////////
 //// COMPENSACIÓN DE RECIBOS ////////////////////////////////////
-class compRecibos extends oficial /** %from: oficial */ {
+class compRecibos extends proveed /** %from: oficial */ {
 	var curReciboPos:FLSqlCursor;
 	var curReciboNeg:FLSqlCursor;
 	var curReciboNeg2:FLSqlCursor;
 
-    function compRecibos( context ) { pagosMulti ( context ); }
+	function compRecibos( context ) { proveed( context ); }
 	function regenerarRecibosCli(cursor:FLSqlCursor):Boolean {
 		return this.ctx.compRecibos_regenerarRecibosCli(cursor);
 	}

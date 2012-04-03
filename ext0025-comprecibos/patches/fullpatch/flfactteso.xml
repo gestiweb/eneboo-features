@@ -1,5 +1,5 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosprov]">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionrecibosprov]">
     <action>
       <name>seleccionrecibosprov</name>
       <description>QT_TRANSLATE_NOOP("MetaData","Esta acción proporciona un formulario para seleccionar múltiples recibos de proveedor que incluir en remesas y otros documentos")</description>
