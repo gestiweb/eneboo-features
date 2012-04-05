@@ -1,37 +1,37 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="articulos_comp">
-  <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml"/>
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="articuloscomp.ui"/>
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui"/>
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterregstocks.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterregstocks.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="opcionesarticulocomp.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="opcionescomp.ui"/>
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="regstocks.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="regstocks.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="tiposopcionartcomp.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="tiposopcioncomp.ui"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs" style="legacy"/>
   <flpatch:addFile path="facturacion/almacen/scripts/" name="articuloscomp.qs"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs" style="legacy"/>
   <flpatch:addFile path="facturacion/almacen/scripts/" name="opcionesarticulocomp.qs"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="regstocks.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="regstocks.qs" style="legacy"/>
   <flpatch:addFile path="facturacion/almacen/scripts/" name="tiposopcionartcomp.qs"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="articuloscomp.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="movistock.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="opcionesarticulocomp.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="opcionescomp.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="tiposopcionartcomp.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="tiposopcioncomp.mtd"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" style="legacy"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranesclicomp.qry"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranesprovcomp.qry"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_facturasclicomp.qry"/>
@@ -46,6 +46,6 @@
   <flpatch:addFile path="facturacion/informes/reports/" name="i_pedidosclicomp.kut"/>
   <flpatch:addFile path="facturacion/informes/reports/" name="i_pedidosprovcomp.kut"/>
   <flpatch:addFile path="facturacion/informes/reports/" name="i_presupuestosclicomp.kut"/>
-  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
   <flpatch:addFile path="facturacion/informes/tables/" name="i_articuloscomp_buffer.mtd"/>
 </flpatch:modifications>

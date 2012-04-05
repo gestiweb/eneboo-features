@@ -121,7 +121,7 @@
       </relation>
     </field>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[aref]">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codunidad]">
     <field>
       <name>codunidad</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Unidad")</alias>
