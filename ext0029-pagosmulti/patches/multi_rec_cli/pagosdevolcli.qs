@@ -2,7 +2,7 @@
 /** @class_declaration pagosMulti */
 /////////////////////////////////////////////////////////////////
 //// PAGOS MULTI ////////////////////////////////////////////////
-class pagosMulti extends oficial {
+class pagosMulti extends oficial /** %from: oficial */ {
     function pagosMulti( context ) { oficial ( context ); }
 	function init() {
 		return this.ctx.pagosMulti_init();
@@ -19,7 +19,7 @@ class pagosMulti extends oficial {
 function pagosMulti_init()
 {
 	this.iface.__init();
-	
+
 	if (!this.cursor().isNull("idpagomulti")) {
 		var util:FLUtil = new FLUtil;
 		this.child("lblPagoMulti").text = util.translate("scripts", "PAGO MÚLTIPLE Nº ") + this.cursor().valueBuffer("idpagomulti");
@@ -27,3 +27,4 @@ function pagosMulti_init()
 }
 //// PAGOS MULTI ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

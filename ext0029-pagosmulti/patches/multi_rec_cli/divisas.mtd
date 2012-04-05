@@ -1,9 +1,9 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[coddivisa]/relation[co_planpartidas,coddivisa]" >
-<relation>
-<table>pagosmulticli</table>
-<field>coddivisa</field>
-<card>1M</card>
-</relation>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[coddivisa]/relation[co_planpartidas,coddivisa]">
+    <relation>
+      <table>pagosmulticli</table>
+      <field>coddivisa</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
 </xupdate:modifications>

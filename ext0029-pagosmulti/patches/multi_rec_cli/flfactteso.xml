@@ -1,13 +1,13 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]" >
-<action>
-<name>pagosmulticli</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los pagos múltiples de recibos de clientes permiten introducir u ingresos que dan por cobrados más de un recibo de cliente a la vez.&quot;)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagos múltiples de recibos de clientes&quot;)</alias>
-<table>pagosmulticli</table>
-<form>master</form>
-<formrecord>pagosmulticli</formrecord>
-<scriptformrecord>pagosmulticli</scriptformrecord>
-</action>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]">
+    <action>
+      <name>pagosmulticli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los pagos múltiples de recibos de clientes permiten introducir u ingresos que dan por cobrados más de un recibo de cliente a la vez.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagos múltiples de recibos de clientes")</alias>
+      <table>pagosmulticli</table>
+      <form>master</form>
+      <formrecord>pagosmulticli</formrecord>
+      <scriptformrecord>pagosmulticli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
 </xupdate:modifications>
