@@ -1,15 +1,15 @@
-<flpatch:modifications name="multi_rec_prov" >
-    <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" />
-    <flpatch:patchXml path="facturacion/principal/tables/" name="divisas.mtd" />
-    <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" />
-    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
-    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
-    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosmultiprov.ui" />
-    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
-    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" />
-    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosmultiprov.qs" />
-    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolprov.mtd" />
-    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosmultiprov.mtd" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
-    <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" />
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="multi_rec_prov">
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="divisas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosmultiprov.ui"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosmultiprov.qs"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolprov.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosmultiprov.mtd"/>
 </flpatch:modifications>

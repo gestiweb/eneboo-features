@@ -1,13 +1,13 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]" >
-<action>
-<name>pagosmultiprov</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los pagos múltiples de recibos de proveedores permiten introducir u ingresos que dan por cobrados más de un recibo de proveedor a la vez.&quot;)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagos múltiples de recibos de proveedor&quot;)</alias>
-<table>pagosmultiprov</table>
-<form>master</form>
-<formrecord>pagosmultiprov</formrecord>
-<scriptformrecord>pagosmultiprov</scriptformrecord>
-</action>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]">
+    <action>
+      <name>pagosmultiprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los pagos múltiples de recibos de proveedores permiten introducir u ingresos que dan por cobrados más de un recibo de proveedor a la vez.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagos múltiples de recibos de proveedor")</alias>
+      <table>pagosmultiprov</table>
+      <form>master</form>
+      <formrecord>pagosmultiprov</formrecord>
+      <scriptformrecord>pagosmultiprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
 </xupdate:modifications>
