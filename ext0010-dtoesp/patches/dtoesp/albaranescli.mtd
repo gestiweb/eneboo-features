@@ -1,6 +1,20 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
   <xupdate:insert-after select="/TMD[TMD,1]/field[hora]">
     <field>
+        <name>netosindtoesp</name>
+        <!--Total de IRPF-->
+        <alias>QT_TRANSLATE_NOOP("MetaData","Neto sin Dto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>8</partI>
+        <partD>2</partD>
+        <calculated>true</calculated>
+        <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[netosindtoesp]">
+    <field>
       <name>pordtoesp</name>
       <!--Porcentaje de desciento especial-->
       <alias>QT_TRANSLATE_NOOP("MetaData","% Dto")</alias>
