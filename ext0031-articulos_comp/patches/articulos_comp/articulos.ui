@@ -3,7 +3,12 @@
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">548</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
-  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbCodFamilia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">109</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesFamilia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbNoStock]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">95</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbSeCompra]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">107</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbSeVende]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">100</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbCodUnidad]"/>
   <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/property[frameShadow]">
     <grid>
       <property name="name">
@@ -181,6 +186,7 @@
       </widget>
     </grid>
   </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,2]"/>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[QGroupBox,groupBox13_2]/vbox[vbox,1]/widget[FLFieldDB,fdbImagen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[QGroupBox,groupBox13]/vbox[vbox,1]/widget[FLFieldDB,fieldCodBarras]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[QGroupBox,groupBox13]/vbox[vbox,1]/widget[FLFieldDB,fieldTipoCodBarras]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>

@@ -2,12 +2,12 @@
 /** @class_declaration articuloscomp */
 /////////////////////////////////////////////////////////////////
 //// ARTICULOSCOMP //////////////////////////////////////////////
-class articuloscomp extends oficial /** %from: oficial */ {
+class articuloscomp extends pesosMedidas /** %from: oficial */ {
 	var curArticuloComp:FLSqlCursor;
 	var curTipoOpcionArt:FLSqlCursor;
 	var curOpcionArt:FLSqlCursor;
 	var tbnActualizarVariable:Object;
-	function articuloscomp( context ) { oficial ( context ); }
+	function articuloscomp( context ) { pesosMedidas ( context ); }
 	function init() {
 		return this.ctx.articuloscomp_init();
 	}

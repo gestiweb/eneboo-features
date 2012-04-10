@@ -2,7 +2,7 @@
 /** @class_declaration pagosMulti */
 /////////////////////////////////////////////////////////////////
 //// PAGOSMULTI /////////////////////////////////////////////////
-class pagosMulti extends oficial {
+class pagosMulti extends oficial /** %from: oficial */ {
 	function pagosMulti( context ) { oficial ( context ); }
 	function datosConceptoAsiento(cur:FLSqlCursor):Array {
 		return this.ctx.pagosMulti_datosConceptoAsiento(cur);
@@ -52,3 +52,4 @@ function pagosMulti_datosConceptoAsiento(cur:FLSqlCursor):Array
 }
 //// PAGOSMULTI //////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

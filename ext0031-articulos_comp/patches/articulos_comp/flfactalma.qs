@@ -2,10 +2,10 @@
 /** @class_declaration articuloscomp */
 /////////////////////////////////////////////////////////////////
 //// ARTICULOSCOMP //////////////////////////////////////////////
-class articuloscomp extends oficial /** %from: oficial */ {
+class articuloscomp extends medidas /** %from: oficial */ {
 	var calculoStockBloqueado_:Boolean;
 	var curMoviStock:FLSqlCursor;
-	function articuloscomp( context ) { oficial ( context ); }
+	function articuloscomp( context ) { medidas ( context ); }
 // 	function cambiarStock(codAlmacen:String, referencia:String, variacion:Number, campo:String):Boolean {
 // 		return this.ctx.articuloscomp_cambiarStock(codAlmacen, referencia, variacion, campo);
 // 	}
@@ -151,8 +151,8 @@ class articuloscomp extends oficial /** %from: oficial */ {
 /** @class_declaration pubArticulosComp */
 /////////////////////////////////////////////////////////////////
 //// PUB_ARTICULOSCOMP //////////////////////////////////////////
-class pubArticulosComp extends ifaceCtx /** %from: ifaceCtx */ {
-	function pubArticulosComp( context ) { ifaceCtx( context ); }
+class pubArticulosComp extends pubMedidas /** %from: ifaceCtx */ {
+	function pubArticulosComp( context ) { pubMedidas( context ); }
 	function pub_pvpCompuesto(referencia:String):Number {
 		return this.pvpCompuesto(referencia);
 	}

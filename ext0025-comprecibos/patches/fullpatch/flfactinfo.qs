@@ -2,8 +2,8 @@
 /** @class_declaration compRecibos */
 /////////////////////////////////////////////////////////////////
 //// COMPENSACIÓN DE RECIBOS ////////////////////////////////////
-class compRecibos extends oficial {
-    function compRecibos( context ) { oficial ( context ); }
+class compRecibos extends recibosProv /** %from: oficial */ {
+    function compRecibos( context ) { recibosProv ( context ); }
 	function vencimiento(nodo:FLDomNode, campo:String):String {
 		return this.ctx.compRecibos_vencimiento(nodo, campo);
 	}

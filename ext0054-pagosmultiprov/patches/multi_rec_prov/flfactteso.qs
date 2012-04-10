@@ -2,8 +2,8 @@
 /** @class_declaration pagosMultiProv */
 /////////////////////////////////////////////////////////////////
 //// PAGOS MULTI PROVEEDORES ////////////////////////////////////
-class pagosMultiProv extends oficial {
-    function pagosMultiProv( context ) { oficial ( context ); }
+class pagosMultiProv extends proveed /** %from: oficial */ {
+    function pagosMultiProv( context ) { proveed ( context ); }
 	function cambiaUltimoPagoProv(idRecibo:String, idPagoDevol:String, unlock:Boolean):Boolean {
 		return this.ctx.pagosMultiProv_cambiaUltimoPagoProv(idRecibo, idPagoDevol, unlock);
 	}
@@ -54,7 +54,7 @@ function pagosMultiProv_cambiaUltimoPagoProv(idRecibo:String, idPagoDevol:String
 			return true;
 		curPagosDevol.setUnLock("editable", unlock);
 	}
-		
+
 	return true;
 }
 
@@ -74,7 +74,7 @@ function pagosMultiProv_beforeCommit_pagosmultiprov(curPM:FLSqlCursor):Boolean
 			try { qryPagos.setForwardOnly( true ); } catch (e) {}
 			if (!qryPagos.exec())
 				return false;
-				
+
 			while (qryPagos.next()) {
 				if (!formRecordpagosmultiprov.iface.pub_excluirDePagoMulti(idPagoMulti, qryPagos.value(0)))
 					return false;
@@ -86,12 +86,12 @@ function pagosMultiProv_beforeCommit_pagosmultiprov(curPM:FLSqlCursor):Boolean
 		if (!this.iface.generarAsientoPagoMultiProv(curPM))
 			return false;
 	}
-	
+
 	return true;
 }
 
 /** \Genera o regenera el asiento contable asociado a un pago múltiple de recibos
-@param	curPM: Cursor posicionado en el pago múltiple 
+@param	curPM: Cursor posicionado en el pago múltiple
 @return	true si la regeneración se realiza correctamente, false en caso contrario
 \end */
 function pagosMultiProv_generarAsientoPagoMultiProv(curPM:FLSqlCursor):Boolean
@@ -108,7 +108,7 @@ function pagosMultiProv_generarAsientoPagoMultiProv(curPM:FLSqlCursor):Boolean
 		codEjercicio = datosDoc.codEjercicio;
 		curPM.setValueBuffer("fecha", datosDoc.fecha);
 	}
-	
+
 	var datosAsiento:Array = [];
 	var valoresDefecto:Array;
 	valoresDefecto["codejercicio"] = codEjercicio;
@@ -128,7 +128,7 @@ function pagosMultiProv_generarAsientoPagoMultiProv(curPM:FLSqlCursor):Boolean
 		}
 		return true;
 	}
-	
+
 	var curTransaccion:FLSqlCursor = new FLSqlCursor("empresa");
 	curTransaccion.transaction(false);
 	try {
@@ -155,7 +155,7 @@ function pagosMultiProv_generarAsientoPagoMultiProv(curPM:FLSqlCursor):Boolean
 		var tasaConvFact:Number = -1;
 		var tasasConvIguales:Boolean = true;
 		var importeEuros:Number = 0;
-	
+
 		while (qryAsientos.next()) {
 			codSubcuentaDebe = util.sqlSelect("co_partidas p" +
 			" INNER JOIN co_subcuentas s ON p.idsubcuenta = s.idsubcuenta" +
@@ -163,27 +163,27 @@ function pagosMultiProv_generarAsientoPagoMultiProv(curPM:FLSqlCursor):Boolean
 			"s.codsubcuenta",
 			"p.idasiento = " + qryAsientos.value(0) + " AND c.idcuentaesp = 'PROVEE'",
 			"co_partidas,co_subcuentas,co_cuentas");
-			
+
 			if (!codSubcuentaDebe) {
 				throw util.translate("scripts", "No se ha encontrado la subcuenta de proveedor del asiento contable correspondiente a la factura del recibo %1").arg(qryAsientos.value(1));
 			}
-	
+
 			if (codSubcuentaDebePrevia == "")
 				codSubcuentaDebePrevia = codSubcuentaDebe;
 			if (codSubcuentaDebePrevia != codSubcuentaDebe) {
 				throw util.translate("scripts", "No puede generarse el asiento correspondiente al pago múltiple porque los asientos asociados a las facturas que\ngeneraron los recibos están asociados a distintas cuentas de proveedor");
 			}
 			codSubcuentaDebePrevia = codSubcuentaDebe;
-			
+
 			if (tasasConvIguales) {
 				tasaConvFact = parseFloat(qryAsientos.value("f.tasaconv"));
 				tasaConvFact = util.roundFieldValue(tasaConvFact, "facturasprov", "tasaconv");
 				if (tasaConvFactPrevia == -1)
 					tasaConvFactPrevia = tasaConvFact;
-					
+
 				if (tasaConvFactPrevia != tasaConvFact)
 					tasasConvIguales = false;
-					
+
 				tasaConvFactPrevia = tasaConvFact;
 			}
 			if (listaRecibos != "") {
@@ -191,19 +191,19 @@ function pagosMultiProv_generarAsientoPagoMultiProv(curPM:FLSqlCursor):Boolean
 			}
 			listaRecibos += qryAsientos.value("r.codigo");
 			nombreProv = qryAsientos.value("f.nombre");
-			
+
 			importeEuros += parseFloat(qryAsientos.value("r.importeeuros"));
 		}
-			
+
 		if (!tasasConvIguales) {
 			tasaConvFact = false;
 		}
-		
+
 		valoresDefecto["codsubcuentaproveedor"] = codSubcuentaDebe;
 		valoresDefecto["tasaconvfact"] = tasaConvFact;
 		valoresDefecto["lista"] = listaRecibos;
 		valoresDefecto["nombreprov"] = nombreProv;
-	
+
 		if (!this.iface.generarPartidasPMProv(curPM, valoresDefecto, datosAsiento)) {
 			throw util.translate("scripts", "Error al obtener los las partidas del pago múltiple");
 		}
@@ -224,7 +224,7 @@ function pagosMultiProv_generarAsientoPagoMultiProv(curPM:FLSqlCursor):Boolean
 function pagosMultiProv_generarPartidasPMProv(curPM:FLSqlCursor, valoresDefecto:Array, datosAsiento:Array):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	if (!this.iface.generarPartidaProveedorPMProv(curPM, valoresDefecto, datosAsiento))
 		return false;
 
@@ -244,7 +244,7 @@ function pagosMultiProv_generarPartidaProveedorPMProv(curPM:FLSqlCursor, valores
 			return this.iface.generarPartidasFacProveedorPMProv(curPM, valoresDefecto, datosAsiento);
 		}
 	}
-	
+
 	var util:FLUtil = new FLUtil;
 
 	var ctaDebe:Array = [];
@@ -325,10 +325,10 @@ function pagosMultiProv_generarPartidasFacProveedorPMProv(curPM:FLSqlCursor, val
 		tasaconvDebe = qryRecibos.value("f.tasaconv");
 		debe = parseFloat(qryRecibos.value("r.importe")) * parseFloat(tasaconvDebe)
 		debeME = parseFloat(qryRecibos.value("r.importe"));
-	
+
 		debe = util.roundFieldValue(debe, "co_partidas", "debe");
 		debeME = util.roundFieldValue(debeME, "co_partidas", "debeme");
-	
+
 		var curPartida:FLSqlCursor = new FLSqlCursor("co_partidas");
 		with(curPartida) {
 			setModeAccess(curPartida.Insert);
@@ -364,7 +364,7 @@ function pagosMultiProv_generarPartidaBancoPMProv(curPM:FLSqlCursor, valoresDefe
 	var haber:Number = 0;
 	var haberME:Number = 0;
 	var tasaconvHaber:Number = 1;
-	
+
 	if (valoresDefecto.coddivisa == curPM.valueBuffer("coddivisa")) {
 		haber = curPM.valueBuffer("importe");
 		haberME = 0;
@@ -412,7 +412,7 @@ function pagosMultiProv_generarPartidaDifCambioPMProv(curPM:FLSqlCursor, valores
 		debe = parseFloat(curPM.valueBuffer("importe")) * parseFloat(tasaconvDebe)
 	else
 		debe = parseFloat(valoresDefecto["debedifcambio"]);
-	
+
 	debe = util.roundFieldValue(debe, "co_partidas", "debe");
 	haber = util.roundFieldValue(haber, "co_partidas", "haber");
 	/** \C En el caso de que la divisa sea extranjera y la tasa de cambio haya variado desde el momento de la emisión de la factura, la diferencia se imputará a la correspondiente cuenta de diferencias de cambio.
@@ -470,11 +470,11 @@ function pagosMultiProv_afterCommit_pagosmultiprov(curPM:FLSqlCursor):Boolean
 		case curPM.Del: {
 			if (curPM.isNull("idasiento"))
 				return true;
-	
+
 			var idAsiento:Number = curPM.valueBuffer("idasiento");
 			if (flfacturac.iface.pub_asientoBorrable(idAsiento) == false)
 				return false;
-	
+
 			var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
 			curAsiento.select("idasiento = " + idAsiento);
 			if (curAsiento.first()) {
@@ -497,8 +497,9 @@ function pagosMultiProv_afterCommit_pagosmultiprov(curPM:FLSqlCursor):Boolean
 			break;
 		}
 	}
-	
+
 	return true;
 }
 //// PAGOS MULTI PROVEEDOR //////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

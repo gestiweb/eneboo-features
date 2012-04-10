@@ -2,7 +2,7 @@
 /** @class_declaration pagosMulti */
 /////////////////////////////////////////////////////////////////
 //// PAGOS MULTI ////////////////////////////////////////////////
-class pagosMulti extends oficial {
+class pagosMulti extends oficial /** %from: oficial */ {
     function pagosMulti( context ) { oficial ( context ); }
 	function cambiaUltimoPagoCli(idRecibo:String, idPagoDevol:String, unlock:Boolean):Boolean {
 		return this.ctx.pagosMulti_cambiaUltimoPagoCli(idRecibo, idPagoDevol, unlock);
@@ -53,7 +53,7 @@ function pagosMulti_cambiaUltimoPagoCli(idRecibo:String, idPagoDevol:String, unl
 			return true;
 		curPagosDevol.setUnLock("editable", unlock);
 	}
-		
+
 	return true;
 }
 
@@ -65,7 +65,7 @@ function pagosMulti_beforeCommit_pagosmulticli(curPM:FLSqlCursor):Boolean
 	switch (curPM.modeAccess()) {
 		case curPM.Del: {
 			var idPagoMulti:String = curPM.valueBuffer("idpagomulti");
-			var qryPagos:FLSqlQuery = new FLSqlQuery();  
+			var qryPagos:FLSqlQuery = new FLSqlQuery();
 			qryPagos.setTablesList("pagosdevolcli");
 			qryPagos.setSelect("idrecibo");
 			qryPagos.setFrom("pagosdevolcli");
@@ -73,7 +73,7 @@ function pagosMulti_beforeCommit_pagosmulticli(curPM:FLSqlCursor):Boolean
 			try { qryPagos.setForwardOnly( true ); } catch (e) {}
 			if (!qryPagos.exec())
 				return false;
-				
+
 			while (qryPagos.next()) {
 				if (!formRecordpagosmulticli.iface.pub_excluirDePagoMulti(idPagoMulti, qryPagos.value(0)))
 					return false;
@@ -85,12 +85,12 @@ function pagosMulti_beforeCommit_pagosmulticli(curPM:FLSqlCursor):Boolean
 		if (!this.iface.generarAsientoPagoMultiCli(curPM))
 			return false;
 	}
-	
+
 	return true;
 }
 
 /** \Genera o regenera el asiento contable asociado a un pago múltiple de recibos
-@param	curPM: Cursor posicionado en el pago múltiple 
+@param	curPM: Cursor posicionado en el pago múltiple
 @return	true si la regeneración se realiza correctamente, false en caso contrario
 \end */
 function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
@@ -107,7 +107,7 @@ function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
 		codEjercicio = datosDoc.codEjercicio;
 		curPM.setValueBuffer("fecha", datosDoc.fecha);
 	}
-	
+
 	var datosAsiento:Array = [];
 	var valoresDefecto:Array;
 	valoresDefecto["codejercicio"] = codEjercicio;
@@ -127,7 +127,7 @@ function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
 		}
 		return true;
 	}
-	
+
 	var curTransaccion:FLSqlCursor = new FLSqlCursor("empresa");
 	curTransaccion.transaction(false);
 	try {
@@ -154,7 +154,7 @@ function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
 		var tasaConvFact:Number = -1;
 		var tasasConvIguales:Boolean = true;
 		var importeEuros:Number = 0;
-	
+
 		while (qryAsientos.next()) {
 			codSubcuentaHaber = util.sqlSelect("co_partidas p" +
 			" INNER JOIN co_subcuentas s ON p.idsubcuenta = s.idsubcuenta" +
@@ -162,11 +162,11 @@ function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
 			"s.codsubcuenta",
 			"p.idasiento = " + qryAsientos.value(0) + " AND c.idcuentaesp = 'CLIENT'",
 			"co_partidas,co_subcuentas,co_cuentas");
-			
+
 			if (!codSubcuentaHaber) {
 				throw util.translate("scripts", "No se ha encontrado la subcuenta de cliente del asiento contable correspondiente a la factura del recibo").arg(qryAsientos.value(1));
 			}
-	
+
 			if (codSubcuentaHaberPrevia == "") {
 				codSubcuentaHaberPrevia = codSubcuentaHaber;
 			}
@@ -174,7 +174,7 @@ function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
 				throw  util.translate("scripts", "No puede generarse el asiento correspondiente al pago múltiple porque los asientos asociados a las facturas que\ngeneraron los recibos están asociados a distintas cuentas de cliente");
 			}
 			codSubcuentaHaberPrevia = codSubcuentaHaber;
-			
+
 			if (tasasConvIguales) {
 				tasaConvFact = parseFloat(qryAsientos.value("f.tasaconv"));
 				tasaConvFact = util.roundFieldValue(tasaConvFact, "facturascli", "tasaconv");
@@ -186,25 +186,25 @@ function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
 				}
 				tasaConvFactPrevia = tasaConvFact;
 			}
-			
+
 			if (listaRecibos != "") {
 				listaRecibos += ", ";
 			}
 			listaRecibos += qryAsientos.value("r.codigo");
 			nombreCliente = qryAsientos.value("f.nombrecliente");
-			
+
 			importeEuros += parseFloat(qryAsientos.value("r.importeeuros"));
 		}
-	
+
 		if (!tasasConvIguales) {
 			tasaConvFact = false;
 		}
-			
+
 		valoresDefecto["codsubcuentacliente"] = codSubcuentaHaber;
 		valoresDefecto["tasaconvfact"] = tasaConvFact;
 		valoresDefecto["lista"] = listaRecibos;
 		valoresDefecto["nombrecliente"] = nombreCliente;
-	
+
 		if (!this.iface.generarPartidasPM(curPM, valoresDefecto, datosAsiento)) {
 			throw util.translate("scripts", "Error al generar las partidas del pago múltiple");
 		}
@@ -224,7 +224,7 @@ function pagosMulti_generarAsientoPagoMultiCli(curPM:FLSqlCursor):Boolean
 function pagosMulti_generarPartidasPM(curPM:FLSqlCursor, valoresDefecto:Array, datosAsiento:Array):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	if (!this.iface.generarPartidaClientePM(curPM, valoresDefecto, datosAsiento))
 		return false;
 
@@ -327,10 +327,10 @@ function pagosMulti_generarPartidasFacClientePM(curPM:FLSqlCursor, valoresDefect
 		tasaconvHaber = qryRecibos.value("f.tasaconv");
 		haber = parseFloat(qryRecibos.value("r.importe")) * parseFloat(tasaconvHaber)
 		haberME = parseFloat(qryRecibos.value("r.importe"));
-	
+
 		haber = util.roundFieldValue(haber, "co_partidas", "haber");
 		haberME = util.roundFieldValue(haberME, "co_partidas", "haberme");
-	
+
 		var curPartida:FLSqlCursor = new FLSqlCursor("co_partidas");
 		with(curPartida) {
 			setModeAccess(curPartida.Insert);
@@ -367,7 +367,7 @@ function pagosMulti_generarPartidaBancoPM(curPM:FLSqlCursor, valoresDefecto:Arra
 	var debeME:Number = 0;
 	var tasaconvDebe:Number = 1;
 	var diferenciaCambio:Number = 0;
-	
+
 	if (valoresDefecto.coddivisa == curPM.valueBuffer("coddivisa")) {
 		debe = curPM.valueBuffer("importe");
 		debeME = 0;
@@ -415,7 +415,7 @@ function pagosMulti_generarPartidaDifCambioPM(curPM:FLSqlCursor, valoresDefecto:
 		haber = parseFloat(curPM.valueBuffer("importe")) * parseFloat(tasaconvHaber);
 	else
 		haber = parseFloat(valoresDefecto["haberdifcambio"]);
-	
+
 	debe = util.roundFieldValue(debe, "co_partidas", "debe");
 	haber = util.roundFieldValue(haber, "co_partidas", "haber");
 	/** \C En el caso de que la divisa sea extranjera y la tasa de cambio haya variado desde el momento de la emisión de la factura, la diferencia se imputará a la correspondiente cuenta de diferencias de cambio.
@@ -473,11 +473,11 @@ function pagosMulti_afterCommit_pagosmulticli(curPM:FLSqlCursor):Boolean
 		case curPM.Del: {
 			if (curPM.isNull("idasiento"))
 				return true;
-	
+
 			var idAsiento:Number = curPM.valueBuffer("idasiento");
 			if (flfacturac.iface.pub_asientoBorrable(idAsiento) == false)
 				return false;
-	
+
 			var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
 			curAsiento.select("idasiento = " + idAsiento);
 			if (curAsiento.first()) {
@@ -500,8 +500,9 @@ function pagosMulti_afterCommit_pagosmulticli(curPM:FLSqlCursor):Boolean
 			break;
 		}
 	}
-	
+
 	return true;
 }
 //// PAGOS MULTI ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

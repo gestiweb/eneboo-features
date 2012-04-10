@@ -1,11 +1,12 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]" >
-<field>
-<name>idpagomulti</name>
-<!-- Identificador del pago múltiple al que pertenece el pago--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pago múltiple&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>uint</type>
-</field>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]">
+    <field>
+      <name>idpagomulti</name>
+      <!-- Identificador del pago múltiple al que pertenece el pago-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pago múltiple")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>

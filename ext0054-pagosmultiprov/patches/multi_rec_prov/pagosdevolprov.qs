@@ -2,7 +2,7 @@
 /** @class_declaration pagosMultiProv */
 /////////////////////////////////////////////////////////////////
 //// PAGOS MULTI PROV ///////////////////////////////////////////
-class pagosMultiProv extends proveed {
+class pagosMultiProv extends proveed /** %from: proveed */ {
     function pagosMultiProv( context ) { proveed ( context ); }
 	function init() {
 		return this.ctx.pagosMultiProv_init();
@@ -19,7 +19,7 @@ class pagosMultiProv extends proveed {
 function pagosMultiProv_init()
 {
 	this.iface.__init();
-	
+
 	if (!this.cursor().isNull("idpagomulti")) {
 		var util:FLUtil = new FLUtil;
 		this.child("lblPagoMulti").text = util.translate("scripts", "PAGO MÚLTIPLE Nº ") + this.cursor().valueBuffer("idpagomulti");
@@ -27,3 +27,4 @@ function pagosMultiProv_init()
 }
 //// PAGOS MULTI PROV ///////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

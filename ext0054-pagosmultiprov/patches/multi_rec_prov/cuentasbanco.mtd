@@ -1,9 +1,9 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]/relation[rh_retenciones,codcuenta]" >
-<relation>
-<table>pagosmultiprov</table>
-<field>codcuenta</field>
-<card>1M</card>
-</relation>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]/relation[rh_retenciones,codcuenta]">
+    <relation>
+      <table>pagosmultiprov</table>
+      <field>codcuenta</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
 </xupdate:modifications>

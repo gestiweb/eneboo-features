@@ -133,9 +133,9 @@
       </hbox>
     </widget>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
     <includehint>flfielddb.h</includehint>
-  </xupdate:insert-after>
+  </xupdate:append-first>
   <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
     <includehint>flfielddb.h</includehint>
   </xupdate:insert-after>

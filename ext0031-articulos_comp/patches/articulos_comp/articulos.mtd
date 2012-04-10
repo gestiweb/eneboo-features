@@ -121,19 +121,4 @@
       </relation>
     </field>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[aref]">
-    <field>
-      <name>codunidad</name>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Unidad")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>string</type>
-      <length>10</length>
-      <relation>
-        <table>pesosmedidas</table>
-        <field>codunidad</field>
-        <card>M1</card>
-      </relation>
-    </field>
-  </xupdate:insert-after>
 </xupdate:modifications>

@@ -37,9 +37,7 @@ class interna {
 //// OFICIAL /////////////////////////////////////////////////////
 class oficial extends interna {
 	var codLiquidacion:Object;
-	function oficial( context ) { 
-		interna( context );
-	}
+	function oficial( context ) { interna( context ); }
 	function agregarFactura():Boolean { 
 		return this.ctx.oficial_agregarFactura(); 
 	}

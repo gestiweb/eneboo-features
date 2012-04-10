@@ -100,7 +100,7 @@ function ctaVentasArt_calculateField(fN:String):String
 			}
 			var codSubcuenta:String = cursor.valueBuffer("codsubcuenta");
 			if(!codSubcuenta || codSubcuenta == "") {
-				valor == "";
+				valor = "";
 				break;
 			}
 			var idsubcuenta:Number = util.sqlSelect("co_subcuentas", "idsubcuenta", "codsubcuenta = '" + codSubcuenta + "' AND codejercicio = '" + codEjercicio + "'");

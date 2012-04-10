@@ -2,7 +2,7 @@
 /** @class_declaration pagosMultiProv */
 /////////////////////////////////////////////////////////////////
 //// PAGOSMULTIPROV /////////////////////////////////////////////
-class pagosMultiProv extends proveed {
+class pagosMultiProv extends proveed /** %from: proveed */ {
 	function pagosMultiProv( context ) { proveed ( context ); }
 // 	function regenerarAsiento(cur:FLSqlCursor, valoresDefecto:Array):Array {
 // 		return this.ctx.pagosMultiProv_regenerarAsiento(cur, valoresDefecto);
@@ -23,11 +23,11 @@ class pagosMultiProv extends proveed {
 // 	var asiento:Array = [];
 // 	var idAsiento:Number = cur.valueBuffer("idasiento");
 // 	if (cur.isNull("idasiento")) {
-// 
+//
 // 		var concepto:String;
 // 		var documento:String;
 // 		var tipoDocumento:String;
-// 
+//
 // 		switch (cur.table()) {
 // 			case "facturascli": {
 // 				concepto = "Nuestra factura " + cur.valueBuffer("codigo") + " - " + cur.valueBuffer("nombrecliente");
@@ -44,25 +44,25 @@ class pagosMultiProv extends proveed {
 // 			case "pagosdevolcli": {
 // 				var codRecibo:String = util.sqlSelect("reciboscli", "codigo", "idrecibo = " + cur.valueBuffer("idrecibo"));
 // 				var nombreCli:String = util.sqlSelect("reciboscli", "nombrecliente", "idrecibo = " + cur.valueBuffer("idrecibo"));
-// 				
+//
 // 				if (cur.valueBuffer("tipo") == "Pago")
 // 					concepto = "Pago recibo " + codRecibo + " - " + nombreCli;
 // 				else
 // 					concepto = "Devolución recibo " + codRecibo;
-// 
+//
 // 				tipoDocumento = "Recibo";
 // 				break;
 // 			}
 // 			case "pagosdevolrem": {
 // 				if (cur.valueBuffer("tipo") == "Pago")
 // 					concepto = cur.valueBuffer("tipo") + " " + "remesa" + " " + cur.valueBuffer("idremesa");
-// 
+//
 // 				break;
 // 			}
 // 			case "pagosdevolprov": {
 // 				var codRecibo:String = util.sqlSelect("recibosprov", "codigo", "idrecibo = " + cur.valueBuffer("idrecibo"));
 // 				var nombreProv:String = util.sqlSelect("recibosprov", "nombreproveedor", "idrecibo = " + cur.valueBuffer("idrecibo"));
-// 
+//
 // 				if (cur.valueBuffer("tipo") == "Pago")
 // 					concepto = "Pago " + " recibo prov. " + codRecibo + " - " + nombreProv;
 // 				break;
@@ -76,10 +76,10 @@ class pagosMultiProv extends proveed {
 // 				qryRecibos.setFrom("pagosdevolprov p INNER JOIN recibosprov r ON p.idrecibo = r.idrecibo ")
 // 				qryRecibos.setWhere("p.idpagomulti = " + cur.valueBuffer("idpagomulti"));
 // 				qryRecibos.setForwardOnly( true );
-// 	
+//
 // 				if (!qryRecibos.exec())
 // 					return false;
-// 
+//
 // 				while (qryRecibos.next()) {
 // 					if (listaRecibos != "")
 // 						listaRecibos += ", ";
@@ -90,8 +90,8 @@ class pagosMultiProv extends proveed {
 // 				break;
 // 			}
 // 		}
-// 
-// 
+//
+//
 // 		var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
 // 		//var numAsiento:Number = util.sqlSelect("co_asientos", "MAX(numero)",  "codejercicio = '" + valoresDefecto.codejercicio + "'");
 // 		//numAsiento++;
@@ -105,7 +105,7 @@ class pagosMultiProv extends proveed {
 // 			setValueBuffer("tipodocumento", tipoDocumento);
 // 			setValueBuffer("documento", documento);
 // 		}
-// 
+//
 // 		if (!curAsiento.commitBuffer()) {
 // 			asiento.error = true;
 // 			return asiento;
@@ -121,7 +121,7 @@ class pagosMultiProv extends proveed {
 // 			asiento.error = true;
 // 			return asiento;
 // 		}
-// 
+//
 // 		if (cur.valueBuffer("fecha") != cur.valueBufferCopy("fecha")) {
 // 			var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
 // 			curAsiento.select("idasiento = " + idAsiento);
@@ -130,7 +130,7 @@ class pagosMultiProv extends proveed {
 // 				return asiento;
 // 			}
 // 			curAsiento.setUnLock("editable", true);
-// 
+//
 // 			curAsiento.select("idasiento = " + idAsiento);
 // 			if (!curAsiento.first()) {
 // 				asiento.error = true;
@@ -139,7 +139,7 @@ class pagosMultiProv extends proveed {
 // 			curAsiento.setModeAccess(curAsiento.Edit);
 // 			curAsiento.refreshBuffer();
 // 			curAsiento.setValueBuffer("fecha", cur.valueBuffer("fecha"));
-// 
+//
 // 			if (!curAsiento.commitBuffer()) {
 // 				asiento.error = true;
 // 				return asiento;
@@ -151,7 +151,7 @@ class pagosMultiProv extends proveed {
 // 			}
 // 			curAsiento.setUnLock("editable", false);
 // 		}
-// 
+//
 // 		asiento = flfactppal.iface.pub_ejecutarQry("co_asientos", "idasiento,numero,fecha,codejercicio", "idasiento = '" + idAsiento + "'");
 // 		if (asiento.codejercicio != valoresDefecto.codejercicio) {
 // 			MessageBox.warning(util.translate("scripts", "Está intentando regenerar un asiento del ejercicio %1 en el ejercicio %2.\nVerifique que su ejercicio actual es correcto. Si lo es y está actualizando un pago, bórrelo y vuélvalo a crear.").arg(asiento.codejercicio).arg(valoresDefecto.codejercicio), MessageBox.Ok, MessageBox.NoButton);
@@ -169,7 +169,7 @@ class pagosMultiProv extends proveed {
 // 			}
 // 		}
 // 	}
-// 
+//
 // 	asiento.error = false;
 // 	return asiento;
 // }
@@ -215,3 +215,4 @@ debug("Recibo = " + qryRecibos.value("r.codigo"));
 }
 //// PAGOSMULTIPROV /////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
+
