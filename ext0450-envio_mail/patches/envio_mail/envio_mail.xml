@@ -1,0 +1,24 @@
+<flpatch:modifications name="envio_mail" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidoscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpresupuestoscli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="customviewer.ui" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="customviewer.qs" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="empresa.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="proveedores.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" />
+</flpatch:modifications>
