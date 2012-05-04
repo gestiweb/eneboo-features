@@ -838,5 +838,4 @@
     <includehint>flfielddb.h</includehint>
   </xupdate:insert-after>
   <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
-  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
 </xupdate:modifications>

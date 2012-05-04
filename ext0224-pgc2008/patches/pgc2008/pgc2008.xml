@@ -1,11 +1,13 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="pgc2008">
-  <flpatch:patchXml path="contabilidad/informes/" name="flcontinfo.xml"/>
+  <flpatch:patchXml path="contabilidad/informes/" name="flcontinfo.xml" style="legacy1"/>
   <flpatch:addFile path="contabilidad/informes/docs/" name="pyg2008.ods"/>
   <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_balanceig.ui"/>
   <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_balances08_datos.ui"/>
   <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_cuentasanuales.ui"/>
   <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_mastercuentasanuales.ui"/>
-  <flpatch:patchXml path="contabilidad/informes/forms/" name="flcontinfo.ui"/>
+  <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_masterpatrimonio.ui"/>
+  <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_patrimonio.ui"/>
+  <flpatch:patchXml path="contabilidad/informes/forms/" name="flcontinfo.ui" style="legacy1"/>
   <flpatch:addFile path="contabilidad/informes/queries/" name="co_i_balancepyg_08.qry"/>
   <flpatch:addFile path="contabilidad/informes/queries/" name="co_i_balancesit_08.qry"/>
   <flpatch:addFile path="contabilidad/informes/reports/" name="co_i_balanceig.kut"/>
@@ -16,46 +18,49 @@
   <flpatch:addFile path="contabilidad/informes/reports/" name="co_i_balancesit_08_abr.kut"/>
   <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_cuentasanuales.qs"/>
   <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_masterbalanceig.qs"/>
-  <flpatch:patchScript path="contabilidad/informes/scripts/" name="co_i_masterbalancepyg.qs"/>
-  <flpatch:patchScript path="contabilidad/informes/scripts/" name="co_i_masterbalancesit.qs"/>
+  <flpatch:patchScript path="contabilidad/informes/scripts/" name="co_i_masterbalancepyg.qs" style="legacy"/>
+  <flpatch:patchScript path="contabilidad/informes/scripts/" name="co_i_masterbalancesit.qs" style="legacy"/>
   <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_mastercuentasanuales.qs"/>
-  <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs"/>
+  <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_masterpatrimonio.qs"/>
+  <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_patrimonio.qs"/>
+  <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs" style="legacy"/>
   <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_balance08_buffer.mtd"/>
   <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_balanceig.mtd"/>
   <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_balances08_datos.mtd"/>
   <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_balances08_subtotales.mtd"/>
   <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_cuentasanuales.mtd"/>
-  <flpatch:patchXml path="contabilidad/principal/" name="flcontppal.xml"/>
+  <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_patrimonio.mtd"/>
+  <flpatch:patchXml path="contabilidad/principal/" name="flcontppal.xml" style="legacy1"/>
   <flpatch:addFile path="contabilidad/principal/docs/" name="PGC.xls"/>
   <flpatch:addFile path="contabilidad/principal/docs/" name="PGC_codbalances.xls"/>
   <flpatch:addFile path="contabilidad/principal/forms/" name="co_codbalances08.ui"/>
   <flpatch:addFile path="contabilidad/principal/forms/" name="co_correspondenciascc.ui"/>
-  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_cuentas.ui"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_cuentas.ui" style="legacy1"/>
   <flpatch:addFile path="contabilidad/principal/forms/" name="co_cuentascb.ui"/>
-  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_epigrafes.ui"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_epigrafes.ui" style="legacy1"/>
   <flpatch:addFile path="contabilidad/principal/forms/" name="co_gruposepigrafes.ui"/>
   <flpatch:addFile path="contabilidad/principal/forms/" name="co_mastercodbalances08.ui"/>
   <flpatch:addFile path="contabilidad/principal/forms/" name="co_masterejercicios.ui"/>
-  <flpatch:patchXml path="contabilidad/principal/forms/" name="flcontppal.ui"/>
-  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_cerrarejer.qs"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="flcontppal.ui" style="legacy1"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_cerrarejer.qs" style="legacy"/>
   <flpatch:addFile path="contabilidad/principal/scripts/" name="co_codbalances08.qs"/>
-  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_cuentas.qs"/>
-  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_epigrafes.qs"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_cuentas.qs" style="legacy"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_epigrafes.qs" style="legacy"/>
   <flpatch:addFile path="contabilidad/principal/scripts/" name="co_gruposepigrafes.qs"/>
   <flpatch:addFile path="contabilidad/principal/scripts/" name="co_mastercodbalances08.qs"/>
   <flpatch:addFile path="contabilidad/principal/scripts/" name="co_masterejercicios.qs"/>
   <flpatch:addFile path="contabilidad/principal/scripts/" name="co_mastergruposepigrafes.qs"/>
-  <flpatch:patchScript path="contabilidad/principal/scripts/" name="flcontppal.qs"/>
-  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_codbalances.mtd"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="flcontppal.qs" style="legacy"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_codbalances.mtd" style="legacy1"/>
   <flpatch:addFile path="contabilidad/principal/tables/" name="co_codbalances08.mtd"/>
   <flpatch:addFile path="contabilidad/principal/tables/" name="co_correspondenciascc.mtd"/>
-  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_cuentas.mtd"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_cuentas.mtd" style="legacy1"/>
   <flpatch:addFile path="contabilidad/principal/tables/" name="co_cuentascb.mtd"/>
   <flpatch:addFile path="contabilidad/principal/tables/" name="co_cuentascbba.mtd"/>
-  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_epigrafes.mtd"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_epigrafes.mtd" style="legacy1"/>
   <flpatch:addFile path="contabilidad/principal/tables/" name="co_gruposepigrafes.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="ejercicios.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="masterejercicios.ui"/>
-  <flpatch:patchScript path="facturacion/principal/scripts/" name="ejercicios.qs"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="ejercicios.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="masterejercicios.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="ejercicios.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" style="legacy1"/>
 </flpatch:modifications>

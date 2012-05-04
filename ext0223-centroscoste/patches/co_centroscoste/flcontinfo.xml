@@ -19,16 +19,4 @@
       <scriptform>co_i_seleccionsubcentroscoste</scriptform>
     </action>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_i_seleccionsubcentroscoste]">
-    <action>
-      <name>co_i_patrimonio</name>
-      <description>QT_TRANSLATE_NOOP("MetaData","Estado de cambios de patrimonio")</description>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Estado de cambios de patrimonio")</alias>
-      <scriptform>co_i_masterpatrimonio</scriptform>
-      <scriptformrecord>co_i_patrimonio</scriptformrecord>
-      <table>co_i_patrimonio</table>
-      <form>co_i_masterpatrimonio</form>
-      <formrecord>co_i_patrimonio</formrecord>
-    </action>
-  </xupdate:insert-after>
 </xupdate:modifications>
