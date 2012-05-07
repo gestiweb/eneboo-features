@@ -1,0 +1,58 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >40</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer11]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacerAbrCer]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage55590" >
+<data format="PNG" length="1330" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004f949444154789ced96418814471486bf194bad26bda11a14a60809ce2187958099851c1c72d9050fbbb02159f010172f110f517232e494a3c77812911cf4b6e620b81065bdad07831304770d218e60600c1aab831bbac8347685699d1caa7b76c65d1343123cc41f8637d535ddf5eaabbfdf3c78a997fabfabf29cd7fe4df5375decc6f51b7d1d6a4c6ad0a1267109511891e4093ad4381c5a15d75544e63282b1802ccb0882007ac05636c66125509fa8efba7bf7eebd22914132d507b71ef4ff6b5dfafa52ffc8c1237d5001280154aa7e7d5535a9f1492609f420eb66eb11c8b2d1488fd1b889962b70a8b2c0a1ca3200918c88bb3108197a3eb58af03f95151d6ae8c1d2e21236b528a9b0ce72f4e3a3d085602c800c8f3b0382bfc00da80f61feab791658f09b73096a4c018408d923773d517ac1a406bd5533333be3cf3e4d46629664046140d61d3dfb677a0088de068b4fa22460bb16601bb9db02b25a24e0d0a1860c962f2e13a7f13a81c347218540063e86c13a91213223440ad53f833ac0393f36d6501bab015411b242ee288fc0bb5f689afb9ae850639c414b4d62938d4464449214644a22457c5632003ad4de0300b95fb73a4220052514599aa1a5264b3322190d222944a288c538909ec4898b17a05b2c9e0d1dc7904c6a4a0f80a0024f13407376f12c2a57d8dca284c2e49e4c399eda3fe5eb4449a68826351c3fbfc0b1fd739bd7878240e1810181110f2436e1c0f4013f290107329438e790a1040708c86ce6f1a73e92fa87cfec6b70e2e2053e9f9ddff4383a0f3ba50740c0060fd4c33ae716cfa1d8b8f372dc9c6e520b6b746c875a58c3585f394d6a18df3907fbe0f8f9058e7e3033e2117aa0c5460f8c10706b8e99c919923c612a9c821408fdfb3b13ce7802123ebd7c0a2dd78d6a9c4f22ce622676eec64dc3a9cb4b7c3e3d4f10ad9348f264d8031b09443262e9ea122a57b4f2d6c8ceafe4575042d1986c1000f3b34dea63754c66508162b5db221186a49bd0d0e33009c71747494422fa730f74d63a4cbe33e9771a82759666d81c78c1389f6496c34abac235b78c9235ecc31815d6b0a9615c8e1327314dbd1ba6dd3a8930c0e4668307aac304a490c4360601b18d3d016b4040c776884484b1066b0396efb768e71d5a6b2d2c8ef65a1b8962d5b63118ae3d5ca1a12768ee1de7f8e202499a6cea81913a60d60c3868df6f430aed3b6d9c75acfcb80216566eaf60638b895740488c4d40486ea51d0211ad279d262819d1b9d7c1dcb6180ced6fda18375207fae0ca7ea0b60de23d73efcf5de739645e573466f5a06206a10401f51d7570b02bd4b8b58ce5ab31abb7db4477da9eb394005cb8746d9c9c35e0b72201258abfc8087815d84ed1ac4864c5e1068b4b248dc353ada977278ae645619c257a5383ca68ec98c0c686a40d4bdfaed23a7de63df272c7f2a1849ef335f35772ba25812ab8ed0819921322d8464eb5b4e8d36a1c9cfbc1e5ae2205b81ca490a8b7029ab37b51b1a3f33dacde5ea575facc24b903212197bf20e893f318c123705d721e952d5905d416602bc8edc0969280afd99bc969ff7020878fbefce2bbf17185bb37d8f99ec13cca900fdaaf27fe0e7e8778d00ff4c13ef693b207a539815c32a8cb23d1be0212727f3cce6670a7c6d2cd16ad9327eae58191cb07febb657d2dd907fb0478320cb96812dd13463a63c733f4d3f09c0e35176eb6faad9327de18baf7e7cdef77fd4d2efe33edfde4581f786de8f342f442172f13f85bfa037d590231d39c26260000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonPrint]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMail</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage55590</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email el documento seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

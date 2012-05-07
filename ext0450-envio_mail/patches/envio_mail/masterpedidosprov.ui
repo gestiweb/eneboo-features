@@ -1,0 +1,61 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >35</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer27]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacerAbrCer]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage21139" >
+<data format="PNG" length="1420" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000055349444154789ced964f881b551cc73f89d3ed1b4c65062790c18a9993cca2d4cdc92e0a36e8a12e4a5de8c18a178ba7a55e0a5e7af424e8451bbc5845a8eb41dc82aceb41cd8ac22c14b7a9687644a50975c9c426ee0c8d246377ecf33033d9641ba1858207fb85c7376fe64ddeeff7fdfd790feee00efeefc8dce4b3db0939f1e9faf975d9bfd49729d72fd465ff725fd637ea525e91b275b925e53529b7ae6c4929a5ec5fedc7dc8f595e939379147d298bc5e2034076b7a3d9fea5fe842f6e2f963f5d96a75e3e2541534153804c36de5fcbba5d1700dff70118f406e33c1867b619e709b89081e3990f399eb90080a559b81d17149103f640213540646cc3866d703e77a8bc55a17aae4ae5ad0aea3e157aa0aa2a0c76983dc9e6294f80fe3c2cf002103bd7081a58790b208722f64298ec4f616afdfcba947227c643de4a62be95c47c57ecff3507a4945baf4bf9d5f352ae13cfebdfd4e5fc917989527810b47ba130a5c40684d8860d03a87d51c3edba14b522cda0c9c22b0be083aaab3bdc6347997d8922ea8822a902af421960319ebb6d173b6f034e16456488426e50a075b925655fca562be6add6d658f6a78a0c95b93aae8c4c73794215d4ab43056c28185098ca8e29e0839933a10ba616b3aee93bdc013d97b0aec78a244abcf765157a8912a3393202b7eba639000a190849422070bb2ea54289cafb158a519166d4a4a8147123175bb187f3d2d112a661e27b3ebaa1e3777cf4bcce46c7a5f231bc74b48cba4f653018c4093b1216dbb059ec24f188e27d136853fd4b7d292f49295b52ca9fa5945712de92f1f3ab52cacb23dc4fd65e8bd79e5e5a96eb57eaf2f4d272bc664238ce7e7036ee034ac14629e4419b1a57a058a2f2518522377a9ecea70f4f6319168d7603cbb0f0da1ea661b2d17159c8cfc16350f9f8338e3d378baeeb0c7a83384cdb602b364b9da53105c6aa60b039e0d8e16334fe6c5036cad0058cb87ee78c3908000d16cebdc1b46eb3e17f92b0cb74dec61ff894f2d3848761f16b878527e6e2aa49aaa411a57dc001058876e580a5592c7eb148312ab216ad8d79be1aad52548a58872c54e0e927a759d8378737f05850e7707a5502d5a3d16b306b96e051a89c1b57c252ac1b72604c81da668df9c7e721809251a21134386e1c8700ca461937888d1c44b1374ea78aa5d9543b2b58791bc7af31abcfe2fb3eb3e6341c0ec79470a3611f182a901d55c0cc99b86d177271d3b072d6705e6bd786f32030f9e4d7155ca5c1cae60a0881f39b83292caa9e83273c9cce0566cd12f6232695739fe1fb3eb662c767c18802637d606373030d0de757072dd2707e7010a1a0fa63152dd4a85eac42005ebb8a9e2be0b57db49c89d3ad6126c659390bb7dbc0d22cbcdf7c064dd8c0c5fbcec30dc7fa8084303d930b53d03e307f64fe3c3701ef7e8d99674ca60d9b8dc04535044430b37f86200898316cbc4d8feab721b59fd6d07f89bd1622aefba565c726a20b5c4d0cd094e488d4817b80bd24170681c8840c7b3602c1cccbe5b5f9a7cab81d173b6fe1fa0dac876d02e171687f9966d385a6c687ababacbd73e659a2d463d111b01dc63df30f227aa9025908f7a2881c113914a688c8a629ba1b332fced7c328cc0805c2088422d01e52993dfa345ad3a3f18346eda755d6de39738828044540247e474112f1370a7d087b44f4d36b5106b4bb803d20f60277a50ac43d7b124233fe732082931fbcfb7dc102b53bf4fcc0f03d9a4734bc0b5e8fbfe02f686fa73e4a08fe8e5f8a6d489313880471cf0e7771703708d223d56b7bd85189331757587bfb4d2b0d189168c5bf0376f6121282eb89311391b9d5f1da996579f0c4c9ebc0fe91f16feb6f3f0e9e382981fb46c67f82ff74f3d4805bc23f05e6fe8135cd27050000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonPrint]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMail</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage21139</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email el documento seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>

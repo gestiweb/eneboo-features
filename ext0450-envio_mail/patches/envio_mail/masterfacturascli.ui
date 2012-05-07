@@ -1,0 +1,60 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage48226" >
+<data format="PNG" length="1241" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004a049444154789ced965d6c544518869f9939a7bbdbd65d10935a200d245e70a308522e5448b4604228a688b59ae205e2cf8d177a63942846345e1a13914814e2452382e29db131c4041b6382145242420988355ada0581b4856ecfcfcc78b1e71cceb6bb157f122ee44b6667ce7cb3f3bedf3bdffcc02dbb65ff771337d8f75f9aad0a76f4a7a389430881941229258ee3e0b80eb96c0ed775715d17a9244a299452482911425494f41cf137c0c8f9111e7870d5a2a1a173bf4544ac13f924c0f2fb96ffe3b0d240b5acbfbf9f65cb960e0d0d8dd7830ee08a8e08142480d69af1f17194521591dc68514a55007e26e0103d00ecb59baf3ba46ac470159a4d44202b008c31f4f4f4608c49c66ed9b2e52f81a594c401a465bfe32958b36f7342222557234a05e86b4144c02404bababa9248841068adab82a5d7de5a9bf8acb549feccb9a73cfb9a7d9b2b0960ebc02ac8ca884039ff8c311c387000ad7532b4bbbbbb8280b5e5b169d0e9c917dbca5765b416e5caf7fc5802094280c621656118d2d1d13143d6d908c475dc8e5588cbf4bc80f2d68b6641a61d4110e0fb3e5a6bc2304ceab81863927e630c5aeba4fddae71f25edd817d731e9540ec43c2a15f03c8fdede5e822098c13ab6cece4ea49418632a6a806dfb77f36ed70b154b329b1233084c4d4db17af56a5cd7052a132d4eac300c2bfa9552c9aee9deb08e6dfb77f34ee77309a974f4de94373b01cff3387cf8306118d654a0bdbd3d21935e77800585469edeb08ed7bff898b71f7f36897e3a919a044aa512adadadc9311bab90060c82805d3f7c5d75b26238cafcc27cbad63fc21b5f7ec28e4d5b13df0d11f03c8fe3c78fe3fb7ed5c1006d6d6d00bcfcc446b27559000c8673c1198ae1281649cb9c269e6c5fcbf6837bd8b1696b8512b312f07d9f254b962447b19432b970e276796768be19eda53e5f87100283c10a414ed6a3f5085a1a5af2f3d9b4ee61b61fdcc35b8f3d5333a0190462b67186c7191cb7a5945cb932c1a9b151f22a879220706894b75370259322405b0ba1cbe2c29d6c685bc59b5fedad49222250de32a55289d26409008bc59ab26c524a1c551eaab566e46211edc1a41f22a525a33260326474869cc81248c1940af8fdf2794e1cfb198043df1ec2f3e25d60939f84c08ad6fb576edcb8fe484dadd24a2d9cc3bc6b4d643d07a44129c544a341e67ceadcdb28599f62f102df7d7f9253a72fd0707690b3402e978ba7b0316e7470e71d54ae11c45c200f2203363aaf665ef42b9e5ffbe3ddcb1621b4c18a00a1606aa1cbbce63c2df54db81370a6ff020303c3f4edfaf4d132a4b542e62e020188098bb984662252a0c1a07d0fe95c8d8ec93a405aaabfcf4a575d7ba46fb8c2d574ef3c9a9b0b300a8303973839384cdfaebd0f2503647dd18205a1b14c226d089e8d27115050e0b8e064ca5765e453aafa53c78c35a73f3bde7b6560e5f2bb289ebeccb113bfd0f7e1eea5d7c10b23681dc92e0dd810420f2ec7ef012c8c69c0403e002d9365d2f555f1c16f487fe5c3062e9dbe5606dff9c1e2eb9eb9e7d1213019c76ac1b130660093de86b65cc60d15ca4f52c37e9dde71e4c4a0eddbf97e4baa6b18fea8f6dfeaa7d2bfb1552fbe648105a97253eca682c704fe96fd09ebda3183ee752f570000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QLayoutWidget,layout12]/hbox[hbox,1]/widget[QPushButton,toolButtonPrint]" >
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMail</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage48226</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar por email</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía por email el documento seleccionado</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >210</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>fltabledb.h</includehint>
+</xupdate:append-first>
+</xupdate:modifications>
