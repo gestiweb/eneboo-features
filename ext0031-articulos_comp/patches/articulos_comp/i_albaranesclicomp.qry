@@ -32,7 +32,6 @@
 		lineasalbaranescli.cantidad, lineasalbaranescli.pvpunitario,
 		lineasalbaranescli.pvptotal, lineasalbaranescli.codimpuesto,
 		lineasalbaranescli.iva,lineasalbaranescli.idlinea,
-		lineasalbaranescli.numserie,
 		articulos.codunidad,
 		i_articuloscomp_buffer.referencia,i_articuloscomp_buffer.descripcion,
 		i_articuloscomp_buffer.cantidad,i_articuloscomp_buffer.codunidad,

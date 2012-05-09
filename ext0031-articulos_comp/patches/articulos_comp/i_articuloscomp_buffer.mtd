@@ -52,12 +52,4 @@
         <type>string</type>
         <length>10</length>
     </field>
-    <field>
-        <name>numserie</name>
-        <alias>QT_TRANSLATE_NOOP("MetaData","Nº de serie")</alias>
-        <null>true</null>
-        <pk>false</pk>
-        <type>string</type>
-        <length>25</length>
-    </field>
 </TMD>
