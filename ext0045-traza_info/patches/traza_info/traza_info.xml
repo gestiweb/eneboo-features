@@ -9,4 +9,13 @@
     <flpatch:addFile path="facturacion/informes/scripts/" name="i_trazaarticulos.qs" />
     <flpatch:addFile path="facturacion/informes/tables/" name="i_trazaarticulos.mtd" />
     <flpatch:addFile path="facturacion/informes/tables/" name="i_trazaarticulos_buffer.mtd" />
+
+    <!-- BEGIN "Listado de movimientos de Stock" -->
+    <flpatch:addFile path="facturacion/almacen/forms/" name="mastermostrarlistadoms.ui"/>
+    <flpatch:addFile path="facturacion/almacen/reports/" name="i_mostrarlistadoms.kut"/>
+    <flpatch:addFile path="facturacion/almacen/tables/" name="mostrarlistadoms.mtd"/>
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="mastermostrarlistadoms.qs"/>
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" style="legacy1"/>
+    <!-- END "Listado de movimientos de Stock" -->
+    
 </flpatch:modifications>

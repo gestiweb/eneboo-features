@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[galeriasimagenes]">
+    <action>
+      <name>mostrarlistadoms</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite ver el listado de movimientos de stock para el almacén y artículo seleccionados.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar listado movimientos stock")</alias>
+      <table>mostrarlistadoms</table>
+      <form>mastermostrarlistadoms</form>
+      <scriptform>mastermostrarlistadoms</scriptform>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
