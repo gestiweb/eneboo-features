@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_secuencias]">
+    <action>
+      <name>co_traspasosubcta</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Traspaso de movimientos contables de una subcuenta a otra")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Traspaso de subcuenta")</alias>
+      <table>co_traspasosubcta</table>
+      <form>co_traspasosubcta</form>
+      <formrecord>co_traspasosubcta</formrecord>
+      <scriptform>co_traspasosubcta</scriptform>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
