@@ -1,0 +1,6 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="patch_frasimport">
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" style="legacy"/>
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" style="legacy1"/>
+</flpatch:modifications>
+    
