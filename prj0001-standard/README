@@ -8,7 +8,7 @@ ext0020-co_renumasiento - Renumeración automática de asientos
 ext0022-diaspagoprov - Establecimiento de determinados días del mes como días de pago para un proveedor
 ext0048-listadoscliprov - Listados de clientes y proveedores
 ext0125-cambio_empresa - Cambio de empresa sin salir de la aplicación
-ext0157-co_traspasoejer - Traspaso de movimientos contables entre dos subcuentas
 ext0224-pgc2008 - Adaptaciones al nuevo plan general contable 2008
+ext0272-co_traspasoejer - Traspaso de movimientos contables entre dos subcuentas
 ext0308-multilinea - Descripción de texto largo multilínea en los artículos
 ext0599-iva_periodos - Distintos % de iva para un determinado tipo de impuesto
