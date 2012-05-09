@@ -22,4 +22,9 @@
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd"/>
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd"/>
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd"/>
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs" style="legacy"/>
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" style="legacy"/>
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" style="legacy"/>
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs" style="legacy"/>
+
 </flpatch:modifications>
