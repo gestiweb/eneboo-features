@@ -1,0 +1,71 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,Form1]/vbox[vbox,1]/widget[QTabWidget,twDatosGenerales]/widget[QWidget,modelo347]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>TabModelo303</cstring>
+      </property>
+      <attribute name="title">
+        <string>Modelo 303</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxMod303</cstring>
+          </property>
+          <property name="title">
+            <string/>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbPorcentajes123</cstring>
+              </property>
+              <property name="fieldName">
+                <string>porcentajes123</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbPorcentajes456</cstring>
+              </property>
+              <property name="fieldName">
+                <string>porcentajes456</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbPorcentajes789</cstring>
+              </property>
+              <property name="fieldName">
+                <string>porcentajes789</string>
+              </property>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacerMod303</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Vertical</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>51</width>
+                  <height>161</height>
+                </size>
+              </property>
+            </spacer>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

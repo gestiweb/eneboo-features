@@ -1,0 +1,4 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[descripcion]/null[null,1]/text()[1]">ture</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[descripcion]/length[length,1]/text()[1]">100</xupdate:update>
+</xupdate:modifications>

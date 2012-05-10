@@ -1,0 +1,121 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_partidas]/vbox[vbox,1]/widget[QTabWidget,tbwPartida]/widget[QWidget,divisa]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>modelo303</cstring>
+      </property>
+      <attribute name="title">
+        <string>Modelo &amp;303</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxModelo303</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <italic>1</italic>
+            </font>
+          </property>
+          <property name="title">
+            <string/>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbCasilla303</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>109</width>
+                  <height>26</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>200</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>casilla303</string>
+              </property>
+              <property name="foreignField">
+                <string>casilla303</string>
+              </property>
+              <property name="fieldRelation">
+                <string>idsubcuenta</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbDesCasilla303</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>28</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>descripcion</string>
+              </property>
+              <property name="tableName">
+                <string>co_casillas303</string>
+              </property>
+              <property name="foreignField">
+                <string>casilla303</string>
+              </property>
+              <property name="fieldRelation">
+                <string>casilla303</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+          </hbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

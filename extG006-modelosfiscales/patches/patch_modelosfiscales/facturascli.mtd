@@ -1,0 +1,24 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[nombrecliente]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Nombre cliente")</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[coddir]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Dirección")</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idpagodevol]">
+    <field>
+      <name>excluir303</name>
+      <!--Indica si la factura no se incluirá en el modelo 303-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Excluir de modelo 303")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[hora]">
+    <field>
+      <name>nomodelo347</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Excluir de 347")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

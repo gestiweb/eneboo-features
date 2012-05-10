@@ -1,0 +1,46 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="patch_modelosfiscales">
+  <flpatch:patchXml path="contabilidad/informes/forms/" name="co_i_master.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/modelos/" name="flcontmode.xml" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/modelos/forms/" name="co_datosfiscales.ui" style="legacy1"/>
+  <flpatch:addFile path="contabilidad/modelos/forms/" name="co_masterpartidas303.ui"/>
+  <flpatch:addFile path="contabilidad/modelos/forms/" name="co_modelo303.ui"/>
+  <flpatch:patchXml path="contabilidad/modelos/forms/" name="flcontmode.ui" style="legacy1"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_mastermodelo303.qs"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_masterpartidas303.qs"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_modelo303.qs"/>
+  <flpatch:patchScript path="contabilidad/modelos/scripts/" name="flcontmode.qs" style="legacy"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_casillas303.mtd"/>
+  <flpatch:patchXml path="contabilidad/modelos/tables/" name="co_claveoperacion.mtd" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/modelos/tables/" name="co_datosfiscales.mtd" style="legacy1"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_modelo303.mtd"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_tipodec303.mtd"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_asientos.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_masterasientos.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_masterregiva.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_mastersubcuentas.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_partidas.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_planpartidas.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_subcuentas.ui" style="legacy1"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_asientos.qs" style="legacy"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_mastersubcuentas.qs" style="legacy"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_partidas.qs" style="legacy"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_subcuentas.qs" style="legacy"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_asientos.mtd" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidasmayor.mtd" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="ejercicios.qs" style="legacy"/>
+</flpatch:modifications>

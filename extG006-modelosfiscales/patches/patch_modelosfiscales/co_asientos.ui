@@ -1,0 +1,100 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_asientos]/vbox[vbox,1]/widget[QTabWidget,tbwAsiento]/widget[QWidget,asiento]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>modelos</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Modelos</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>groupBox4</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="title">
+            <string/>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QGroupBox">
+              <property name="name">
+                <cstring>gbxModelo347</cstring>
+              </property>
+              <property name="font">
+                <font/>
+              </property>
+              <property name="title">
+                <string>347</string>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbNoModelo347</cstring>
+                  </property>
+                  <property name="font">
+                    <font/>
+                  </property>
+                  <property name="acceptDrops">
+                    <bool>false</bool>
+                  </property>
+                  <property name="fieldName">
+                    <string>nomodelo347</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacer347</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>61</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacerModelos</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Vertical</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>20</width>
+                  <height>51</height>
+                </size>
+              </property>
+            </spacer>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

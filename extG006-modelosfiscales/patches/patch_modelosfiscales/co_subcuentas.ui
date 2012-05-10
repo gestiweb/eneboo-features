@@ -1,0 +1,144 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_subcuentas]/vbox[vbox,1]/widget[QGroupBox,groupBox4_2_2_2]/vbox[vbox,1]/widget[QLayoutWidget,layout18]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">110</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_subcuentas]/vbox[vbox,1]/widget[QGroupBox,groupBox4_2_2_2]/vbox[vbox,1]/widget[QLayoutWidget,layout18]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_subcuentas]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,otrosdatos]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>modelos</cstring>
+      </property>
+      <attribute name="title">
+        <string>Mo&amp;delos</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxModelos</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="title">
+            <string/>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layoutCasilla303</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbCasilla303</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>0</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>131</width>
+                      <height>26</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>200</width>
+                      <height>32767</height>
+                    </size>
+                  </property>
+                  <property name="font">
+                    <font/>
+                  </property>
+                  <property name="fieldName">
+                    <string>casilla303</string>
+                  </property>
+                  <property name="foreignField">
+                    <string/>
+                  </property>
+                  <property name="fieldRelation">
+                    <string/>
+                  </property>
+                </widget>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDesCasilla303</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>0</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>35</width>
+                      <height>26</height>
+                    </size>
+                  </property>
+                  <property name="font">
+                    <font/>
+                  </property>
+                  <property name="fieldName">
+                    <string>descripcion</string>
+                  </property>
+                  <property name="tableName">
+                    <string>co_casillas303</string>
+                  </property>
+                  <property name="foreignField">
+                    <string>casilla303</string>
+                  </property>
+                  <property name="fieldRelation">
+                    <string>casilla303</string>
+                  </property>
+                  <property name="showAlias">
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </hbox>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacerVModelos</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Vertical</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>20</width>
+                  <height>190</height>
+                </size>
+              </property>
+            </spacer>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

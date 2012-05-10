@@ -1,0 +1,102 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:append-first select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]">
+    <action name="co_modelo340"/>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo340]"/>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo390]">
+    <action name="co_modelo303"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/x[x,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">108</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[acceptDrops]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[frameShape]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[frameShape]">
+    <property name="geometry">
+      <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>77</width>
+        <height>29</height>
+      </rect>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]">
+    <property name="acceptDrops">
+      <bool>true</bool>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[acceptDrops]">
+    <property name="frameShape">
+      <enum>ToolBarPanel</enum>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,1]">
+    <action name="co_modelo340"/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo340]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo349]">
+    <action name="co_modelo303"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_datosfiscales]">
+    <action>
+      <property name="name">
+        <cstring>co_modelo340</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>modelo340image30950</iconset>
+      </property>
+      <property name="text">
+        <string>Modelo 340</string>
+      </property>
+      <property name="menuText">
+        <string>Modelo 340</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[co_modelo340]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_modelo390]">
+    <action>
+      <property name="name">
+        <cstring>co_modelo303</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>modelo303image6545</iconset>
+      </property>
+      <property name="text">
+        <string>Modelo 303</string>
+      </property>
+      <property name="menuText">
+        <string>Modelo 303</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="modelo340image30950">
+      <data format="PNG" length="1574">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005ed49444154789cc59741681cd719c77f2a1378036b980105668a02fbc0868e480e6b12b01614aa6d7d90840f92e9c1113e543e2a39b411393984521f2d72a9e821581713190a591f5cafa029db8313ad21612760e33958740416cc401666c08279e007dbc3ecce7abdbb52dc14fac1b2bb6fde7bfffffbcffffbe69ba96eb7cbff338c3163ddec7986d26a78540f5628a548e208599698b63df573084cbdaa40f63ceb36fed9c03beb010c1111864001c280f4b14f236bc01989275c2a5685d977abf006af456844813ea02ccb0933f23966c9a676e0d2dc6bb05bfe0a5fee231ed699eb2c746bbfad619e317f12915f8c1dd5901ea728a5504ae5f2ebc1353408c0711c962eadb2fed8a3ed4744c709bee3f3e90f9bdcbf77bf0b9c6ab0f104fa618cfe3685891002214471c9fedd1a1b471e811f10a63e96e172e8f85cff7a93277efb4422271320bfef05b8610ebe8d9c0c06644a212e2eb174e4110609c1914fa452e6f40275d5a0b9777fe2fe6309a8176a64cc344c7883e2238c81021819007246f6d6431887d4a95355926cc6efdf9291189786a7c514af486a629290c18c8ba900a5501ad228e686be859c57d822c27d6077cfcf5787ccf9df10981c86a09c9a0464a0c13b92cc46293c80c455d4ad06f2575ed77e73503b7e3681bc362884019882f3070e5505ead7e711650761821036659d71f834a0f94d93cb2b97079c5f136f48bebe4185e81955817369150c137a2af48d2a0c9b43c3244d527841b75fb02613d013af14d48510d8259b8404a17ba959946c317edd2bfbbeae025d7a2a98868932544ec2b04143a6b31190a294ebf1682713d0a050840721c1a380e02020e9245d007bdac63bebe1791ef2acccaba3ce1518025583ff628c2a130928ad50a9a2b1d7203b0af1deaeb0bab28a3bed2284203d4e898e229a0f9ad88f6c961697b04a5651ba9506b4ca1134a34fd7d3082469427daf8e7cc765a3b24a66405cb251e41b3b8e839492ea7c95e6bf9a7c79fb4bd6aeac214a3d1fbcac821e1c6a2281e479d6fdf0b35dea7b6d009c699f6b573de4258f27a1421e8028652004c161c2f2fa0deeef6c509b9ba5b650431882dfac6f111ee53e701c9b6b2b1596e6650e3cc1d44529defaa249b315f0eddf36f9f3ef254ac3eedd041eb9c496c03722f6bf6eb0fdd76dae7db2d353292d368a8e055127e3e61f6afcfb1fd799952e5bb75b85024aabb11e2808dcf8e3f254d4ba3925672cc2c3905a45121e86103b44df081aad80d8804859c5e256cb27f93101c00f22bcb24b761ca2b4627dc5431d67044fa34281714a8c7d18c5694a1046d4e666716652d230c02ab958d392fa8398b545af98bbff703f27f0f810295de238265319ae959fd63f8c8753749202fdd8bebd4fc3b7883a8a850b656c0ba24e807ccbe1d6df03aae704a80800ab24f07d9f2449887e4c1006249d04a5d4a05fe8839fe6817e6c5ca9b2f44eccc6d5053efdbc41fb71843004c1d394f059cadcdbd6d0fca26b7a393483b1973cf09308405e62afad9c072008532aef55d8be1b70f9a247a5e2217b0d6bd449b0a62b24b1c03a03ea383fb9528a28cdbd91697562168cad0356c922380806a7c4264d33b6efb4d9be3398b7732f64fd8a4bdc11b88ec7beefb33667a3b4228ef20c918e952b30a6c91922b0bcbedd0d9f457cbbfb31ee8ccbd6174d2ccbe4f26205f9964ded5d8ffdeff7f1bff38952c5ce5ec2cd8f66f1aeba10877865497daf09621634341e860801d21539f8690afce54f1ff0e167bbfcf2fdeb0038d3261f5fc9c101ec376d961797a95ea8121c44ecec6d53d6164e07e27331e28710c731d9baf384ad3b4f10023eb8280bf0fe6d78351b465e4c9224e9d6efd6b16c8b56abc5c2c202cb8bcbf9c5177989ee1bcfe944985a71eb599bf6c390ea852ac214c392bf04ae9422d3199b1f6d32b91fe84965976ce6de9bc3ffcea7d56a519baf21cfcadc643a37593b08f0bf6f83659f0a3e29c63f8c3484cf42d0e03a2e5127a271ef2ba2342dd24b942cdc92c0294bec697be8256628e54e696c46088852de5e457134346e392e96e38e6ca0b41a997b5278e7bca1ff231ea0d77267cfc797ceff4598674ce87556ff01bf00eb9687b744750000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[modelo340image30950]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[modelo390image29024]">
+    <image name="modelo303image6545">
+      <data format="PNG" length="1584">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005f749444154789cc5974f681bd91dc73f2eb3f0061498812ccc140734e0854c68a03209ac555cd6021fac90436c7cd88614ba2e3dd4dbcbc6b766590aa18565d33db4e9a5a485a6f1a125dac312199aa21cbc6b05b6680a0a9e434cc7b0829983600662980779a01e461a45966437dd427f2034f3fefdbef37ddfdfeffdde4cafd7e3ff69da84b65efa22452a39daaa8633a494c451885374d04d73e69b009839ce40fa22edd5ff5ec79d73014680084d2001a141f2cca39ed6e18c832b6c4a46890b97caf006af05688c818143a7e84c19918dd10b2695039bc64e9dede2433c670ff1b4462959ea55dfa9a09fd1ff2320df9ad8aa20394a905222a5cce857c33e1408c0b22caa575779ef994bcb0b098f62fcb31e1ffe738b479f3fea01a70a6c32808169e3cfbad011422084c8bbccf5eb6c765c7ccf27483c0ccde6d0f2b8f5788b7daf752290930190ed7bee5cd387ff5a06060d522911cb55aa1d97c08ff13b1ea14c58504bd4649dc6e3c6d4f52702902fe5589baee9f006f94f684306d052009c59a73f1f8228a0468db27448ad3d1ad9968cd9a4303ccd663846a98e4e4c0ab336ba04a4442a48c288dbea1ecea2c41421c6aed99b5f2c8f88f3bf0130dd344131d1f1494181db71b81026b00bb12da919759cf36ecf7c73983bbe31802c37488406e882f9038bb204f9ce3ca268217410c2a4a8520e9ffb34be68b0766d6d88f935fd8dd03710a8107da14ab0aeae82a6439f854cac203493434d27891378496f90b0a60350537b72e84208cc82494c8c50fdd0cc53b6983cefd8baafcb408f3e0bbaa623359981d04c5090aa74cc499ecad5646f27035020910407017edbc73ff089bb710fc03c6be2ceb9b8ae8b33e764d951650c8c3895c377318195a900a492c84452dfa9937602dcef9458bdb68a7dd646084172941076421abb0dccb64975a58a5130f2d42d15a064e641317eba9e06204e626a3b359c8b369ba555520da28289245bd8b22c1cc7a1bc58a6f1a4c183fb0fb8feee7544a1af83575950c38f9a0a207e91f6deff689bda4e0b00cbf0d8f8918b73d5653f903807b0f1e9039aed100067d6e4e64faa6cac97a92c554815acfdf42ede410c803b67f3c907550ca3ef788aa8f3547ce7f70d1abb3e5ffe658b9fdfb001d8fe2c86b64d6408eeb47dbce721ab8b3a37d74d2c5370ebe35abe50b39de27762fefccb2afffadb2d00b63eaee50c4825276a200770fb832b33e1579fcc38b3066127a45c72080e03882cc22f04f5a701f6599dd595054aa512e5ef9a2447298dddfdc17c1efdee3a41e02395a4b2e0e01fc69996941cea404d01f0aa4549821f8454162e60cd2624814f128373ceca8fe2925b04e0e1e327d9a497d9611445117137a6b1eb53b9ece40ce4213a8d8181ddbdbf47dd3308bb92a5b78b9806845d9fac04210bc7b6cfa01c880e43e238264e628410ecb563bef7c37b845d897bde442a99393f4d0303db7cb74cf562c4e68d053efcb44eeb5978ece81d1d2f9179e52495c4b5e1cb3f6db0baec72f77e8b563b3c310c276e8110828d6be5ec8b8384d2e5122041495cd7c5bde8228fb2058d82431c09a49484518810d9f3da72561bf887c9895130310f180503ffc0cfdfcb97cab8e73c5a41923bf6da59bf7ba948d41588230bfff93ea6d1a75d0ef63ca37f529133c2c095f7eef62e2cdfea01d8b33677fe58c728e8acad9430df34a9ae9489a294fa130fcff3f0da1221a0bcae433160ebd77f60eb3775dcf32ea94ca9370f1102e6cfdb99f3d318f8ed2f7ec0fb1f6df3edef67316c193a376f9470ce99006cac57a8edf86c3fd9efb3a473fbda3c5617a2b7222acb10fe55e7c7bfda03b244b5b93e8f516024048f47c3d8c5248ee35eedb31a8669d06c36595a5ae2caca95acf36596a207a2b3ba21ba92dcfbba45eb6940f9ed324217a394bfe25cca2c22b67eb6c5f47aa04f95593059b8bc80f79547b3d9a4b258c199733291294998c4b47c1fef1f2d30cc539d4fb3c9879182e0eb0014d8964dd80da97ffe9030c92e2b00a26060170456d1c1b6ec914bcc48c89d52d88c011085acbc0aa370a4ddb06c0ccb1e5b402a49d0094ef6f28ab96fb923ef631aa05f72a72f26a7ceff85e96774e85756ff069149e6cdc10579450000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_datosfiscales,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>co_modelo340</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[co_modelo340,activated(),FLWidgetApplication,openDefaultForm()]"/>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_modelo390,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>co_modelo303</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>
