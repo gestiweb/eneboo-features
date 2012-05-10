@@ -1,0 +1,17 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codigo]">
+    <field>
+      <name>codzona</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Zona")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>20</length>
+      <relation>
+        <table>zonasventa</table>
+        <field>codzona</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

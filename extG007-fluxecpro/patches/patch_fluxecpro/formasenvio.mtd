@@ -1,0 +1,26 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codenvio]/relation[pedidoscli,codenvio]">
+    <relation>
+      <table>zonasformasenvio</table>
+      <field>codenvio</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codenvio]/relation[zonasformasenvio,codenvio]">
+    <relation>
+      <table>costesenvio</table>
+      <field>codenvio</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
+    <field>
+      <name>controlporzonas</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Control por zonas")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

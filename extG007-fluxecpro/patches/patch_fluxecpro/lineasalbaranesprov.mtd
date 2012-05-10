@@ -1,0 +1,3 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[pvpsindto]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Importe")</xupdate:update>
+</xupdate:modifications>

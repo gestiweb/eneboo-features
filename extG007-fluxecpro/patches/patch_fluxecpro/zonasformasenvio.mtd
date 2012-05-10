@@ -1,0 +1,68 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>zonasformasenvio</name>
+	<!-- Listado de zonas geográficas de venta -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Formas de envio por zona")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Identificador interno del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+        <name>codzona</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Zona")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <ck>true</ck>
+        <type>string</type>
+        <length>20</length>
+        <relation>
+            <table>zonasventa</table>
+            <field>codzona</field>
+            <card>M1</card>
+        </relation>
+    </field>
+
+	<field>
+		<name>pvp</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Precio general")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+
+	<field>
+		<name>codenvio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","F. Envio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+        <ck>true</ck>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>formasenvio</table>
+			<field>codenvio</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

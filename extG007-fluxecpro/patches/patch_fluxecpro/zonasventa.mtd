@@ -1,0 +1,60 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>zonasventa</name>
+	<!-- Listado de zonas geográficas de venta -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Zonas de venta")</alias>
+
+    <field>
+        <name>codzona</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>string</type>
+        <length>10</length>
+        <relation>
+            <table>paises</table>
+            <field>codzona</field>
+            <card>1M</card>
+        </relation>
+        <relation>
+            <table>provincias</table>
+            <field>codzona</field>
+            <card>1M</card>
+        </relation>
+        <relation>
+            <table>zonasformasenvio</table>
+            <field>codzona</field>
+            <card>1M</card>
+        </relation>
+        <relation>
+            <table>zonasformaspago</table>
+            <field>codzona</field>
+            <card>1M</card>
+        </relation>
+        <relation>
+            <table>costesenvio</table>
+            <field>codzona</field>
+            <card>1M</card>
+        </relation>
+    </field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>200</length>
+		<visible>true</visible>
+	</field>
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

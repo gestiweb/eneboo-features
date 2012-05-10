@@ -1,0 +1,50 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout130]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">38</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout130]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout130]/hbox[hbox,1]/spacer[spacer144]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">16</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout130]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">38</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout130]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout130]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbSimbolo</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>150</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="fieldName">
+        <string>simbolo</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QLayoutWidget,layout5]/vbox[vbox,1]/widget[FLFieldDB,fdbCodIso]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QLayoutWidget,layout5]/vbox[vbox,1]/widget[FLFieldDB,fdbCodIso]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QLayoutWidget,layout5]/vbox[vbox,1]/widget[FLFieldDB,fdbTasaConv]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QLayoutWidget,layout5]/vbox[vbox,1]/widget[FLFieldDB,fdbTasaConv]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QLayoutWidget,layout5]/vbox[vbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QLayoutWidget,layout5]/vbox[vbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbBandera]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formDivisas]/vbox[vbox,1]/widget[QFrame,frame78]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbBandera]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

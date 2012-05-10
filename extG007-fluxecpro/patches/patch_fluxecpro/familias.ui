@@ -1,0 +1,303 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">685</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">504</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/property[frameShadow]">
+    <hbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="QLayoutWidget">
+        <property name="name">
+          <cstring>layout1</cstring>
+        </property>
+        <hbox>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <widget class="FLFieldDB">
+            <property name="name">
+              <cstring>fdbCodFamilia</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>107</width>
+                <height>22</height>
+              </size>
+            </property>
+            <property name="maximumSize">
+              <size>
+                <width>150</width>
+                <height>32767</height>
+              </size>
+            </property>
+            <property name="fieldName">
+              <string>codfamilia</string>
+            </property>
+          </widget>
+          <spacer>
+            <property name="name">
+              <cstring>spacer119</cstring>
+            </property>
+            <property name="orientation">
+              <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+              <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+              <size>
+                <width>16</width>
+                <height>20</height>
+              </size>
+            </property>
+          </spacer>
+          <widget class="FLFieldDB">
+            <property name="name">
+              <cstring>fdbDescripcion</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>113</width>
+                <height>22</height>
+              </size>
+            </property>
+            <property name="fieldName">
+              <string>descripcion</string>
+            </property>
+          </widget>
+        </hbox>
+      </widget>
+      <widget class="QPushButton">
+        <property name="name">
+          <cstring>pbnTradDescripcion</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>25</width>
+            <height>25</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>25</width>
+            <height>25</height>
+          </size>
+        </property>
+        <property name="text">
+          <string/>
+        </property>
+        <property name="iconSet">
+          <iconset>traduccionesimage18471</iconset>
+        </property>
+        <property name="toolTip" stdset="0">
+          <string>Traducciones</string>
+        </property>
+      </widget>
+    </hbox>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutFamiliaMadre]/hbox[hbox,1]/widget[FLFieldDB,fdbCodMadre]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">106</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutFamiliaMadre]/hbox[hbox,1]/widget[FLFieldDB,fdbCodMadre]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutFamiliaMadre]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcionMadre]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutFamiliaMadre]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcionMadre]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">21</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout4]/hbox[hbox,1]/widget[FLFieldDB,fdbCodGrupoAtr]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">118</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout4]/hbox[hbox,1]/widget[FLFieldDB,fdbCodGrupoAtr]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout4]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcionGrupoAtr]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout4]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcionGrupoAtr]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">21</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbPublico]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">89</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbPublico]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout9]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout9_2</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDescripcionDeepLink</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>29</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>descripciondeeplink</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacer8_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>51</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout9_2]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout9_2</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDescripcionDeepLink</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>172</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>descripciondeeplink</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacer8_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>51</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QTabWidget,tbwArticulos]/widget[QWidget,tab]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>familiashijas</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Familias hijas</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLTableDB">
+          <property name="name">
+            <cstring>tdbFamiliasHijas</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>7</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>220</width>
+              <height>0</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="tableName">
+            <string>familias</string>
+          </property>
+          <property name="foreignField">
+            <string>codfamilia</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codmadre</string>
+          </property>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QTabWidget,tabWidget2]"/>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="traduccionesimage18471">
+      <data format="PNG" length="1179">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000046249444154789c9d94614c955518c77fe005dfbbe17a5917bbe835efddd07cdb34409b5db3169a4d996b0d572d9c1fbada96501f4cfde0ccfce06c73c8cac43536c82d45a736db92fcc0bcb86180b3d042f0367270070c6e06dc3bc0975740ff7db869cea4b4ff7676cece767ee779cef93f4f0a8f21edc24d0633f33fa3a7ca8b2b924176d1f3fee7eaafc68a9c9833bae93adb120e0e80eb9180db31c63cac62944d1f9fe142f8256b22919bb772bddf2a184bc3ed6e2eff766d9bb31bb8f54811da3b48551d793ac029d51863da9e37aa4b8d036a0d4b9274cd56cb6aff39037c8f9c767b25d355c9fb7de5469f0e0465375448e392ba5b92d08e46694761cc6fb0f491a1aa649d6a38a143d62d75b6481db6346e4b1d61c9b6a5d65aa9a35d65cbcd3aaf41fac318d31edc682c273827d53811cf7c6bb1fbcdea690c4460561644cfc2ac45d05907663ef1533b58b938f074f613fd6aea701a4727b93365a455ef91a593e6cffa2e248df749ddb6343e245dab90865b92f38d16a9ae4caadc29b55649dd47274a96b0fa4156eadd45d972666cf4783f8d67142e62b9056dd5605c81581358a5d07b167c16f49e066f82fe583d2c0c80ebcab44c2f4b006a7348dd934b46d91232521a7349e99fc7a275ef587bc8285e83afd445ac1a160420da0cbe20b80a213b06bfed07df32f8a1091291e44546f6e48ad7776dfa7e83773062586fe77b02f3371efcea6bc29bd9ad26eb77b516cbbed4a2ad1f6e952e87a58662a93324d5174bc38dd2d05169bc48ea2c926e144b870aa4d60285779983f696e045bba9c2d1b8adaa0d56a3d7606e6ac0838bc9ae99f84ddc9e6af6ef2b06b306fc79108d81d7825f4f43a605037108c421d10f563e1c6e66458e65badf2d5deace2d9ecef10f466ace77ed8b3974a7f833985ebf99b2c00636b3d074d103ccc986f380d780eb406e108c286475413c0e990e7c9180012fac2a850506f43ac40f1fbb38eb60648d03095774945beb0eb3239c4b7aa68710738c34e211f0006d408e1fda9a614d04261cc8047a8080019399e0b7a0b71972825427e2971d18b9e78a2b03dc7cb194edfdc7139f8ff53086cb0b5120c78068027c5792d0b4bf2ce402fe0018bb8dab19f20ac1696685690c42d2cff7ec164930b26c379f741d8feda46dbdcd2b618805c0ebc0247f43017e32619ef7ceb633d1230cd40f327116b242443c811940ca438bc480692a2f38a2ce2ac96e97ea0b24f925911c0d86d45da8f6bd667fd0c7b325cb59ab267f87864aa4cba17a6f06ee292b30f48269a9b3cad6b59dd2706dd2760a4bdd21c9ae951a82771ab7700048375da4e479995dfb86ffa3b2cd79c776e61873a7047ff3aa91de5e93f78bec90d41192860ba5cb4592f648d78aeed8bb8c16bfc9fc871c4de7df7abc6592a2d3a1bdea2b9254217517aaafdc6cd03e2e0e557221e863d5946ff95f2a596bce566b418386b7de964a143e649d2469360ff77dfa54fa47dbbcab1f3b9c91ab579d732f3ff95ada8ca1d85386065ce5a7625f023701fdaf68ef97699066f9cdb95e0fcff018e9ff0944823c3027c647910000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage4]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage3]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage2]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage1]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage0]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEdit,clicked(),tdbArticulos,editRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDelete,clicked(),tdbArticulos,deleteRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsert,clicked(),tdbArticulos,insertRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tdbArticulos,browseRecord()]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]">
+    <customwidgets/>
+  </xupdate:insert-after>
+</xupdate:modifications>

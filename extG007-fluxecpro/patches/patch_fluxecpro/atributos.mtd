@@ -1,0 +1,10 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[codgrupo]/relation[gruposartibutos,codgrupo]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codgrupo]/length[length,1]">
+    <relation>
+      <table>gruposatributos</table>
+      <field>codgrupo</field>
+      <card>M1</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>

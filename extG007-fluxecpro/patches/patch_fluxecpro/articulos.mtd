@@ -1,0 +1,129 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[formasenvio,referencia]">
+    <relation>
+      <table>articuloscomp</table>
+      <field>refcompuesto</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[articuloscomp,refcompuesto]">
+    <relation>
+      <table>articuloscomp</table>
+      <field>refcomponente</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineastransstock,referencia]">
+    <relation>
+      <table>transferenciastock</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[transferenciastock,referencia]">
+    <relation>
+      <table>tiposopcionartcomp</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[referencia]/relation[articuloscomp,refcompuesto]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[referencia]/relation[articuloscomp,refcomponente]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[referencia]/relation[tiposopcionartcomp,referencia]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[referencia]/relation[transferenciastock,referencia]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[codsubcuentaven]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[idsubcuentaven]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[enportada]">
+    <field>
+      <name>superenportada</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Destacado en portada")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipoimagen]">
+    <field>
+      <name>nomfichero</name>
+      <!-- Fichero de la imagen -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Imagen")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>20</length>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nomfichero]">
+    <field>
+      <name>peso</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Peso (gr)")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[modificado]">
+    <field>
+      <name>codunidad</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Unidad")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>pesosmedidas</table>
+        <field>codunidad</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codunidad]">
+    <field>
+      <name>codsubcuentaven</name>
+      <!-- Código de la subcuenta de contabilidad asociada a la subcuenta de ventas-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta de ventas")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuentaven]">
+    <field>
+      <name>idsubcuentaven</name>
+      <!-- Identificador interno de la subcuenta -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_subcuentas</table>
+        <field>idsubcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
+    <field>
+      <name>descripciondeeplink</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripción Deep Link")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>100</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descripciondeeplink]">
+    <field>
+      <name>descripcionseo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[aref]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[codunidad]"/>
+</xupdate:modifications>

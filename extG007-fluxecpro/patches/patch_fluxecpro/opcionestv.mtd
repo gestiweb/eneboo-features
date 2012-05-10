@@ -1,0 +1,139 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[emailfrom]/length[length,1]">
+    <default>john@doe.com</default>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nombrefrom]/length[length,1]">
+    <default>john doe</default>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[emailcontacto]/length[length,1]">
+    <default>john@doe.com</default>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[emailwebmaster]/length[length,1]">
+    <default>john@doe.com</default>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[modificado]">
+    <field>
+      <name>codejercicio</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio para los pedidos")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>4</length>
+      <relation>
+        <table>ejercicios</table>
+        <field>codejercicio</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]">
+    <field>
+      <name>enviaraunamigo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Habilitar Recomendar Artículo a un amigo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[enviaraunamigo]">
+    <field>
+      <name>enviarcomentario</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Habilitar Enviar un Comentario de artículo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[enviarcomentario]">
+    <field>
+      <name>activarcoddescuento</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activar códigos de descuento")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[activarcoddescuento]">
+    <field>
+      <name>managerpass</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Password de administrador on-line")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>200</length>
+      <editable>false</editable>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[managerpass]">
+    <field>
+      <name>tituloseo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Titulo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>250</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tituloseo]">
+    <field>
+      <name>descripcionseo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descripcionseo]">
+    <field>
+      <name>deeplinking</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","URLs optimizadas")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[deeplinking]">
+    <field>
+      <name>codigoanalytics</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Código Google Analytics")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>25</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codigoanalytics]">
+    <field>
+      <name>validarcontactar</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Usar código de validación en página de Contactar")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[validarcontactar]">
+    <field>
+      <name>validarcrearcuenta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Usar código de validación en página de Crear Cuenta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[validarcrearcuenta]">
+    <field>
+      <name>compartirarticulos</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activar botón Compartir en artículos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">831</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">85</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[foreignField]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[fieldRelation]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIvaIncluido]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">124</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIvaIncluido]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitarioIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">147</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitarioIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/spacer[spacer20]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/property[title]/string[string,1]/text()[1]">Cantidad e IVA incluido</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]"/>
+</xupdate:modifications>

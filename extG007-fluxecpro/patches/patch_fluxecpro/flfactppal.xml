@@ -1,0 +1,27 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[contactos]/scriptform[scriptform,1]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[editcontacto]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[insertcontacto]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]">
+    <action>
+      <name>traducciones</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Traducciones")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>traducciones</table>
+      <form>mastertraducciones</form>
+      <formrecord>traducciones</formrecord>
+      <scriptform>mastertraducciones</scriptform>
+      <scriptformrecord>traducciones</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[traducciones]">
+    <action>
+      <name>idiomas</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","idiomas")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>idiomas</table>
+      <form>master</form>
+      <formrecord>idiomas</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

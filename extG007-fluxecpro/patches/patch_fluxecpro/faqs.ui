@@ -1,0 +1,37 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">675</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">539</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout7]/hbox[hbox,1]/widget[FLFieldDB,fdbPublico]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">82</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout7]/hbox[hbox,1]/widget[FLFieldDB,fdbPublico]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout7]/hbox[hbox,1]/widget[FLFieldDB,fdbOrden]/property[minimumSize]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout7]/hbox[hbox,1]/widget[FLFieldDB,fdbOrden]/property[maximumSize]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout7]/hbox[hbox,1]/widget[FLFieldDB,fdbOrden]/property[fieldName]">
+    <property name="showEditor">
+      <bool>true</bool>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbPregunra]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">91</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbPregunra]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QPushButton,pbnTradPregunta]/property[pixmap]/pixmap[pixmap,1]/text()[1]">image43868</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QGroupBox,gbxFormaPago_2]/hbox[hbox,1]/widget[FLFieldDB,fdbRespuesta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">40</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QGroupBox,gbxFormaPago_2]/hbox[hbox,1]/widget[FLFieldDB,fdbRespuesta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFAQs]/vbox[vbox,1]/widget[QGroupBox,gbxFormaPago_2]/hbox[hbox,1]/widget[QLayoutWidget,layout22]/vbox[vbox,1]/widget[QPushButton,pbnTradRespuesta]/property[pixmap]/pixmap[pixmap,1]/text()[1]">image43868</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image0]"/>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="image43868">
+      <data format="PNG" length="665">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000026049444154789c95925d48537118c61fe7a2a32d3890c419ac388319d8c7c5765382178e6ef2308256235c793389c8bed04116b38bb202932ebc10a226211d2fb2f24244a850c27261d10c962ecc3ab2e4b82474548cc3d49e2e243bc84cfa5dbdfc797fef1f9ef72dc4fa140358024051802be812abb1686c4f1bf8b09e688d54e2f4a3009e442ae596be2b752f39a42eb51e909f0bc0b67f9a5e172ac62e0b23ec52c8984aea6f4966a9d6fbdf0010d714451bb6444fe04eb6d3bbc07894d4c7c8d400991a26fb5be977e0da6aa7d0545bd45a3c38561ba9deb0e7bc05c545c05c028001a4d3803685837ef75eedd3473da11ba32bd29f22b40f0d876b423ed8ec8091040411b001584c0298c7fc4f0d453ecf46a5ca7ed4f4e9a6424980b331205d3d73ae313238e329d8b97906c88c02580244076099047e7d41d137000b1abbefbd7a512a3b76444f296dd393099ba52980f6a636fb59c1611438ed0090049001a607016b06b0268192342068d09ef533784839d2d1fbf8e68c61d8faa77017a280b2be168c332792df2572dc4df69691837e32e52773f2f27ba7c0ec753739a192f108bd2ee1a4394ca77a0b23a444c640f680ec96c85990049903d90ef2a942eacde444889288727388daf1307c1d0d1882d40c58654048ffddf82400ab946bbf1f8bc39e014a3d708aa279832bc8633de1af4ca964dc4bd24dce4ae4b8977d97a47700b6fa2b71437f1dcc847cf2c5bcc7d45a23dfa61e263f87c9541d998d92312fcb1d0898da4a25119ebc03ca1ca85a0e2fc88116e97d730d1e2abb519fb7790d0a940ae9c2dc44e4c7709737f13fe26a764925c27e98ae351fbf01080a227625195d550000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFAQs]">
+    <customwidgets>
+</customwidgets>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

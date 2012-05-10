@@ -1,0 +1,1140 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">725</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">597</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxSitioWeb]/vbox[vbox,1]/widget[QLayoutWidget,layoutDirWeb]/hbox[hbox,1]/widget[FLFieldDB,fdbRutaWeb]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxSitioWeb]/vbox[vbox,1]/widget[QLayoutWidget,layoutDirWeb]/hbox[hbox,1]/widget[FLFieldDB,fdbRutaWeb]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxSitioWeb]/vbox[vbox,1]/widget[QLayoutWidget,layoutDirWeb]/hbox[hbox,1]/widget[QPushButton,pbnCambiarDirWeb]/property[iconSet]/iconset[iconset,1]/text()[1]">image60846</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]/hbox[hbox,1]/widget[FLFieldDB,fdbAutoAccount]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]/hbox[hbox,1]/widget[FLFieldDB,fdbAutoAccount]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]/hbox[hbox,1]/widget[FLFieldDB,fdbActivarFAQ]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]/hbox[hbox,1]/widget[FLFieldDB,fdbActivarFAQ]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]/hbox[hbox,1]/spacer[spacerActivarFAQ]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]/hbox[hbox,1]/widget[FLFieldDB,fdbActivarFAQ]">
+    <spacer>
+      <property name="name">
+        <cstring>spacer24_2</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Fixed</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>31</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]/hbox[hbox,1]/spacer[spacer24_2]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbDeepLinking</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>0</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>deeplinking</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/spacer[spacer27]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">50</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ]">
+    <widget class="QButtonGroup">
+      <property name="name">
+        <cstring>gbxActivarFAQ_2</cstring>
+      </property>
+      <property name="font">
+        <font/>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbManagerpass</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>managerpass</string>
+          </property>
+        </widget>
+        <widget class="QPushButton">
+          <property name="name">
+            <cstring>pbnCambiarPassword</cstring>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>32767</width>
+              <height>23</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="text">
+            <string>Cambiar</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spcFluxec2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>21</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ_2]">
+    <widget class="QButtonGroup">
+      <property name="name">
+        <cstring>gbxActivarFAQ_2_2</cstring>
+      </property>
+      <property name="font">
+        <font/>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbManagerpass_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>codejercicio</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spcFluxec2_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>21</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabGeneral]/vbox[vbox,1]/widget[QButtonGroup,gbxActivarFAQ_2_2]">
+    <widget class="QButtonGroup">
+      <property name="name">
+        <cstring>gbxActivarFAQ_2_2_2</cstring>
+      </property>
+      <property name="font">
+        <font/>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodigoGA</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>codigoanalytics</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spcFluxec2_2_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>21</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layoutMostrarPlazoEnvio]/hbox[hbox,1]/spacer[spacerMostrarPlazoEnvio]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/spacer[spacerMostrar]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">16</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbArticulosXFila]/property[sizePolicy]/sizepolicy[sizepolicy,1]/hsizetype[hsizetype,1]/text()[1]">7</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbImagenesXFila]/property[sizePolicy]/sizepolicy[sizepolicy,1]/hsizetype[hsizetype,1]/text()[1]">7</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fbdVistaCatalogo]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/spacer[spacerVistaCatalogo]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layoutMostrarPlazoEnvio]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout21</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbEnviarAunAmigo</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>0</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>enviaraunamigo</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerVistaCatalogo_2_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Fixed</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>16</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbEnviarComentario</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>0</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>enviarcomentario</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerMostrarPlazoEnvio_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>169</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layoutPixImages]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxCatalogo]/vbox[vbox,1]/widget[QLayoutWidget,layout24]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout18</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fbdVistaCatalogo</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>vistacatalogo</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerVistaCatalogo</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Fixed</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>16</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbPixImages</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>piximages</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxImpuestos]/hbox[hbox,1]/widget[FLFieldDB,fdbImpIncluido]/property[sizePolicy]/sizepolicy[sizepolicy,1]/hsizetype[hsizetype,1]/text()[1]">7</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxImpuestos]/hbox[hbox,1]/widget[FLFieldDB,fdbDesglosarIVA]/property[sizePolicy]/sizepolicy[sizepolicy,1]/hsizetype[hsizetype,1]/text()[1]">7</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxImpuestos]/hbox[hbox,1]/spacer[spacerDesglosarIVA]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxImpuestos_2]/hbox[hbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabCatalogo]/vbox[vbox,1]/widget[QGroupBox,gbxImpuestos_2]/property[title]">
+    <vbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="QLayoutWidget">
+        <property name="name">
+          <cstring>layout54</cstring>
+        </property>
+        <hbox>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <widget class="FLFieldDB">
+            <property name="name">
+              <cstring>fdbTarifas</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>7</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="font">
+              <font>
+                <bold>0</bold>
+              </font>
+            </property>
+            <property name="fieldName">
+              <string>preciosportarifas</string>
+            </property>
+          </widget>
+          <spacer>
+            <property name="name">
+              <cstring>spacerImpIncluido_2</cstring>
+            </property>
+            <property name="orientation">
+              <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+              <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+              <size>
+                <width>20</width>
+                <height>20</height>
+              </size>
+            </property>
+          </spacer>
+          <widget class="FLFieldDB">
+            <property name="name">
+              <cstring>fdbPreciosSoloUsuarios</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>7</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="font">
+              <font>
+                <bold>0</bold>
+              </font>
+            </property>
+            <property name="fieldName">
+              <string>preciossolousuarios</string>
+            </property>
+          </widget>
+        </hbox>
+      </widget>
+      <widget class="QLayoutWidget">
+        <property name="name">
+          <cstring>layoutMostrarPlazoEnvio_2</cstring>
+        </property>
+        <hbox>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <widget class="FLFieldDB">
+            <property name="name">
+              <cstring>fdbActivarCodDescuento</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>0</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="font">
+              <font>
+                <bold>0</bold>
+              </font>
+            </property>
+            <property name="fieldName">
+              <string>activarcoddescuento</string>
+            </property>
+          </widget>
+          <spacer>
+            <property name="name">
+              <cstring>spacerMostrarPlazoEnvio_3</cstring>
+            </property>
+            <property name="orientation">
+              <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+              <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+              <size>
+                <width>25</width>
+                <height>20</height>
+              </size>
+            </property>
+          </spacer>
+        </hbox>
+      </widget>
+    </vbox>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabTextos]/vbox[vbox,1]/widget[QGroupBox,gbxTextoPre]/vbox[vbox,1]/widget[QLayoutWidget,layoutTextoPre]/hbox[hbox,1]/widget[QLayoutWidget,lytFluxec1]/vbox[vbox,1]/widget[QPushButton,pbnTradTextoPre]/property[pixmap]/pixmap[pixmap,1]/text()[1]">image19648</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabTextos]/vbox[vbox,1]/widget[QGroupBox,gbxTextoPie]/vbox[vbox,1]/widget[QLayoutWidget,layoutTextoPie]/hbox[hbox,1]/widget[QLayoutWidget,lytFluxec1Pie]/vbox[vbox,1]/widget[QPushButton,pbnTradTextoPie]/property[pixmap]/pixmap[pixmap,1]/text()[1]">image60655</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/attribute[attribute,1]/string[string,1]/text()[1]">&amp;Más</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutMostrarFactAlb]/hbox[hbox,1]/widget[FLFieldDB,fdbMostrarFacturas]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutMostrarFactAlb]/hbox[hbox,1]/widget[FLFieldDB,fdbMostrarFacturas]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutMostrarFactAlb]/hbox[hbox,1]/widget[FLFieldDB,fdbMostrarAlbaranes]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutMostrarFactAlb]/hbox[hbox,1]/widget[FLFieldDB,fdbMostrarAlbaranes]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/spacer[spacer19]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">310</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutMostrarFactAlb]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutSolicitarNif_2</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbValidarContactar</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>0</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>validarcontactar</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerSolicitarNif_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>158</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutSolicitarNif_2]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutSolicitarNif_2_2</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbValidarCrearCuenta</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>0</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>validarcrearcuenta</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerSolicitarNif_2_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>158</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]/vbox[vbox,1]/widget[QGroupBox,gbxFacturacion]/vbox[vbox,1]/widget[QLayoutWidget,layoutSolicitarNif_2_2]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutSolicitarNif_2_2_2</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCompartirArticulos</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>0</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>compartirarticulos</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerSolicitarNif_2_2_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>158</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabTextos]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>tabDatosContacto</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Datos de contacto</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxDatosContacto</cstring>
+          </property>
+          <property name="title">
+            <string/>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbNombreFrom</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>7</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>24</width>
+                  <height>23</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>nombrefrom</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbEmailFrom</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>7</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>24</width>
+                  <height>23</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>emailfrom</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbEmailContacto</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>7</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>24</width>
+                  <height>23</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>emailcontacto</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbEmailWebmaster</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>7</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>24</width>
+                  <height>23</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>emailwebmaster</string>
+              </property>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacerDatosContacto</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Vertical</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>20</width>
+                  <height>310</height>
+                </size>
+              </property>
+            </spacer>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabDatosContacto]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>tabBuscadores</cstring>
+      </property>
+      <attribute name="title">
+        <string>Buscadores</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxTituloSEO</cstring>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>32767</width>
+              <height>90</height>
+            </size>
+          </property>
+          <property name="title">
+            <string>Título inicial</string>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbTituloSEO</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>7</hsizetype>
+                  <vsizetype>7</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>tituloseo</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+              <property name="textFormat">
+                <number>0</number>
+              </property>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>lytFluxec1_2_3_3</cstring>
+              </property>
+              <vbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                  <property name="name">
+                    <cstring>pbnTradTituloSEO</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>25</width>
+                      <height>25</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>25</width>
+                      <height>25</height>
+                    </size>
+                  </property>
+                  <property name="text">
+                    <string/>
+                  </property>
+                  <property name="pixmap">
+                    <pixmap>image19648</pixmap>
+                  </property>
+                  <property name="toolTip" stdset="0">
+                    <string>Traducciones</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spcFluxec_2_3_3</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>20</width>
+                      <height>150</height>
+                    </size>
+                  </property>
+                </spacer>
+              </vbox>
+            </widget>
+          </hbox>
+        </widget>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxDescripcionSEO</cstring>
+          </property>
+          <property name="title">
+            <string>Descripcion inicial</string>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbDescripcionSEO</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>7</hsizetype>
+                  <vsizetype>7</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>descripcionseo</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+              <property name="textFormat">
+                <number>0</number>
+              </property>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>lytFluxec1_2_3_2</cstring>
+              </property>
+              <vbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                  <property name="name">
+                    <cstring>pbnTradDescripcionSEO</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>25</width>
+                      <height>25</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>25</width>
+                      <height>25</height>
+                    </size>
+                  </property>
+                  <property name="text">
+                    <string/>
+                  </property>
+                  <property name="pixmap">
+                    <pixmap>image19648</pixmap>
+                  </property>
+                  <property name="toolTip" stdset="0">
+                    <string>Traducciones</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spcFluxec_2_3_2</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>20</width>
+                      <height>150</height>
+                    </size>
+                  </property>
+                </spacer>
+              </vbox>
+            </widget>
+          </hbox>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacer56</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Vertical</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>20</width>
+              <height>131</height>
+            </size>
+          </property>
+        </spacer>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabDatosContacto]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image0]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image1]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image2]"/>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="image60846">
+      <data format="PNG" length="551">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000001ee49444154789c8d92bf6b137118c63f57faeb3b04728bf440c50e0e953ad8ad218a891d8a7651ff833a392720d86e4d876acf29a371eb249daa1484bb04255788491c443374885aec09424e4ac9c528bc0e771a92bbc17779be0feffb3ebceff37d210c119146ad212222520b208e1317b223ff1d966d391181e2ce07e9d44472a684581de2d21fd2a8470472e6a0a8db0df124c0ce89c8ea9648374c58b6352430f6ef35011c8152c021a80434df839e08d24a2900b2e92c118135a07de4c33968b67cb808ce3b8f85cb60bff100f0bebb00d8153b6a62ceac8a88483134b3da0cb7750258ddb2060e7c91d7312ba468b67c9a9fa0b4ef92ba022f0f3c5884ddb20764715d173c3e6be7b56bb11e2ccc2948c2cd0b06a57db8b5a8b37b0077d33a00866190dfc89747a71fffeb81d3f2994e2a0a6f5dc0a0fddca3b0a253aa7894eeebdc7b64a3fff6b5518131804d1c52730a9580eddb064a87dc924efe05dc99d7c9ef412193c5eff5e2052085d386ed6530eb1ec96530eb3e1b2bb059f7f033b05eb6617c3a2210fe4260703174fd6978fb8f43bef64ae4b82692b99e7932daab01744c11e7aadb2f1f1aa749f571727de99256a8b4b55e7a56dcbdf6af6fbdd9fecc0ffbccb30737ce025fe386983aae05271ba025a37c66bef130ae317ea7416e029804a68053e0e768d11fb97488fbba07a0d30000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image60846]">
+    <image name="image19648">
+      <data format="PNG" length="566">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000001fd49444154789c95934f48545114c63fa5c5a35a5cfac75d4cf084091a6a33d122c1c53cdad4a3d50b170db8791091aec4fe222dc40c0669614c10310581b32971618360605484a0a284e5042d66318b815c48180c65e8afc51d4864543a70b97039bfef9cfb9d7ba5bd63bfa45649329e92b593a6276d745952cb5ee0befe8c7ac63a3545c6cf9506ba3f021bc317fc779e747c573248aa83b7de2cc510006a0b008cf646f392cc8ea039a8c385ab7aca8be00f8b050757a7dd3e394c94d0fddd0ab78e5dd76b073986a586c84c012a7518effe55396be2a6747c4e37208672de412bae6dcafd00ac8e44ee1af752535bb003b29eda06afd847d4d91c2b8e3ae843dc10290175588aa1528199ec2619ef799cf16f3257990f7ddd56be4b9390a6b6e42a319705227813350c0c81108aed3060369647a23580d240f455d221194fa9524e6530b06681124ca48065a84680efceab1e0ca59de8623f41d2bbb6d582b6d1879a050b338255c14b0be8df7a2c580fa13608c458a3f6ed3e1e2df4daf7004cf8b026586fc065c137fb3bdf6516a00ee499f64d47b361f8cbe37ddf5d9b019086150b0494eeda4f928e45193d80ec8ff8927fa7e93879e63fa1d6e7dcaf7637de41407b429d5bd24e58a3334d0552095d8408d6b390b35f06bbf42a3caddea6c93b444bd8616f013f29069fff07dc1ea7ec11efbc1a5f79a7f80bd8878f17f36a87d60000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image19648]">
+    <image name="image60655">
+      <data format="PNG" length="559">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000001f649444154789c95934d48545114c7ff4a8b47b5b8f4c55d183c618286da4cb44870318f3635b47ae1a281d93c884857629f488bc10a445a1813440c8130b329716183602094d480491296d3ce858b07b990308832f4d7e23e486446e9c0e5c2e1fccef9df73ce95f6b6fd92da25c9784aad9d347d19a3cb92daf602f70d66d537dea369b2fe70add8fb0ed81cb9e0bff1a4e3bb92414addcc7a73547300107f04a0d21fce4b322d41735087cb57f58cb1e00f0b6507afccb87b6a84b043f7772bdc3e7e5daf1ce418169324f5b2f34df4fe8acf9aa8291d9dd30d88a05172d0aa934d631080b5d1d03de35e7a7a1b7640d653e7d015fb980db6c6ab1507cd4649925aa224829518eaf92db2def328ebdf64219ecff9baad52415390215e7495f8900742781d260dcc0139a87641d16c2e8d86eb00b562f855d221194fe9dab01a6060dd0233309906966125047ce78f3d7890714917060952deb5ed2de8ac3cd21c58a80bd6052f2ca07fe7899c92780888b0465d3bfb78b4dc6fdf0230e9c34fc146023704cbf677a96092ce9678ef9bee66c3f0972606be3999019081550b04d4eeda4f928e85593d84fcf7e8927fa7e93819f39f120f244bd49bec414057877ab6859db046679a264877e82284b0918761fb65a8a097b9d3ea6f1adcc2da72ddf616f0836af0f97fc09d76ca1ef1ce2bf9caadec2f001c8fa2ec91421a0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

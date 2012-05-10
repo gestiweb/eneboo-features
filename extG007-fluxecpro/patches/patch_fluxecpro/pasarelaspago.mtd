@@ -1,0 +1,54 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>pasarelaspago</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</alias>
+	
+	<field>
+		<name>codpasarela</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>15</length>
+		
+		<relation>
+			<table>parametrospasarela</table>
+			<field>codpasarela</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>formaspago</table>
+			<field>codpasarela</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	
+	<field>
+		<name>publico</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Activo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

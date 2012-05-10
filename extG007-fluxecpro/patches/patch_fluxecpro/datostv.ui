@@ -1,0 +1,58 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">451</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QButtonGroup,buttonGroup2]/hbox[hbox,1]/widget[QPushButton,pbnDown]/property[iconSet]/iconset[iconset,1]/text()[1]">image20480</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox2]/vbox[vbox,1]/widget[QPushButton,pbnUp]/property[iconSet]/iconset[iconset,1]/text()[1]">image22313</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox2]/vbox[vbox,1]/widget[FLFieldDB,fdbSubirTodo]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbExportarDirecto</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>exportardirecto</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+      <property name="foreignField">
+        <string/>
+      </property>
+      <property name="fieldRelation">
+        <string/>
+      </property>
+      <property name="showAlias">
+        <bool>true</bool>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox4]/vbox[vbox,1]/widget[FLFieldDB,fdbDriver]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox4]/vbox[vbox,1]/widget[FLFieldDB,fdbDriver]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox4]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreBD]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox4]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreBD]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox4]/vbox[vbox,1]/widget[FLFieldDB,fdbUsuario]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QGroupBox,groupBox4]/vbox[vbox,1]/widget[FLFieldDB,fdbUsuario]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includes[includes,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

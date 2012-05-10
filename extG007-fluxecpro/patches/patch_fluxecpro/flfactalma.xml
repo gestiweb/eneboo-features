@@ -1,0 +1,190 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[articulos]/form[form,1]/text()[1]">masterarticulos</xupdate:update>
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]/text()[1]">masterfamilias</xupdate:update>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]">
+    <scriptform>masterfamilias</scriptform>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/scriptformrecord[scriptformrecord,2]">
+    <scriptformrecord>familias</scriptformrecord>
+  </xupdate:insert-after>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[articuloscomp]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[articuloscomparbol]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[articuloscomponente]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[opcionescomp]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[tiposopcioncomp]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[opcionesarticulocomp]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[tiposopcionartcomp]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[traducciones]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[idiomas]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[galeriasimagenes]">
+    <action>
+      <name>pasarelaspago</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</alias>
+      <table>pasarelaspago</table>
+      <form>master</form>
+      <formrecord>pasarelaspago</formrecord>
+      <scriptformrecord>pasarelaspago</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pasarelaspago]">
+    <action>
+      <name>parametrospasarela</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Parámetros de pasarelas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Parámetros de pasarelas de pago")</alias>
+      <table>parametrospasarela</table>
+      <form>master</form>
+      <formrecord>parametrospasarela</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[parametrospasarela]">
+    <action>
+      <name>statsweb</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Estadísticas de visitas de web")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Estadísticas de visitas de web")</alias>
+      <table>statsweb</table>
+      <form>master</form>
+      <formrecord>statsweb</formrecord>
+      <scriptformrecord>statsweb</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[statsweb]">
+    <action>
+      <name>zonasventa</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</alias>
+      <table>zonasventa</table>
+      <form>master</form>
+      <formrecord>zonasventa</formrecord>
+      <scriptformrecord>zonasventa</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasventa]">
+    <action>
+      <name>zonasformasenvio</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de envío")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de envío")</alias>
+      <table>zonasformasenvio</table>
+      <form>master</form>
+      <formrecord>zonasformasenvio</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasformasenvio]">
+    <action>
+      <name>zonasformaspago</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de pago")</alias>
+      <table>zonasformaspago</table>
+      <form>master</form>
+      <formrecord>zonasformaspago</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasformaspago]">
+    <action>
+      <name>intervalospesos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Intervalos de pesos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Intervalos de pesos")</alias>
+      <table>intervalospesos</table>
+      <form>master</form>
+      <formrecord>intervalospesos</formrecord>
+      <scriptformrecord>intervalospesos</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[intervalospesos]">
+    <action>
+      <name>codigosdescuento</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Códigos de descuento")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Códigos de descuento")</alias>
+      <table>codigosdescuento</table>
+      <form>master</form>
+      <formrecord>codigosdescuento</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[codigosdescuento]">
+    <action>
+      <name>articuloscomp</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los artículos están compuestos de otros artículos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Artículos compuestos")</alias>
+      <scriptformrecord>articuloscomp</scriptformrecord>
+      <table>articuloscomp</table>
+      <form>FLWidgetMasterTable</form>
+      <formrecord>articuloscomp</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscomp]">
+    <action>
+      <name>pesosmedidas</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada artículo puede tener asociada una unidad de peso o medida (metros, litros, kilos, etc.) Por defecto, el artículo tiene la unidad asociada a su familia")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Unidades de pesos y medidas")</alias>
+      <table>pesosmedidas</table>
+      <form>master_copy</form>
+      <formrecord>pesosmedidas</formrecord>
+      <scriptformrecord>pesosmedidas</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pesosmedidas]">
+    <action>
+      <name>articuloscomparbol</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los artículos están compuestos de otros artículos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Artículos compuestos")</alias>
+      <scriptform>articuloscomp</scriptform>
+      <table>articuloscomp</table>
+      <form>articuloscomp</form>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscomparbol]">
+    <action>
+      <name>articuloscomponente</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los artículos soportan información completa de precios de venta y compra por proveedor, precios por cliente y por tarifa y control de stocks")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Artículos")</alias>
+      <scriptformrecord>articulos</scriptformrecord>
+      <scriptform>masterarticulos</scriptform>
+      <table>articulos</table>
+      <form>masterarticulos</form>
+      <formrecord>articulos</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscomponente]">
+    <action>
+      <name>opcionescomp</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Las opciones de composición son los distintos valores que cada tipo de opciones puede tener. Por ejemplo, el tipo de opción Salsa podría tener las opciones de composición Roquefort, Pimienta y Sin salsa.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Opciones de composición")</alias>
+      <table>opcionescomp</table>
+      <formrecord>opcionescomp</formrecord>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[opcionescomp]">
+    <action>
+      <name>tiposopcioncomp</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los tipos de opciones de composición indican las variables en las que los artículos pueden tener distinta configuración. Por ejemplo, en el caso del artículo Solomillo, podríamos tener el tipo Salsa (que tendría como opciones Roquefort, Pimienta y Sin salsa). Para cada tipo de opciones podemos indicar se es susceptible de asociarse a un artículo o familia concretos.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipos de opciones de composición")</alias>
+      <table>tiposopcioncomp</table>
+      <formrecord>tiposopcioncomp</formrecord>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposopcioncomp]">
+    <action>
+      <name>opcionesarticulocomp</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada artículo puede tener asociado uno o más conjuntos de opciones.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Opciones de composición por artículo")</alias>
+      <table>opcionesarticulocomp</table>
+      <form>master</form>
+      <formrecord>opcionesarticulocomp</formrecord>
+      <scriptformrecord>opcionesarticulocomp</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[opcionesarticulocomp]">
+    <action>
+      <name>tiposopcionartcomp</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada artículo puede tener asociado uno o más tipos de opciones.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipos de opción de composición por artículo")</alias>
+      <table>tiposopcionartcomp</table>
+      <form>master</form>
+      <formrecord>tiposopcionartcomp</formrecord>
+      <scriptformrecord>tiposopcionartcomp</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[pesosmedidas]"/>
+</xupdate:modifications>

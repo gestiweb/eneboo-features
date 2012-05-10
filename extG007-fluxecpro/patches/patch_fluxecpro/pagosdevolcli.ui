@@ -1,0 +1,57 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">435</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QGroupBox,gbxCambio]/vbox[vbox,1]/widget[FLFieldDB,fdbTasaConv]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">250</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[QGroupBox,gbxCambio]/vbox[vbox,1]/widget[FLFieldDB,fdbTasaConv]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">150</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">300</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbCtaEntidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">100</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbCtaEntidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbCtaAgencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">100</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbCtaAgencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbDc]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">40</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbDc]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbCuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">200</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/widget[QFrame,frmCtaBanco]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[FLFieldDB,fdbCuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,datos]/vbox[vbox,1]/spacer[spacerDatos]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">41</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">220</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">79</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbIdSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbNoGenerarAsiento]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">160</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbNoGenerarAsiento]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[FLFieldDB,fdbDesSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">190</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]/vbox[vbox,1]/widget[QTabWidget,tbwPagDevCli]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[FLFieldDB,fdbDesSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>FLTableDB.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]">
+    <includehint>FLTableDB.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]">
+    <includehint>FLTableDB.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPagosDevolCli]">
+    <customwidgets>
+</customwidgets>
+  </xupdate:insert-after>
+</xupdate:modifications>

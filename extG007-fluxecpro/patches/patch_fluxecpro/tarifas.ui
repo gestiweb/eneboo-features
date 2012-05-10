@@ -1,0 +1,77 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,fdbCodTarifa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">111</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,fdbCodTarifa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[FLFieldDB,fdbNombre]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,fdmIdentificacion]/vbox[vbox,1]/widget[QLayoutWidget,layout14]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout4</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbNombre</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>115</width>
+              <height>26</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>nombre</string>
+          </property>
+        </widget>
+        <widget class="QPushButton">
+          <property name="name">
+            <cstring>pbnTraducir</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>25</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>25</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="iconSet">
+            <iconset>traduccionesimage7787</iconset>
+          </property>
+          <property name="toolTip" stdset="0">
+            <string>Traducciones</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout19]/hbox[hbox,1]/widget[FLFieldDB,fdbIncPorcentual]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">141</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout19]/hbox[hbox,1]/widget[FLFieldDB,fdbIncPorcentual]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout18]/hbox[hbox,1]/widget[FLFieldDB,fdbIncLineal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">108</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,tarifas]/vbox[vbox,1]/widget[QFrame,frmIncrementos]/vbox[vbox,1]/widget[QLayoutWidget,layout18]/hbox[hbox,1]/widget[FLFieldDB,fdbIncLineal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:append-first select="/UI[UI,1]">
+    <images>
+      <image name="traduccionesimage7787">
+        <data format="PNG" length="1140">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000043b49444154789c9d947f68d4651cc75fb74dfd0e267e175bdcf0a627acf242d3d3515d2de850c196445c143493e2ac681b413617882e896110c7a0d9f6873011719bf8830966fd21dd09273787b4dd1add26c798631bdb05f3eed075776e6deffe38b390ad666f78f83c3cf0bcf87c9ecffbf358780ca9817c4c9edce663bcdd4a5eb88092bd2efb961fc2310fb1cccc7bc31c4c66c800e42d0b588f912e6217337c78e412d743af38e6625b9d3bf6da1deef40af20baf375d7af9d7cc51e0fef2323c448e0238d5cc059d37d2aa77cea8af775a037e499206a5c86efb4f06d8965d76e404ab74824f269b8c4935bb940ab6646163bdd9180d49872a63768317960dd509ded279cea9d5715f631129aa0730bf342b69e08a3432225f8579d56ab0723146eea307a1265ca539c6b9c49a77b6e7bfdb914b2c0ceb4a60b80bd63d0fd1cb50f41289b39fb163fb8675256ba6d41dcd8466fe6061c94cdb3ea2585d66bf2e7b25c5a531494a49832d522a928df18874d5279d6c9406daa4c98b7335e5ec7e9495f3d7c657c1eafd45d6af1346e573bcea80702b14f4c178001cb530da0576278c76822dc9d4c48fb0d901dcc82db4520ee02f23a7712b05be720a727ab762b9f8365b0e7ee1e8c05dfb4161599b859f019b136e75660d390538f6c344076c72c2448292cd06dce88069eb7c773fe36ab0ee31f7b94f1fa9aef10fcdf03efe6a8eeaa6e3370d54497d11d57d5a270d84a4609534e695025552aa578ab74bf248231e295e25b5baa541b7fc0de61d1d70f5a4ba5b3292d4b6cf11b21aac67f22b1a1534a4549d345223cd46a411af34d922052aa5a84fba592729224dba25b9a5a85b0a1e960e1852876b5e03edd26c4a3aedbdebb6196f00168bbd8055ddd5f84af651cd66338f71a0b404ae0136036e01e52ec81b85e2db90484061068e2761da0abb6a619301a319d2a73a7b9ef86ee8b50c24734667b8fffa290ea56f719229e62835203104d621e80f833d01fd37a038007343501883f1243c65805908654e188dc14627adc9445f06ee3d7445789adfb77f4c7de26cf2dbf438690c2b0c031b0d184e823d0c731958f1c042c68386929e876be0f4c0cc352a4de30e64fdfcd06e4349ee6d3bca97b10bb1c3f4ef4db13304131bc096810c7f43017a4c7058170e7e3f7a8664e00e735d505c4bb868c36ac0b2e8901890ab26f7198db449b32352c02dc92e89ec0a1ad264a522c7cc29978d676b2ad8a39bf6a8e235d28037602d207fc909f4be683a34d69ed2e06129e5cfba44a1acfd66fd52d0b5d05b4f33b0d2ccc3e2b4b2d6ffa6fd735fb5b3b3b1cc58bf24f8ca4e6365a4c3f98b66bd52d42ba52aa53e8fa44669d0b3a006a3d76ef2f4225757f26f7fbcc3c4a2cb35c734e991d4268d552ade6c06f50d3da9935c77d9d8b5e45bfe976af6986b35e80eea6eddbc54237fabe33c500814f18fa6ff2f792aaca5f1ae96e30a7a6fc7bb9c3d2cf2cdfe6f99062b1c7673bdb58867788cf2ff04d7a265775c9a377c0000000049454e44ae426082</data>
+      </image>
+    </images>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]"/>
+</xupdate:modifications>

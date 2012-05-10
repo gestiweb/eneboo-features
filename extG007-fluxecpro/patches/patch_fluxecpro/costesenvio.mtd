@@ -1,0 +1,89 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>costesenvio</name>
+	<!-- Listado de zonas geográficas de venta -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Costes de envío")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Identificador interno del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codenvio</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","F. Envio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+        <ck>true</ck>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>formasenvio</table>
+			<field>codenvio</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+
+	<field>
+        <name>codzona</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Zona")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <ck>true</ck>
+        <type>string</type>
+        <length>20</length>
+		<visiblegrid>false</visiblegrid>
+        <relation>
+            <table>zonasventa</table>
+            <field>codzona</field>
+            <card>M1</card>
+			<delC>true</delC>
+        </relation>
+    </field>
+	
+	<field>
+        <name>codpeso</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Peso")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <ck>true</ck>
+        <type>string</type>
+        <length>20</length>
+		<visiblegrid>false</visiblegrid>
+        <relation>
+            <table>intervalospesos</table>
+            <field>codigo</field>
+            <card>M1</card>
+			<delC>true</delC>
+        </relation>
+    </field>
+	
+	<field>
+		<name>pvp</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Precio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+
+	
+	<field>
+		<name>modificado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

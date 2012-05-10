@@ -1,0 +1,26 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/x[x,1]/text()[1]">0</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[name]">
+    <property name="geometry">
+      <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>77</width>
+        <height>29</height>
+      </rect>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]">
+    <property name="acceptDrops">
+      <bool>true</bool>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[acceptDrops]">
+    <property name="frameShape">
+      <enum>ToolBarPanel</enum>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[acceptDrops]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[frameShape]"/>
+</xupdate:modifications>

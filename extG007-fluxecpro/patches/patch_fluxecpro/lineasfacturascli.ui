@@ -1,0 +1,147 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">758</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">288</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">150</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">100</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[foreignField]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[fieldRelation]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/spacer[spacer20]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/spacer[spacer28]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">60</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxComision]/hbox[hbox,1]/widget[FLFieldDB,fdbPorComision]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">133</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxComision]/hbox[hbox,1]/widget[FLFieldDB,fdbPorComision]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxContabilidad</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="title">
+        <string>&amp;Contabilidad</string>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodSubcuenta</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>220</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>codsubcuenta</string>
+          </property>
+          <property name="foreignField">
+            <string>codsubcuenta</string>
+          </property>
+          <property name="fieldRelation">
+            <string>idsubcuenta</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbIdSubcuenta</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>79</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>79</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="focusPolicy">
+            <enum>NoFocus</enum>
+          </property>
+          <property name="fieldName">
+            <string>idsubcuenta</string>
+          </property>
+          <property name="showAlias">
+            <bool>false</bool>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDesSubcuenta</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>250</horstretch>
+              <verstretch>25</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>150</width>
+              <height>0</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>co_subcuentas</string>
+          </property>
+          <property name="foreignField">
+            <string>idsubcuenta</string>
+          </property>
+          <property name="fieldRelation">
+            <string>idsubcuenta</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]"/>
+</xupdate:modifications>

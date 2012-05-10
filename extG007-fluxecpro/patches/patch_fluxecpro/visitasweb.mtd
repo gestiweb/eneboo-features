@@ -1,0 +1,36 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[campo]/ck[ck,1]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[timestamp]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[nick]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[campo]">
+    <field>
+      <name>visitas</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Visitas")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[visitas]">
+    <field>
+      <name>codcliente</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]">
+    <field>
+      <name>modificado</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

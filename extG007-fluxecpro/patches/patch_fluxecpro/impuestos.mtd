@@ -1,0 +1,15 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codimpuesto]/relation[co_subcuentas,codimpuesto]">
+    <relation>
+      <table>codigosdescuento</table>
+      <field>codimpuesto</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[iva]/partD[partD,1]">
+    <editable>false</editable>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[recargo]/partD[partD,1]">
+    <editable>false</editable>
+  </xupdate:insert-after>
+</xupdate:modifications>

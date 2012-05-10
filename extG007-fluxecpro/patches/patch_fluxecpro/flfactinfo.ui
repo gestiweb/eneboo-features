@@ -1,0 +1,125 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">610</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">641</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">610</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/action[i_inventarioval]">
+    <action name="i_trazaarticulos"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]">
+    <item name="Generales" text="Generales">
+      <action name="i_clientes"/>
+      <action name="i_proveedores"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_resrecibosprov]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_trazaarticulos]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_clientes]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_proveedores]"/>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_trazaarticulos]/property[iconSet]/iconset[iconset,1]/text()[1]">info_trazabimage19</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_trazaarticulos]/property[text]/string[string,1]/text()[1]">&amp;Trazabilidad</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[i_trazaarticulos]/property[whatsThis]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_trazaarticulos]/property[text]">
+    <property name="menuText">
+      <string>Trazabilidad</string>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_clientes]/property[iconSet]/iconset[iconset,1]/text()[1]">info_cliprovimage19</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[i_clientes]/property[whatsThis]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_clientes]/property[text]">
+    <property name="menuText">
+      <string>Clientes</string>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_proveedores]/property[iconSet]/iconset[iconset,1]/text()[1]">info_cliprovimage20</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[i_proveedores]/property[whatsThis]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_proveedores]/property[text]">
+    <property name="menuText">
+      <string>Proveedores</string>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[factinfo_general]"/>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[wg_widget]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_proveedores]">
+    <action>
+      <property name="name">
+        <cstring>factinfo_general</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image4015</iconset>
+      </property>
+      <property name="text">
+        <string>Datos generales</string>
+      </property>
+      <property name="menuText">
+        <string>Datos &amp;generales</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[factinfo_general]">
+    <action>
+      <property name="name">
+        <cstring>wg_widget</cstring>
+      </property>
+      <property name="text">
+        <string>Widgets</string>
+      </property>
+      <property name="menuText">
+        <string>Widgets</string>
+      </property>
+      <property name="accel">
+        <string>Ctrl+W</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[traza_infoimage20057]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[listadoscliprovimage61141]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[listadoscliprovimage31828]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[recibos_provimage20]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[recibos_provimage19]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[recibosprovimage10350]">
+    <image name="info_trazabimage19">
+      <data format="PNG" length="868">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000032b49444154789cb59431681b5718803f9533bc8367780f5c38410a276807430bb2f1d0962e099d04c56a8887261e64f09ac1b85bd32d9d6a10944017b71124d6540b9b866e8937ab1013090c7107c31d5420410d7783400f7c701deee9a2583299f22f1fff7b77dffdf7deff5e214d53de473800854261e6e4f3356ad125ab7a8e727489afe720ba24d47374a34b0eef1cd098f55e9aa614d2349d123f5ba3ea3ad485f4fce2ca2dbc520957c0280e402e119cb609fee973e7e5bdd0a0b638593f78a7f88f2a8ff5bca895beb94be9f36518ecc3b00d4393fd9f0184c73e8f689d2ed3faf305c6880627eb1bd78a9fadf1582b55fbf2fe4310c7d06bbe914d72a8d0a7112681db37a0f5640f63c8e5699af2c144a5555788dad2fd87e0ecc04513a49dbcc29dff7e201e8249a0790e95efee2184a9b1f2b43af6e562ed525ffcf62eeec23198f05a2942f153ef7b84cd8584560f6eddac00a6fe96f8f91a35a4f28b5f2f437c7da548d809b6c1010128910d2b01af65116fc1f329efd672f108564b5f55c0ec83b2eb384b9e285af10384034a8270c0b3c401512c82a35673b10b65f149099c362464e5cca8f8b78b6dfa09683b7f95782548e232b63646e0171580c92a36563649a1d8fbf7015a0209780ec489add6e6412cc0117e2e3647109503f439d391644fbd924b5006918010594728cb71ae1d0813432e8e2f08114b3e1ddbb7563649ed83bb027a1ecc68368381014785f91a0be89efd7d049ec79bcfbdcd1120e6b3f43a46833e247137171b388cdaafe08b0a4805524c516b8d9ae8024f32950fcecec01187b978131a83de200c06640b2745d61952590a8c63f243a1260ec738efb45f638626e464bd918bed726c1d3f69c267b7c115f0a102174b81521e2e50b4c39334fd119da333c06c8d7db9781d0e189ac65efd77f8b4620f89ce193b0625b3cef32c9584a017d1fcf52fcc306e70b2793025b6f20d86a6b1f773933ecbd9662a0d52e0a922c281a2cc36b324a17d14d0fce505c6c40dba9b1b93ae9917fd53a81aa87b373c5ffb9ac58f04c1c222ad9bbbf4a301c1f988cecb0e714c4862b6e86ebefba29f8c5da829588da1dc578bfe8f1f6f032a84b80be270bc51572317bf8ff81f7693446faa0196980000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[info_trazabimage19]">
+    <image name="info_cliprovimage20">
+      <data format="PNG" length="2667">89504e470d0a1a0a0000000d49484452000000260000002508060000002ea99b0000000a3249444154789ccd987f8cd4e699c73f500f7dcd7982dfbdd9c826bb688d16c44c598e1d05c48e12b5d9b6693a511a95f4eed412a5889c7ad2b55553a552ffe95d740ad2e9aae68fb6d9f447025595237797924d7fa0294a9add34093b14c20ccd6ed6e840f50846d8cdce619775d66f8a81fbc30b94dc2e55699af6f9c796fcdafef8ebeff3becff32eb978f1227f89b1f4cf0db0582c79b75ef4c423fbb6862ad8aea762ffe71ebaf7fb8002ce2f365efb53c2fcc7bfef737ca22fda98f745442b8a3d83344fd437012f032d60f65d057bf4eb7b7798426e8f62ffd6726f11ab6053da62430cd17ffa56f58e1ddb6afb773f06ccb1886aef18d8a35fdfeb589afc629086f759c25e216ca86edc863041cfcf0fd241d892a135e53b6afb77ef053af370ef3cd8be3d07760471b8dd12f256a59b54fb0771fa24c885c70f6fa9e04e36ffc6b2fa560741eb249000ff6f6ab82eb07dbb0e9423c2eda666df1711ad181a28a35b02c75984e652cc822880532852d952bd7bf4878f1d0542e0dc7583ed7bfa8854e7a28f4bddfa4298a80d45bb04a6c99deb64f694dce2f7261e442ac48f7dca9b4a14078a0c77ca778cfe906f03c17581edddf34259e6ad0742157ccceeb65620a0baae0ce277bcb340f87e080afc8e8fd02441c7c7d4248dc31e4ebf43ed65d535b465eb07eb07475b400c5cf8bd607b9f7e41daa6f5f150f10529d8a0344565dd1076415fd43b00cc42a2c06b8748016110013a81f2717a1c4c211126a060b07f08afe8dd5e3fc88fc892205914ecc8d8eb655f450fd8c2fe5894862b4a7d0ec204bbf71a34e7b2ef9d0e3ca466e2c7115213b82d1fab60238462c82a13c521c280200eb184c45e23294f1587460bd6eaa813b433dc2b49b0e4c84baf4b527d87107c3a50e1805370308540f6e9d7f40de7206c671fa9620586208c1552031583d5232105c4fc2b35f082109442458ae2cd0e23df1aa159f79e786aff235f053cb23b32c514ea8c6d4a124d31bcbe4ca281ae671743779adab3bb51c71a844252bd6b07ce0786d1f33a5ecb476826611c200d0b3445a94fe27742ac82cc9431245ec74757f38a0a9b30f6b10d9b20f2a90c5509825d1f05be47960497578225af1f3a7d12c3ec2d15f5ab04197b6c2756af4de9e62a08137faac6e8e3ff8cef26ec1c9d86824ed84e903dfa95acf42199574ca904bf1d8006be0ab1850405c214609838968e8ae1a9ef8d30f2ec330fba53e3ff9d3d214b82a56edbfd819e4657596f62f74e9c4d154ab76cc58f3c92769d5005082ccc820211810672cd15a864167c95d03c318dd7f2705bee3c948f6d4830a0b8d141f6084a3d3a411c224c103d164303c57b80bf06965d62581a9df2bf9f74d495bf3b9be0b59a58a649385583c02598ac31fe8d119c5b2a7ce9ab8fd278b89c29746e1eea1404ad10f7848b48336f998644690995758314fb1dcafd0ea42052c1f4944fd88ef0da214383c3d8057d10b080bfba04f69e1fef1f0db76dfbcc1d332abec9b62563cf7c976e42a237db287f12b77598c33f7d09eb7d9bb9f3c30efcaa8e4853a2e50ef91b1d1a8d69cea71a5ec7c35c2651e90cbd2b6d725d8235ab56111323d0996c4dd389625aed5368cb7244b18fb1348fbdda20782dc8cd2ed59256cb7d15380b5cd480739eef3e35685436310b22052f702912e1b65d88424225f9ec27abd09e00cb41260a0c0b52b00d1b3ff6710a0ea626909643a24017e007094a29ea9d069661a36285654aa2346170dd2052e86080395064b8e3dd36fe22bb813780782970f1de4f7fe2092ff266c32881bcc0779b34a76a04931ecde3f0957ff914745cb04a996f021f3f5599bf4c28af2b214c90968ed7f109a290b1a30dc228c0ebf8588624503e768f89ec31a96c2c8191d9ba71cc63784b05a5a9357d3d831b803cb0e452699de8a9f881dbf2a87ce87ea2d8c47705d6c0103bbfb13303b08ad93195844ac7ee2f430c7641429c7967626a9aa403491061099b40853896835db018beb98c5d90d886c46f25f8ad88fa5403a1045283c1f5552a3717ff16e80272ef9907bb38b071c36f7abb9ded9aa971fb5d9fa574d32936df10c18a6ee82ac28598e457aff1f2cf9f63f3e7c708e712f4e539c2b309c19918b77d9cc2f26ea2391f614858ae18585d4233401674bcd33e519cd23ce1a25dc811ccf958cb25513a4be1c66e3a6f8604275d596f1cae01ff7b098ce77f560baa77ddff89de1bec82bc314f7efddd24b3299de393a4a74f519ff0f8d79f6938a94dedc9c7506762d2f7ae61d5ca3cfc56474f2187a077f56a5675e5e9b624e91ca47329cd63c7d1529df44c8a61e489e67cd6f414b1bbba59bdae9b1ce0acb5393451d7b9b0a6d36a377f79190cb8f8771ff8fbdcccf9ce47d6f6f512aa847cdf6652e776a2eebbf15e798efbff6d04e3fd77b2e1c3dbd0fee730cf3df91dbc0b82cd9bd6a2444aef4a89ba90a0d21cee098ff8aca27dc6c314dd44ca47767593335236ac5d8b2652f4ae1c894ac8891c632f36484f2b3a73c7974c1e9bfcf95560c64dddedcafb863e632c3396c92e1d62d0458eb12fdf43f91fbfcda93762ec132eda2f6a749f9da57cb2c9d3131133022a831b986e859c8f52c220222f343a7321b6d14d7e9949a97f15b24b4716f290426e798ea40df59726d9f3e408a7a6dde8f96673a2f19a578bceb64f5e555dec7efc91a0b265e839b320b72a036c4367e2848fa309c2c3a3143b3e51e06105019eeb2253d881c73f7c138a0325a4302fcff4611a52ec2f814890864ea21274a1134609fe8988f1fa1861bb89d70e5df77870a87eb476103833bf2cf96fafc7ceab8efaa6dbf6b6ded35f218981b68f88239ca9269c72b154821704d89820148e69f135c3c5fde91eaa9f7c10d3749042c731edacaa103a285091cee87803d56ee2b6dd28f468d48ed60e0481eb0133648bf80cf01b60eeed60173ff7e57b0feedb73e474a3e5ad2cf73bf8331ef64c4830338650e02b85234c224320a46424015759547b06917d3a619c6473944ad0d19938388d77d8c30b9af81ddcfa64fd50f3d5cbeabc01fc7afe7c16788bf9766ea10af6b7ad8efbb8ec541ea207a4b049e2081b014250ec1bc425a099ef23ecd1a97ef441beb2d1be5c774943276c41f39847a3390ea988ea93138dc6abf503adf6c2ea90adba57754a0b815d68bc3ab1cb34ed8706d73be0d828cbc1d7b24ace958af2871ea67aab836d4912958080304a88da8ab1fa1874148db6ebbaae7b68fc95d1dfabce42b1d8de456eefae17fecb718a5bcbb7d87cedfe7b286eac52baed5338ebf579ef640a2531d40e4ea0fc10afdd8afc206cd49e7fea0f5267a158ac4b4abdc0fb9114e6d63036f9d2ae6748e204fd5276693a8da31efe6488db6912b47db731d93c34fee2f5a9b3505c6bb767f913dfd977bc7adbf04adbd2219ff5876ecba3e9364011d50e8e1d681c768fb45ae31e59a7735dea2c14d7ea2bdf12314f37a69a0f941964ec27754404f56313cd46b3fe8bf1576a47c914f935994221d7a9ce4271cdfdb17ffafcc31baa5b867fd90abc33de31afbeebd99197a34ee073e55775c80abb843f429d3f188cac065f05ac03defb3b402159f7fc166feba0df2db025800edc307ffe26993a29efa03a0bc5ff015fd4eee577a202fe0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[info_cliprovimage20]">
+    <image name="info_cliprovimage19">
+      <data format="PNG" length="2649">89504e470d0a1a0a0000000d49484452000000260000002508060000002ea99b0000000a2049444154789ccd98718c14d77dc73f4776c91bba67e65df6ac197c876e10a0db0d107665dc703255b8b6ae738e63f9482b354e1c4a24b7521ac5565af59f26a96490da54284aeaa46d0c446e642bb1f1a1b4d7ad1bc74712cc1e05b34b72971ba43b79b666c54cca96f7e29bdc3c9b01fac71cc676ef6c85ba6e7fffec48fb66e6f3bef3fdbdf7fbbdaeab57aff2ff3156fc5f032c175defd68b1ef9abe74655ac768378e60b0f7fe431c00097971b9ffbdf8439b0efb817123e04eefd49aa5657064a4cce35b701c7801630ffae82fdf5fef13d52c8dd2a563b2a7d253cd7a5fc41093144dfd6cec89d7beeab3d73e81bc002cba8f68e813df2d571cf463ea45375bf23dcd5a21f46b7de85b0c1ea5e1c64817060a07ff84e387418e82cc2bdf360871f3bbd47c7e16ebbe0ee2027d8592a511e9020971e3fb26388e699f0038e33b02e8a5a2f0109f0df96861b021b3f78ba1aa1773bd8f76bccea4aa58a74049eb70ccdb598075104a7e852bd75d73db5f1fd6700055cba61b0f1274f4b7d49dfeb5acee7c279b654fa4b60dbdc3568654fc92f7f6f1280368a300ea96e2b335cf1309d9d77d6c6f7ff1d10dd10d8e1c79fabca6ee74165f447bd5e6f352261f4f63288d779678908430546107602444e127542ec9ca4712ac01bf4d0cf9a9eed1f1cfdcdc913632d2006aebc2dd8e1279f93aeedddab4cf23929ac2d2697303458c12d5acb7a078079480c046d8514a0220d580426a4dce7610b89b00103db379508db953b264f8c7d8f2c099265c14e4ffcac1a1afda02bdc8fea54ad2e0f78081bdc7e6f79984bd97c67a20099b309638dcc091aad10afe821040c3b5574ac100588628523245ec9a2f44265bb5d74d6e94ed4ce70af2741d7e91fbf2849d923049f8a8cdaec15b399c901ded2375c02d5ce2669620305818a0d32072606a74f420a88c557e62088141883d186d2ad1efbbef234fe64f3c0d80ff77d1908c8eec81433a88baeed92e40cc39baa2439b0acec4fe5cf503b720873b681129291bbf7e07d6818abdb226885889c8d8a2364c1819ca13c20093b0aa72833650a92a013621991292a242a0e91059748878cec182268471f06be459604afed045d3f3b79fe250a767fb964bd4190896fecc5e97729df3a02c2269cae31f6e81708fd84bd633350b450ed04d9f7baac0c215954cc9884b01d410e42a370852434e0d9020a369e636162d8ffb7ffccd83fedffbc7ff6e877b3276449b0c26ffb4f59a97e83f5ea87f6e26d1ba27cfb28a10e48da9328132170b08b0684861cc80dd7a19279084d42736e86a015d068f9d7a10a120a30bcd543f609ca7d1651ac32ff0e589406877701ef03565e6358a1cf858f251d73fdebce2704ad268e6da3a66b10f94453358e7eedeb78b70ff1275f7e84c6c3d54ca14b8b50e7206a29fc391f9166de720b2e59365729adf7a8aef72005914a66a643545b13b413766eab60f7ba15c0017eed1ad87bfef1993175df7d0fdc79c1c4b7b8ae64e2e96fd28b42ffb28d09a7f05ba738f52f3fc679ff6ddcf5db1ebc38894853f42a8fee9b3d1a8d80cb29049d007ba58b4e15de9a7ef23db061ed5a62120479a65a011d6d68b567c9adcc13c60ab9228fbbaec06c23ce9b2bb9a4dd6ebe00bc0c5c5d015c0a42ff096144b665a410443e843efed9c9ccf8c662d7ef8f401480e321fb3cdc82b3a88c8d32d9d2e0156d86b796b16d0bcf96e828414586c9e9062215101b6cdbc590303458a23ce0220b16de569b4a696827d00b589055b0573ff1a98f1d087430af34d02d08fd26cde91ad154407316fefc8b1f878e0f4e39f34d1412a626f3970dd5c132c21648c722e884445a3171a641a8355127c02eb84426c4edb371fb04435bcb50c86cdd381b30b2a38a116c18e8ab6c01ba81ae6ba57562a5e229bf35c3d06f7d1a1ddb84bec0d9bc9dbd5fdb9b0138a5ec37952863e1aeaf420c6e31abb3440af5e919920ea8c8e008176d149eb3a8e4ad55dca2c42d48c25642d8d29992462073303458c11b1cfe5da007c8bf6711eceae6ad5b7ed1df5bde9db30577dcfd87946f39c76d376958dd0b3d25b81293bcf8538efde8fbdcf6d909d44282b52a8f7a3921ba18e3b76729aeea255a50d8050b561936afdb48ae00b268119c0fd1714a73ce2777254fb410e2acca3c59bcb9970baf285a2de4d44fc76ac07f5e03e3d91fd4a291bb1ff858ff4db2286feea67bd33d24f3299dd929d2f3e798ac073cf4835ef4ce4ff317ffdac09c4fb12fdbac5d63c1ab16a4028b1cdebab5acede9a6d791a40b902ea434cfce924b2dd28b298542377a41b1a16f036e8f64dd602f7960e3c65e2626a6ac1c4ea77dfed44f5e0303aefede8776e52f5c8e7f67e3808b3209dd03b7917a77a07befe189ae1c7ff9d93fa2b4d6e38e0f94f1f3867d8f4e916ac56ffcba4b2a0cfd6b24e64a8249f3f87301f1cb86f6c5105b48b451c81e49be90b265e33a7222c5eac9939884bcc833f1c31974ab8bce42d4353b77ec476f002bdcd2db1e7affb6070a2b0b2b658f05315822cfbee9c71929ef625643e755682e287ad787747f7882fd0ff7d36d5286b7b9ccb4122e6b838a34dd22476741e1165cba571628af5f83ecb190c56e4821bf2a4fd28689e7da7cf59b35fce9481ffbc9f7ebfe4cb316c7ad97dedcbee50e1c1cffeef6cdd551d967e3162cea738a7aa10e66088a1a720dac5ecdc4b9000a028ca1365ce1f83f0c2185208c435c2151a9c2eb2b834890058bc42458c242e98470ce3076b44ed886d6b9493f6cf9279bd36327808b8bdbd2bfbfb91ebb6c3afa6ffc7630ba6bfd10490c41047aab8fb7c1102459d1d70c031cdb8634c2733dbc5a40ed29c967eedd8e6d7b4861e1d96e5655080b0c186df1c4b33384731141e46b1da846fdec13c7a3c80f800b649bf805e017c0c29bc1aefef19f7de2c4f863a7cf375ac19aea7a8f5085844078c1c7e45c8c56787d8031385418fba2403f0b9ff9a4400e58a838c9d628936061513f3143fd9826880274a47d7fb676b279a6764d9dff007ebe783d0fbcc2623bb75405fb6a4b078fca8efc127d202d17131bdc3e496202ca9e473065d13852a28ae2919dc354ff54be5677c982856a41733a62e254030cbae94f3666a66bc75beda5d521db75dfd0292d0576a5fec2c441db965faa6cf2f01c836d3c840e095fd8cec429cdc70747f8fc1f085c4792980404289da0db86dad1264904cda8ee07b3cd939327c6de569da562b9b38bfce183c7bfe379de68f576975d5f799cedc50abb2a1ede266bd13b9942490cb5e71be873063f0ab48ac246ede8a1e3d1afa0ce52b15c9794fa51f03d91b347556cf3f443f791c409d6b5ecca5934ce0404cd043ff20923e3fb5363278f3e7f63ea2c156f75dab3eac0df8fcf8eec1c5ee33a167467fda1df0a999c0ac1683d31f9f4f1c619ff74ab753420eb746e489da5e2adfaca57546c3d599ff61f1ca2c4c4912668a8cfd59bcde6e4bf4d3e3f76864c919f9329a4b841757e55b0cbc15cfd5b5e71e4c1c78fd42e4673fee4c1235f3fa63b51c8f54fd5212bec12fe07ea2c156f7770b712580b0c02ef7d1d9022eb9e5fe14d1df4bb05d6455651deb478fd4b327552de4175968aff020415e78dd1c056330000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_resrecibosprov,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>i_trazaarticulos</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_trazaarticulos,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>i_proveedores</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_proveedores,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>i_clientes</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[i_trazaarticulos,activated(),FLWidgetApplication,openDefaultForm()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[i_clientes,activated(),FLWidgetApplication,openDefaultForm()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[i_proveedores,activated(),FLWidgetApplication,openDefaultForm()]"/>
+</xupdate:modifications>

@@ -1,0 +1,36 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codfamilia]/relation[articulos,codfamilia]">
+    <relation>
+      <table>familiasfotos</table>
+      <field>codfamilia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[codgrupoatr]/relation[gruposartibutos,codgrupo]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codgrupoatr]/length[length,1]">
+    <relation>
+      <table>gruposatributos</table>
+      <field>codgrupo</field>
+      <card>M1</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codmadre]">
+    <field>
+      <name>descripciondeeplink</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripción Deep Link")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>100</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descripciondeeplink]">
+    <field>
+      <name>descripcionseo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

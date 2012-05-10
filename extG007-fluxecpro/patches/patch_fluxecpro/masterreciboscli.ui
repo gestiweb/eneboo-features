@@ -1,0 +1,4 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer11]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">20</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]"/>
+</xupdate:modifications>

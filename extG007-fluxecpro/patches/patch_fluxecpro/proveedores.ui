@@ -1,0 +1,806 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">500</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">154</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[maximumSize]/size[size,1]/width[width,1]/text()[1]">160</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/property[name]">
+    <property name="margin">
+      <number>4</number>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/spacer[spacer13_3]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbNombre]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbPersonaFisica</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>140</width>
+          <height>24</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>160</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="fieldName">
+        <string>personafisica</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbPersonaFisica]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxNombre</cstring>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32767</width>
+          <height>50</height>
+        </size>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <property name="alignment">
+        <set>AlignVCenter</set>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+          <number>6</number>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbNombre</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="fieldName">
+            <string>nombre</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[QGroupBox,gbxNombre]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxNombreApellidos</cstring>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32767</width>
+          <height>50</height>
+        </size>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <property name="alignment">
+        <set>AlignVCenter</set>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+          <number>3</number>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbNombrePila</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="fieldName">
+            <string>nombrepila</string>
+          </property>
+        </widget>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>layout27</cstring>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+              <number>2</number>
+            </property>
+            <property name="spacing">
+              <number>1</number>
+            </property>
+            <widget class="QPushButton">
+              <property name="name">
+                <cstring>tbnInsertarNombre</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>32</width>
+                  <height>16</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>32</width>
+                  <height>16</height>
+                </size>
+              </property>
+              <property name="text">
+                <string/>
+              </property>
+              <property name="iconSet">
+                <iconset>persona_fisicaimage23051</iconset>
+              </property>
+              <property name="toolTip" stdset="0">
+                <string>Insertar nombre</string>
+              </property>
+              <property name="whatsThis" stdset="0">
+                <string/>
+              </property>
+            </widget>
+            <widget class="QPushButton">
+              <property name="name">
+                <cstring>tbnEliminarNombre</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>32</width>
+                  <height>16</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>32</width>
+                  <height>16</height>
+                </size>
+              </property>
+              <property name="text">
+                <string/>
+              </property>
+              <property name="iconSet">
+                <iconset>persona_fisicaimage5014</iconset>
+              </property>
+              <property name="toolTip" stdset="0">
+                <string>Eliminar nombre</string>
+              </property>
+              <property name="whatsThis" stdset="0">
+                <string/>
+              </property>
+            </widget>
+          </vbox>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbApellidos</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>112</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>apellidos</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/property[name]">
+    <property name="maximumSize">
+      <size>
+        <width>32767</width>
+        <height>70</height>
+      </size>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoIdFiscal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">125</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoIdFiscal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">86</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreComercial]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">167</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreComercial]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout53]/hbox[hbox,1]/widget[QPushButton,toolButtonEdit]/property[iconSet]/iconset[iconset,1]/text()[1]">image30636</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout53]/hbox[hbox,1]/widget[QPushButton,toolButtonBuscarContacto]/property[iconSet]/iconset[iconset,1]/text()[1]">image7048</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono1]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">115</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono1]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono2]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">115</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono2]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">74</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">90</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[FLFieldDB,fdbWeb]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">80</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[FLFieldDB,fdbWeb]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout68]/hbox[hbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">147</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout68]/hbox[hbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRegimenIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbIvaPortes]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frmCuentas]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaRem]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QGroupBox,gbxDescuentos]/vbox[vbox,1]/widget[QFrame,barraBotones_2_2]/hbox[hbox,1]/widget[QToolButton,tbInsertDescuentos]/property[iconSet]/iconset[iconset,1]/text()[1]">image61827</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QGroupBox,gbxDescuentos]/vbox[vbox,1]/widget[QFrame,barraBotones_2_2]/hbox[hbox,1]/widget[QToolButton,tbEditDescuentos]/property[iconSet]/iconset[iconset,1]/text()[1]">image41490</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QGroupBox,gbxDescuentos]/vbox[vbox,1]/widget[QFrame,barraBotones_2_2]/hbox[hbox,1]/widget[QToolButton,tbDeleteDescuentos]/property[iconSet]/iconset[iconset,1]/text()[1]">image15989</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QGroupBox,gbxDescuentos]/vbox[vbox,1]/widget[QFrame,barraBotones_2_2]/hbox[hbox,1]/widget[QToolButton,tbBrowseDescuentos]/property[iconSet]/iconset[iconset,1]/text()[1]">image35310</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[QToolButton,tbInsertCuentas]/property[iconSet]/iconset[iconset,1]/text()[1]">image61827</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[QToolButton,tbEditCuentas]/property[iconSet]/iconset[iconset,1]/text()[1]">image41490</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[QToolButton,tbDeleteCuentas]/property[iconSet]/iconset[iconset,1]/text()[1]">image15989</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[QToolButton,tbBrowseCuentas]/property[iconSet]/iconset[iconset,1]/text()[1]">image35310</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaDom]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">168</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaDom]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">31</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[QPushButton,pbnBorrarCuentaDom]/property[iconSet]/iconset[iconset,1]/text()[1]">image31509</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,direcciones]/vbox[vbox,1]/widget[QGroupBox,gbxDirecciones]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesDirecciones]/hbox[hbox,1]/widget[QToolButton,tbInsertDirecciones]/property[iconSet]/iconset[iconset,1]/text()[1]">image61827</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,direcciones]/vbox[vbox,1]/widget[QGroupBox,gbxDirecciones]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesDirecciones]/hbox[hbox,1]/widget[QToolButton,tbEditDirecciones]/property[iconSet]/iconset[iconset,1]/text()[1]">image41490</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,direcciones]/vbox[vbox,1]/widget[QGroupBox,gbxDirecciones]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesDirecciones]/hbox[hbox,1]/widget[QToolButton,tbDeleteDirecciones]/property[iconSet]/iconset[iconset,1]/text()[1]">image15989</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,direcciones]/vbox[vbox,1]/widget[QGroupBox,gbxDirecciones]/vbox[vbox,1]/widget[QGroupBox,gbxBotonesDirecciones]/hbox[hbox,1]/widget[QToolButton,tbBrowseDirecciones]/property[iconSet]/iconset[iconset,1]/text()[1]">image35310</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/property[sizePolicy]/sizepolicy[sizepolicy,1]/hsizetype[hsizetype,1]/text()[1]">1</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/property[sizePolicy]/sizepolicy[sizepolicy,1]/vsizetype[vsizetype,1]/text()[1]">0</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">40</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/widget[QToolButton,tbInsertContacto]/property[iconSet]/iconset[iconset,1]/text()[1]">image61827</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/widget[QToolButton,tbEditContacto]/property[iconSet]/iconset[iconset,1]/text()[1]">image41490</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/widget[QToolButton,tbDeleteContacto]/property[iconSet]/iconset[iconset,1]/text()[1]">image15989</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/widget[QToolButton,tbBrowseContacto]/property[iconSet]/iconset[iconset,1]/text()[1]">image35310</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/property[lineWidth]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/property[margin]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/property[midLineWidth]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/widget[QToolButton,toolButtonEditPed]/property[iconSet]/iconset[iconset,1]/text()[1]">image41490</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/widget[QToolButton,toolButtonZoomPed]/property[iconSet]/iconset[iconset,1]/text()[1]">image35310</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/spacer[Spacer2_3_3_3_2_3]/property[sizeType]/enum[enum,1]/text()[1]">Expanding</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/spacer[Spacer2_3_3_3_2_3]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">260</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintPed]/property[iconSet]/iconset[iconset,1]/text()[1]">image40552</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,albaranes]/vbox[vbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,albaranes]/attribute[attribute,1]">
+    <widget class="FLTableDB">
+      <property name="name">
+        <cstring>tdbAlbaranes</cstring>
+      </property>
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>47</y>
+          <width>800</width>
+          <height>338</height>
+        </rect>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+        </font>
+      </property>
+      <property name="tableName">
+        <string>albaranesprov</string>
+      </property>
+      <property name="foreignField">
+        <string>codproveedor</string>
+      </property>
+      <property name="fieldRelation">
+        <string>codproveedor</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,albaranes]/widget[FLTableDB,tdbAlbaranes]">
+    <widget class="QFrame">
+      <property name="name">
+        <cstring>frmBotonesAlb</cstring>
+      </property>
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>5</y>
+          <width>790</width>
+          <height>40</height>
+        </rect>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>5</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>40</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="frameShape">
+        <enum>NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+        <enum>Raised</enum>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+          <number>4</number>
+        </property>
+        <property name="spacing">
+          <number>2</number>
+        </property>
+        <widget class="QToolButton">
+          <property name="name">
+            <cstring>toolButtonEditAlb</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>1</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="focusPolicy">
+            <enum>NoFocus</enum>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="iconSet">
+            <iconset>image41490</iconset>
+          </property>
+          <property name="toolTip" stdset="0">
+            <string>Modificar registro (M)</string>
+          </property>
+          <property name="whatsThis" stdset="0">
+            <string>Para modificar el registro activo de la tabla</string>
+          </property>
+        </widget>
+        <widget class="QToolButton">
+          <property name="name">
+            <cstring>toolButtonZoomAlb</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>1</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="focusPolicy">
+            <enum>NoFocus</enum>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="iconSet">
+            <iconset>image35310</iconset>
+          </property>
+          <property name="toolTip" stdset="0">
+            <string>Ver registro (V)</string>
+          </property>
+          <property name="whatsThis" stdset="0">
+            <string>Para ver registro, sin permitir editar</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>Spacer2_3_3_3_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>370</width>
+              <height>16</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="QPushButton">
+          <property name="name">
+            <cstring>toolButtonPrintAlb</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>1</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="focusPolicy">
+            <enum>NoFocus</enum>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="accel">
+            <string>I</string>
+          </property>
+          <property name="iconSet">
+            <iconset>image40552</iconset>
+          </property>
+          <property name="toolTip" stdset="0">
+            <string>Imprimir tabla (I)</string>
+          </property>
+          <property name="whatsThis" stdset="0">
+            <string>Para imprimir los registros de la tabla</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>Spacer2_5_2</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>308</width>
+              <height>16</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,facturas]/vbox[vbox,1]/widget[QFrame,frmBotonesFac]/hbox[hbox,1]/widget[QToolButton,toolButtonEditFac]/property[iconSet]/iconset[iconset,1]/text()[1]">image41490</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,facturas]/vbox[vbox,1]/widget[QFrame,frmBotonesFac]/hbox[hbox,1]/widget[QToolButton,toolButtonZoomFac]/property[iconSet]/iconset[iconset,1]/text()[1]">image35310</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,facturas]/vbox[vbox,1]/widget[QFrame,frmBotonesFac]/hbox[hbox,1]/spacer[Spacer2_3_3_3]/property[sizeType]/enum[enum,1]/text()[1]">Expanding</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,facturas]/vbox[vbox,1]/widget[QFrame,frmBotonesFac]/hbox[hbox,1]/spacer[Spacer2_3_3_3]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">240</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,facturas]/vbox[vbox,1]/widget[QFrame,frmBotonesFac]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintFac]/property[iconSet]/iconset[iconset,1]/text()[1]">image40552</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,gesdocu]/vbox[vbox,1]/widget[QGroupBox,gbxDocumentosGD]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonInsertGD]/property[iconSet]/iconset[iconset,1]/text()[1]">image59006</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,gesdocu]/vbox[vbox,1]/widget[QGroupBox,gbxDocumentosGD]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonEditGD]/property[iconSet]/iconset[iconset,1]/text()[1]">image26770</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,gesdocu]/vbox[vbox,1]/widget[QGroupBox,gbxDocumentosGD]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonDeleteGD]/property[iconSet]/iconset[iconset,1]/text()[1]">image25270</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,gesdocu]/vbox[vbox,1]/widget[QGroupBox,gbxDocumentosGD]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonZoomGD]/property[iconSet]/iconset[iconset,1]/text()[1]">image41573</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[QGroupBox,groupBoxSubcuentas]/vbox[vbox,1]/widget[QFrame,botonesSubcuenta]/hbox[hbox,1]/widget[QToolButton,toolButtonInsertSub]/property[iconSet]/iconset[iconset,1]/text()[1]">image59006</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[QGroupBox,groupBoxSubcuentas]/vbox[vbox,1]/widget[QFrame,botonesSubcuenta]/hbox[hbox,1]/widget[QToolButton,toolButtonDeleteSub]/property[iconSet]/iconset[iconset,1]/text()[1]">image48307</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[QGroupBox,groupBoxSubcuentas]/vbox[vbox,1]/widget[QFrame,botonesSubcuenta]/hbox[hbox,1]/widget[QToolButton,tbnMayor]/property[iconSet]/iconset[iconset,1]/text()[1]">image24158</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image60972]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image37920]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image12200]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image15455]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image32297]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image40664]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image21234]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[recibosprovrecibos_provimage5]">
+    <image name="persona_fisicaimage5014">
+      <data format="PNG" length="871">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000032e49444154789cc5974d881c4514c77f232da98689f480811a18a14b56b43062666f935b4e42f0339e044541fc40c4a35ec4b307413c04054105c11c249e3c6f4061065c482b1176c0c51a74a04b58980207f70925e3a1779655b2d9eecdb81634fdf9defbbd7fbf57d5dd5a2c16fc9f23a9f350abd57a10f805f8fdb8810e4bf48e9af62f029781d671010e1b750122f01cf02135555b35c042250ae015e053e0f4490340024a298067816f80b513055089226b67cbd373c0d7803d310041e8649da50a00f7ef413c7c22000a85528a413e3878f9de3d88c1cdad5608204875a0215fcb0ff6420fb806bc7a1c80da2db5d705d8b6255d4b311846d3112202708aaa4553e0fd2600f5158802094c98a0cf68d0607ae6df29bc073cf59f002c15c8931c1258b7ebe89ee6c2da85fd7b7bfe3e039e5939c052018f47258a1933badd2e699e62cf5a547b1fe22ee00be0dd95022cb3341d8320586dc9b28cfe7d7d4c6eb874ee1259961d34790bf88023d68ffa3361ac5ad1cd1c2a51f8e0316d832482ee6aa42bd807fea104c01bc047dca2d8eb2f2c49d58aa663d865179d69bc78acb6b8b9633d5f67abb7c5f987ceb3b1b9c16c6786dff188c8cbc06fc03b3773dba80654a2707307800b0e85a28c2583de00d5535c3c7b11a515d65ad22c5d9afe005c39cc6fb31a8860da060093199452f4f33ed216cc69c3d00f112f14454139291191ef804781addb062056bba5027e5ec91f087462878d1b1bb8b1e3eab5abb86d4798876f81c781e9addc365a8e05a90a2f0a36b7485be8ded9653819225361b439c24f3c12e513e009aa777f94db7a43a2ec77813ea3abea8fbaca7cdb5114056edb21512e03afd7f5dba8060441a349db297996534c8bfd77ee260e89f215f0665d9fd05001623513f6efee331a8f7063c77073c8643a81c815aa8fd7dd26008dbbc0de639120cc6ecc188e86f8a9ff8bc8dbc0f34d8343530512703b8e300b5cfff13a7eea23f01af071d3c08d0154a25089a2fcb5a4181748903f819780cf8f1bbc11804421cc03e5764908e10fe005e0cbdb090e0d6ba09c968410c6c023ab080e0d1408f30091ef81a7819f5711bc09c029223f018f71c4d4da782c168b2337e049aaff8095c7f91b973760670a5c56ae0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[persona_fisicaimage5014]">
+    <image name="persona_fisicaimage23051">
+      <data format="PNG" length="857">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000032049444154789cc5974f881c451487bfb825d4420b159c4335e430ad82db2038d30464c9c9811c1ca2b299531ccc290a6640082c8939e931c7453c78c8493c18913139984be2ae204c6ef64296e940023520b27b58d82219b20576a81c8a0d41d0e97567b23fe85bbff77ef5d5ab7f47bcf71caabcf7fffa1d500238f15ff9bdf733357019b87d58062e021e583d0c035f4a29bd8a94af42e0a5830cf31f3a0af4117c95d4131cae52909852f157811fa594adf4ad1429258caa054e8380066ea848b59a8d268b8b8b0038578dc0410dbc0dfca2943ad13cdee4f4d269ba27bbd86d8b1472e606de037e534a65cd4693ce5287e58bcb0cee0ed81defcebc073e94427eafb48ada0b6db2a58cdef91ebbf77731770c489042e2cac926fe0f81267055d554942d6424ef26f4cef700e8ffdca71817cc335fa938ec9fc03bc0355dd3b576a34df67e46ef93507c7867c86034208d520ca63281fd1838077cad6a6a3e3b9ed13ad3a27bb60b7f87e2fd5b7d10302a473321f0b9147245d5d49176a34debe316dd8fbaf00886eb436efe7e9358c6582c755167580ea74ae09214f28a3ea6c91a19edb36d3a4b1d763677c8d77206a30194609c41a3592bd7002a1398d4841f00576424898fc5244942aa53866b43566fad3278302089120012956008260024d5f68149046e0357adb5e78a7b05ce398abb052a5628a588558cb186442414b600c09406a0f23e3089c063e05360c56e5bcc03c38eddc13d7261ce9d258e620c2690282121c1956e6a04209ceb170067adfd22bf9787a89741d734c556818a14666ca084c20512d3ea81e7751938e3c6ee61b151b0f9e72676dba250b8b1235161e4098144d5b360bf1bd10f80b363fb53be91cf21c25ceb9a7e36e7c60512b320b0a7ebc0b21b3b9e91b0162d74b807104ccd8ac09e56083df14dbe9ecf015082aaa99071c604f6f42dd071cefd95afe71863d8dade22552994d5931cf44a76031839e7faf946fe9a2b1db18e91918471c50c53ba15a74081c0a70ba9afbf51f784e5fb42df05af037f005e6bed112fde00c02bc07708bc14f2500c00cc111ad403bf4e3230ad77c1f37a027c4658616f4efc7b868fd379e0d424024f013a91d2ec3fe0935e0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[persona_fisicaimage23051]">
+    <image name="image30636">
+      <data format="PNG" length="2058">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000007d149444154789ced56714c94e71d7eeef890173ded0b42fdaec5e4bb15178f59e719edbc4d5bb1ae75681b82b1ed8eaeab10b342ed920d5d348769d961b2ed34adcbd18e8e6bb2e470a939d86a0f6cc838132c27a5053b18d068c21965e0148f2b18f880f37bf6c7c1665ddb58ffe83feb93bcf9bdf9f27defef79dedfef7bde17f806ff6f880d769992b1cf64cfd55294af333907fb4cb0e5a5b08d0acaa14c01fcda08c406bb4c389b9716b9d8b4b4e6f7af2fd1155c8b5e88de80b44869d7d4c524cd77ba9850601642a40030df324c5ff47e5d8d378564464559490177f039cfa18ab52433d9496176acb171ec867eaf3523e321bba669e5bb8b3e6f311300b350c41269110f42116fe8bafe2e80610037a1e06300b973443ef35ddd31ef8291a12b2b8a5d3b4b4746ae3cebffe11173e5af8f98fb3f8c00eb41904c675b289b61e669396abeb4c86785104f0a215603582a14912984d8292df2cf5aaef62f29e5ace7907b943bf2070a363b2eb287d38163ee016911c3aa2a0b01a4cf1356557539b7f1f1a21d058d0cb3a33d1c7a8de40bece6f74866b63707d3d07ac2974672695f5b308fe4ba8a3dae1dce758e126911478410c701b4aa520ed5d5f82648b2bdad9dfc45390b363ac8a31ec686874992c15acfac50c49896a3fe048026041e5255b5a660b3b385b56c1eece97a8fe41b7d91d69f91fc4157389845320d2445fb495f26c9efb0d1b791e4335d91d65f92fc0ddb422748f6f02aa7481aa1c620d9427a0f959324399e0cec0c91a4c193810900435010118a385dbebbe86f243b78beaf8364889d7c9d64795738b889e4b2d09f7c69081c730b9219ed8dbe3c929b5bebbdcf913cd81709bd49323279757894e46ca0c64b96953076699024191b4ec6ae933ed2ef617ba3cf2039dd150e5e2779de5b55d14df2a3beeef673243fe8eb6c6d22e96b6f0e9491dc14f47b97b19602241784fcde4c92f6d613bec74896b1b1ce43f2383b43bd24277895063b49c6e614474224c9d6135e729c86afaadc2069b4d67b1224c7d912b8c419f6fa0e577c4cf26346421f916c6a3f59f72ac9d260add7c971de1b38e6162916e39af2bc389cdad05bbd68bb81ec705f44b53db537abfb94ff3eeb234f2f9fbadc2f53add929d535fb4c0fef780c2303112c763c8aa6372b71e2bdb338f872a5e9f2f0282e74b7dc2c3590d270ee34f3e2fb661bba2b133f4582fe332da6b5c65ea3a9b7467f747262a4be3d3cf4b47160a4bebbf2d3e20466c041a6d51d754b4e7265b0c6f324c95fb5d67b5f2779863d1c2599e0701f49d273a88224d9de5c4792c946bc4a3ad7d8c96dd4dd654533bcc4e9c0d18a1863bc1838e61e608c3dc11a771767d81cacf5fc8e932c0a1cf3ace23097166c75a6a558965c4bdd2bd2157f477871b1f995ec86bf575bb79b957b239706ee5fbe69edb2a991feb4546b9ea9ff4c03c26dbdc8fbf60aac763e8ea6b7aa7161288ee8d039f837bd832d9d79298984620c0cb699f62ae9a8e978c728c5d1697fe78b33c5489fa9ef0c4f3e6dbc72bdbebb32da78aa2d5e75f4c07874283e0beee042efc1f2a5bccabcbadfba0b39ce9783359eb7490e30129a22495e4d96bee4c745c94973806c262bf6b8c84992cdc99ec8df6037b88d71f74bae69f673d4bbbfe40287f9a1afaae40cc779ca55985f17cbd54aedb99a839d5ce82acc379becb95ac694ae2fca9022cba6da1e70acb77db752f857d76755af29b688fbb6bc713c35bcab1b233f0ac3fa6e335efc4714f1091d56abc491557634655bb17d5729c646a2c8b0dab03d7fedac9472cabec26a02701dd0af0f0c8c4c36bf3f60b266c9615b8ef5d52687fd93e268f4c6f1bf9ebe091652b8761548ae9b5cad66c9e7d42cf9472d478db08543ce8d4ee33fff7b986463b2f65d733dc0964052f946074932e0af2307c9a2ad4e9de7f9a9677fd108b73a7b8482f7b51c75b75dd39cce35f6ecfc0d8e05736e6932014871acb22b5655a62381cc315db76628e2e170c759f7d42c174607fa4d367b1ec27ff163cb87dda84ee8a8ccb5a1093ab65baa115dd100dbfa9df8fefa3c4476f5e388be0f674f87a9039353094c9fed38774d58e421fd46bc5758642c1e8f7f0a601600e746d2b7b51c758196a3dea3aa6a8e5d53d741c14c575bab41929efdb7385f0fe92e7391b1b9ee9f24437e6f52f93627d94d7af717d1b152bbe95ca57d222df200801500ee01907afb8165ba259a0098a5452cd0754821f1787c547f2b7fb3d308ef8e98c319f5d8f244311a8ed763e7fbcda8848e6acd86eda7c2687ad08ed2d138f4892958b381685447f4ca487c2c1efff9c52bf18f00fc13c024809bf3aabf0c66008b00d83455be0080de2ab7c161b2a2cc95dc894b240b49cf4b2e324c56ec29205b48dfe1124a8ba063a536ade5a8b5d2225602580240f99c23fe4b91026031806f4141a910e2b294426755b9e1ad4a9a91efb09bf91b9dacd8934f1e76d155e834a44526ecb9ea076a967c4655e55a2184bc9be4b793d0003c2514f4e56fb08ff1120dcf4bc99d28d8ea2423a4a64a0a458caaaafc432c477d5e08f100fe5bf3bb4a7e2b090b80e5007601e857557999875c337547cb0d214442281857b3e49b42e04929c51a6911cb912ce15d2bbf1d66000b01dc0fe009006100578422a6a445bc2d8578040a5609219623a93a0dff7b35fb42dc294333008164436500582484489516310de0fa95d1f818806900090006eea0d3bf2a817912a9482a4c9d7b363b97f833c6f255f0556b34ef17f373e22e137f8379fc1becbdbb61f5748bbd0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image30636]">
+    <image name="image7048">
+      <data format="PNG" length="1969">89504e470d0a1a0a0000000d4948445200000024000000240806000000e10098980000077849444154789ccd976168dce619c77fe7535239339994c5600d092cd6b0dce182dfa385ea182cbd8d410cf9506f852e742cacdf9a52c69aeddbe860f9d43136da8e404928a35dbeb514c69c0f039b769dd5d2f69e8eb877654d2bafba55eaee565d173796ed3b691fee32426227b187d95e100f8f74f7dc5fbffb3f8f5e15f23ce7ff698dfcaf055cbfb4eb4fd42fd49150f01c0f3ff4518eda514e3a73a4dea953b5abcb292f2ddfeef70bd7ff65e79e3d874221c8b6e24f5f1743d7bc1368f2fd8983b56973ac89a77988e693ae28d0e4e59aeefd36d0cfbf7cb33a37086a5c686c9bcca3cffb27aa93deaff483b171f2580db307d8648d985e7982bdb42001cefb8b944cf55ab3cd0f3da7f9f666f5fe6b428f5ef09f739d99130f3fb04aedee723f8893cfdd09330be2a4e0da66318a9311cb318b519414ad8366f10faf050533702f4b6ffea887e10b92dd94d0763cf4d0530b3f9bf5ee7b62e65899ca14abc4ac31419165463844918802160522c002dac038dae29b8ce85d56244c8e292b785542c9aed6bfa1cb241c28f5437f40628bfc3b4fce4d1ba6f744ede82815c54ad04a3618a3585f0a320e920541d247235d7c33b802a48df7a31e06791425bdea3de45d2d18539a79564239a0502357ebdf20c873bc013e678071ab1caabffef63753aaf7b8eb04f45dc3a4de22abd86ec60a05d73037ea2dfa55dbcd69d12febd65ae312eb9665e6b4e9d5bee6d21cad7f45b9c77f2cc8d8d5fa3708ba15193ff439fdbc3ba91bf2f593dfad1285498a018d38ca2a36fd4627ca9820abb7a27ec5867a1c65d8648b719095c7d86834a30dc6c9a3ce6a7ff6ee0a12ca430ae54828daa6846e4546398ab4b778ffe34767a143df32ccbc1143d9b6323a6465dbca89c92b931674c82b93565eef905727dd9c0e59d9b0d669935bd6687fb407caad7e5990c39ee37d715342b7e3211dfd4b5dbd0913ac37e288b24d16c4518e0d411c81038d56043679238e18928209a8c7018c930561d2c7266f76ea286de65b7ee89b3bf6504aaa664a351890810eb93b69e5c4e04e5a109295efb446fe733d868a6d51ef40e5b05b24247327cc8c1679ed700561d1548e320429eec8433aeaef8bad3a3810c4498e4d1ec509b810c5094cd08f3a4981498a411c810d8d38a272182d8893110c7a412b019b7cfe621d45e50e0965bf42eddd91874056f4cb2e84145dd7cce980e598100d6307ac83668f18dc43d61e56d8532e597b68816b98eb8d6532d73673628a25ab82f416af788eb7775342b7e321d3d0fdf3afbd040e7ba230296041d24ec082281ac621a92088363086dd65d0abb722ca938c0471a23106f3cdf95545e95f7ee8f7152adb91874ede6fbeb27871a25d170a9663de411bcc7113da6059c3e89810833bf450d9b60a8d9842c5b6a0cb88eb987b5e7cbd41d5529f08b2a61cf5b920bd1d7948a1ae5886bcf8cbe71a24ed44671c2d4956617c486a7c48ca81a095c00434e2282fdbe4412729e27047fd62540c027743a2b90f15ea5309e53385dad8918704597de1b1d9dfccfb2fa5c192592061bf698e6a5cbe8e5404ae6d5edb8d45f790a913b0375db680b94b9e5bfa4490bf798ef7a920f98e9ef6a79e4e0c7ac1197a3cc898c99f9f3a8d35b59a9be6e86a9224aba669e651946059264190e0da26519cecb51c735fa31969dd3f19cc77e7c219c3fd8b20ef2ad4ef051185bab26d0f9d3ae31a691a2ca4a9fb60da4b212df18d9f9ce6fc7371a1d1649f699a0768b3dfb2cc7d44ec735d738c2e072cc7dcffe28586d6f475e6bb73efcddce55e1424f61cef1d413e548e5a15b6b91f3af57462a42bcd057af134e8a00d0e5dab51ba336aa754c75c2b187dfcde591237a06a97995baae32625ce5d9a43a7d2760f2ebe5f1b2b75058915ca17e415855a1664635bfba153675c23edfe6e8134980640af014d74bd46e9ce243efbc8cc921ffaeb13ba1a3bff966f556d2fabc79255273d82aebf3a7397d76db6fd54396a4d4269798ef7961ffa6f28472d4b286bdbda539f7a3a31d2ae2c9036a7537474cd1cd23150536efcccb199a5e11d7f2448ae500704f982428d5c536743a12e0bf29142bd2b4843a16241d6affdbd1bde3a362733bfc08a0cc4e855a0099a879a4ae3b38fcc2ef9a1ffb172d4eb12cadb9ee3a57ee88f2b478d4b28fab05e5f396a4542697b8e17fba1df1ee6fd6deda90764fc05bacde954035d33001d741335558a9fb97f7649908f875e7855a13e1892d005d9a750daf0ceb32189d561ccb7eae22de7d0808c2cb07255cc7d830fe855d4948acf3e767c20c61988f11cef83e1c4cd04b9e2395e479058392a16e41f9ee37587d7f39bcdb94d090dba490664005dd3b91a4b5395f8ec03c73723b3b693f7b95b123a75c61db4f64a308da6a3eb3560d0da6aaa12bff0a31f6c45e67626fc2df31b088d1e3ab9c04af3483a70cb6069a3940e977695cc9684a07c046d145dab81360a7a0d35eded3a992d3d347ae8e1cfe8a5fbe9a5a0e9d4bcd2f2cf8fcc5cda6d325b123a3e39fba4ae5b6b8631db9b3daadefbc5f766ff2a48a81cb5b89b64b6f4d0b967cf7d55a11e10e45e852a0c27eb1b82f8c367ceae90b9d91cfaa720e2399e2f88af1cf547415ef11c2fd84d32379b439a4219821c182aff54a1ba82f47693ccd5f86fd6b82b39fc9349830000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image7048]">
+    <image name="image61827">
+      <data format="PNG" length="1471">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000058649444154789cc5975f485b7714c74fda745cfb50a47fb608c26ec187ded14233ba07dd4bdda36e20011f267443c50d05379cebc66a6573565827320ac9207033085cf7d0460b62fbe0b0034bd2b19114dae9a085d8f5c139dbc63f039b75299f3dfc7e37266917b51bec077272eebdb9e77b3ee79cdf2f7a00f93f97b7f482c7e3f11886b1279bcbee34bc86279bcb8ae135249bcb7ab48f61543e9735aa5e909cfc6ac8c34c76e5ceb603e713078afe0cc3d86347ec9f8115523c0032c95432032c936215589dbd31bb06fc55df195b349b98f41deffbacb28657c56b3c91503901c09302c42b7b81a5f5b57500d6d795c535da5fb89b0620d06363be09fe9ed9c7fe4e7eaa3cd6f6ae18957b9e598061187b9da8f33b004b2a286b148920a3edad5900fa861cac34d4f628dfdfcd6ddf51de16919dcf4620cad2c2c2828a992921f1486b58522ae2893800bd4336bed7c1df1d2770160223eb58279832f65baf3c0b81a5a24cddcc1f95585505a6a7a65539ba6dcc34589d4a5457148065a3a6a1f9d909ac1567ee2ef7ba4b60722206e7c06c76b03ac0ea8853db036d91755a423cac3c1438f1ef09942e4d8029659ca8030b60b68295015f730c330df5dd500b7f18d5b5c7b74ae0deb6098cc700a86db5f13581d514a4be15029dc3b47443a03b88bf69f007f11acf6f46609f1375ee151128095e4ac0ed81d87925a2abdf56fe68ace8fef048105fb579623302fbb64320994a1605999c9854f672b18dcfc42104be6adffb22e22d4f20e2dcdf0a81a4db0333da4f2831249471cbe3fac15010d3347b446457790211ee2fdc2d4fc05d464f1222909e539bd0ac6b6f689b5236f96312c2e0abf6f56c4ac08ed85b221098000bb07a54adf33be75d6d6f5124c20edb98a6d95b56804b209d567c3319a56221533c8bce1cb4016d53209d608fab1e7077c8e4dc4211897822ee1238b915020f0a33ea8a4225608d28bf6514ea015bdff70d281281f3cab7c2e0030623aa01495148e0e342013b4ab7c86c2e2bedd22ef3b7e7450e882cdf5b96d05b22c6a994fc961339f8b5c8954591ecb722ed07443ebc2ef2728d887cf350e69b455ebb28222b2255ef84e4b4d128896b0911bf48e26a42daa55d24279ea7eec94f25e0d652f78235a46c9beefa415de3de1bca0e6bdfea70d4879269d0044e6d650a326e37e7a721a3ac3992a10de8bbb12162b020b8ffe434bd0310bf325d147c7a6a1ac2609ae6e9b2020cc3d867876d95b37ea94b22ae83c69416fae6b408bd1fd486a132a3cf04f4e841feacb04336d4d0bf3981301977879b9d536f9fbd952600385a4c6f4a653ee88ab8055d80d19fa6fe930d02d3570a764845e0d3cd08ecb7c3f632003a63b71c8109e537e86ecf97417779605c4d87e8df034c4d6e04d704ac43d640a1807f9c82c4b584c81191b9eb29095d7f492a3e9a93d45591aaf72ec9fc5591839fcfc9f21191333745e6fd22555d6392fa4ee497ae31a9943aa9688988dc6c944b17c7a4f18d4619bb30a6a640648748c1249423e0d67030aa333d3bac7a20a24ebb867175dddf0f3c02fb5c503d37a09eebead7cfeb5332180ac261ce6cd603fb09b3325dd2c5f9ae9e51be73394e6d041ac2197cad1be2368e660746c119d536ea4008ac43d690883c57be0742f60a903fe5dca0ee5cbba75e4b187c8fa0bea34fddb84251cdddccdda9088682f80ffbbf282b204f60aab88b4b6d7c4659b3d366706030ff8b28e6dad1d846e611b5091102ebb0f5e566040ed8617bb510a73bc7a5be9ba9a37b6272fce999db613b4f80a30c6f2a8010ab76c486b0fe7204ec48818dea974775f0c2fb61f5bd60280821089e0bc239181e198610f88ffabf2a14e081e2ff8e2b7655ecf61ff37f9090c48b75b93ac42b2239918437217552977f2e21dbf63d7552b763fecefcf78b8b8b17803f45e449011e8fc7a3e77477d1bcfe770b1179083c1611f91ba77c322caa1d1f9b0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image61827]">
+    <image name="image41490">
+      <data format="PNG" length="1535">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005c649444154789cc5974f681bd91dc77fdea8e1b194acb249db313574042e64420e2b0805e914434f69618d209435f8b00ea1d88b5b5c93fecb866294405d352c869983607430c897adf0c1b83918bc8514ab45452eb8955d72908bbba8ae93951db7c86a70f8f4f0de5324395e27d94307c49737a399dff7f779bff77b333d80fc3f8f9e179d534a9d691e364fa988ea691e36454594340f9b3d668c52d1d34dd5fb35691ed454441e37ffb3fd4c0e9baf14f8d8c4955267c25cf857608f553e03eae5d5721dd8659527c093ca5a651f787a75a2b0eb56f9bd73257d27da4f52222af22a065e6c22226f033b8dfd06002d6d746a6dab0ac0d8541e7718e2139567f151fe14bd3cf27d51d133af6d4029f5767e36ff2f0076d0c7bed186d1bad1875ad2f7f2b8839098a800101fe7a173995151d1b75e8fc02c3bb55a4dc7aad73b32e7a9f1b0a3cf974b650026ef8638df85f8f80aa96948cd34888ff26775defbd6eb10d8e9c8d466feb44bb7b42c2f2d03901a0f71abe08dae003092036057f55fbdf6da046c0db4825a4fe67c795513585c28c00cb8d7f27837c0bbb1427c0246720d86020ea21752c35f9c40f76108b0a4253f9b871ab8ef835707f7bd026e1506c62101ff567d892b2f4be0d14b133035b0385f0020f17e883308eea04f621852a31986c62135ee131f4cff5122eaab271138979fcd3f029e577f57f06e02cb9fe81a287cac4d8cdd0ef5782eafaf9b1ac9dcf371fadce19308bcc52c3bb52d4dc0923842c0ac8aca5aa523c8e2c2a2d6fb9dbaf260050270fa9c1f8a48e458038ee37cd30ffcfdd64d00452db6e05a64acae99ebc5ceffaf748dfdc0c775dd0911f9d20b0d0c5c1918f603ff1fed992cdf5fee086ed562b7a4aa0f7567acac573ac8582d97ca9005a7cf9938424029f506757e9dcfe9391b1b1f831a0c5d1b822d187a6f081a9099ce7466769fe70f87e79dd3ae0ed3292babda44980d715d77b2dd408f88c8c8f0c88c77c9fbc1c6df369e6d6c6c6cc562b1afc7fa63a7ef44ef481009e4a079209b9f6ecadee33d514a49ac2f2667cf9f950fb63f90ebdbd725773927eb89dfcac5f8776477232767bdebb2b9f94f89c57a657d635d2e7a17a5f887a224ff9294de74ef8fb73fddfe0838b473de3f7663acc1b779a4beac3e5411f56ee66ea6de9189c9ac305f807d480da6a06e1460cd071494a27a5cf20c19436a9576023fe99e8253d168f45da5d4f744a44f22d24b8ec7764eeb35b317ecb755fdb40e7eeb67692aa5021085a2001e6c5d0546a09a000658f9a46d1564c1ed737f7adc2a38653b61980b3f7b1181564734d59f9fd30f674900074a0ee0c2aa636a2101c0a2296443e0e7c7ae02d307ce91a36eabb95a3524763a4958332b0b69c8090d6b62dd0306e0e10010a73aefc0ace91359705df7c3cf35a0943a1766c37a7b151f2161f708db07967c330d4a8fab3a386b5140e1df4bb708d0cfed930964a9dbf5de4da2f59e6088b4de0b966ee967aebb8007ab0a10aa730aa6a130bf6809fce22402e7c36cb80bb43a9c3541b58b48b7165d740d2840c10301dc56ff088310ef8237751281f364d9b5cda645c276364ba4d5f90c99d22d1d7ccd0184fa8268fc530310988d2a00ef82971691d32f45a05c341dae448709bbae2b6b36f3451d7cddd1b5302f5a3fd635919fd51dd60f7cb8c49d9721b0673722abb6dd964b15608ccabca7f5411a4899028c529dd3c1ebf7056e7ba4a73230674c6802774f2610847b003ca0c3841ddbad97198d59672c10b48f5d266f4e1e2110bf14ffe5e71ab0046c10bbeb75ebe2825ed7fedd14dc4e90be39005329f2d371d237af3279f316042678ce2cc100bc4bdeaf4e22f095301b3ee9c874a92b7333b61d2e3f573099164ca6f98eccc36cf8bc06de2173a201029e84b910b2e6e61c84b9369d350fef569b69d6040bc09ff1610632f7321040fc9df847ed068e7c9caa887a337e39fea3a214bf913c4c221111391429468a929464eb7f4579e5714f52926f6cfe7df377dbdbdbbf01fe2b72ccd7b1f9bd79ccf52f7a202207c0331191ff01f42039f8f63efcee0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image41490]">
+    <image name="image15989">
+      <data format="PNG" length="1983">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000078649444154789ca5976f6c93d715c67f0147bade12edbe93595fb761b33798700412895a0d5b7c88332aa1b85911d13a3515aa96884d8ad7565d3a6d1a30a94b9136084c20c2fe947cdada4a1d81aaada9d4ae291d5358abe148a5355d57c58c56710a15be2a5e7d174ccf3edcd78164fcdd8e641dbdf2d53de739e7dee739b7815bb345c01dc0d78128d00c5c04ce03ef0145e05fb7b261c34daefb2a709f0aa92e14abb5d2cd168b0a296ccd420d4cc5fc9b1a1f00478183c0ab40edff4d200afc4837e907cb7ef98b299d422985c532c104a95a0a005bb3e46b79e2268ea9188c3150e328b00378e97f4da05b29b53bb122b1acadad0da514d460c6ccc045b0d60250ad550913a65aab02602a066b2cc59922b6622f01bf06b601e66a41165d23f8c3beef1feadbd4b72c3f99a7b3a39391fd231082b13d63d008b9fd3974b3665c8d8382713d4e5885c947f2f8be4f624502dff717ab90fa017008f8f2cd56e0e1d8b2d89ec71e7d8cec4096896313a4265364dfcf628dc55a8bc5e2477c46f68fb0f5675b299d2e612e5c01b006e54a196b2dc5d345666666008e03f7011f5ea7ea74c55a621777eeda292222f2a673830f0d8a9c15e9bdbf57e48cc8c66f6f747f7ce2dcc143074544a46f739fc894c8c60d1b45368874adeb92e49aa4f8115f00019e039aae5581db54937a63f0d1c1af3cf1f327c8bd902353ce90fd5bb68e001552ce2b45ffe67e52c914e57365bc251ef9c93ced6ded0cef1876a83f9e812a946d196b2c93ef4e622b16e027c02faf867e57ba23ed20fdd93939ebdcd0e34397914f8b0c6d1b9279361bf829e75e7cfe45111119786840644a24bd2e2d8915092184001f01ab16068f69adcdd0f62139913fe1f69a9a9ab7f9ab2fbf2a5bb66d91de4dbd723d3b3f7d5e4444de79eb1d1111e9ddd4eb5ab13629be3fd78a5fb1e002fc58568b1cf8ed817908e4fc02844145e4bdebe63067438f0f49ba232d5df77489ac1749ac4c88524a8029603941168b9552dd193f437fa59fe11dc364ba3394cb65f0a07aa10a8d38c25d12a4bb3cf8be8ee50ee7989c9c8410e8664d8fea413769c7271007d6d4d7dea1b5be201b44061f1d74a9bfbc00caec7f81bbbe05dd4baf4b8b4c8bf47db74fe48cfb8ec562a2424a807d406303d0e9b7f87f6a5fd9dee0477d4cd9a0c28ad4da14d981ecf5615ecdaac01f21f34c06ed69b4d6806348533614df2f52fab084a9989781de45c0ed0ad590abe53065c3586d8cd2b912d9c359b20f672f6f7ab31686e18f87c9edcfa19462648f63d0a7763d8542b9168400f812d0dc007c3f168bfd26ea47f1b407b8fb6e712aa79a15636bc6287617892f8fdfb800d52ae170d8f1c8c90cd9992cd4c0562ce682e1d4fba75c058cf93bf0ad4540ad2e9a555b25470e80dcde1cdad38ced1aa3e7580ff1589cc2c9825b78ad037811c2e1309421d39da1d05d6064ef089ef618dd358ab59642a8505ffd19200dc0bdb196d8735ec473fd0a81a73c08810aab39f6f3221ec3bb875d3bc2570f4e2354cb55c25e9862b1483c1ea770aa406ba295d1df8d927f3bcff163c7299e2e628c7903f80e40ab8ee859592d925c9b145927d2b5be4b642ae0feb3c129bef2362cf475abf3c674e0df72eec49b8edc0e3e7b50645aea5c701858b208388de59fadb556a84167ad13809e1ff600f0c0230fa09472e56f84f2b9b2435ae7872bcd8352a90451289c2ac02a98383e41fb5ded8cbf344ecfa91ee2a9787d4e7a17704305219e4c2c4b48f2cea4484750810d01f79f11d9b93d50c73a13d67d50817d7bf6cd471ef0c08909875cc69d6bbbb34d749316427c0af4008beb6ab84e47f42bf196384a29bca6e00c28058d30f6ecd8dce92e7d5022ba344aa954221a8d927b21c7d3bf7f1a53352493495277a5e8bcbb93c2c902adab5add3cf18f1499c31926fe3ae1e6898a3d067c2fa802008d4aa9a389150949ae494aba232db23ea8c4ec6544f59ece69416101e36dea13f94464dfaea02281aa0e6c1e90582c263aa24529750918043e0ff3e781bbfd88ff92e77b8bb5d6a89022acc2f84b7d46578f925b9a23d39d99d3fdd20725a2af45c93c934129851ff5195123f49b7eacb5e8886664c5085b67b672e4f0118a3345b0602ae675e021e06d9c32ceb3bdb19698b4ddd926e9b569876cbd38359b1539307a605e2506360f887404b76436d0ff4f83effa19ea10f17d5f74440b7016b81ff85c3de0c299f00b84188bb5c4bee9690fdde478211c72536f341a25b132c1d69f6e6578f730475e3842b8298c1ff501505cf14eb860287f5ca6f86111630cc6180b6c079ec40d25d7b4a584f84bac25266dab834a046722dd9116d920b265db16916991e49aa4c854d0fbb36ef89033221bef71c8132b126e1e0c51057e01c41682bed6bbe07660af8ee89e68243a8f21abb52a6115a65c29e3290fd5a42ecf0bc1346c2a86d24c096b2ca6623ec249ef1f8033380abe6102047d1a504a3da29b748ba75db0bcca9322e5283a04e3a1713a6b9d586b311543b552c51883b5f692b5f6f5a0e4af01e71606bf5102755b093c08dcab945aae94aa4f354e566bee67ac71aa67ed05e004f03cf00a6efcfaf45a9bdfece3b401f81af00de02edcebf8369c2c7d067c0294804210fc5ddc03a472331bdfaa35e29ee5cd5c56838bb867b9c5e9e5a59bddec3f89b954d47df6f1b20000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image15989]">
+    <image name="image35310">
+      <data format="PNG" length="1660">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000064349444154789cad575f6c53d719ff915ec8090d9b59d7ccab28331d2d356a1eb2a613ae36a9a691865c559b827800d417f250814ba7c8455a664d5544794019ad52d94ca9eedd66cd579a98e90372796815a4d106183479a022ad68674569643c2f4d107f8c155c7e7d38e7bbcebd495827f57bf9f99e7fdff97edfef7ce7f801044c298546a3116c6ef65baaa371af7137140a6d8085f6f635edad6a8dfa55b823747bd3638fbf727df6faf9cead9d3fafcc55aea3050dd5a2d0b8b7f27a0f041b1a68002d00ee2df5ad2cf53d286cb15aac5d9665d5ac166b47e807eae6cfb6761e7cf8918d8f5b96f5eb473bd6ad566b432f55662ba5cea73a9f9ba9cc7cdeb5b5aba352addc5a7117410602b60a80a52cb55629f53ba5d433d127a3a739c7e305377f9164758f73a541f2ebae412e90bc77f8c8d035925fc4ba636e6c5bece5e853d1df87da430f2a4bb52db7b8df2c8f8ac51657965abfbd67fbd3891713cf270f24b7dcb9391f6a5bb71e9bde01d6b7036a35706d1e989aba862ef563fc317e0edb7ff9ec42f6787695f317e7efca52fffdf4b34fdfa937ea5fd46fd5bffe7f180080ef93fc9065faac2ba7b150d2b8e7b4461c340364fc3992e4f5f873f1b7d8cd7df74d01ac452c2cb203fb0f0c90246b7acde2d51aa30e695f2e930364fc1731467b7ab9efd41ca3c748b53befdb6ce9aade655777970360d9289b0c5858ad2cd50a0badca52ad005ac2e1f0c6c289c2bf172f1a7534a6f6ef2349267ae224c9de1c192a93b65bd403aa1a32c399db910d91df027850fcb52c761eeb8e3d9f3a94fa1beff29c9db3ffc51c2fd839fb025d8ebf71e48d933befee5c3771690200f0de27f3b8730bd8fee624263eafa06fcf4e40adc7deb7df03ea00520efaf6bc80f9f979e061c0fdb38b898f27aa95d9ca2480db4b226799afb3c4fb9ba19f178d068e5e2149c607c9d8349918d0b447fac9d80d72f4fd5192643ea7dbd37f4893e4979148a4c7e73cd193d85d2a69efb51bdacbdcdc9cefdb6bafeaf6b1b37af150ff18c38364e44889d14132b4bfc8f06e323d384492b41d9b3c46da23b6fe1eb1c9432c29a5b6ea9c5baa25339cf948af6e2214bcace1ca651d2927358c5f1c2749164c64b1831946aa64f8a50c635532359026490e1dd39bc864337ae255a3856319721b8f0200c2e1f0237479b33c5df645284ec627c67d9b0862e1449e1c210f1f394c0e928707d31c3a3aa49d67c9c28982195768aee790bdbfe9fd004007b8995b6cc7d6fc1ab54aa49c3658fd1f68221b3b3ba67f9c31cc4d1ae68c66bccdb805b2c4f3001e432412798223ac79914d9849c6825a90453d6dd496d748b9ac1995f33f7a466b4684d9bbabf73c809f22ba39fa843d621890886fd06fa27ea30d4f134623922e89dcd3d0b47fbc2f1dd3d41bf01830914bce97d8827f313935e25c981106048501494ff154d1cf0037b3c980d401892068d22fa743d27556c3d839a3016150ee82090d05f73e0c04551f34c9f592ef85e5c7790c4c2ed280bb0c033e0d5c5d818185153068d22ef30d63125cded575e3fe0c5c5c8101a372e997d3219a982bfbeb87d415e91f3d3d4ae69a425c5603deb995f31d8c4c1832e7dacbf9fb1a845e2ff7524f8c46e44e28b8cb30202a5d89018958ceb78c974d072317f54b7bf15491744c1adca006b2460346adc1978fa7eae05d2128e3a58e049892e2231752decd2f65402a95574e032691c9290956bc72a9bc2c23b26ee144811c31b7632ea801c38097d3200326979e46f41bafb9d9a0064cbf382fbeabdbe556cce71633b039b28523ac094d322958e9247219e755b6d3c526bacd7e41716e3b36396cd2e090bdbb7a2fe80d6c886ccc0c676e91f46ab94c96efb133fe32eaa1595c8e96a85cfa83edf23eb0476cb2c47f02d80458684d1f4a5f128188f3c2bb051f069d7bfd81fb5e549ecfe549c738cbd27b1f0813b1eed85f013ca41fa3db6207bc9d2d72e27b467d0b941c6786fde88b9c64aa3f35176a0fed05b046fe19ad49ec481c8fc7e37d6ded6d48b627e1341cf4a14fa3d507071a5db8d88bbd4b30383e5bcf228924b28d2c9256125964916c24f1dacc6b774efee3e45b5353537f0230d3fc3f60a9b5d127a3afb2cc4ba9fed47f487e953a949a25392b981e487f2b0cce4bf5a7be628d33891d89d1f00fc349003f91bf044bff1b023f52967ab48e7a9b82421d757c07b8aadea8df055001500550034000f806b33dd44e2bc648350000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image35310]">
+    <image name="image31509">
+      <data format="PNG" length="915">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000035a49444154789c8d944d681c6518c7ffc86227126184155e1461827b708b07177254c896289816112a4237f4d0850a764f120396ddb6843187928304366025c12ff6a2d9f8d14dc4d8ac18490e3529d89245029d94285b88256953d92e5afc7998d9af7cac792eff99f71d7ef37f9ef7791f019224ae72213b9afd1a982b4c151681a5c9a9c965e0665f6fdff968242a27e2c81823cbb2d41c4ec411abc8b6edc622a0c489c40577c805a0ec95015829ad00e0ad7a900363ccbb8ee3c80edbbbc0d14854e973e9dde0e4a9e4926559a4cfa601287c5b0080595fe666e760134cd89cb6c3b6146ae1eee9f81149babb75f75e97d3a5e2cf454d5f9ed6d1fb4795fb2c27fd29e5bfccebc8cb4794ff2eafdb6fdffea8fa57f5253d6c0577a84399cf33ad8b80622fc4dee77530c6c0066447b3b00eeeb00b1eb843aeff3ee4c2145549870ee478edd6daaffd8ff7ab5aadeaf85bc795fa23a5d4484a7a284dfc30a1ccf98cf24b796522198dfd3e7628de13bf7220c7929ee558e0f818b041fba800b34cd71d3bfb389674f3f0adc3ea72bad4ff44bff4a4da4787a41ef5254f26bf92a46ab5aaccc77b3b966ddb77d283699887f14be3ff63b9c9f936f7ad90d5cd3564755abbc192be0118b938c299d36758beb6dc1efa77c0deae00903c95fc5ea1a65c01398e23133609aefb1fa707d35002d6db43eb671168fa6c7aab5e5e68a400505e2fc3a8ef9c4b6daa1038ad542a8d9f9d0349e10638b8a20383034b00cc00db901dcbb62fc78e70875d243d55ef8abede3ec57be32afe58fcb474a324bd2ae52ee794ea4c696d6dcdafd93f41ed1e04f2c07fd8dada9224956e9464852ca976e16b8e8345b10df87388c92f2677e41fe8f6de351eb93882a4a7eb60db0e2656488a75c7deabd71a58b9ee4fb9caa64fdddcdc04a05cf6f73dcff3bf2bad400eac4eebcd9ded568fe4c9e49566682d83bad6ba6535d0a09b16e61760865ff6054b7ad41d76ff6d867bab5e4b060bf30b0014660a2d3a303880a4cebdc121c918f34aed06d6863e57698152f4657c621c4a10ef892f5a9695d8d7b1dd69cb89388a3d1f7ba776800b8b4d0e737e6b254e247e8b3e17fd44d21b928ca4c620daa714f5a0970fdd61178a6cc47be23f7911ef0349af497a46922a2f565aa69a31e660e0201eab3dc4ba632da0786f5c266c1ad986fdbdff003af9beabebc0631e0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image38751]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image62862]">
+    <image name="image40552">
+      <data format="PNG" length="1769">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006b049444154789cad576f6c1b6719ffb5b9ad6f84a39e4532ceeaca1ca48ebaeb36120db597053477d2280da091894971354d73990486c2865369e08040c93e5459a54d6a27a2a68268f53eb85e3e449e8782ec8a7476bb247647c06e95805732e48474738ce75dafa9db1f1fee6e89d3640bd69e2f3fbdf7bef7fcf93dcffbdc7375a8559cea03501eb80fe5ab1fa2a25faf554d5dad2f8a475e78aef1072f9facb81ef348db06d4ca9d33db00e916caf34500376ad5bb6191433ca9064977815483646296545ee42d11620a8ada0960d346f4d4ce80edfe43f7fe7cd7ce3b4601fb13c0c5b781e683d82412738ef23dcf3da92f95bf80858b63b855b959ab8df5451275ca18cf1d0891f925d213253592de28a995c80303a4738a145d836720e42f7e9aaada18b8d3261a9d4fff62fba186c6e89f005b07103d0788478191f8226cb7ea513f9d86d2dbb14bd777ec29bf3b16c352b95493ad35c5a66c8d4df36ae7085920e91d2349d29f36d0374216660d6648d2792c368946e78ecfcf01a7dbd932c0b287a46794f491f48d1bc60253a49fa46720460fc9e30b1abd24e563912cee76b67e5e0eec551778a3d3ccbd2f691acf9a9826b502e90ec6989b253b4f90ee05523e12f9176cca432b556daec9019bbd096f4112df067ef867002ad07d11800be89901fa5a809fbe1587fddffbd0fd87204405b0bf9684b8d2f125e8fa0ed47cfb24409600b4fb9fce68a455036b31408df49e2259227dc3643e4b8add9d69000f1b9a3e51b921c39b6559dedaec74dde36a76dcad2bca774f9c790f6f48cde83e9385fdf15de83ebb8897dc76f4fc0d400bd07d6e11a7bc76f44c5c83fdfbf5e8f84d1afafca538801c80ca86ec2a8a725761a8f0a3fea3fd516abc1a89c66e9024cdaa8f8dc64892919108a9918321037ba32b9820e98f93ca10af0238808da45d96e506efb3de5f919ccb4c65489216a6d26b63623cb5ec94460e0e85d95f2203a3051e1820b1bb3302a0f9338dabed6a6b3814be481a792449ce9a38bd3666acf5940129d399c870845c203b8f0c52343a5fc067a5dcfd88fbb1d478ea43ae907c3e4f92cce556e1ec2a349f67a673558cc546636490f43eebbd20dbe4f59b91ba57dd934a673e58699c791373ab98585807f3d5e732e6ade018c925d2ffbcffafb22cefbc3de78df2d6f07024551d79a12a326b5d5830b1a4556341abdacf9bcc64b286f7b178822c91de67bc492109a5ca01df8f7dbffcd4c8ad75c1c49289da2a2cad3a97af662212359ea97bd563b0e6056113f5d46891b51cb9994b2b122b32cd32b68e58fb1623d6fbd66d391d0cd377d83f07090f020012bb133b23515e23b95cdd963b1603568eadc8ccce171989904b6464384c96c870e8b4c1c6488455fa4c4c8c25488d0cfcba978aa2780160936ba76b77762a3b19bf90dcb2ef1b6d484fa4d1faf556642fbd875dae66ccbd3f07c7760792e7d368bbd48a9e2b3de8d3fbd08d1e5c930474d8a14b3f411141000781ca29c83804a1f7c12ee9501419dd87bb919c4ca34d6d45f0f53770f0f213709c741c999f9f7f19b22c6f1d1c18fc07c94f3a5c6a3c53e579266becf5ff2e406649f5153295235b068c99d01d22739a81ee12a90e1933a2eb28d912253d5d1e3249864361324ffa0efbafcb36d903a0ae4ed7f5ebb67adb5dc266ffe6bd8f36237e3689b6875b919e48c371bfc364c28e136f9ec04cee7dbc5a72a0ed670e0cbf0d383c40c305607b07909c049abe05348c034ddf03ce8f03f62ee0d2501afacc598cfd3d841ef15bf48df761e29de4f9cbd397ff0860de2844219a98e444246af476c62d26cc9b6976b8c1e10449326c56fbea49c86f9ef39bc3892744c692a4dae527e3a4ff4880f9efe4ff2924d105c056dd0b64d9e57f3e30190e858dc2329d498c194653c904031a797c76d9987f85d1c034d9cbe54fb26f8cf46aa4ebc51c5bba484f97e7a6fa90fa17487812c0da83aa90c4b6dcfedcabfd47fb3f66c9ece55cfeea79cdaf5caf591bbd53abd6a6f15e9311ef30d99225e5fdfe455996fb003c785be46b8824cb72bbdaeefebdef3067fa8ff6dfe400e979c548c7e0ac19b9497f609c0c984892fee4f2be8f64cbb102c5fede1c80ff7b1e94007c4591e5c75d5f53fb730bd48f4f2fe756d348cf3059d0c8ce1099b7b0447606c942c93897cb93a2ebf47f2109752d231bfa7d127b7d5d2d4ff5bdae7f60c7e2fc9b655def28ea8b2f2d42d74bba5efc08fa354daf142b0202ba843a214e6d81d4d32037f5350a25fee562799fad78c6f1148af3c19a1c80536d1795e37bf462c702f4e27f50d13f025006f031001dc0752c8f599b4df6b600688024ec686cfe2aca8b57509e3f878d8e636bc81dd8e80cb9fefbb78d63ff032a05f92a1875af390000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image40552]">
+    <image name="image59006">
+      <data format="PNG" length="1512">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005af49444154789cc5575f485b77183d69d3f2b394e266bb4510760b3ef48e169ad23de85eea602fbac196e1c39476547143c18ecc7563b5b2392bb4733284dc41e06610b8eea18d16c4f6c1a1034b52e8480a76666041bb3ea8b36dfc53d0ac4d397bf8fd6ecc4ddb68dd6017e4f0e5dedcef7ce73bdff78b2e92f83f2f77fe072e97cb2584d893cea4b70bb770a5336908b7403a9376a9984214ef4c8bd25791c19f026ba9f4d29d174e9c2d9ca4e34f08b1c70c99bf935c62820f48a6e289788ae422135c26b93c3931b942f2715573645e7b8fc39e63eddf1497f34db8c55305152240f2690270e365920bab2bab24c9d55589b441c5b377a749923ebf49ed43d2eb9f7ce26de66fc5471b3e8128deb36502428897adb0f51749724126e50a1d249852383549926cefb6a893acf0cbd8dbcadb9ec3fc08c0f6ad2910e6c2ececaccc99ca53e291e2b0205944635192645bb749cf3ba4b7354adf05d2d7bb4afd3847c45efd8dad28b0e0a8d4aefc511eca2e70746454b6a3d5a446526f96a45ac224c945515e5dbb7505569c95db97fdb9adc0f05084ec23b55a8b7a13a9374559e1271b42abac33b8567cc077fcdf2b907f29053822c10a5b2449ed24a993f4d446a891ac6a252bc887a2ace2583e816df9d2a43369d4a3de35373707bc04ac3d5c038a003c763eb7f6700dd80fc4aec780b7812b9707507fa21e950d21a41701bc6f40dffd018eb47c8f5200a5a78cddfad1eaf3708b579ed98b1c054aacb075cfa1409efcf90ad81e885c8cc8de779832ee8f38eef7f406e829d38e6fe4811286796fb31e8827e28e24c343c312af3a313a1e250dd253e6f91480fbb90484102556c8babf1905e2b607c6551c93641893601bd48e0346809aa6f901ec28ac4088f767ef1656c0be843f4e86c8e9a45c4293364e284c488cdf889341d253e6f16fa880193237a5806f48ba5df7cb5e6737e75d85537490308326354d6b2b48c056607a5aea9b4a4916b329e72c5a49b28164c3088966d21c941eb037643c39eb50221a8bda0a9cde8c020f722b6a0993c524f55e19d7f59355244d75dfd32995f05d94b11e243d24bb42d2804c3057812f73093c730f34a21133b767807dc0e2bd45182700712681b90cb0ff47606c1e48ff0c34ee033ebf091c2907f0d31a666a81b72e0358024a3f367056d4c83de10562d76268442390816bc33d9055c0eea5f282de2db141b9be4bf5b86d42628f8af526b911f3a741297066335390b2dd9c9d869444ad37c50692ed13eb24ba72927b4f8fb2ad938c8e8d3a928f8e8c924152d3b4b3050908214acca0296b562fb59588aaa411c985ed494542ed838aa0f48a7d26c46fa8bda0ce0ad330c972766cac4090297bc34d26e5db27a7a6e9236929326d095979974d628a6c21293aa659f5d5ba02a363391b522af0f5460aec3583e6224952556cb7c33724e36ae5f66c1b94cb7d83723aa07e0f7064783db952403fa077e61278ee14c4aec7804340f26602c6cdd751f44512896b40e9a92b98b906ecff3689c543c0b95bc08c17286d1940e217e08f960114a312457521e0560dae5c1e40cdbb3518b83420a700d806e44c422105ec1e768555a5177aa40742f2b4ab1e949f7b3b548ffb02f2b94ef95c4b877a5e9d920123401ee4b98d3cb097412e8de6b938ebea71195b57a3ac0891d5c1143d27d7c9ad1fcd16d94f5afd0ac3166990fa01bd1bc0cec21e30cc2592d953ce4e6acfb57dead5a98d57d5d42e6f8cd1d173bb727b2a024680de83def3050964151871ba381fa3e312b566935d9d5d1c1e94c92236f647d62b0fc9254483d40feadf6da4c03e33682ee7ca69cf717e6c576a294f0c0f3ebb7233686615e061f66c48800697cd904906d59743a419cac1b07a795825cfbd1f94df0b1801d220037d01b28fece9ed210dd27bd8fb432e0117e9fcefb86847d12eef51ef6731c45eabcc54126e001920e68ea11295d9e76278e1d85589ca6d3377667e9d9f9fbf44f26f004f1370b95c2e35a7bb1cf3fadf5d04b046f20900fc0364f8f05f25a4e4a20000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image59006]">
+    <image name="image26770">
+      <data format="PNG" length="1574">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005ed49444154789cc5975f685bd71dc77f4eb470564aaafcd976cd3c76051ee4863c54c30caca718b6176fd04e238c2678308730e2e216cf64ffd2308c12a8a78662d07d105c3d18e4974ef3c0b87930b8830c6ba0220dbcc91e7990875b1ccf4d65c7199696397cf670ce5124d9ae9bf46117c4977375effdfd7e9ff33dbf736f0720ffcfa363bf734aa9e3f5ddfa5115521df5ddbaa89092fa6ebdc38c512a7cacae3abf26f5da9a0ac983fabfd79fc86efd99021f58b852ea789009fe0e6c51e253a05a2c15abc026251e020fcb8be56de071ff486ed3853f3be71337c3ddc424a442cf92c0fe4984e424b0b1b3bd034043775a756db502c0d058167700a223e527d1ab7c18ee19fc99a8f0f1e74e402975323b99fd17001be863dbe88ed1aad17b5a12b7b3b8af42ef481980e830f79c1eae8a0abff47c0426d9585b5bd3b1aad596ca796c72d8d0e78b852200a3b7029c1f40747881f838c42776885ee5afeab4f79de721b0d152a9adfc719bae6a999f9b07203e1ce002ded505000633006caaeefe0bcf4dc07aa011d4e664ce174b9ac0ec4c0e26c0bd90c5bb02de9505a2233098d9e1a24f2d7c263ef0c509b41f8600735ab2935900dc9f8207b8afe57081be61e88547aaabf77c7b0247da13a8efd6e5925ceab87fffbec80991daa39ac89745e4bfadd7d51ed544be2152fab024f23d91f7fff807b9f4934b121bcc487d53a4f6435f3a433f926f0fbd239d22d2f986ffa2d7d3ffb684d457f7f344338153d9c9ec27c053f7b7e16f2730ff81f640eebd1c004337023d9ed244ac4792b753385deec0611e78894936d656b507ac17f678c0ac8af262b925c8ecccacd63badba7077017c70ba9c3745247460028ee37c2be5a7b61b3701e4b558c335c8585d34ffe75baf5f681ba7fc14aeeb8e88c897f64da0ef7cdf40ca4f7dd45cc9fc9df996e0562d764baa724f77c6f252b9858cd562a1086970ba9c913d049452478077b2193d6743c343005cbc7051eb6b5a93e3c9d6caeef0f4e1f0b473dad5613a65b9a49308d201aeeb8e3627d0212232383038e19df3de58fec7f293e5e5e5d54824f2f54877e4d8cdf04df143bed4ea3559f97845b61e6c89524a225d113971fa84bcbefeba5c5ebf2c999e8c2cf5be2f67a3df97cde58c9cf02ecbcaca7d89443a65697949ce7a6725ff97bcc4fe1693ce44e72fd63f5e7f17d8b573de3d74656887eff2897a51bda542ea95e4ad64b5a51253596e5abb3cfe6abc45594c010a0a613d2e78868c2155a299c02fdba7e068381c7e4529f56311e992907492e1819dd3ea9ad90bb69b5c3fae835fff758272210784212f8007abfdc020547a813e163e685a056970bbdc5f1db40a8e1a3f9c0c32c1a7fb11687444e3feec947e38730238507000174a8ef1422f00b3c6c886c06f0e5c05a60f9c2243d5bab9523124365a49d8641666129011766c124b1ed007f7fa8028956907264d9f4883ebba6f7d66024aa953413ad0d18c8bf790b07b84ed037329330d4a8f2b3a388b614091ba9d6810a09b1b87134853b5ebbd9d44e33dc11069bc17cc5dd7cf5c72010f4a0a102a530ac621373d6b09fcf63002a78374b009343a9c4d824a1b9176cdbb680f2840c15d01dc46ff08fc00ef8c37761881d3a4d9b4cda641c276364ba4d1f90c99c2751d7cd10184ea8c68fc637de09b8dca07ef8c971091639f8b40316f3a5c819624ecba2e2fdaca6775f025477b615ab4bea73d61df13527e0ace71f3f310d8b21b9155db6e8b8532304479dad37a3701c48d01c354a674f0ea1d811b1e89b1244c992434815b8713f0832d00eed292841ddbad97098d59572ce0378f5d46af8dee21103d177dfb3313b0046c10bbebb5ebec8c5ed7a95b71b8d14be25a1f8cc5c98e47495ceb67f4da75f04df08c59823e78e7bcdf1d46e02b413a78d852e95c5be5666c3b5c762a672acd994ab32d9507e9e0a9075e26796802f83c0c3201a4cdcd1908324d3a691edeaeb6d2b409e6436a22051390bc9d041fa22f47df6d4e60cfc7a90aa917a23dd19fe725ffcdd86e0c0989c8ae483e949798c41ad7e5e599c71d31891d59f9e7ca9fd6d7d77f0ffc47e480af63f37be180ffbfe88188d480272222ff03c6b205719db4f14e0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image26770]">
+    <image name="image25270">
+      <data format="PNG" length="1806">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006d549444154789cc5967f4c5bd715c73fc6667d9648633aa23d6b9de648d314a7540a299580a55240f923b2b329c3ea1f49da4d2deda660a55565ef8f1598a8065a5a8c9a6a71d46610295b9c492da6ffe0665d83338d1f6559a0aa9a9ab489024da3987508bf1407df9ad79cfd610c86429674997a24fbbc73ee7def7ecff71c9d7b2c22c23729b6fc83c5625974ea65faf79df73bdd8028531569360d652a349b66c5c4820d520acbd474ea13654c7d84a9d4d7395c44727f2b59f0ecf2fc5a44446624279fadd00bfea65724eb7a5112fa8e8e3fe8e5fd3e3487e34e0114adb1669db83801a5904aa560036466334bba1452ff4ed1f60cc57e47d4edfc5ef0a9d2471c3d15fb53efebdb9b5ed2cadc0fc19adffe2a8aaf30b0d3d3bc2ce2cf17f4dc0afb724e9d88f44945a7887bff90f4c5456a5bc474ef961ecde17ae0eb3160c392184fc0860506d6412693013b304fce9ecdc046187b6f8c7d8f7a6928899049d6f0ab3fc501aceeda8caffac0c4806393e7978065d5736ec140cbb21ac8479c95e5722da7fae3fd2233228117bac4b55bc4f574bf9c8888ec0d8b8c9e15716d0f1c02eeb97d0680c47862a906d60119a0b860c33ce084c40709ea2aeb880dc608fda001bbbd1bcc3adaff36ccf879e81c48e27922f4ac6b67d391d540dc1e0373b2bae46b249e7bee79bd47fa8e8bb8f6f488fb3511fdd11ed1778b543fdd23b5af8be8558d8700eb1d3190992dc87da1cc031b720c5009b19118be6d3e4e9e8f60a47c703a4c4d998f7a7798a8cbc7d68bdd781e093fabbbdc4fdd0e03bfb9130686fe3e94dbfb569fcc0c8b04dabb443e16e9ebed11f94ca4ffaf7d22d99c5dbbadb68b5c486b37a2fa5df5cf5fbe7c79f5c25b5987d77295387a765424bb0026afe796ecd1b3a322d744aaabaa8f0125b74ac1fae474f2c18d5737d27db41b2e40e45804c621f2c7085c84c8c99cdd7db41be75527a19742b8d36eda3adaa85015b4fd6e4117d86ec34df0e5200daa4103becc1f66c9476fb158709438eafd07fc47daf4b6eff8cef850052d3e6366b0dbec6002b6029b9c9df7df4a27a7928c5f183795522dc041115906e0a1aed7bae20dbf68b8b7f9f9669c6f3809a950c175f5bfcbd4f4142abd18944f447a176bc0bdc91d91ac48534b93e8ba2e8068364db0dd3ded287188a6690208f09688606d6d6d0520723cd23d9618d37affdccbf4cc346fef7c1b55a178f5e7af922e4ddf15ed7cd8c9c11f1fe4e8e9a370134b6b6bebef175350baa1f48ca3c4b17d727212bd4ca77e4f3d4e8713652afc363f6133bc98cb3bb6f113264cdb736d043b82845f0ea34c352422db1601d88bed5ea04f990a6ce0d25d7735ff415b90ee926e92d349a6ae4e013c27228756f681d685fcfcbf7f11a078ad46f423fd7e7da86f679fecddb357bab6744d036f02c781635de55d1f575456a4815e5dd7ffd9bfab5f9e7cfc497197bba7805327aa4e643cbb3cd2bfbb5f6ab7d78aa3c4710e38ee72b93ef0ecf2c8e14d87e3c006b875276c191a1e1211918e173bfe017c37bfd6d4d274423ae523e0db9e1d9ec747cf8e8a8848e381c6bf001b0fbf72f87d11910f131f8a5c912f1d658ec7001af737be2033229e1d9e3780f57900ab5e46ca54c5355b6a2003fe87fd160a6eb04075e0beb6745b0690949132b66eda9adb57ee9f0766eb9df59f0c9f1966b37b33ddef7467555a1900c1aaa0353618a3d1d6585cf8bdb56e434b7c240e76e87cb71396261acbc98b271d46da98034cc33066a2a7a337b143cbe9962c30db7caa79b2a6bc86e1778769301ad24aa93440682464f5567ae9343b979db9e6755c575907b310a80e2c396d14fb7fea77a48cd40d209b2163f8b6f8e649827fdeff0590ad4fd67f1a1d8c52535943b3d17c1d482f32301223600b580a025a9b81d8600cd62d32008086561c1d89ae57693507984aa954642062e2844ed599012ced46fb15dfac8ff8609cd4746a360f2034122af2567a39c291a2db0180b7ca0ba9150c68d87c55be7bd5acba01588c6923bdefc17d99c4788246b351014586614c86d361b3aeb20e9556d781d93c03d1735102b6c06d00b0e5261c4a973350bda5fabef885b83d9f57c00c0f84af6f766fa63ddd9e018a92d3c949bff2df880dc63052c675e0469e015fa58f4eb3f3bfa74043c3bbc94bfc4c1c7f857f11b1bdc4fec3baaa3a6b2a9d9acd1dcfbcbfc26ff00e60a2008b4aab7f8554e89cb7dc4b2a9dfa1cf80220b82d688d0e440968016b2180559bedd8f9b1fe9a9fd59461a219867139ff91c485c4a7753fa9eb18bf347e0eb0285476eb335bc38e12c7b6f14be3ef0128a5e87db3b7a3f754ef95894b1303e43a1fdedf7afbf432bd64e2ea4482dc9400ac184856c83dc0b716d02a20bbe0b7021ab941fde6c2ba7d81cd0c4bd34efefdb9029fb6e0534076d940f24dc97f002c6118b9b4e732bf0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image25270]">
+    <image name="image41573">
+      <data format="PNG" length="1638">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000062d49444154789cad575d6c9355187e181fec0c86167f66358845f92b6117d369a8d1c4e212498dd18c70c18837ecc24045b314126763cc825c908964a6c5ccf4531bd7c460f182d45d6846223a4070bbc0300c6ab3e052ea1c1b1118cda83c5e9cf37eddf76d434d7c6f9e7ee7ef3deff33ee73da7f3e131a514cae5b2b7b9d26fa9baf2adf24d9fcfb70c166a6b17d656ab85ea397f9deffa8a8757bd7a65eccac9fa75f54f14c78b575085b2aa5228df9a7bbdf9de8632ca4015805b337d2b4bdd0185355695b5c5b2ac49abcadae4bb4b5d7d745dfdae7b1f58becab2ac171fac5bb2402df2bd5c1c2be6ebd7d73f33521cf9b9615d435d71b4786dce5d7819f0d83c0096b2d422a5d41b4aa9c7836b83bd240f65333da7498eb6d8e7ca24ff6ae8e014c95b7bf7755e22f94ba83194096d08bd125c1f7cd357eb5bac2c5533dbe26eb31c2aa65b58596ae9c6a68d8f455e883c1bdd195d73e3ea84af66c952acf810585a0ba805c0a5096078f8121ad4fd78377c021b9f7e722a792839cffed8fe4c59ea8ff33f9dffb0542efd52ba56faebbf3000007792fc9605baac21ad319bd7d8d2ab11bbcc00197f82247925fc4cf8201bb9fdb62980358d8569b673c7ce7692e4a45e33776192419b4c9d2d90ed64f8a910834dcddc7e749cc103a4dadae3da6cfe82de654363830d60d6282b0c5858a02c550d0bd5ca52d500aafc7efff2ece1ecafd3170dda1a633bb69324234d619264739af4914c65727ac0a8864457e27a6059e075008bc55fd574e7a1c6d0b3b13db14f79932752e9d4f74cf3542a9d3ac50c07ded9f7ce91cd37372f193c330800f8f2c709dcb8066c7c6f08833f17d1dab219504bb1edfd2f811280161bad2dcf63626202b817c87c94c1e00f83a3c5b1e21080eb332227f936f3bcbd19fa79da6860ff399264b8830c918cb46bda036dfabbefab3e92644f5ab7c7df8a93e46f8140a0c9e53cd214d99acf6bef937f6a2fe3e3e3ae6fa77d54b7f71fd78bfbdafae9ef2003fbf20c7690be1d39fab792f18e4e9264ca4e9107c854774a7f77a7c83dcc2ba5d6e99c5baa2ad195f84eaf6e22143cabe1dc591d2987340c9c1e2049664d64a15d090648fa5f4e304432d61e2749761ed09b4824137ae2050d8903097203f70300fc7eff03ccf06ae162c115a13819181c706dc28bd9c33d6437b977df5eb283dcdb1167e7fe4eed3c49660f67cdb86c653d9b6c7ea9f96b0075e04aae49d929cdaf51ab44ca8b0647ff014d64fdc7fbf58f6386b921c39cd18cb3994c96244f02781881406035bb39e94436682619f36a411675b43139bb460a05cda89cffbe635a3322cce62dcd27013c82e0cae0ea54b7614022fe936e13f51b6d389a301a917449e48e862ebac77bd2a137e0306022979ccfb029f762726ac4b930230c080a03929edcd19c9b01ae648501a9031281d7a45f4e87a4ebb886fe134603c2a0dc05831a4cee6767c0ab7aaf49ae677c4fcd3ece6160689a0632b330e0d28051f30c06a6e640af49bbcc378c49703d195d376ecfc0e93918302a977e391da289f182bb7e485d91febede3e325d11e2ac1a70cead9c6f6f64c29039d74ecebfd220f43ab9977a62342277c2b43a506140543a170312b19c6f192f9bf6462eea97f6dcd11c699b3464bc1a481a0d18b57a5f3e8eaabd7785a08c973ae2614a8a8f5c48460b6e06a45239e5d46312999c126fc52be40bb33222eb660f67c96e733ba6bd1a300c3839f5326072e96844bff12a9bf56ac0f48bf3dc17ba5d6e45a305c3c0cac01a767352689249de4a2791cb38a7b2f5e62a98a9f40b8af3949d22bb4c1a6cb2794bf329bd816581e589aec435924e2d97c9f2dd7fcc5d461d348bcbd112954bbfb75dde07460bdf00580158a88eef899f118188f3ec1759177a9d3bfd9efb5e54de93ee216de32c49e77d204c841a439f00b85b3f463784764edb99e3c4f58cfa1728394e74b9d11339636db1715fad6f1b8085f2cf68616453e450381c6eada9ad41b4360abb6ca315ad1aad56d8d0984106dbb06d067ac7274b49441145b29c44d48a228924a2e528768fecbe71e4f323078787873f003052f93f60a945c1b5c1d7489e89b5c57e277939b6273646724c30de1eff57e89d176b8b5d263912d914e9f3dfe38f027848fe12ccfc6f08dca72cf56009a51a0585124af81f705ea95cba09a0086014c0240002c0df6d70d5dedbe428b30000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image43742]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image2063]">
+    <image name="image48307">
+      <data format="PNG" length="1952">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000076749444154789ca5976f6c93d715c67f0147bade12edbe93595fb761b3379870041241a0618b0f71462514372b235aa7a6425583d8a47830a174da34c2a42e45da20742a22dd9f922fddda4a9440556a90e848e998c25a0d472aad611dc26ca03a2d085f15afbe03d3b30fd74e4846026c47b28e5ef9ea9efb9c73eef39c5bc7bdd91ce001e0eb401868046e0057810f803cf0af7bd9b0ee2ed77d15784405543b8aa55ae9468b450514b662a102a664fe4d858bc071603f700ca8fcbf0708033fd20dfaf1a25ffc624227504a61b18c324aa29200c0562cd94a96a889624a06630c54380eec008efcaf07e8504a3d135b145bd0d2d282520a2a306ec6e106586b012857ca040952ae94013025833596fc781e5bb237815f03db0073bb20736608bed9f7fd03ddebbb1764c7b2b4b5b631f8dc20046078df30d443e64806dda8195123a060448f105441b2a12cbeef135b14c3f7fdb92aa07e001c00be7cb719d81c591079f6c92d4f92ee49337a6294c45882f4b934d658acb5582c7ec867f0b941fa7ed647e1420173ed16801528968a586bc95fc8333e3e0e70127804b8344bd6698f34456eecdcb5534444e41de77a37f58a8848d7a35d2222b2ee3bebdc1f9f38b7ffc07e1111e9ded8edfe5fbb4e64ad48fbea7689af8c8b1ff20510e055a061a60cdca71ad4dbbd5b7abff2f4cf9f26732843aa9822fdd7740d012aa09c578a0d1b37908827285e2ee2cdf3c88e6559d6b28c811d030ef595712843d116b1c63276760c5bb2003f017e793bf4bb92ad4907e94fcec9c7cef53fd53f0579ffb67e9962d7abfebc73afbff6ba8888f46cea111191e4eaa4c416c58400027c042c991e3ca2b536fddbfbe554f694dbebfcf9299b1f3b7a4cb66edb2a5debbb6436bbfae155111179ffddf75dd9d677b952ac8a8bef4f94e2574cbb003f96a5227b7fbb770a02b93a0d613523f2c1ac6798b0fea7fa25d99a94f687da45d688c416c7442925c0796021d553cc554a75a4fc141b4a1b18d83140aa2345b158040fcad7ca508f23dc79d5e32eac7ecf62998319c6c6c62000ba51d3a93ad10ddaf109448195b5b50f68adafc95a91de2daedbe5e83428d7ff0bdcec56ad5e72b5eba9ee27ba27be239188a88012600f505f07b4f94dfe1f972d5e56e7877d4cd1a0828ac4aa04e99ef4ec306f6765e01548bd9c427b1aad35e018d2140df973790a970a9892390a74cd01ee57a8ba4c2583291a862bc3142e17481f4c93de9c9edcf46e2d08035706c81cc9a0949a60d0175f78118572250800f025a0b10ef87e2412f94dd80fe3690f70f7dde2544e352a86570e93efc8135d18bd7302ca6582c1a0e391d329d2e369a8802d59cc35c39973675c068cf91bf0ad3940a5269a655b26430680cca10cdad30cef1ba6f34427d1855172a7736ee14c0d780382c1201421d59122d7916370f7209ef6187a61086b2db940aeb6fa3340ea8087234d9157bd90e7ea15004f791000155413ece7853c069e1970e508de3e38f5502e96097a41f2f93cd16894dc991ccdb166867e3744f6bd2c274f9c247f218f31e66de0bb00cd3aa4afcb5291f8aab8c86a91f635ed2232c9fdb52e9eb80dd37dcd6abcf161d5bfebdca9771cb9eddfe734a3ca0507817973800b58fed15c69860ab455da00e8fc7627008f753d8652caa5bf1e8a978b0e698d1f6e350f0a850284217726074b60f4e428cb562c63e4c8089d673a8946a3b539e92ce0860a023c1f5b1093f8f2b8486b35036b27b97fe7f6aa3ad698b0e6ab19d8f3ec9ea9c8ab3c706ad4219711e75a96b7886ed042804f814e606e4d0d57eb907e23da14452985d750ed01a5a0de0d21b5ee2e5c2c109e1fa65028100e87c91ccaf0d2ef5fc2940df1789cc48a046d0fb6913b9da37949b39b27fe9e207530c5e85f46dd3c51b22780ef55b30040bd52ea786c514ce22be3926c4d8aac99ec851aa25a4d27b420378df1d6bb5ed9b3ab9a91aaaaf66cec914824223aa445297513e8053e0f53e78107fd907fc4f3bdb95a6b5440115441fcf93e434b87c8cccf90ea484de87ee16281f09b61522fa7504ae1877d06d5201bcc06acb5e8906670d1207de37d1c3e7898fc781e2c9892790bd804bc8753c629b63bd2149196e52d925c9574c8d688533311d93bb4774a267a36f688b44ede929afe773fd13dd943ad22beef8b0e69013e061e053e570b387d26fc020186234d916f7ada4337385e0806dcd41b0e87892d8ed1f7d33e069e19e0f0a1c3041b82f8611f00c52def846b86e29522f94b798c3118632cb01d781e3794cc68f309f0e74853445a96563351ed89646b5264adc8d66d5b454424be323ea5f6b56165dd430e796c51cccd8301cac02f80c874d033bd0bee0776eb90ee0c87c25318b25c291354418aa5229ef2500d6a725ea84ec3a664288c17b0c6624ae6239cf4fe01f8278e82ef7800aa75ea514afd5037e8264fbb6059952541c2517400460223b455dab0d6624a8672a98c31066bed4d6bed5bd594bf095c9e1efc4e07a8d962e071e061a5d442a5546daa71b25a713f638d533d6baf01a780d7803770e3d7a7336d7eb78fd33ae06bc0378015b8d7f17d3859fa0cf8042800b96af0b3b80748e96e36be57abc73dcb1b9954831bb867b9c5e9e5cdbbddec3fb351574834becdd20000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image48307]">
+    <image name="image24158">
+      <data format="PNG" length="2542">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000009b549444154789cad97418c25c75dc67fddd31b579beedd2afb8dd5156693d778c7f61beda09d4970bc1339b647b16c2672421291432241b04f1089a391103920458a38c101c40111014239447224305a2450368a2ceda038d97158677ac3aedc8fcccb56ef6eb35df6b6a78b49cf3487ee198f170e2071faab5f955ed7effbbe7f7595f70fcf4ba6ad631c88ff4bf5c681f086cab47507e34074ef8dc34a84c7a2fe65d926ef7ef7cae6f5617e77efff05d3d691d03fdc53bd63d51b7eefa6ad3b186a77387f2c042ee61736c693c56624cf7d6a39fd5815e855353effb879ed9b7f9d5c115f9eb6ce4f10fbf7be2738b6227f20eaee213a222b8015213c138b07371e5b1bcba8794c2dae9d43b0ccc2ca1275f141a2c4c7e69d12baa3ccd0cbeb1f77e2c27de356fce7ffa4e8a102def052a6ad632204552c4e9e8ff4bc1b89d3eb891e5b2917f5e2da62e5ccc36b0bf2434d1d3e184663afb1591746d094991746ba6b8aac0d253436f742a9bba6adce4cb43cbb99173f4c10fea0e0fb15280278f185f3cf8742fd1a71aaa15960bc9ae0cc838c26f761f32e941a6ceea964d251e45e285587ddda0fa3b4a33684a3d4c7e65e384ae7b039fd7cb31f2eac04e919fda4d9b13f3c969923057ca744f4d2ef7fedeb05e1af1288df34349f6694ae5445a609dc7dd56ceb8040ed3745be8fa06d6c7ec0283d685c0552f84d6de68874d058e31309afb1b9874cbdc61a90d094196a65f2f4b10cbd2f03fefad393975ff9f3af6de6af5efa2a4a3a2d35d4f9be1aa51d8e4e8d528fdacc85a3740e2782703499a3367e18690f8b17cad4c3194299420d61a4a1ce0965ea61f1c34883487f652512aac01d8c03e1151c66cae16733db6c3cb1ba92beb0f6279802637390e15c551b9f28f51a6b3c243d59a4698a0c640a0067d62100c6eb100838b34e0320a0b13948ed35657e4032f960352f57eee9ae5e0169abef85327949b6d5dc765d357a61152c9d3a22d1e0c44098139edd8068d22f62ba092d70fd22b40ea69b84a309442b84490a36278cf40175cefa13eb4f0de4ef5720773c64ae667f655a619726e94933bd0c51e255b5e988a0b10684ea89ce7d096a03768b667a114443536610e9be52d15cbdd02f2690200595cd3d84c62a9e1a82b7ff3e054263ff519f499f5d3abdfa91fc9fb7beaf9309b8625080c334137ef44b506c832da03ee679b2d23f8f262027840b2b30dbea2d12a9a722ed5166e8f1da3917f38b03b977a4800950669a7fffd2e6853f4b9f5df97055e710345e551b8852aa32efbdb6066c41531b88a0696daf8808fbf14841ba3e780fcd74134629556d3c04fb4d5b9d5a4dd28f0de4fe7b19701422127b6b2fbcf807975fdbfa91aa6969434f451a6c8e1a4d40a4e0aa5e8948830b09975f84e23214799f81d104aaac1fb7433714396a9442e9ba50289233f2e943f22305a6adc359b77fe9d56fbc924ae94c408048baaacc41b89e348266b6d5935903679e81bb39b8ac270e14cc2e0f59c821d2bd7291ece74789579539e1247db2081cc7bf09fe3810e4adfbd9dab9671211a956b7dca4cc3c75e4f1e430cd605d9feed6411042e18eba03a9a16c0885823a47c9046c412894479dfb2a9010a8a589968f1eef067fda3a44516de5f574ddd5d5bbdb3bd92e0b9aaadcee10494f28644f26f440a47bf92345657388e833221c556d404055172013cc6c1b0498326b89d20f38a93e3e74817fa4800818539abfc84afbdad2f25ac0cc30ec035d18c8a11b867d60e80ee49091c1739225a80d4a48281ad4996760ba858e1458d0510a65cef9b3e7d70705ba23050a63bf25c6935f5ffbecc6572f6f5e7c0b019533c7bc0f69daaa272b32c0f4a18c0455b90d0b2b34d34b20539a2884b31b34e5145c8ea90d440e63731fd160714f4c84080fbf8afe381054010f89c2bdf1ca1fffe517260b13070215a89e3c90505c265c58034b4ff8e605885218ada0ce6e80b384a58137be4d188da1d822b46620d760f1b4d41ea5ebf4e9c9c39512cb4317f8736b6318f9c16e90caa79f7aeef12fcc76ad10efd40b655707f14981b953787150c3c9d3104598b7ae10dfbf4f35dd22bc7f9ee646c609778daab6847e8db97e85b82aa8e6207cec13989fbe4efcf316f38e25a6dd37fbb53f5fd73f797d566c2608df1f07626eea5cab70ef6e6f65bba2e04d5a7eae4713281d5aa630abfa7e0f24faec3a940d0a096f5e24740e4a50811ee66bd029eab175b87e092d34b4a09586d6a1238d1cc96706053afff06c671ca7dc55f337799ddf0a53d9e63b194886af2398e92528be4be30a38b741251c2c284c5d811c3233d63452c228c5bcf16da82ca63200e455ee81f08dc95023fdd142f040823898fb9d47226f76e0bad32166f5f39fffbbd38f9e5fd8de7c6dff910f2f292ad7c54a7bdcb1c42753b86538d10277ae1326cbd042fca125d86b091f7a04ca8213ae856b9bc4f169703571ac61af44c5294d5f3bf6ea98b76fffd3d53b369f5b1be32788ce8bc573cdbf4d7ffcf7af5ef8fae38f9efe943d2592d8b9ce384bfc60e0196b8925185b13df759859466c2de646466c4bcc8d9cb8ae31b5250e02cc6e494c40be57a25ac8eb827902f2ba385042f8f93bf50d6ed4dff10ffb51e0fe353d9b2ebef4bb5f79598d74ac5180f374acc1f4de717ba8809eef77441da7ef790ce878f03c4e01471aa7342d24d198a6ae4882c46b4a8b8ef8a502c7dcda982e41307375b19ca65fbe762b0fea9fcede357ef5f0fcfdaa270902cfd496d8a727f4db8114ccee61ad8901b35712d392bf53205cdb5d2b7750071ec59e65fe81f9ae56911f9fdfd8bff8ad6ffe46b41bdc3ccc00cb5a9e56523c75e53b577ebb8ec3c9e34f7efa89c6ce50710aaef48e3c551a76076f7b8fbbc696a860445317880f8c689debe6e7170f4ea8a89bffc873dd89c509eac9173d1efe8c1f2e7d621f210335bdfaa3d7a7d77e100c5de06fedd89d74811facbdfc95b794706f6f6f5edc5d92eafefc6edea52d5d7e3b23090485c9485a286adb2581e80a72d24852cd879e5af8a2d7b4ce0b1756c0599f2885f252476ba8fee51b286376b78bbc0aad2b2e4fcd9d048137dc0dfd71200ed44afa87d2c9362bb2ddb573e9efc948cd13252d75e1857a02adf1184d3c701e0b938eda7a8cc6504e3b8484e916389a2abf6cadb3b7b6af57850adc2cdb713b09cca6adbb310ec4cd69ebfe7d1c883bffed6eb81a8830a3a8b8edfe369bdae7d77f6bfd93558da7e4ea5c654da702ed9922ebe45d57679b17adb2aedc2ecc4de5986577ed4c22768ad6dd4810370bdc9d04f1f6166e3741ec4d79ef2e79ec74dc79c76fc7059cfadcb3933f5223fd10248f98eb5ba7aadafc382bdc6ddd5064ad33498b99b6eee63810ff316d9d1d07e2eeb475bbe340ec1dbfdefd6fabf7a79f1424f4c7a304e115b807c642ac1601beac9915b85b09a229702e41b4c33cfebfea7f01d9add8954658007f0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,1]/text()[1]">fdbCodProveedor</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,1]">
+    <tabstop>fdbPersonaFisica</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,2]">
+    <tabstop>fdbNombre</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]">
+    <tabstop>fdbNombrePila</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]">
+    <tabstop>fdbApellidos</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]">
+    <tabstop>fdbTipoIdFiscal</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]">
+    <tabstop>fdbCifNif</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]">
+    <tabstop>fdbNombreComercial</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]">
+    <tabstop>pbNuevaDireccion</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]">
+    <tabstop>fdbCodContacto</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]">
+    <tabstop>fdbContacto</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]">
+    <tabstop>fdbTelefono1</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,12]">
+    <tabstop>fdbTelefono2</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,13]">
+    <tabstop>fdbFax</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,14]">
+    <tabstop>fdbEmail</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,15]">
+    <tabstop>fdbWeb</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,16]">
+    <tabstop>fdbObservaciones</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,17]">
+    <tabstop>tbwProveedor</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,18]">
+    <tabstop>tbnInsertarNombre</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,19]">
+    <tabstop>tbnEliminarNombre</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,20]">
+    <tabstop>fdbCodPago</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,21]">
+    <tabstop>fdbDesPago</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,22]">
+    <tabstop>fdbCodDivisa</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,23]">
+    <tabstop>fdbDesDivisa</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,24]">
+    <tabstop>fdbCodSerie</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,25]">
+    <tabstop>fdbIrpfSerie</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,26]">
+    <tabstop>fdbRegimenIva</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,27]">
+    <tabstop>fdbRecFinanciero</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,28]">
+    <tabstop>fdbIvaPortes</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,29]">
+    <tabstop>fdbCodCuentaRem</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,30]">
+    <tabstop>fdbDesCtaRem</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,31]">
+    <tabstop>tdbDescuentos</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,32]">
+    <tabstop>tdbCuentas</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,33]">
+    <tabstop>pbDireccion</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,34]">
+    <tabstop>tdbDirecciones</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,35]">
+    <tabstop>tdbContactos</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,36]">
+    <tabstop>tbwDocumentos</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,37]">
+    <tabstop>tdbPedidos</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,38]">
+    <tabstop>tdbAlbaranes</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,39]">
+    <tabstop>tdbFacturas</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,40]">
+    <tabstop>lvwGDDocumentos</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,41]">
+    <tabstop>fdbCodSubcuenta</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,42]">
+    <tabstop>fdbIdSubcuenta</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,43]">
+    <tabstop>fdbDesSubcuenta</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,44]">
+    <tabstop>fdbEjercicioSubcuenta</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,45]">
+    <tabstop>fdbDebeSubcuenta</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,46]">
+    <tabstop>fdbHaberSubcuenta</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,47]">
+    <tabstop>fdbSaldoSubcuenta</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,48]">
+    <tabstop>tdbPartidas</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,49]">
+    <tabstop>tdbSubcuentas</tabstop>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+</xupdate:modifications>

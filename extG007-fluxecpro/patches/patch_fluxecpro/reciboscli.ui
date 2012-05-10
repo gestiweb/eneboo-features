@@ -1,0 +1,4 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formRecibosCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">575</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]"/>
+</xupdate:modifications>

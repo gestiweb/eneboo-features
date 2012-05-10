@@ -1,0 +1,78 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonInsert]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonInsert]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonInsert]/property[iconSet]/iconset[iconset,1]/text()[1]">image0</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonInsert]/property[maximumSize]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonEdit]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonEdit]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonEdit]/property[iconSet]/iconset[iconset,1]/text()[1]">image1</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonEdit]/property[maximumSize]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonDelete]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonDelete]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonDelete]/property[iconSet]/iconset[iconset,1]/text()[1]">image2</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonDelete]/property[maximumSize]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonZoom]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonZoom]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonZoom]/property[iconSet]/iconset[iconset,1]/text()[1]">image3</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonZoom]/property[maximumSize]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeType]/enum[enum,1]/text()[1]">Expanding</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">170</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnConceptos]/property[maximumSize]/size[size,1]/width[width,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnConceptos]/property[maximumSize]/size[size,1]/height[height,1]/text()[1]">32</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnConceptos]/property[iconSet]/iconset[iconset,1]/text()[1]">image4</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnConceptos]/property[minimumSize]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>pbnRenum</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>R</string>
+      </property>
+      <property name="iconSet">
+        <iconset>ren_asientosimage4</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Renumerar asientos (R)</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Renumera los asientos por fecha</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2_2]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_masterasientos]/vbox[vbox,1]/widget[QFrame,barraBotones]/grid[grid,1]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[co_renumasientoimage48377]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[co_renumasientoimage44733]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[co_renumasientoimage54694]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[co_renumasientoimage65044]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[co_renumasientoimage56583]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[co_renumasientoimage47187]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+</xupdate:modifications>
