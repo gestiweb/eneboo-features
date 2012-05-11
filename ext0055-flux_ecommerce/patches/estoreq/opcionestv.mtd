@@ -1,312 +1,401 @@
 <!DOCTYPE TMD>
 <TMD>
     <name>opcionestv</name>
-	<alias>QT_TRANSLATE_NOOP("MetaData","Opciones de la tienda virtual")</alias>
-	<field>
-		<name>id</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
-		<null>false</null>
-		<pk>true</pk>
-		<type>serial</type>
-	</field>
-	<field>
-		<name>arquitectura</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Configuración de base(s) de datos")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-		<optionslist>QT_TRANSLATE_NOOP("MetaData","Unificada");QT_TRANSLATE_NOOP("MetaData","Distribuida")</optionslist>
-		<default>QT_TRANSLATE_NOOP("MetaData","Unificada")</default>
-	</field>
-	<field>
-		<name>titulo</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Título de la web")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-	</field>
-	<field>
-		<name>plantilla</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Plantilla")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-		<default>default</default>
-	</field>
-	<field>
-		<name>vistacatalogo</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Vista por defecto")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-		<optionslist>QT_TRANSLATE_NOOP("MetaData","Matriz");QT_TRANSLATE_NOOP("MetaData","Lista")</optionslist>
-		<default>QT_TRANSLATE_NOOP("MetaData","General")</default>
-	</field>
-	<field>
-		<name>articulosxfila</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Artículos por fila en la matriz")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>uint</type>
-		<length>1</length>
-		<default>4</default>
-	</field>
-	<field>
-		<name>imagenesxfila</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Imágenes por fila en galerías")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>uint</type>
-		<length>1</length>
-		<default>4</default>
-	</field>
-	<field>
-		<name>rutaweb</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Ruta a la web")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>500</length>
-	</field>
-	<field>
-		<name>impincluidos</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Precios con impuestos incluidos")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>true</default>
-	</field>
-	<field>
-		<name>desglosariva</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Desglosar impuestos en cesta y pedidos")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>false</default>
-	</field>
-	<field>
-		<name>mostrarstock</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar disponibilidad de stocks")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>true</default>
-	</field>
-	<field>
-		<name>mostrarplazoenvio</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar plazos de envío")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>true</default>
-	</field>
-	<field>
-		<name>mostraralbaranes</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar albaranes en web")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>false</default>
-	</field>
-	<field>
-		<name>mostrarfacturas</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar facturas en web")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>false</default>
-	</field>
-	<field>
-		<name>piximages</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Tamaño de las miniaturas (pixels)")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>uint</type>
-		<length>3</length>
-		<default>85</default>
-	</field>
-	<field>
-		<name>enviogratis</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Envío gratuito activo")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>false</default>
-	</field>
-	<field>
-		<name>enviogratisdesde</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Por compra mayor de")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>double</type>
-		<partI>6</partI>
-		<partD>2</partD>
-		<default>100</default>
-	</field>
-	<field>
-		<name>codenviogratis</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","F. Envío")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>10</length>
-		<relation>
-			<table>formasenvio</table>
-			<field>codenvio</field>
-			<card>M1</card>
-		</relation>
-	</field>
-	
-	<field>
-		<name>codidiomadefecto</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Idioma por defecto")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>3</length>
-		<relation>
-			<table>idiomas</table>
-			<field>codidioma</field>
-			<card>M1</card>
-		</relation>
-		<default>esp</default>
-	</field>
-	
-	<field>
-		<name>activarfaq</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Activar preguntas frecuentes")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>false</default>
-	</field>
-	
-	<field>
-		<name>solicitarnif</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Solicitar N.I.F. en los pedidos")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>false</default>
-	</field>
-	
-	<field>
-		<name>emailfrom</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Email del remitente de los correos automáticos")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-	</field>
-	
-	<field>
-		<name>nombrefrom</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre para el remitente de los correos automáticos")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-	</field>
-			
-	<field>
-		<name>emailcontacto</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Email para recibir los mensajes de contacto")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-	</field>
-	
-	<field>
-		<name>emailwebmaster</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Email del webmaster")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-	</field>
-	
-	<field>
-		<name>textopie</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Texto a pie de páginas")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>stringlist</type>
-	</field>
-	
-	<field>
-		<name>mostrartextopie</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Público")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-	</field>
-	
-	<field>
-		<name>textopre</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Texto de la página de inicio")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>stringlist</type>
-	</field>
-
-	<field>
-		<name>mostrartextopre</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Público")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-	</field>
-	
-	<field>
-		<name>preciosportarifas</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Precios por tarifas")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-	</field>
-	
-	<field>
-		<name>charset</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Codificación de caracteres de base de datos y web")</alias>
-		<null>false</null>
-		<pk>false</pk>
-		<type>string</type>
-		<length>250</length>
-		<optionslist>ISO-8859-1,UTF-8</optionslist>
-		<default>UTF-8</default>
-	</field>
-	
-	<field>
-		<name>noautoaccount</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Impedir a los usuarios crear una cuenta")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>true</default>
-	</field>
-	
-	<field>
-		<name>preciossolousuarios</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Mostrar precios sólo a usuarios registrados")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>true</default>
-		<visiblegrid>false</visiblegrid>
-	</field>
-	
-	<field>
-		<name>modificado</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
-		<null>true</null>
-		<pk>false</pk>
-		<type>bool</type>
-		<default>true</default>
-		<visiblegrid>false</visiblegrid>
-	</field>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Opciones de la tienda virtual")</alias>
+    <field>
+        <name>id</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+    </field>
+    <field>
+        <name>arquitectura</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Configuración de base(s) de datos")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <optionslist>QT_TRANSLATE_NOOP("MetaData","Unificada");QT_TRANSLATE_NOOP("MetaData","Distribuida")</optionslist>
+        <default>QT_TRANSLATE_NOOP("MetaData","Unificada")</default>
+    </field>
+    <field>
+        <name>titulo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Título de la web")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+    </field>
+    <field>
+        <name>plantilla</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Plantilla")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <default>default</default>
+    </field>
+    <field>
+        <name>vistacatalogo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Vista por defecto")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <optionslist>QT_TRANSLATE_NOOP("MetaData","Matriz");QT_TRANSLATE_NOOP("MetaData","Lista")</optionslist>
+        <default>QT_TRANSLATE_NOOP("MetaData","General")</default>
+    </field>
+    <field>
+        <name>articulosxfila</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Artículos por fila en la matriz")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <length>1</length>
+        <default>4</default>
+    </field>
+    <field>
+        <name>imagenesxfila</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Imágenes por fila en galerías")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <length>1</length>
+        <default>4</default>
+    </field>
+    <field>
+        <name>rutaweb</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Ruta a la web")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>500</length>
+    </field>
+    <field>
+        <name>impincluidos</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Precios con impuestos incluidos")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    <field>
+        <name>desglosariva</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Desglosar impuestos en cesta y pedidos")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    <field>
+        <name>mostrarstock</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar disponibilidad de stocks")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    <field>
+        <name>mostrarplazoenvio</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar plazos de envío")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    <field>
+        <name>mostraralbaranes</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar albaranes en web")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    <field>
+        <name>mostrarfacturas</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar facturas en web")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    <field>
+        <name>piximages</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Tamaño de las miniaturas (pixels)")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <length>3</length>
+        <default>85</default>
+    </field>
+    <field>
+        <name>enviogratis</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Envío gratuito activo")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    <field>
+        <name>enviogratisdesde</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Por compra mayor de")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+        <default>100</default>
+    </field>
+    <field>
+        <name>codenviogratis</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","F. Envío")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>10</length>
+        <relation>
+            <table>formasenvio</table>
+            <field>codenvio</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    <field>
+        <name>codidiomadefecto</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Idioma por defecto")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>3</length>
+        <relation>
+            <table>idiomas</table>
+            <field>codidioma</field>
+            <card>M1</card>
+        </relation>
+        <default>esp</default>
+    </field>
+    <field>
+        <name>activarfaq</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Activar preguntas frecuentes")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    <field>
+        <name>solicitarnif</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Solicitar N.I.F. en los pedidos")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+    </field>
+    <field>
+        <name>emailfrom</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Email del remitente de los correos automáticos")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <default>john@doe.com</default>
+    </field>
+    <field>
+        <name>nombrefrom</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Nombre para el remitente de los correos automáticos")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <default>john doe</default>
+    </field>
+    <field>
+        <name>emailcontacto</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Email para recibir los mensajes de contacto")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <default>john@doe.com</default>
+    </field>
+    <field>
+        <name>emailwebmaster</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Email del webmaster")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <default>john@doe.com</default>
+    </field>
+    <field>
+        <name>textopie</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Texto a pie de páginas")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+    </field>
+    <field>
+        <name>mostrartextopie</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Público")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+    </field>
+    <field>
+        <name>textopre</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Texto de la página de inicio")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+    </field>
+    <field>
+        <name>mostrartextopre</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Público")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+    </field>
+    <field>
+        <name>preciosportarifas</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Precios por tarifas")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+    </field>
+    <field>
+        <name>charset</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Codificación de caracteres de base de datos y web")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+        <optionslist>ISO-8859-1,UTF-8</optionslist>
+        <default>UTF-8</default>
+    </field>
+    <field>
+        <name>noautoaccount</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Impedir a los usuarios crear una cuenta")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    <field>
+        <name>preciossolousuarios</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar precios sólo a usuarios registrados")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+        <visiblegrid>false</visiblegrid>
+    </field>
+    <field>
+        <name>modificado</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+        <visiblegrid>false</visiblegrid>
+    </field>
+    <field>
+        <name>codejercicio</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio para los pedidos")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>4</length>
+        <relation>
+            <table>ejercicios</table>
+            <field>codejercicio</field>
+            <card>M1</card>
+        </relation>
+    </field>
+    <field>
+        <name>enviaraunamigo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Habilitar Recomendar Artículo a un amigo")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <visiblegrid>false</visiblegrid>
+    </field>
+    <field>
+        <name>enviarcomentario</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Habilitar Enviar un Comentario de artículo")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <visiblegrid>false</visiblegrid>
+    </field>
+    <field>
+        <name>activarcoddescuento</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Activar códigos de descuento")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+    </field>
+    <field>
+        <name>managerpass</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Password de administrador on-line")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>200</length>
+        <editable>false</editable>
+        <visiblegrid>false</visiblegrid>
+    </field>
+    <field>
+        <name>tituloseo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Titulo")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>250</length>
+    </field>
+    <field>
+        <name>descripcionseo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+    </field>
+    <field>
+        <name>deeplinking</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","URLs optimizadas")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    <field>
+        <name>codigoanalytics</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Código Google Analytics")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>25</length>
+    </field>
+    <field>
+        <name>validarcontactar</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Usar código de validación en página de Contactar")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    <field>
+        <name>validarcrearcuenta</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Usar código de validación en página de Crear Cuenta")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
+    <field>
+        <name>compartirarticulos</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Activar botón Compartir en artículos")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>true</default>
+    </field>
 </TMD>

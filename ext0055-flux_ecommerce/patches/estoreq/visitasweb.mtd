@@ -26,14 +26,13 @@
 		<alias>QT_TRANSLATE_NOOP("MetaData","Campo")</alias>
 		<null>false</null>
 		<pk>false</pk>
-		<ck>true</ck>
 		<type>string</type>
 		<length>100</length>
 	</field>
 	
 	<field>
-		<name>timestamp</name>
-		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<name>visitas</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Visitas")</alias>
 		<null>false</null>
 		<pk>false</pk>
 		<type>uint</type>
@@ -41,7 +40,16 @@
 	</field>
 	
 	<field>
-		<name>nick</name>
+		<name>codcliente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+	</field>
+
+	<field>
+		<name>modificado</name>
 		<alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
 		<null>true</null>
 		<pk>false</pk>

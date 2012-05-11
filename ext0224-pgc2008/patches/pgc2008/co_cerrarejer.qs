@@ -2,7 +2,7 @@
 /** @class_declaration pgc2008 */
 /////////////////////////////////////////////////////////////////
 //// PGC 2008 //////////////////////////////////////////////////////
-class pgc2008 extends oficial /** %from: oficial */ {
+class pgc2008 extends oficial {
     function pgc2008( context ) { oficial ( context ); }
 	function validarCierre():Boolean {
 		return this.ctx.pgc2008_validarCierre();
@@ -69,6 +69,7 @@ function pgc2008_comprobarSaldosHuerfanos():Boolean
 {
 	var util:FLUtil = new FLUtil;
 	var curCbl:FLSqlCursor = new FLSqlCursor("co_subcuentas");
+	curCbl.setForwardOnly(true);
 	var codEjercicio = this.cursor().valueBuffer("codejercicio");
 
 	var saldos:String = "";
@@ -112,7 +113,7 @@ function pgc2008_asientoPyG():Boolean
 		return this.iface.__asientoPyG();
 
 	var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
-
+	curAsiento.setForwardOnly(true);
 	curAsiento.setModeAccess(curAsiento.Insert);
 	curAsiento.refreshBuffer();
 	curAsiento.setValueBuffer("numero", 0);
@@ -124,6 +125,7 @@ function pgc2008_asientoPyG():Boolean
 
 	var idAsiento:Number = curAsiento.valueBuffer("idasiento");
 	var curPartida:Number = new FLSqlCursor("co_partidas");
+	curPartida.setForwardOnly(true);
 	var debe:Number = 0;
 	var haber:Number = 0;
 	var totalDebe:Number = 0;
@@ -133,12 +135,14 @@ function pgc2008_asientoPyG():Boolean
 
 	// select s.codsubcuenta,s.codcuenta,s.idsubcuenta,s.saldo from co_subcuentas s inner join co_cuentas c on s.idcuenta=c.idcuenta where s.codejercicio='0002' and c.codcuenta like '430%' and s.saldo <> 0;
 	var qSC:FLSqlQuery = new FLSqlQuery();
+	qSC.setForwardOnly(true);
 	qSC.setTablesList("co_subcuentas,co_cuentas");
 	qSC.setFrom("co_subcuentas s inner join co_cuentas c on s.idcuenta=c.idcuenta");
 	qSC.setSelect("s.saldo, s.idsubcuenta, s.codsubcuenta");
 
 	// 	select codcuenta from co_cuentascb where codbalance like 'PG-%' order by codcuenta;
 	var q:FLSqlQuery = new FLSqlQuery();
+	q.setForwardOnly(true);
 	q.setTablesList("co_cuentascb");
 	q.setFrom("co_cuentascb");
 	q.setSelect("codcuenta");
@@ -247,7 +251,7 @@ function pgc2008_asientoCierre():Boolean
 
 
 	var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
-
+	curAsiento.setForwardOnly(true);
 	curAsiento.setModeAccess(curAsiento.Insert);
 	curAsiento.refreshBuffer();
 	curAsiento.setValueBuffer("numero", 0);
@@ -259,6 +263,7 @@ function pgc2008_asientoCierre():Boolean
 
 	var idAsiento:Number = curAsiento.valueBuffer("idasiento");
 	var curPartida:FLSqlCursor = new FLSqlCursor("co_partidas");
+	curPartida.setForwardOnly(true);
 	var debe:Number = 0;
 	var haber:Number = 0;
 	var totalDebe:Number = 0;
@@ -268,12 +273,14 @@ function pgc2008_asientoCierre():Boolean
 
 	// select s.codsubcuenta,s.codcuenta,s.idsubcuenta,s.saldo from co_subcuentas s inner join co_cuentas c on s.idcuenta=c.idcuenta where s.codejercicio='0002' and c.codcuenta like '430%' and s.saldo <> 0;
 	var qSC:FLSqlQuery = new FLSqlQuery();
+	qSC.setForwardOnly(true);
 	qSC.setTablesList("co_subcuentas,co_cuentas");
 	qSC.setFrom("co_subcuentas s inner join co_cuentas c on s.idcuenta=c.idcuenta");
 	qSC.setSelect("s.saldo, s.idsubcuenta, s.codsubcuenta");
 
 	// 	select codcuenta from co_cuentascb where codbalance like 'A-%' or codbalance like 'P-%' order by codcuenta;
 	var q:FLSqlQuery = new FLSqlQuery();
+	q.setForwardOnly(true);
 	q.setTablesList("co_cuentascb");
 	q.setFrom("co_cuentascb");
 	q.setSelect("codcuenta");
@@ -349,53 +356,55 @@ function pgc2008_asientoApertura(idAsientoCierre, ejNuevo):Boolean
 {
 	var util:FLUtil = new FLUtil();
 
-	if (!ejNuevo)
+	if (!ejNuevo) {
 		return false;
-
-	if (!util.sqlSelect("co_subcuentas", "idsubcuenta", "codejercicio = '" + ejNuevo + "'"))
+	}
+	if (!util.sqlSelect("co_subcuentas", "idsubcuenta", "codejercicio = '" + ejNuevo + "' AND idsubcuenta <> 0")) {
 		return false;
-
+	}
 	var datosEjercicio:Array = flfactppal.iface.pub_ejecutarQry("ejercicios", "fechainicio,nombre,plancontable,longsubcuenta", "codejercicio = '" + ejNuevo + "'");
-	if (datosEjercicio.plancontable != "08")
+	if (datosEjercicio.plancontable != "08") {
 		return this.iface.__asientoApertura(idAsientoCierre, ejNuevo);
-
+	}
 	var ejAnterior:String = util.sqlSelect("co_asientos", "codejercicio", "idasiento = " + idAsientoCierre);
 	var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
+	curAsiento.setForwardOnly(true);
 	var fechaAsiento:String = datosEjercicio.fechainicio;
 	var nombreEjercicio:String = datosEjercicio.nombre;
 	var planContableAnt = util.sqlSelect("ejercicios", "plancontable", "codejercicio = '" + ejAnterior + "'");
 
-	if (planContableAnt != "08")
-		if (!this.iface.comprobarSubcuentas08(idAsientoCierre, ejNuevo))
+	if (planContableAnt != "08") {
+		if (!this.iface.comprobarSubcuentas08(idAsientoCierre, ejNuevo)) {
 			return false;
-
+		}
+	}
 	curAsiento.setModeAccess(curAsiento.Insert);
 	curAsiento.refreshBuffer();
 	curAsiento.setValueBuffer("numero", 0);
 	curAsiento.setValueBuffer("fecha", fechaAsiento);
 	curAsiento.setValueBuffer("codejercicio", ejNuevo);
 
-	if (!curAsiento.commitBuffer())
+	if (!curAsiento.commitBuffer()) {
 		return false;
-
+	}
 	var idAsiento:Number = curAsiento.valueBuffer("idasiento");
 	var qryCierre:FLSqlQuery = new FLSqlQuery();
+	qryCierre.setForwardOnly(true);
 	with (qryCierre) {
 		setTablesList("co_partidas");
 		setSelect("codsubcuenta, debe, haber, coddivisa, tasaconv, debeME, haberME");
 		setFrom("co_partidas");
 		setWhere("idasiento = " + idAsientoCierre);
 	}
-	if (!qryCierre.exec())
+	if (!qryCierre.exec()) {
 		return false;
-
+	}
 
 	// Es necesario migrar el resultado de la 129 a la 120 o 121 (resultados de ejercicio anteriores)
 	var codSubcuentaPyG:String;
 	if (planContableAnt == "08") {
 		codSubcuentaPyG = util.sqlSelect("co_subcuentas s INNER JOIN co_cuentas c ON s.idcuenta = c.idcuenta INNER JOIN co_cuentascb cb ON c.codcuenta = cb.codcuenta", "codsubcuenta",	"cb.codbalance = 'P-A-1-VII-' AND c.codejercicio = '" + ejAnterior + "'", "co_subcuentas,co_cuentas,co_cuentascb");
-	}
-	else {
+	} else {
 		var ctaPyG:Array = flfacturac.iface.pub_datosCtaEspecial("PYG", ejAnterior);
 		codSubcuentaPyG = ctaPyG.codsubcuenta;
 	}
@@ -408,6 +417,7 @@ function pgc2008_asientoApertura(idAsientoCierre, ejNuevo):Boolean
 	util.setProgress(1);
 
 	var curApertura:FLSqlCursor = new FLSqlCursor("co_partidas");
+	curApertura.setForwardOnly(true);
 	var paso:Number = 0;
 	var idSubcuentaAp:String;
 	var codSubcuenta08:String;
@@ -415,9 +425,9 @@ function pgc2008_asientoApertura(idAsientoCierre, ejNuevo):Boolean
 
 	while (qryCierre.next()) {
 
-		if (planContableAnt == "08")
+		if (planContableAnt == "08") {
 			codSubcuenta08 = qryCierre.value("codsubcuenta");
-		else {
+		} else {
 			codSubcuenta08 = flcontppal.iface.convertirCodSubcuenta(ejAnterior, qryCierre.value("codsubcuenta"));
 			if (!codSubcuenta08) {
 				MessageBox.critical(util.translate("scripts", "No se encuentra la correspondencia entre la cuenta correspondiente a la subcuenta %0 en el ejercicio %0.\nDeberá migrar el saldo de esta subcuenta a otra y repetir el cierre").arg(qryCierre.value("codsubcuenta")).arg(ejAnterior), MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
@@ -427,10 +437,11 @@ function pgc2008_asientoApertura(idAsientoCierre, ejNuevo):Boolean
 		}
 
 		if (qryCierre.value("codsubcuenta") == codSubcuentaPyG) {
-			if (qryCierre.value("debe") - qryCierre.value("haber") > 0)
+			if (qryCierre.value("debe") - qryCierre.value("haber") > 0) {
 				codSubcuenta08 = codSubcuentaPyGPos;
-			else
+			} else {
 				codSubcuenta08 = codSubcuentaPyGNeg;
+			}
 		}
 
 		idSubcuentaAp = util.sqlSelect("co_subcuentas", "idsubcuenta", "codsubcuenta = '" + codSubcuenta08 + "' AND codejercicio = '" + ejNuevo + "'");
@@ -438,11 +449,13 @@ function pgc2008_asientoApertura(idAsientoCierre, ejNuevo):Boolean
 		if (!idSubcuentaAp) {
 			util.destroyProgressDialog();
 			var res:Number = MessageBox.warning(util.translate("scripts", "No existe la subcuenta %1 en el ejercicio %2.\n¿Desea crearla?").arg(codSubcuenta08).arg(ejNuevo), MessageBox.Yes, MessageBox.Cancel);
-			if (res != MessageBox.Yes)
+			if (res != MessageBox.Yes) {
 				return false;
+			}
 			idSubcuentaAp = this.iface.crearSubcuentaApertura(codSubcuenta08, ejNuevo);
-			if (!idSubcuentaAp)
+			if (!idSubcuentaAp) {
 				return false;
+			}
 		}
 
 		curApertura.setModeAccess(curApertura.Insert);
@@ -484,13 +497,14 @@ function pgc2008_comprobarSubcuentas08(idAsientoCierre, ejNuevo):Boolean
 {
 	var util:FLUtil = new FLUtil();
 
-	if (!ejNuevo)
+	if (!ejNuevo) {
 		return false;
-
-	if (!util.sqlSelect("co_subcuentas", "idsubcuenta", "codejercicio = '" + ejNuevo + "'"))
+	}
+	if (!util.sqlSelect("co_subcuentas", "idsubcuenta", "codejercicio = '" + ejNuevo + "' AND idsubcuenta <> 0")) {
 		return false;
-
+	}
 	var qryCierre:FLSqlQuery = new FLSqlQuery();
+	qryCierre.setForwardOnly(true);
 	with (qryCierre) {
 		setTablesList("co_partidas");
 		setSelect("codsubcuenta, debe, haber, coddivisa, tasaconv, debeME, haberME");

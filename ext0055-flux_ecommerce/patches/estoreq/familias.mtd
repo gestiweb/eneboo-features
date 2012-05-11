@@ -8,7 +8,7 @@
       <type>string</type>
       <length>10</length>
       <relation>
-        <table>gruposartibutos</table>
+        <table>gruposatributos</table>
         <field>codgrupo</field>
         <card>M1</card>
       </relation>

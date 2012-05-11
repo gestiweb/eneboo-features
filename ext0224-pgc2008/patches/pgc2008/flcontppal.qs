@@ -2,7 +2,7 @@
 /** @class_declaration pgc2008 */
 /////////////////////////////////////////////////////////////////
 //// PGC 2008 //////////////////////////////////////////////////////
-class pgc2008 extends oficial /** %from: oficial */ {
+class pgc2008 extends oficial {
 
     function pgc2008( context ) { oficial ( context ); }
 	function init(init) {
@@ -314,7 +314,7 @@ function pgc2008_generarCodigosBalance2008()
 		curCbl.commitBuffer();
 	}
 
-	this.iface.pgc2008_generarOrden3CB();
+	this.iface.generarOrden3CB();
 
 	util.destroyProgressDialog();
 }

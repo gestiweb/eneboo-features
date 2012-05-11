@@ -11,6 +11,10 @@
 	
 	<group>
 		<level>1</level> 
+		<field>lineasalbaranescli.idpedido</field>
+	</group>
+	<group>
+		<level>2</level> 
 		<field>lineasalbaranescli.idlinea</field>
 	</group>
 
@@ -27,16 +31,17 @@
 		albaranescli.tasaconv, albaranescli.coddir,
 		albaranescli.direccion, albaranescli.codpostal,
 		albaranescli.ciudad, albaranescli.provincia,
-		albaranescli.apartado, albaranescli.codpais,
+		albaranescli.apartado, albaranescli.codpais, albaranescli.observaciones,
 		lineasalbaranescli.referencia, lineasalbaranescli.descripcion,
 		lineasalbaranescli.cantidad, lineasalbaranescli.pvpunitario,
 		lineasalbaranescli.pvptotal, lineasalbaranescli.codimpuesto,
-		lineasalbaranescli.iva,lineasalbaranescli.idlinea,
+		lineasalbaranescli.iva,lineasalbaranescli.idlinea,,lineasalbaranescli.idpedido,
+		pedidoscli.codigo, pedidoscli.fecha, pedidoscli.idpedido,
 		articulos.codunidad,
 		i_articuloscomp_buffer.referencia,i_articuloscomp_buffer.descripcion,
 		i_articuloscomp_buffer.cantidad,i_articuloscomp_buffer.codunidad,
 		empresa.nombre, empresa.cifnif,
-		empresa.direccion, empresa.logo,
+		empresa.direccion,
 		empresa.codpostal, empresa.ciudad,
 		empresa.provincia, empresa.apartado,
 		empresa.codpais
@@ -44,9 +49,13 @@
 
 	<from>
 		empresa,albaranescli INNER JOIN lineasalbaranescli ON albaranescli.idalbaran = lineasalbaranescli.idalbaran LEFT OUTER JOIN i_articuloscomp_buffer ON lineasalbaranescli.idlinea = i_articuloscomp_buffer.idlinea
-		LEFT OUTER JOIN articulos ON lineasalbaranescli.referencia = articulos.referencia
+		LEFT OUTER JOIN articulos ON lineasalbaranescli.referencia = articulos.referencia INNER JOIN pedidoscli ON lineasalbaranescli.idpedido = pedidoscli.idpedido
 	</from>
 
 	<where>
 	</where>
+	
+	<order>
+		albaranescli.idalbaran,lineasalbaranescli.idpedido,lineasalbaranescli.referencia
+	</order>
 </QRY>

@@ -105,7 +105,7 @@ function interna_validateForm()
 
 function oficial_traducirNombre()
 {
-	return flfactalma.iface.pub_traducir("atributos", "nombre", this.cursor().valueBuffer("codatributo"));
+	return flfactppal.iface.pub_traducir("atributos", "nombre", this.cursor().valueBuffer("codatributo"));
 }
 
 //// OFICIAL /////////////////////////////////////////////////////

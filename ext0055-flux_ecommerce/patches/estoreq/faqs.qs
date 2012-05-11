@@ -94,7 +94,7 @@ function interna_init()
 
 function oficial_traducir(campo)
 {
-	return flfactalma.iface.pub_traducir("faqs", campo, this.cursor().valueBuffer("id"));
+	return flfactppal.iface.pub_traducir("faqs", campo, this.cursor().valueBuffer("id"));
 }
 
 //// OFICIAL /////////////////////////////////////////////////////

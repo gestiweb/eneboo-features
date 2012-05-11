@@ -7,6 +7,9 @@ class ivaIncluido extends oficial /** %from: oficial */ {
 	function datosLineaPedido(curLineaPresupuesto:FLSqlCursor):Boolean {
 		return this.ctx.ivaIncluido_datosLineaPedido(curLineaPresupuesto);
 	}
+	function totalesPedido():Boolean {
+		return this.ctx.ivaIncluido_totalesPedido();
+	}
 }
 //// IVAINCLUIDO /////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -38,6 +41,19 @@ function ivaIncluido_datosLineaPedido(curLineaPresupuesto:FLSqlCursor):Boolean
 
 	return true;
 }
+function ivaIncluido_totalesPedido():Boolean
+{
+	this.iface.__totalesPedido();
+
+	// Comprobar redondeo y recalcular totales
+	formRecordfacturascli.iface.comprobarRedondeoIVA(this.iface.curPedido, "idpedido")
+	with (this.iface.curPedido) {
+		setValueBuffer("total", formpedidoscli.iface.pub_commonCalculateField("total", this));
+		setValueBuffer("totaleuros", formpedidoscli.iface.pub_commonCalculateField("totaleuros", this));
+	}
+	return true;
+}
+
 //// IVAINCLUIDO /////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 

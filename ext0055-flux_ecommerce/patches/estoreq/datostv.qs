@@ -142,8 +142,6 @@ function interna_init()
 		"fabricantes",
 		"faqs",
 
-		"paises",
-		"provincias",
 		"galeriasimagenes",
 		"imagenes",
 		"tarifas",
@@ -157,8 +155,13 @@ function interna_init()
 		"atributosart",
 		"accesoriosart",
 		"formasenvio",
+		"pasarelaspago",
+		"parametrospasarela",
 		"formaspago",
 		"opcionestv",
+
+		"paises",
+		"provincias",
 		"clientes",
 		"empresa"
 	);
@@ -427,6 +430,9 @@ function oficial_importarTabla(tabla:String, nomTabla:String)
 			if ((listaCampos[i] == "coddir" || listaCampos[i] == "coddirenv") && tabla == "pedidoscli")
 				continue;
 
+			if (listaCampos[i] == "idprovincia")
+				continue;
+
 			valor = curRem.valueBuffer(listaCampos[i]);
 			curLoc.setValueBuffer(listaCampos[i], valor);
 		}
@@ -501,6 +507,9 @@ function oficial_importarPedidos()
 
 			// Excepciones *****************
 			if ((listaCampos[i] == "coddir" || listaCampos[i] == "coddirenv" || listaCampos[i] == "idpedido"))
+				continue;
+
+			if (listaCampos[i] == "idprovincia")
 				continue;
 
 			curLoc.setValueBuffer(listaCampos[i], curRem.valueBuffer(listaCampos[i]));
@@ -731,13 +740,15 @@ function oficial_eliminarObsoletos(tabla:String):Number
 	var eliminados:Number = 0;
 	var paso:Number = 0;
 
+	curDel.setForwardOnly(true);
 	curDel.select("tabla = '" + tabla + "'");
 	util.createProgressDialog( util.translate( "scripts", "Eliminando obsoletos de " ) + tabla, curDel.size());
-
+	var valorClave;
 	while(curDel.next()) {
 
 		util.setProgress(paso++);
-		curRem.select(campoClave + " = '" + curDel.valueBuffer("idcampo") + "'");
+		valorClave = curDel.valueBuffer("idcampo");
+		curRem.select(campoClave + " = '" + valorClave + "'");
 		if (curRem.first()) {
 			curRem.setModeAccess(curRem.Del);
 			curRem.refreshBuffer();
@@ -745,8 +756,9 @@ function oficial_eliminarObsoletos(tabla:String):Number
 				eliminados++;
 				curDel.setModeAccess(curDel.Del);
 				curDel.refreshBuffer();
-				if (!curDel.commitBuffer())
+				if (!curDel.commitBuffer()) {
 					debug(util.translate("scripts",	"Error al eliminar en la tabla de registro eliminados %0 el código/id " ).arg(tabla) + valorClave);
+			        }
 			}
 			else {
 				debug(util.translate("scripts",	"Error al eliminar en la tabla remota %0 el código/id " ).arg(tabla) + valorClave);
@@ -757,8 +769,9 @@ function oficial_eliminarObsoletos(tabla:String):Number
 		else {
 			curDel.setModeAccess(curDel.Del);
 			curDel.refreshBuffer();
-			if (!curDel.commitBuffer())
+			if (!curDel.commitBuffer()) {
 				debug(util.translate("scripts",	"Error al eliminar en la tabla de registro eliminados %0 el código/id " ).arg(tabla) + valorClave);
+   		        }
 		}
 
 	}

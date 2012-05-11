@@ -2,8 +2,8 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends ivaIncluido /** %from: oficial */ {
-    function fluxEcommerce( context ) { ivaIncluido ( context ); }
+class fluxEcommerce extends oficial {
+    function fluxEcommerce( context ) { oficial ( context ); }
 	function init() {
 		this.ctx.fluxEcommerce_init();
 	}
@@ -106,6 +106,9 @@ function fluxEcommerce_seleccionarImagen()
 		MessageBox.warning(util.translate("scripts", "No se ha establecido la ruta a la web en las opciones generales,\no la ruta no es válida"), MessageBox.Ok, MessageBox.NoButton);
 		return false;
 	}
+
+	if (rutaDestino.right(1) != "\\" && rutaDestino.right(1) != "/")
+		rutaDestino += "/";
 
 	var cursor:FLSqlCursor = this.cursor();
 	var archivo:String = FileDialog.getOpenFileName("*.jpg;*.png;*.gif", util.translate("scripts","Elegir Fichero"));
@@ -277,7 +280,6 @@ function fluxEcommerce_actualizarPvpOferta()
 	debug(dTar.inclineal);
 
 	pvp = parseFloat((pvp * (100 + parseFloat(dTar.incporcentual)) / 100) + parseFloat(dTar.inclineal));
-	debug(pvp);
 	this.cursor().setValueBuffer("pvpoferta", pvp);
 }
 
@@ -295,12 +297,12 @@ function fluxEcommerce_actualizarControlesOferta()
 
 function fluxEcommerce_traducirDescripcion()
 {
-	return flfactalma.iface.pub_traducir("articulos", "descripcion", this.cursor().valueBuffer("referencia"));
+	return flfactppal.iface.pub_traducir("articulos", "descripcion", this.cursor().valueBuffer("referencia"));
 }
 
 function fluxEcommerce_traducirDescPublica()
 {
-	return flfactalma.iface.pub_traducir("articulos", "descpublica", this.cursor().valueBuffer("referencia"));
+	return flfactppal.iface.pub_traducir("articulos", "descpublica", this.cursor().valueBuffer("referencia"));
 }
 
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////

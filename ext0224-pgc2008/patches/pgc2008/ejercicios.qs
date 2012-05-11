@@ -2,9 +2,10 @@
 /** @class_declaration pgc2008 */
 /////////////////////////////////////////////////////////////////
 //// PGC 2008 //////////////////////////////////////////////////////
-class pgc2008 extends oficial /** %from: oficial */
+class pgc2008 extends modelo303
 {
-    function pgc2008( context ) { oficial ( context ); }
+	var curSubcuenta_:FLSqlCursor;
+    function pgc2008( context ) { modelo303 ( context ); }
 
 	function init() { this.ctx.pgc2008_init(); }
 
@@ -20,6 +21,9 @@ class pgc2008 extends oficial /** %from: oficial */
 	}
 	function buscarPlanContable90(cursor:FLSqlCursor):Boolean {
 		return this.ctx.pgc2008_buscarPlanContable90(cursor);
+	}
+	function datosSubcuenta(curSubcuentaAnt:FLSqlCursor):Boolean {
+		return this.ctx.pgc2008_datosSubcuenta(curSubcuentaAnt);
 	}
 	function comprobarSubcuentasCopia(ejercicioAnt:String, ejercicioAct:String):Boolean {
 		return this.ctx.pgc2008_comprobarSubcuentasCopia(ejercicioAnt, ejercicioAct);
@@ -223,58 +227,64 @@ function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuen
 
 	var paso:Number = 0;
 
-	var qrySubCuentas:FLSqlQuery = new FLSqlQuery;
-	qrySubCuentas.setTablesList ("co_subcuentas");
-	qrySubCuentas.setSelect("codsubcuenta,codcuenta,descripcion,coddivisa,codimpuesto,iva,recargo,saldo,idcuentaesp");
-	qrySubCuentas.setFrom("co_subcuentas");
-	qrySubCuentas.setWhere("codejercicio = '" + ejercicioAnt + "'");
+// 	var qrySubCuentas:FLSqlQuery = new FLSqlQuery;
+// 	qrySubCuentas.setTablesList ("co_subcuentas");
+// 	qrySubCuentas.setSelect("codsubcuenta,codcuenta,descripcion,coddivisa,codimpuesto,iva,recargo,saldo,idcuentaesp");
+// 	qrySubCuentas.setFrom("co_subcuentas");
+// 	qrySubCuentas.setWhere("codejercicio = '" + ejercicioAnt + "'");
+//
+// 	if (!qrySubCuentas.exec())
+// 		return;
+//
+// 	util.createProgressDialog(util.translate("scripts", "Copiando Subcuentas"), qrySubCuentas.size());
 
-	if (!qrySubCuentas.exec())
-		return;
+	var curSubcuentaAnt:FLSqlQuery = new FLSqlCursor("co_subcuentas");
+	curSubcuentaAnt.select("codejercicio = '" + ejercicioAnt + "'");
+	util.createProgressDialog(util.translate("scripts", "Copiando Subcuentas"), curSubcuentaAnt.size());
 
-	util.createProgressDialog(util.translate("scripts", "Copiando Subcuentas"), qrySubCuentas.size());
-
-	var curSubCuentas:FLSqlCursor = new FLSqlCursor ("co_subcuentas");
-	curSubCuentas.setActivatedCommitActions(false);
+// 	var curSubCuentas:FLSqlCursor = new FLSqlCursor ("co_subcuentas");
+	this.iface.curSubcuenta_ = new FLSqlCursor ("co_subcuentas");
+	this.iface.curSubcuenta_.setActivatedCommitActions(false);
 
 	var cuentasPerdidas:String = "";
 	var descripcion:String;
-	while (qrySubCuentas.next()) {
+	while (curSubcuentaAnt.next()) {
 
 		util.setProgress(paso++);
 
 		// Caso 1: de 90 a 08
 		if (planContableAnt != "08") {
 			// A qué cuenta 08 corresponde esta cuenta 90?
-			codCuenta08 = flcontppal.iface.convertirCodCuenta(qrySubCuentas.value(1));
+			codCuenta08 = flcontppal.iface.convertirCodCuenta(curSubcuentaAnt.valueBuffer("codcuenta"));
 			idCuenta08 = util.sqlSelect("co_cuentas", "idcuenta", "codcuenta = '" + codCuenta08 + "' and codejercicio = '" + ejercicioAct + "'");
 
 			if (!idCuenta08) {
 				//Si no hay saldo, se ignora
-				if (parseFloat(qrySubCuentas.value(7)))
-					cuentasPerdidas += "\n" + qrySubCuentas.value(1) + " " + qrySubCuentas.value(0);
+				if (parseFloat(curSubcuentaAnt.valueBuffer("saldo"))) {
+					cuentasPerdidas += "\n" + curSubcuentaAnt.valueBuffer("codcuenta") + " " + curSubcuentaAnt.valueBuffer("codsubcuenta");
+				}
 				continue;
 			}
 
-			codSubcuenta08 = flcontppal.iface.convertirCodSubcuenta(ejercicioAnt, qrySubCuentas.value(0));
-			descripcion = qrySubCuentas.value("descripcion");
+			codSubcuenta08 = flcontppal.iface.convertirCodSubcuenta(ejercicioAnt, curSubcuentaAnt.valueBuffer("codsubcuenta"));
+			descripcion = curSubcuentaAnt.valueBuffer("descripcion");
 		} else {
 			// Caso 2: de 08 a 08
-			codCuenta08 = qrySubCuentas.value(1);
+			codCuenta08 = curSubcuentaAnt.valueBuffer("codcuenta");
 			idCuenta08 = util.sqlSelect("co_cuentas", "idcuenta", "codcuenta = '" + codCuenta08 + "' and codejercicio = '" + ejercicioAct + "'");
-			codSubcuenta08 = qrySubCuentas.value(0);
+			codSubcuenta08 = curSubcuentaAnt.valueBuffer("codsubcuenta");
 			if (!idCuenta08) {
 				idCuenta08 = flcontppal.iface.pub_copiarCuenta(codCuenta08, ejercicioAnt, ejercicioAct);
 				if (!idCuenta08) {
 					continue;
 				}
 			}
-			descripcion = qrySubCuentas.value("descripcion");
+			descripcion = curSubcuentaAnt.valueBuffer("descripcion");
 		}
 
 		// Existe ya?
-		curSubCuentas.select("codsubcuenta = '" + codSubcuenta08 + "' AND codejercicio = '" + ejercicioAct + "'");
-		if (curSubCuentas.first()) {
+		this.iface.curSubcuenta_.select("codsubcuenta = '" + codSubcuenta08 + "' AND codejercicio = '" + ejercicioAct + "'");
+		if (this.iface.curSubcuenta_.first()) {
 			continue;
 		}
 
@@ -287,19 +297,19 @@ function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuen
 				descripcion = partesDescripcion[1];
 		}*/
 
-		curSubCuentas.setModeAccess (curSubCuentas.Insert);
-		curSubCuentas.refreshBuffer();
-		curSubCuentas.setValueBuffer("codejercicio",ejercicioAct);
-		curSubCuentas.setValueBuffer("codsubcuenta",codSubcuenta08);
-		curSubCuentas.setValueBuffer("idcuenta",idCuenta08);
-		curSubCuentas.setValueBuffer("codcuenta",codCuenta08);
-		curSubCuentas.setValueBuffer("descripcion",descripcion);
-		curSubCuentas.setValueBuffer("coddivisa",qrySubCuentas.value(3));
-		curSubCuentas.setValueBuffer("codimpuesto",qrySubCuentas.value(4));
-		curSubCuentas.setValueBuffer("iva",qrySubCuentas.value(5));
-		curSubCuentas.setValueBuffer("idcuentaesp",qrySubCuentas.value("idcuentaesp"));
-		if (!curSubCuentas.commitBuffer())
+		this.iface.curSubcuenta_.setModeAccess (this.iface.curSubcuenta_.Insert);
+		this.iface.curSubcuenta_.refreshBuffer();
+		this.iface.curSubcuenta_.setValueBuffer("codejercicio", ejercicioAct);
+		this.iface.curSubcuenta_.setValueBuffer("codsubcuenta", codSubcuenta08);
+		this.iface.curSubcuenta_.setValueBuffer("idcuenta", idCuenta08);
+		this.iface.curSubcuenta_.setValueBuffer("codcuenta", codCuenta08);
+		this.iface.curSubcuenta_.setValueBuffer("descripcion", descripcion);
+		if (!this.iface.datosSubcuenta(curSubcuentaAnt)) {
+			return false;
+		}
+		if (!this.iface.curSubcuenta_.commitBuffer()) {
 			return;
+		}
 	}
 
 	util.destroyProgressDialog();
@@ -316,6 +326,16 @@ function pgc2008_copiarPGC(ejercicioAnt:String, ejercicioAct:String, longSubcuen
 
 	MessageBox.information(util.translate("scripts", "Se copió el cuadro de cuentas"),
 			 MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
+
+	return true;
+}
+
+function pgc2008_datosSubcuenta(curSubcuentaAnt:FLSqlCursor):Boolean
+{
+	this.iface.curSubcuenta_.setValueBuffer("coddivisa", curSubcuentaAnt.valueBuffer("coddivisa"));
+	this.iface.curSubcuenta_.setValueBuffer("codimpuesto",curSubcuentaAnt.valueBuffer("codimpuesto"));
+	this.iface.curSubcuenta_.setValueBuffer("iva", curSubcuentaAnt.valueBuffer("iva"));
+	this.iface.curSubcuenta_.setValueBuffer("idcuentaesp", curSubcuentaAnt.valueBuffer("idcuentaesp"));
 
 	return true;
 }

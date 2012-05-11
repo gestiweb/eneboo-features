@@ -110,7 +110,7 @@ function oficial_bufferChanged(fN:String)
 
 function oficial_traducirTitulo()
 {
-	return flfactalma.iface.pub_traducir("modulosweb", "titulo", this.cursor().valueBuffer("codigo"));
+	return flfactppal.iface.pub_traducir("modulosweb", "titulo", this.cursor().valueBuffer("codigo"));
 }
 
 function oficial_controlHTML() 

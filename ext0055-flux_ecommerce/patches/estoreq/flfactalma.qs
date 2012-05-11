@@ -2,9 +2,9 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends oficial /** %from: oficial */ {
+class fluxEcommerce extends traducciones {
 	var valoresTradActual:Array;
-    function fluxEcommerce( context ) { oficial ( context ); }
+    function fluxEcommerce( context ) { traducciones ( context ); }
 
 	function init() {
 		return this.ctx.fluxEcommerce_init();
@@ -20,13 +20,6 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 	}
 	function introducirIdiomas() {
 		return this.ctx.fluxEcommerce_introducirIdiomas();
-	}
-
-	function traducir(tabla:String, campo:String, idCampo:String) {
-		return this.ctx.fluxEcommerce_traducir(tabla, campo, idCampo);
-	}
-	function valoresTrad(tabla:String, campo:String, idCampo:String) {
-		return this.ctx.fluxEcommerce_valoresTrad(tabla, campo, idCampo);
 	}
 
 	function lanzarOpciones() {
@@ -63,9 +56,6 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 	function beforeCommit_gruposatributos(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_beforeCommit_gruposatributos(cursor);
 	}
-	function beforeCommit_idiomas(cursor:FLSqlCursor):Boolean {
-		return this.ctx.fluxEcommerce_beforeCommit_idiomas(cursor);
-	}
 	function beforeCommit_infogeneral(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_beforeCommit_infogeneral(cursor);
 	}
@@ -84,8 +74,8 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 	function beforeCommit_tarifas(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_beforeCommit_tarifas(cursor);
 	}
-	function beforeCommit_traducciones(cursor:FLSqlCursor):Boolean {
-		return this.ctx.fluxEcommerce_beforeCommit_traducciones(cursor);
+	function beforeCommit_articulostarifas(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_beforeCommit_articulostarifas(cursor);
 	}
 	function beforeCommit_imagenes(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_beforeCommit_imagenes(cursor);
@@ -93,12 +83,24 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 	function beforeCommit_galeriasimagenes(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_beforeCommit_galeriasimagenes(cursor);
 	}
+	function beforeCommit_codigosdescuento(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_beforeCommit_codigosdescuento(cursor);
+	}
+	function beforeCommit_traducciones(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_beforeCommit_traducciones(cursor);
+	}
+	function beforeCommit_stocks(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_beforeCommit_stocks(cursor);
+	}
 
 	function setModificado(cursor:FLSqlCursor)  {
 		return this.ctx.fluxEcommerce_setModificado(cursor);
 	}
 
 
+	function afterCommit_stocks(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_afterCommit_stocks(cursor);
+	}
 	function afterCommit_accesoriosart(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_afterCommit_accesoriosart(cursor);
 	}
@@ -129,9 +131,6 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 	function afterCommit_gruposatributos(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_afterCommit_gruposatributos(cursor);
 	}
-	function afterCommit_idiomas(cursor:FLSqlCursor):Boolean {
-		return this.ctx.fluxEcommerce_afterCommit_idiomas(cursor);
-	}
 	function afterCommit_infogeneral(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_afterCommit_infogeneral(cursor);
 	}
@@ -150,14 +149,23 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 	function afterCommit_tarifas(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_afterCommit_tarifas(cursor);
 	}
-	function afterCommit_traducciones(cursor:FLSqlCursor):Boolean {
-		return this.ctx.fluxEcommerce_afterCommit_traducciones(cursor);
+	function afterCommit_articulostarifas(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_afterCommit_articulostarifas(cursor);
 	}
 	function afterCommit_imagenes(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_afterCommit_imagenes(cursor);
 	}
 	function afterCommit_galeriasimagenes(cursor:FLSqlCursor):Boolean {
 		return this.ctx.fluxEcommerce_afterCommit_galeriasimagenes(cursor);
+	}
+	function afterCommit_codigosdescuento(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_afterCommit_codigosdescuento(cursor);
+	}
+	function afterCommit_traducciones(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_afterCommit_traducciones(cursor);
+	}
+	function afterCommit_stocks(cursor:FLSqlCursor):Boolean {
+		return this.ctx.fluxEcommerce_afterCommit_stocks(cursor);
 	}
 
 	function registrarDel(cursor:FLSqlCursor):Boolean {
@@ -170,7 +178,7 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 /** @class_declaration pubFluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// PUB FLUX ECOMMERCE //////////////////////////////////////////////////////
-class pubFluxEcommerce extends ifaceCtx /** %from: ifaceCtx */ {
+class pubFluxEcommerce extends ifaceCtx {
     function pubFluxEcommerce( context ) { ifaceCtx ( context ); }
 	function pub_traducir(tabla:String, campo:String, idCampo:String) {
 		return this.traducir(tabla, campo, idCampo);
@@ -555,59 +563,59 @@ function fluxEcommerce_introducirProvincias()
 
 	var util:FLUtil = new FLUtil();
 	var datos =	[
-	 [0, "ES", "..."],
-	 [1, "ES", "ALAVA"],
-	 [2, "ES", "ALBACETE"],
-	 [3, "ES", "ALICANTE"],
-	 [4, "ES", "ALMERIA"],
-	 [33, "ES", "ASTURIAS"],
-	 [5, "ES", "AVILA"],
-	 [6, "ES", "BADAJOZ"],
-	 [8, "ES", "BARCELONA"],
-	 [9, "ES", "BURGOS"],
-	 [10, "ES", "CACERES"],
-	 [11, "ES", "CADIZ"],
-	 [39, "ES", "CANTABRIA"],
-	 [12, "ES", "CASTELLON"],
-	 [51, "ES", "CEUTA"],
-	 [13, "ES", "CIUDAD REAL"],
-	 [14, "ES", "CORDOBA"],
-	 [15, "ES", "CORUÑA, A"],
-	 [16, "ES", "CUENCA"],
-	 [17, "ES", "GIRONA"],
-	 [18, "ES", "GRANADA"],
-	 [19, "ES", "GUADALAJARA"],
-	 [20, "ES", "GUIPUZCOA"],
-	 [21, "ES", "HUELVA"],
-	 [22, "ES", "HUESCA"],
-	 [7, "ES", "ILLES BALEARS"],
-	 [23, "ES", "JAEN"],
-	 [24, "ES", "LEON"],
-	 [25, "ES", "LLEIDA"],
-	 [27, "ES", "LUGO"],
-	 [28, "ES", "MADRID"],
-	 [29, "ES", "MALAGA"],
-	 [52, "ES", "MELILLA"],
-	 [30, "ES", "MURCIA"],
-	 [31, "ES", "NAVARRA"],
-	 [32, "ES", "OURENSE"],
-	 [34, "ES", "PALENCIA"],
-	 [35, "ES", "PALMAS, LAS"],
-	 [36, "ES", "PONTEVEDRA"],
-	 [26, "ES", "RIOJA, LA"],
-	 [37, "ES", "SALAMANCA"],
-	 [38, "ES", "SANTA CRUZ DE TENERIFE"],
-	 [40, "ES", "SEGOVIA"],
-	 [41, "ES", "SEVILLA"],
-	 [42, "ES", "SORIA"],
-	 [43, "ES", "TARRAGONA"],
-	 [44, "ES", "TERUEL"],
-	 [45, "ES", "TOLEDO"],
-	 [46, "ES", "VALENCIA"],
-	 [47, "ES", "VALLADOLID"],
-	 [48, "ES", "VIZCAYA"],
-	 [49, "ES", "ZAMORA"],
-	 [50, "ES", "ZARAGOZA"]
+	 [0, "ESP", "..."],
+	 [1, "ESP", "ALAVA"],
+	 [2, "ESP", "ALBACETE"],
+	 [3, "ESP", "ALICANTE"],
+	 [4, "ESP", "ALMERIA"],
+	 [33, "ESP", "ASTURIAS"],
+	 [5, "ESP", "AVILA"],
+	 [6, "ESP", "BADAJOZ"],
+	 [8, "ESP", "BARCELONA"],
+	 [9, "ESP", "BURGOS"],
+	 [10, "ESP", "CACERES"],
+	 [11, "ESP", "CADIZ"],
+	 [39, "ESP", "CANTABRIA"],
+	 [12, "ESP", "CASTELLON"],
+	 [51, "ESP", "CEUTA"],
+	 [13, "ESP", "CIUDAD REAL"],
+	 [14, "ESP", "CORDOBA"],
+	 [15, "ESP", "CORUÑA, A"],
+	 [16, "ESP", "CUENCA"],
+	 [17, "ESP", "GIRONA"],
+	 [18, "ESP", "GRANADA"],
+	 [19, "ESP", "GUADALAJARA"],
+	 [20, "ESP", "GUIPUZCOA"],
+	 [21, "ESP", "HUELVA"],
+	 [22, "ESP", "HUESCA"],
+	 [7, "ESP", "ILLES BALEARS"],
+	 [23, "ESP", "JAEN"],
+	 [24, "ESP", "LEON"],
+	 [25, "ESP", "LLEIDA"],
+	 [27, "ESP", "LUGO"],
+	 [28, "ESP", "MADRID"],
+	 [29, "ESP", "MALAGA"],
+	 [52, "ESP", "MELILLA"],
+	 [30, "ESP", "MURCIA"],
+	 [31, "ESP", "NAVARRA"],
+	 [32, "ESP", "OURENSE"],
+	 [34, "ESP", "PALENCIA"],
+	 [35, "ESP", "PALMAS, LAS"],
+	 [36, "ESP", "PONTEVEDRA"],
+	 [26, "ESP", "RIOJA, LA"],
+	 [37, "ESP", "SALAMANCA"],
+	 [38, "ESP", "SANTA CRUZ DE TENERIFE"],
+	 [40, "ESP", "SEGOVIA"],
+	 [41, "ESP", "SEVILLA"],
+	 [42, "ESP", "SORIA"],
+	 [43, "ESP", "TARRAGONA"],
+	 [44, "ESP", "TERUEL"],
+	 [45, "ESP", "TOLEDO"],
+	 [46, "ESP", "VALENCIA"],
+	 [47, "ESP", "VALLADOLID"],
+	 [48, "ESP", "VIZCAYA"],
+	 [49, "ESP", "ZAMORA"],
+	 [50, "ESP", "ZARAGOZA"]
 	];
 
 	var cursor:FLSqlCursor = new FLSqlCursor("provincias");
@@ -654,190 +662,89 @@ function fluxEcommerce_introducirIdiomas()
 }
 
 
-function fluxEcommerce_traducir(tabla:String, campo:String, idCampo:String)
-{
-	var util:FLUtil = new FLUtil();
-	var codIdioma:Array = [];
-	var idiomaDefecto:String = util.sqlSelect("opcionestv", "codidiomadefecto", "1=1");
-
-	var q:FLSqlQuery = new FLSqlQuery();
-	q.setTablesList("idiomas");
-	q.setFrom("idiomas");
-	q.setSelect("codidioma,nombre");
-	q.setWhere("1=1 ORDER BY orden");
-
-	if (!q.exec()) return false;
-
-	if (q.size() < 2) {
-		MessageBox.information(util.translate("scripts",
-			"Para realizar traducciones debe al menos definir dos idiomas"),
-			MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
-		return;
-	}
-
-	var tipoCampo = util.fieldType(campo,tabla);
-
-	var dialog = new Dialog(util.translate ( "scripts", "Traducciones" ), 0);
-	dialog.caption = "Traducciones";
-	dialog.OKButtonText = util.translate ( "scripts", "Aceptar" );
-	dialog.cancelButtonText = util.translate ( "scripts", "Cancelar" );
-	dialog.width = 600;
-
-	var cB:Array = [];
-	var nAtr:Number = 0;
-	var bgroup:GroupBox;
-
-	// Texto corto
-	if (tipoCampo != 4) {
-		bgroup = new GroupBox;
-		bgroup.title = "";
-		dialog.add( bgroup );
-	}
-
-	while (q.next())  {
-
-		if (q.value(0) == idiomaDefecto)
-			continue;
-
-		valor = util.sqlSelect("traducciones", "traduccion", "campo = '" + campo + "' AND tabla = '" + tabla + "' AND idcampo = '" + idCampo + "' AND codidioma = '" + q.value(0) + "'");
-		if (!valor)
-			valor = "";
-
-		codIdioma[nAtr] = q.value(0);
-
-		// Texto largo
-		if (tipoCampo == 4) {
-			if ((nAtr % 2 == 0) && nAtr > 0)
-				dialog.newColumn();
-
-			bgroup = new GroupBox;
-			bgroup.title = q.value(1);
-			dialog.add( bgroup );
-			cB[nAtr] = new TextEdit;
-		}
-		// Texto Corto
-		else {
-			cB[nAtr] = new LineEdit;
-			cB[nAtr].label = q.value(1);
-		}
-
-		cB[nAtr].text = valor;
-		bgroup.add( cB[nAtr] );
-		nAtr ++;
-
-	}
-	if (nAtr > 0) {
-		nAtr --;
-
-		if(dialog.exec()) {
-
-			var curTab:FLSqlCursor = new FLSqlCursor("traducciones");
-
-			for (var i:Number = 0; i <= nAtr; i++) {
-
-				if (!cB[i].text)
-					continue;
-
-				curTab.select("campo = '" + campo + "' AND tabla = '" + tabla + "' AND idcampo = '" + idCampo + "' AND codidioma = '" + codIdioma[i] + "'");
-
-				if (curTab.first()) {
-					curTab.setModeAccess(curTab.Edit);
-					curTab.refreshBuffer();
-				}
-				else {
-					curTab.setModeAccess(curTab.Insert);
-					curTab.refreshBuffer();
-					curTab.setValueBuffer("codidioma", codIdioma[i]);
-					curTab.setValueBuffer("tabla", tabla);
-					curTab.setValueBuffer("campo", campo);
-					curTab.setValueBuffer("idcampo", idCampo);
-				}
-
-				curTab.setValueBuffer("traduccion", cB[i].text);
-				curTab.commitBuffer();
-			}
-
-		}
-		else
-			return;
-	}
-}
-
-
-function fluxEcommerce_valoresTrad(tabla:String, campo:String, idCampo:String)
-{
-	if (tabla) {
-		this.iface.valoresTradActual = new Array(2);
-		this.iface.valoresTradActual["tabla"] = tabla;
-		this.iface.valoresTradActual["campo"] = campo;
-		this.iface.valoresTradActual["idCampo"] = idCampo;
-	}
-
-	else
-		return this.iface.valoresTradActual;
-}
-
-
 function fluxEcommerce_beforeCommit_accesoriosart(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_almacenes(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_articulos(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_atributosart(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_atributos(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_fabricantes(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_familias(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_faqs(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_formasenvio(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_gruposatributos(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
-}
-function fluxEcommerce_beforeCommit_idiomas(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_infogeneral(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_modulosweb(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_noticias(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_opcionestv(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_plazosenvio(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_tarifas(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
-function fluxEcommerce_beforeCommit_traducciones(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+function fluxEcommerce_beforeCommit_articulostarifas(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_galeriasimagenes(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
 function fluxEcommerce_beforeCommit_imagenes(cursor:FLSqlCursor):Boolean {
-	this.iface.setModificado(cursor);
+	return this.iface.setModificado(cursor);
 }
+function fluxEcommerce_beforeCommit_zonasformasenvio(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
+}
+function fluxEcommerce_beforeCommit_zonasformaspago(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
+}
+function fluxEcommerce_beforeCommit_zonasventa(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
+}
+function fluxEcommerce_beforeCommit_intervalospesos(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
+}
+function fluxEcommerce_beforeCommit_costesenvio(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
+}
+function fluxEcommerce_beforeCommit_codigosdescuento(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
+}
+function fluxEcommerce_beforeCommit_traducciones(cursor:FLSqlCursor):Boolean {
+	return this.iface.setModificado(cursor);
+}
+function fluxEcommerce_beforeCommit_stocks(cursor:FLSqlCursor):Boolean {
+	this.iface.__beforeCommit_stocks(cursor);
+	return this.iface.setModificado(cursor);
+}
+
 
 /** \D Marca el registro como modificado. Se utiliza para actualizar los datos en
 la base de datos remota
@@ -845,71 +752,98 @@ la base de datos remota
 function fluxEcommerce_setModificado(cursor:FLSqlCursor) {
 	if (cursor.isModifiedBuffer() && !cursor.valueBufferCopy("modificado"))
 		cursor.setValueBuffer("modificado", true);
+
+	return true;
 }
 
 
 
 
 function fluxEcommerce_afterCommit_accesoriosart(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_almacenes(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_articulos(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	if (!this.iface.__afterCommit_articulos(cursor))
+		return false;
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_atributosart(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_atributos(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_fabricantes(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_familias(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_faqs(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_formasenvio(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_gruposatributos(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
-}
-function fluxEcommerce_afterCommit_idiomas(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_infogeneral(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_modulosweb(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_noticias(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_opcionestv(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_plazosenvio(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_tarifas(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
-function fluxEcommerce_afterCommit_traducciones(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+function fluxEcommerce_afterCommit_articulostarifas(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_galeriasimagenes(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
 function fluxEcommerce_afterCommit_imagenes(cursor:FLSqlCursor):Boolean {
-	this.iface.registrarDel(cursor);
+	return this.iface.registrarDel(cursor);
 }
+function fluxEcommerce_afterCommit_zonasformasenvio(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
+}
+function fluxEcommerce_afterCommit_zonasformaspago(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
+}
+function fluxEcommerce_afterCommit_zonasventa(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
+}
+function fluxEcommerce_afterCommit_intervalospesos(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
+}
+function fluxEcommerce_afterCommit_costesenvio(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
+}
+function fluxEcommerce_afterCommit_codigosdescuento(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
+}
+function fluxEcommerce_afterCommit_traducciones(cursor:FLSqlCursor):Boolean {
+	return this.iface.registrarDel(cursor);
+}
+function fluxEcommerce_afterCommit_stocks(cursor:FLSqlCursor):Boolean {
+	this.iface.__afterCommit_stocks(cursor);
+	return this.iface.registrarDel(cursor);
+}
+
 
 /** \D Guarda el registro en la tabla de eliminados. Se utiliza para eliminar
 registros en la base de datos remota
@@ -933,6 +867,8 @@ function fluxEcommerce_registrarDel(cursor:FLSqlCursor)
 	curTab.setValueBuffer("tabla", tabla);
 	curTab.setValueBuffer("idcampo", valorClave);
 	curTab.commitBuffer();
+
+	return true;
 }
 
 function fluxEcommerce_lanzarOpciones()

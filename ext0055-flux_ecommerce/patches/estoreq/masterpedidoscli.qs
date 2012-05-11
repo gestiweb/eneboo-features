@@ -2,10 +2,10 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends ivaIncluido /** %from: ivaIncluido */ {
+class fluxEcommerce extends ivaIncluido {
     function fluxEcommerce( context ) { ivaIncluido ( context ); }
-	function datosAlbaran(curPedido:FLSqlCursor, where:String):Boolean {
-		return this.ctx.fluxEcommerce_datosAlbaran(curPedido, where);
+	function datosAlbaran(curPedido:FLSqlCursor, where:String, datosAgrupacion:Array):Boolean {
+		return this.ctx.fluxEcommerce_datosAlbaran(curPedido, where, datosAgrupacion);
 	}
 }
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
@@ -15,9 +15,9 @@ class fluxEcommerce extends ivaIncluido /** %from: ivaIncluido */ {
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
 
-function fluxEcommerce_datosAlbaran(curPedido:FLSqlCursor,where:String):Boolean
+function fluxEcommerce_datosAlbaran(curPedido:FLSqlCursor,where:String, datosAgrupacion:Array):Boolean
 {
-	if (!this.iface.__datosAlbaran(curPedido, where))
+	if (!this.iface.__datosAlbaran(curPedido, where, datosAgrupacion))
 		return false;
 
 	var codDirEnv:Number;

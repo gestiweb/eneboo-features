@@ -13,8 +13,8 @@ class fluxEcommerce extends oficial /** %from: oficial */ {
 	function validateForm():Boolean {
 		return this.ctx.fluxEcommerce_validateForm();
 	}
-	function calculateCounter():String {
-		return this.ctx.fluxEcommerce_calculateCounter();
+	function obtenerCodigoCliente(cursor:FLSqlCursor):String {
+		return this.ctx.fluxEcommerce_obtenerCodigoCliente(cursor);
 	}
 }
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ function fluxEcommerce_validateForm():Boolean
 	return this.iface.__validateForm();
 }
 
-function fluxEcommerce_calculateCounter()
+function fluxEcommerce_obtenerCodigoCliente(cursor:FLSqlCursor):String
 {
 	var util:FLUtil = new FLUtil();
 	var numCliente:Number = parseFloat(util.sqlSelect("clientes", "max(codcliente)", "codcliente < '500000'"));

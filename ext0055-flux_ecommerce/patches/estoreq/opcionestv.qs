@@ -40,6 +40,15 @@ class interna {
 class oficial extends interna {
     function oficial( context ) { interna( context ); } 
 	function cambiarDirWeb() { return this.ctx.oficial_cambiarDirWeb() ;}
+	function cambiarPassword() {
+		this.ctx.oficial_cambiarPassword();
+	}
+	function traducirTextoPre() {
+		return this.ctx.oficial_traducirTextoPre();
+	}
+	function traducirTextoPie() {
+		return this.ctx.oficial_traducirTextoPie();
+	}
 }
 //// OFICIAL /////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -87,6 +96,9 @@ function interna_init()
 
 	this.child("fdbTextoPre").setTextFormat(0);
 	this.child("fdbTextoPie").setTextFormat(0);
+
+	connect(this.child("pbnTradTextoPre"), "clicked()", this, "iface.traducirTextoPre");
+	connect(this.child("pbnTradTextoPie"), "clicked()", this, "iface.traducirTextoPie");
 }
 
 function interna_validateForm() 
@@ -156,8 +168,17 @@ function oficial_cambiarDirWeb()
 								MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton );
 		return;
 	}
-	debug(ruta);
 	this.child("fdbRutaWeb").setValue(ruta);
+}
+
+function oficial_traducirTextoPre()
+{
+	return flfactppal.iface.pub_traducir("opcionestv", "textopre", this.cursor().valueBuffer("id"));
+}
+
+function oficial_traducirTextoPie()
+{
+	return flfactppal.iface.pub_traducir("opcionestv", "textopie", this.cursor().valueBuffer("id"));
 }
 
 //// OFICIAL /////////////////////////////////////////////////////

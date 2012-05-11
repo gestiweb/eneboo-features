@@ -88,7 +88,7 @@ function interna_init()
 
 function oficial_traducirValor()
 {
-	return flfactalma.iface.pub_traducir("atributosart", "valor", this.cursor().valueBuffer("id"));
+	return flfactppal.iface.pub_traducir("atributosart", "valor", this.cursor().valueBuffer("id"));
 }
 //// OFICIAL /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////

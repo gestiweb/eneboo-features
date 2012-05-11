@@ -104,7 +104,7 @@ function interna_init()
 
 function oficial_traducir(campo)
 {
-	return flfactalma.iface.pub_traducir("noticias", campo, this.cursor().valueBuffer("id"));
+	return flfactppal.iface.pub_traducir("noticias", campo, this.cursor().valueBuffer("id"));
 }
 
 function oficial_seleccionarImagen()

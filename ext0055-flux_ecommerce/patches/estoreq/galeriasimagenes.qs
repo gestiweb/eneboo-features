@@ -98,7 +98,7 @@ function interna_init()
 
 function oficial_traducir(campo)
 {
-	return flfactalma.iface.pub_traducir("galeriasimagenes", campo, this.cursor().valueBuffer("codgaleria"));
+	return flfactppal.iface.pub_traducir("galeriasimagenes", campo, this.cursor().valueBuffer("codgaleria"));
 }
 
 function oficial_leerDeDir()

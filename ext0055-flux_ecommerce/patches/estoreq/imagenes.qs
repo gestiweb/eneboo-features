@@ -101,7 +101,7 @@ function interna_calculateCounter()
 
 function oficial_traducir(campo)
 {
-	return flfactalma.iface.pub_traducir("imagenes", campo, this.cursor().valueBuffer("codimagen"));
+	return flfactppal.iface.pub_traducir("imagenes", campo, this.cursor().valueBuffer("codimagen"));
 }
 
 function oficial_seleccionarImagen()
