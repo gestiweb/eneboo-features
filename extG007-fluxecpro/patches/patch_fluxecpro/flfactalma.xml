@@ -7,13 +7,6 @@
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/scriptformrecord[scriptformrecord,2]">
     <scriptformrecord>familias</scriptformrecord>
   </xupdate:insert-after>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[articuloscomp]"/>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[articuloscomparbol]"/>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[articuloscomponente]"/>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[opcionescomp]"/>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[tiposopcioncomp]"/>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[opcionesarticulocomp]"/>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[tiposopcionartcomp]"/>
   <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[traducciones]"/>
   <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[idiomas]"/>
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[galeriasimagenes]">
@@ -113,17 +106,6 @@
   </xupdate:insert-after>
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscomp]">
     <action>
-      <name>pesosmedidas</name>
-      <description>QT_TRANSLATE_NOOP("MetaData","Cada artículo puede tener asociada una unidad de peso o medida (metros, litros, kilos, etc.) Por defecto, el artículo tiene la unidad asociada a su familia")</description>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Unidades de pesos y medidas")</alias>
-      <table>pesosmedidas</table>
-      <form>master_copy</form>
-      <formrecord>pesosmedidas</formrecord>
-      <scriptformrecord>pesosmedidas</scriptformrecord>
-    </action>
-  </xupdate:insert-after>
-  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pesosmedidas]">
-    <action>
       <name>articuloscomparbol</name>
       <description>QT_TRANSLATE_NOOP("MetaData","Los artículos están compuestos de otros artículos")</description>
       <alias>QT_TRANSLATE_NOOP("MetaData","Artículos compuestos")</alias>
@@ -186,5 +168,4 @@
       <scriptformrecord>tiposopcionartcomp</scriptformrecord>
     </action>
   </xupdate:insert-after>
-  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[pesosmedidas]"/>
 </xupdate:modifications>

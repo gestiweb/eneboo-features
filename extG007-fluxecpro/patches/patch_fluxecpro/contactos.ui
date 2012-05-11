@@ -1,3 +1,0 @@
-<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:delete select="/UI[UI,1]/widget[QWidget,contactos]/vbox[vbox,1]/widget[QGroupBox,gbxDatosCon_2]/vbox[vbox,1]/widget[QLayoutWidget,layout8_4]"/>
-</xupdate:modifications>

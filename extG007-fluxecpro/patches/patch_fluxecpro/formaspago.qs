@@ -2,7 +2,7 @@
 /** @class_declaration traducciones */
 /////////////////////////////////////////////////////////////////
 //// TRADUCCIONES ///////////////////////////////////////////////
-class traducciones extends fluxEcommerce {
+class traducciones extends fluxEcommerce /** %from: fluxEcommerce */ {
     function traducciones( context ) { fluxEcommerce ( context ); }
     function init() {
 		return this.ctx.traducciones_init();

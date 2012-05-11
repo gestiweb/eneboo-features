@@ -333,22 +333,6 @@
   </xupdate:insert-after>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tdbTarifas,editOnlyChanged(bool),tdbTarifas,setDisabled(bool)]"/>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tdbTarifas,readOnlyChanged(bool),tdbTarifas,setDisabled(bool)]"/>
-  <xupdate:append-first select="/UI[UI,1]/connections[connections,1]">
-    <connection>
-      <sender>toolButtonEdit</sender>
-      <signal>clicked()</signal>
-      <receiver>tdbTarifas</receiver>
-      <slot>editRecord()</slot>
-    </connection>
-  </xupdate:append-first>
-  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEdit,clicked(),tdbTarifas,editRecord()]">
-    <connection>
-      <sender>toolButtonZoom</sender>
-      <signal>clicked()</signal>
-      <receiver>tdbTarifas</receiver>
-      <slot>browseRecord()</slot>
-    </connection>
-  </xupdate:insert-after>
   <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tdbTarifas,browseRecord()]">
     <connection>
       <sender>tdbTarifas</sender>
@@ -365,8 +349,6 @@
       <slot>setDisabled(bool)</slot>
     </connection>
   </xupdate:insert-after>
-  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEdit,clicked(),tdbTarifas,editRecord()]"/>
-  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tdbTarifas,browseRecord()]"/>
   <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
   <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
     <includehint>FLTableDB.h</includehint>

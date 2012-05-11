@@ -2,7 +2,7 @@
 /** @class_declaration fluxecPro */
 /////////////////////////////////////////////////////////////////
 //// FLUX EC PRO /////////////////////////////////////////////////
-class fluxecPro extends oficial {
+class fluxecPro extends oficial /** %from: oficial */ {
     function fluxecPro( context ) { oficial ( context ); }
     function init() { this.ctx.fluxecPro_init(); }
 	function exportarTabla(tabla:String, nomTabla:String, tablaGeneral:Boolean):Number {

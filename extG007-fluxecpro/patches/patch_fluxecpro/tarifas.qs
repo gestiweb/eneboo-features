@@ -2,7 +2,7 @@
 /** @class_declaration traducciones */
 /////////////////////////////////////////////////////////////////
 //// TRADUCCIONES ///////////////////////////////////////////////
-class traducciones extends oficial {
+class traducciones extends oficial /** %from: oficial */ {
     function traducciones( context ) { oficial ( context ); }
     function init() {
 		return this.ctx.traducciones_init();

@@ -2,7 +2,7 @@
 /** @class_declaration fluxecPro */
 /////////////////////////////////////////////////////////////////
 //// FLUX EC PRO /////////////////////////////////////////////////
-class fluxecPro extends oficial {
+class fluxecPro extends oficial /** %from: oficial */ {
 
 	var tblZonas:QTable;
 	var pesos:Array;

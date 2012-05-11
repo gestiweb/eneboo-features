@@ -2,8 +2,8 @@
 /** @class_declaration personaFisica */
 /////////////////////////////////////////////////////////////////
 //// PERSONA_FISICA /////////////////////////////////////////////
-class personaFisica extends oficial {
-    function personaFisica( context ) { oficial ( context ); }
+class personaFisica extends fluxEcommerce /** %from: oficial */ {
+    function personaFisica( context ) { fluxEcommerce ( context ); }
 	function init() {
 		return this.ctx.personaFisica_init();
 	}

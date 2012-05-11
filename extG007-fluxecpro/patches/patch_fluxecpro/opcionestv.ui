@@ -844,7 +844,8 @@
       </vbox>
     </widget>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabDatosContacto]">
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabDatosContacto]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabFacturacion]">
     <widget class="QWidget">
       <property name="name">
         <cstring>tabBuscadores</cstring>
@@ -1068,7 +1069,6 @@
       </vbox>
     </widget>
   </xupdate:insert-after>
-  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formOpcionesTV]/vbox[vbox,1]/widget[QTabWidget,tbwOpcionesTV]/widget[QWidget,tabDatosContacto]"/>
   <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image0]"/>
   <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image1]"/>
   <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image2]"/>

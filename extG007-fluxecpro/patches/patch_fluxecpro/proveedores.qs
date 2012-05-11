@@ -2,8 +2,8 @@
 /** @class_declaration personaFisica */
 /////////////////////////////////////////////////////////////////
 //// PERSONA_FISICA /////////////////////////////////////////////
-class personaFisica extends recibosProv {
-    function personaFisica( context ) { recibosProv ( context ); }
+class personaFisica extends oficial /** %from: oficial */ {
+    function personaFisica( context ) { oficial ( context ); }
 	function init() {
 		return this.ctx.personaFisica_init();
 	}

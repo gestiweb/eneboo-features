@@ -2,9 +2,9 @@
 /** @class_declaration traducciones */
 /////////////////////////////////////////////////////////////////
 //// TRADUCCIONES ///////////////////////////////////////////////
-class traducciones extends oficial {
+class traducciones extends fluxEcommerce /** %from: oficial */ {
 	var valoresTradActual:Array;
-	function traducciones( context ) { oficial ( context ); }
+	function traducciones( context ) { fluxEcommerce ( context ); }
 	function traducir(tabla:String, campo:String, idCampo:String) {
 		return this.ctx.traducciones_traducir(tabla, campo, idCampo);
 	}
@@ -42,7 +42,7 @@ class traducciones extends oficial {
 /** @class_declaration pubTraducciones */
 /////////////////////////////////////////////////////////////////
 //// PUB_TRADUCCIONES //////////////////////////////////////////
-class pubTraducciones extends head {
+class pubTraducciones extends head /** %from: head */ {
 	function pubTraducciones( context ) { head( context ); }
 	function pub_traducir(tabla:String, campo:String, idCampo:String) {
 		return this.traducir(tabla, campo, idCampo);
