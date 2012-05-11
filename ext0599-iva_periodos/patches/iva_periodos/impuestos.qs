@@ -2,7 +2,7 @@
 /** @class_declaration cambioIva */
 /////////////////////////////////////////////////////////////////
 //// CAMBIO_IVA /////////////////////////////////////////////////
-class cambioIva extends oficial {
+class cambioIva extends oficial /** %from: oficial */ {
     function cambioIva( context ) { oficial ( context ); }
 	function init() {
 		return this.ctx.cambioIva_init();
@@ -89,10 +89,11 @@ function cambioIva_comprobarFechasPeriodos():Boolean
 			return false;
 		}
 		fechaFinAnterior = qry.value("fechahasta");
-	} 
+	}
 
 	return true;
 }
 
 //// CAMBIO_IVA /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

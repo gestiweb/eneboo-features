@@ -2,7 +2,7 @@
 /** @class_declaration cambioIva */
 /////////////////////////////////////////////////////////////////
 //// CAMBIO IVA /////////////////////////////////////////////////
-class cambioIva extends oficial {
+class cambioIva extends oficial /** %from: oficial */ {
     function cambioIva( context ) { oficial ( context ); }
     function validateForm():Boolean {
 		return this.ctx.cambioIva_validateForm();
@@ -18,7 +18,7 @@ function cambioIva_validateForm():Boolean
 {
 	var util:FLUtil = new FLUtil;
 	var cursor:FLSqlCursor = this.cursor();
-	
+
 	if (!this.iface.__validateForm()) {
 		return false;
 	}
@@ -33,8 +33,9 @@ function cambioIva_validateForm():Boolean
 			return false;
 		}
 	}
-	
+
 	return true;
 }
 //// CAMBIO IVA //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
+

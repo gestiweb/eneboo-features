@@ -1,0 +1,17 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="iva_periodos">
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="impuestos.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/principal/forms/" name="periodos.ui"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="impuestos.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/principal/scripts/" name="periodos.qs"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="impuestos.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/principal/tables/" name="periodos.mtd"/>
+</flpatch:modifications>

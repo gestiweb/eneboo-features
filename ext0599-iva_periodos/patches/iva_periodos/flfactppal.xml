@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_widget]">
+    <action>
+      <name>periodos</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Periodos")</alias>
+      <table>periodos</table>
+      <form>master</form>
+      <formrecord>periodos</formrecord>
+      <scriptformrecord>periodos</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

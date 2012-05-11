@@ -1,9 +1,10 @@
+
 /** @class_declaration cambioIva */
 /////////////////////////////////////////////////////////////////
 //// CAMBIO_IVA /////////////////////////////////////////////////
-class cambioIva extends centrosCoste {
+class cambioIva extends oficial /** %from: oficial */ {
 	var curLineaDoc_:FLSqlCursor;
-	function cambioIva( context ) { centrosCoste ( context ); }
+	function cambioIva( context ) { oficial ( context ); }
 	function campoImpuesto(campo:String, codImpuesto:String, fecha:String):Number {
 		return this.ctx.cambioIva_campoImpuesto(campo, codImpuesto, fecha);
 	}
@@ -26,7 +27,7 @@ class cambioIva extends centrosCoste {
 /** @class_declaration pubCambioIva */
 /////////////////////////////////////////////////////////////////
 //// PUB CAMBIO IVA /////////////////////////////////////////////
-class pubCambioIva extends ifaceCtx {
+class pubCambioIva extends ifaceCtx /** %from: ifaceCtx */ {
 	function pubCambioIva( context ) { ifaceCtx( context ); }
 	function pub_validarIvas(curDoc:FLSqlCursor):Boolean {
 		return this.validarIvas(curDoc);
@@ -237,3 +238,4 @@ function cambioIva_datosLineaDocIva():Boolean
 }
 //// CAMBIO_IVA /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+
