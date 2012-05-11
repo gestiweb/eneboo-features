@@ -2,7 +2,7 @@
 /** @class_declaration frasImport */
 /////////////////////////////////////////////////////////////////
 //// FRAS IMPORT ////////////////////////////////////////////////
-class frasImport extends oficial {
+class frasImport extends oficial /** %from: oficial */ {
 	var tdbLineas:FLTableDB;
     function frasImport( context ) { oficial ( context ); }
     function init() {
@@ -122,3 +122,4 @@ function frasImport_crearLinea():Boolean
 }
 //// FRAS IMPORT ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

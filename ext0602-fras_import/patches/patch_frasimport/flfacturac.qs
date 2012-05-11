@@ -2,8 +2,8 @@
 /** @class_declaration frasImport */
 /////////////////////////////////////////////////////////////////
 //// FRAS IMPORT ////////////////////////////////////////////////
-class frasImport extends proveed {
-	function frasImport( context ) { proveed ( context ); }
+class frasImport extends oficial /** %from: oficial */ {
+	function frasImport( context ) { oficial ( context ); }
 	function datosPartidaFactura(curPartida:FLSqlCursor, curFactura:FLSqlCursor, tipo:String, concepto:String) {
 		return this.ctx.frasImport_datosPartidaFactura(curPartida, curFactura, tipo, concepto);
 	}
@@ -60,3 +60,4 @@ function frasImport_datosPartidaFactura(curPartida:FLSqlCursor, curFactura:FLSql
 
 //// FRAS IMPORT /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+
