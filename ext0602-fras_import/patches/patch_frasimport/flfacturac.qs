@@ -21,7 +21,7 @@ function frasImport_datosPartidaFactura(curPartida:FLSqlCursor, curFactura:FLSql
 	if (tipoespecial == "IVASIM") {
 		if (!curFactura.valueBuffer("idfacturaimport")) {
 			MessageBox.information(util.translate("scripts", "Se ha generado una partida de IVA sop. importación \ny la factura no tiene ninguna asociada como factura de importación"), MessageBox.Ok, MessageBox.NoButton);
-			this.iface.__datosPartidaFactura(curPartida, curFactura, tipo, concepto),
+			this.iface.__datosPartidaFactura(curPartida, curFactura, tipo, concepto);
 			return false;
 		}
 
