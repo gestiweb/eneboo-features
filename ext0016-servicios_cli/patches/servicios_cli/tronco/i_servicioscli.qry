@@ -1,0 +1,40 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_servicioscli</name>
+
+	<tables>empresa,servicioscli</tables>
+
+	<group>
+		<level>0</level>
+		<field>servicioscli.numservicio</field>
+	</group>
+
+	<select>
+		servicioscli.numservicio, 
+		servicioscli.contratomant, servicioscli.fecha, 
+		servicioscli.codcliente, servicioscli.codtecnico, 
+		servicioscli.descripcion, servicioscli.solucion, 		
+		tecnicos.nombre, tecnicos.apellidos,		
+		lineasservicioscli.referencia, lineasservicioscli.descripcion,
+		lineasservicioscli.cantidad, lineasservicioscli.pvpunitario,
+		lineasservicioscli.pvptotal,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa, servicioscli
+		LEFT JOIN lineasservicioscli ON servicioscli.idservicio = lineasservicioscli.idservicio
+		LEFT JOIN tecnicos ON tecnicos.codtecnico = servicioscli.codtecnico 
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineasservicioscli.referencia
+	</order>
+</QRY>

@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[fechabaja]" >
+<field>
+<name>contratomant</name>
+<!--Indica si el cliente tiene en un contrato de mantenimiento--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Contrato de mantenimiento&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

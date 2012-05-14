@@ -1,0 +1,25 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[presupuestoscli]" >
+<action>
+<name>servicioscli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servicios de mantenimiento o reparación llevados a cabo para un cliente&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Servicios de cliente&quot;)</alias>
+<table>servicioscli</table>
+<form>masterservicioscli</form>
+<formrecord>servicioscli</formrecord>
+<scriptform>masterservicioscli</scriptform>
+<scriptformrecord>servicioscli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[servicioscli]" >
+<action>
+<name>lineasservicioscli</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada línea de servicio refleja la cantidad y precio de un determinado artículo incluido en el documento&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas de servicios de cliente&quot;)</alias>
+<table>lineasservicioscli</table>
+<form>master</form>
+<formrecord>lineasservicioscli</formrecord>
+<scriptformrecord>lineasservicioscli</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

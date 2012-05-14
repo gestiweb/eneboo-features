@@ -1,0 +1,43 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >213</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDpto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDpto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDpto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >21</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDpto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >2</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutId]/hbox[hbox,1]/widget[FLFieldDB,fdbIdUsuario]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutId]/hbox[hbox,1]/widget[FLFieldDB,fdbIdUsuario]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[FLFieldDB,fdbEMail]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbAvisarContratoPte</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>avisarcontratopte</string>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]" >
+<includehints>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+</includehints>
+</xupdate:insert-after>
+</xupdate:modifications>

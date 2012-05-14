@@ -1,0 +1,43 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>facturascli_auto</name>
+
+	<tables>empresa,facturascli,albaranescli,lineasalbaranescli,formaspago</tables>
+	<group>
+		<level>0</level>
+		<field>facturascli.idfactura</field>
+	</group>
+	<group>
+		<level>1</level>
+		<field>albaranescli.idalbaran</field>
+	</group>
+	
+	<select>
+		facturascli.idfactura, facturascli.codigo, facturascli.codserie, facturascli.fecha,
+		facturascli.total, facturascli.coddivisa, facturascli.codejercicio, facturascli.codpago, facturascli.codalmacen,
+		facturascli.codcliente, facturascli.nombrecliente, facturascli.cifnif, facturascli.tasaconv, facturascli.coddir, facturascli.observaciones, facturascli.totaliva,facturascli.totalrecargo,
+		facturascli.direccion, facturascli.codpostal, facturascli.ciudad, facturascli.provincia, facturascli.apartado,
+		facturascli.codpais, facturascli.neto, 
+		lineasalbaranescli.referencia, lineasalbaranescli.descripcion,
+		lineasalbaranescli.cantidad,facturascli.irpf, facturascli.totalirpf,
+		lineasalbaranescli.pvpunitario, lineasalbaranescli.pvptotal, lineasalbaranescli.codimpuesto, lineasalbaranescli.iva,
+		albaranescli.codigo, albaranescli.fecha, albaranescli.idalbaran, 
+		formaspago.descripcion,
+		empresa.nombre, empresa.cifnif, empresa.direccion, empresa.logo, empresa.codpostal, empresa.ciudad, empresa.provincia,
+		empresa.apartado, empresa.codpais
+	</select>
+
+	<from>
+		empresa,facturascli
+		INNER JOIN albaranescli ON albaranescli.idfactura = facturascli.idfactura
+		INNER JOIN lineasalbaranescli ON lineasalbaranescli.idalbaran = albaranescli.idalbaran
+		INNER JOIN formaspago ON formaspago.codpago = facturascli.codpago
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineasalbaranescli.idpedido, lineasalbaranescli.idlinea
+	</order>
+</QRY>

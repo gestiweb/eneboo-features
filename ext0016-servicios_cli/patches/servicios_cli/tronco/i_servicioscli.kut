@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="50" TopMargin="50" RightMargin="30" LeftMargin="30" PageOrientation="0" PageSize="0" >
+<Detail Height="0" Level="0"/>
+
+ <DetailHeader Height="230" Level="1" >
+
+	<!-- CLIENTE -->
+  <Line Width="1" Y1="0" Y2="0" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="80" Y2="80" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="0" X2="0" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="210" X2="210" Style="1" Color="100,100,100" />
+  
+  <Label WordWrap="0" Width="90" X="2" Y="2" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" CLIENTE" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="116" X="92" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="1" DataType="0" Field="servicioscli.codcliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.codcliente]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+  <CalculatedField WordWrap="1" Width="100" X="2" Y="25" CalculationType="6" FunctionName="flfactinfo.datosClienteServicio" BorderStyle="0" NegValueColor="0,0,0" Height="40" HAlignment="1" DataType="0" Currency="32" BackgroundColor="255,255,255" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+	<!-- EMPRESA -->
+  <Line Width="1" Y1="0" Y2="0" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="80" Y2="80" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="219" X2="219" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="591" X2="591" Style="1" Color="100,100,100" />
+
+  <Field WordWrap="1" Width="260" X="221" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="35" HAlignment="1" DataType="0" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+	<Field WordWrap="0" Width="109" X="480" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="34" HAlignment="0" DataType="5" Field="empresa.logo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.logo]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+	<Label WordWrap="0" Width="60" X="225" Y="40" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="CIF/NIF" FontWeight="50" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="80" X="275" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.cifnif" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.cifnif]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+  <Field WordWrap="0" Width="235" X="355" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.direccion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.direccion]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="45" X="225" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.codpostal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.codpostal]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="150" X="270" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.ciudad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.ciudad]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="100" X="420" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.provincia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.provincia]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+
+ <!-- Datos del servicio -->
+  
+  <Line Width="1" Y1="89" Y2="89" X1="0" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="199" Y2="199" X1="0" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="199" X1="0" X2="0" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="199" X1="590" X2="590" Style="1" Color="100,100,100" />
+  
+  <Label WordWrap="0" Width="70" X="2" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" SERVICIO" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="60" X="72" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="servicioscli.numservicio" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.numservicio]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="50" X="133" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Fecha" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="100" X="172" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="3" Field="servicioscli.fecha" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.fecha]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="70" X="273" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Técnico" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="130" X="342" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="2" DataType="0" Field="tecnicos.apellidos" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[tecnicos.apellidos]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="10" X="472" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=", " FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="65" X="482" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="tecnicos.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[tecnicos.nombre]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <CalculatedField WordWrap="0" Width="41" X="548" Y="91" CalculationType="6" FunctionName="flfactinfo.servicioConContrato" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="1" DataType="0" Currency="32" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+  <Label WordWrap="0" Width="100" X="5" Y="114" Height="18" BorderStyle="0" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="Descripción" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="1" Width="280" X="5" Y="132" Height="66" BorderStyle="0" NegValueColor="0,0,0" HAlignment="0" DataType="0" Field="servicioscli.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.descripcion]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+ 
+  <Label WordWrap="0" Width="100" X="300" Y="114" Height="18" BorderStyle="0" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="Solución" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="1" Width="280" X="300" Y="132" Height="66" BorderStyle="0" NegValueColor="0,0,0" HAlignment="0" DataType="0" Field="servicioscli.solucion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.solucion]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+ 
+ 
+ <!--Cabeceras de lista de artículos-->
+
+  <Label WordWrap="0" Width="88" X="1" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Referencia" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="289" X="90" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Descripción" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="69" X="380" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cantidad" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="69" X="450" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Precio" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="69" X="520" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Importe" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+
+
+</DetailHeader>
+
+
+
+<AddOnHeader Height="230" Level="1" >
+
+	<!-- CLIENTE -->
+  <Line Width="1" Y1="0" Y2="0" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="80" Y2="80" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="0" X2="0" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="210" X2="210" Style="1" Color="100,100,100" />
+  
+  <Label WordWrap="0" Width="90" X="2" Y="2" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" CLIENTE" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+  
+  <Field WordWrap="0" Width="100" X="2" Y="25" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="3" Field="albaranescli.fecha" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[albaranescli.fecha]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  
+	<!-- EMPRESA -->
+  <Line Width="1" Y1="0" Y2="0" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="80" Y2="80" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="219" X2="219" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="591" X2="591" Style="1" Color="100,100,100" />
+
+  <Field WordWrap="1" Width="260" X="221" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="35" HAlignment="1" DataType="0" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+	<Field WordWrap="0" Width="109" X="480" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="34" HAlignment="0" DataType="5" Field="empresa.logo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.logo]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+	<Label WordWrap="0" Width="60" X="225" Y="40" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="CIF/NIF" FontWeight="50" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="80" X="275" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.cifnif" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.cifnif]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+  <Field WordWrap="0" Width="235" X="355" Y="40" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.direccion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.direccion]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="45" X="225" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.codpostal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.codpostal]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="150" X="270" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.ciudad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.ciudad]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="100" X="420" Y="60" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="empresa.provincia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.provincia]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+
+ <!-- Datos del servicio -->
+  
+  <Line Width="1" Y1="89" Y2="89" X1="0" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="199" Y2="199" X1="0" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="199" X1="0" X2="0" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="199" X1="590" X2="590" Style="1" Color="100,100,100" />
+  
+  <Label WordWrap="0" Width="70" X="2" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" SERVICIO" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="60" X="72" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="servicioscli.numservicio" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.numservicio]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="50" X="133" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Fecha" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="100" X="172" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="3" Field="servicioscli.fecha" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.fecha]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="70" X="273" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" Técnico" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="130" X="342" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="2" DataType="0" Field="tecnicos.apellidos" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[tecnicos.apellidos]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Label WordWrap="0" Width="10" X="472" Y="91" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=", " FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="0" Width="65" X="482" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="0" DataType="0" Field="tecnicos.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[tecnicos.nombre]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+  <Label WordWrap="0" Width="100" X="5" Y="114" Height="18" BorderStyle="0" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="Descripción" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="1" Width="280" X="5" Y="132" Height="66" BorderStyle="0" NegValueColor="0,0,0" HAlignment="0" DataType="0" Field="servicioscli.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.descripcion]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+ 
+  <Label WordWrap="0" Width="100" X="300" Y="114" Height="18" BorderStyle="0" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" Text="Solución" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Field WordWrap="1" Width="280" X="300" Y="132" Height="66" BorderStyle="0" NegValueColor="0,0,0" HAlignment="0" DataType="0" Field="servicioscli.solucion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="0" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.solucion]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+ 
+ <!--Cabeceras de lista de artículos-->
+
+  <Label WordWrap="0" Width="88" X="1" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Referencia" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="289" X="90" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Descripción" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="69" X="380" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cantidad" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="69" X="450" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Precio" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+  <Label WordWrap="0" Width="69" X="520" Y="210" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Importe" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+
+ </AddOnHeader>
+
+
+
+<Detail Height="20" Level="1" >
+
+  <Field WordWrap="0" Width="87" X="4" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="lineasservicioscli.referencia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lineasservicioscli.referencia]" FontWeight="50" FontSize="9" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="287" X="94" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="lineasservicioscli.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lineasservicioscli.descripcion]" FontWeight="50" FontSize="9" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="67" X="380" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="lineasservicioscli.cantidad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lineasservicioscli.cantidad]" FontWeight="50" FontSize="9" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="67" X="450" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="lineasservicioscli.pvpunitario" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lineasservicioscli.pvpunitario]" FontWeight="50" FontSize="9" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  <Field WordWrap="0" Width="67" X="520" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="lineasservicioscli.pvptotal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lineasservicioscli.pvptotal]" FontWeight="50" FontSize="9" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+</Detail>
+
+
+<DetailFooter Height="50" Level="1" NewPage="true" PlaceAtBottom="true">
+
+<Line Width="1" Y1="25" Y2="25" X1="0" X2="580" Style="1" Color="100,100,100"/>
+
+<Label WordWrap="0" Width="123" X="340" Y="30" BorderStyle="0" Height="21" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Total Servicio" FontWeight="75" FontSize="13" BorderWidth="1" FontFamily="Arial" />
+<CalculatedField WordWrap="0" CalculationType="1" Width="120" X="460" Y="30" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="lineasservicioscli.pvptotal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[servicioscli.pvptotal]" FontWeight="75" FontSize="14" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+</DetailFooter>
+
+
+
+<PageFooter Height="10" PrintFrequency="1" />
+</KugarTemplate>

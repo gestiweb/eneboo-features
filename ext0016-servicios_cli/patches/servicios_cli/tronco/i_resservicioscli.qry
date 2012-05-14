@@ -1,0 +1,32 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_resservicioscli</name>
+
+	<tables>servicioscli,empresa</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		servicioscli.numservicio, servicioscli.fecha,
+		servicioscli.codcliente, clientes.nombre,
+		clientes.cifnif, 
+		servicioscli.neto, servicioscli.totaliva,
+		servicioscli.totalrecargo, servicioscli.total,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa,servicioscli
+		INNER JOIN clientes ON servicioscli.codcliente = clientes.codcliente
+	</from>
+
+	<where>
+	</where>
+</QRY>
