@@ -8,6 +8,7 @@
   <flpatch:patchXml path="facturacion/almacen/forms/" name="faqs.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="formasenvio.ui" style="legacy1"/>
+  <flpatch:deleteFile path="facturacion/almacen/forms/" name="idiomas.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="intervalospesos.ui"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="mastertarifas.ui" style="legacy1"/>
@@ -17,6 +18,7 @@
   <flpatch:patchXml path="facturacion/almacen/forms/" name="regstocks.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="statsweb.ui"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="tarifas.ui" style="legacy1"/>
+  <flpatch:deleteFile path="facturacion/almacen/forms/" name="traducciones.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="zonasformasenvio.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="zonasformaspago.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="zonasventa.ui"/>
@@ -26,10 +28,12 @@
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="formasenvio.qs" style="legacy"/>
   <flpatch:addFile path="facturacion/almacen/scripts/" name="intervalospesos.qs"/>
+  <flpatch:deleteFile path="facturacion/almacen/scripts/" name="mastertraducciones.qs"/>
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="opcionestv.qs" style="legacy"/>
   <flpatch:addFile path="facturacion/almacen/scripts/" name="pasarelaspago.qs"/>
   <flpatch:addFile path="facturacion/almacen/scripts/" name="statsweb.qs"/>
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="tarifas.qs" style="legacy"/>
+  <flpatch:deleteFile path="facturacion/almacen/scripts/" name="traducciones.qs"/>
   <flpatch:addFile path="facturacion/almacen/scripts/" name="zonasventa.qs"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="archivoscli.mtd"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
@@ -43,6 +47,7 @@
   <flpatch:patchXml path="facturacion/almacen/tables/" name="familias.mtd" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="familiasfotos.mtd"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="formasenvio.mtd" style="legacy1"/>
+  <flpatch:deleteFile path="facturacion/almacen/tables/" name="idiomas.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="intervalospesos.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="modificadossql.mtd"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="opcionestv.mtd" style="legacy1"/>
@@ -52,7 +57,7 @@
   <flpatch:addFile path="facturacion/almacen/tables/" name="statsweb.mtd"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="tarifas.mtd" style="legacy1"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="visitasweb.mtd" style="legacy1"/>
+  <flpatch:deleteFile path="facturacion/almacen/tables/" name="traducciones.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="zonasformasenvio.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="zonasformaspago.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="zonasventa.mtd"/>

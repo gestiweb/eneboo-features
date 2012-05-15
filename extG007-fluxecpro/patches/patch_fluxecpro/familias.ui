@@ -283,14 +283,14 @@
   <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage2]"/>
   <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage1]"/>
   <xupdate:delete select="/UI[UI,1]/images[images,1]/image[flux_ecommerceimage0]"/>
-  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsert,clicked(),tdbArticulos,insertRecord()]"/>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEdit,clicked(),tdbArticulos,editRecord()]"/>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDelete,clicked(),tdbArticulos,deleteRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsert,clicked(),tdbArticulos,insertRecord()]"/>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tdbArticulos,browseRecord()]"/>
   <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
     <includehint>flfielddb.h</includehint>
   </xupdate:append-first>
-  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
     <includehint>fltabledb.h</includehint>
   </xupdate:insert-after>
   <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]">

@@ -13,7 +13,7 @@
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[plazosenvio]">
     <action name="codigosdescuento"/>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[zonasventa]">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[formasenvio]">
     <action name="zonasventa"/>
   </xupdate:insert-after>
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[zonasventa]">
@@ -26,9 +26,6 @@
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[traducciones]">
     <separator/>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/separator[separator,7]">
-    <separator/>
-  </xupdate:insert-after>
   <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/separator[separator,7]"/>
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[statsweb]">
     <action name="statsweb"/>
@@ -36,11 +33,14 @@
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[statsweb]">
     <separator/>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/separator[separator,9]">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/separator[separator,8]">
     <separator/>
   </xupdate:insert-after>
   <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/separator[separator,8]"/>
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/action[datostv]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/separator[separator,10]">
     <separator/>
   </xupdate:insert-after>
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tienda_virtual]/separator[separator,11]">

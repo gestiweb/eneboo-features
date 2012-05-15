@@ -1,22 +1,10 @@
 
-/** @class_declaration fluxecPro */
-/////////////////////////////////////////////////////////////////
-//// FLUX EC PRO /////////////////////////////////////////////////
-class fluxecPro extends fluxEcommerce /** %from: fluxEcommerce */ {
-    function fluxecPro( context ) { fluxEcommerce ( context ); }
-	function setModificado(cursor:FLSqlCursor)  {
-		return this.ctx.fluxecPro_setModificado(cursor);
-	}
-}
-//// FLUX EC PRO /////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
-
 /** @class_declaration traducciones */
 /////////////////////////////////////////////////////////////////
 //// TRADUCCIONES ///////////////////////////////////////////////
-class traducciones extends fluxecPro /** %from: oficial */ {
+class traducciones extends fluxEcommerce /** %from: oficial */ {
 	var valoresTradActual:Array;
-	function traducciones( context ) { fluxecPro ( context ); }
+	function traducciones( context ) { fluxEcommerce ( context ); }
 	function traducir(tabla:String, campo:String, idCampo:String) {
 		return this.ctx.traducciones_traducir(tabla, campo, idCampo);
 	}
@@ -28,6 +16,18 @@ class traducciones extends fluxecPro /** %from: oficial */ {
 	}
 }
 //// TRADUCCIONES ///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+/** @class_declaration fluxecPro */
+/////////////////////////////////////////////////////////////////
+//// FLUX EC PRO /////////////////////////////////////////////////
+class fluxecPro extends traducciones /** %from: fluxEcommerce */ {
+    function fluxecPro( context ) { traducciones ( context ); }
+	function setModificado(cursor:FLSqlCursor)  {
+		return this.ctx.fluxecPro_setModificado(cursor);
+	}
+}
+//// FLUX EC PRO /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
 /** @class_declaration pubTraducciones */
@@ -44,6 +44,33 @@ class pubTraducciones extends head /** %from: head */ {
 }
 
 //// PUB_TRADUCCIONES //////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+/** @class_definition traducciones */
+/////////////////////////////////////////////////////////////////
+//// TRADUCCIONES ///////////////////////////////////////////////
+function traducciones_traducir(tabla:String, campo:String, idCampo:String)
+{
+	return flfactppal.iface.pub_traducir(tabla, campo, idCampo);
+}
+
+function traducciones_valoresTrad(tabla:String, campo:String, idCampo:String)
+{
+	return flfactppal.iface.valoresTrad(tabla, campo, idCampo);
+}
+
+function traducciones_afterCommit_articulos(curArticulo:FlSqlCursor):Boolean
+{
+	var util:FLUtil = new FLUtil();
+	if (curArticulo.modeAccess() == curArticulo.Del) {
+		if (!util.sqlDelete("traducciones", "idcampo = '" + curArticulo.valueBuffer("referencia") + "'")) {
+			return false;
+		}
+	}
+	return true;
+}
+
+//// TRADUCCIONES ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
 /** @class_definition fluxecPro */
@@ -85,31 +112,4 @@ function fluxecPro_setModificado(cursor:FLSqlCursor) {
 
 //// FLUX EC PRO //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
-
-/** @class_definition traducciones */
-/////////////////////////////////////////////////////////////////
-//// TRADUCCIONES ///////////////////////////////////////////////
-function traducciones_traducir(tabla:String, campo:String, idCampo:String)
-{
-	return flfactppal.iface.pub_traducir(tabla, campo, idCampo);
-}
-
-function traducciones_valoresTrad(tabla:String, campo:String, idCampo:String)
-{
-	return flfactppal.iface.valoresTrad(tabla, campo, idCampo);
-}
-
-function traducciones_afterCommit_articulos(curArticulo:FlSqlCursor):Boolean
-{
-	var util:FLUtil = new FLUtil();
-	if (curArticulo.modeAccess() == curArticulo.Del) {
-		if (!util.sqlDelete("traducciones", "idcampo = '" + curArticulo.valueBuffer("referencia") + "'")) {
-			return false;
-		}
-	}
-	return true;
-}
-
-//// TRADUCCIONES ///////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
 

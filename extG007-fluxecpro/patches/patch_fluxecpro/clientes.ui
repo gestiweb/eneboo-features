@@ -487,7 +487,6 @@
   </xupdate:insert-after>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditFac,clicked(),tdbFacturas,editRecord()]"/>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditAlb,clicked(),tdbAlbaranes,editRecord()]"/>
-  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditRec,clicked(),tdbRecibos,editRecord()]"/>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditPed,clicked(),tdbPedidos,editRecord()]"/>
   <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditPre,clicked(),tdbPresupuestos,editRecord()]"/>
   <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]">
@@ -557,5 +556,4 @@
       <tabstop>tdbSubcuentas</tabstop>
     </tabstops>
   </xupdate:insert-after>
-  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]"/>
 </xupdate:modifications>

@@ -1,15 +1,7 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">706</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">551</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutReferencia]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutReferencia]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutReferencia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesArticulo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutReferencia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesArticulo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutAlmacen]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutAlmacen]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutAlmacen]/hbox[hbox,1]/widget[FLFieldDB,fdbNombre]/property[sizePolicy]/sizepolicy[sizepolicy,1]/hsizetype[hsizetype,1]/text()[1]">7</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutAlmacen]/hbox[hbox,1]/widget[FLFieldDB,fdbNombre]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutAlmacen]/hbox[hbox,1]/widget[FLFieldDB,fdbNombre]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
   <xupdate:delete select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutAlmacen]/hbox[hbox,1]/widget[FLFieldDB,fdbCantidad]"/>
   <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmStock]/vbox[vbox,1]/widget[QLayoutWidget,layoutAlmacen]">
     <widget class="QLayoutWidget">
@@ -190,7 +182,7 @@
   <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]">
     <includehint>fltabledb.h</includehint>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
     <includehint>flfielddb.h</includehint>
   </xupdate:insert-after>
 </xupdate:modifications>
