@@ -2,7 +2,7 @@
 /** @class_declaration pedProvCli */
 /////////////////////////////////////////////////////////////////
 //// PED_PROV_CLI ///////////////////////////////////////////////
-class pedProvCli extends oficial {
+class pedProvCli extends oficial /** %from: oficial */ {
     function pedProvCli( context ) { oficial( context ); }
 	function init() {
 		return this.ctx.pedProvCli_init();
@@ -20,9 +20,6 @@ class pedProvCli extends oficial {
 //// PED_PROV_CLI ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
-
-
 /** @class_definition pedProvCli*/
 /////////////////////////////////////////////////////////////////
 //// PED_PROV_CLI ///////////////////////////////////////////////
@@ -37,38 +34,38 @@ function pedProvCli_tbnPedidosCli_clicked()
 {
 	var cursor:FLSqlCursor = this.cursor();
 	var util:FLUtil = new FLUtil();
-	
+
 	if (cursor.modeAccess() == cursor.Insert) {
 		var curLineas:FLSqlCursor = this.child("tdbArticulosPedProv").cursor();
 		curLineas.setModeAccess(curLineas.Insert);
 		if (!curLineas.commitBufferCursorRelation())
 			return false;
 	}
-	
+
 	var f:Object = new FLFormSearchDB("buscapedcli");
 	var curPedidosCli:FLSqlCursor = f.cursor();
-	
+
 	curPedidosCli.setMainFilter(formpedidosprov.iface.filtroPedidosCli());
 	f.setMainWidget();
 	var idPedido:String = f.exec("idpedido");
 	if (idPedido) {
-	
+
 		var codPedidoProv:String = util.sqlSelect("pedidoscli", "codpedidoprov", "idpedido = " + idPedido + " AND idpedidoprov <> " + this.cursor().valueBuffer("idpedido"));
 		if (codPedidoProv) {
 			res = MessageBox.warning(util.translate("scripts", "Este pedido de cliente ya se encuentra asociado al pedido de proveedor %0\n¿Desea continuar?").arg(codPedidoProv), MessageBox.Yes, MessageBox.No, MessageBox.NoButton);
 			if (res != MessageBox.Yes)
 				return false;
 		}
-	
+
 		if (!this.iface.asociarPedidoCli(idPedido, cursor))
 			return false;
-	
+
 		this.iface.actualizarCodPedidoCli();
 	}
-	
+
 	this.iface.calcularTotales();
 	this.child("tdbArticulosPedProv").refresh();
-	
+
 }
 
 /** \D Asocia las líneas de un pedido de cliente a un pedido de proveedor
@@ -78,15 +75,15 @@ function pedProvCli_tbnPedidosCli_clicked()
 \end */
 function pedProvCli_asociarPedidoCli(idPedidoCli:String, curPedidoProv:FLSqlCursor):Boolean
 {
-	
-	
+
+
 	if (!formpedidosprov.iface.pub_copiarLineasPedidoProvCli(idPedidoCli, curPedidoProv.valueBuffer("idpedido")))
 		return false;
 
 	if(!formpedidosprov.iface.pub_asociarPedidoProvCli(idPedidoCli,curPedidoProv.valueBuffer("idpedido")))
 		return false;
-	
-		
+
+
 	return true;
 }
 
@@ -111,12 +108,11 @@ function pedProvCli_actualizarCodPedidoCli()
 			pedidos += ", ";
 		pedidos += qryPedidos.value("pc.codigo");
 	}
-	
+
 	if (pedidos && pedidos != "")
 		this.child("leCodPedidoCli").text = pedidos;
 }
 
 //// PED_PROV_CLI ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 

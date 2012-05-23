@@ -1,12 +1,13 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[cerrada]" >
-<field>
-<name>idlineacli</name>
-<!--Identificador de la línea de pedido de cliente relacionada--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Linea cli.&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>uint</type>
-<visiblegrid>false</visiblegrid>
-</field>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[cerrada]">
+    <field>
+      <name>idlineacli</name>
+      <!--Identificador de la línea de pedido de cliente relacionada-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Linea cli.")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>

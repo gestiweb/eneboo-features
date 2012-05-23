@@ -1,34 +1,37 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[codigo]" >
-<field>
-<name>pedido</name>
-<!--Indicador de si el pedido se ha pedido a proveedor total o parcialmente--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pedido&quot;)</alias>
-<null>false</null>
-<pk>false</pk>
-<type>string</type>
-<length>10</length>
-<default>No</default>
-</field>
-</xupdate:insert-after>
-<xupdate:insert-after select="/TMD[TMD,1]/field[numero]" >
-<field>
-<name>codpedidoprov</name>
-<!--Código del pedido de provedor--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;P. Proveedor&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>string</type>
-<length>12</length>
-<editable>false</editable>
-</field>
-</xupdate:insert-after>
-<xupdate:insert-after select="/TMD[TMD,1]/field[codpedidoprov]" >
-<field>
-<name>idpedidoprov</name>
-<!--Id del pedido de provedor--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Id Proveedor&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>uint</type>
-<visiblegrid>false</visiblegrid>
-</field>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codigo]">
+    <field>
+      <name>pedido</name>
+      <!--Indicador de si el pedido se ha pedido a proveedor total o parcialmente-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pedido")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <default>No</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[numero]">
+    <field>
+      <name>codpedidoprov</name>
+      <!--Código del pedido de provedor-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","P. Proveedor")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>12</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codpedidoprov]">
+    <field>
+      <name>idpedidoprov</name>
+      <!--Id del pedido de provedor-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Id Proveedor")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>

@@ -1,40 +1,40 @@
-<xupdate:modifications>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer27]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacerAbrCer]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >16</xupdate:update>
-<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
-<image name="pedprovcliimage50059" >
-<data format="PNG" length="1820" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006e349444154789cc596cfab254715c73f77d2d1baf10e54c73bd00577f415bcc0ab4bc474e322f7622033e0c2590866e7b811e34208f11f301b376e2442c420088304c1450859c904155f1632fdc498db8119ba9e64b02ecc23ddc9dc4c37e63add90967651efc7fcf2cd0c88163487d3d5d575ea5bdff33d67d0f73dffcf11dcf962301804e649331381780c1854eb6a40e7a78662f888100260e0566d53d7d565d6e587c0439fe2f0e07ddfdff60821e41bafbf51f67ddff71ff5fd3ded8dbeff7b7eb38f5f3ef7b17c39fe9dfcd6ecc772f3fcb304e2b30f1340dff7770740c0e3975ebbf4e18d8f6ef47ddff737ff71d3db9bb7db1b1f7cd07f90dfe8cffde887bd7c6da397a9eca3df6fbc279f3df30321e4f841033871e78408040e47380aa1806137846bfbd61dd91045b1b6fcfcebcf73feca0b88773488f6cbf337c357e4ebf25df9f499ef039fb95f207705d0762d1a3d28ea02807437a56a2b5ce94040becc698286f46a4a1828529bf2fc5373ceed9da77d4bb1f8734af874f805f59bfa17d12be68f2232cf3e54000708a8b18235cc37e78484e8b1860ea65f9a326448bc11233b49ac636ce778e19939717796f67a48f1d7028dc27cd37cd5fc45fc563e397bfe6111a05815b001ae763081a22d404275bd8208caae04e9e78d32d8eb966fcb73503630f2c8d93a45b6fa73665bfc527ee5cc8b0f83c0408d15f96e8eec24cdb24122c997396117d2ec36c84e624b8b0a1499cb5022a2608194095c0390d46f85647f80faadfa84fc99fba9d89c7de7cefd06770ad1e0d1c1e3972e5cfa9bfe9a1eab40e1d60e1d794454a4a8ea8af05488730e3dd2a4bb2932d80fa6517c6ff91205357a6530418c12438c30d8ce6257c5c7dbbf7af51bedba4e0ff6bd4b884420060ec75ccea1063dd250838a3c27c25108d7418f35d56e85128ac5de022d34f613cb77472f51af2de79e31b8ca614e198aaee0b9ade778f34f173f9f8f65b25cd73bec8bd7b159d0740d8be50202704b072da4efa5346d832b1d35357999a3479aacc850ad221c39ce4d62ec75876a353bd732c24f145969d19da6edda0078e4780e740e2515ae7624930456a0a58616e64fcd1932444b4d457598253333a30a2b667a4671b260f6c48c46359c3167284e16c4518cc5220271db9ec766c17432f55910815bfb6ca8d69567ffda916c25b8d6213724ad68996fcda945cd7c734e1dd4ccb7e69494241b09b6b698c0d076ede0d8004420b0589454d0828e3c0774a46105e1a9103ad013ef274f26845d4832499048e69b738ab6209ec4b4758b191b9faad2e07088401c1f40dbb5180c6ee568da86edf7b66968c877739aae21bf9c43e739d1d0905fcda9828abccc610c8be50225143bcb1daaae62b15c10119195191a4ddbb5c75fc13e02032d356eed38bb7596613764ba39f5766bea91d9d00ca57f1f8a90e9d694e17a48b291a08462b639a3a62699f86bba0581fb73c060c8cb9ce9644abef227cb973908a8ea0a4ee39572044559c018dc9ee74abee76b852d2d7aacb12b8b96fb160d30d87f8e47603a9e52ec16a84091efe528a128ae16845dc8e29d8557c8ab5e1117573cccc595022514dbbbdb84842c7617444144f67e861e691c0e021e2c0bf232f79abe4cfde2da21c68245b9c044c6678504bbb2a891c2d616246465461225e4abfcb6932fca8547a0bb4f00073a70b0388912ea657df4b3918635a8407998a53e544cb77268a169cb96e9787af8bdebdc2102d3607adf2c1868f4c0969678125350202602bbb2fee4b58391d781831493913c9a5f3bcf99558e890cb6b2be165cf748e4e48f1c1bc0413fa0a5a6dd6b09db90f46a8aec24f55e8d128aec6a860a14e56e494848567abf5ed64441c4626f41d88564d732d4a38aacce30a1c1758e6130bcbf0e6834b6b4b4a2255fe54cc753dcda73c0d50e355247fedaa1022fdbcda8f1c8c8fd13771af789bf960304eedcf33ff6035a6a5ceb988ea750e3efb4b428a17c750c94bf63e115d18c8de7c448630b4b7c3ac6e130a1c1b6161d6a2c16139813dc92867795633a3c022b8bec24db97b73123435117a84f156991faf96b5edb538e7cdd69debef636461876563b34eb06d7394c60c8c830185ee5d5e31120c02f928662edab5a75b222d948a84e56c4a763aa931567cd59aad0fbc5c98258c754a72a664fcc28448151865086c41b31a52c31a7cc0357c3810ef4c0ae2cd3c994b22b0fab623249bcbfe139318da6b8d6914409455bf82c687d8f587c5a604686b22b3162bf39e101aaa11412d739442bd8ceb611eb237b31bb886805e9e5d45b9b127621e9fb2921213befefa0d8ef111f5564ebcc13706d894484ed2cb1886fbbf6bb3850b7f53f2ffcfac24fdaaefda20844df762d22101c583abfead0bf07876e9b3ff207221027ecd2becb2d24bcbb291d0c0e8ac563b77ef85f1c3dd0f47dffaf7b06f0bf1eff0603611245e76f01220000000049454e44ae426082</data>
-</image>
-</xupdate:append-first>
-<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]" >
-<widget class="QToolButton" >
-<property name="name" >
-<cstring>tbnPedidosCli</cstring>
-</property>
-<property name="minimumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="maximumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="text" >
-<string/>
-</property>
-<property name="iconSet" >
-<iconset>pedprovcliimage50059</iconset>
-</property>
-<property name="toolTip" stdset="0" >
-<string>Asociar pedido de cliente</string>
-</property>
-<property name="whatsThis" stdset="0" >
-<string>Permite seleccionar al pedido actual un pedido de cliente que no esté servido y que no haya sido asociado a otro pedido de proveedor</string>
-</property>
-</widget>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer27]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">16</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacerAbrCer]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">16</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]">
+    <widget class="QToolButton">
+      <property name="name">
+        <cstring>tbnPedidosCli</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>pedprovcliimage50059</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Asociar pedido de cliente</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Permite seleccionar al pedido actual un pedido de cliente que no esté servido y que no haya sido asociado a otro pedido de proveedor</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="pedprovcliimage50059">
+      <data format="PNG" length="1820">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006e349444154789cc596cfab254715c73f77d2d1baf10e54c73bd00577f415bcc0ab4bc474e322f7622033e0c2590866e7b811e34208f11f301b376e2442c420088304c1450859c904155f1632fdc498db8119ba9e64b02ecc23ddc9dc4c37e63add90967651efc7fcf2cd0c88163487d3d5d575ea5bdff33d67d0f73dffcf11dcf962301804e649331381780c1854eb6a40e7a78662f888100260e0566d53d7d565d6e587c0439fe2f0e07ddfdff60821e41bafbf51f67ddff71ff5fd3ded8dbeff7b7eb38f5f3ef7b17c39fe9dfcd6ecc772f3fcb304e2b30f1340dff7770740c0e3975ebbf4e18d8f6ef47ddff737ff71d3db9bb7db1b1f7cd07f90dfe8cffde887bd7c6da397a9eca3df6fbc279f3df30321e4f841033871e78408040e47380aa1806137846bfbd61dd91045b1b6fcfcebcf73feca0b88773488f6cbf337c357e4ebf25df9f499ef039fb95f207705d0762d1a3d28ea02807437a56a2b5ce94040becc698286f46a4a1828529bf2fc5373ceed9da77d4bb1f8734af874f805f59bfa17d12be68f2232cf3e54000708a8b18235cc37e78484e8b1860ea65f9a326448bc11233b49ac636ce778e19939717796f67a48f1d7028dc27cd37cd5fc45fc563e397bfe6111a05815b001ae763081a22d404275bd8208caae04e9e78d32d8eb966fcb73503630f2c8d93a45b6fa73665bfc527ee5cc8b0f83c0408d15f96e8eec24cdb24122c997396117d2ec36c84e624b8b0a1499cb5022a2608194095c0390d46f85647f80faadfa84fc99fba9d89c7de7cefd06770ad1e0d1c1e3972e5cfa9bfe9a1eab40e1d60e1d794454a4a8ea8af05488730e3dd2a4bb2932d80fa6517c6ff91205357a6530418c12438c30d8ce6257c5c7dbbf7af51bedba4e0ff6bd4b884420060ec75ccea1063dd250838a3c27c25108d7418f35d56e85128ac5de022d34f613cb77472f51af2de79e31b8ca614e198aaee0b9ade778f34f173f9f8f65b25cd73bec8bd7b159d0740d8be50202704b072da4efa5346d832b1d35357999a3479aacc850ad221c39ce4d62ec75876a353bd732c24f145969d19da6edda0078e4780e740e2515ae7624930456a0a58616e64fcd1932444b4d457598253333a30a2b667a4671b260f6c48c46359c3167284e16c4518cc5220271db9ec766c17432f55910815bfb6ca8d69567ffda916c25b8d6213724ad68996fcda945cd7c734e1dd4ccb7e69494241b09b6b698c0d076ede0d8004420b0589454d0828e3c0774a46105e1a9103ad013ef274f26845d4832499048e69b738ab6209ec4b4758b191b9faad2e07088401c1f40dbb5180c6ee568da86edf7b66968c877739aae21bf9c43e739d1d0905fcda9828abccc610c8be50225143bcb1daaae62b15c10119195191a4ddbb5c75fc13e02032d356eed38bb7596613764ba39f5766bea91d9d00ca57f1f8a90e9d694e17a48b291a08462b639a3a62699f86bba0581fb73c060c8cb9ce9644abef227cb973908a8ea0a4ee39572044559c018dc9ee74abee76b852d2d7aacb12b8b96fb160d30d87f8e47603a9e52ec16a84091efe528a128ae16845dc8e29d8557c8ab5e1117573cccc595022514dbbbdb84842c7617444144f67e861e691c0e021e2c0bf232f79abe4cfde2da21c68245b9c044c6678504bbb2a891c2d616246465461225e4abfcb6932fca8547a0bb4f00073a70b0388912ea657df4b3918635a8407998a53e544cb77268a169cb96e9787af8bdebdc2102d3607adf2c1868f4c0969678125350202602bbb2fee4b58391d781831493913c9a5f3bcf99558e890cb6b2be165cf748e4e48f1c1bc0413fa0a5a6dd6b09db90f46a8aec24f55e8d128aec6a860a14e56e494848567abf5ed64441c4626f41d88564d732d4a38aacce30a1c1758e6130bcbf0e6834b6b4b4a2255fe54cc753dcda73c0d50e355247fedaa1022fdbcda8f1c8c8fd13771af789bf960304eedcf33ff6035a6a5ceb988ea750e3efb4b428a17c750c94bf63e115d18c8de7c448630b4b7c3ac6e130a1c1b6161d6a2c16139813dc92867795633a3c022b8bec24db97b73123435117a84f156991faf96b5edb538e7cdd69debef636461876563b34eb06d7394c60c8c830185ee5d5e31120c02f928662edab5a75b222d948a84e56c4a763aa931567cd59aad0fbc5c98258c754a72a664fcc28448151865086c41b31a52c31a7cc0357c3810ef4c0ae2cd3c994b22b0fab623249bcbfe139318da6b8d6914409455bf82c687d8f587c5a604686b22b3162bf39e101aaa11412d739442bd8ceb611eb237b31bb886805e9e5d45b9b127621e9fb2921213befefa0d8ef111f5564ebcc13706d894484ed2cb1886fbbf6bb3850b7f53f2ffcfac24fdaaefda20844df762d22101c583abfead0bf07876e9b3ff207221027ecd2becb2d24bcbb291d0c0e8ac563b77ef85f1c3dd0f47dffaf7b06f0bf1eff0603611245e76f01220000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
 </xupdate:modifications>

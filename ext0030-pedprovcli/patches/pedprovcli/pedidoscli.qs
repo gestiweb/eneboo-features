@@ -2,7 +2,7 @@
 /** @class_declaration pedProvCli */
 /////////////////////////////////////////////////////////////////
 //// PEDPROVCLI /////////////////////////////////////////////////
-class pedProvCli extends oficial {
+class pedProvCli extends oficial /** %from: oficial */ {
     function pedProvCli( context ) { oficial ( context ); }
 	function calcularTotales() {
 		return this.ctx.pedProvCli_calcularTotales();
@@ -17,7 +17,7 @@ class pedProvCli extends oficial {
 function pedProvCli_calcularTotales()
 {
 	this.iface.__calcularTotales();
-/*	
+/*
 	var cursor:FLSqlCursor = this.cursor();
 	var idPedido:String = cursor.valueBuffer("idpedido");
 	var estado:String = flfacturac.iface.pub_estadoPedidoCliProv(idPedido);

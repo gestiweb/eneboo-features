@@ -1,0 +1,24 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout26]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblPedidoCli</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>25</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

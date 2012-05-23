@@ -2,7 +2,7 @@
 /** @class_declaration pedProvCli */
 /////////////////////////////////////////////////////////////////
 //// PED_PROV_CLI ///////////////////////////////////////////////
-class pedProvCli extends oficial {
+class pedProvCli extends oficial /** %from: oficial */ {
     function pedProvCli( context ) { oficial ( context ); }
 	function init() {
 		return this.ctx.pedProvCli_init();
@@ -11,15 +11,13 @@ class pedProvCli extends oficial {
 //// PED_PROV_CLI ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
-
 /** @class_definition pedProvCli*/
 /////////////////////////////////////////////////////////////////
 //// PED_PROV_CLI ///////////////////////////////////////////////
 function pedProvCli_init()
 {
 	this.iface.__init();
-	
+
 	var util:FLUtil = new FLUtil;
 	var cursor:FLSqlCursor = this.cursor();
 	switch (cursor.modeAccess()) {
@@ -30,7 +28,7 @@ function pedProvCli_init()
 				this.child("lblPedidoCli").text = util.translate("scripts", "Pedido de cliente: ") + codPedidoCli;
 			break;
 		}
-	} 
+	}
 }
 
 //// PED_PROV_CLI ///////////////////////////////////////////////

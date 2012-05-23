@@ -1,18 +1,19 @@
-<flpatch:modifications name="pedprovcli" >
-    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" />
-    <flpatch:addFile path="facturacion/facturacion/forms/" name="masterbuscapedcli.ui" />
-    <flpatch:addFile path="facturacion/facturacion/forms/" name="masterbuscapedclisel.ui" />
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" />
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidosprov.qs" />
-    <flpatch:addFile path="facturacion/facturacion/scripts/" name="masterbuscapedcli.qs" />
-    <flpatch:addFile path="facturacion/facturacion/scripts/" name="masterbuscapedclisel.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" />
-    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" />
-    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" />
-    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" />
-    <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd" />
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="pedprovcli">
+  <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidosprov.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="masterbuscapedcli.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="masterbuscapedclisel.ui"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidosprov.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="masterbuscapedcli.qs"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="masterbuscapedclisel.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd" style="legacy1"/>
 </flpatch:modifications>

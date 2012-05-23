@@ -1,22 +1,22 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busprescli]" >
-<action>
-<name>buscapedcli</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Búsqueda de pedidos de cliente)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Búsqueda de pedidos de cliente&quot;)</alias>
-<table>pedidoscli</table>
-<form>masterbuscapedcli</form>
-<scriptform>masterbuscapedcli</scriptform>
-</action>
-</xupdate:insert-after>
-<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[buscapedcli]" >
-<action>
-<name>buscapedclisel</name>
-<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Búsqueda de pedidos de cliente)</description>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Búsqueda de pedidos de cliente&quot;)</alias>
-<table>pedidoscli</table>
-<form>masterbuscapedclisel</form>
-<scriptform>masterbuscapedclisel</scriptform>
-</action>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busprescli]">
+    <action>
+      <name>buscapedcli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Búsqueda de pedidos de cliente)</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Búsqueda de pedidos de cliente")</alias>
+      <table>pedidoscli</table>
+      <form>masterbuscapedcli</form>
+      <scriptform>masterbuscapedcli</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[buscapedcli]">
+    <action>
+      <name>buscapedclisel</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Búsqueda de pedidos de cliente)</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Búsqueda de pedidos de cliente")</alias>
+      <table>pedidoscli</table>
+      <form>masterbuscapedclisel</form>
+      <scriptform>masterbuscapedclisel</scriptform>
+    </action>
+  </xupdate:insert-after>
 </xupdate:modifications>

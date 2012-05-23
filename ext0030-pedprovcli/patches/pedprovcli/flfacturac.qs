@@ -2,7 +2,7 @@
 /** @class_declaration pedProvCli */
 /////////////////////////////////////////////////////////////////
 //// PED_PROV_CLI ///////////////////////////////////////////////
-class pedProvCli extends oficial {
+class pedProvCli extends oficial /** %from: oficial */ {
     function pedProvCli( context ) { oficial ( context ); }
 	function beforeCommit_lineaspedidoscli(curLP:FLSqlCursor):Boolean {
 		return this.ctx.pedProvCli_beforeCommit_lineaspedidoscli(curLP);
@@ -38,7 +38,7 @@ class pedProvCli extends oficial {
 /** @class_declaration pubPedCliProv */
 /////////////////////////////////////////////////////////////////
 //// PUB PED CLI PROV ///////////////////////////////////////////
-class pubPedCliProv extends ifaceCtx {
+class pubPedCliProv extends ifaceCtx /** %from: ifaceCtx */ {
 	function pubPedCliProv( context ) { ifaceCtx( context ); }
 	function pub_estadoPedidoCliProv(idPedido:String):String {
 		return this.estadoPedidoCliProv(idPedido);
@@ -74,11 +74,11 @@ function pedProvCli_beforeCommit_pedidoscli(curPedido:FLSqlCursor):Boolean
 				res = MessageBox.information(util.translate("scripts", "Va a eliminar un pedido asociado al pedido de proveedor ") + codPedidoProv + util.translate("scripts", "\n¿Desea continuar?"), MessageBox.Yes, MessageBox.No);
 				if (res != MessageBox.Yes)
 					return false;
-					
+
 				var curLineasCli:FLSqlCursor = new FLSqlCursor("lineaspedidoscli");
 				curLineasCli.select("idpedido = " + curPedido.valueBuffer("idpedido"));
 				while (curLineasCli.next()) {
-					
+
 					curLineasCli.setModeAccess(curLineasCli.Edit);
 					curLineasCli.refreshBuffer();
 
@@ -86,7 +86,7 @@ function pedProvCli_beforeCommit_pedidoscli(curPedido:FLSqlCursor):Boolean
 
 					if (!util.sqlUpdate("lineaspedidosprov", "idlineacli", "NULL", "idlinea = " + idLineaProv))
 						return false;
-						
+
 					curLineasCli.setNull("idlineaprov");
 					if (!curLineasCli.commitBuffer())
 						return false;
@@ -97,14 +97,14 @@ function pedProvCli_beforeCommit_pedidoscli(curPedido:FLSqlCursor):Boolean
 	}
 	if (!interna_beforeCommit_pedidoscli(curPedido))
 		return false;
-	
+
 	return true;
 }
 
 function pedProvCli_beforeCommit_pedidosprov(curPedido:FLSqlCursor):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var res:Number;
 	switch (curPedido.modeAccess()) {
 		/** \C Avisa al usuario de que intenta borrar un pedido asociado a uno o más pedidos de cliente. Si el usuario decide borrar el pedido, se eliminan las referencias del mismo en las correspondientes líneas de pedido de cliente.
@@ -116,10 +116,10 @@ function pedProvCli_beforeCommit_pedidosprov(curPedido:FLSqlCursor):Boolean
 			res = MessageBox.information(util.translate("scripts", "Va a eliminar un pedido asociado al menos al pedido de cliente ") + codPedidoCli + util.translate("scripts", "\n¿Desea continuar?"), MessageBox.Yes, MessageBox.No);
 			if (res != MessageBox.Yes)
 				return false;
-				
+
 // 			var curLineasProv:FLSqlCursor = new FLSqlCursor("lineaspedidosprov");
 // 			curLineasProv.select("idpedido = " + curPedido.valueBuffer("idpedido"));
-// 			
+//
 // 			var idLineaCli:String;
 // 			var idPedidoCli:String;
 // 			while (curLineasProv.next()) {
@@ -128,14 +128,14 @@ function pedProvCli_beforeCommit_pedidosprov(curPedido:FLSqlCursor):Boolean
 // 				idLineaCli = curLineasProv.valueBuffer("idlineacli");
 // 				if (!idLineaCli || idLineaCli == 0)
 // 					continue;
-// 					
+//
 // 				if (!util.sqlUpdate("lineaspedidoscli", "idlineaprov", "NULL", "idlinea = " + idLineaCli))
 // 					return false;
-// 					
+//
 // 				curLineasProv.setNull("idlineacli");
 // 				if (!curLineasProv.commitBuffer())
 // 					return false;
-// 					
+//
 // 				idPedidoCli = util.sqlSelect("lineaspedidoscli", "idpedido", "idlinea = " + idLineaCli);
 // 				if (!util.sqlSelect("lineaspedidoscli", "idlinea", "idpedido = " + idPedidoCli + " AND idlineaprov IS NOT NULL")) {
 // 					if (!util.sqlUpdate("pedidoscli", "codpedidoprov,idpedidoprov", "NULL,NULL", "idpedido = " + idPedidoCli))
@@ -145,22 +145,22 @@ function pedProvCli_beforeCommit_pedidosprov(curPedido:FLSqlCursor):Boolean
 			break;
 		}
 	}
-	
+
 	if (!interna_beforeCommit_pedidosprov(curPedido))
 		return false;
-	
+
 	return true;
 }
 
 
-/** \C Avisa al usuario en caso de que intente modificar o borrar una línea de pedido de cliente asociada a una línea de pedido de proveedor 
+/** \C Avisa al usuario en caso de que intente modificar o borrar una línea de pedido de cliente asociada a una línea de pedido de proveedor
 \end */
 function pedProvCli_beforeCommit_lineaspedidoscli(curLP:FLSqlCursor):Boolean
 {
 	var util:FLUtil = new FLUtil;
 
 	var idLineaProv:Number = util.sqlSelect("lineaspedidosprov","idlinea","idlineacli = " + curLP.valueBuffer("idlinea"));
-	
+
 	if (idLineaProv) {
 		var codPedidoProv:String = util.sqlSelect("pedidosprov p INNER JOIN lineaspedidosprov lp ON p.idpedido = lp.idpedido", "p.codigo", "lp.idlinea = " + idLineaProv, "pedidosprov,lineaspedidosprov");
 		var res:Number;
@@ -179,17 +179,17 @@ function pedProvCli_beforeCommit_lineaspedidoscli(curLP:FLSqlCursor):Boolean
 					return false;
 				if (!util.sqlUpdate("lineaspedidosprov", "idlineacli", "NULL", "idlinea = " + idLineaProv))
 					return false;
-				
+
 				break;
 			}
 		}
 	}
-	
+
 	/*
 	if (!this.iface.__beforeCommit_lineaspedidoscli(curLP))
 		return false;
 	*/
-		
+
 	return true;
 }
 
@@ -206,7 +206,7 @@ function pedProvCli_beforeCommit_lineaspedidosprov(curLP:FLSqlCursor):Boolean
 				if (otraLinea) {
 					var cliente:String = util.sqlSelect("pedidoscli p INNER JOIN lineaspedidoscli l ON l.idpedido = p.idpedido", "p.codigo", "idlinea = " + curLP.valueBuffer("idlineacli"), "lineaspedidoscli,pedidoscli") + " - " + util.sqlSelect("pedidoscli p INNER JOIN lineaspedidoscli l ON l.idpedido = p.idpedido", "p.nombrecliente", "idlinea = " + curLP.valueBuffer("idlineacli"), "lineaspedidoscli,pedidoscli");
 					var proveedor:String = util.sqlSelect("pedidosprov","codigo","idpedido = " + curLP.valueBuffer("idpedido")) + " - " + util.sqlSelect("pedidosprov","nombre","idpedido = " + curLP.valueBuffer("idpedido"));
-					
+
 					res = MessageBox.information(util.translate("scripts", "El pedido de cliente %1\nque intenta asociar ya está asociado al pedido de proveedor %2\n¿Desea continuar?").arg(cliente).arg(proveedor), MessageBox.Yes, MessageBox.No);
 					if (res != MessageBox.Yes)
 						return false;
@@ -216,7 +216,7 @@ function pedProvCli_beforeCommit_lineaspedidosprov(curLP:FLSqlCursor):Boolean
 			case curLP.Edit: {
 				if (curLP.valueBuffer("referencia") != curLP.valueBufferCopy("referencia") || curLP.valueBuffer("cantidad") != curLP.valueBufferCopy("cantidad") || curLP.valueBuffer("cerrada") != curLP.valueBufferCopy("cerrada")) {
 					var codPedidoCli:String = util.sqlSelect("lineaspedidoscli l INNER JOIN pedidoscli p ON l.idpedido = p.idpedido", "p.codigo", "idlinea = " + curLP.valueBuffer("idlineacli"), "lineaspedidoscli,pedidoscli");
-					
+
 					res = MessageBox.information(util.translate("scripts", "Va a modificar una línea de pedido que está asociada al pedido de cliente ") + codPedidoCli + util.translate("scripts", "\n¿Desea continuar?"), MessageBox.Yes, MessageBox.No);
 					if (res != MessageBox.Yes)
 						return false;
@@ -225,13 +225,13 @@ function pedProvCli_beforeCommit_lineaspedidosprov(curLP:FLSqlCursor):Boolean
 			}
 			case curLP.Del: {
 				var codPedidoCli:String = util.sqlSelect("lineaspedidoscli l INNER JOIN pedidoscli p ON l.idpedido = p.idpedido", "p.codigo", "idlinea = " + curLP.valueBuffer("idlineacli"), "lineaspedidoscli,pedidoscli");
-				
+
 				res = MessageBox.information(util.translate("scripts", "Va a eliminar una línea de pedido que está asociada al pedido de cliente ") + codPedidoCli + util.translate("scripts", "\n¿Desea continuar?"), MessageBox.Yes, MessageBox.No);
 				if (res != MessageBox.Yes)
 					return false;
-				
-				
-				
+
+
+
 				break;
 			}
 		}
@@ -283,11 +283,11 @@ debug("DEL idPedidoCli = " + idPedidoCli);
 			}
 		}
 	}
-	
+
 	if (!this.iface.__afterCommit_lineaspedidosprov(curLP)) {
 		return false;
 	}
-	
+
 	return true;
 }
 
@@ -360,7 +360,7 @@ function pedProvCli_estadoPedidoCliProv(idPedido:String):String
 	var hayLineasCon:Boolean = false;
 	var hayLineasSin:Boolean = false;
 	var res:String = "";
-	
+
 	var qryLineas:FLSqlQuery = new FLSqlQuery();
 	qryLineas.setTablesList("pedidoscli,lineaspedidoscli,lineaspedidosprov");
 	qryLineas.setSelect("p.codalmacen, lpc.referencia, lpc.idlinea, lpc.cantidad, SUM(CASE WHEN lpp.cerrada THEN lpp.totalenalbaran ELSE lpp.cantidad END)");
@@ -391,7 +391,7 @@ debug(qryLineas.sql());
 			hayLineasSin = true;
 		}
 	}
-	
+
 	if ( hayLineasSin && !hayLineasCon ) {
 		res = "No";
 	} else if ( !hayLineasSin && hayLineasCon ) {
@@ -419,7 +419,7 @@ function pedProvCli_actualizarEstadoPedidoProv(idPedido:Number, curAlbaran:FLSql
 				return false;
 		}
 	}
-	
+
 	if(!this.iface.__actualizarEstadoPedidoProv(idPedido, curAlbaran))
 		return false;
 
@@ -427,3 +427,4 @@ function pedProvCli_actualizarEstadoPedidoProv(idPedido:Number, curAlbaran:FLSql
 }
 //// PED_PROV_CLI ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

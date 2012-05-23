@@ -2,7 +2,7 @@
 /** @class_declaration pedProvCli */
 /////////////////////////////////////////////////////////////////
 //// PED_PROV_CLI ///////////////////////////////////////////////
-class pedProvCli extends oficial {	
+class pedProvCli extends oficial /** %from: oficial */ {
 	var pedidosSel_:Array;
 	var lineasPedCli:Array;
 	var mensajeFinal:String;
@@ -57,12 +57,10 @@ class pedProvCli extends oficial {
 //// PED_PROV_CLI ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
-
 /** @class_declaration pubPedProvCli */
 /////////////////////////////////////////////////////////////////
 //// PUB_PEDPROVCLI  ////////////////////////////////////////////
-class pubPedProvCli extends ifaceCtx {
+class pubPedProvCli extends ifaceCtx /** %from: ifaceCtx */ {
     function pubPedProvCli( context ) { ifaceCtx( context ); }
 	function pub_commonCalculateField(fN:String, cursor:FLSqlCursor):FLSqlCursor {
 		return this.commonCalculateField(fN, cursor);
@@ -83,8 +81,6 @@ class pubPedProvCli extends ifaceCtx {
 //// PUB_PEDPROVCLI  ////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
-
 /** @class_definition pedProvCli*/
 /////////////////////////////////////////////////////////////////
 //// PED_PROV_CLI ///////////////////////////////////////////////
@@ -93,7 +89,7 @@ function pedProvCli_init()
 	var util:FLUtil;
 
 	this.iface.__init();
-	
+
 	connect(this.child("tbnPedidosCli"), "clicked()", this, "iface.tbnPedidosCli_clicked");
 
 	var q:FLSqlQuery = new FLSqlQuery();
@@ -118,7 +114,7 @@ function pedProvCli_init()
 		curPed.refreshBuffer();
 		curPed.setValueBuffer("abierto",false);
 		curPed.commitBuffer();
-		
+
 		curPed.select("idpedido = " + q.value("idpedido"));
 		curPed.first();
 		curPed.setUnLock("editable", false);
@@ -132,7 +128,7 @@ function pedProvCli_tbnPedidosCli_clicked()
 	this.iface.mensajeFinal = "";
 	var f:Object = new FLFormSearchDB("buscapedclisel");
 	var curPedidosCli:FLSqlCursor = f.cursor();
-	
+
 	curPedidosCli.setMainFilter(this.iface.filtroPedidosCli());
 	f.setMainWidget();
 	if (!f.exec("idpedido")) {
@@ -162,10 +158,10 @@ function pedProvCli_tbnPedidosCli_clicked()
 		MessageBox.critical(util.translate("scripts", "Hubo un error en la generación de pedidos:") + "\n" + e, MessageBox.Ok, MessageBox.NoButton);
 		return;
 	}
-	
+
 	this.iface.tdbRecords.refresh();
 	this.iface.procesarEstado();
-	
+
 	MessageBox.information(util.translate("scripts", "Pedidos implicados: \n%1").arg(this.iface.mensajeFinal), MessageBox.Ok, MessageBox.NoButton);
 }
 
@@ -184,7 +180,7 @@ function pedProvCli_crearPedidos():Boolean
 			dialog.caption = "Pedidos abiertos";
 			dialog.okButtonText = "Aceptar"
 			dialog.cancelButtonText = "Cancelar";
-			
+
 			var gbx = new GroupBox;
 			var codProveedor:String = this.iface.lineasPedCli[indice][0];
 			var nombreProv:String = util.sqlSelect("proveedores", "nombre", "codproveedor = '" + codProveedor + "'");
@@ -195,7 +191,7 @@ function pedProvCli_crearPedidos():Boolean
 			pedidos[0].text = "Pedido nuevo";
 			pedidos[0].checked = false;
 			gbx.add(pedidos[0]);
-			
+
 			for(var i=0;i<pedidosAbiertos.length;i++) {
 				pedidos[i+1] = new RadioButton;
 				pedidos[i+1].text = util.translate("scripts", "Pedido %1 del %2    Importe: %3").arg(pedidosAbiertos[i][1]).arg(util.dateAMDtoDMA(pedidosAbiertos[i][2])).arg(util.roundFieldValue(parseFloat(pedidosAbiertos[i][3]), "pedidosprov","total"));
@@ -206,7 +202,7 @@ function pedProvCli_crearPedidos():Boolean
 				}
 				gbx.add(pedidos[i+1]);
 			}
-			
+
 			if (!dialog.exec()) {
 				return false;
 			}
@@ -271,14 +267,14 @@ function pedProvCli_crearPedidoProvCli(indice:Number,idPedido:Number):String
 	}
 	this.iface.curPedidoProvCli_.setModeAccess(this.iface.curPedidoProvCli_.Edit);
 	this.iface.curPedidoProvCli_.refreshBuffer();
-	
+
 	if (!this.iface.calcularTotalesPedidoProvCli()) {
 		return false;
 	}
 	if (!this.iface.curPedidoProvCli_.commitBuffer()) {
 		return false;
 	}
-	
+
 	return this.iface.curPedidoProvCli_.valueBuffer("codigo");
 }
 
@@ -342,7 +338,7 @@ function pedProvCli_copiarLineasPedidoProvCli(idPedidoCli:String, idPedidoProv:S
 		else
 			return false;
 	}
-	
+
 	var cantidad:Number, cantidadProv:Number;
 	var estadoCopia:String;
 	while (curLineasCli.next()) {
@@ -359,7 +355,7 @@ function pedProvCli_copiarLineasPedidoProvCli(idPedidoCli:String, idPedidoProv:S
 		curLineasProv.setModeAccess(curLineasProv.Insert);
 		curLineasProv.refreshBuffer();
 		curLineasProv.setValueBuffer("cantidad", cantidad);
-		
+
 		estadoCopia = this.iface.datosLineaPedidoProvCli(curLineasCli,curLineasProv,idPedidoProv);
 		switch (estadoCopia) {
 			case "OK": {
@@ -373,7 +369,7 @@ function pedProvCli_copiarLineasPedidoProvCli(idPedidoCli:String, idPedidoProv:S
 				return false;
 			}
 		}
-		
+
 		if (!curLineasProv.commitBuffer()) {
 			return false;
 		}
@@ -382,7 +378,7 @@ function pedProvCli_copiarLineasPedidoProvCli(idPedidoCli:String, idPedidoProv:S
 			return false;
 		}
 	}
-	
+
 	return true;
 }
 
@@ -396,14 +392,14 @@ function pedProvCli_asociarPedidoProvCli(idPedidoCli:Number,idPedidoProv:Number)
 	curPedidoCli.select("idpedido = " + idPedidoCli);
 	if (!curPedidoCli.first())
 		return false;
-	
+
 	curPedidoCli.setModeAccess(curPedidoCli.Edit);
 	curPedidoCli.refreshBuffer();
 	curPedidoCli.setValueBuffer("idpedidoprov", idPedidoProv);
 	curPedidoCli.setValueBuffer("codpedidoprov", util.sqlSelect("pedidosprov","codigo","idpedido = " + idPedidoProv));
 	if (!curPedidoCli.commitBuffer())
 		return false;
-		
+
 	return true;
 }
 
@@ -420,7 +416,7 @@ function pedProvCli_datosLineaPedidoProvCli(curLineasCli:FLSqlCursor,curLineasPr
 {
 	var util:FLUtil;
 	var valor:Number;
-	
+
 	with (curLineasProv) {
 		setValueBuffer("idpedido", idPedido);
 		setValueBuffer("referencia", curLineasCli.valueBuffer("referencia"));
@@ -429,7 +425,7 @@ function pedProvCli_datosLineaPedidoProvCli(curLineasCli:FLSqlCursor,curLineasPr
 
 		valor = formRecordlineaspedidosprov.iface.pub_commonCalculateField("pvpunitario", curLineasProv);
 		if (!valor || isNaN(valor)) {
-			valor = 0;	
+			valor = 0;
 		}
 		setValueBuffer("pvpunitario", parseFloat(valor));
 
@@ -567,7 +563,7 @@ function pedProvCli_imprimir(codPedido:String)
 	var util:FLUtil;
 
 	this.iface.__imprimir(codPedido);
-	
+
 	var codigo:String;
 	if (codPedido) {
 		codigo = codPedido;
@@ -576,7 +572,7 @@ function pedProvCli_imprimir(codPedido:String)
 			return;
 		codigo = this.cursor().valueBuffer("codigo");
 	}
-	
+
 	if(util.sqlSelect("pedidosprov","abierto","codigo = '" + codigo + "'")) {
 		var res:Number = MessageBox.information(util.translate("scripts", "¿Desea marcar el pedido como no abierto"), MessageBox.Yes, MessageBox.No);
 		if(res == MessageBox.Yes)
@@ -585,6 +581,4 @@ function pedProvCli_imprimir(codPedido:String)
 }
 //// PED_PROV_CLI ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
-
 
