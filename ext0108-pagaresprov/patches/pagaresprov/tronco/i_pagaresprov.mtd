@@ -1,0 +1,151 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>i_pagaresprov</name>
+	<!-- Listado de Pagarés de proveedor-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Informes de pagarés de proveedor")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Identificador interno	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<pk>false</pk>
+		<null>false</null>
+		<type>string</type>
+		<length>200</length>
+	</field>
+
+	<field>
+		<name>i_pagaresprov_numero</name>
+		<!-- Número de pagaré -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Número")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>13</length>
+
+		<relation>
+			<table>pagaresprov</table>
+			<field>numero</field>
+			<card>M1</card>
+		</relation>
+
+	</field>
+
+	<field>
+		<name>d_pagaresprov_secuencia</name>
+		<!-- Secuencia desde -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sec. desde")</alias>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>7</partI>
+		<partD>0</partD>
+	</field>
+
+	<field>
+		<name>h_pagaresprov_secuencia</name>
+		<!-- Secuencia hasta -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sec. hasta")</alias>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>7</partI>
+		<partD>0</partD>
+	</field>
+
+	<field>
+		<name>codintervaloe</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","I. Emisión")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>intervalos</table>
+			<field>codigo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>d_pagaresprov_fecha</name>
+		<!-- Fecha de emisión inicial para los pagarés-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Em. desde")</alias>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>h_pagaresprov_fecha</name>
+		<!-- Fecha de emisión final para los pagarés-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Em. hasta")</alias>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>codintervalov</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","I. Vencimiento")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>intervalos</table>
+			<field>codigo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>d_pagaresprov_fechav</name>
+		<!-- Fecha de vencimiento inicial para los pagarés-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Vto. desde")</alias>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>h_pagaresprov_fechav</name>
+		<!-- Fecha de vencimiento final para los pagarés-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Vto. hasta")</alias>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>i_pagaresprov_codproveedor</name>
+		<!-- Código del proveedor-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Proveedor")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>proveedores</table>
+			<field>codproveedor</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>i_pagaresprov_codcuenta</name>
+		<!-- Código de cuenta -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuenta")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>cuentasbanco</table>
+			<field>codcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+</TMD>

@@ -1,0 +1,289 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>pagaresprov</name>
+	<!-- Listado de pagarés a proveedor-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Pagarés a proveedor")</alias>
+
+	<field>
+		<name>idpagare</name>
+		<!-- Identificador -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>pagospagareprov</table>
+			<field>idpagare</field>
+			<card>1M</card>
+        </relation>
+	</field>
+
+	<field>
+		<name>numero</name>
+		<!-- Número -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Número")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>13</length>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>estado</name>
+		<!-- Estado -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+		<default>Emitido</default>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>total</name>
+		<!-- Suma del importe de los recibos del pagaré	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Total pagaré")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<editable>false</editable>
+		<calculated>true</calculated>
+	</field>
+
+	<field>
+		<name>codproveedor</name>
+		<!-- Código del proveedor -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cod. proveedor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>proveedores</table>
+			<field>codproveedor</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>nombreproveedor</name>
+		<!-- Nombre del proveedor-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>fecha</name>
+		<!-- Fecha de emisión -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Emisión")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>impreso</name>
+		<!--Indica si el pagaré está impreso-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Impreso")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>fechav</name>
+		<!-- Fecha de vencimiento -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Vencimiento")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>codcuenta</name>
+		<!-- Cuenta bancaria donde se cargará la el pagaré-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Bancaria")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>cuentasbanco</table>
+			<field>codcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codsubcuentab</name>
+		<!-- Código de la subcuenta contable del banco a la que se aplica el asiento de el pagaré-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subta banco")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>idsubcuentab</name>
+		<!-- Identificador de la subcuenta-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+	
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idsubcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codsubcuentap</name>
+		<!-- Código de la subcuenta contable de pagaré a la que se aplica el asiento de el pagaré-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subta. pendiente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>idsubcuentap</name>
+		<!-- Identificador de la subcuenta-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>co_subcuentas</table>
+			<field>idsubcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>nogenerarasiento</name>
+		<!--Indica si se debe generar asiento contable o no para los pedidos incluidos en el pagaré-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ignorar contabilidad")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>ctaentidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Entidad")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>ctaagencia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Oficina")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>dc</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Dígitos de Control")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>2</length>
+		<calculated>true</calculated>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>cuenta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº Cuenta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<editable>false</editable>
+	</field>
+    
+	<field>
+		<name>coddivisa</name>
+		<!-- Código de la divisa de los recibos de la remesa -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Divisa")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>3</length>
+		
+		<relation>
+			<table>divisas</table>
+			<field>coddivisa</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>serie</name>
+		<!-- Serie del pagaré -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Serie")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>3</length>
+	</field>
+
+	<field>
+		<name>prefijo</name>
+		<!-- Prefijo -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Prefijo")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+	</field>
+	
+	<field>
+		<name>dcn</name>
+		<!-- Dígito de control del número de pagaré-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","D.C.")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>secuencia</name>
+		<!-- Secuencia-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Secuencia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>7</partI>
+		<partD>0</partD>
+	</field>
+</TMD>

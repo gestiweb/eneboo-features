@@ -1,0 +1,49 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_pagaresprov</name>
+
+	<tables>empresa,pagaresprov,pagosdevolprov,recibosprov,facturasprov,bancos</tables>
+
+	<group>
+		<level>0</level>
+		<field>pagaresprov.idpagare</field>
+	</group>
+
+	<select>
+		pagaresprov.idpagare,
+		facturasprov.codigo, recibosprov.codigo,
+		recibosprov.fechav, recibosprov.importe,
+		cuentasbanco.iban,
+		bancos.nombre, sucursales.poblacion,
+		sucursales.direccion, sucursales.codpostal, sucursales.provincia,
+		pagaresprov.ctaentidad, pagaresprov.ctaagencia,
+		pagaresprov.dc, pagaresprov.cuenta,
+		pagaresprov.fecha, pagaresprov.fechav,
+		pagaresprov.secuencia,
+		pagaresprov.total, pagaresprov.numero,
+		pagaresprov.prefijo, pagaresprov.dcn,
+		pagaresprov.nombreproveedor,
+		dirproveedores.direccion,
+		dirproveedores.codpostal, dirproveedores.ciudad,
+		dirproveedores.provincia,
+		empresa.ciudad
+	</select>
+
+	<from>
+		empresa, pagaresprov 
+		INNER JOIN pagosdevolprov ON pagaresprov.idpagare = pagosdevolprov.idpagare
+		INNER JOIN recibosprov ON recibosprov.idrecibo = pagosdevolprov.idrecibo
+		INNER JOIN facturasprov ON recibosprov.idfactura = facturasprov.idfactura
+		INNER JOIN cuentasbanco ON pagaresprov.codcuenta = cuentasbanco.codcuenta
+		INNER JOIN bancos ON cuentasbanco.entidad = bancos.entidad
+		LEFT OUTER JOIN sucursales ON (cuentasbanco.agencia = sucursales.agencia AND cuentasbanco.entidad = sucursales.entidad)
+		LEFT OUTER JOIN dirproveedores ON (pagaresprov.codproveedor = dirproveedores.codproveedor AND dirproveedores.direccionppal = true)
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		pagaresprov.codcuenta, pagaresprov.secuencia, recibosprov.codigo
+	</order>
+</QRY>

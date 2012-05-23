@@ -1,0 +1,109 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>agruparrecpagprov</name>
+	<!--Lista de criterios de búsqueda de recibos a agrupar en un pagaré-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Agrupar recibos en pagaré")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codcuenta</name>
+		<!-- Cuenta bancaria donde se cargará la el pagaré-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Bancaria")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>cuentasbanco</table>
+			<field>codcuenta</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>codproveedor</name>
+		<!-- Proveedores-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Proveedor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		
+		<relation>
+			<table>proveedores</table>
+			<field>codproveedor</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fechae</name>
+		<!--Fecha de emision-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","F. Emisión")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechav</name>
+		<!--Fecha de vencimiento-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","F. Vencimiento")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechavdesde</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Vto. desde")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechavhasta</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Vto. hasta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>fechahasta</name>
+		<!--Fecha máxima de los albaranes-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","hasta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+
+	<field>
+		<name>sinfechav</name>
+		<!--Fecha de vencimiento nula-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Vencimiento por recibo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+
+	<field>
+		<name>excepciones</name>
+		<!--Lista separada por comas de los identificadores de albarán a excluir de la búsqueda-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Excepciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+</TMD>
