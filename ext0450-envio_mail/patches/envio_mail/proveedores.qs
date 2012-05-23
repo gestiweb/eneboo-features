@@ -2,27 +2,26 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO MAIL /////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
     function envioMail( context ) { oficial ( context ); }
-    function init() { 
-		return this.ctx.envioMail_init(); 
+    function init() {
+		return this.ctx.envioMail_init();
 	}
-    function enviarEmail() { 
-		return this.ctx.envioMail_enviarEmail(); 
+    function enviarEmail() {
+		return this.ctx.envioMail_enviarEmail();
 	}
-    function enviarEmailPedido() { 
-		return this.ctx.envioMail_enviarEmailPedido(); 
+    function enviarEmailPedido() {
+		return this.ctx.envioMail_enviarEmailPedido();
 	}
-    function accesoWeb():Boolean { 
-		return this.ctx.envioMail_accesoWeb(); 
+    function accesoWeb():Boolean {
+		return this.ctx.envioMail_accesoWeb();
 	}
-    function enviarEmailContacto() { 
-		return this.ctx.envioMail_enviarEmailContacto(); 
+    function enviarEmailContacto() {
+		return this.ctx.envioMail_enviarEmailContacto();
 	}
 }
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 
 /** @class_definition envioMail */
 /////////////////////////////////////////////////////////////////

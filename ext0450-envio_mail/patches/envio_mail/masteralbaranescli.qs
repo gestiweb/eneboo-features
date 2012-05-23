@@ -2,10 +2,10 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO_MAIL ////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
     function envioMail( context ) { oficial ( context ); }
-	function init() { 
-		return this.ctx.envioMail_init(); 
+	function init() {
+		return this.ctx.envioMail_init();
 	}
 	function enviarDocumento(codAlbaran:String, codCliente:String) {
 		return this.ctx.envioMail_enviarDocumento(codAlbaran, codCliente);
@@ -18,11 +18,10 @@ class envioMail extends oficial {
 //// ENVIO_MAIL ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
 /** @class_declaration pubEnvioMail */
 /////////////////////////////////////////////////////////////////
 //// PUB_ENVIO_MAIL /////////////////////////////////////////////
-class pubEnvioMail extends ifaceCtx {
+class pubEnvioMail extends ifaceCtx /** %from: ifaceCtx */ {
     function pubEnvioMail( context ) { ifaceCtx( context ); }
 	function pub_enviarDocumento(codAlbaran:String, codCliente:String) {
 		return this.enviarDocumento(codAlbaran, codCliente);
@@ -79,12 +78,12 @@ function envioMail_enviarDocumento(codAlbaran:String, codCliente:String)
 		}
 		codigo = cursor.valueBuffer("codigo");
 	}
-	
+
 	var numCopias:Number = util.sqlSelect("albaranescli a INNER JOIN clientes c ON c.codcliente = a.codcliente", "c.copiasfactura", "a.codigo = '" + codigo + "'", "albaranescli,clientes");
 	if (!numCopias) {
 		numCopias = 1;
 	}
-		
+
 	var curImprimir:FLSqlCursor = new FLSqlCursor("i_albaranescli");
 	curImprimir.setModeAccess(curImprimir.Insert);
 	curImprimir.refreshBuffer();
@@ -107,7 +106,7 @@ function envioMail_enviarDocumento(codAlbaran:String, codCliente:String)
 function envioMail_imprimir(codAlbaran:String)
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var datosEMail:Array = [];
 	datosEMail["tipoInforme"] = "albaranescli";
 	var codCliente:String;

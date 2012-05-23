@@ -2,10 +2,10 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO_MAIL ////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
     function envioMail( context ) { oficial ( context ); }
-	function init() { 
-		return this.ctx.envioMail_init(); 
+	function init() {
+		return this.ctx.envioMail_init();
 	}
 	function enviarDocumento(codPedido:String, codProveedor:String) {
 		return this.ctx.envioMail_enviarDocumento(codPedido, codProveedor);
@@ -17,12 +17,10 @@ class envioMail extends oficial {
 //// ENVIO_MAIL ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
-
 /** @class_declaration pubEnvioMail */
 /////////////////////////////////////////////////////////////////
 //// PUB_ENVIO_MAIL /////////////////////////////////////////////
-class pubEnvioMail extends ifaceCtx {
+class pubEnvioMail extends ifaceCtx /** %from: ifaceCtx */ {
     function pubEnvioMail( context ) { ifaceCtx( context ); }
 	function pub_enviarDocumento(codPedido:String, codProveedor:String) {
 		return this.enviarDocumento(codPedido, codProveedor);
@@ -57,7 +55,7 @@ function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
 
 	var tabla:String = "proveedores";
 	var emailProveedor:String = flfactppal.iface.pub_componerListaDestinatarios(codProveedor, tabla);
-	if (!emailProveedor) {	
+	if (!emailProveedor) {
 		return;
 	}
 
@@ -79,7 +77,7 @@ function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
 		}
 		codigo = cursor.valueBuffer("codigo");
 	}
-	
+
 	var curImprimir:FLSqlCursor = new FLSqlCursor("i_pedidosprov");
 	curImprimir.setModeAccess(curImprimir.Insert);
 	curImprimir.refreshBuffer();
@@ -102,7 +100,7 @@ function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
 function envioMail_imprimir(codPedido:String)
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var datosEMail:Array = [];
 	datosEMail["tipoInforme"] = "pedidosprov";
 	var codCliente:String;

@@ -2,7 +2,7 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO MAIL /////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
 	var tbnEnviarMail;
 	function envioMail( context ) { oficial( context ); }
 	function init() {
@@ -14,7 +14,6 @@ class envioMail extends oficial {
 }
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 
 /** @class_definition envioMail */
 /////////////////////////////////////////////////////////////////
@@ -30,7 +29,7 @@ function envioMail_enviarEMail()
 {
 	var util:FLUtil = new FLUtil;
 	var tabla:String;
-	
+
 	var rutaIntermedia:String = util.readSettingEntry("scripts/flfactinfo/dirCorreo");
 	if (!rutaIntermedia.endsWith("/")) {
 		rutaIntermedia += "/";

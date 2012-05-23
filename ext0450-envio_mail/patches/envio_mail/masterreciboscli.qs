@@ -2,10 +2,10 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO_MAIL ////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
     function envioMail( context ) { oficial ( context ); }
-	function init() { 
-		return this.ctx.envioMail_init(); 
+	function init() {
+		return this.ctx.envioMail_init();
 	}
 	function enviarDocumento(codRecibo:String, codCliente:String) {
 		return this.ctx.envioMail_enviarDocumento(codRecibo, codCliente);
@@ -18,11 +18,10 @@ class envioMail extends oficial {
 //// ENVIO_MAIL ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
 /** @class_declaration pubEnvioMail */
 /////////////////////////////////////////////////////////////////
 //// PUB_ENVIO_MAIL /////////////////////////////////////////////
-class pubEnvioMail extends ifaceCtx {
+class pubEnvioMail extends ifaceCtx /** %from: ifaceCtx */ {
     function pubEnvioMail( context ) { ifaceCtx( context ); }
 	function pub_enviarDocumento(codRecibo:String, codCliente:String) {
 		return this.enviarDocumento(codRecibo, codCliente);
@@ -77,12 +76,12 @@ function envioMail_enviarDocumento(codRecibo:String, codCliente:String)
 		}
 		codigo = cursor.valueBuffer("codigo");
 	}
-	
+
 	var numCopias:Number = util.sqlSelect("reciboscli r INNER JOIN clientes c ON c.codcliente = r.codcliente", "c.copiasfactura", "r.codigo = '" + codigo + "'", "reciboscli,clientes");
 	if (!numCopias) {
 		numCopias = 1;
 	}
-		
+
 	var curImprimir:FLSqlCursor = new FLSqlCursor("i_reciboscli");
 	curImprimir.setModeAccess(curImprimir.Insert);
 	curImprimir.refreshBuffer();
@@ -105,7 +104,7 @@ function envioMail_enviarDocumento(codRecibo:String, codCliente:String)
 function envioMail_imprimir(codRecibo:String)
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var datosEMail:Array = [];
 	datosEMail["tipoInforme"] = "reciboscli";
 	var codCliente:String;
@@ -123,3 +122,4 @@ function envioMail_imprimir(codRecibo:String)
 
 //// ENVIO_MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

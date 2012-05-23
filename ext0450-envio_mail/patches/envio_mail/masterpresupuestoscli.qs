@@ -2,10 +2,10 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO_MAIL ////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
     function envioMail( context ) { oficial ( context ); }
-	function init() { 
-		return this.ctx.envioMail_init(); 
+	function init() {
+		return this.ctx.envioMail_init();
 	}
 	function enviarDocumento(codPresupuesto:String, codCliente:String) {
 		return this.ctx.envioMail_enviarDocumento(codPresupuesto, codCliente);
@@ -21,7 +21,7 @@ class envioMail extends oficial {
 /** @class_declaration pubEnvioMail */
 /////////////////////////////////////////////////////////////////
 //// PUB_ENVIO_MAIL /////////////////////////////////////////////
-class pubEnvioMail extends head {
+class pubEnvioMail extends head /** %from: head */ {
     function pubEnvioMail( context ) { head( context ); }
 	function pub_enviarDocumento(codPresupuesto:String, codCliente:String) {
 		return this.enviarDocumento(codPresupuesto, codCliente);
@@ -30,7 +30,6 @@ class pubEnvioMail extends head {
 
 //// PUB_ENVIO_MAIL /////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 
 /** @class_definition envioMail */
 /////////////////////////////////////////////////////////////////
@@ -82,7 +81,7 @@ function envioMail_enviarDocumento(codPresupuesto:String, codCliente:String)
 	if (!numCopias) {
 		numCopias = 1;
 	}
-		
+
 	var curImprimir:FLSqlCursor = new FLSqlCursor("i_presupuestoscli");
 	curImprimir.setModeAccess(curImprimir.Insert);
 	curImprimir.refreshBuffer();
@@ -105,7 +104,7 @@ function envioMail_enviarDocumento(codPresupuesto:String, codCliente:String)
 function envioMail_imprimir(codPresupuesto:String)
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var datosEMail:Array = [];
 	datosEMail["tipoInforme"] = "presupuestoscli";
 	var codCliente:String;
@@ -123,5 +122,4 @@ function envioMail_imprimir(codPresupuesto:String)
 
 //// ENVIO_MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 

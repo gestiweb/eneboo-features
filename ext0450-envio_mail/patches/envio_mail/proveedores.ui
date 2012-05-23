@@ -1,312 +1,299 @@
-<xupdate:modifications>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >129</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/spacer[Spacer2_3_2_3_2_2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >290</xupdate:update>
-<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
-<image name="envio_mailimage55590" >
-<data format="PNG" length="1330" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004f949444154789ced96418814471486bf194bad26bda11a14a60809ce2187958099851c1c72d9050fbbb02159f010172f110f517232e494a3c77812911cf4b6e620b81065bdad07831304770d218e60600c1aab831bbac8347685699d1caa7b76c65d1343123cc41f8637d535ddf5eaabbfdf3c78a997fabfabf29cd7fe4df5375decc6f51b7d1d6a4c6ad0a1267109511891e4093ad4381c5a15d75544e63282b1802ccb0882007ac05636c66125509fa8efba7bf7eebd22914132d507b71ef4ff6b5dfafa52ffc8c1237d5001280154aa7e7d5535a9f1492609f420eb66eb11c8b2d1488fd1b889962b70a8b2c0a1ca3200918c88bb3108197a3eb58af03f95151d6ae8c1d2e21236b528a9b0ce72f4e3a3d085602c800c8f3b0382bfc00da80f61feab791658f09b73096a4c018408d923773d517ac1a406bd5533333be3cf3e4d46629664046140d61d3dfb677a0088de068b4fa22460bb16601bb9db02b25a24e0d0a1860c962f2e13a7f13a81c347218540063e86c13a91213223440ad53f833ac0393f36d6501bab015411b242ee288fc0bb5f689afb9ae850639c414b4d62938d4464449214644a22457c5632003ad4de0300b95fb73a4220052514599aa1a5264b3322190d222944a288c538909ec4898b17a05b2c9e0d1dc7904c6a4a0f80a0024f13407376f12c2a57d8dca284c2e49e4c399eda3fe5eb4449a68826351c3fbfc0b1fd739bd7878240e1810181110f2436e1c0f4013f290107329438e790a1040708c86ce6f1a73e92fa87cfec6b70e2e2053e9f9ddff4383a0f3ba50740c0060fd4c33ae716cfa1d8b8f372dc9c6e520b6b746c875a58c3585f394d6a18df3907fbe0f8f9058e7e3033e2117aa0c5460f8c10706b8e99c919923c612a9c821408fdfb3b13ce7802123ebd7c0a2dd78d6a9c4f22ce622676eec64dc3a9cb4b7c3e3d4f10ad9348f264d8031b09443262e9ea122a57b4f2d6c8ceafe4575042d1986c1000f3b34dea63754c66508162b5db221186a49bd0d0e33009c71747494422fa730f74d63a4cbe33e9771a82759666d81c78c1389f6496c34abac235b78c9235ecc31815d6b0a9615c8e1327314dbd1ba6dd3a8930c0e4668307aac304a490c4360601b18d3d016b4040c776884484b1066b0396efb768e71d5a6b2d2c8ef65a1b8962d5b63118ae3d5ca1a12768ee1de7f8e202499a6cea81913a60d60c3868df6f430aed3b6d9c75acfcb80216566eaf60638b895740488c4d40486ea51d0211ad279d262819d1b9d7c1dcb6180ced6fda18375207fae0ca7ea0b60de23d73efcf5de739645e573466f5a06206a10401f51d7570b02bd4b8b58ce5ab31abb7db4477da9eb394005cb8746d9c9c35e0b72201258abfc8087815d84ed1ac4864c5e1068b4b248dc353ada977278ae645619c257a5383ca68ec98c0c686a40d4bdfaed23a7de63df272c7f2a1849ef335f35772ba25812ab8ed0819921322d8464eb5b4e8d36a1c9cfbc1e5ae2205b81ca490a8b7029ab37b51b1a3f33dacde5ea575facc24b903212197bf20e893f318c123705d721e952d5905d416602bc8edc0969280afd99bc969ff7020878fbefce2bbf17185bb37d8f99ec13cca900fdaaf27fe0e7e8778d00ff4c13ef693b207a539815c32a8cb23d1be0212727f3cce6670a7c6d2cd16ad9327eae58191cb07febb657d2dd907fb0478320cb96812dd13463a63c733f4d3f09c0e35176eb6faad9327de18baf7e7cdef77fd4d2efe33edfde4581f786de8f342f442172f13f85bfa037d590231d39c26260000000049454e44ae426082</data>
-</image>
-</xupdate:append-first>
-<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/spacer[Spacer2_3_2_3_2_2]" >
-<widget class="QPushButton" >
-<property name="name" >
-<cstring>tbnEnviarMailContacto</cstring>
-</property>
-<property name="enabled" >
-<bool>true</bool>
-</property>
-<property name="sizePolicy" >
-<sizepolicy>
-<hsizetype>1</hsizetype>
-<vsizetype>1</vsizetype>
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="maximumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="focusPolicy" >
-<enum>NoFocus</enum>
-</property>
-<property name="text" >
-<string/>
-</property>
-<property name="accel" >
-<string>I</string>
-</property>
-<property name="iconSet" >
-<iconset>envio_mailimage55590</iconset>
-</property>
-<property name="toolTip" stdset="0" >
-<string>Enviar email</string>
-</property>
-<property name="whatsThis" stdset="0" >
-<string>Envar un email al contacto seleccionado</string>
-</property>
-</widget>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/widget[QPushButton,tbnEnviarMailContacto]" >
-<spacer>
-<property name="name" >
-<cstring>SpacerEMail</cstring>
-</property>
-<property name="orientation" >
-<enum>Horizontal</enum>
-</property>
-<property name="sizeType" >
-<enum>Expanding</enum>
-</property>
-<property name="sizeHint" >
-<size>
-<width>66</width>
-<height>16</height>
-</size>
-</property>
-</spacer>
-</xupdate:insert-after>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frmCuentas]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaRem]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frmCuentas]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaRem]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >140</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >44</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbIvaPortes]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbIvaPortes]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >101</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >124</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRegimenIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRegimenIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >113</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >25</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaDom]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,cuentasbancarias]/vbox[vbox,1]/widget[QGroupBox,gbxCuentasBanco]/vbox[vbox,1]/widget[QFrame,frmBotonesCuentas]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaDom]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >26</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/spacer[Spacer2_5]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]" >210</xupdate:update>
-<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
-<image name="envio_mailimage55590" >
-<data format="PNG" length="1330" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004f949444154789ced96418814471486bf194bad26bda11a14a60809ce2187958099851c1c72d9050fbbb02159f010172f110f517232e494a3c77812911cf4b6e620b81065bdad07831304770d218e60600c1aab831bbac8347685699d1caa7b76c65d1343123cc41f8637d535ddf5eaabbfdf3c78a997fabfabf29cd7fe4df5375decc6f51b7d1d6a4c6ad0a1267109511891e4093ad4381c5a15d75544e63282b1802ccb0882007ac05636c66125509fa8efba7bf7eebd22914132d507b71ef4ff6b5dfafa52ffc8c1237d5001280154aa7e7d5535a9f1492609f420eb66eb11c8b2d1488fd1b889962b70a8b2c0a1ca3200918c88bb3108197a3eb58af03f95151d6ae8c1d2e21236b528a9b0ce72f4e3a3d085602c800c8f3b0382bfc00da80f61feab791658f09b73096a4c018408d923773d517ac1a406bd5533333be3cf3e4d46629664046140d61d3dfb677a0088de068b4fa22460bb16601bb9db02b25a24e0d0a1860c962f2e13a7f13a81c347218540063e86c13a91213223440ad53f833ac0393f36d6501bab015411b242ee288fc0bb5f689afb9ae850639c414b4d62938d4464449214644a22457c5632003ad4de0300b95fb73a4220052514599aa1a5264b3322190d222944a288c538909ec4898b17a05b2c9e0d1dc7904c6a4a0f80a0024f13407376f12c2a57d8dca284c2e49e4c399eda3fe5eb4449a68826351c3fbfc0b1fd739bd7878240e1810181110f2436e1c0f4013f290107329438e790a1040708c86ce6f1a73e92fa87cfec6b70e2e2053e9f9ddff4383a0f3ba50740c0060fd4c33ae716cfa1d8b8f372dc9c6e520b6b746c875a58c3585f394d6a18df3907fbe0f8f9058e7e3033e2117aa0c5460f8c10706b8e99c919923c612a9c821408fdfb3b13ce7802123ebd7c0a2dd78d6a9c4f22ce622676eec64dc3a9cb4b7c3e3d4f10ad9348f264d8031b09443262e9ea122a57b4f2d6c8ceafe4575042d1986c1000f3b34dea63754c66508162b5db221186a49bd0d0e33009c71747494422fa730f74d63a4cbe33e9771a82759666d81c78c1389f6496c34abac235b78c9235ecc31815d6b0a9615c8e1327314dbd1ba6dd3a8930c0e4668307aac304a490c4360601b18d3d016b4040c776884484b1066b0396efb768e71d5a6b2d2c8ef65a1b8962d5b63118ae3d5ca1a12768ee1de7f8e202499a6cea81913a60d60c3868df6f430aed3b6d9c75acfcb80216566eaf60638b895740488c4d40486ea51d0211ad279d262819d1b9d7c1dcb6180ced6fda18375207fae0ca7ea0b60de23d73efcf5de739645e573466f5a06206a10401f51d7570b02bd4b8b58ce5ab31abb7db4477da9eb394005cb8746d9c9c35e0b72201258abfc8087815d84ed1ac4864c5e1068b4b248dc353ada977278ae645619c257a5383ca68ec98c0c686a40d4bdfaed23a7de63df272c7f2a1849ef335f35772ba25812ab8ed0819921322d8464eb5b4e8d36a1c9cfbc1e5ae2205b81ca490a8b7029ab37b51b1a3f33dacde5ea575facc24b903212197bf20e893f318c123705d721e952d5905d416602bc8edc0969280afd99bc969ff7020878fbefce2bbf17185bb37d8f99ec13cca900fdaaf27fe0e7e8778d00ff4c13ef693b207a539815c32a8cb23d1be0212727f3cce6670a7c6d2cd16ad9327eae58191cb07febb657d2dd907fb0478320cb96812dd13463a63c733f4d3f09c0e35176eb6faad9327de18baf7e7cdef77fd4d2efe33edfde4581f786de8f342f442172f13f85bfa037d590231d39c26260000000049454e44ae426082</data>
-</image>
-</xupdate:append-first>
-<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintPed]" >
-<widget class="QPushButton" >
-<property name="name" >
-<cstring>tbnEnviarMailPed</cstring>
-</property>
-<property name="enabled" >
-<bool>true</bool>
-</property>
-<property name="sizePolicy" >
-<sizepolicy>
-<hsizetype>1</hsizetype>
-<vsizetype>1</vsizetype>
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="maximumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="focusPolicy" >
-<enum>NoFocus</enum>
-</property>
-<property name="text" >
-<string/>
-</property>
-<property name="accel" >
-<string>I</string>
-</property>
-<property name="iconSet" >
-<iconset>envio_mailimage55590</iconset>
-</property>
-<property name="toolTip" stdset="0" >
-<string>Enviar email</string>
-</property>
-<property name="whatsThis" stdset="0" >
-<string>Envar por email el pedido seleccionado</string>
-</property>
-</widget>
-</xupdate:insert-after>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreComercial]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreComercial]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >151</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >75</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoIdFiscal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoIdFiscal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >110</xupdate:update>
-<xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[FLFieldDB,fdbWeb]" />
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono1]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono1]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >102</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono2]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono2]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >102</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >64</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >90</xupdate:update>
-<xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/spacer[spacer49]" />
-<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
-<image name="envio_mailimage55590" >
-<data format="PNG" length="1330" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004f949444154789ced96418814471486bf194bad26bda11a14a60809ce2187958099851c1c72d9050fbbb02159f010172f110f517232e494a3c77812911cf4b6e620b81065bdad07831304770d218e60600c1aab831bbac8347685699d1caa7b76c65d1343123cc41f8637d535ddf5eaabbfdf3c78a997fabfabf29cd7fe4df5375decc6f51b7d1d6a4c6ad0a1267109511891e4093ad4381c5a15d75544e63282b1802ccb0882007ac05636c66125509fa8efba7bf7eebd22914132d507b71ef4ff6b5dfafa52ffc8c1237d5001280154aa7e7d5535a9f1492609f420eb66eb11c8b2d1488fd1b889962b70a8b2c0a1ca3200918c88bb3108197a3eb58af03f95151d6ae8c1d2e21236b528a9b0ce72f4e3a3d085602c800c8f3b0382bfc00da80f61feab791658f09b73096a4c018408d923773d517ac1a406bd5533333be3cf3e4d46629664046140d61d3dfb677a0088de068b4fa22460bb16601bb9db02b25a24e0d0a1860c962f2e13a7f13a81c347218540063e86c13a91213223440ad53f833ac0393f36d6501bab015411b242ee288fc0bb5f689afb9ae850639c414b4d62938d4464449214644a22457c5632003ad4de0300b95fb73a4220052514599aa1a5264b3322190d222944a288c538909ec4898b17a05b2c9e0d1dc7904c6a4a0f80a0024f13407376f12c2a57d8dca284c2e49e4c399eda3fe5eb4449a68826351c3fbfc0b1fd739bd7878240e1810181110f2436e1c0f4013f290107329438e790a1040708c86ce6f1a73e92fa87cfec6b70e2e2053e9f9ddff4383a0f3ba50740c0060fd4c33ae716cfa1d8b8f372dc9c6e520b6b746c875a58c3585f394d6a18df3907fbe0f8f9058e7e3033e2117aa0c5460f8c10706b8e99c919923c612a9c821408fdfb3b13ce7802123ebd7c0a2dd78d6a9c4f22ce622676eec64dc3a9cb4b7c3e3d4f10ad9348f264d8031b09443262e9ea122a57b4f2d6c8ceafe4575042d1986c1000f3b34dea63754c66508162b5db221186a49bd0d0e33009c71747494422fa730f74d63a4cbe33e9771a82759666d81c78c1389f6496c34abac235b78c9235ecc31815d6b0a9615c8e1327314dbd1ba6dd3a8930c0e4668307aac304a490c4360601b18d3d016b4040c776884484b1066b0396efb768e71d5a6b2d2c8ef65a1b8962d5b63118ae3d5ca1a12768ee1de7f8e202499a6cea81913a60d60c3868df6f430aed3b6d9c75acfcb80216566eaf60638b895740488c4d40486ea51d0211ad279d262819d1b9d7c1dcb6180ced6fda18375207fae0ca7ea0b60de23d73efcf5de739645e573466f5a06206a10401f51d7570b02bd4b8b58ce5ab31abb7db4477da9eb394005cb8746d9c9c35e0b72201258abfc8087815d84ed1ac4864c5e1068b4b248dc353ada977278ae645619c257a5383ca68ec98c0c686a40d4bdfaed23a7de63df272c7f2a1849ef335f35772ba25812ab8ed0819921322d8464eb5b4e8d36a1c9cfbc1e5ae2205b81ca490a8b7029ab37b51b1a3f33dacde5ea575facc24b903212197bf20e893f318c123705d721e952d5905d416602bc8edc0969280afd99bc969ff7020878fbefce2bbf17185bb37d8f99ec13cca900fdaaf27fe0e7e8778d00ff4c13ef693b207a539815c32a8cb23d1be0212727f3cce6670a7c6d2cd16ad9327eae58191cb07febb657d2dd907fb0478320cb96812dd13463a63c733f4d3f09c0e35176eb6faad9327de18baf7e7cdef77fd4d2efe33edfde4581f786de8f342f442172f13f85bfa037d590231d39c26260000000049454e44ae426082</data>
-</image>
-</xupdate:append-first>
-<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]" >
-<widget class="QPushButton" >
-<property name="name" >
-<cstring>tbnEnviarMail</cstring>
-</property>
-<property name="enabled" >
-<bool>true</bool>
-</property>
-<property name="sizePolicy" >
-<sizepolicy>
-<hsizetype>1</hsizetype>
-<vsizetype>1</vsizetype>
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="maximumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="focusPolicy" >
-<enum>NoFocus</enum>
-</property>
-<property name="text" >
-<string/>
-</property>
-<property name="accel" >
-<string>I</string>
-</property>
-<property name="iconSet" >
-<iconset>envio_mailimage55590</iconset>
-</property>
-<property name="toolTip" stdset="0" >
-<string>Enviar email</string>
-</property>
-<property name="whatsThis" stdset="0" >
-<string>Envar un email al contacto principal del proveedor</string>
-</property>
-</widget>
-</xupdate:insert-after>
-<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
-<image name="envio_mailimage45445" >
-<data format="PNG" length="2424" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000093f49444154789cc5977f8c14e51dc63fb7ccc2bb381767e2a13b7aa73b96a5ec29e89d487b27a0a034e11012b156c598466c6b95b6b151dbd4d886b41a4d2155ab9836a9b489024955d28aa286c2d18277adc82d0a32e85d3b1b6f61466e655f70ca7e81f1a67feca127116bfb8fdf64f24cde79dff7fb3ccffb6bde862449f822a361c7c88b0f4d2e7c47c3555968f4e13d1b5eb8cfe4592eb4d2bd3bf541118e2ae045a00638f576b89f82c1b7b3b817db06060fd950e9abd41e72cd0c7eb98af370c8e618ee4e121af6037d9073e0cf76ce9a6adde2605b59705c38ae13266423f0c6dc7a6ff1b655afeba773c00a985e801b7cf8a7036f05b0d781f77d38fe11891916c102ebd2ce7ce6b5a0ca5689b397073bbdc4794613540401ae4d12525e5dc9835aa9a996a1f0558d5a87cb739ec0358b1b9e7bc96b2490f1ee14351f18efd6eb5f5034b9c2bdd07adc876e07f605f04e015e0a60850bb7fadbf45467b774e8181c88fdbf1413e7298d5f111c201c717ecc6d70e6203cd26a9a19e758050e83569ae26a0fb34598307602afbd36c0959d99b18f3e5f595f8283a2d8f9b55bb3bdd2615ae937e51eef48bc6f0258fd70a90b5704b0300fdf1d1c8ee71ae71752decec14c7e6de5cc4189cf69814c00350b86272d5bf6616a33a46d4857638d6f2abcbd1a15d5c8cd56c82e8dd3a1e89ce6a26ce5e6b26a1280d7acf09b5443219789d475d62b2efcc48799169cdb0b57092ceb862d0c4852fc713799b53aebc18f5ca5fea00d7a5c837d1e2c073014ecef837fdcadb8f239438169e1758774fe600e762e0b935b410191956e9fe85f560a65931fca51c720110177b6cd7deb35940547295d10d9e49b6c72a6598de114e5b5999cb379a3f632aff376319619054335f5c4324ec15600e31e48969bf4ec515cd929c26a05ce0014bbfb709b1dfc8d215901c167719b356ddd367dba137180a7c2366ecc8e7df2a59055650103d4c42cec2eb1f42a8b4c5e9d5930952dcdd06e64376da884dfaf95c4de1c4ba782f381f50046d6e0b4a58a4545d362037053242811a45bd3778d225371c84c56e801b027662e504a352f12593c67808779b074b04bd4236b72caf3263324116f2bd37a27db28e33a2cb5c013c6771a2e9bc50bbaae53f46da4ca5e5ef444704f4c42639874db582e393f968b3cd3222d426b1c3318c5d88e1aee471a2ebd3c8f1e4ed3d924a76d185399daa6e3eb9dc818679f9bcf7030fceae002f3eaed37c4d7737eb46461a371edf5a671efe07074eda03608758502928e915d732eb382f445168d65a13f8a99ffb3658c1138be46d8d004b5db8867ba30261dc70c9a16fd3a4e665ddf889dcf37381d9d10f829ce8e5b7a6d67dc9cbf6b381812dd321bfdd8f7e89abc10f55e602c593f7056a92ca61b1bc419a1c96458529c37f56cf36652ea584bdeee51173772e58229d8977c9331234e7cd87d8cad83c7e203b352f1dc7ecb328263c2842306fe986878d294c614c306184250d2e46f5a823faf9dc1a91328dede49ed2c97ede5cd2c5c5f467687b418d07f30a6e5404cfa3c7574d654f73867358e37e286a69e773ff8fd84381eee17cda4cbeefc880000bb627630ccd0acb1cc1b32ad947d246a38378a1bf4d934707488cdc5328ed4e87db78c9e5f60fb4520a934cfbfbe8a16c341fed4cdf44acca0012d2908144c9fdd61d867a874666201c2f2e932dcf2747fa4758b09ce574e2200d01bb3e38363f1e12ea2aba6c6714a1f8e1bfc744cf73b659c7735fe6005776799e278212e3894ca7b89cd98749ce68ff4933960d07930a63f867cde82890d4c383dc6f74ac48749efd243dd0ebc3d1841ebec3b497dda09b54a7874a5a86fd514a866086a9a0ea5a81d57389162950b5e4b802e8514ac027ed9675d791d5653818e5fed6743a14001709a15b682d55e95d5baca4dcff83ff57a65cbbadd425816008c531d934f5cc138c928ba02c18aa17748a835c29abc509c0cf825722d202260d64f201108b1911f3ecb03bfbc00656aaa62e35b4249871033dcfd7278e8448ea5abc0e0764003d6089a80f06566c803e180c29f369ba2d2f82d426fe0a14c0b3500626a4a52a2754a2b4a2b68045d112c818ee65636ccbb03affc0496116045160a856459a8e0d782442748a4c80293e124fc06114dc1dc36ba67daf4e4abf4fa1e0575178b9c3d2c9e5b458539d0d0e3f7e036b91040c172696b06d784d9f61c88409735ba1c22bb1505e7ae5631386bb4d329e211e5271040f325a5144aa0afdc43a9a8599c7f8bd9ee0adab20e8e098b2ebd1f2aa045137a3e44e0aa2efc18d66dab61ab2e72661784a043452ef734caec183be2f12802a3937f8c558904cf2fa23d87ae29fbc168454cf0358809caea24ab3a602f78bb43da8c3b9853584ab10cfe90a66a65e89af7226dd9e5744ddb836db453d59961904fcc3b030b8846787d8c1500d10516b5f5213138165435384da0353896cb8a9b7b08347815686f063f02d7000c456b16820a2c9e7b37450f02a9a2c53b04ea28c82807b60245f808bb81a2da40b8e4df85a657093e00545d3926041ab20abc72c09aede045a0b2d057a97fdfdcbf07d5621344200abc727d7554430f09fc03c472689401a4d8029f78b6015ba4a8f44dab200319100daeaa0f8f33320c1d173a54a32a7e10e0edaa5130a03650a31adb4854af5fab80a3a01ad5102ca4d4f70630f44902a70879e9eea7aa9aa332041c07bf5257e457461ca9c0a2993685bc434665d850ec419b190aae859b032f040c28fa55b4d6e852f73142ef6546fbff5904088bdbc3ed2b9fb515d404b226c88822a9d4158611b45af55feaaeb99db84dd0da94412af56d25f421a714d5a88af4fb7f250ab79c9ce6d40400d9b2e2e73d3b7bca22e00520b5ba32018ae5fadda05aa9d1aec00fa11a435fa95e2e5263690764948f948b43ec5ef918b0ffe41c0d9f4500805cc77cebbac7d7ceb9b0bd5162e8cad713b467eb2eb82df064112c03b4405bb66e7dbb032b3756b97fedbaf7c367eefb0551f81be0e8e8ae3fffadacb9ed6a75cb0bfb96ff2d49f61f49927f1d4e924def26c9abfb93e4f1be2479f69d24f9dd9e24d971a05ebe637f922cf9edab8975c51d6f82fa3a276d3ea309fc77074e84996dedb8f1ae956d336e9da53376aa2d57575cb046d6bf393241a32a6bd6afd1dec6d5cf51ea7d1c7803f854a9ff1b817a8c4359d3d5c4cef92a9bbb58396e4e29bb11b289e8dec33214047a6f713ba1f70ac876ea5bdb29e3ff21303a32c019a04c9006e0087008380c0c7f9e0e9224a1e18bbe9eff0779407a182b7e243e0000000049454e44ae426082</data>
-</image>
-</xupdate:append-first>
-<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]" >
-<widget class="QLayoutWidget" >
-<property name="name" >
-<cstring>layoutWeb</cstring>
-</property>
-<hbox>
-<property name="name" >
-<cstring>unnamed</cstring>
-</property>
-<widget class="FLFieldDB" >
-<property name="name" >
-<cstring>fdbWeb</cstring>
-</property>
-<property name="sizePolicy" >
-<sizepolicy>
-<hsizetype>1</hsizetype>
-<vsizetype>0</vsizetype>
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize" >
-<size>
-<width>71</width>
-<height>22</height>
-</size>
-</property>
-<property name="font" >
-<font>
-<bold>0</bold>
-<italic>0</italic>
-</font>
-</property>
-<property name="fieldName" >
-<string>web</string>
-</property>
-</widget>
-<widget class="QPushButton" >
-<property name="name" >
-<cstring>tbnWeb</cstring>
-</property>
-<property name="enabled" >
-<bool>true</bool>
-</property>
-<property name="sizePolicy" >
-<sizepolicy>
-<hsizetype>1</hsizetype>
-<vsizetype>1</vsizetype>
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="maximumSize" >
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="focusPolicy" >
-<enum>NoFocus</enum>
-</property>
-<property name="text" >
-<string/>
-</property>
-<property name="iconSet" >
-<iconset>envio_mailimage45445</iconset>
-</property>
-<property name="toolTip" stdset="0" >
-<string>Acceso web</string>
-</property>
-</widget>
-</hbox>
-</widget>
-</xupdate:insert-after>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout68]/hbox[hbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout68]/hbox[hbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >131</xupdate:update>
-<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]" >
-<customwidgets/>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">129</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoIdFiscal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">110</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[QLayoutWidget,layoutIdFiscal]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">75</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmNombre]/vbox[vbox,1]/widget[FLFieldDB,fdbNombreComercial]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">151</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono1]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">102</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout24]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono2]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">102</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">64</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">90</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/spacer[spacer49]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnEnviarMail</cstring>
+      </property>
+      <property name="enabled">
+        <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>envio_mailimage55590</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Enviar email</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Envar un email al contacto principal del proveedor</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[FLFieldDB,fdbWeb]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[QGroupBox,groupBox15]/vbox[vbox,1]/widget[QLayoutWidget,layout61]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutWeb</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbWeb</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>71</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>web</string>
+          </property>
+        </widget>
+        <widget class="QPushButton">
+          <property name="name">
+            <cstring>tbnWeb</cstring>
+          </property>
+          <property name="enabled">
+            <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>1</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="focusPolicy">
+            <enum>NoFocus</enum>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="iconSet">
+            <iconset>envio_mailimage45445</iconset>
+          </property>
+          <property name="toolTip" stdset="0">
+            <string>Acceso web</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout68]/hbox[hbox,1]/widget[FLFieldDB,fdbObservaciones]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">131</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">44</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial1]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbIrpfSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRegimenIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">113</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">124</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout101]/hbox[hbox,1]/widget[QGroupBox,gbxComercial2]/vbox[vbox,1]/widget[FLFieldDB,fdbIvaPortes]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">101</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frmCuentas]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaRem]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">140</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/spacer[Spacer2_3_2_3_2_2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">290</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/spacer[Spacer2_3_2_3_2_2]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnEnviarMailContacto</cstring>
+      </property>
+      <property name="enabled">
+        <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>envio_mailimage55590</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Enviar email</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Envar un email al contacto seleccionado</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,agenda]/vbox[vbox,1]/widget[QGroupBox,gbxAgenda]/vbox[vbox,1]/widget[QFrame,frmBotonesAgenda]/hbox[hbox,1]/widget[QPushButton,tbnEnviarMailContacto]">
+    <spacer>
+      <property name="name">
+        <cstring>SpacerEMail</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Expanding</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>66</width>
+          <height>16</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/spacer[Spacer2_5]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">210</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,documentos]/vbox[vbox,1]/widget[QTabWidget,tbwDocumentos]/widget[QWidget,pedidos]/vbox[vbox,1]/widget[QFrame,frmBotonesPed]/hbox[hbox,1]/widget[QPushButton,toolButtonPrintPed]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnEnviarMailPed</cstring>
+      </property>
+      <property name="enabled">
+        <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>envio_mailimage55590</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Enviar email</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Envar por email el pedido seleccionado</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formProveedores]/vbox[vbox,1]/widget[QTabWidget,tbwProveedor]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="envio_mailimage45445">
+      <data format="PNG" length="2424">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000093f49444154789cc5977f8c14e51dc63fb7ccc2bb381767e2a13b7aa73b96a5ec29e89d487b27a0a034e11012b156c598466c6b95b6b151dbd4d886b41a4d2155ab9836a9b489024955d28aa286c2d18277adc82d0a32e85d3b1b6f61466e655f70ca7e81f1a67feca127116bfb8fdf64f24cde79dff7fb3ccffb6bde862449f822a361c7c88b0f4d2e7c47c3555968f4e13d1b5eb8cfe4592eb4d2bd3bf541118e2ae045a00638f576b89f82c1b7b3b817db06060fd950e9abd41e72cd0c7eb98af370c8e618ee4e121af6037d9073e0cf76ce9a6adde2605b59705c38ae13266423f0c6dc7a6ff1b655afeba773c00a985e801b7cf8a7036f05b0d781f77d38fe11891916c102ebd2ce7ce6b5a0ca5689b397073bbdc4794613540401ae4d12525e5dc9835aa9a996a1f0558d5a87cb739ec0358b1b9e7bc96b2490f1ee14351f18efd6eb5f5034b9c2bdd07adc876e07f605f04e015e0a60850bb7fadbf45467b774e8181c88fdbf1413e7298d5f111c201c717ecc6d70e6203cd26a9a19e758050e83569ae26a0fb34598307602afbd36c0959d99b18f3e5f595f8283a2d8f9b55bb3bdd2615ae937e51eef48bc6f0258fd70a90b5704b0300fdf1d1c8ee71ae71752decec14c7e6de5cc4189cf69814c00350b86272d5bf6616a33a46d4857638d6f2abcbd1a15d5c8cd56c82e8dd3a1e89ce6a26ce5e6b26a1280d7acf09b5443219789d475d62b2efcc48799169cdb0b57092ceb862d0c4852fc713799b53aebc18f5ca5fea00d7a5c837d1e2c073014ecef837fdcadb8f239438169e1758774fe600e762e0b935b410191956e9fe85f560a65931fca51c720110177b6cd7deb35940547295d10d9e49b6c72a6598de114e5b5999cb379a3f632aff376319619054335f5c4324ec15600e31e48969bf4ec515cd929c26a05ce0014bbfb709b1dfc8d215901c167719b356ddd367dba137180a7c2366ecc8e7df2a59055650103d4c42cec2eb1f42a8b4c5e9d5930952dcdd06e64376da884dfaf95c4de1c4ba782f381f50046d6e0b4a58a4545d362037053242811a45bd3778d225371c84c56e801b027662e504a352f12593c67808779b074b04bd4236b72caf3263324116f2bd37a27db28e33a2cb5c013c6771a2e9bc50bbaae53f46da4ca5e5ef444704f4c42639874db582e393f968b3cd3222d426b1c3318c5d88e1aee471a2ebd3c8f1e4ed3d924a76d185399daa6e3eb9dc818679f9bcf7030fceae002f3eaed37c4d7737eb46461a371edf5a671efe07074eda03608758502928e915d732eb382f445168d65a13f8a99ffb3658c1138be46d8d004b5db8867ba30261dc70c9a16fd3a4e665ddf889dcf37381d9d10f829ce8e5b7a6d67dc9cbf6b381812dd321bfdd8f7e89abc10f55e602c593f7056a92ca61b1bc419a1c96458529c37f56cf36652ea584bdeee51173772e58229d8977c9331234e7cd87d8cad83c7e203b352f1dc7ecb328263c2842306fe986878d294c614c306184250d2e46f5a823faf9dc1a91328dede49ed2c97ede5cd2c5c5f467687b418d07f30a6e5404cfa3c7574d654f73867358e37e286a69e773ff8fd84381eee17cda4cbeefc880000bb627630ccd0acb1cc1b32ad947d246a38378a1bf4d934707488cdc5328ed4e87db78c9e5f60fb4520a934cfbfbe8a16c341fed4cdf44acca0012d2908144c9fdd61d867a874666201c2f2e932dcf2747fa4758b09ce574e2200d01bb3e38363f1e12ea2aba6c6714a1f8e1bfc744cf73b659c7735fe6005776799e278212e3894ca7b89cd98749ce68ff4933960d07930a63f867cde82890d4c383dc6f74ac48749efd243dd0ebc3d1841ebec3b497dda09b54a7874a5a86fd514a866086a9a0ea5a81d57389162950b5e4b802e8514ac027ed9675d791d5653818e5fed6743a14001709a15b682d55e95d5baca4dcff83ff57a65cbbadd425816008c531d934f5cc138c928ba02c18aa17748a835c29abc509c0cf825722d202260d64f201108b1911f3ecb03bfbc00656aaa62e35b4249871033dcfd7278e8448ea5abc0e0764003d6089a80f06566c803e180c29f369ba2d2f82d426fe0a14c0b3500626a4a52a2754a2b4a2b68045d112c818ee65636ccbb03affc0496116045160a856459a8e0d782442748a4c80293e124fc06114dc1dc36ba67daf4e4abf4fa1e0575178b9c3d2c9e5b458539d0d0e3f7e036b91040c172696b06d784d9f61c88409735ba1c22bb1505e7ae5631386bb4d329e211e5271040f325a5144aa0afdc43a9a8599c7f8bd9ee0adab20e8e098b2ebd1f2aa045137a3e44e0aa2efc18d66dab61ab2e72661784a043452ef734caec183be2f12802a3937f8c558904cf2fa23d87ae29fbc168454cf0358809caea24ab3a602f78bb43da8c3b9853584ab10cfe90a66a65e89af7226dd9e5744ddb836db453d59961904fcc3b030b8846787d8c1500d10516b5f5213138165435384da0353896cb8a9b7b08347815686f063f02d7000c456b16820a2c9e7b37450f02a9a2c53b04ea28c82807b60245f808bb81a2da40b8e4df85a657093e00545d3926041ab20abc72c09aede045a0b2d057a97fdfdcbf07d5621344200abc727d7554430f09fc03c472689401a4d8029f78b6015ba4a8f44dab200319100daeaa0f8f33320c1d173a54a32a7e10e0edaa5130a03650a31adb4854af5fab80a3a01ad5102ca4d4f70630f44902a70879e9eea7aa9aa332041c07bf5257e457461ca9c0a2993685bc434665d850ec419b190aae859b032f040c28fa55b4d6e852f73142ef6546fbff5904088bdbc3ed2b9fb515d404b226c88822a9d4158611b45af55feaaeb99db84dd0da94412af56d25f421a714d5a88af4fb7f250ab79c9ce6d40400d9b2e2e73d3b7bca22e00520b5ba32018ae5fadda05aa9d1aec00fa11a435fa95e2e5263690764948f948b43ec5ef918b0ffe41c0d9f4500805cc77cebbac7d7ceb9b0bd5162e8cad713b467eb2eb82df064112c03b4405bb66e7dbb032b3756b97fedbaf7c367eefb0551f81be0e8e8ae3fffadacb9ed6a75cb0bfb96ff2d49f61f49927f1d4e924def26c9abfb93e4f1be2479f69d24f9dd9e24d971a05ebe637f922cf9edab8975c51d6f82fa3a276d3ea309fc77074e84996dedb8f1ae956d336e9da53376aa2d57575cb046d6bf393241a32a6bd6afd1dec6d5cf51ea7d1c7803f854a9ff1b817a8c4359d3d5c4cef92a9bbb58396e4e29bb11b289e8dec33214047a6f713ba1f70ac876ea5bdb29e3ff21303a32c019a04c9006e0087008380c0c7f9e0e9224a1e18bbe9eff0779407a182b7e243e0000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[envio_mailimage45445]">
+    <image name="envio_mailimage55590">
+      <data format="PNG" length="1330">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004f949444154789ced96418814471486bf194bad26bda11a14a60809ce2187958099851c1c72d9050fbbb02159f010172f110f517232e494a3c77812911cf4b6e620b81065bdad07831304770d218e60600c1aab831bbac8347685699d1caa7b76c65d1343123cc41f8637d535ddf5eaabbfdf3c78a997fabfabf29cd7fe4df5375decc6f51b7d1d6a4c6ad0a1267109511891e4093ad4381c5a15d75544e63282b1802ccb0882007ac05636c66125509fa8efba7bf7eebd22914132d507b71ef4ff6b5dfafa52ffc8c1237d5001280154aa7e7d5535a9f1492609f420eb66eb11c8b2d1488fd1b889962b70a8b2c0a1ca3200918c88bb3108197a3eb58af03f95151d6ae8c1d2e21236b528a9b0ce72f4e3a3d085602c800c8f3b0382bfc00da80f61feab791658f09b73096a4c018408d923773d517ac1a406bd5533333be3cf3e4d46629664046140d61d3dfb677a0088de068b4fa22460bb16601bb9db02b25a24e0d0a1860c962f2e13a7f13a81c347218540063e86c13a91213223440ad53f833ac0393f36d6501bab015411b242ee288fc0bb5f689afb9ae850639c414b4d62938d4464449214644a22457c5632003ad4de0300b95fb73a4220052514599aa1a5264b3322190d222944a288c538909ec4898b17a05b2c9e0d1dc7904c6a4a0f80a0024f13407376f12c2a57d8dca284c2e49e4c399eda3fe5eb4449a68826351c3fbfc0b1fd739bd7878240e1810181110f2436e1c0f4013f290107329438e790a1040708c86ce6f1a73e92fa87cfec6b70e2e2053e9f9ddff4383a0f3ba50740c0060fd4c33ae716cfa1d8b8f372dc9c6e520b6b746c875a58c3585f394d6a18df3907fbe0f8f9058e7e3033e2117aa0c5460f8c10706b8e99c919923c612a9c821408fdfb3b13ce7802123ebd7c0a2dd78d6a9c4f22ce622676eec64dc3a9cb4b7c3e3d4f10ad9348f264d8031b09443262e9ea122a57b4f2d6c8ceafe4575042d1986c1000f3b34dea63754c66508162b5db221186a49bd0d0e33009c71747494422fa730f74d63a4cbe33e9771a82759666d81c78c1389f6496c34abac235b78c9235ecc31815d6b0a9615c8e1327314dbd1ba6dd3a8930c0e4668307aac304a490c4360601b18d3d016b4040c776884484b1066b0396efb768e71d5a6b2d2c8ef65a1b8962d5b63118ae3d5ca1a12768ee1de7f8e202499a6cea81913a60d60c3868df6f430aed3b6d9c75acfcb80216566eaf60638b895740488c4d40486ea51d0211ad279d262819d1b9d7c1dcb6180ced6fda18375207fae0ca7ea0b60de23d73efcf5de739645e573466f5a06206a10401f51d7570b02bd4b8b58ce5ab31abb7db4477da9eb394005cb8746d9c9c35e0b72201258abfc8087815d84ed1ac4864c5e1068b4b248dc353ada977278ae645619c257a5383ca68ec98c0c686a40d4bdfaed23a7de63df272c7f2a1849ef335f35772ba25812ab8ed0819921322d8464eb5b4e8d36a1c9cfbc1e5ae2205b81ca490a8b7029ab37b51b1a3f33dacde5ea575facc24b903212197bf20e893f318c123705d721e952d5905d416602bc8edc0969280afd99bc969ff7020878fbefce2bbf17185bb37d8f99ec13cca900fdaaf27fe0e7e8778d00ff4c13ef693b207a539815c32a8cb23d1be0212727f3cce6670a7c6d2cd16ad9327eae58191cb07febb657d2dd907fb0478320cb96812dd13463a63c733f4d3f09c0e35176eb6faad9327de18baf7e7cdef77fd4d2efe33edfde4581f786de8f342f442172f13f85bfa037d590231d39c26260000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[envio_mailimage55590]">
+    <image name="envio_mailimage55590">
+      <data format="PNG" length="1330">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004f949444154789ced96418814471486bf194bad26bda11a14a60809ce2187958099851c1c72d9050fbbb02159f010172f110f517232e494a3c77812911cf4b6e620b81065bdad07831304770d218e60600c1aab831bbac8347685699d1caa7b76c65d1343123cc41f8637d535ddf5eaabbfdf3c78a997fabfabf29cd7fe4df5375decc6f51b7d1d6a4c6ad0a1267109511891e4093ad4381c5a15d75544e63282b1802ccb0882007ac05636c66125509fa8efba7bf7eebd22914132d507b71ef4ff6b5dfafa52ffc8c1237d5001280154aa7e7d5535a9f1492609f420eb66eb11c8b2d1488fd1b889962b70a8b2c0a1ca3200918c88bb3108197a3eb58af03f95151d6ae8c1d2e21236b528a9b0ce72f4e3a3d085602c800c8f3b0382bfc00da80f61feab791658f09b73096a4c018408d923773d517ac1a406bd5533333be3cf3e4d46629664046140d61d3dfb677a0088de068b4fa22460bb16601bb9db02b25a24e0d0a1860c962f2e13a7f13a81c347218540063e86c13a91213223440ad53f833ac0393f36d6501bab015411b242ee288fc0bb5f689afb9ae850639c414b4d62938d4464449214644a22457c5632003ad4de0300b95fb73a4220052514599aa1a5264b3322190d222944a288c538909ec4898b17a05b2c9e0d1dc7904c6a4a0f80a0024f13407376f12c2a57d8dca284c2e49e4c399eda3fe5eb4449a68826351c3fbfc0b1fd739bd7878240e1810181110f2436e1c0f4013f290107329438e790a1040708c86ce6f1a73e92fa87cfec6b70e2e2053e9f9ddff4383a0f3ba50740c0060fd4c33ae716cfa1d8b8f372dc9c6e520b6b746c875a58c3585f394d6a18df3907fbe0f8f9058e7e3033e2117aa0c5460f8c10706b8e99c919923c612a9c821408fdfb3b13ce7802123ebd7c0a2dd78d6a9c4f22ce622676eec64dc3a9cb4b7c3e3d4f10ad9348f264d8031b09443262e9ea122a57b4f2d6c8ceafe4575042d1986c1000f3b34dea63754c66508162b5db221186a49bd0d0e33009c71747494422fa730f74d63a4cbe33e9771a82759666d81c78c1389f6496c34abac235b78c9235ecc31815d6b0a9615c8e1327314dbd1ba6dd3a8930c0e4668307aac304a490c4360601b18d3d016b4040c776884484b1066b0396efb768e71d5a6b2d2c8ef65a1b8962d5b63118ae3d5ca1a12768ee1de7f8e202499a6cea81913a60d60c3868df6f430aed3b6d9c75acfcb80216566eaf60638b895740488c4d40486ea51d0211ad279d262819d1b9d7c1dcb6180ced6fda18375207fae0ca7ea0b60de23d73efcf5de739645e573466f5a06206a10401f51d7570b02bd4b8b58ce5ab31abb7db4477da9eb394005cb8746d9c9c35e0b72201258abfc8087815d84ed1ac4864c5e1068b4b248dc353ada977278ae645619c257a5383ca68ec98c0c686a40d4bdfaed23a7de63df272c7f2a1849ef335f35772ba25812ab8ed0819921322d8464eb5b4e8d36a1c9cfbc1e5ae2205b81ca490a8b7029ab37b51b1a3f33dacde5ea575facc24b903212197bf20e893f318c123705d721e952d5905d416602bc8edc0969280afd99bc969ff7020878fbefce2bbf17185bb37d8f99ec13cca900fdaaf27fe0e7e8778d00ff4c13ef693b207a539815c32a8cb23d1be0212727f3cce6670a7c6d2cd16ad9327eae58191cb07febb657d2dd907fb0478320cb96812dd13463a63c733f4d3f09c0e35176eb6faad9327de18baf7e7cdef77fd4d2efe33edfde4581f786de8f342f442172f13f85bfa037d590231d39c26260000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[envio_mailimage55590]">
+    <image name="envio_mailimage55590">
+      <data format="PNG" length="1330">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004f949444154789ced96418814471486bf194bad26bda11a14a60809ce2187958099851c1c72d9050fbbb02159f010172f110f517232e494a3c77812911cf4b6e620b81065bdad07831304770d218e60600c1aab831bbac8347685699d1caa7b76c65d1343123cc41f8637d535ddf5eaabbfdf3c78a997fabfabf29cd7fe4df5375decc6f51b7d1d6a4c6ad0a1267109511891e4093ad4381c5a15d75544e63282b1802ccb0882007ac05636c66125509fa8efba7bf7eebd22914132d507b71ef4ff6b5dfafa52ffc8c1237d5001280154aa7e7d5535a9f1492609f420eb66eb11c8b2d1488fd1b889962b70a8b2c0a1ca3200918c88bb3108197a3eb58af03f95151d6ae8c1d2e21236b528a9b0ce72f4e3a3d085602c800c8f3b0382bfc00da80f61feab791658f09b73096a4c018408d923773d517ac1a406bd5533333be3cf3e4d46629664046140d61d3dfb677a0088de068b4fa22460bb16601bb9db02b25a24e0d0a1860c962f2e13a7f13a81c347218540063e86c13a91213223440ad53f833ac0393f36d6501bab015411b242ee288fc0bb5f689afb9ae850639c414b4d62938d4464449214644a22457c5632003ad4de0300b95fb73a4220052514599aa1a5264b3322190d222944a288c538909ec4898b17a05b2c9e0d1dc7904c6a4a0f80a0024f13407376f12c2a57d8dca284c2e49e4c399eda3fe5eb4449a68826351c3fbfc0b1fd739bd7878240e1810181110f2436e1c0f4013f290107329438e790a1040708c86ce6f1a73e92fa87cfec6b70e2e2053e9f9ddff4383a0f3ba50740c0060fd4c33ae716cfa1d8b8f372dc9c6e520b6b746c875a58c3585f394d6a18df3907fbe0f8f9058e7e3033e2117aa0c5460f8c10706b8e99c919923c612a9c821408fdfb3b13ce7802123ebd7c0a2dd78d6a9c4f22ce622676eec64dc3a9cb4b7c3e3d4f10ad9348f264d8031b09443262e9ea122a57b4f2d6c8ceafe4575042d1986c1000f3b34dea63754c66508162b5db221186a49bd0d0e33009c71747494422fa730f74d63a4cbe33e9771a82759666d81c78c1389f6496c34abac235b78c9235ecc31815d6b0a9615c8e1327314dbd1ba6dd3a8930c0e4668307aac304a490c4360601b18d3d016b4040c776884484b1066b0396efb768e71d5a6b2d2c8ef65a1b8962d5b63118ae3d5ca1a12768ee1de7f8e202499a6cea81913a60d60c3868df6f430aed3b6d9c75acfcb80216566eaf60638b895740488c4d40486ea51d0211ad279d262819d1b9d7c1dcb6180ced6fda18375207fae0ca7ea0b60de23d73efcf5de739645e573466f5a06206a10401f51d7570b02bd4b8b58ce5ab31abb7db4477da9eb394005cb8746d9c9c35e0b72201258abfc8087815d84ed1ac4864c5e1068b4b248dc353ada977278ae645619c257a5383ca68ec98c0c686a40d4bdfaed23a7de63df272c7f2a1849ef335f35772ba25812ab8ed0819921322d8464eb5b4e8d36a1c9cfbc1e5ae2205b81ca490a8b7029ab37b51b1a3f33dacde5ea575facc24b903212197bf20e893f318c123705d721e952d5905d416602bc8edc0969280afd99bc969ff7020878fbefce2bbf17185bb37d8f99ec13cca900fdaaf27fe0e7e8778d00ff4c13ef693b207a539815c32a8cb23d1be0212727f3cce6670a7c6d2cd16ad9327eae58191cb07febb657d2dd907fb0478320cb96812dd13463a63c733f4d3f09c0e35176eb6faad9327de18baf7e7cdef77fd4d2efe33edfde4581f786de8f342f442172f13f85bfa037d590231d39c26260000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/customwidgets[customwidgets,1]">
+    <customwidgets>
+</customwidgets>
+  </xupdate:insert-after>
 </xupdate:modifications>

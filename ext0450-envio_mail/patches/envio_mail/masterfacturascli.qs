@@ -2,10 +2,10 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO MAIL /////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
     function envioMail( context ) { oficial ( context ); }
-	function init() { 
-		return this.ctx.envioMail_init(); 
+	function init() {
+		return this.ctx.envioMail_init();
 	}
 	function enviarDocumento(codFactura:String, codCliente:String) {
 		return this.ctx.envioMail_enviarDocumento(codFactura, codCliente);
@@ -17,11 +17,10 @@ class envioMail extends oficial {
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
 /** @class_declaration pubEnvioMail */
 /////////////////////////////////////////////////////////////////
 //// PUB ENVIO MAIL /////////////////////////////////////////////
-class pubEnvioMail extends ifaceCtx {
+class pubEnvioMail extends ifaceCtx /** %from: ifaceCtx */ {
     function pubEnvioMail( context ) { ifaceCtx ( context ); }
 	function pub_enviarDocumento(codFactura:String, codCliente:String) {
 		return this.enviarDocumento(codFactura, codCliente);
@@ -29,7 +28,6 @@ class pubEnvioMail extends ifaceCtx {
 }
 //// PUB ENVIO MAIL /////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 
 /** @class_definition envioMail */
 /////////////////////////////////////////////////////////////////
@@ -78,12 +76,12 @@ function envioMail_enviarDocumento(codFactura:String, codCliente:String)
 		}
 		codigo = cursor.valueBuffer("codigo");
 	}
-	
+
 	var numCopias:Number = util.sqlSelect("facturascli f INNER JOIN clientes c ON c.codcliente = f.codcliente", "c.copiasfactura", "f.codigo = '" + codigo + "'", "facturascli,clientes");
 	if (!numCopias) {
 		numCopias = 1;
 	}
-		
+
 	var curImprimir:FLSqlCursor = new FLSqlCursor("i_facturascli");
 	curImprimir.setModeAccess(curImprimir.Insert);
 	curImprimir.refreshBuffer();
@@ -106,7 +104,7 @@ function envioMail_enviarDocumento(codFactura:String, codCliente:String)
 function envioMail_imprimir(codFactura:String)
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var datosEMail:Array = [];
 	datosEMail["tipoInforme"] = "facturascli";
 	var codCliente:String;

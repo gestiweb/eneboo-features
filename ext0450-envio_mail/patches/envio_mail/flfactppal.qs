@@ -2,7 +2,7 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO MAIL /////////////////////////////////////////////////
-class envioMail extends oficial {
+class envioMail extends oficial /** %from: oficial */ {
 	function envioMail( context ) { oficial ( context ); }
 	function enviarCorreo(cuerpo:String, asunto:String, arrayDest:Array, arrayAttach:Array) {
 		return this.ctx.envioMail_enviarCorreo(cuerpo, asunto, arrayDest, arrayAttach);
@@ -23,7 +23,7 @@ class envioMail extends oficial {
 /** @class_declaration pubEnvioMail */
 /////////////////////////////////////////////////////////////////
 //// PUB ENVIO MAIL /////////////////////////////////////////////
-class pubEnvioMail extends envioMail {
+class pubEnvioMail extends envioMail /** %from: envioMail */ {
 	function pubEnvioMail( context ) { envioMail ( context ); }
 	function pub_enviarCorreo(cuerpo:String, asunto:String, arrayDest:Array, arrayAttach:Array) {
 		return this.enviarCorreo(cuerpo, asunto, arrayDest, arrayAttach);
@@ -56,7 +56,7 @@ function envioMail_componerListaDestinatarios(codigo:String, tabla:String):Strin
 		case "clientes": {
 			emailPrincipal = util.sqlSelect("clientes", "email", "codcliente = '" + codigo + "'");
 			nombrePrincipal = util.sqlSelect("clientes", "nombre", "codcliente = '" + codigo + "'");
-					
+
 			q.setTablesList("contactosclientes,crm_contactos");
 			q.setFrom("contactosclientes INNER JOIN crm_contactos ON contactosclientes.codcontacto = crm_contactos.codcontacto");
 			q.setSelect("crm_contactos.email,crm_contactos.nombre");
@@ -70,7 +70,7 @@ function envioMail_componerListaDestinatarios(codigo:String, tabla:String):Strin
 		case "proveedores": {
 			emailPrincipal = util.sqlSelect("proveedores", "email", "codproveedor = '" + codigo + "'");
 			nombrePrincipal = util.sqlSelect("proveedores", "nombre", "codproveedor = '" + codigo + "'");
-					
+
 			q.setTablesList("contactosproveedores,crm_contactos");
 			q.setFrom("contactosproveedores INNER JOIN crm_contactos ON contactosproveedores.codcontacto = crm_contactos.codcontacto");
 			q.setSelect("crm_contactos.email,crm_contactos.nombre");
@@ -86,19 +86,19 @@ debug("emailPrincipal " + emailPrincipal);
 	dialog.caption = "Selecciona el destinatario";
 	dialog.OKButtonText = util.translate ( "scripts", "Aceptar" );
 	dialog.cancelButtonText = util.translate ( "scripts", "Cancelar" );
-	
+
 	var bgroup:GroupBox = new GroupBox;
 	dialog.add( bgroup );
 	var cB:Array = [];
-	var nEmails:Number = 0;	
-	
+	var nEmails:Number = 0;
+
 	cB[nEmails] = new CheckBox;
 	cB[nEmails].text = util.translate ( "scripts", nombrePrincipal + " (" + emailPrincipal + ")");
 	arrayMails[nEmails] = emailPrincipal;
 	cB[nEmails].checked = true;
 	bgroup.add( cB[nEmails] );
 	nEmails ++;
-	
+
 	while (q.next())  {
 		cB[nEmails] = new CheckBox;
 		cB[nEmails].text = util.translate ( "scripts", q.value(1) + " (" + q.value(0) + ")");
@@ -172,7 +172,7 @@ function envioMail_componerCorreo(cuerpo:String, asunto:String, arrayDest:String
 	if (arrayAttach) {
 		documentos = arrayAttach.join(" ");
 	}
-	
+
  	var comando:Array;
 	switch (clienteCorreo) {
 		case "Thunderbird": {
@@ -202,7 +202,7 @@ function envioMail_componerCorreo(cuerpo:String, asunto:String, arrayDest:String
 			break;
 		}
 		default: {
-			
+
 		}
 	}
 	return comando;

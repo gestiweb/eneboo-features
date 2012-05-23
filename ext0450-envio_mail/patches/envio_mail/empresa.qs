@@ -2,12 +2,12 @@
 /** @class_declaration navegador */
 /////////////////////////////////////////////////////////////////
 //// CONF NAVEGADOR /////////////////////////////////////////////
-class navegador extends oficial {
+class navegador extends oficial /** %from: oficial */ {
 	function navegador( context ) { oficial ( context ); }
-	function init() { 
-		return this.ctx.navegador_init(); 
+	function init() {
+		return this.ctx.navegador_init();
 	}
-	function cambiarNavegador() { 
+	function cambiarNavegador() {
 		return this.ctx.navegador_cambiarNavegador();
 	}
 }
@@ -17,24 +17,23 @@ class navegador extends oficial {
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO MAIL /////////////////////////////////////////////////
-class envioMail extends navegador {
+class envioMail extends navegador /** %from: navegador */ {
 	function envioMail( context ) { navegador ( context ); }
-	function init() { 
-		return this.ctx.envioMail_init(); 
+	function init() {
+		return this.ctx.envioMail_init();
 	}
-	function cambiarClienteCorreo() { 
+	function cambiarClienteCorreo() {
 		return this.ctx.envioMail_cambiarClienteCorreo();
 	}
-	function cambiarNombreCorreo() { 
+	function cambiarNombreCorreo() {
 		return this.ctx.envioMail_cambiarNombreCorreo();
 	}
-	function cambiarDirIntermedia() { 
+	function cambiarDirIntermedia() {
 		return this.ctx.envioMail_cambiarDirIntermedia();
 	}
 }
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 
 /** @class_definition navegador */
 /////////////////////////////////////////////////////////////////
@@ -55,21 +54,13 @@ function navegador_cambiarNavegador()
 	if (!nombreNavegador) {
 		return;
 	}
-	
+
 	this.child("lblNombreNavegador").text = nombreNavegador;
 	util.writeSettingEntry("scripts/flfactinfo/nombrenavegador", nombreNavegador);
 }
 
 //// CONF NAVEGADOR /////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
 
 /** @class_definition envioMail */
 /////////////////////////////////////////////////////////////////
@@ -92,11 +83,11 @@ function envioMail_cambiarClienteCorreo()
 	var util:FLUtil = new FLUtil();
 	var opciones:Array = ["KMail", "Thunderbird", "Outlook"];
 	var codClienteCorreo:String = Input.getItem( util.translate( "scripts", "Cliente de correo:"), opciones, "KMail", false);
-		
+
 	if (!codClienteCorreo) {
 		return;
 	}
-	
+
 	this.child("lblClienteCorreo").text = codClienteCorreo;
 	util.writeSettingEntry("scripts/flfactinfo/clientecorreo", codClienteCorreo);
 
@@ -116,11 +107,11 @@ function envioMail_cambiarNombreCorreo()
 {
 	var util:FLUtil = new FLUtil();
 	var nombreCorreo:String = Input.getText( util.translate( "scripts", "Ejecutable para correo:" ) );
-		
+
 	if (!nombreCorreo) {
 		return;
 	}
-	
+
 	this.child("lblNombreCorreo").text = nombreCorreo;
 	util.writeSettingEntry("scripts/flfactinfo/nombrecorreo", nombreCorreo);
 }
@@ -130,7 +121,7 @@ function envioMail_cambiarDirIntermedia()
 {
 	var util:FLUtil = new FLUtil();
 	var ruta:String = FileDialog.getExistingDirectory(util.translate("scripts", ""), util.translate("scripts", "RUTA INTERMEDIA"));
-	
+
 	if (!File.isDir(ruta)) {
 		MessageBox.information(util.translate("scripts", "Ruta errónea"),MessageBox.Ok, MessageBox.NoButton);
 		return;
@@ -140,3 +131,4 @@ function envioMail_cambiarDirIntermedia()
 }
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

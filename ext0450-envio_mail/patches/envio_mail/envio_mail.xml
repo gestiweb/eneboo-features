@@ -1,24 +1,24 @@
-<flpatch:modifications name="envio_mail" >
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" />
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" />
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidoscli.ui" />
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" />
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpresupuestoscli.ui" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" />
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" />
-    <flpatch:patchXml path="facturacion/informes/forms/" name="customviewer.ui" />
-    <flpatch:patchScript path="facturacion/informes/scripts/" name="customviewer.qs" />
-    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
-    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
-    <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" />
-    <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" />
-    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
-    <flpatch:patchScript path="facturacion/principal/scripts/" name="empresa.qs" />
-    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
-    <flpatch:patchScript path="facturacion/principal/scripts/" name="proveedores.qs" />
-    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui" />
-    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" />
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="envio_mail">
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpresupuestoscli.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="customviewer.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="customviewer.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="empresa.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="proveedores.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" style="legacy"/>
 </flpatch:modifications>
