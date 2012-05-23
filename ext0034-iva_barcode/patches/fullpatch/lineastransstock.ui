@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">620</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">180</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreDesArticulos]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">400</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreDesArticulos]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">180</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxNS]"/>
+  <xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]"/>
+</xupdate:modifications>

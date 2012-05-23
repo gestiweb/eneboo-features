@@ -1,0 +1,146 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>atributosarticulos</name>
+	<!-- Listado de atributos (bar code, talla y color) por artículo-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Atributos de artículos")</alias>
+
+	<field>
+		<name>barcode</name>
+		<!-- Código barcode -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Bar code")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>20</length>
+		
+		<relation>
+			<table>stocks</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineaspresupuestoscli</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineaspedidoscli</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineasalbaranescli</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineasfacturascli</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineasalbaranesprov</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineaspedidosprov</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineasalbaranesprov</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>lineasfacturasprov</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>barcodeprov</table>
+			<field>barcode</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+
+	<field>
+		<name>referencia</name>
+		<!-- Código de referencia del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+
+	<field>
+		<name>talla</name>
+		<!-- Talla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Talla")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>5</length>
+		
+		<relation>
+			<table>tallas</table>
+			<field>codtalla</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>color</name>
+		<!-- Código de color-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Color")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+
+		<relation>
+			<table>colores</table>
+			<field>codcolor</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>pvpespecial</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;P.V.P. especial&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+
+	<field>
+		<name>pvp</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;P.V.P.&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+
+</TMD>

@@ -1,0 +1,33 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_facturascli</name>
+	
+	<tables>empresa,facturascli,lineasfacturascli</tables>
+	<group>
+		<level>0</level>
+		<field>facturascli.idfactura</field>
+	</group>
+	
+	<select>
+		facturascli.idfactura, lineasfacturascli.idfactura, facturascli.codigo, facturascli.codserie, facturascli.fecha,
+		facturascli.total, facturascli.coddivisa, facturascli.codejercicio, facturascli.codpago, facturascli.codalmacen,
+		facturascli.codcliente, facturascli.nombrecliente, facturascli.cifnif, facturascli.tasaconv, facturascli.coddir,
+		facturascli.direccion, facturascli.codpostal, facturascli.ciudad, facturascli.provincia, facturascli.apartado,
+		facturascli.codpais, facturascli.neto, lineasfacturascli.referencia, lineasfacturascli.descripcion,
+		lineasfacturascli.cantidad,
+		lineasfacturascli.pvpunitario, lineasfacturascli.pvptotal, lineasfacturascli.codimpuesto, lineasfacturascli.iva, lineasfacturascli.numserie,
+		empresa.nombre, empresa.cifnif, empresa.direccion, empresa.logo, empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado, empresa.codpais
+	</select>
+	
+	<from>
+		empresa,facturascli INNER JOIN lineasfacturascli ON facturascli.idfactura = lineasfacturascli.idfactura
+	</from>
+	
+	<where>
+	</where>
+	
+	<order>
+		lineasfacturascli.referencia
+	</order>
+</QRY>

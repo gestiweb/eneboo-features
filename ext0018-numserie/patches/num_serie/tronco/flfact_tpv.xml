@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_pagoscomanda]" >
+<action>
+<name>tpv_lineascomandans</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Números de serie por líneas de factura&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Números de serie por líneas de factura&quot;)</alias>
+<table>tpv_lineascomandans</table>
+<form>master</form>
+<formrecord>tpv_lineascomandans</formrecord>
+<scriptformrecord>tpv_lineascomandans</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

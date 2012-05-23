@@ -1,0 +1,23 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[facturas,codalmacen]">
+    <relation>
+      <table>numerosserie</table>
+      <field>codalmacen</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[numerosserie,codalmacen]">
+    <relation>
+      <table>articulos</table>
+      <field>codalmacenstock</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codalmacen]/relation[tpv_puntosventa,codalmacen]">
+    <relation>
+      <table>articulos</table>
+      <field>codalmacenns</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>

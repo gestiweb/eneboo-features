@@ -1,0 +1,7 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[cifnif]/length[length,1]/text()[1]">12</xupdate:update>
+  <xupdate:delete select="/TMD[TMD,1]/field[recfinanciero]/default[default,1]"/>
+  <xupdate:update select="/TMD[TMD,1]/field[regimeniva]/optionslist[optionslist,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","General");QT_TRANSLATE_NOOP("MetaData","UE");QT_TRANSLATE_NOOP("MetaData","Exento");QT_TRANSLATE_NOOP("MetaData","Importaciones")</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[tipoidfiscal]/length[length,1]/text()[1]">6</xupdate:update>
+  <xupdate:delete select="/TMD[TMD,1]/field[codcuentadom]"/>
+</xupdate:modifications>

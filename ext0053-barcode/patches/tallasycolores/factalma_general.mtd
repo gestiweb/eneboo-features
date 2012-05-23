@@ -1,0 +1,36 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[id]" >
+<field>
+<name>calculobarcode</name>
+<!-- Cálculo automático de barcode  -->
+<alias>QT_TRANSLATE_NOOP("MetaData","Cálculo automático de barcode")</alias>
+<null>false</null>
+<pk>false</pk>
+<type>string</type>
+<length>30</length>
+<optionslist> ,Referencia+Talla+Color,Autonumérico,Autonumérico EAN13,Autonumérico EAN14</optionslist>
+<default/>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[calculobarcode]" >
+<field>
+<name>digitosbarcode</name>
+<!-- Dígitos por barcode-->
+<alias>QT_TRANSLATE_NOOP("MetaData","Dígitos por barcode")</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+<default>12</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]" >
+<field>
+<name>prefijobarcode</name>
+<!-- Prefijo--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Prefijo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

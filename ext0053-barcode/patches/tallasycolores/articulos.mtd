@@ -1,0 +1,92 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineasfacturasprov,referencia]" >
+<relation>
+<table>atributosarticulos</table>
+<field>referencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineastransstock,referencia]" >
+<relation>
+<table>coloresarticulo</table>
+<field>referencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]" >
+<field>
+<name>codalmacenstock</name>
+<!-- Código del almacén para mostrar el stock correspondiente --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Almacén&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<relation>
+<table>almacenes</table>
+<field>codalmacen</field>
+<card>M1</card>
+<checkIn>false</checkIn>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codalmacenstock]" >
+<field>
+<name>codgrupotalla</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Grupo talla&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>5</length>
+<relation>
+<table>grupostalla</table>
+<field>codgrupotalla</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codgrupotalla]" >
+<field>
+<name>codsettallas</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Set tallas&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>setstallas</table>
+<field>codset</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[codsettallas]" >
+<field>
+<name>codsetcolores</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Set colores&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>15</length>
+<relation>
+<table>setscolores</table>
+<field>codset</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]" >
+<field>
+<name>codtarifatc</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tarifa&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<relation>
+<table>tarifas</table>
+<field>codtarifa</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

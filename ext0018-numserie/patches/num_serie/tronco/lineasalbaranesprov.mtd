@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[irpf]" >
+<field>
+<name>numserie</name>
+<!-- Número de serie del artículo adquirido --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº de serie&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

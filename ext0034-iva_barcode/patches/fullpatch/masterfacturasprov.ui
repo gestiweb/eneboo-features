@@ -1,0 +1,57 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">300</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QLayoutWidget,layout10]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>toolButtonPrintNS</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>S</string>
+      </property>
+      <property name="iconSet">
+        <iconset>numeros_serieimage6</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Imprimir con número de serie (S)</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Imprimir con numeros de serie</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="numeros_serieimage6">
+      <data format="PNG" length="1856">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000070749444154789cad975f6c14d715c67fc0ac7d07ed963bb08e6652039e34095e1310768952d3a414d43611515a25120f35425589fa502aa456a8522ba552ab3c345543ab48e95378a82a78aa02094dad966288f863132cdb4d5d7b11b8ac05ab9d0d38bb37f674e6624f7dfbb0408c4dc0387c2f77eede73cff7dd7367ce39bb8405a2f589d6f5fe23feda50851feb497d7da17e962c74e38eefedf8f16bbf7cedad751bd775b4af696f4fa5535f9c626a5a8d2bc534530bf53b6fec7f63ff5bd1e5c844a5c8542e554c69b864de3bf2def46ff71de8178fb66f0716cfc7cf8223f0cc96675ededcbeb9794c8fd1b0bc81707188bfdc5fb4c80e3da7f9a5ed3dcaca7079f02424c942393e13c2124bba8e749d8a4a9131e3c6988aa9e1aa31a5e192193ada67761dac18b6ef7f07211beee66b5e619a038b3a040d76daa6aaabe00053400368a141c026bad9b2f3e5ef889d07de41c8a6072a40a4459d9ff557a0c1914e8d3c555bf37d1f9d063765e327313ffac9f39be4f70f1c26ed3efec004f88dbe135bb14d1a621ddf22bf89b6a61c6aaa8a9ed0042331fe13cf6f102fbefe2ed26d7b200200d74b7bf568b033f61d966d7ccf4715bbf1f2c7e9e020af3f976beef8c1de4352ba1b3fb7002965834259088827e2b90669a886011d69452e3d4a2e2d71c9e32765576bb586195f9f755fcc169080e779cbfdac0f21d80d77884008beeb53b00ab4346e2226461515fb7aff705e6b7d79b6cbf9102f76b3ee32bfc95fed3fe637b636b7bed07fbe1f4738548b557cd7070b9c06a766ef80e33ab43cda422c626cdbe6e0e04182d1a00b1801fe372f016ea3fbd08e1776bc94db90fb76fbbaf627154afa59df42834653d5551ce1108c042060e0df03f8d2475802afc9830cd8d850856034181b2d8e76011fdd33026ed6cdecd8b963cfaeefeedae3641dd7931e810e68112d043ac0cbd6e66da28d200c705d97b22a93cbe608ca0100fdeff7e337fa788d1eaaace8fc47e707401e98be6bb43bbed1d1d6d5d935602263cce48d0c77f3b9326b1c9f318f6a99d0544cad365c2899bee37de6ccd133e6cd37de344d8d4d3fbb57c4d9f6dcb66f0dfd6be8633313374444e3516d8ca2db7e9f3d46e391319131a552c944a5c8f49deb33678e9f31bbf7ec3e2ba57cec33c9b77c7dcb5395e1cad89dc84d346b7e2fdcb4ab18135d8d4ca9bf6486ba87ccabbf78f5432965f3dc3b77dd655d47bbfa66fa88a2c898c919275e202a958a89ae46a6afbfcff49dec33bb7fb8bb5b58c2bd4dc0de9feefdf96dbb6edef9f8e7e29ea1c298a81499a1ee21d375a4cbb43fddbe0f5804b0584a6977bcd8b1f3660f13c7b5cc560dab908107d2db38a0503859879898aded5b3bb0580f60b536b5ae762cc727a196d92c9b5b552e066627ba09288c1488754c4115702c87200c702c87aaaee2a5bd5b79c0cb7ab74ab597f61856c378d24366a5ebbaee97cbc5f2875639295b31f1a2e1d1daa24e349ef4a886551ce7d3523b9c1fa6d05ba067a407a92565ca482141802f7cf2561e89a45b77e3240e874e1c02c06bf4d8d6be0d24389643bfeac7491c80e5806505c5e04a7e345fdcb461d3975020a52456314ed681096ad7700d3affdc894a14adcdad389e732be3092910086c6913873158a09546279aa01830901fe095dfbfc2d68d5b69cdb5622736055598d4a12e016689d6fa7a3a9d7e28b72ef735bbce26d001f6521b152a32224335aa627fc1a6502c105e0e59b97625cf7ef35910d0b0ba017ba94dca49413da43229527529ec061b4b58ac7257912fe5e9eded25b816e008878b958bf49ceae9191c1efc23505e02901fc90fb63ddeb6c55a613dec580e442084000d99ba0c44b03eb79ef4ea349b376e8614d8f68d9763765b7b639eaa4f512d57093f0909ae06e49a7214c322c1f9e0d2a1f70efd26994e3e0026970024934974f2ecc9d3ce72e72bce0ae7614b588c8d8f91b2528c8d8f21ea044555c45bea614b7b5ebd743c11632db6b858be48782964b034383d303070eaf0df0eff3a499263c027b7e9d75a8ff59eebfd2bd7b0af8beb6b572e5b990ac7436ccbe68aba829dd8c8b4ac857b1e48d5a748ae269040e7d94e75e4dd23bf1bb930b28f69cedd249f13c0244926062e0cfcbdbbbbfbfdc1ff0c4e59a12547c351698d5b8bae4d5da3e5c9964f4f18c7a45277103355f31a4fc45007e78be7b978e16270eaf4a95f01ff0426679adfa93a254aa9d3278e9d387be2d8895552caf5b9e6dc57dffed3db7b80faf85a8c561a210571398634100269d0a14608810e6bad3909e4dc1c9eebad1096a8d7899e4376b7f29800979452973cd7b30315d4e7ff92275fc88784a8e1f27095847115aa093da123ad758255fbd32232a25e0891f1b25ed66ff257f9693f23a478448fe99ed9248bee22e0165a37b43e2db4782a5fce5fd5a1fe48277ae2c6b9ff0b68e0fa0dc1506b742da01ec8084b386ea3bb462935aa943a35c3eebe91e27e9bd8b9fbe774e1ff07490a7a8c41a1c2540000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]">
+    <customwidgets/>
+  </xupdate:insert-after>
+</xupdate:modifications>

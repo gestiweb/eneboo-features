@@ -1,0 +1,149 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,venta]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[QFrame,frmPvp]/property[frameShadow]">
+    <vbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbPvp</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>200</width>
+            <height>25</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>pvp</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB">
+        <property name="name">
+          <cstring>fdbIvaIncluido</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>200</width>
+            <height>25</height>
+          </size>
+        </property>
+        <property name="fieldName">
+          <string>ivaincluido</string>
+        </property>
+      </widget>
+    </vbox>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fdbCodSubcuentaCom,keyF2Pressed(),fdbIdSubcuentaCom,searchValue()]">
+    <connection>
+      <sender>toolButtonInsertAtributo</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbAtributosArticulos</receiver>
+      <slot>insertRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsertAtributo,clicked(),tdbAtributosArticulos,insertRecord()]">
+    <connection>
+      <sender>toolButtonEditAtributo</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbAtributosArticulos</receiver>
+      <slot>editRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditAtributo,clicked(),tdbAtributosArticulos,editRecord()]">
+    <connection>
+      <sender>toolButtonDeleteAtributo</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbAtributosArticulos</receiver>
+      <slot>deleteRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDeleteAtributo,clicked(),tdbAtributosArticulos,deleteRecord()]">
+    <connection>
+      <sender>toolButtonZoomAtributo</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbAtributosArticulos</receiver>
+      <slot>browseRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoomAtributo,clicked(),tdbAtributosArticulos,browseRecord()]">
+    <connection>
+      <sender>toolButtonInsertColor</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbColoresArticulo</receiver>
+      <slot>insertRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsertColor,clicked(),tdbColoresArticulo,insertRecord()]">
+    <connection>
+      <sender>toolButtonEditColor</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbColoresArticulo</receiver>
+      <slot>editRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditColor,clicked(),tdbColoresArticulo,editRecord()]">
+    <connection>
+      <sender>toolButtonDeleteColor</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbColoresArticulo</receiver>
+      <slot>deleteRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDeleteColor,clicked(),tdbColoresArticulo,deleteRecord()]">
+    <connection>
+      <sender>toolButtonZoomColor</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbColoresArticulo</receiver>
+      <slot>browseRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fdbCodSubcuentaCom,textChanged(const QString&amp;),fdbIdSubcuentaCom,setMapValue(const QString&amp;)]">
+    <connection>
+      <sender>toolButtonDeleteComision</sender>
+      <signal>clicked()</signal>
+      <receiver>fLTableDB4</receiver>
+      <slot>deleteRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDeleteComision,clicked(),fLTableDB4,deleteRecord()]">
+    <connection>
+      <sender>fdbCodSubcuentaIrpfCom</sender>
+      <signal>keyF2Pressed()</signal>
+      <receiver>fdbIdSubcuentaIrpfCom</receiver>
+      <slot>searchValue()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fdbCodSubcuentaIrpfCom,keyF2Pressed(),fdbIdSubcuentaIrpfCom,searchValue()]">
+    <connection>
+      <sender>fdbCodSubcuentaIrpfCom</sender>
+      <signal>textChanged(const QString&amp;)</signal>
+      <receiver>fdbIdSubcuentaIrpfCom</receiver>
+      <slot>setMapValue(const QString&amp;)</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fdbCodSubcuentaIrpfCom,textChanged(const QString&amp;),fdbIdSubcuentaIrpfCom,setMapValue(const QString&amp;)]">
+    <connection>
+      <sender>fdbCodSubcuentaCom</sender>
+      <signal>keyF2Pressed()</signal>
+      <receiver>fdbIdSubcuentaCom</receiver>
+      <slot>searchValue()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

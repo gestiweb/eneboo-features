@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]" >
+<action>
+<name>i_articulos</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículos&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cada línea del informe contiene los datos de un artículo&quot;)</description>
+<table>i_articulos</table>
+<form>i_master</form>
+<formrecord>i_articulos</formrecord>
+<scriptform>i_masterarticulos</scriptform>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

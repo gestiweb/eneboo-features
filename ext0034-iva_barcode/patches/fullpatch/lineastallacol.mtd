@@ -1,0 +1,203 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>lineastallacol</name>
+<!-- Tabla auxiliar para la inserción de artículos con varias tallas y colores en documentos de facturación de proveedores-->    <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Introducir tallas y colores&quot;)</alias>
+    <field>
+        <name>id</name>
+<!-- Identificador interno -->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Identificador&quot;)</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+    </field>
+	
+	<field>
+		<name>usuario</name>
+		<!-- Código de color-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+    <field>
+        <name>referencia</name>
+<!-- Código de referencia del artículo -->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículo&quot;)</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>18</length>
+
+		<relation>
+            <table>articulos</table>
+            <field>referencia</field>
+            <card>M1</card>
+            <delC>true</delC>
+        </relation>
+    </field>
+	
+	<field>
+		<name>descripcion</name>
+		<!--Descripción del artículo-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Descripción&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+		<name>pvpunitario</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Precio Unidad&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>cantidad</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cantidad&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>pvpsindto</name>
+		<!--Precio unitario por cantidad-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Precio Nominal&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>pvptotal</name>
+		<!--Precio unitario por cantidad-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Total&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<calculated>true</calculated>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>codimpuesto</name>
+		<!--Tipo de IVA aplicado-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;I.V.A.&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		<relation>
+			<table>impuestos</table>
+			<field>codimpuesto</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>iva</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;%I.V.A.&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>2</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>dtolineal</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Dto. Lineal&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>dtopor</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;%Descuento&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>2</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+	
+	<field>
+		<name>recargo</name>
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;%R.Equivalencia&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>2</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>datos</name>
+		<!-- Datos de los stocks a regularizar-->
+		<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Datos&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>tabla</name>
+		<!-- Tabla (pedidos,albaranes o facturas)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tabla")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>campopadre</name>
+		<!-- Nombre del campo clave de la tabla padre-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","campopadre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>valorcampopadre</name>
+		<!-- Valor del campo clave de la tabla padre-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","valorcampopadre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>barcode</name>
+		<!-- Código barcode temporal-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Bar code&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+    </field>
+</TMD>

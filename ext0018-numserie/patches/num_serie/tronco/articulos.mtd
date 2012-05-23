@@ -1,0 +1,28 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]" >
+<field>
+<name>controlnumserie</name>
+<!-- Indica si se va a llevar a cabo el control por números se serie de este artículo --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Control por número de serie&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[controlnumserie]" >
+<field>
+<name>codalmacenns</name>
+<!-- Código del almacén --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Almacén&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>almacenes</table>
+<field>codalmacen</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

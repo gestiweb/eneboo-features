@@ -1,0 +1,154 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">346</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox7]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxAtributo</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="title">
+        <string>Atributos</string>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbBarCode</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>150</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>barcode</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbTalla</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>150</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>talla</string>
+          </property>
+          <property name="foreignField">
+            <string>talla</string>
+          </property>
+          <property name="fieldRelation">
+            <string>barcode</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbColor</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>150</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>color</string>
+          </property>
+          <property name="foreignField">
+            <string>color</string>
+          </property>
+          <property name="fieldRelation">
+            <string>barcode</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,1]/text()[1]">fdbBarCode</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,2]/text()[1]">fdbReferencia</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]/text()[1]">fdbCantidad</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]/text()[1]">fdbDescripcion</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]/text()[1]">fdbTotalEnAlbaran</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]/text()[1]">fdbTalla</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]/text()[1]">fdbColor</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]/text()[1]">fdbPvpUnitario</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]/text()[1]">fdbPvpSinDto</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]/text()[1]">fdbDtoLineal</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]">
+    <tabstop>fdbDtoPor</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]">
+    <tabstop>fdbPvpTotal</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,12]">
+    <tabstop>fdbDescripcion</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,13]">
+    <tabstop>fdbPvpUnitario</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,14]">
+    <tabstop>fdbPvpSinDto</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,15]">
+    <tabstop>fdbDtoLineal</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,16]">
+    <tabstop>fdbDtoPor</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,17]">
+    <tabstop>fdbPvpTotal</tabstop>
+  </xupdate:insert-after>
+</xupdate:modifications>

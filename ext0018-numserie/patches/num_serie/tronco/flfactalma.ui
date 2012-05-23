@@ -1,0 +1,40 @@
+<xupdate:modifications>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="num_serieimage40551" >
+<data format="PNG" length="1409" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000054849444154789cc5974f88247715c73feffdaafaefcef4ccb07fa299209220044d1611c425072f1b835ec37a4b6ec6401644c8412f413ce8c19b1ec47848c8ba1a142107052fe2c9ec98884b2004617725995db3b833d33b3bdb55d55d55bfdfcba1aa7b3add331d670fd91fbc6eead75df53ebfef7bbf6f558999713f87ded7ec4074d80f5b5bb71e15e48ca8283027932000a8aadbe9efec3dfcf023afdf0b801c54825bb7fe774e90dfa9537758e2f188e3982b57ae70e9d2a55fbf70fefc734705982b417fab2fc08f119c5920842a2c581d8160fb818059c02c7ce7d5575ef9d55101e64a504a198bd15355badd2e221563b572635a003328cb023323cf0b8aa278eec26bafd933cf3efbfc3d2b2006a2eacd8c34cd48d384344d49d284244d49922ad224254d122c54252c8a82b22c298ae2bbbfbd78f197f70ca0f594881082c77b4f1847a8c2c66531c3cc3871e224ad56832419301a0d190eb3e77f73e1c2ff0531d7843b3bdb0d33bb2622ebddee31540fdfa9664696a6a82a9b9b1f70f9f265bc0f349b0de2386679b9f7f36f3cf5d4f78e06b0bddd30ec9a20eba33c076cbff3a5fa98de07711c2322b8c8e1bda7c88bf1953163abd7eb7db6ddee948701ccfb80d58904565757101198d97a32f377ccaad354904e359f0d334208499665b4db9d43159803f078d414c3c8f3bc5ab1cca65d3ccc0cef3d00cecd59c9620031c13044842ccb189748c6d27f4c907a6b527f597d24461455a5a9143c0240759d80c3b1b6b636f181c5c35069e0ea5c66b07bb78ff79ed168743400a9eb1942a0dfef2f58c1febce218866d7646ef82051a6e95539d2f2308bef4470308f5de468566b385ea7c133233e3b4cd3f6efc90ab775ec54984ca12671ffc3da75a5f0539a2025035111668341a387593ba8efb631645c4c8fc0e169a886b93871159d90753c2273c6fcc03840ac082b1bdbd3569a4e9980588a449513a4a6b4088f12698392c78b31016121cd08446080155e5f8f11338a78c051fe776d22052c56ce24de8769bc22b86c39be168d1946e585def2e6c82f91ea0f2f81002696db3d36b56891994eff3dee00f04f3088a88d21f7e48b00e65704093776fff91ab7b7f3b79e33f1b2f9bf93258f1f7ef9fd9b8389b6fce8a37dfffa0b2629175339b92be92a013adf2e6d62ff8ebcd1fd1716b938e68ba0e2ad1c4480bcb30f334f458259dd95d438ebff4f57fe70b15c88b1c11218a224e3df0004ef5636da7e2680dba485841dcca449d624ee82e00a33059ebd0cce64c65be076a1b0d2170e3faf5aa04e3e613a1a5c7d8dbcdd94906a45336db8e97711a31be998c7c4ab092a65baacd53a411b7c26cbe3980a2280821e09c63b9d723720e51456b0027115f7be8db34da6d8a3044c521081b37dee0767613a73165c87974e52c6b8df5dbefecfef967662198c8c64f9e7c2bff4480100265593a806eb74b144595b74eb69fd16c9de05bbd1726e7a8c03b1f6eb0995ea71935c87cce171e3ccb57d6be79e799275efae96c8e85005f7aecb1fc9f6fbfbdedbdffccb5ab575191aa0c53a5187b81888041a40d766e670c5225779095c2201bb037da4a4fb2b428ffc12f26ceb91743087baa8a3a57852ace395c7deca6e654857428ec25c6dd0406a9920c87c931edfd40448844243ae49e32d9865175dbeb014b1ef2734f3ffdf8e9d3a7bf28aab19989998d3d470c84a9edbbd4e9657f1abc7e2e69de3da328625286f7a2f36f5efcd75f1cac001e28801c1800bba5597110c0721d2d5f9de401572b350e998a9a891258fefc930f7d2e8849b9ebf7fefbd6cd4d81a656d728eb18d50077e6006647b46ffac2c149272ad604a599f9fd498962b0307954c1ca03721d0af0698dfbfe76fc1178e3ab9fec15637a0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" >
+<action>
+<property name="name" >
+<cstring>numerosserie</cstring>
+</property>
+<property name="iconSet" >
+<iconset>num_serieimage40551</iconset>
+</property>
+<property name="text" >
+<string>Números de Serie</string>
+</property>
+<property name="whatsThis" >
+<string>Números de Serie</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" >
+<connection>
+<sender>numerosserie</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >32</xupdate:update>
+<xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >273</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[transstock]" >
+<separator/>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,3]" >
+<action name="numerosserie" />
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,11 @@
+<flpatch:modifications name="list_prec_tarif" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_articulos.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_articulos.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_articuloscoste.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_articulos.kut" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_articuloscoste.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterarticulos.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_articulos.mtd" />
+</flpatch:modifications>

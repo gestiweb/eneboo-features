@@ -1,0 +1,23 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]/formrecord[formrecord,1]">
+    <scriptform>contactos</scriptform>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[secuencias]">
+    <action>
+      <name>editcontacto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contactos")</alias>
+      <table>crm_contactos</table>
+      <form>contactos</form>
+      <scriptform>contactos</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[editcontactoprov]">
+    <action>
+      <name>insertcontacto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contactos")</alias>
+      <table>crm_contactos</table>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[wg_widget]"/>
+</xupdate:modifications>

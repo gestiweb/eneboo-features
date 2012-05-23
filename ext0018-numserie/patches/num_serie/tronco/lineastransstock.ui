@@ -1,0 +1,97 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >331</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >636</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreDesArticulos]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreDesArticulos]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >93</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >106</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxCantidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >99</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]/vbox[vbox,1]/widget[QGroupBox,gbxArticulo]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxNS</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>Número de &amp;serie</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNumSerie</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>102</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<family>Sans Serif</family>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>numserie</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerNS</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>181</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineastransstock]" >
+<customwidgets/>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]" >
+<includehints>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+<includehint>flfielddb.h</includehint>
+</includehints>
+</xupdate:insert-after>
+</xupdate:modifications>

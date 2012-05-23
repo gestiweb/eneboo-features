@@ -1,0 +1,43 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[idtpv_linea]/relation[tpv_lineascomandans,idlineacomanda]"/>
+  <xupdate:update select="/TMD[TMD,1]/field[descripcion]/length[length,1]/text()[1]">101</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descripcion]">
+    <field>
+      <name>talla</name>
+      <!-- Talla-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Talla")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[talla]">
+    <field>
+      <name>color</name>
+      <!-- Color-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Color")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[coste]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pvpunitarioiva]">
+    <field>
+      <name>barcode</name>
+      <!-- Código barcode -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Bar code")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>20</length>
+      <relation>
+        <table>atributosarticulos</table>
+        <field>barcode</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

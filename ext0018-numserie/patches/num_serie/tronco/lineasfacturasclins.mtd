@@ -1,0 +1,59 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>lineasfacturasclins</name>
+	<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Números de serie por Líneas de Facturas de Clientes&quot;)</alias>
+	<field>
+		<name>idlinea</name>
+		<!--Identificador interno de la tabla-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Identificador&quot;)</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	<field>
+		<name>idlineafactura</name>
+		<!--Identificador de la línea de factura al que pertenece la línea-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Línea de Factura&quot;)</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		<relation>
+			<table>lineasfacturascli</table>
+			<field>idlinea</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+		<name>referencia</name>
+		<!--Referencia del artículo-->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Referencia&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>18</length>
+		<editable>false</editable>
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	<field>
+		<name>numserie</name>
+		<!-- Número de serie del artículo adquirido -->        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nº de serie&quot;)</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>25</length>
+		<relation>
+			<table>numerosserie</table>
+			<field>numserie</field>
+			<card>M1</card>
+		</relation>
+		<associated>
+			<with>referencia</with>
+			<by>referencia</by>
+		</associated>
+	</field>
+	
+</TMD>

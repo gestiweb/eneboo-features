@@ -1,0 +1,43 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_albaranesprov</name>
+
+	<tables>empresa,albaranesprov</tables>
+
+	<group>
+		<level>0</level>
+		<field>albaranesprov.idalbaran</field>
+	</group>
+
+	<select>
+		albaranesprov.idalbaran, albaranesprov.codigo,
+		lineasalbaranesprov.idalbaran, albaranesprov.codserie,
+		albaranesprov.fecha, albaranesprov.total,
+		albaranesprov.coddivisa, albaranesprov.codejercicio,
+		albaranesprov.codpago, albaranesprov.codalmacen,
+		albaranesprov.codproveedor, albaranesprov.nombre,
+		albaranesprov.cifnif, albaranesprov.tasaconv,
+		albaranesprov.neto, albaranesprov.totaliva,
+		albaranesprov.totalrecargo,
+		lineasalbaranesprov.referencia, lineasalbaranesprov.descripcion,
+		lineasalbaranesprov.cantidad, lineasalbaranesprov.pvpunitario,
+		lineasalbaranesprov.pvptotal, lineasalbaranesprov.codimpuesto,
+		lineasalbaranesprov.iva, lineasalbaranesprov.numserie,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa,albaranesprov INNER JOIN lineasalbaranesprov ON albaranesprov.idalbaran = lineasalbaranesprov.idalbaran
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineasalbaranesprov.referencia
+	</order>
+</QRY>

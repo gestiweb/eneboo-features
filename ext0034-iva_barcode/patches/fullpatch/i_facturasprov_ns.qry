@@ -1,0 +1,32 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>facturasprov</name>
+
+	<tables>empresa,facturasprov,lineasfacturasprov</tables>
+
+	<group>
+		<level>0</level>
+		<field>facturasprov.idfactura</field>
+	</group>
+
+	<select>
+		facturasprov.idfactura, lineasfacturasprov.idfactura, facturasprov.codigo, facturasprov.codserie, facturasprov.fecha,
+		facturasprov.total, facturasprov.coddivisa, facturasprov.codejercicio, facturasprov.codpago, facturasprov.codalmacen,
+		facturasprov.codproveedor, facturasprov.nombre, facturasprov.cifnif, facturasprov.tasaconv,  facturasprov.neto, lineasfacturasprov.referencia, lineasfacturasprov.descripcion,
+		lineasfacturasprov.cantidad,
+		lineasfacturasprov.pvpunitario, lineasfacturasprov.pvptotal, lineasfacturasprov.codimpuesto, lineasfacturasprov.iva, lineasfacturasprov.numserie,
+		empresa.nombre, empresa.cifnif, empresa.direccion, empresa.logo, empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado, empresa.codpais
+	</select>
+
+	<from>
+		empresa,facturasprov INNER JOIN lineasfacturasprov ON facturasprov.idfactura = lineasfacturasprov.idfactura
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		lineasfacturasprov.referencia
+	</order>
+</QRY>

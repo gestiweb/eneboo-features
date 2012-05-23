@@ -1,0 +1,17 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[referencia]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Ref/N.S.")</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[referencia]/length[length,1]/text()[1]">25</xupdate:update>
+  <xupdate:delete select="/TMD[TMD,1]/field[referencia]/relation[articulos,referencia]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]">
+    <field>
+      <name>barcode</name>
+      <!-- Código barcode -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Bar code")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>20</length>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

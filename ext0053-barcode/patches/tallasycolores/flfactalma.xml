@@ -1,0 +1,143 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]" >
+<action>
+<name>atributosarticulos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Atributos de los artículos, identificados por un código de barras (barcode). Cada barcode identifica una combinación talla / color&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Atributos de artículos&quot;)</alias>
+<table>atributosarticulos</table>
+<form>master</form>
+<formrecord>atributosarticulos</formrecord>
+<scriptformrecord>atributosarticulos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[atributosarticulos]" >
+<action>
+<name>tallas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tallas&quot;)</alias>
+<table>tallas</table>
+<form>master</form>
+<formrecord>tallas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tallas]" >
+<action>
+<name>colores</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Colores&quot;)</alias>
+<table>colores</table>
+<form>master</form>
+<formrecord>colores</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[colores]" >
+<action>
+<name>grupostalla</name>
+<description>QT_TRANSLATE_NOOP(&quot;Grupos de talla&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los grupos de talla identifican las distintas agrupaciones de talla (española, inglesa, etc). Cada talla de la tabla de tallas puede asociarse a un determinado grupo. Si un artículo tiene asociado un determinado grupo de tallas, sólo podrán asociarse a dicho artículo barcodes con tallas del grupo establecido&quot;)</alias>
+<table>grupostalla</table>
+<form>master</form>
+<formrecord>grupostalla</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[grupostalla]" >
+<action>
+<name>regstocks_buffer</name>
+<description>QT_TRANSLATE_NOOP(&quot;Recolección de datos de tallas y colores para la regularización de stocks&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Esta es una acción auxiliar que permite al usuario realizar la regularización de stocks de un determinado artículo indicando las cantidades existentes para cada talla y color&quot;)</alias>
+<table>regstocks_buffer</table>
+<form>regstocks_buffer</form>
+<scriptform>regstocks_buffer</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[regstocks_buffer]" >
+<action>
+<name>coloresarticulo</name>
+<description>QT_TRANSLATE_NOOP(&quot;Lista de posibles colores que un artículo puede tener&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>coloresarticulo</table>
+<formrecord>coloresarticulo</formrecord>
+<scriptformrecord>coloresarticulo</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[coloresarticulo]" >
+<action>
+<name>barcodeprov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lista de coste de un artículo según su talla y color.&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Coste según bar code&quot;)</alias>
+<table>barcodeprov</table>
+<formrecord>barcodeprov</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[barcodeprov]" >
+<action>
+<name>setscolores</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sets de colores&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>setscolores</table>
+<form>master</form>
+<formrecord>setscolores</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[setscolores]" >
+<action>
+<name>coloresset</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Colores por set&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>coloresset</table>
+<formrecord>coloresset</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[coloresset]" >
+<action>
+<name>setstallas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Sets de tallas&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>setstallas</table>
+<form>master</form>
+<formrecord>setstallas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[setstallas]" >
+<action>
+<name>tallasset</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tallas por set&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>tallasset</table>
+<formrecord>tallasset</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tallasset]" >
+<action>
+<name>atributostarifas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Atributos por tarifa&quot;)</alias>
+<table>atributostarifas</table>
+<form>master</form>
+<formrecord>atributostarifas</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[barcodeprov]">
+<action>
+  <name>articulosmodoinv</name>
+  <description/>
+  <alias>QT_TRANSLATE_NOOP("MetaData","Artículos")</alias>
+  <table>articulos</table>
+  <form>masterarticulosmodoinv</form>
+  <formrecord>articulosmodoinv</formrecord>
+  <scriptform>masterarticulosmodoinv</scriptform>
+  <scriptformrecord>articulosmodoinv</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articulosmodoinv]">
+<action>
+  <name>opcionesmodoinv</name>
+  <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+  <alias>QT_TRANSLATE_NOOP("MetaData","Opciones modo inventario")</alias>
+  <table>opcionesmodoinv</table>
+  <form>opcionesmodoinv</form>
+  <formrecord>opcionesmodoinv</formrecord>
+</action>
+</xupdate:insert-after>
+
+</xupdate:modifications>

@@ -1,0 +1,37 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>grupostalla</name>
+	<!-- Listado de las distintas agrupaciones de talla (española, inglesa, etc) -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Grupos de Talla")</alias>
+
+	<field>
+		<name>codgrupotalla</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>5</length>
+
+		<relation>
+			<table>tallas</table>
+			<field>codgrupotalla</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>articulos</table>
+			<field>codgrupotalla</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+	
+</TMD>

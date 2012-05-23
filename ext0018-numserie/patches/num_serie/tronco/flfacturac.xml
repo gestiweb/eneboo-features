@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[busprescli]" >
+<action>
+<name>lineasfacturasclins</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Números de serie por líneas de factura&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Números de serie por líneas de factura&quot;)</alias>
+<table>lineasfacturasclins</table>
+<form>master</form>
+<formrecord>lineasfacturasclins</formrecord>
+<scriptformrecord>lineasalbaranesclins</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineasfacturasclins]" >
+<action>
+<name>lineasalbaranesclins</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Números de serie por líneas de factura&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Números de serie por líneas de factura&quot;)</alias>
+<table>lineasalbaranesclins</table>
+<form>master</form>
+<formrecord>lineasalbaranesclins</formrecord>
+<scriptformrecord>lineasalbaranesclins</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

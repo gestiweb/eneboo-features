@@ -1,0 +1,217 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,factalma_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >371</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,factalma_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factalma_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/attribute[attribute,1]" >
+<grid>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget row="0" class="QGroupBox" column="0" >
+<property name="name" >
+<cstring>gbxDatosGenerales</cstring>
+</property>
+<property name="title" >
+<string>Valores por defecto</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutIVA</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodImpuesto</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>codimpuesto</string>
+</property>
+<property name="fieldAlias" >
+<string>codimpuesto</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDesImpuesto</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>impuestos</string>
+</property>
+<property name="foreignField" >
+<string>codimpuesto</string>
+</property>
+<property name="fieldRelation" >
+<string>codimpuesto</string>
+</property>
+<property name="fieldAlias" >
+<string>descripcion</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutIVAIncluido</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIvaIncluido</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>300</width>
+<height>32767</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>ivaincluido</string>
+</property>
+<property name="fieldAlias" >
+<string>ivaincluido</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerIVAIncluido</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>131</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerPG</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>41</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+<widget row="1" class="QGroupBox" column="0" >
+<property name="name" >
+<cstring>gbxBarcode</cstring>
+</property>
+<property name="title" >
+<string>&amp;Tallas y colores</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCalculoBarcode</cstring>
+</property>
+<property name="minimumSize" >
+<size>
+<width>162</width>
+<height>29</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>calculobarcode</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbDigitosBarcode</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>digitosbarcode</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPrefijoBarcode</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>prefijobarcode</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</grid>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

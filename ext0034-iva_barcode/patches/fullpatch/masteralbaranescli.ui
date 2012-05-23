@@ -1,0 +1,57 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer5]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">16</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">110</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonPrint]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>toolButtonPrintNS</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>S</string>
+      </property>
+      <property name="iconSet">
+        <iconset>numeros_serieimage6</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Imprimir con número de serie (S)</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Imprimir con numeros de serie</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="numeros_serieimage6">
+      <data format="PNG" length="1877">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000071c49444154789cad975d6c1dc515c77fb677e3996437cc824d765307b281400cc48dcd479a800a4e6969a928aa251e9a14552daad2368a54d1d756a88a1042022454fa445bf50154a90fa10910a92dc4551225252eb95023bb8a2ddfabd8cabd908bef966cef9ed8c3751fd6769c0f82b1f29756b3b33373ce7fce9c39e76c0b4b44f71ddd5df1baf8f634493f962939b754392d4b5db8e3073b7efed42f9f7ab9e79e9eedddb7766fd19efed234d38de49324a1c1f452e52e1a2f3dffd2cb93a72667264f4dce9c1e3b3d33f6efb19937f6bfd1d8f3ecef4ea89bb73c06342f46ce922dd0fbb5de27b6debd75436a53cc4a835d668956464ddab751b0e1e1c78e25cae7d4e021b0f6aa13508e6ad9f5935d3f8b56473778cb3d341adff83838b80d97f56e4a7acba35b06ddf51b193bf43656ea9f256b5166ba040ecbb4a7db95528815f0f2cfba5de7ef0e6c734ed0fbbd271e558fbff21794597b5509284f2d0b4d781d16022fc83fba791377c460140688a9f1a3dddfde6a7ef8ca6b78e12d578d40dc110728b4569acc66f3cae7887476c408829c159252467cc7b64deabbcfedc3843d57850010062a68cd6c8656fa9241ed28a2f68864e20466f000dbd9cb9e07e30ddb7ffc8bbdc684772d9ceb2c45bb31a65d1c717020930ced5e44426932a9d1e755c0118c17825324b1955024b91528009f7e71020e60218aa26b4313828036975a0081a82d0207e23006072aa50a07077efb1f113975b1c8c5286e0edbc26be2b5f18df1fab8a37b43f723c3a3c32847211342d416a19422689f75c800a28e88ce9b3bc103ad3585c102e552f96d60746ef79f4b20ec08afeffb565f5fcf5d3ddfe9eeecbe5b1c3191891c2c643643aca01c45b95406070a1f1408bd10ad346147880e66ad5383e268b15a9a28bd0d7cf8b91608db427fc7e33b766f7f6cfbee288c42e319129b609ccbb492a0424592260404d4aa35922461a834441446c46b63ca13650ef61f7c0718061a5724d0f7605fcfae2777fd7edb7ddb36a1c8af58061a9d9fb9b7a0b5e7fb811790494668429234216a8b2857ca14fe5560786498e268f108307eb1be0b42f1c3df7cf81bcf3cf7ccbe7beebd27a67576741a68866c2ac35dee9235325c7ff6e2cff9df8a7c8eab5c2c96607980340b91899086e0fb3eb6d9fa232747fa4564f2b2e7ddfb40efe6d343a7ab330b3135fbd417f41783d975f5c9facce4e9c999b1136333ef1e7a7766cfaff6bc6f8cd9708905c230bce6c5175efc73d7e6ae9be606b22cc36dccee58bb97b1d715d0923fae767347558a642a614db46615cddc39f8dee09bb661d379913b7fbaf3c99d4fecfcfebc820c5c5cb0e0ae703f4bcda2a075ee2bbee393d653a255d19a91f191e68953137f076836c6e8be47fa1e5fb8f3cc66d4a4060aae466da33d8d384260823c536ed9b61d872e00a7736de78d469918812ccdf2157359ce72ded1e608d6328aa522920ae5b48c4653931a8a3c35072a402945d4111186e7638151862245022fc0b499300cc33b2b1395f79dc4268e58691a9a189a4fadc633d4a496f7a70117868687181e18a6305a40892221c128030a2215218ea05014a588b69a03fd07803c22f6dedd8b6ed36834c5341f07ae051ca73c511e2f4e14277a4ccf4da4a03c85a4b3e612c087ec4cc6de3fed45103a6fee245a13cd473ce52994a3f2752200482a88481e07060b3cfd9ba7d9ba692bdd1bbb41a09c94a72495d3c04c8b889cf33ceffa8d5fdef855b7d9a5666bb8cb5c5249711c875452fce53ee39571aaa7aaacdfb89e87befe10ce7287687584bfd247071a57bb685fa3555e9e294f11b545143f2a323030c0998fcfe02b9ff1649c63878f1d1b1c1afc23506901181e1d1ebc6ddd6dbdde2a6fb542d134d584e3386041352bec94a5737d27ed713bf76fba1f5a67bd7bf6ba5d80b92bd8ea52fda84aede31a67aa67883b62aaf52ac50f8a63fb0fec7fd636ec3bc0540b809db2f5a3c78f1e09ae0dbed2dedebe1a07d27a4a134da4f514a7d9a19a56099605f86dfea2e241763683068c57c7a98e5519a98c340a85c2e1d7fff6fa33d6dab780ffcef1cdcf4da43a707ce04d3923ba6979d3eded2bdaddb49ee2902b472030c1f90cf739705b5da42a58b11c3c7e30d9bf6fff0ba327479fa7c1f139e5171000b0d69e1d3c39f8d7a3478ffe63b8383c4d8aa9d42bc67e629bd24f53ba3675cde7876c2ac3752f13a4a6810664f50cdb6c29554a8c9c1c291f3e72f8d7c07bc0d4c2e9974bc736499223fd6ff5ffb3ffadfe1b8c315d9d1b3aef7df50fafeec6a5b556ae21a9e45e5f913c5809a04024af0f44645e72dc161385d175ca51ad62e51265572a482c309624c9581446ba96d65a875e1ba2345e4ab3344b8a95620dcb27499a9c95b35217118b93ffb4285fb52aa5fca82d6a8bd7c637445ee42ba3d649558e5daca4e90a04e6d1bda9fb3e84cdc54af12349e543b172164881ffcdeeffdc2c61c82b6d0768057ce5a820ec086f4d92a49424c9e105f3be305c9658452f587fc96fc0ff01f81a4cf8b8af90940000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]">
+    <customwidgets/>
+  </xupdate:insert-after>
+</xupdate:modifications>

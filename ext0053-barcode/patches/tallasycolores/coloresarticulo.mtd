@@ -1,0 +1,94 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>coloresarticulo</name>
+	<!-- Colores por artículo-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Colores por artículo")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Identificador interno del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>referencia</name>
+		<!-- Código de referencia del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>18</length>
+		<visiblegrid>false</visiblegrid>
+
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+
+	<field>
+		<name>codcolor</name>
+		<!-- Código del color-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>15</length>
+
+		<relation>
+			<table>colores</table>
+			<field>codcolor</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+
+	<field>
+		<name>descolor</name>
+		<!-- Descripción del color-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Color")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+
+	<field>
+		<name>inclineal</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Incremento Lineal")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>8</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+
+	<field>
+		<name>incporcentual</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Incremento Porcentual")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>3</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+
+	<field>
+		<name>activo</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Activo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+
+</TMD>

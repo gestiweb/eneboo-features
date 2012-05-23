@@ -1,0 +1,21 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[tpv_lineascomandans]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_causasmovimiento]">
+    <action>
+      <name>tpv_buscarreferencia</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Buscar Articulo")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Este formulario permite buscar un articulo")</description>
+      <table>articulos</table>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tpv_buscarreferencia]">
+    <action>
+      <name>tpv_buscarbarcode</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Buscar Barcode")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Este formulario permite buscar un barcode")</description>
+      <table>atributosarticulos</table>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

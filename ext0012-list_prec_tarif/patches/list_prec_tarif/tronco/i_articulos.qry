@@ -1,0 +1,27 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_articulos</name>
+
+	<tables>empresa,articulos,familias</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		a.referencia,
+		a.descripcion,
+		a.pvp,
+		f.codfamilia,
+		empresa.nombre,
+		empresa.cifnif
+	</select>
+
+	<from>
+		empresa,articulos a LEFT OUTER JOIN familias f ON a.codfamilia = f.codfamilia
+	</from>
+
+	<where>
+	</where>
+</QRY>

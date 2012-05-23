@@ -1,0 +1,16 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codtpv_agente]/relation[tpv_movimientos,codtpv_agente]">
+    <relation>
+      <table>lineasregstocks</table>
+      <field>codagente</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codtpv_agente]/relation[lineasregstocks,codagente]">
+    <relation>
+      <table>transferenciastock</table>
+      <field>codagente</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>

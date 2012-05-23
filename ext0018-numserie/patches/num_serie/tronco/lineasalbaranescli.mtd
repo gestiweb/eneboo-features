@@ -1,0 +1,28 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idlinea]/visiblegrid[visiblegrid,1]" >
+<relation>
+<table>lineasalbaranesclins</table>
+<field>idlineaalbaran</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porcomision]" >
+<field>
+<name>numserie</name>
+<!-- Número de serie del artículo adquirido --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Del artículo&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>25</length>
+<relation>
+<table>numerosserie</table>
+<field>numserie</field>
+<card>M1</card>
+</relation>
+<associated>
+<with>referencia</with>
+<by>referencia</by>
+</associated>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

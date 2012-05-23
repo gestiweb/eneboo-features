@@ -1,0 +1,359 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>opcionesmodoinv</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Opciones de inventario")</alias>
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+	<field>
+		<name>valorreferencia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia. Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	<field>
+		<name>valordescripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripcion. Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	<field>
+		<name>codfamilia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Familia")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcodfamilia</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+        <relation>
+            <table>familias</table>
+            <field>codfamilia</field>
+            <card>M1</card>
+        </relation>
+	</field>
+	<field>
+		<name>codgrupotalla</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Grupo de tallas")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcodgrupotalla</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+        <relation>
+            <table>grupostalla</table>
+            <field>codgrupotalla</field>
+            <card>M1</card>
+        </relation>
+	</field>
+	<field>
+		<name>controlstock</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Permitir ventas sin stock")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcontrolstock</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<true>false</true>
+	</field>
+	<field>
+		<name>imagen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Imagen")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorimagen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+        <type>pixmap</type>
+	</field>
+	<field>
+		<name>codbarras</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código de barras")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcodbarras</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	<field>
+		<name>tipocodbarras</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo código de barras")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+    <field>
+        <name>valortipocodbarras</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <optionslist>Code39,Code128,Code128B,Code128C,Code128R,EAN,ISBN,UPC,CodeI25,CBR,MSI,PLS,Code93</optionslist>
+        <default>Code39</default>
+        <type>string</type>
+        <length>8</length>
+    </field>
+	<field>
+		<name>observaciones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorobservaciones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>
+	<field>
+		<name>pvp</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Precio de venta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorpvp</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>6</partI>
+        <partD>2</partD>
+        <default>0</default>
+	</field>
+	<field>
+		<name>ivaincluido</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Incluido")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorivaincluido</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+        <default>true</default>
+	</field>
+	<field>
+		<name>codimpuesto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de I.V.A.")</alias>
+        <pk>false</pk>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcodimpuesto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+        <pk>false</pk>
+		<null>true</null>
+        <type>string</type>
+        <length>10</length>
+        <relation>
+            <table>impuestos</table>
+            <field>codimpuesto</field>
+            <card>M1</card>
+        </relation>
+	</field>
+	<field>
+		<name>preciostarifa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Precios por tarifa")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>preciosproveedor</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Precios por proveedor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>regstocks</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Permitir crear stocks")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>stockmin</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Stock mínimo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorstockmin</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>8</partI>
+        <partD>2</partD>
+        <default>0</default>
+	</field>
+	<field>
+		<name>stockmax</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Stock máximo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorstockmax</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+        <pk>false</pk>
+        <type>double</type>
+        <partI>8</partI>
+        <partD>2</partD>
+        <default>0</default>
+	</field>
+	<field>
+		<name>codalmacenstock</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Almacén")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcodalmacenstock</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>false</null>
+		<pk>false</pk>
+        <type>string</type>
+        <length>4</length>
+        <relation>
+            <table>almacenes</table>
+            <field>codalmacen</field>
+            <card>M1</card>
+        </relation>
+	</field>
+	<field>
+		<name>stocksalmacen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Stocks por almacén")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorstocksalmacen</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	<field>
+		<name>comisiones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Comisiones por agente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcomisiones</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>250</length>
+	</field>
+	
+	<field>
+		<name>codsubcuentacom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta compras")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+    <field>
+        <name>valorcodsubcuentacom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>15</length>
+    </field>
+    <field>
+        <name>idsubcuentacom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <visiblegrid>false</visiblegrid>
+        <relation>
+            <table>co_subcuentas</table>
+            <field>idsubcuenta</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	
+	<field>
+		<name>codsubcuentairpfcom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Subcuenta IRPF compras")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+	</field>
+	<field>
+		<name>valorcodsubcuentairpfcom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Valor por defecto")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>15</length>
+    </field>
+    <field>
+        <name>idsubcuentairpfcom</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>uint</type>
+        <visiblegrid>false</visiblegrid>
+        <relation>
+            <table>co_subcuentas</table>
+            <field>idsubcuenta</field>
+            <card>M1</card>
+        </relation>
+    </field>
+</TMD>

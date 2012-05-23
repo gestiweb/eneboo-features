@@ -1,0 +1,11 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPais]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">120</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/spacer[spacer5]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">151</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]/vbox[vbox,1]/widget[FLFieldDB,fdbNombre]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">290</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]/vbox[vbox,1]/widget[QLayoutWidget,layout7]/hbox[hbox,1]/widget[FLFieldDB,fdbBandera]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">160</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]/vbox[vbox,1]/widget[QLayoutWidget,layout7]/hbox[hbox,1]/widget[FLFieldDB,fdbBandera]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">60</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]/vbox[vbox,1]/widget[QLayoutWidget,layout6_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodIso]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">120</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formPaises]/vbox[vbox,1]/widget[QTabWidget,tbwPaises]/widget[QWidget,tab]/vbox[vbox,1]/widget[QFrame,frame62]/vbox[vbox,1]/widget[QLayoutWidget,layoutProv]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]"/>
+</xupdate:modifications>

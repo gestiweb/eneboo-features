@@ -1,0 +1,48 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>colores</name>
+	<!-- Listado de colores de los artículos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Colores")</alias>
+
+	<field>
+		<name>codcolor</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>15</length>
+
+		<relation>
+			<table>atributosarticulos</table>
+			<field>color</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>regstocks_buffer</table>
+			<field>codcolor</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>coloresarticulo</table>
+			<field>codcolor</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>coloresset</table>
+			<field>codcolor</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+</TMD>

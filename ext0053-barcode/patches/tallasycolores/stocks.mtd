@@ -1,0 +1,19 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]" >
+<field>
+<name>barcode</name>
+<!-- Código de barras (bar code) del artículo --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Bar code&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>20</length>
+<ck>true</ck>
+<relation>
+<table>atributosarticulos</table>
+<field>barcode</field>
+<card>M1</card>
+<delC>true</delC>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

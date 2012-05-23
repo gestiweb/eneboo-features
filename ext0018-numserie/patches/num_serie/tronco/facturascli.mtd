@@ -1,0 +1,12 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[hora]" >
+<field>
+<name>decredito</name>
+<!--Si es nota de crédito--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Nota de crédito&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

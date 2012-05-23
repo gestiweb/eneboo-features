@@ -1,0 +1,170 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+	<class>formLineasComanda</class>
+	<widget class="QWidget">
+		<property name="name">
+			<cstring>formLineasComanda</cstring>
+		</property>
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>550</width>
+				<height>146</height>
+			</rect>
+		</property>
+		<property name="sizePolicy">
+			<sizepolicy>
+				<hsizetype>1</hsizetype>
+				<vsizetype>1</vsizetype>
+				<horstretch>0</horstretch>
+				<verstretch>0</verstretch>
+			</sizepolicy>
+		</property>
+		<property name="caption">
+			<string>Números de serie por Líneas de Venta</string>
+		</property>
+		<property name="focusPolicy">
+			<enum>NoFocus</enum>
+		</property>
+		<vbox>
+			<property name="name">
+				<cstring>unnamed</cstring>
+			</property>
+			<widget class="QGroupBox">
+				<property name="name">
+					<cstring>groupBox7</cstring>
+				</property>
+				<property name="font">
+					<font>
+						<bold>1</bold>
+						<italic>1</italic>
+					</font>
+				</property>
+				<property name="title">
+					<string>Artículo</string>
+				</property>
+				<hbox>
+					<property name="name">
+						<cstring>unnamed</cstring>
+					</property>
+					<widget class="FLFieldDB">
+						<property name="name">
+							<cstring>fdbReferencia</cstring>
+						</property>
+						<property name="sizePolicy">
+							<sizepolicy>
+								<hsizetype>0</hsizetype>
+								<vsizetype>0</vsizetype>
+								<horstretch>0</horstretch>
+								<verstretch>0</verstretch>
+							</sizepolicy>
+						</property>
+						<property name="minimumSize">
+							<size>
+								<width>160</width>
+								<height>25</height>
+							</size>
+						</property>
+						<property name="font">
+							<font>
+								<bold>0</bold>
+								<italic>0</italic>
+							</font>
+						</property>
+						<property name="fieldName">
+							<string>referencia</string>
+						</property>
+					</widget>
+					<widget class="FLFieldDB">
+						<property name="name">
+							<cstring>fdbDescripcion</cstring>
+						</property>
+						<property name="sizePolicy">
+							<sizepolicy>
+								<hsizetype>7</hsizetype>
+								<vsizetype>0</vsizetype>
+								<horstretch>0</horstretch>
+								<verstretch>0</verstretch>
+							</sizepolicy>
+						</property>
+						<property name="minimumSize">
+							<size>
+								<width>350</width>
+								<height>25</height>
+							</size>
+						</property>
+						<property name="font">
+							<font>
+								<bold>0</bold>
+								<italic>0</italic>
+							</font>
+						</property>
+						<property name="fieldName">
+							<string>descripcion</string>
+						</property>
+						<property name="tableName">
+							<string>articulos</string>
+						</property>
+						<property name="foreignField">
+							<string>referencia</string>
+						</property>
+						<property name="fieldRelation">
+							<string>referencia</string>
+						</property>
+						<property name="showAlias">
+							<bool>false</bool>
+						</property>
+					</widget>
+				</hbox>
+			</widget>
+			<widget class="QGroupBox">
+				<property name="name">
+					<cstring>groupBox7_2</cstring>
+				</property>
+				<property name="font">
+					<font>
+						<bold>1</bold>
+						<italic>1</italic>
+					</font>
+				</property>
+				<property name="title">
+					<string>Número de Serie</string>
+				</property>
+				<hbox>
+					<property name="name">
+						<cstring>unnamed</cstring>
+					</property>
+					<widget class="FLFieldDB">
+						<property name="name">
+							<cstring>fdbNumSerie</cstring>
+						</property>
+						<property name="sizePolicy">
+							<sizepolicy>
+								<hsizetype>1</hsizetype>
+								<vsizetype>0</vsizetype>
+								<horstretch>0</horstretch>
+								<verstretch>0</verstretch>
+							</sizepolicy>
+						</property>
+						<property name="minimumSize">
+							<size>
+								<width>400</width>
+								<height>25</height>
+							</size>
+						</property>
+						<property name="font">
+							<font>
+								<bold>0</bold>
+								<italic>0</italic>
+							</font>
+						</property>
+						<property name="fieldName">
+							<string>numserie</string>
+						</property>
+					</widget>
+				</hbox>
+			</widget>
+		</vbox>
+	</widget>
+	<layoutdefaults spacing="6" margin="11"/>
+</UI>

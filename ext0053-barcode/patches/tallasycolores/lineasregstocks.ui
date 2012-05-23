@@ -1,0 +1,91 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >300</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formStocks]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >552</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formStocks]/vbox[vbox,1]/widget[QFrame,frmLinea]/vbox[vbox,1]/widget[QLayoutWidget,layout25]" >
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutAgente</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbCodAgente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>180</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<family>Sans Serif</family>
+</font>
+</property>
+<property name="fieldName" >
+<string>codagente</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbNomAgente</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>330</width>
+<height>25</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<family>Sans Serif</family>
+</font>
+</property>
+<property name="fieldName" >
+<string>descripcion</string>
+</property>
+<property name="tableName" >
+<string>tpv_agentes</string>
+</property>
+<property name="foreignField" >
+<string>codagente</string>
+</property>
+<property name="fieldRelation" >
+<string>codtpv_agente</string>
+</property>
+<property name="showAlias" >
+<bool>false</bool>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,35 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>setscolores</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Sets de Colores")</alias>
+
+	<field>
+		<name>codset</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>15</length>
+
+		<relation>
+			<table>articulos</table>
+			<field>codsetcolores</field>
+			<card>1M</card>
+		</relation>
+		
+		<relation>
+			<table>coloresset</table>
+			<field>codset</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+</TMD>

@@ -1,0 +1,107 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QGroupBox,gbxRecibos]/hbox[hbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QGroupBox,gbxRecibos]/property[title]">
+    <vbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLTableDB">
+        <property name="name">
+          <cstring>tdbRecibos</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>0</width>
+            <height>200</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="tableName">
+          <string>recibosprov</string>
+        </property>
+      </widget>
+    </vbox>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,tbnSeleccionar]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,tbnQuitar]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/property[spacing]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>pbnSeleccionar</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>&amp;Seleccionar</string>
+      </property>
+      <property name="accel">
+        <string>Alt+S</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer11]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>pbnQuitar</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string>&amp;Quitar</string>
+      </property>
+      <property name="accel">
+        <string>Alt+Q</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QGroupBox,gbxRecibosSel]/hbox[hbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,seleccionrecibosprov]/vbox[vbox,1]/widget[QGroupBox,gbxRecibosSel]/property[title]">
+    <vbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLTableDB">
+        <property name="name">
+          <cstring>tdbRecibosSel</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>0</width>
+            <height>200</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="tableName">
+          <string>recibosprov</string>
+        </property>
+      </widget>
+    </vbox>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>FLTableDB.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]">
+    <includehint>FLTableDB.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]"/>
+</xupdate:modifications>
