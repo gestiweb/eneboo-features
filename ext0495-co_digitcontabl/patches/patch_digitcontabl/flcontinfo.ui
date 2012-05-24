@@ -1,0 +1,42 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Principal]">
+    <item name="Digitalizacin" text="Digitalización">
+      <action name="co_i_digitconta"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_i_facturasemi]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,3]">
+    <action name="co_i_digitconta"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]">
+    <action>
+      <property name="name">
+        <cstring>co_i_digitconta</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>co_digitcontablimage47467</iconset>
+      </property>
+      <property name="text">
+        <string>Digitalización contable</string>
+      </property>
+      <property name="menuText">
+        <string>&amp;Digitalización contable</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="co_digitcontablimage47467">
+      <data format="PNG" length="1159">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000044e49444154789cc597bb8f5b4514c67f67aebddecdfb21f1082021829288028906890284488352a58804e928e841882e1205823f81261d1505201a041248d0f0106d3a0ab4080889c826ab641fceface9c8f62e6dad7f675701a72e5f11d8fe7fafbcef79d333336493cc82b3c5074a0d735f8f7a767f71d79f6e5732154c78425cc0010566694bb59ee1ba0664ef94aeac5d1defaa1672e7d732f02366bc1ed5fde3ab176e2e4f761f5c029c35a2033f7a66f46e73c4072eaadcdcfae5cbef4daf3efdff02e027316ac1c7be4ed6ab076ca4ca01abceeb84750c44a43113c8ec773734255d1df7fe8c2e98bef9e5da4408705f129790d1e3220015ba082cc720c33e3cd7cb98144d5ef3fbe3401c53ae135588038020b1968567a1af943513c8c2d516b9e243cd56979028d9c5621d525b93abca6053626d4a841216680508a8bf03b08780215c21e5b604c45468199b667a2865a0a28d5f74b204e13302bf535df9726041bb2d65649c27da1031d49e8113ce5e73d7680b7d68036b826a0b2c97c49c8efc302f7941f08251f0ab82d029c019ffe2e2b204f0bd7fb0e054a0ec88a053029b9961258c9b1303d3eab96049e8c0557470ec489f75e732fe9c752cf446e6648601630c170777711fe02024a39b2a91c08130273d2b7c61bb5cc80c4c6b54d6e5ddbd413cb12f0243c09c3714fa5f601bc296bda36ccaad2f4ab2af0e7fa06776eedd0ebf717d6e1dc5e9092e3ee9948149e4a3ff9a4b9a326593d95ca8993bdc26b3c8ed8dedaa3eaf7e969eb83df3e7ff5cb5fbfb8786629059484c8a0790554cb6a032b1b7391c4c642b41431c68bd0b153e74eaeaeed3b79fb8fefb681d7ef4dc01d776196ad9880e537334df7a7801b32b942dc051e39fcf479560e3ccc9dbf7e585d4a017761630568e5411b40e32ae854c8c0250286d7bb506f23d7dc996081058ef0a2c034707ea95893a36e931c93c17220ad25a8ebfc3947209544cb1614c256169d4244ad28e9006ee6ca854c885c3cde7126ea20502c4893246c275a3b291bb917d9e439855809865546f22514a8a3534751998849e507ad49ececfd0c91e9e46c9232077268607cf5fb90bb6b235e19cc1fc2e7088ca21845d13371b7ced10494cf1a18a1ac3566c21ab9a7ca927175b88be870a4da66649b8cea7ab08402843a0905312a04cc2094e826043250c0c607212bf2374425186a85c7d63f62d0b3e1b5cd9d4f1efd4f056afd1c1317a88c51540b2c2f9b539f2d4b6f8929a2bdca18ee4546510c06707d63fb82a5e18f2fbcf9f5f5593c93442f4bb722587beef443fb3f7ce7c58f8f1f5d3deb755d1c56f6393479402b27b2e7a17c0e016274aefe332411f6366e0d2fbff1deb7978001d0ab600fd8c96e6b8ac041e078821580f32f3d79e6e8e1d58375de9c82a42040e50c26415e8a0ca36c8088104cdbbbb52c54dcd8dcbbf9d395abeb06fb02446054c06f025b6302404322188408283f40a37c69add34793f3e3ab2977002ffd00f47ae55842abc5823bf7d7ecffbe1ef8bfe37f01103486b07808ed7e0000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>co_i_digitconta</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

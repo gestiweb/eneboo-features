@@ -1,0 +1,9 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="patch_digitcontabl">
+  <flpatch:patchXml path="contabilidad/informes/" name="flcontinfo.xml" style="legacy1"/>
+  <flpatch:addFile path="contabilidad/informes/forms/" name="co_i_digitconta.ui"/>
+  <flpatch:patchXml path="contabilidad/informes/forms/" name="flcontinfo.ui" style="legacy1"/>
+  <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_digitconta.qs"/>
+  <flpatch:addFile path="contabilidad/informes/scripts/" name="co_i_masterdigitconta.qs"/>
+  <flpatch:patchScript path="contabilidad/informes/scripts/" name="flcontinfo.qs" style="legacy"/>
+  <flpatch:addFile path="contabilidad/informes/tables/" name="co_i_digitconta.mtd"/>
+</flpatch:modifications>
