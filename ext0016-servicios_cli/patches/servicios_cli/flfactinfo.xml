@@ -1,0 +1,27 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[i_albaranescli]/form[form,1]/text()[1]">i_masteralbaranescli</xupdate:update>
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[i_facturascli]/form[form,1]/text()[1]">i_masterfacturascli</xupdate:update>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]">
+    <action>
+      <name>i_servicioscli</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Servicios de clientes")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página por cada servicio. Se muestran los datos de las líneas del servicio, el total del servicio y los totales de IVA, recargo de equivalencia e IRPF ")</description>
+      <table>i_servicioscli</table>
+      <form>i_master</form>
+      <formrecord>i_servicioscli</formrecord>
+      <scriptform>i_masterservicioscli</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_servicioscli]">
+    <action>
+      <name>i_resservicioscli</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Resumen de servicios de clientes")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene los datos de un albarán. Al final del informe se añade la línea de totales")</description>
+      <table>i_servicioscli</table>
+      <form>i_master</form>
+      <formrecord>i_servicioscli</formrecord>
+      <scriptform>i_masterservicioscli</scriptform>
+      <scriptformrecord>i_servicioscli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

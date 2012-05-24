@@ -1,0 +1,46 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[&amp;Ventas]/action[opcionesinforme]"/>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Compras]">
+    <item text="Servicios" name="Servicios">
+      <action name="servicioscli"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">288</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]">
+    <action name="servicioscli"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[servicioscli]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[ventasnew_itemAction]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[albaranescli]">
+    <action>
+      <property name="name">
+        <cstring>servicioscli</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image11283</iconset>
+      </property>
+      <property name="text">
+        <string>Servicios a clientes</string>
+      </property>
+      <property name="menuText">
+        <string>Servicios a clientes</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[config_oofficeimage8737]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image19388]">
+    <image name="image11283">
+      <data format="PNG" length="2109">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000080449444154789ccd975f6c1cd515c67f3bb9ebdc4966cb8cd90d33d4869de0fc5917286b44850da48a45910a05b5a41212ee3f612a2125521f921794bcb4984a085c515551d5aa56d50af3d09220a2122197069a16bb22559c28341b6493dd62b73b7556d9a93d656fedeb491f66bdb61188a2566aefc31ccdcc9dfb7de7bbe79cb907fec723f531e70b24d760730359ae417015008a3a210111ef103107c4ff5d022e7dece47e5960b7dd61773bb667b9393b05600a49bd11a242b55cae551754109e53e7f80dd3bc44c099ff8c409ecf7117fbdd5bdcbb7bfcc28642b6802d1ca490ac8037b46a5985a21a5529852526a74a2a3c13becc6b7c8f80f18f4b20c717f8aebd5b3ed2bfaddf28640bd8d2069dbc542824729d05402b1ce90250d72113c138e3a5c97f86bf0e7fc0ab7c1b883e9a80c50ebeca68e1f6fcad8f1406e9c91619af4da0741d29cc848460d5024a836ff914dd5e7ccb030d87df3a0c02aa5195d7664e507ab572825ff27514b36be136bc0f7c9bfc262fdd7657f1e67bfdfb508b8a87b70fd2ddbe9da9f912d1e20242a45134106d6954dc40a3296ef90c033b06f1367b282d183e3d4c1457416b9cb60cdbaef2d19f8cfc59abb68bd31c03fef141042c0678e1a6ddf99e5d6e3f3ad62ce81a63953176753cc0f6f66e262f9f20d20a6108741c011a29323c5638d05ae4c93f3c4e554f611a92ac95e3a1aeaf517e6f166958e86cfdda200ebbb8c0519a9962b4bebc93fdf93bed3b7ab3fd8002a130a504a938f0fa57a886551eec1a444a5084209258f06d779d8883b73c8267b9b896c3e0cebdf84e376154c51450ccf5e07edefe2237f28df50a48f2f22146767daab8c91219b4a1d17144da80b401994fc0f1ca716eb6fbe8ddb28bd2fc044a472034a18ee8bde61ed2a4017036e6286ee9a367cb2e9c8d39caf532c7df3d0a28449b0d294540b053bfc973804a14b8913dfe4efb6a5b7a2092744240a3a90480ef3a8c540e11ea2a835d079152d2a09e04dd925aa782937670d20e00a3174650a29e28a6437ccbc7be516ea38b7b571410f2b33cee17dded39e911c50a616874ac116d1a8d468bc43a9b4c4ed48ee1db3ebded0f9069cbf060e7b730376400a82f5551b18618a62e4ff1fd379fe25434866b39a8450d6854ac51e9064139fc3bd3bc240047e6d9e1580e8a66aad100090a56ef0534005bda1c0986192a1ca13bb3b7e5f5f8c211462a4f22b58d8a20502152403eeba174a3a940b29e2d4cec4e7684b0490096b4b0ebaa8ab424a09042a2b46a069c42aee4bb50486c063b9ec1c15f277b59959a8119226d898b446a50ba9e7c0b2024a1aaa2a883cd55c066016c40900a75401886b8b68b8399543e4036a31da1f084cf60fe69fc7437ef1f03b94378c26734184ec8239ba0a05a65ba4ea8421a5a210529c0104912d0ac6a8a405508254825f1d69028c87ef6763c8393f65aa0d5a5f3d47548b7d90740bf3390045ef02461d3f35085d4b542450aa5936d349bdbdb82055289a760af3c118aaa0e40c0bdd6c31cf27f0298ab9237c6391ceca3010c64f7d3971958476278f651ea5a25ce0132d9dd4451cd8a0218408c627155ee35b4040cba0739e48fae033fbf30ce50e5d1244db5622438c491ea48eb7dbf33c0c18ee770a46c06f2eabaadfb9025e08a01bca70202bb3941caa615b03fff340f670f3234314475a19a80d74f335cd98767b978c2c7933e9ef4381e0e333a75b845a2cfd9c313f917f02c3b5156aeae2f3550e312d03080cb6a86b755944c5ad99b1e7b377b7207980c2728cba34801e7abe7199e3e806f7bd87838c24662630b1fdff239a146786672a845a227731f4f74bd8c67e557644f32aa0e6a860b4064008bea02bf5597c051e059896c2e3d8927b97e468aa729d7aa0c4fefa3d0e1e00817477a4861e3490f071b47b814b23e258e323471a845c2d345881c9089f78e928401b19ae675e0ca06007d99057903776393f57316294b3171b184ae65b814451c9b1ee5f9b9a7286ef730b1b1858740600907114ba49146c79a140269a528eb094e5d2cd38896786cfccbd4369d236741a7964c4d29164e3351fb3dcf02f32bbfe305e669cbdcca3da986a470ad8b6c0f199b3bc6e4fc18d1a6696edbbaad052e852467e4307130db92322c848946918e416e82193dc9f3effe1c6beb2c7e56e2c71d94ce46a879bd58f929dfd1116fb4140096558dbf48c1f562a72a447528b66fa3b0d547da293ccb85d8c469b3119858468e0c3696b0921c36d2cd5a9f42c5214a2fa384a2d335d96e75e28439de3c5b41198aa9517e16bdc50f691ecfd61e48a2f002e5ccd51464415d17cc85e40c8fbef65e4c912323046881d5e690c1c4922e321648e1a06385661915d7c010a4814eab132fce11566a8c5f9c84cd9a99517e15bcc2105059015d4be00a50ab9de66d53729df369bd35886629cfcde04b0fdfba09dfeac6113eb6f0c9609269f348c5828c914120c9490fc770706249f9af1798b87882ca7c85b480a91f73b4728c27803fb1a66f587f26846520a89de1dcd29fb992dbc90db233324be139662e9f22506504cba4818ccc210061c0427c8968b1c2547892c9608cb1d95f10a81248857a8760fc697e149ce4d926b85e0bf861c7f20d4087b4d8eddfcf9ec297b8c3eec2915652469d667d4dfa83668d6f1610d5bc04e7982bbfc8c9d22bbc80e27740c007744c1fd5196d06ae47726bfe76fabc5e6ef68b5c67e7b9dab4d90818528052c48d884650a2563d43a53cc1d9e08fbc81e60c300bbcf76100ff6e6f6802ed80db542687856367c9284d4c4414d6a8a398036680bf0175560beb878e8fdb9c42f2ab6a03d2acc6d032b0042cf2be3dfebf1fff023917502aa54d3b6c0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[albaranescli,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>servicioscli</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

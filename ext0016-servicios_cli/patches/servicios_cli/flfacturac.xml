@@ -1,0 +1,25 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[presupuestoscli]">
+    <action>
+      <name>servicioscli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Servicios de mantenimiento o reparación llevados a cabo para un cliente")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Servicios de cliente")</alias>
+      <table>servicioscli</table>
+      <form>masterservicioscli</form>
+      <formrecord>servicioscli</formrecord>
+      <scriptform>masterservicioscli</scriptform>
+      <scriptformrecord>servicioscli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[servicioscli]">
+    <action>
+      <name>lineasservicioscli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada línea de servicio refleja la cantidad y precio de un determinado artículo incluido en el documento")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Lineas de servicios de cliente")</alias>
+      <table>lineasservicioscli</table>
+      <form>master</form>
+      <formrecord>lineasservicioscli</formrecord>
+      <scriptformrecord>lineasservicioscli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

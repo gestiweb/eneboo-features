@@ -1,0 +1,9 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codserie]/relation[co_modelo347,codserie]">
+    <relation>
+      <table>servicioscli</table>
+      <field>codserie</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>

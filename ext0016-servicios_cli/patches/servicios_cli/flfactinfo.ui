@@ -1,0 +1,111 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">610</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">610</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Ventas]/item[popupMenu_10]">
+    <action name="ventasServiciosAction"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Ventas]/action[ventasServiciosAction]">
+    <item accel="" name="popupMenu_14" text="Servicios">
+      <action name="i_servicioscli"/>
+      <action name="i_resservicioscli"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_inventarioval]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]">
+    <action name="i_servicioscli"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_servicioscli]">
+    <action name="i_resservicioscli"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_resreciboscli]/property[text]/string[string,1]/text()[1]">Resumen R. Clientes</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_resreciboscli]/property[menuText]/string[string,1]/text()[1]">Resumen R. Clientes</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_reciboscli]/property[text]/string[string,1]/text()[1]">R. Clientes</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_reciboscli]/property[menuText]/string[string,1]/text()[1]">R. Clientes</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]">
+    <action>
+      <property name="name">
+        <cstring>i_servicioscli</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>servicios_cliimage40686</iconset>
+      </property>
+      <property name="text">
+        <string>Detalle</string>
+      </property>
+      <property name="menuText">
+        <string>Detalle</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_servicioscli]">
+    <action>
+      <property name="name">
+        <cstring>ventasServiciosResumenAction</cstring>
+      </property>
+      <property name="text">
+        <string>Resumen</string>
+      </property>
+      <property name="menuText">
+        <string>Resumen</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[ventasServiciosResumenAction]">
+    <action>
+      <property name="name">
+        <cstring>ventasServiciosAction</cstring>
+      </property>
+      <property name="text">
+        <string>Servicios</string>
+      </property>
+      <property name="menuText">
+        <string>Servicios</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[ventasServiciosAction]">
+    <action>
+      <property name="name">
+        <cstring>i_resservicioscli</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>servicios_cliimage35849</iconset>
+      </property>
+      <property name="text">
+        <string>Resumen</string>
+      </property>
+      <property name="menuText">
+        <string>Resumen</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="servicios_cliimage35849">
+      <data format="PNG" length="2131">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000081a49444154789cc5975f6c1c5715c67f935cd33374addea1b63a2339b00b8eeab15a14bb79e8ba20b01ba4b64a244254249222205b7871784a2a2a9222211244d59a074a0412587d4a7980a4404a5ad4e21448b3203571a096c7282e6b299666da58cc95b2626e9b69878759af9dd2bfe28179391acd9df9be73eef79d39d7298a82ffe7a53ec862c771149a9ba8f0093437a1b801004b8a21c1f23286578ba278f37d7ff3fd54c0d9e48c31c40e0919d703feb057f12a7ebf76005c25a499c1b6ed1bad24be6213f3928df8038bfca6b8545cf89f08389b9dcf5167bfbfd5df36ba29dc18f68568e5214a5805cf72db8d164bdc8e894cc4ecc5c89a39f33b4ef3c3e25271f60311707a9d7eb6f17dfd69bd7762f3d886b02f448b86bc7c6eb108724d0420b778e20390e686667296f3d1ec6bc9b3e631cef0dd222bdaef49c0f19c9bf912c7c2dbabb7ed0d1b8cf68d7076a589cd5344b92509c55a046c0eb54a8d11bf4ead12400e47e78e8282b81d73fad20cd1734b339ce42b455a2cbf2301c77336cbd7f8ed487d64686260027238b8f57b983ce1d8e234c696242c5919f30c8091be3176d5f694996719532f1ec112234877dd4c729ae6b3d18bfc82edc595e29555cc0d5df01ea7c24e1e0febd5a131bf8ecd33d23ce6c0997d8066d7600394c5e46927eb14b08872bbe000532f3e449c4700e88ac79ea1bde84ac0485f9d91cf56b772373f751ca7e7bf08703bfbab9fd277d4fb26000bcae28a80580e3c7f1fb189f9c2600311b01850a5166adabf660b1b5bf612547cfc8a476368929a378c69c7b80a46fa47f1b7e9cfb385af5e43c0e975aa32ce37478310b06458b2dc00165741e00b537387306dcbeeea24a2c0e60694256a4764645d02b5de61f66f394ce39683786e402b6d11db842c378868c2fe1a32ce034e8fe3ad5560885db5417da3960054692714649d4a00d47c8fe9a543983ca63178101121232d4577d55e5305afc7c3ebf10038b6308d556959b1dc50abd4d043b25906b9076083e3384a42c675af06c0e416b0d8bc04cfb0649d18688fa34b0fd1ca67d95dddcf84bf8bddb583b81db0f46a4c7a3525bb9a317f799e43a70fd034a7d0e296dfa34c2ee8f7b183dc09a0507832c0cd5ec5c3d2b11a19085858bb5790015a34c793290e87c719ee9dec667df6ca71a6978e20b9c6b621b1065150ed0b4ab7a8d2aea25cb472d19bb8d9719c0f2ba02215746a63a4221d650b36b71dc15964d5efca22681a038fe251bba6ec2d1b758469102df80892afbaa54c0625181b6349a1c20dc0f54a141b5138264f30c6e06b1f0fb7ec7c500aaea38540d568541fa1d633cc5baf3dfd8708548d63c954491ee98082edb6e914630d59999c036c506559e874354b629730026285601d895026981c7814af27e882c657e74973c3b03b06c08457f68363c9916ebf30d690e616dbb6d8bcdc4657caed6015961ca7cc14f4ea0f5a59e23c0105f7547673a8f673c05d2b797696a3c93ea29316497cb404ddf66cac4fcb466bff8a1cc42f7b8a17da8e16705609bce95a5e5f2b37dd3d4741c33f4823387c4db9e7af9c656af97e44205d4e311753b23cc25590e5ac8b42ba1a5b65b47316d961480d57814201ff4e1392107ca3d6b643144c561fe11e3dc9e1e6611ab734087a03e6d3f34c2def23d03e824ba4803cc555c2f8dd6334eafbbb9947ed19a693294c64614ee00a906a98058cb90c641bc8f91797f8876d83ee580f60548fb3abff00b3a6494b4e200ae6e379a6160f50d3019a004fe96ed9b3dc92f4cf32939f62ecd631466f1d654ffd003fbeeb38b51d1ad96ebaebec82602fb100b4371445f1ba59e08ff6327816824aa95e9f5100c6fa27981e394f6b25666a711fe18087a77c3c0910a5719540a7ccbef68938c1e1e6a1ee7605f908b43d64b3edae2303bbc8f3455114a5f6979849175910cd50a805b4e589c569dc951a551d1299b334ed09ea43355c345a051d77e8ae56b2dce2e211f82ead95131c6a5aea7a9c23730f60fd089995b5750a6b97f9cb7a17b4ccd34c7b433c922c42b8a58a1e4c985eda876efb04daa33e1476c145091e1e20081af2b814daa57203054dd43ec5a997a6918a459a1ad3d4d019dfd215f3141077091445f1bae338bf4c9f664cee353ba339a80f85845b84d81a3c7c6c0e9e4807c043d0ddd97035b3e693e7dfc605d2b92fffac99357f4fce98c9a228de80f5f3002c2ffd9a87cd195ec894a1b91061976142c6a9495836a51c44092e20a2bb134f57039b3c866f0df0377b78bd6bda208760c492f524334bcf983dc0e555d0eeb9a0288a371cc7b910fd846f63f94eed5e7be76cd2a4b5d262a23a41ad6f045d09008de07549ac7741e3cb93d4863cac8d399f343975f23cad6699793c2b57ed927e1ccc42b16e0ebce6605214c56b8ee3fc357a9c07b38bdc3ffc75be489878a79227f0574e11e890508f1148885b298797d501d55542cb34692dc5446616b004e3608dbe6222e97595f4b8557ee40d5623e0dc2ae6db8fe58eb3111810cd786d07bbc29ddca1ab7852a1a3053a2e10661e13cc4521cb61ec1b0619b460217989575b4ff2a7e8197e156ef3efcb607b471be75a27e3adef4a601d91eb818f89709b7f3b63419d4fd646f8a8ae72a3abb90ed870fe673e490428c1af27afb06217a23ff337738117ace502b01c6ef7af43c9cbe4d64309e4f6c1f993f1c3ef49601d1117f808e0030352a11f8da735bd32a0f7b8221fcf72b04bf6a164ce3c05bc02a445517467b5da8e609bab78769d4bb6b64ec6e7de1781b79051c087801e6063b8dd3f017c86f2787657eb64fcfb777a777847f003947c8bdc82927f92dbad1fe8740c5014454ef79006b51dc17e57e1757c7eee5d5e05c5c3596e9f5bdf17fe03e4c8c7a193761a870000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[servicios_cliimage35849]">
+    <image name="servicios_cliimage40686">
+      <data format="PNG" length="2106">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000080149444154789cc5974d6c1d5715c77fe35cc319faacdea1b63a2339f0061cd563b528cfc9a2cf0581dd66d1aa9128519148f88c0b0825ac924a88b84888840fb566534545a5a6ab944589f908a4482d0ed0d60f44898312798c62f42cc5d24c5bc35c2916731b4ffb58ccf3b35d08b4b0e06e8eaee6ce9cfff99fff39f78cd36ab5f87f2ef5760e3b8ea3d0dc4c85f7a3b919c58d0058320c2996bf6078a5d56abdf196bff9561870b63b230cb257224675bf3fe455bc8adfa71d005709596eb0abf6f5669a5cb5a9b968637ec5223f6d5d695df89f00383b9c3dd439e2eff6ef1ade1e6d8b7a23b4f21025ac3bcf0bdbb1164bb29a109b98b9cbb13597cc2f38c7775b575ab36f0b80d3e3f47117dfd41fd207c7768c7445bd115a3414e5738b45902d1680c2e2890f4056181ae92ce7e3b9d7d267cda3bcc0d75b796bf53f02703ce7163ec1a9e8f6eaae83d138c3bd3566571ad82243945b82506c58c0161056426a7e9db0124001272f9d0405c96ac2b92b33c4cf2dcd7086cfb4b2d6f27501389eb3433ec7cf6af5dae058ff1814706cf7373045caa9c5298c2d4158f2d2163900b5de11f68507cac8f39cc9974e604910a4736e263d47e3d9f8257ec8bdadabad97d77d76759c773b15eee3c9a85e1d1cf1ebd822272b128ebe7018d0ec1b1807653145d68e3a032ca2dc8e7380c9971e2229620074c5e3c0e0417425a0d65ba7f691ea6eeee67b8ee374ff13006ee748f583fa8e7aef186041595c1110cbd15f7f92c4247c6c601c11b01850a51642ed6f49e1f8ce8304151fbfe2313e7888d01bc2ac26b80a6a7dc3f877e98fb293cf6e01e0f4385519e5cbc3410458722c7961008bab20f085c94b139855cbfeea2144812d0c284bbc1a93937700843d431cd9799cf15b8fe1b901cdac496253f2c220a289fa426494079d6ec7db6060907de180be494b00aa2c2714e46d260042df636a690253248c0f1c4344c8c94ad1add92d2c78dd1e5eb707c0a98529acca4ac60a435809d183b24306b807a0cb711c2511a3ba4703600a0b586c513acfb1e46d1b688f934b0fd12ce6d85f3dc298bf8ffde131dcb6b36c2d215bcbc8d772e65f9d67e2dc511ae62c5adcf27b94c1057d3e76803b01140a4ffab9c5ab7858daa5460e021636f60a72408be6743ac9f1e834433d873a51cf5e3dcdd4d209a4d0d85548ad4114547b83b25a5459aea25cb472d1dbb9c5719c7729a02215746613a4226d650bb6b06dc15964bdde9545d08cf73f8247b885f6a68ddbc23488167c0429d6aba50c0625189b60c9a0c28dc00d4a14db5038a64831c6e06b1f0fb7ec7c500aaead8540858c571f26ec1ee2cdeb40df04810a39954e96e091b653b09d369d61ac212f8373802e55d242bbab5952bb8411102b049b404432c6a1fe47f0ba838ed3646d9eac300cb923008c79653f38959ee8f40b630d5961b1ab165b946974a54c07eb6e2970ca4841af5fd0ca92142928b8a7b29f89f009c0dda03c9fe5647a98f88c45521f2d41a73d1bebd3b471e7aea0df42af207db65dc2200a671dc01baee5da06dd74728e8271ff18e3c1f12d74cf5f9d6572f90144205bce309733f222c65590176cb2425680dbd4e53eb4306acaf70c6b404b017fcf52d2087ca336d2210a0e551fe61e7d88e38de38cdf3a4ed013309f9d6772f93081f6115c62051419ae1246ef1e61bc7ea41379bc3ac3c9c624e677e022d004ac8fec49c1f02a907751f037aef067bb0aba5d7a00c37a947d7d4799330d9a328d28984fe6995c3c4aa80334019ed21ddaf3c292f6cd31539c65e4b611866f1be640fd284f7ce934d183027d65fbce13b00d8dbdc202b0dad56ab5ae99057e635f05cf425029d5eb330cc048df1853b5f334571226170f13f57b78cac79300511a5709b4e9f6b54fcc34c71b139d7405450d0a0fbdd776ced9cb02cbf28756abd52ab5bfc44cb6c8826806232da02d4f2d4ee1ae845475446c6669d869ea83212e1aad827675e88e56f2c2e2e211f82ecd9569261a96ba1ee5c4a507b17e4c5005bb1db22be5fd22fde26eae82a67986296f9087d345887656d10329534b87d1ab3e81f6a80f461de7a2040f0f10040d4582ab0441f010e8f56972968796a6d08386b02204d627a9185ca5cbc9496baf03a0d56a5d731ce7e9ec1946e47e735f7c09ea8311d14e21b1060f1f5b8027e52c58bad19dd9709d81726fa170918a50bf35c05321acc0ecc518647d8684bcb06fc0e6790096977ec277cc0bbc982b436321c62ec3988c124a5436a50244092e20a23b13cf7a6ecb36aef1946658d71856355882d98539e8b1641789376b662305250baf3b8e73217e8caf62f95a78bfbd732e6dd05c6932561d23ecada12b01a011bc0e88cd55104a8d503cac4d38bfdc602e9dc558832b30ff03a6b1d29fab0e03d916006d10af398ef3fbf849be925fe681a1cff371a2d43b9b3e85bf72964047447a844022dc4a39bcac0fa8ae129aa6417329213673e5b30ad0249d7d8c53a4321dece6e7288172947f0eae37963bce36a05f34a3e15ef645f77187aee24985b61668578130f3a8602e0b7901235f30c880050be9455e69fe98dfc6bfe447589eafdeeb7fda557cabdd299f9bff71b2e7ba003601b90178af08bbfcdb1909ea7c20acf11e5de52657f34ea0ebfcf77dd21850825f4f5f66c52ec4cff327738117ade54275b7bfeafa7c0a25dfa6b0b419d8337f26b93e03ff02880bbc1bf0817ea9d087c6d39a1ee9d7075c91f7e50550b008fcd5555ccb61cd55dc9817ec7ad31df1c5e699e4f1ceb7dfeedfb1e3380a7807d00d6c8beef5a7810fafe7f6dfd8a729ece3eb91ffd700debcc2bdc12e57e16dbd05b7d8ac7926f9e3f5deff07416aa8371517354a0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_reciboscli,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>i_servicioscli</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_servicioscli,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>i_resservicioscli</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

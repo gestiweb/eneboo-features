@@ -1,0 +1,26 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodigo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">96</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodigo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodEjercicio]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">131</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodEjercicio]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">86</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbNumero]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">103</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbNumero]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbNeto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">82</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbNeto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotaIrpf]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">105</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotaIrpf]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotalIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">103</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotalIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotalRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">132</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotalRecargo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">96</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:insert-after select="/UI[UI,1]/customwidgets[customwidgets,1]">
+    <customwidgets>
+</customwidgets>
+  </xupdate:insert-after>
+</xupdate:modifications>

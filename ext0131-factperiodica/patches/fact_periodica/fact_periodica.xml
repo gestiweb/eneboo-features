@@ -1,0 +1,27 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fact_periodica">
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" style="legacy1"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="articuloscontratos.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="articulostiposcontratos.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="contratos.ui"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="mastercontratos.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="mastertiposcontrato.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="opcionesinforme.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="periodoscontratos.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="tiposcontrato.ui"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="contratos.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="mastercontratos.qs"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="opcionesinforme.qs"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="periodoscontratos.qs"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="tiposcontrato.qs"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="articuloscontratos.mtd"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="articulostiposcontratos.mtd"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="contratos.mtd"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="opcionesinforme.mtd"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="periodoscontratos.mtd"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="tiposcontrato.mtd"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" style="legacy"/>
+</flpatch:modifications>

@@ -1,0 +1,57 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">210</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnAsociarAFactura]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>toolButtonPrintServ</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>servicios_cliimage6</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Imprimir tabla (I)</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Para imprimir los registros de la tabla</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="servicios_cliimage6">
+      <data format="PNG" length="2189">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000085449444154789c9d975f8c1d7515c73f83537bc6cc86df4fee867bcd967690c60e2984bb40e0ae35ba05a36d43a4ad6268411fea83e9aa510b89a4eb8b29f1a5c4987479305d1e90a289a48d21ec936e1fa8f782347b414a6f93d6dec556e762d7cc4f7a650e76607c98dbed1f6aacfdbdccdce4fecef99eeff7fcbebf335e51145ccbf2a2b1db115b61be79b8c8d277af2908e05d2b8060e3d44fcdf8c48fdce9b9b7996fbfaac7679bf43a4d7aedb78aa278ef6ae3f8d7941d105bad441590cae872bd6374b9f6b73d942c24853b31d7f66a634fd26b1d28aea2ba6b06000cdb25e58b15902188878dd735a3a39dcabe17dcc1a9ddde92e0c7c5b9ecfd6b02e00d7937720bf757e3ea3d764422424c72ccfd493bee653dc2c1eae36fdd002002e2974f14e261b03eded1ca8ec77b2be3c80becb78b2cfdc7ff05c06b78dfaf3f19ef68d41b23b5b0862068aeb04ed738cdb637dbadb73baf3f2f22bb380f021fc404284af55c0a794af4f096af765698616fa8f668713639f53f01789eb7c43c283fdbf2934d13bbefddcdf4b169c8154511dfb06dd58ef25d9e5a5e5bd9a6f3f224f5f15de09732e04350b164b9c3f41dc6efb1fe89cd9f9faad803de70f47071a67bfc7200d75dfc43bec08eb5db1b13515865767e9689d513b83cc1913056ad6303cbbe63d3d4c4b067cd1ea246934e6b0af121e3821441c5947af8198166ac5dd7b8d33cb1e7b7deb268f4bf02f086bc4f451b57fc300a23521c4d37c3f327a6d979c76e32dc225713ab2798b86d070a548d85701fea5282f332088808120ac9991e33076671075bd42bb7c6e6e13d07bca1da5d57966005f7472b6bc369de437c40e0a8cef27c4f995cbd0780f45c82e6e054993cfc1d8c2f9848e91d6f62ab1bc0075d0ca8d8d309288801bb9020f3f337a2bad2f3bc7651141f5c02c08cc82d9938f0051d54a238c4875a1001307d6a92d98599326868709a41a8a4da017f432963493e12184c0564a80a7e40af9be13ab347c9dd5f00ef0a4da81fef6907cdbbd44c1572657d751bdb6abb808c0c65cbb21d74f30e1d3787d394541d49df11f57bb09042685101fc80a012612b0c8e4840ab3d87f63ab3c0c9a228f28ff48040213ee02bdd7c9ef5d5ad83e4b0fbd4b7e8666d38073ba3e7306249984771d81022521aae4934ff12b5134de4f4d152c6d0226180f62139d15e60a1330bbc73c526d405ce08a03e6c1bd94eecaf27399b30dd9dc4d1e599de24ed7e13cd94ddf14bd44d7d91efc844d4466ac42335e250a96b97e8f82ce644133d9dd2399ed27b73e655a05314c587576c429de70f9c223775fc2aa34412b3eff453102644328600b3fda70188748c98b574a58d26427d659d9ab1640a8482aa6215d285845e324be784437a7387143e62461733d04e7e27af5915da3ac3e4b1cda874a94944e447183f22923a33ee2926e7ef230833ac0a716f3db7ae1e055fb0a1800458633146a88d444435cb963b0c5b36ae7dd08426ba1cc022038d7b1bf5898d3b6edddf7e8cf4ee592656ef2ded1730d4c087ae42148eb2be5267dffc24daaa32b16e27261418d8b5452057f0057ca5ea571111363db0e91e1bda17acb55f4fd3f4d82500ecb0bd7eef2f9e7b7af3c60dd747ad1a53adc798d247a8853113abf7629694c0ad6f983a324553a7d156c4cec61ea255314280e619e25f945c15444a8704821c1a8df1db53973e132c093665e7b2de22802d5fdbb27df397378c028c35c610d9cbfe83cfd03533ecd2fb401c0142e640bb31b14eb075e304a65a23f021cbc1fa01595e1e41cd33242c41880f296042c854195bb3b6d1e9741ef73cefb1a2280a3f180a82e79e7de1518292922449b1c6b2ed81099aafd5495e4b502da5884d8deab22a1bd66db844c760301704e74a30e207a8968c68ae04bea07e860d052742fdeeb12dadc3ad678137fc7845bc5c2488bac713ce1b69964320c258632d4664e0f116cd33d439e65a73b8be23d38c00c872859cc1ad2904be60aa35acb188941793f8e71d52b0c654ab95ea9dc01bbee6ea93675eb7d7457c19dc6842a62508cdcba0ed2373743a6dbaf35d068490f9826251dfe0ced3913b0c8a681beb2bd5aa215e398aad183407cd1429fff949cff37c3fe925a77a49ef741cda4f9757a894fd1332682843b2e09879713f46404d9da63f0a7e15f5c184012c61b11700d2acec41750932df243e3c4d7c4b4c7c5b8caa9238f76fedebdf80c24fd3f49f5b1fdafaebeab2686730d04c04e82b48395c043ed4466a1c3d7294f955116bbf18d1397161123272a11f34a7942307d51a4d1741478136125a54533a6fcefdd1f5dd91a2283ef001f6bfb8ffe7f1aaf84bf5c6d85d01a59395d7615aca91c3f8e7c6915a9da03a4a7da4ac30ed830dcbc4e735b6f905108903eb5b6438221a117a0b09dd4ee764eb50eb69e0e4e231ccb2ec8cb5f61bdbfafacb46a37ea7882553251041541129cf77978868049c963b6d78810105cc8001c921752cce158ad03dddfdb07bbc7ba8f57a6b8a9cdf1745d1bfc409d334ed044b82af743a6b778e8f8f7f338ae24fa019990404aaa4b99088a16ea0d32bcd4516e7868b9253566f7d480011433755d77d6566ca39f71be0cfe7935f0200203b97fdd5f3bcef355f693e1fafae3f52af8fde178d546fb6c65e37ab75a2f100e7c0f5061b0686873fa09d0b4ff2418f008a49d5b9fd4551bcc165eb2363f9605838e479de2bad43076faa1a73bb5d117f36fac14bdfad094be78e80eb5fd07c31a95f2605e01cc8c09c6ac6d2b1d10df8b2f4f25c570470199093c0c9a03111983e4ba77f3547da4bfaaace699aa4a8beabeacea2d97b9abb5c10d4e763227629be0c99e15a45aaf14d129a210dcdcd40ebf23c57f571ea45636b24e71e75ddbfa3ee1d723d0bf4817f5112f1fe45f55f37286c2930842f964af419fae93cfddecb178f63570d00ca8f9692984b035ced1aecffe0f289e83f4ce3e462df9d18d70000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]">
+    <customwidgets/>
+  </xupdate:insert-after>
+</xupdate:modifications>

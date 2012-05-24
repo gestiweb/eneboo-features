@@ -1,0 +1,66 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazadoc]">
+    <action>
+      <name>contratos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contratos")</alias>
+      <table>contratos</table>
+      <form>mastercontratos</form>
+      <formrecord>contratos</formrecord>
+      <scriptform>mastercontratos</scriptform>
+      <scriptformrecord>contratos</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contratos]">
+    <action>
+      <name>periodoscontratos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","periodos de contratos")</alias>
+      <table>periodoscontratos</table>
+      <form>master</form>
+      <formrecord>periodoscontratos</formrecord>
+      <scriptformrecord>periodoscontratos</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[periodoscontratos]">
+    <action>
+      <name>tiposcontrato</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","tipos de contrato")</alias>
+      <table>tiposcontrato</table>
+      <form>mastertiposcontrato</form>
+      <formrecord>tiposcontrato</formrecord>
+      <scriptformrecord>tiposcontrato</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposcontrato]">
+    <action>
+      <name>articuloscontratos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>articuloscontratos</table>
+      <form>master</form>
+      <formrecord>articuloscontratos</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscontratos]">
+    <action>
+      <name>articulostiposcontratos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>articulostiposcontratos</table>
+      <form>master</form>
+      <formrecord>articulostiposcontratos</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]">
+    <action>
+      <name>opcionesinforme</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","opciones de informes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","opciones de informes")</alias>
+      <table>opcionesinforme</table>
+      <scriptform>opcionesinforme</scriptform>
+      <form>opcionesinforme</form>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

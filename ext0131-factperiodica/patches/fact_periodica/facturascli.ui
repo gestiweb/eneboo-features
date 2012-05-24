@@ -1,0 +1,8 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:insert-after select="/UI[UI,1]/customwidgets[customwidgets,2]">
+    <customwidgets>
+</customwidgets>
+  </xupdate:insert-after>
+</xupdate:modifications>

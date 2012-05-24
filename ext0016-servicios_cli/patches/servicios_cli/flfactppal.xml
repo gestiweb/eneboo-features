@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposrappel]">
+    <action>
+      <name>tecnicos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Técnicos al servicio de la empresa")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Técnicos")</alias>
+      <table>tecnicos</table>
+      <form>master</form>
+      <formrecord>tecnicos</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
