@@ -21,4 +21,26 @@
       </property>
     </widget>
   </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLabel,lblPedidoCli]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblPedidoCli</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>25</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
 </xupdate:modifications>

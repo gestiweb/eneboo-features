@@ -29,6 +29,92 @@
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formpedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/grid[grid,1]/widget[FLFieldDB,fdbTotalIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">90</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formpedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/grid[grid,1]/widget[FLFieldDB,fdbTotalRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">119</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formpedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/grid[grid,1]/widget[FLFieldDB,fdbTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">91</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formpedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox14]/property[title]/string[string,1]/text()[1]">&amp;LÃ­neas</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formpedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox14]/vbox[vbox,1]/widget[FLTableDB,tdbArticulosPedProv]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout32</cstring>
+      </property>
+      <grid>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="1">
+          <property name="name">
+            <cstring>leCodPedidoCli</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>400</width>
+              <height>0</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="alignment">
+            <set>WordBreak|AlignVCenter</set>
+          </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+          <property name="name">
+            <cstring>leCodPedidoCli_2</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="text">
+            <string>Pedidos de cliente </string>
+          </property>
+        </widget>
+        <widget class="QToolButton" row="0" column="2">
+          <property name="name">
+            <cstring>tbnPedidosCli</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>32</width>
+              <height>32</height>
+            </size>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="iconSet">
+            <iconset>image41037</iconset>
+          </property>
+          <property name="toolTip" stdset="0">
+            <string>Asociar pedido de cliente</string>
+          </property>
+          <property name="whatsThis" stdset="0">
+            <string>Permite seleccionar al pedido actual un pedido de cliente que no esté servido y que no haya sido asociado a otro pedido de proveedor</string>
+          </property>
+        </widget>
+      </grid>
+    </widget>
+  </xupdate:insert-after>
   <xupdate:append-first select="/UI[UI,1]/images[images,1]">
     <image name="pedprovclit_gomez_picazoimage41037">
       <data format="PNG" length="1935">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000075649444154789cc5974f681bf915c73f4a66db9fb60a1d250a8c406e35e08047247467d840674eaba13d54861edceda139b59b4b21b487a685424aa19742a12d2c745952929640d8c3eed6a7b54a4b33826e33031b7b14d6ce284d84641c6369b38e2db6c69aa62abf1e7e4a1c3bce9f85d2fe407c79fa8979ef7ddf7bdf37ca4829f97f1e6def17994c46b38e5baed0c48b4066736b33c3485d6545f6a0100220d35d4f8783c1e6225bfd8f804f9dc5c3c4a594bb3e4208fdddb7dfed4b29a5bc2be5beb821e5f68a94f6af6af7f4f3f69ff46fb93fd727cfbe82263efb690290523e1e001a873b973a1f6ddcdd90524ab9fdc9b6c2edddb8b1b626e58a94b59f9d93faa5b2d4435d1a61f9bafe4af5fb42e885e70de0c0de0ba1094242f247f3d083acc8c21dc866b3d0ddc17cae48dc0f79f79be738b57406d13261947e69e6cfd6ebfadbfa82fee5ea7781cf3c2b90c7024847291e5ea6d7eb410ec2f91034e8deee420192c5047408af8758bacdecb5597ef2d237a8dd3c45fac722f5bfcc92ff4afe0bc5b7066f1aaf5b578461bdf25c543cd203872f5fbaacaa7d4b4ab93dc6fb52ca95710faca83e901f48b9116fc8cb972ecbb5a023ab3f3a2bf5594bea7543be76f735595d9991f686bda51f774f3f7709c60cd0ebf5e0187457bb700c7aeb3d9880cd8f376102ba832e94205c0df18ff904dd80b3fa6b707b0806cccecfd21a85e8ebe6e7ac0fc46ff597abdf7bae128c7b20532c164916134c61420b8a3965e7451e16c11426613bc4d11dea8b75eca3364deae8a51ab4809ccee09d3ccdc860f0cee080febbeeafc5a4fbedbdfe327b8528f342e670e762e7efe2aba250d48b74fb5d4cd3a477a74771a2c8e6c79be48fe6e976bb988649381f62e916413bc0193a4c2f9fa6c70073ddc2d26c8a224b5554698c1ab4d67bf782dfbff1f5746b103ef0bb1f0399909062b10803300d137a509c28c2266a3a3e06d3346109ec824dd00ef00a1ee128e49cf11bce709a3f7ced1cb5a93c67ab35b05afcf23b6798396e1e310aba03649e58825d5320205e8a411f4f810661b43315c3dc5039373ceab7ebd8a94d4ac4e9528da01b61a72eb3ad3a957f3804ed0077e4928e520d38f8f41e18290692d50467ca8165304b26ac83e77ab0a5ecd6568be997a6d1b774664eced0cab7983931437c2866c69ea15bec72eae429e24331fea44f83064213bb7deea384473a173beb6b2b6b52de97b2937414763a4a01c70af9c05e8817a45c1b6347caabe155857fbd2ae58a9457822b72fbd6b6bc1a5e9537cedf9046c9380b684f946221c4910b172fac4b29a55c1bcf7f673cff6b3bbb404531c664ac171f2a5cf86041ed8d50fde64a7045ca15292f9cbf20cbe5f20f1f0d60df1ef0f1e97655cd83bf059083a49980182ba118f7440e929652c6a49d4059f58c537008960236c526734b73d839d5a82e2ee9287d7a09c60cdc93f7a5bcf1e10d293f192be1a3193f50c48d3df6a3cab9312ec32d29dfabbf27e5ad870cfcf8b91848da0995a90ac9b2ca2c594ca0b0a384bd5e0ff2d0bba314b2db558a99dc548cc4ed18afec112c077825852e2ee3117cf2180a4d1010642ae50acc4345af90dc4ca8142a701df2224f7c2da6288a4a214591f85a8c993321824aa1c2dcfc1c56ce626e7e0e5bb7a937ebb8864b4404da6e9ffb32e0e2aa9a1a30b73447c5a810afc6aac6ed1867d221e92750827839c6311c755f82a01d303d39bd2b730f8f7abbae18183d2300a109a25144a5542158560f63099c9243b81ce2180ef41533713bc62939b00a8ea1eedd82cbb03dc42ffbcab9a114d2333c22227ccdcf3c35807494665cdc4cdc8ef1a77ce2ad18a6205c0ef1263d95a901713fc6298f339fdcb98ffa119421580ef0277d823b01be50dbd2c5252038f8d40084268888546637c1d22ce6aecf61098be1cd214ec121bcaeb6e0707e8895b308db21b66e335c1aaa9adfac531115eaad3a76dea63ea8e34ff844a388ac967d2603b8b884ed906161a83229fb84fd906c394bb81a621bf6433bea47d8ba4db41a911a29613fc42fa98cbd9147d48b7085fb9081bd3e9fc440c62b7944eb117ed98755544ddb0176c18655b0755b8d56c185e59d7bcff0086e07d4ac1a2121fe844f236de04d78346850d5aa0778640c1f7b1fc8be902d2cbcb1d0ee1feb7fde1216f5c53a7ece277e21c6f997a31a0a8f6014e06b3e21633b55dbae316aa8fd9f36186e0d95ae683e4dbd49952aafbef9ea2f5a4bad9f4a29efefcb001a44a308bfe413f7d5564b0e25d48ed7145a0a4f9d3c459257767c28a676a246eb688b197b86a668523d5625afe7a99da829e76675df6db8ff14686e26580ef0a77c9a8326fe944fb41a313d35adece33e513fc29ff409d7436a9335e2f5f8a1ed1ff3696e36f1730aaba24a7427a24a9574943ebd0975a1138d224ccde4adf7dfc264072fbe7f115333998d66155e9ba5222acc3667a9e4143ab9f13b62dea6be55c73dead2d86a601fb5698c1ad4446dd7dfc1fdde095f745f767f908ed22f0a4dc874942234c10364a4caf4d0de7bf6deefd819a18903ad76ab31581fbc23a5fce7fe0164320f96c58b3cd2adffc52381a194f2dffb06f0bf3eff01a2e50cb6c9b3df2f0000000049454e44ae426082</data>
