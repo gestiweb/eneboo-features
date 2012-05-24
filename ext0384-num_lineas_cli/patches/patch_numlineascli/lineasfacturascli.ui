@@ -1,0 +1,38 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/property[name]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbNumLinea</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>114</width>
+          <height>24</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>80</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>numlinea</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

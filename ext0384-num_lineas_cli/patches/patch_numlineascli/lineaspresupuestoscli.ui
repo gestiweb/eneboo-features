@@ -1,0 +1,94 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">694</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">376</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">118</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/property[name]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbNumLinea</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>114</width>
+          <height>24</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>80</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+          <italic>0</italic>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>numlinea</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">124</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">41</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[fieldName]">
+    <property name="foreignField">
+      <string>iva</string>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[foreignField]">
+    <property name="fieldRelation">
+      <string>codimpuesto</string>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">92</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbRecargo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIRPF]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">66</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIRPF]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">99</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitario]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">115</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitario]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpSinDto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">106</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpSinDto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoLineal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">97</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoLineal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoPor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">86</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoPor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">123</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,gbxComision]/hbox[hbox,1]/widget[FLFieldDB,fdbPorComision]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">119</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]/vbox[vbox,1]/widget[QGroupBox,gbxComision]/hbox[hbox,1]/widget[FLFieldDB,fdbPorComision]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPresupuestosCli]">
+    <customwidgets/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

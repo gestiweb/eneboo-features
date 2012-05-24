@@ -1,0 +1,18 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="patch_numlineascli">
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspresupuestoscli.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspresupuestoscli.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_albaranescli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturascli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_pedidoscli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_presupuestoscli.qry"/>
+</flpatch:modifications>
