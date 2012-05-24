@@ -1,0 +1,162 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[co_rectificaciones349]/text()[1]">T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.</xupdate:update>
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[co_partidas349]/text()[1]">T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.</xupdate:update>
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[co_tipodec303]/text()[1]">T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.</xupdate:update>
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[co_casillas303]/text()[1]">T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.</xupdate:update>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_datosfiscales]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_modelo180</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Modelo 180")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Presentación telemática del modelo fiscal 180")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_modelo180</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>co_mastermodelo</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptform>co_mastermodelo180</scriptform>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>co_modelo180</formrecord>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptformrecord>co_modelo180</scriptformrecord>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo180]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_detalle180</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Detalle 180")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Proveedores con la cantidad que aportan sus facturas a la declaración")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_detalle180</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>master</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>co_detalle180</formrecord>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_detalle180]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_facturasprov180</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Facturas proveedor 180")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Muestra las facturas del proveedor seleccionado en la tabla de detalle, de donde salen los datos calculados en el modelo")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>facturasprov</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>co_masterfacturasprov180</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptform>co_masterfacturasprov180</scriptform>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>facturasprov</formrecord>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_facturasprov180]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_modelo349</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>El modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<br/>Restricciones del modelo: El modelo calcula de forma automática las operaciones intracomunitarias de clave A y B.<br/>Datos necesarios: Todos los clientes y proveedores intracomunitarios deben estar identificados con régimen de iva "U.E.". El domicilio de facturación de los clientes y el domicilio principal de los proveedores debe tener el país establecido a un país de la Unión Europea.<br/>Dichos países deben tener informado el código U.E. con el correspondiente código que les asigna a Agencia Tributaria</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Modelo 349")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptformrecord>co_modelo349</scriptformrecord>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptform>co_mastermodelo349</scriptform>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_modelo349</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>co_mastermodelo</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>co_modelo349</formrecord>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_rectificaciones349]">
+    <action>
+      <name>co_rectificaciones349</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada registro de rectificaciones está asociado a un modelo 349, y representa una estrada en el apartado de rectificaciones de periodos anteriores del modelo.<br/>Estos registros pueden generarse de forma manual o de forma automática pulsando el botón <i>Rectificar Modelo</i> del formulario de modelo 349")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Rectificaciones del modelo 349")</alias>
+      <table>co_rectificaciones349</table>
+      <formrecord>co_rectificaciones349</formrecord>
+      <scriptformrecord>co_operaciones349</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_partidas349]">
+    <action>
+      <name>co_partidas349</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Partidas asociadas al modelo 349")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Partidas asociadas al modelo 349")</alias>
+      <table>co_partidas</table>
+      <form>co_masterpartidas349</form>
+      <scriptform>co_masterpartidas349</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_partidas349]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_modelo115</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Modelo 115")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Presentación telemática del modelo fiscal 115")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_modelo115</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>co_mastermodelo</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptform>co_mastermodelo115</scriptform>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>co_modelo115</formrecord>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptformrecord>co_modelo115</scriptformrecord>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo115]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_tipodec115</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Tipos de declaración para el modelo 115")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Esta tabla almacena los distintos tipos de declaración para el modelo fiscal 115")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_tipodec115</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>master</form>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_tipodec115]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_detalle115</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Detalle 115")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Proveedores con la cantidad que aportan sus facturas a la declaración")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_detalle115</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>master</form>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_detalle115]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_facturasprov115</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Facturas proveedor 115")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Muestra las facturas del proveedor seleccionado en la tabla de detalle, de donde salen los datos calculados en el modelo")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>facturasprov</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>co_masterfacturasprov115</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptform>co_masterfacturasprov115</scriptform>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>facturasprov</formrecord>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_tipodec303]">
+    <action>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<name>co_tipodec303</name>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<description>QT_TRANSLATE_NOOP("MetaData","Esta tabla almacena los distintos tipos de declaración que puede tener el modelo 303")</description>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<alias>QT_TRANSLATE_NOOP("MetaData","Tipos de declaración (modelo 303)")</alias>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<table>co_tipodec303</table>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<form>master</form>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_casillas303]">
+    <action>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<name>co_casillas303</name>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<description>QT_TRANSLATE_NOOP("MetaData","Esta tabla almacena las casillas calculadas del modelo 303")</description>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<alias>QT_TRANSLATE_NOOP("MetaData","Casillas del modelo 303")</alias>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<table>co_casillas303</table>
+l modelo 349 recoge la información relativa a las operaciones intracomunitarias de la empresa.<form>master</form>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_casillas303]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_partidas303</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Partidas asociadas al modelo 303")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Partidas asociadas al modelo 303")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_partidas</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>co_masterpartidas303</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptform>co_masterpartidas303</scriptform>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_claveoperacion]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_modelo303</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Modelo 303")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Modelo 303")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptformrecord>co_modelo303</scriptformrecord>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptform>co_mastermodelo303</scriptform>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_modelo303</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<form>co_mastermodelo</form>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>co_modelo303</formrecord>
+</action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[co_modelo349]">
+    <action>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<name>co_operaciones349</name>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<description>QT_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<br/>Estos registros pueden generarse de forma manual o de forma automática pulsando el botón <i>Calcular datos</i> del formulario de modelo 349")</description>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<alias>QT_TRANSLATE_NOOP("MetaData","Operaciones del modelo 349")</alias>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<table>co_operaciones349</table>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<formrecord>co_operaciones349</formrecord>
+T_TRANSLATE_NOOP("MetaData","Cada registro de operaciones está asociado a un modelo 349, y representa una estrada en el apartado de operaciones intracomunitarias del modelo.<scriptformrecord>co_operaciones349</scriptformrecord>
+</action>
+  </xupdate:insert-after>
+</xupdate:modifications>

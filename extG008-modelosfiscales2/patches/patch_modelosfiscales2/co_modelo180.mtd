@@ -1,0 +1,207 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>co_modelo180</name>
+	<!--Modelo 180-->
+	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Modelo 180")</alias>
+
+	<field>
+		<name>idmodelo</name>
+		<!--Identificador interno de la tabla-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>codejercicio</name>
+		<!--Ejercicio al que corresponde el período del modelo a generar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+		
+		<relation>
+			<table>ejercicios</table>
+			<field>codejercicio</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>fechainicio</name>
+		<!--Fecha de inicio del período correspondiente al modelo a generar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Inicio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>fechafin</name>
+		<!--Fecha de fin del período correspondiente al modelo a generar-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fin")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>idtipodec</name>
+		<!--Tipo de declaración (usado en la presentación telemática)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo dec.")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>1</length>
+		
+		<relation>
+			<table>co_tipodec115</table>
+			<field>idtipodec</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>cifnif</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","C.I.F./N.I.F")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>9</length>
+	</field>
+
+	<field>
+		<name>apellidosrs</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Apellidos o Razón Social")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+	</field>
+	
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>15</length>
+	</field>
+	
+	<field>
+		<name>tiposoporte</name>
+		<!--Tipo de soporte: C: si la información se presenta en DVD
+				 			T: si se hace por transmisión telemática -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo soporte")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<optionslist>C,T</optionslist>
+		<default>C</default>
+		<type>string</type>
+		<length>1</length>
+	</field>
+	
+	<field>
+		<name>telfcontacto</name>
+		<!--Telefono de contacto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Teléfono de contacto")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>9</length>
+	</field>
+	
+	<field>
+		<name>contacto</name>
+		<!--Persona de contacto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Persona de contacto")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>40</length>
+	</field>
+	
+	<field>
+		<name>numjustificante</name>
+		<!--Número de justificante de la declaración-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nº justificante")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>13</length>
+	</field>
+	
+	<field>
+		<name>complementaria</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Complementaria")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>sustitutiva</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sustitutiva")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>false</default>
+	</field>
+	
+	<field>
+		<name>numjustifant</name>
+		<!--Número de justificante de la declaración anterior-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Num. just. anterior")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>13</length>
+	</field>
+	
+	<field>
+		<name>perceptores</name>
+		<!--Número de perceptores (1)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Num. perceptores[1]")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>9</length>
+	</field>
+	
+	<field>
+		<name>baseretenciones</name>
+		<!--Base de las retenciones e ingresos a cuenta (2)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Base retenciones e ingresos a cta[2]")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>15</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>retenciones</name>
+		<!--Retenciones e ingresos a cuenta (3)-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Retenciones e ingresos a cta[3]")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>13</partI>
+		<partD>2</partD>
+	</field>
+	
+	<field>
+		<name>sello</name>
+		<!--Sello electrónico-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Sello electrónico")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>13</length>
+	</field>
+</TMD>

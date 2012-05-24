@@ -1,0 +1,22 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fullpatch">
+  <flpatch:patchXml path="contabilidad/modelos/" name="flcontmode.xml" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/modelos/forms/" name="co_datosfiscales.ui" style="legacy1"/>
+  <flpatch:addFile path="contabilidad/modelos/forms/" name="co_detalle180.ui"/>
+  <flpatch:addFile path="contabilidad/modelos/forms/" name="co_masterfacturasprov115.ui"/>
+  <flpatch:addFile path="contabilidad/modelos/forms/" name="co_masterfacturasprov180.ui"/>
+  <flpatch:addFile path="contabilidad/modelos/forms/" name="co_modelo115.ui"/>
+  <flpatch:addFile path="contabilidad/modelos/forms/" name="co_modelo180.ui"/>
+  <flpatch:patchXml path="contabilidad/modelos/forms/" name="flcontmode.ui" style="legacy1"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_masterfacturasprov115.qs"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_masterfacturasprov180.qs"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_mastermodelo115.qs"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_mastermodelo180.qs"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_modelo115.qs"/>
+  <flpatch:addFile path="contabilidad/modelos/scripts/" name="co_modelo180.qs"/>
+  <flpatch:patchScript path="contabilidad/modelos/scripts/" name="flcontmode.qs" style="legacy"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_detalle115.mtd"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_detalle180.mtd"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_modelo115.mtd"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_modelo180.mtd"/>
+  <flpatch:addFile path="contabilidad/modelos/tables/" name="co_tipodec115.mtd"/>
+</flpatch:modifications>
