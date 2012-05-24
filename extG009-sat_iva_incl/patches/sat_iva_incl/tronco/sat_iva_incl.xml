@@ -1,0 +1,4 @@
+<flpatch:modifications name="sat_iva_incl" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasservicioscli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasservicioscli.mtd" />
+</flpatch:modifications>

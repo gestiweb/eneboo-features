@@ -1,0 +1,152 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >309</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >800</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >136</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIRPF]/property[focusPolicy]/enum[enum,1]/text()[1]" >StrongFocus</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIRPF]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >24</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIRPF]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >78</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >41</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbRecargo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >92</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/spacer[spacer20]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbRecargo]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIvaIncluido</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>122</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>ivaincluido</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIvaIncluido]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPvpUnitarioIva</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>144</width>
+<height>24</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>pvpunitarioiva</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >93</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >106</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoPor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoPor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >86</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpSinDto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpSinDto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >106</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitario]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpUnitario]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >115</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoLineal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbDtoLineal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >97</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >123</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >22</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >99</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" />
+<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasServiciosCli]" >
+<customwidgets/>
+</xupdate:insert-after>
+</xupdate:modifications>
