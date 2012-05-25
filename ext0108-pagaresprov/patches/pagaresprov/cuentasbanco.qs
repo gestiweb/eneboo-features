@@ -2,7 +2,7 @@
 /** @class_declaration pagareProv */
 /////////////////////////////////////////////////////////////////
 //// PAGARE PROV ////////////////////////////////////////////////
-class pagareProv extends oficial {
+class pagareProv extends oficial /** %from: oficial */ {
     var posActualPuntoSubcuentaP:Number;
 	var bloqueoSubcuentaP:Boolean;
 	function pagareProv( context ) { oficial ( context ); }
@@ -25,7 +25,7 @@ function pagareProv_init()
 	this.iface.__init();
 
 	if (sys.isLoadedModule("flcontppal")) {
-		this.iface.bloqueoSubcuentaP = false; 
+		this.iface.bloqueoSubcuentaP = false;
 		this.iface.posActualPuntoSubcuentaP = -1;
 		this.child("fdbIdSubcuentaP").setFilter("codejercicio = '" + this.iface.ejercicioActual + "'");
 	} else {

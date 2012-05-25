@@ -2,7 +2,7 @@
 /** @class_declaration pagareProv */
 /////////////////////////////////////////////////////////////////
 //// PAGARE PROV ////////////////////////////////////////////////
-class pagareProv extends proveed {
+class pagareProv extends proveed /** %from: proveed */ {
     function pagareProv( context ) { proveed ( context ); }
 	function generarAsientoPagoDevolProv(curPD:FLSqlCursor):Boolean {
 		return this.ctx.pagareProv_generarAsientoPagoDevolProv(curPD);
@@ -43,7 +43,7 @@ function pagareProv_generarAsientoPagoDevolProv(curPD:FLSqlCursor):Boolean
 	var util:FLUtil = new FLUtil();
 	if (curPD.modeAccess() != curPD.Insert && curPD.modeAccess() != curPD.Edit)
 		return true;
-	
+
 	var codEjercicio:String = flfactppal.iface.pub_ejercicioActual();
 	var datosDoc:Array = flfacturac.iface.pub_datosDocFacturacion(curPD.valueBuffer("fecha"), codEjercicio, "pagosdevolprov");
 	if (!datosDoc.ok)
@@ -52,12 +52,12 @@ function pagareProv_generarAsientoPagoDevolProv(curPD:FLSqlCursor):Boolean
 		codEjercicio = datosDoc.codEjercicio;
 		curPD.setValueBuffer("fecha", datosDoc.fecha);
 	}
-	
+
 	var datosAsiento:Array = [];
 	var valoresDefecto:Array;
 	valoresDefecto["codejercicio"] = codEjercicio;
 	valoresDefecto["coddivisa"] = util.sqlSelect("empresa", "coddivisa", "1 = 1");
-	
+
 	var curTransaccion:FLSqlCursor = new FLSqlCursor("empresa");
 	curTransaccion.transaction(false);
 	try {
@@ -108,7 +108,7 @@ function pagareProv_generarAsientoPagoDevolProv(curPD:FLSqlCursor):Boolean
 				throw util.translate("scripts", "Error al generar el asiento inverso");
 			}
 		}
-	
+
 		if (!flcontppal.iface.pub_comprobarAsiento(datosAsiento.idasiento)) {
 			throw util.translate("scripts", "Error al comprobar el asiento");
 		}
@@ -119,7 +119,7 @@ function pagareProv_generarAsientoPagoDevolProv(curPD:FLSqlCursor):Boolean
 		MessageBox.warning(util.translate("scripts", "Error al generar el asiento correspondiente a %1 del recibo %2:").arg(curPD.valueBuffer("tipo")).arg(codRecibo) + "\n" + e, MessageBox.Ok, MessageBox.NoButton);
 		return false;
 	}
-	curTransaccion.commit();	
+	curTransaccion.commit();
 
 	return true;
 }
@@ -175,7 +175,7 @@ function pagareProv_beforeCommit_pagospagareprov(curPD:FLSqlCursor):Boolean
 		if (!this.iface.generarAsientoPagoPagareProv(curPD))
 			return false;
 	}
-	
+
 	return true;
 }
 
@@ -184,7 +184,7 @@ function pagareProv_beforeCommit_pagospagareprov(curPD:FLSqlCursor):Boolean
 function pagareProv_afterCommit_pagospagareprov(curPD:FLSqlCursor):Boolean
 {
 	var idPagare:String = curPD.valueBuffer("idpagare");
-	
+
 	/** \C Se cambia el pago anterior al actual para que sólo el último sea editable
 	\end */
 	switch (curPD.modeAccess()) {
@@ -200,11 +200,11 @@ function pagareProv_afterCommit_pagospagareprov(curPD:FLSqlCursor):Boolean
 			break;
 		}
 	}
-		
+
 	var util:FLUtil = new FLUtil();
 	if (sys.isLoadedModule("flcontppal") == false || util.sqlSelect("empresa", "contintegrada", "1 = 1") == false)
 		return true;
-		
+
 	if (curPD.modeAccess() == curPD.Del) {
 		if (curPD.isNull("idasiento"))
 			return true;
@@ -243,12 +243,12 @@ debug(2);
 		codEjercicio = datosDoc.codEjercicio;
 		curPD.setValueBuffer("fecha", datosDoc.fecha);
 	}
-	
+
 	var datosAsiento:Array = [];
 	var valoresDefecto:Array;
 	valoresDefecto["codejercicio"] = codEjercicio;
 	valoresDefecto["coddivisa"] = util.sqlSelect("empresa", "coddivisa", "1 = 1");
-	
+
 	var curTransaccion:FLSqlCursor = new FLSqlCursor("empresa");
 	curTransaccion.transaction(false);
 	try {
@@ -282,7 +282,7 @@ debug(8);
 				throw util.translate("scripts", "Error al obtener el asiento inverso");
 			}
 		}
-	
+
 		if (!flcontppal.iface.pub_comprobarAsiento(datosAsiento.idasiento)) {
 			throw util.translate("scripts", "Error al comprobar el asiento");
 		}
@@ -304,17 +304,17 @@ function pagareProv_generarPartidasBancoPagProv(curPD:FLSqlCursor, valoresDefect
 {
 	var util:FLUtil = new FLUtil();
 	var ctaHaber:Array = [];
-	
+
 	ctaHaber.codsubcuenta = curPD.valueBuffer("codsubcuenta");
 	ctaHaber.idsubcuenta = util.sqlSelect("co_subcuentas", "idsubcuenta", "codsubcuenta = '" + ctaHaber.codsubcuenta + "' AND codejercicio = '" + valoresDefecto.codejercicio + "'");
 	if (!ctaHaber.idsubcuenta) {
 		MessageBox.warning(util.translate("scripts", "No tiene definida la subcuenta %1 en el ejercicio %2.\nAntes de dar el pago debe crear la subcuenta o modificar el ejercicio").arg(ctaHaber.codsubcuenta).arg(valoresDefecto.codejercicio), MessageBox.Ok, MessageBox.NoButton);
 		return false;
 	}
-		
+
 	var haber:Number = 0;
 	var haberME:Number = 0;
-	
+
 	haber = pagare.total;
 	haberMe = 0;
 	haber = util.roundFieldValue(haber, "co_partidas", "haber");
@@ -352,7 +352,7 @@ function pagareProv_generarPartidasPtePagProv(curPD:FLSqlCursor, valoresDefecto:
 {
 	var util:FLUtil = new FLUtil();
 	var ctaDebe:Array = [];
-	
+
 	var idPagare:Number = curPD.valueBuffer("idpagare");
 
 	ctaDebe.codsubcuenta = pagare.codsubcuentap;
@@ -373,7 +373,7 @@ function pagareProv_generarPartidasPtePagProv(curPD:FLSqlCursor, valoresDefecto:
 		debe = util.sqlSelect("pagosdevolprov pd INNER JOIN co_partidas p ON pd.idasiento = p.idasiento", "SUM(haber - debe)", "pd.idpagare = " + idPagare + " AND p.codsubcuenta = '" + pagare.codsubcuentap + "'", "pagosdevolprov,co_subcuentas");
 	else
 		debe = util.sqlSelect("pagosdevolprov pd INNER JOIN recibosprov r ON pd.idrecibo = r.idrecibo", "SUM(r.importe)", "pd.idpagare = " + idPagare, "pagosdevolprov,recibosprov");
- 
+
 	debeME = 0;
 	debe = util.roundFieldValue(debe, "co_partidas", "debe");
 	debeME = util.roundFieldValue(debeME, "co_partidas", "debeme");
@@ -417,7 +417,7 @@ function pagareProv_cambiaUltimoPagoPagProv(idPagare:String, idPagoDevol:String,
 	curPagosDevol.select("idpagare = " + idPagare + " AND idpagodevol <> " + idPagoDevol + " ORDER BY fecha, idpagodevol");
 	if (curPagosDevol.last())
 		curPagosDevol.setUnLock("editable", unlock);
-	
+
 	return true;
 }
 
@@ -433,3 +433,4 @@ function pagareProv_comprobarFechasPagares(curPagare:FLSqlCursor):Boolean
 }
 //// PAGARE PROV ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

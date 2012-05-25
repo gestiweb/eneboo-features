@@ -2,7 +2,7 @@
 /** @class_declaration pagareProv */
 /////////////////////////////////////////////////////////////////
 //// PAGARES PROV ///////////////////////////////////////////////
-class pagareProv extends proveed {
+class pagareProv extends proveed /** %from: proveed */ {
     function pagareProv( context ) { proveed ( context ); }
 	function commonCalculateField(fN:String, cursor:FLSqlCursor):String {
 		return this.ctx.pagareProv_commonCalculateField(fN, cursor);
@@ -26,14 +26,14 @@ function pagareProv_cambiarEstado()
 	var cursor:FLSqlCursor = this.cursor();
 
 	this.iface.__cambiarEstado();
-	
+
 	if (util.sqlSelect("pagosdevolprov", "idpagare", "idrecibo = " + cursor.valueBuffer("idrecibo") + " ORDER BY fecha DESC, idpagodevol DESC") != 0) {
 		this.child("lblRemesado").text = "EN PAGARÉ";
 		this.child("fdbFechav").setDisabled(true);
 		this.child("fdbImporte").setDisabled(true);
 		this.child("fdbCodCuenta").setDisabled(true);
 		this.child("fdbCodDir").setDisabled(true);
-		this.child("tdbPagosDevolProv").setInsertOnly(true); 
+		this.child("tdbPagosDevolProv").setInsertOnly(true);
 		this.child("pushButtonNext").close();
 		this.child("pushButtonPrevious").close();
 		this.child("pushButtonFirst").close();

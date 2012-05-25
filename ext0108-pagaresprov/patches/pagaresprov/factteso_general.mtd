@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pagoindirecto]">
+    <field>
+      <name>contdirectapagare</name>
+      <!-- Contabilidad directa en pagarés -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contabilidad directa en pagarés")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,36 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcuenta]/relation[rh_retenciones,codcuenta]">
+    <relation>
+      <table>tramospagare</table>
+      <field>codcuenta</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentaecgc]">
+    <field>
+      <name>codsubcuentap</name>
+      <!-- Código de la subcuenta de contabilidad asociada a la cuenta bancaria para asientos de pagaré-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","S. Pagarés")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuentap]">
+    <field>
+      <name>idsubcuentap</name>
+      <!-- Identificador interno de la subcuenta -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","ID")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_subcuentas</table>
+        <field>idsubcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

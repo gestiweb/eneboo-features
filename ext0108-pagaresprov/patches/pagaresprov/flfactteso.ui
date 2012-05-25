@@ -1,0 +1,40 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">171</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">32</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[remesas]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,1]">
+    <action name="pagaresprov"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]">
+    <action>
+      <property name="name">
+        <cstring>pagaresprov</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>pagaresprovimage34260</iconset>
+      </property>
+      <property name="text">
+        <string>Pagarés de Proveedor</string>
+      </property>
+      <property name="whatsThis">
+        <string>Pagarés de proveedor</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="pagaresprovimage34260">
+      <data format="PNG" length="1257">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004b049444154789cc5974d6c545514c77fe7be99b6d36901a77c2c0021b10d88d10ec68f68088a6c300475e7d6045d998871e3c2c444d9b8d195a8acdca20812a3b0b118230bd1aa6888f26182686210693b6d67de30efbd7b8e8b37d3ceb433b5c50837b979ef25efddffeffecf39f7de2766c6ad6cee96aa0399c5be78d7a38f3f6d667b44a424226f9ffde2f8b99b0670fb7ddb9e8913ffc49573bfbe4e61c5da35ab060e8a74bf6456fbee7f07b874f9f293c57b86f7bff1f20b9f6ed934b41b5c72eaf43793172f5d3e363e36f61e202242b55ae5fc85f3c776ec78ecec520064a1242c4d8cbf3a3135fdda5bef7fc8fe7d7b5133cc8cae6c966c264b58ad02e09ca352a970f2e4c9f128aaeddcfbec7367160bd03109c7c6ae7525de3fdf9fef45cd98982a1338070618a87a0c0301049c13a2a856f0de8f7c70e850f13f03a86a97996596f5e519dab89e2fbffd917cae879eee2e7ef8e522235f7f4f7f6f2f008260064992902449210cc391231f1d5e14444700411011ad5eaff1d4ce6d8cfe7c91b1d21400ab065670e2d428539590c0050064321954955aad469224854a251cf9f8e8d17f85e8086092e646e23d6bd70c50dc3cc8f1af46e9ca6618dab096e1cd839c38354a3ed78daa92cbe5d8b2650b5114512e4f13869542a9543af9ce8103f72e04d0b10a1425209d5d25bcceeeed0ff0eee1135c1d9f64457f9e3d8f3cc8c12327182f4dd3dd9dc57b4fb1b895c2c00013e31364320122eeb69e9e9e4fcae5e9a1bebefe6a3b9d8e5570eddadf7dc02511590990cff5f0f9e99fa8d66aecd97e3f4e1c9f9d1ac58963d7c35b09afd740d25008924ec214552d7bd5f5038581523b9dce4bf11caef07a8d87eed9c45458e3efd214b53862dbf09d5c9b2a33315dc1896066c4714c14454451441cc778ef1316a8f5ce3980b57c6766746733dc3db881f3bfff851321dfdbcde68debb8f0c715828c6b01b7b933582a4043b419228a6386d6adc17094ca5592c433b86e35890951ec972cbe204043bcc505401cdcb176257f4e8400088efe7c1eeaefb51357af1d013a5681a9cd84c1d410972696f74aa12f47941817af94308395cb728880b609b5aaa27a230075715505074edd2c842a6b96e7a846599c13bab301aa367700d4341dc36ed4013370cc40880a226957337aba32f559b68a37874f55e755d4e2001af15766201ae28ddeaeba9ac51be1b3b9ee2c05c0cc1004270e139b0540a8af374d1fcd866e9e0b4b0548920448f77a1454520790d97da205c2662bc0ccd2e77afc173a73740488e318112108029c732dd6a7ba9282348fdd80b03679b05400ef3d90c63e080282209807d0ae3503a829ea95388e6fcc014843d0a865e75c8b1b6d01ea333633bcf7a8ea4c389704e055d5548366001169810066ae8d389b5a63176cf44cc3cd76ade3523c3c3c1caaea19ef3dde7b9224a1f9be63f7b3f77507ce0d178b938b762023e2803e0fd917f7ed7b65d7ae5d6ff6f6f60e3ae7acee80740a413de9acee868461f8dbc8c8c8cbc3c5e2ca003c504ecc5a1262de812423920556032beafb9b14962fbfcd7bef006766f573f04c160a602262963e28a04110e8f8e4e424e003088069e06a62162e08508710d28f9c9f15724dc2f3009a3ad421a80f423a7b053499a3b7e08fc9cd68b7fceff81f6faffe1380affb8e0000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>pagaresprov</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

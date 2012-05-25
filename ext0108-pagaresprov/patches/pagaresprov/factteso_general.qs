@@ -2,7 +2,7 @@
 /** @class_declaration pagareProv */
 /////////////////////////////////////////////////////////////////
 //// PAGARE PROV ////////////////////////////////////////////////
-class pagareProv extends oficial {
+class pagareProv extends oficial /** %from: oficial */ {
 	function pagareProv( context ) { oficial ( context ); }
 	function init() {
 		this.ctx.pagareProv_init();
@@ -46,3 +46,4 @@ function pagareProv_bufferChanged(fN:String)
 }
 //// PAGARE PROV ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

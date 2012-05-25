@@ -1,0 +1,44 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tesorera]/item[popupMenu_22]">
+    <action name="tesoreraPagarsAction"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tesorera]/action[tesoreraPagarsAction]">
+    <item accel="" name="popupMenu_27" text="Pagarés">
+      <action name="i_pagaresprov"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]">
+    <action>
+      <property name="name">
+        <cstring>tesoreraPagarsAction</cstring>
+      </property>
+      <property name="text">
+        <string>Pagarés</string>
+      </property>
+      <property name="menuText">
+        <string>Pagarés</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraPagarsAction]">
+    <action>
+      <property name="name">
+        <cstring>i_pagaresprov</cstring>
+      </property>
+      <property name="text">
+        <string>P. Proveedor</string>
+      </property>
+      <property name="menuText">
+        <string>P. Proveedor</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>i_pagaresprov</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

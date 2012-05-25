@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]">
+    <action>
+      <name>tramospagare</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tramos de pagaré")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los tramos de pagaré definen los rangos de números que un pagaré puede tener")</description>
+      <table>tramospagare</table>
+      <formrecord>tramospagare</formrecord>
+      <scriptformrecord>tramospagare</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

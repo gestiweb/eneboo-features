@@ -1,0 +1,35 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]">
+    <action>
+      <name>pagaresprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite gestionar los pagarés con los que se paga a los proveedores")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagarés de proveedor")</alias>
+      <table>pagaresprov</table>
+      <form>masterpagaresprov</form>
+      <formrecord>pagaresprov</formrecord>
+      <scriptform>masterpagaresprov</scriptform>
+      <scriptformrecord>pagaresprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagaresprov]">
+    <action>
+      <name>pagospagareprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite gestionar pagos de los pagarés a proveedor")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagos de pagarés de proveedor")</alias>
+      <table>pagospagareprov</table>
+      <form>master</form>
+      <formrecord>pagospagareprov</formrecord>
+      <scriptformrecord>pagospagareprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagospagareprov]">
+    <action>
+      <name>agruparrecpagprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite agrupar recibos de proveedor en pagarés")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Agrupar recibos de proveedor")</alias>
+      <table>agruparrecpagprov</table>
+      <form>agruparrecpagprov</form>
+      <scriptform>agruparrecpagprov</scriptform>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

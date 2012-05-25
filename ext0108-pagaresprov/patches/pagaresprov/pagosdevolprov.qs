@@ -2,7 +2,7 @@
 /** @class_declaration pagareProv */
 /////////////////////////////////////////////////////////////////
 //// PAGARES PROV ///////////////////////////////////////////////
-class pagareProv extends proveed {
+class pagareProv extends proveed /** %from: proveed */ {
     function pagareProv( context ) { proveed ( context ); }
 	function init() {
 		return this.ctx.pagareProv_init();
@@ -30,3 +30,4 @@ function pagareProv_init()
 }
 //// PAGARE PROV ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

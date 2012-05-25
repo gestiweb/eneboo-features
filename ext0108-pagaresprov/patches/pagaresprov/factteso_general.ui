@@ -1,0 +1,80 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factteso_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">330</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factteso_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutCobroDirecto]/hbox[hbox,1]/widget[FLFieldDB,fdbPagoIndirecto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">154</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factteso_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutCobroDirecto]/hbox[hbox,1]/widget[FLFieldDB,fdbPagoIndirecto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factteso_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutCobroDirecto]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutContDirectaPagare</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbContDirectaPagare</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>183</width>
+              <height>26</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>250</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>contdirectapagare</string>
+          </property>
+        </widget>
+        <widget class="QLabel">
+          <property name="name">
+            <cstring>lblDesContDirectaPagare</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>7</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>400</width>
+              <height>100</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="alignment">
+            <set>WordBreak|AlignVCenter</set>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]"/>
+</xupdate:modifications>

@@ -2,7 +2,7 @@
 /** @class_declaration pagaresProv */
 /////////////////////////////////////////////////////////////////
 //// PAGARES_PROV //////////////////////////////////////////////
-class pagaresProv extends proveed {
+class pagaresProv extends proveed /** %from: proveed */ {
 	function pagaresProv( context ) { proveed ( context ); }
 	function datosConceptoAsiento(cur:FLSqlCursor):Array {
 		return this.ctx.pagaresProv_datosConceptoAsiento(cur);
@@ -10,7 +10,6 @@ class pagaresProv extends proveed {
 }
 //// PAGARES_PROV //////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
 
 /** @class_definition pagaresProv */
 /////////////////////////////////////////////////////////////////
@@ -33,7 +32,7 @@ function pagaresProv_datosConceptoAsiento(cur:FLSqlCursor):Array
 			else {
 				datosAsiento = this.iface.__datosConceptoAsiento(cur);
 			}
-				
+
 			break;
 		}
 		case "pagospagareprov": {

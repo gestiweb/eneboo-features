@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resrecibosprov]">
+    <action>
+      <name>i_pagaresprov</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagares a proveedores")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página por cada pagaré. Se muestran los datos de los recibos contenidos en cada pagaré")</description>
+      <table>i_pagaresprov</table>
+      <form>i_master</form>
+      <formrecord>i_pagaresprov</formrecord>
+      <scriptform>i_masterpagaresprov</scriptform>
+      <scriptformrecord>i_pagaresprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
