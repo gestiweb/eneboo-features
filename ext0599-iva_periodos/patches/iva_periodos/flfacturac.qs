@@ -51,25 +51,28 @@ function cambioIva_campoImpuesto(campo:String, codImpuesto:String, fecha:String)
 	try { qry.setForwardOnly( true ); } catch (e) {}
 
 	if (!qry.exec()) {
-		return false;
+		throw("Error al ejecutar consulta en cambioIva_campoImpuesto");
 	}
 	var iva:Number;
 	var recargo:Number;
+	var existe_rango_valido:Boolean = false;
+
 	while (qry.next()) {
 		if (qry.value("fechahasta") && (util.daysTo(fecha,qry.value("fechahasta")) < 0)) {
 			continue;
 		}
 		iva = qry.value("iva");
 		recargo = qry.value("recargo");
+		existe_rango_valido = true;
 	}
-
-	if (campo == "iva") {
-		valor = iva;
+	if (!existe_rango_valido) {
+	    return this.iface.__campoImpuesto(campo, codImpuesto, fecha);
 	}
-	if (campo == "recargo") {
-		valor = recargo;
+	switch(campo) {
+	    case "iva": return iva; break;
+	    case "recargo": return regargo; break;
+	    default: throw("campo <" + campo + "> no reconocido en cambioIva_campoImpuesto"); break;
 	}
-	return valor;
 }
 
 function cambioIva_datosImpuesto(codImpuesto:String, fecha:String):Array
