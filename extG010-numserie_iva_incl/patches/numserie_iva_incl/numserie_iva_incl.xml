@@ -1,0 +1,7 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="numserie_iva_incl">
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspresupuestoscli.ui" style="legacy1"/>
+</flpatch:modifications>
