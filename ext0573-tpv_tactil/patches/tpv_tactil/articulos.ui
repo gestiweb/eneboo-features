@@ -74,7 +74,7 @@
             <string>descripcion</string>
           </property>
           <property name="tableName">
-            <string>nivelestipv</string>
+            <string>nivelestpv</string>
           </property>
           <property name="foreignField">
             <string>codnivel</string>
