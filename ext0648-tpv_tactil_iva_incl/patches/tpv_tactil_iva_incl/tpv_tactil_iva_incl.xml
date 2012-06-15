@@ -1,0 +1,3 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="tpv_tactil_iva_incl">
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_comandastactil.qs" style="legacy"/>
+</flpatch:modifications>
