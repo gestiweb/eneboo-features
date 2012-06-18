@@ -349,7 +349,8 @@ function interna_calculateField(fN:String):String
 		*/
 		case "pendiente": {
 			valor = parseFloat(cursor.valueBuffer("total")) - parseFloat(cursor.valueBuffer("pagado"));
-			break;
+            valor = util.roundFieldValue(valor, "tpv_comandas", "pagado");
+            break;
 		}
 		/** \C
 		El --total-- es el --neto-- más el --totaliva-- 
@@ -380,6 +381,7 @@ function interna_calculateField(fN:String):String
 		}
 		case "estado": {
 			var total:Number = parseFloat(cursor.valueBuffer("total"));
+                total = parseFloat(util.roundFieldValue(total, "tpv_comandas", "total"));
 			if (total != 0 && total == parseFloat(cursor.valueBuffer("pagado"))) {
 				valor = "Cerrada";
 			} else {
