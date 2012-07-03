@@ -1,0 +1,3 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="sat_ampli-referencia">
+    <flpatch:patchXml path="sat/principal/tables/" name="sat_lineasreparaciones.mtd" style="legacy1"/>
+</flpatch:modifications>
