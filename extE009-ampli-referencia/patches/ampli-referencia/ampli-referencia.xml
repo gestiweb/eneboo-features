@@ -1,0 +1,16 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="ampli-referencia">
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulosagen.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articuloscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulosprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulostarifas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="lineastransstock.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranesprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturasprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd" style="legacy1"/>
+</flpatch:modifications>

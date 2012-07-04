@@ -1,0 +1,4 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="tpv_ampli-referencia">
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_comandas.mtd" style="legacy1"/>
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_lineascomanda.mtd" style="legacy1"/>
+</flpatch:modifications>
