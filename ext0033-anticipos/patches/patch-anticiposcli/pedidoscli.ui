@@ -1,5 +1,5 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,observaciones]">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,observaciones]">
     <widget class="QWidget">
       <property name="name">
         <cstring>anticipos</cstring>
