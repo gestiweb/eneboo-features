@@ -1,6 +1,7 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
   <xupdate:update select="/ACTIONS[ACTIONS,1]/action[i_albaranescli]/form[form,1]/text()[1]">i_masteralbaranescli</xupdate:update>
   <xupdate:update select="/ACTIONS[ACTIONS,1]/action[i_facturascli]/form[form,1]/text()[1]">i_masterfacturascli</xupdate:update>
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[i_resfacturascli]/form[form,1]/text()[1]">i_masterfacturascli</xupdate:update>
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_resreciboscli]">
     <action>
       <name>i_servicioscli</name>
