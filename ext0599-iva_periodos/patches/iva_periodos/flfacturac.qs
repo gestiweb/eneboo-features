@@ -122,6 +122,7 @@ function cambioIva_validarIvas(curDoc:FLSqlCursor):Boolean
 		case "pedidosprov": { tablaLineas = "lineaspedidosprov"; break; }
 		case "albaranesprov": { tablaLineas = "lineasalbaranesprov"; break; }
 		case "facturasprov": { tablaLineas = "lineasfacturasprov"; break; }
+        case "servicioscli": { tablaLineas = "lineasservicioscli"; break; }
 		default: { return -1; }
 	}
 	var qryLineas:FLSqlQuery = new FLSqlQuery();

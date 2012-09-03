@@ -7,6 +7,7 @@
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="servicioscli.qs" style="legacy"/>
   <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="impuestos.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/principal/forms/" name="periodos.ui"/>
