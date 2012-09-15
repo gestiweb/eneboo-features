@@ -51,6 +51,7 @@ function ivaIncluido_habilitarPorIvaIncluido(miForm:Object)
 	} else {
 		miForm.child("fdbPvpUnitarioIva").setDisabled(true);
 		miForm.child("fdbPvpUnitario").setDisabled(false);
+        miForm.child("fdbPvpTotalIvaInc").setValue("0");
 	}
 }
 
@@ -141,6 +142,7 @@ function ivaIncluido_commonBufferChanged(fN:String, miForm:Object)
 		case "dtolineal": {
 			if (miForm.cursor().valueBuffer("ivaincluido")) {
 				miForm.cursor().setValueBuffer("pvptotal", this.iface.commonCalculateField("pvptotal", miForm.cursor()));
+                miForm.cursor().setValueBuffer("pvptotalivainc", this.iface.commonCalculateField("pvptotalivainc", miForm.cursor()));
 			} else {
 				return this.iface.__commonBufferChanged(fN, miForm);
 			}
@@ -201,6 +203,17 @@ function ivaIncluido_commonCalculateField(fN, cursor):String
 			valor = cursor.valueBuffer("pvpsindto") - parseFloat(dtoPor) - cursor.valueBuffer("dtolineal");
 			break;
 		}
+        case "pvptotalivainc":{
+            var iva:Number = parseFloat(cursor.valueBuffer("iva"));
+            if (isNaN(iva)) {
+                iva = 0;
+            }
+            var dtoPor:Number = (cursor.valueBuffer("pvpsindto") * cursor.valueBuffer("dtopor")) / 100;
+            dtoPor = util.roundFieldValue(dtoPor, "lineaspedidoscli", "pvpsindto");
+            pvpTotal = cursor.valueBuffer("pvpsindto") - parseFloat(dtoPor) - cursor.valueBuffer("dtolineal");
+            valor = pvpTotal * ((100 + iva) / 100);
+            break;
+        }
 		default:
 			return this.iface.__commonCalculateField(fN, cursor);
 	}
