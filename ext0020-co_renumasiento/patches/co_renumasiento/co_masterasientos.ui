@@ -43,7 +43,7 @@
 </property>
 <widget row="0" class="QToolButton" column="0" >
 <property name="name" >
-<cstring>toolButtonInsert</cstring>
+<cstring>toolButtomInsert</cstring>
 </property>
 <property name="sizePolicy" >
 <sizepolicy>
