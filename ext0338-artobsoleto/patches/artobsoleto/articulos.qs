@@ -24,8 +24,6 @@ class artObsoletos extends oficial /** %from: oficial */
 
 function artObsoletos_bufferChanged(fN:String)
 {
-  	this.iface.__bufferChanged();
-
 	var cursor:FLSqlCursor = this.cursor();
 	switch(fN) {
 		case "obsoleto": {
@@ -37,6 +35,9 @@ function artObsoletos_bufferChanged(fN:String)
 			}
 			break;
 		}
+        default: {
+            this.iface.__bufferChanged(fN);
+        }
 	}
 }
 

@@ -65,4 +65,80 @@
       </property>
     </widget>
   </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]">
+      <spacer>
+          <property name="name">
+              <cstring>spacer30_2</cstring>
+          </property>
+          <property name="orientation">
+              <enum>Vertical</enum>
+          </property>
+          <property name="sizeType">
+              <enum>Fixed</enum>
+          </property>
+          <property name="sizeHint">
+              <size>
+                  <width>20</width>
+                  <height>5</height>
+              </size>
+          </property>
+      </spacer>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/spacer[spacer30_2]">
+      <widget class="QLayoutWidget">
+          <property name="name">
+              <cstring>layout39_2</cstring>
+          </property>
+          <hbox>
+              <property name="name">
+                  <cstring>unnamed</cstring>
+              </property>
+              <spacer>
+                  <property name="name">
+                      <cstring>spacer17_2</cstring>
+                  </property>
+                  <property name="orientation">
+                      <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                      <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                      <size>
+                          <width>101</width>
+                          <height>20</height>
+                      </size>
+                  </property>
+              </spacer>
+              <widget class="FLFieldDB">
+                  <property name="name">
+                      <cstring>fdbPvpTotalIvaInc</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                      <sizepolicy>
+                          <hsizetype>1</hsizetype>
+                          <vsizetype>0</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                      </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                      <size>
+                          <width>38</width>
+                          <height>27</height>
+                      </size>
+                  </property>
+                  <property name="font">
+                      <font>
+                          <pointsize>11</pointsize>
+                          <italic>0</italic>
+                      </font>
+                  </property>
+                  <property name="fieldName">
+                      <string>pvptotalivainc</string>
+                  </property>
+              </widget>
+          </hbox>
+      </widget>
+  </xupdate:insert-after>
 </xupdate:modifications>

@@ -97,6 +97,11 @@
 			<field>idfactura</field>
 			<card>M1</card>
 		</relation>
+        
+        <associated>
+            <with>codcliente</with>
+            <by>codcliente</by>
+        </associated>
 	</field>
 
 	<field>
@@ -114,6 +119,22 @@
 			<card>M1</card>
 		</relation>
 	</field>
+
+   <field>
+       <name>codcliente</name>
+       <!-- Código del del contrato -->
+       <alias>QT_TRANSLATE_NOOP("MetaData","Cod. Cliente")</alias>
+       <null>true</null>
+       <pk>false</pk>
+       <type>string</type>
+       <length>6</length>
+       <visiblegrid>false</visiblegrid>
+       <relation>
+           <table>clientes</table>
+           <field>codcliente</field>
+           <card>M1</card>
+       </relation>
+   </field>
 	
 </TMD>
 

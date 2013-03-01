@@ -1,24 +1,37 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:insert-after select="/TMD[TMD,1]/field[recargo]">
-    <field>
-      <name>ivaincluido</name>
-      <!-- Indica si el precio de venta del artículo incluye el IVA -->
-      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Incluido")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>bool</type>
-    </field>
-  </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
-    <field>
-      <name>pvpunitarioiva</name>
-      <alias>QT_TRANSLATE_NOOP("MetaData","PVP con IVA")</alias>
-      <null>false</null>
-      <pk>false</pk>
-      <type>double</type>
-      <partI>6</partI>
-      <partD>2</partD>
-      <default>0</default>
-    </field>
-  </xupdate:insert-after>
+    <xupdate:insert-after select="/TMD[TMD,1]/field[recargo]">
+        <field>
+            <name>ivaincluido</name>
+            <!-- Indica si el precio de venta del artículo incluye el IVA -->
+            <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Incluido")</alias>
+            <null>true</null>
+            <pk>false</pk>
+            <type>bool</type>
+        </field>
+    </xupdate:insert-after>
+    <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
+        <field>
+            <name>pvpunitarioiva</name>
+            <alias>QT_TRANSLATE_NOOP("MetaData","PVP con IVA")</alias>
+            <null>false</null>
+            <pk>false</pk>
+            <type>double</type>
+            <partI>6</partI>
+            <partD>2</partD>
+            <default>0</default>
+        </field>
+    </xupdate:insert-after>
+    <xupdate:insert-after select="/TMD[TMD,1]/field[pvptotal]">
+        <field>
+            <name>pvptotalivainc</name>
+            <alias>QT_TRANSLATE_NOOP("MetaData","PVP Total")</alias>
+            <null>false</null>
+            <pk>false</pk>
+            <type>double</type>
+            <partI>6</partI>
+            <partD>2</partD>
+            <default>0</default>
+            <editable>false</editable>
+        </field>
+    </xupdate:insert-after>
 </xupdate:modifications>

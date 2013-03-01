@@ -71,6 +71,11 @@ const iface = new ifaceCtx( this );
 //// INTERNA /////////////////////////////////////////////////////
 function interna_init()
 {
+    var cursor:FLSqlCursor = this.cursor();
+    var util:FLUtil = new FLUtil;
+    
+    var codCliente:String = util.sqlSelect("contratos", "codcliente", "codigo = '" + this.child("fdbCodContrato").value() + "'");
+    cursor.setValueBuffer("codcliente", codCliente);
 }
 
 function interna_validateForm()
