@@ -1,8 +1,11 @@
-facturacion/tesoreria
-facturacion/almacen
-facturacion/informes
-contabilidad/informes
 facturacion/principal
-contabilidad/principal
+facturacion/almacen
 facturacion/facturacion
+facturacion/tesoreria
+facturacion/informes
+contabilidad/principal
+contabilidad/modelos
+contabilidad/informes
+colaboracion/proyectos
+
 

@@ -1,0 +1,86 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">38</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]/widget[FLFieldDB,fdbReferencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">38</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>pbnTradDescripcion</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>25</width>
+          <height>25</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>25</width>
+          <height>25</height>
+        </size>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>image64467</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Traducciones</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/grid[grid,1]/widget[FLFieldDB,fdbCodFamilia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/grid[grid,1]/widget[FLFieldDB,fdbCodFamilia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/grid[grid,1]/widget[FLFieldDB,fdbDesFamilia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/grid[grid,1]/widget[FLFieldDB,fdbCodUnidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/grid[grid,1]/widget[FLFieldDB,fdbCodUnidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/grid[grid,2]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,2]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxFabricante]/hbox[hbox,1]/widget[FLFieldDB,fdbNomFabricante]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QButtonGroup,gbxFluxe1]/hbox[hbox,1]/widget[FLFieldDB,fdbDescPublica]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QButtonGroup,gbxFluxe1]/hbox[hbox,1]/widget[FLFieldDB,fdbDescPublica]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,tbpComposicion]/grid[grid,1]/widget[QTabWidget,tbwComposicion]/widget[QWidget,tabComponentes]/vbox[vbox,1]/widget[QGroupBox,gbxComponentes]/vbox[vbox,1]/widget[QFrame,barraBotonesComponentes]/hbox[hbox,1]/widget[FLFieldDB,fdbPvp3]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,tbpComposicion]/grid[grid,1]/widget[QTabWidget,tbwComposicion]/widget[QWidget,tabComponentes]/vbox[vbox,1]/widget[QGroupBox,gbxComponentes]/vbox[vbox,1]/widget[QFrame,barraBotonesComponentes]/hbox[hbox,1]/widget[FLFieldDB,fdbPvp3]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,venta]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[QFrame,frmIva]/hbox[hbox,1]/widget[FLFieldDB,fdbImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,venta]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[QFrame,frmIva]/hbox[hbox,1]/widget[FLFieldDB,fdbDesImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,venta]/vbox[vbox,1]/widget[QLayoutWidget,layout25]/hbox[hbox,1]/widget[QFrame,frmIva]/hbox[hbox,1]/widget[FLFieldDB,fdbDesImpuesto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="image64467">
+      <data format="PNG" length="1194">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000047149444154789c95956f6c535518c67feb6ec729e9c66d68f1366ed2254ce8209332c50cf1cfa60451028a6186cd2f108c11f806fb40504ce44f42c844238b41218b1a25836446854210587459371cae8ac2c8b6d886cdede20abdb2cb7a1877bb7eb8330a8c80cfe7f3fef29ee73ce77db3f81f1a7e1b4fc264da6b07e95dafa1082fc1c282d023e9417d45ab2ecdba1e3619120990753fc0f33588423f8ba4c9dada269a2b82e19b857323cf6aa170396e3c75efd57e55d3666c022e01f63d812d9b71d99f1219fe80c376adc89caf8998c3dfec4dd9e74ed9f6d57edbbed062ef7f3e745240feedb577edf8fc3e260561b534c556a1448222528d27540e485004980617ea775c7e714f74795272e6f67a652268ff3e5e91269588f04bc1b28d39f8c32000a93b5063000c836873ec9c84f8448cec3bae5f4b59d0251a444165a9efc9f5d928025c96037559309c0209e9e6431497163e543465c08e75c916d362ecaee0fdaf1398afa90d81e99521cfbc4a700520c70db2c7b99b65c018901a40267b082c5e965d525ab030d1de7aa6bd9f9e09add8bd90dc885fdb298a2a4a0885211507c5076a08f2cba1afd1b1410e0020498396068b6c9fc6a3c0f16d3370e165b25040d93b972cad889205cf84b75154b524a12cc842efc0a74a30130e48f1813f0cc669503d90ca105405f424c0d047633fd3dbb25a5b2a42e1577d96f1f0f6c3f1cf9470195bcb1685d7796644a6c592411abf8b52b544c36726c65f5f821907bf0a42070bd0047443c6eca4b5357e6dfbcab237232babe77af223930e6c591b8b2639a2a42d148f3f310da1b2604e079139f3f010831460ea800023015a1894b4930e0b502171ac95b01651832bd73f8e37c840d381a12f9a12bb74c9a5ec1fbb8815e459538a67f79592d7ed727302261bd0a73b99350df06ae06d85bc3e18eb05571f9cbd8862f9093c5d9d8590309ca03d7a2cbeeba4bed302a9244d6eeca867b34f23a762156bf00b37b2d3e9ca00bc2148b5c29c4e5024f8805e4008507d20a49316afa0c348774818027001c4535cdfb08d9aa3078df7332932a434908057803440893b50f77884524e9e249951f225ccd24095f854710527900e18a0d36068c33b6c6ddca36f21553dccacdd40a163879f7fa119a04f855c6dacf6dbe4e7e9df4e5f41d1211041f80b73191f13b77c1063042bda46fb0bc5626670f6fc12fc1520076116e0319c436d02d4a7b8d0de7db9ee847ca3f317fdfbc2a9038f05343135d7cecd347c1d6f3047b0eef8d216d8d635e3e2f227fc6b504c376a118cf8c05705bd05e05d06577fb50f457bea3f8ed1d0ddcfc5a626a371f0a7c13fbafb8dbc1b7f1a6ddd57adbf269c6e5b9e133955abc3edc56591122c001d4c015a048cb81d3b188d577f2857250dba6e2bcd19f7d89a70ba359e953757bccc1184518250c184a39f9c6e0efa1b730cc9cdb7ea793769d03d41e9c844bc5bb46ea9fae0ef27ca7fb0af6d1cb547d6d9a7eac28770c2e6e73f8f7e37dde1f13f6aef9243bd0979d23b1270bb477960a03fa57c795cff08b8cefdac9f7b4915b8c32175bae66726f7b92301fe060d47d2f91f9574ed0000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image48090]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image53148]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image37167]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image43537]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image16098]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image32911]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image53797]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image25366]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image45029]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image26770]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image5680]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image51366]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image5680]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image44940]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image44065]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image51366]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image60996]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image44940]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image60996]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[image44065]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+</xupdate:modifications>

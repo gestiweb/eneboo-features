@@ -1,0 +1,114 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">404</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutUnidad]/hbox[hbox,1]/widget[FLFieldDB,fdbDesUnidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutUnidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCodUnidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutUnidad]/hbox[hbox,1]/widget[FLFieldDB,fdbCodUnidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutUnidad]/hbox[hbox,1]/widget[FLFieldDB,fdbDesUnidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layoutUnidad]/hbox[hbox,1]/widget[FLFieldDB,fdbDesUnidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout5]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcionMadre]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmFamilia]/vbox[vbox,1]/property[name]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout6</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodFamilia</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>38</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>150</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>codfamilia</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDescripcion</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>38</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+        </widget>
+        <widget class="QPushButton">
+          <property name="name">
+            <cstring>pbnTradDescripcion</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>25</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>25</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="iconSet">
+            <iconset>image62564</iconset>
+          </property>
+          <property name="toolTip" stdset="0">
+            <string>Traducciones</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QTabWidget,tbwArticulos]/widget[QWidget,imagen]/vbox[vbox,1]/widget[QGroupBox,gbxImagen]/vbox[vbox,1]/widget[FLFieldDB,fdbImagen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QTabWidget,tbwArticulos]/widget[QWidget,imagen]/vbox[vbox,1]/widget[QGroupBox,gbxImagen]/vbox[vbox,1]/widget[FLFieldDB,fdbImagen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="image62564">
+      <data format="PNG" length="1206">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000047d49444154789c95947f6894751cc75fdb6ef37b32e773f16c3e4f6d7507d37a462d0f2d5998b199946b60cd3450faa36154cbf00f95909a429a10364970c4521ba4124b59a07256ea191bbb15e6cefcb15bdbd81d6eed1ed679f7b49ddba33bfdf6c729899d686ff8fcf385cf9bf7f7fd7dbfbf59fc0fc8069c09285abc87a1ad1a0e2b1ffd39c3fd744fd8ac8d9876f2e3013658363680e34108e31b1142650949d6349ea6e3c0f3c69473ae77b1c76d544ee6e20cec6cfc7eed457b0b70ed81140e6e225bb6e195bb38249bc5647ca33729fd8763f2fc2929af4b297b06e5b197dd2705143ff0b52f35334d36f3ee48a31891bb2ae444fb6e29e371292f9f95722c2e655fa78c6faa36dd820599f6335a219b593e092b4919afea4b76e421ca70aa402c088a0722014839d9d711386f43301347cedd079d8d5494648bd6e4ac95f39c4bb7e5605b5020d2a40585307a011c3a89e3bb583ccff3a83e332a037d766732c5cd7b12ef7d9bc265a54a2bfa4ab773d13a9828848714887580a281d50bd335880471c69250599553fec2330bc39d277e3d33c240462b762c6446b5aa6d4fe855e5ae270d88f840312029c05805a1a6b40d6617e4433419422fad02cbcc7169cc077ed85b4a76349fe9c2018ec373c96236e5cb6b8cade8ab964695da2c067c50ec4a93281e889681bb0a860f42b107ce85d18b059c0b408a1b81730c0d7ea0d52454e38d55c239676d8bef1b87ab82cd55af19f568dea270cc4bd3feaf59bfc28b6efa40116046d336d836a8265826940ae80708e13f111cdbb7a2e23d6dc5eab99e27aaa7ed5bf74ac017e158b6103810e122541b8fdbc7e70d95e8c57e5075889990afc07017b814b013a025201585129dc4a12eaa3443f1bcf5fe026769e5348e6e1b3f783afc99697339c77f91c0b305a99925b343f378b83f9b641b1459d0db0ff93698c3a069c00998350cc921281886d36770a654a8589d856ac3e8057a7cc7830d27cded29b01d9124d7d6b6b0e9402979652a7594885c1221104004d0dc10e90223045336b880214015907281ea022b0c9a079f95e8b6611c201b2018e3eaeb1fb2b1fb5beb8bc92126b13588019a8098054a304d9a7b2b42f6ad61f2064a18bc5e708431147105d279cebe1db790c5f8f22d6ceeda637e4464f504f30f40d293b643f02f2940af02ba7673c3d1c87e22fe2b4c05a1b01a4bf5cc00b23235110139238d95fbe5e05e29474f49e9af94f2ba5b4a497ada85943dd5f2d2a74ab4a298b2fa85d4c47f72f7c978bd9c68aff36bf93833563a05323166f52e7be9a93aecfe5c8a1741dc01aef530a480f60e5c0ec8f6f681969d3fd3da3f42ef911fad36c7d9bffe6c8f5805ae51eb97603cf57746d5bb5f1479970e7a7f97a37552f6d54939522d6577ad94635ba5eca9bd39d820ceba15e66458cdbbdde68cbf5bd36ff654ed9bfa315256396e034c93eea3fe0e5db4e5251c4cad69e1938895aec85db89e51e99da8af511e990854b6cbb1f537a4ac97a79a8cef48874de58e47bf17fee3f16d9ce9b3c7437fd82767e795e72ac9e4ace458ccf1d511f34be02a20efabec7e5004b9865b794c53799c7b452903fe01c6cdf4700acb2b610000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

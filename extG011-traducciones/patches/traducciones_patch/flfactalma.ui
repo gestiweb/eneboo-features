@@ -1,0 +1,79 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/action[transstock]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/separator[separator,3]">
+    <action name="idiomas"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/action[idiomas]">
+    <action name="traducciones"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">502</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,4]">
+    <action name="idiomas"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[idiomas]">
+    <action name="traducciones"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[pesosmedidas]/property[iconSet]/iconset[iconset,1]/text()[1]">image25590</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[transstock]/property[text]/string[string,1]/text()[1]">T&amp;ransferencias de Stock</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[fabricantes]">
+    <action>
+      <property name="name">
+        <cstring>idiomas</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image51185</iconset>
+      </property>
+      <property name="text">
+        <string>Idiomas</string>
+      </property>
+      <property name="whatsThis">
+        <string>Idiomas</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[idiomas]">
+    <action>
+      <property name="name">
+        <cstring>traducciones</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image42091</iconset>
+      </property>
+      <property name="text">
+        <string>Traducciones</string>
+      </property>
+      <property name="whatsThis">
+        <string>Traducciones</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[pesos_medidasimage6]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image22265]">
+    <image name="image51185">
+      <data format="PNG" length="1690">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000066149444154789cc5974b6c5c5719c77fe79cfb98875f9399d813c7af182771d2b856681aa85079b82d5b84102c50162842a04a6c9010124bc4926e90d82340628384782cc202920a4a5ba9490815264e8a1b9c34716c779c99b1efcc7d9c078bf12b247652352d7fe9e8de3bbabaffdf77be73beef8c70cef1ff94b77973f6996738f7ce3bd4a288d0f3989998a0c7f70984407b1ed618422091927c9290791eed2419cd39773a1f04a7fbe178bfef8fe79c2b24697aef8e31d72e47d1f9bfdcbdfbbb5696dddd2dd02d000be3166e39c82c2076bc64a5445b0b40e65cd5b7f6c503d67ef948b9fcecd49123c383030394805c96c1fa3a683d9206c1f47b51f4b5dfcecd7de795d9d99717d7d75fdb13e0701c5f181f1abafb6aabf5b3b966f392f6bc46a21456885ca0f540398e9f1fcab2178f4b39f554b5da757064046f6c0c0e1c00a5a0d18066139204c280a0afc4f889137c49a913bf989b3bbb08d780955d010ee672fe998181d35fb875ebf47568afaeac34f2ceb97ead8b87dbedee61a544a95241eddf0f950ae4f3606dc7507910679018481c0807b18634c3584b624c05e8d9132013c279f93c4f178b8c2c2ee6935a2ddf03f4013980de1e087c90128c8154433b056d2194500aa0e443e43a2018d0023201b0eb4adf02c03a4c62498c2516920c488036e003ca00b18128856e0dfd5df0e909983c0ca510dc6dc816606d09d23a04314803cb1118b99bff0e801e811852b83b0e13692c6077be192a38d40b9f3d0a334fc3e427a03c08aa0cb6050d0f62071a50408f86e11a1c5e052bd84d5b006200e40f8b942e8de2bfaa88af2e130a28540bc8b15e38360c1387607f15827d206427ef39dd4983d9c0751bc308b0aa13bdd8bdd66ccf80018a82e0535dec1b3b046b23a024f8123c05aaa7b3da5b19580de1aedfdc06d9bcb5db4fc78f1e67696589da6a0d80fb93a381b68548439475aeeb5967c41b91ee2521400a900e420752228d44e1bbd02f9adeee3ea68e4d63b47ec80c3c4cca753ef828791242855dcba83723eaeb86f97ffbcc36d798af39cadf3afc429ff0cee5a3dcad68adf5d7de42df6f5aadf66caad33d0004bcbfa6f07b14bd45074a80273a575f42e041e88392dc7bbfc17bd7ef7073c122f3330c0e9d664dbdcef9a5efd21a8ab0c675375a4cd644713234d5970e3d37f1bdde5f957ef4f6c52b3ff1761a22d8ce5d28b8f09ae1c6df9b9cfc7c91e1638e9efd0a61253ad5c4699da8b946adbe40947854079f63eaf951cae512c5bc80b5b729eb7582085653f02d48df222a2d1aa34b3de91f39039cdb5107361252949dc2220032be5853d89f2ff256fb1a71b78fe779f4ae450cd52372675fa67ae61bf4e5437cdfc3f705cec460f2582d301aac03b739ac406412a914ce9a00286d01b805877ba5453296207229614162db92a03b64c2cbd3bf7893c6d53b0438fa8032b09265ac168ba4f13a10a054c007e8ee0e70dece47f36646fdd7b769de5dc0cbeaac8f1f434c4c92b4210d3caca7705aa3e954492dc0d94eef147b57dc5db5b50da510421604a2a0700eb2a6c6b4b2fbfbf286c563ec8bc7d6760aac95d258724ae2a98e85544fd2ea1100bfafd77f1a6bfdfd93d67687ce5104acf81801fe70e3c68fff14049706bbbabed2afd49152b95cd997cf0fbe646defc7020024ed343d37bfbafafa3c5411a2f099e1e11ff8427cf5832ced0f03b0a906d0e8eaed656c74f496de51b73f0a3d70529052e2fb3e274f9dc2f33c3eea63fb0333f0d4d41427a6a7498dc144d113dd727b02f457ab9c989ea652a990a6e913d901824e87de1c0f8b660be07333330829efebd51fc6597a6082cea129153e99b018cf20038327b7d3ba5d889cc31983d8885c08810029b7f07793434a411004140a05f279459658debda6b9fde74fda6c41b5e5ba979604e87db6a08fc5a19e04a13a6d600b40feaf8910a094d5714cde5a7c2110ce6d756d0f0885a4502812c696959525de7863ce5cbe7cf1def90be7efbc3bbfb0505bbe3717a7ed05b075200b65d835787070ba74b232239b510220365779ffc0c07dfec61806aad567670e1efce50badd6d1919b3709969729684d01507d7d5cffe6b7f9d7e42457defc5bedad8b176fcccecefeb3dd6eff03b80a2cd2f923d20032b63b55ce17feb8e77b13edb47d650b40ec32cdd2f38e578786be5e0dc353fb9cdb9f732e4ca534b5308c96d7d69757166fff278e936bc075607ec3b4c5a35ba304c42301365400fa811290dff82d0522a009d41fd3f401fd17e33fca018dd9ac440000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image51185]">
+    <image name="image42091">
+      <data format="PNG" length="1609">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000061049444154789cc596616c5b671586df516fba4501dd8e56ba15013c9149f1968abaeaa0ae2a6d5e2ba84c81cd5287ea11b1654c5b5c602a697f54a188c8445331fe51942255a4a0a0f407c55828449db08841d19c89744e8b37bbc393dce2815385cd1d0ebd5821e9c38fcfdd9a3695d23585235dbdba9f3e9df79c73cf79cf95fe07e67874ff70ab9ef55a0adc1182e866ed8a6ed18e6b8e3eeab7f4f968bb7e34bac797638fb5106dd3842d3db0a2c4918ddace0965463bf57b5bdae8b7f4e5f246ebe7d9eec05fc997a10c940a44bc1a95f4e915230eb46943f680921c17e57d5ae8ed507aec697f9962198a63bc67332e9156fd4ed227578afbc3ee117d9f639a654414f6399019bbc254d210d69ac45503f12dd65f243db822cca18dfa1c099dae1d16f4f9a8a57a9a59160c96b3064b060bfbfcae2dedb96de2ec0e3d1c7f5afb49cba5df817201cacd32979b19979aefc5e67b3a4eae4d2f4b5a755be4d19d8ab827f52e7da2361436ce2b57c9928b319f0417981a85fe10c95dd6acdfd6973e3079a05d1d1cd7bb8c3890e96d920ddf1ce780f141a8b9d0ed8772198e05fe3ddcaae73e087fcbd8419de6b00393b12532af417e60318ec7a15a83542f74fb71a74c70e5c3de05c723ff2db1c71fd34f9888c1540c70211f3758b93a5e59d3eaf998c1620cea551889413147e180dfdc67184812f4ea3b37e3fad0f507e1361dd81ff43e3f3ddf90da9f94cef44bed0de974bf6417a5d78e4aebb64aff382f6d084be71292af215d48481d61e9cc713de069486f252485a457126a3474e53a9a7b24adb3a575ef9dd8d227e23bf54b4a03a6915cc88d8f422d07933de0e660a2076a592835bf7d250e64a11435988942310b077da64ac55e4879ff23e92149f7861c3d53db65ff9a03be37e8b3def1d9eabacbf1c81bead057f73e6ebfb0e97b5bd7eb7c50975edaabfd67bfa9f56bef53ef6e4babdbce49672575483adb9036f748f30d69cd56e9cd27a5fb259d97749fa45f497af39ca67db6d63fbe46df0da6c6275ed7e80f3a7d7bb71eeafa943c21a9213dbae9c1a13ffc4d2fa8fc887e4346c02094ba801c63a792b893309a4a0239180f436d1432619849423ad254be41200995d0fb5849422260fae7843d5fdb665548451729656c9b5e95d46a4aefd15738a44be4053850f20351dceaa0212f05a116824c106642702a08d53094078d1255034010aa4183e9001cf553e816745a70aa67915e548f04af381e7d6d51233a969e21a3592a022c285b80172a7e5399f100cc349d5706201d36e9d423401c6a7ec00f352f546ce8171c110c85cd344c3547b518c7edb30b92d65edffcab1c4bcf714cffa46e9b4a5405082a96719ab2a1e4c049076622900f9b7b75cb045d6fde4f090e8bea411b2abd30de0b736533b26e17910efdf46623b9cab1f47526f5363826b339cb381d1194042705151fa4fc4d622d7ee60479414290f69aa971b3908f0205980adfa009d7eac0c2c5867eb1fab37a5e3fbef8969490eef649e79addff86a42d8ef4eab474e98c74a171630a774b7a45528ba5e9d71a5220223532d28635d2eccf24bf74f15f9ab95905aeb5edee09fd998c03f53138e5331548098a8213ba317b046941d181219bea0e5d20e5339933681ab11e63b8dd7a76390148d2676a9dce9fa837f77c3e06652f0c096696202f0a8a9669d8843567499de1760dd6d20e10369f14e87ac47971b901c892be403e79996a73e59606a112348160bf4f5e95999cc930b80106776b52528ba47b03ad7a317bd47e0792a61223c13f2e3b00499ee8369d801eb370ae2e9eb930d00b44a0ee374f3e0ae47087847fadf62ece433bc39bad6112a14aee58f0b2d7d6a66547e058da452a380f39285eede68841b75999eab099f7492fd5c7f4b2a48f2de1ea23921e725ad4697be4bb952a7c9c23bebf538e005d4db98ec0b8b7a9803d46114b3e38a4b72de9d15b71be1cf3c43aeddf1aad0f03a330138652bc31b05baf93d12c29c1494d7b5bf4d44a934b929c167db13ce2bf0c5d508b0011dc5270c1e758df92b4dd69d137243d2ca30477c43cbe56ebdb8574a86e565a0c1823deed1cbf53844bd93db6474fc4bb0313cc15e671a3d0e73dad25feaaeeb4796d4b4f0db4593f745ab4e7ff118024dd2569b524cfed3afa2f4f968c6d1fa364270000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[fabricantes,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>idiomas</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[idiomas,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>wg_widget</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>
